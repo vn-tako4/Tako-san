@@ -30,10 +30,14 @@ Local verification: `git diff --check`, `pnpm recipe:refresh:check`,
 build). The release check intentionally exited 1 with all four typed blockers.
 Two fresh builds from the original ZIP reproduced the source artifact hash and
 provisional fingerprint; sampled generated files matched byte for byte.
+PR #11 was pushed at `dea13cddb0c153d325baa593700545d801c9e851` and
+remains OPEN/MERGEABLE. Hosted CI run `36268138066` on that exact head passed
+ESLint, typecheck, 204 files / 4,597 tests, migration smoke and web/worker
+build. The PR description has the same blocker/remote-boundary receipt.
 
-Next: push the existing PR #11 branch, update its description, and require
-hosted CI on the pushed head. Hoplite then reconciles
-the runtime/content model and evidence before any release artifact generation.
+Next: verify hosted CI on this final documentation receipt, then hand PR #11
+to independent review without merging. Hoplite next reconciles the runtime/
+content model and evidence before any release artifact generation.
 
 ## Historical pre-remediation handoff (superseded)
 

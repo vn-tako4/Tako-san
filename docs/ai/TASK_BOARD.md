@@ -11,8 +11,10 @@
 - [x] Local final checks passed and implementation checkpoint `1f77902` is
   committed; source check passes, release check fails with four typed blockers,
   import check and full `pnpm check` pass.
-- [ ] Push PR #11 branch, update PR description and verify hosted CI on the
-  final head.
+- [x] Push PR #11 at `dea13cd`, update its description and verify hosted CI
+  `36268138066` SUCCESS on that exact head (204 files / 4,597 tests).
+- [ ] Verify hosted CI on the final documentation receipt head; keep PR open
+  for independent review.
 - [ ] Hoplite reconciliation of required ingredient loss, reviewed ingredient
   authority, source content and nutrition evidence before final release
   projection, fingerprint, or generated 0040.

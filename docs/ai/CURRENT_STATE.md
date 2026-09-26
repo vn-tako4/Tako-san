@@ -4,6 +4,10 @@
 Implementation checkpoint: `1f77902` on
 `codex/recipe-content-refresh-v2-canonical` (PR #11). The final local
 `pnpm check` passed with lint, typecheck, Vitest, migration smoke and build.
+PR #11 is open and mergeable; hosted CI run `36268138066` passed on exact
+documentation head `dea13cddb0c153d325baa593700545d801c9e851` with
+204 files / 4,597 tests, migration smoke and build. The PR description now
+records the release blockers and remote boundary.
 This section supersedes the earlier source-ready wording below. The original
 ZIP still yields 500 recipes, 4,938 steps and 6,766 ingredient lines. The
 source manifest now records `canonicalSourceReady=true`,
