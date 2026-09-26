@@ -209,6 +209,15 @@ describe('Recipe Content Refresh V2 contracts', () => {
     expect(runtimeExclusionFromSource({ ...process, includeInShopping: false })).toMatchObject({ reason: 'process_only', requiresReviewedTransformation: false });
   });
 
+  it('blocks an already-projected culinary conversion without independent review', () => {
+    const base = recipeFixture();
+    const actual = RefreshRecipeSchema.parse(readJson(path.join(dataRoot, 'recipes', 'vn-xao-05.json')));
+    const culinary = actual.ingredients.find((ingredient) => ingredient.quantity.kind === 'measured' && ingredient.quantity.unit === 'muỗng canh' && ingredient.quantity.runtime !== null)!;
+    const source = RefreshRecipeSchema.parse({ ...base, ingredients: [{ ...culinary, position: 0 }] });
+    expect(runtimeIngredientFromSource(source.ingredients[0])).not.toBeNull();
+    expect(deriveRefreshReleaseEligibility([source]).blockers).toContain('RUNTIME_PROJECTION_LOSS');
+  });
+
   it('keeps water and estimated process quantities out of the shopping-backed runtime projection', () => {
     const ingredient = recipeFixture().ingredients[0];
     const water = {

@@ -1,7 +1,8 @@
 import { z } from 'zod';
 import { CanonicalIngredientIdSchema } from '../../../domain/src/foundation';
 import type { RefreshRecipe } from './schema';
-import { runtimeExclusionFromSource, runtimeIngredientFromSource } from './compiler';
+import { runtimeIngredientFromSource } from './compiler';
+import { classifyTransformation } from '../runtime-ingredient-audit';
 
 export const RefreshReleaseBlockerSchema = z.enum([
   'RUNTIME_PROJECTION_LOSS',
@@ -82,7 +83,7 @@ export class RefreshReleaseBlockedError extends Error {
 
 export function deriveRefreshReleaseEligibility(recipes: readonly RefreshRecipe[]): RefreshReleaseEligibility {
   const ingredients = recipes.flatMap((recipe) => recipe.ingredients);
-  const runtimeLoss = ingredients.some((ingredient) => runtimeExclusionFromSource(ingredient)?.requiresReviewedTransformation === true)
+  const runtimeLoss = ingredients.some((ingredient) => classifyTransformation(ingredient).releaseBlocking)
     || recipes.some((recipe) => recipe.ingredients.every((ingredient) => runtimeIngredientFromSource(ingredient) === null));
   let provisionalAuthority = false;
   try { assertNoProvisionalIngredientAuthority(ingredients); } catch (error) {
