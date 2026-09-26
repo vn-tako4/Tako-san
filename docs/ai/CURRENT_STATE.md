@@ -1,4 +1,50 @@
-# Current state — Recipe Content Refresh V2 research canonicalization
+# Current state — Runtime Ingredient Model V2 review candidate
+
+**2026-09-27: staging 0039 certification blocked before remote identity; offline
+runtime-model work continues from certified main.** PR #11 merged as exact
+`main` `8687ff9f3e8f6b6cbf466ee61968bb5f3469498c`; hosted CI run
+`36269257668` succeeded with 204 files / 4,597 tests, lint, typecheck,
+migration smoke and build. The reviewed staging-only workflow run
+`36269963768` / job `108481914553` passed exact-main/config/CI checks but
+failed on the first Cloudflare D1-list read with authentication error 10000.
+Ledger, bookmark, remote DB identity, FK/quick and schema gates were never
+reached; the migration apply step was SKIPPED. No remote database, media or R2
+inspection was performed afterward. Production state remains unknown, not
+certified by prior reports. Sanitized receipt:
+`artifacts/runtime-ingredient-v2/staging-0039-attempt.json`.
+
+Branch `codex/runtime-ingredient-model-v2` starts at that exact main;
+implementation checkpoint `1c9a585cd39cfd9e3b2b8b8256dbd41ed9878110`.
+ADR-033
+and `RUNTIME_INGREDIENT_MODEL_V2.md` describe an offline V2 ingredient contract,
+consumer map and explicit evidence queues. The canonical 500-file source is
+unchanged; SHA remains
+`da87da20475fa8d7ec92c716e899ee572339573258ae6d9cc7f3f8f554f2d695`.
+The deterministic audit reconstructs 6,766 source rows, 3,770 current V1
+projected rows, 2,996 exclusions and 2,860 excluded rows needing review. A
+hostile pass additionally flags 169 already-projected culinary/package/other
+unit rows for independent conversion review. This is an offline triage finding,
+not a changed canonical fingerprint or runtime cutover. The 1,395 distinct
+`ING_ENR_*` IDs present in recipe rows remain provisional; no promotion was
+recorded. The V1 schema, static 71, current D1 reader, recipe authority and
+T20 logic are unchanged. `recipe:refresh:release-check` remains intentionally
+red with the original four blockers. No 0040, final release manifest, staging
+apply, production mutation, deployment or T20 enablement occurred.
+
+Local focused V2/refresh tests (3 files / 35 tests), source/import/audit checks,
+typecheck, lint and final `pnpm check` passed: 206 files / 4,615 tests,
+migration smoke and build. Hosted PR #12 CI run `36271741260` / validate job
+`108486877920` succeeded on `e321122069c74b2d791cd13d3c7422ed7e02abbe`
+with the same 206 files / 4,615 tests, lint, typecheck, migration smoke and
+build. PR #12 is OPEN/MERGEABLE; this final docs receipt requires its own CI.
+Next: repair only the staging Environment Cloudflare D1 credential,
+re-dispatch the same reviewed workflow against current certified main, then
+capture production/media read-only evidence with verified identity. Independently
+review the conversion/ingredient/source/nutrition queues before any final
+release projection. Do not merge PR #12 as a staging or production readiness
+certificate.
+
+# Historical current state — Recipe Content Refresh V2 research canonicalization
 
 **PR #11 remediation (2026-09-27): `RECIPE_REFRESH_V2_RESEARCH_CANONICALIZED`; production release blocked.**
 Implementation checkpoint: `1f77902` on
