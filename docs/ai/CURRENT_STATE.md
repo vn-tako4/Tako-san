@@ -1,6 +1,33 @@
-# Current state — Recipe Content Refresh V2 canonical source
+# Current state — Recipe Content Refresh V2 research canonicalization
 
-**Latest (2026-09-27): `RECIPE_REFRESH_V2_CANONICAL_SOURCE_READY`.** The
+**PR #11 remediation (2026-09-27): `RECIPE_REFRESH_V2_RESEARCH_CANONICALIZED`; production release blocked.**
+Implementation checkpoint: `1f77902` on
+`codex/recipe-content-refresh-v2-canonical` (PR #11). The final local
+`pnpm check` passed with lint, typecheck, Vitest, migration smoke and build.
+This section supersedes the earlier source-ready wording below. The original
+ZIP still yields 500 recipes, 4,938 steps and 6,766 ingredient lines. The
+source manifest now records `canonicalSourceReady=true`,
+`runtimeProjectionReady=false`, `productionReleaseReady=false`, four typed
+blockers, and `finalRuntimeFingerprint=null`. The 3,770-row projection and
+its `6d0e3eb85696bb7c31bc54ac62783bc94432aaf008028eca79b17041f3eaed87`
+fingerprint are provisional. Of 2,996 excluded rows, 2,860 require reviewed
+transformation. Generated ingredient concepts are provisional: 505 existing,
+0 reviewed new, 1,642 provisional new, 368 alias reconciliation rows. Source
+URLs are declared/structurally valid; content verification has no URL-specific
+record in the package. Nutrition remains 1 publishable, 288 blocked and 211
+truthful null. The source build/check and separate expected-failing release
+gate are in `scripts/recipe-refresh-v2.mjs`; the new root hash and exact
+verification checkpoint are recorded in `HANDOFF.md`. The
+remediated source artifact SHA-256 is
+`da87da20475fa8d7ec92c716e899ee572339573258ae6d9cc7f3f8f554f2d695`
+(previously `fc7eefe6573ee9de1083728db1f34b058954fa60ff478f7c5e41dce9e4570dbe`). Next:
+runtime/content reconciliation, reviewed ingredient authority, final release
+projection/fingerprint, then generated 0040. No remote mutation, deploy, 0040,
+or T20 enablement occurred.
+
+## Historical pre-remediation receipt (superseded)
+
+**Previously reported (2026-09-27): `RECIPE_REFRESH_V2_CANONICAL_SOURCE_READY`.** The
 canonical repository is `tako-vn/Tako-san`; work started from exact
 `origin/main` `c81d6da2b3a9c051270b97953bfbb2c5aa34d057` on branch
 `codex/recipe-content-refresh-v2-canonical`. Implementation checkpoint

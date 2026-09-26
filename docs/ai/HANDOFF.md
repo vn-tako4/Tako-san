@@ -1,6 +1,43 @@
-# Handoff — Recipe Content Refresh V2 canonical source
+# Handoff — Recipe Content Refresh V2 PR #11 remediation
 
-**Status (2026-09-27): `RECIPE_REFRESH_V2_CANONICAL_SOURCE_READY`.** Canonical
+**Current (2026-09-27): `RECIPE_REFRESH_V2_RESEARCH_CANONICALIZED`; release projection blocked.**
+Implementation commit `1f77902` contains the remediated source, compiler,
+validators, generated artifacts and tests. Starting PR head was
+`fbec18f1e2554068ec550c7a9b5c9afcd4da0b79`; starting main was
+`c81d6da2b3a9c051270b97953bfbb2c5aa34d057`.
+The source package is rebuilt from the original ZIP. It contains 500 IDs,
+4,938 steps and 6,766 ingredients. The provisional runtime fingerprint remains
+`6d0e3eb85696bb7c31bc54ac62783bc94432aaf008028eca79b17041f3eaed87`;
+the canonical source SHA-256 is
+`da87da20475fa8d7ec92c716e899ee572339573258ae6d9cc7f3f8f554f2d695`
+(previously `fc7eefe6573ee9de1083728db1f34b058954fa60ff478f7c5e41dce9e4570dbe`).
+No final release fingerprint exists. The manifest explicitly blocks release
+for runtime projection loss, provisional ingredient authority, incomplete
+source content verification, and nutrition evidence.
+`pnpm recipe:refresh:release-check` must fail with
+`RECIPE_REFRESH_RELEASE_BLOCKED`; `pnpm recipe:refresh:check` must pass.
+Of 2,996 excluded ingredient rows, 2,860 require reviewed transformation;
+136 are currently semantic exclusions. Reconciliation rows: 505 existing,
+0 reviewed new, 1,642 provisional new, 368 aliases. Declared URLs: 1,101;
+structurally valid URLs including one supporting source: 1,102;
+URL-specific content verification: 0. Nutrition: 1 publishable, 288 blocked,
+211 truthful null. Production rollout, 0040, recipe authority and T20 remain
+out of scope.
+
+Local verification: `git diff --check`, `pnpm recipe:refresh:check`,
+`pnpm recipe:import:check`, focused refresh tests (17/17), `pnpm typecheck`,
+`pnpm lint` and `pnpm check` passed (204 files / 4,597 tests, migration smoke,
+build). The release check intentionally exited 1 with all four typed blockers.
+Two fresh builds from the original ZIP reproduced the source artifact hash and
+provisional fingerprint; sampled generated files matched byte for byte.
+
+Next: push the existing PR #11 branch, update its description, and require
+hosted CI on the pushed head. Hoplite then reconciles
+the runtime/content model and evidence before any release artifact generation.
+
+## Historical pre-remediation handoff (superseded)
+
+**Previously reported (2026-09-27): `RECIPE_REFRESH_V2_CANONICAL_SOURCE_READY`.** Canonical
 repository `tako-vn/Tako-san`, base `origin/main`
 `c81d6da2b3a9c051270b97953bfbb2c5aa34d057`, branch
 `codex/recipe-content-refresh-v2-canonical`, pushed implementation checkpoint

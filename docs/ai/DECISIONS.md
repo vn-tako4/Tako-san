@@ -17,7 +17,7 @@ rollback baseline under ADR-027/030.
 
 **Decision:**
 
-1. `data/recipe-refresh/v2` is the reviewed release source for this content
+1. `data/recipe-refresh/v2` is the canonical research source for this content
    generation. Every recipe uses one strict schema and preserves identity,
    research sources, normalized steps, source-rich ingredient quantity evidence,
    usage/nutrition roles, nutrition certification, legacy media compatibility
@@ -28,7 +28,7 @@ rollback baseline under ADR-027/030.
    edible quantity or absorption remains explicit; no made-up gram/ml/count
    value is introduced to satisfy runtime contracts.
 3. Ingredient identity uses the existing exact catalog resolver first, then a
-   conservative reviewed name key for `ING_ENR_*` IDs. Nutrition/FDC URLs are
+   deterministic provisional name key for `ING_ENR_*` IDs. Nutrition/FDC URLs are
    evidence only and never identity authority. This prevents proxy reuse from
    merging foods such as miso with soy sauce, galangal with ginger, or bell
    pepper with generic chili. Reconciliation remains machine-readable.
@@ -44,6 +44,9 @@ rollback baseline under ADR-027/030.
    runtime identity only through the project's `fingerprintRecipes()`.
    `pnpm recipe:refresh:check` fails on catalog/schema/exception/hash/projection
    drift. Mutable URL spot checks are evidence outside the canonical hash.
+   The runtime fingerprint is explicitly provisional. `pnpm recipe:refresh:release-check`
+   fails with typed blockers until a separately reviewed production projection
+   and final fingerprint exist.
 6. Runtime projection does not make quantities nullable. It admits only
    canonical IDs with positive `StandardUnit` quantities, excludes non-shopping
    water and estimated process quantities, and omits uncertified nutrition.
@@ -51,10 +54,21 @@ rollback baseline under ADR-027/030.
    reviewed runtime contract can carry it without breaking planner/inventory/
    shopping/cooking/T20 behavior.
 7. The T14E import compiler and current release manifest remain unchanged.
-   Content Refresh V2 is a separate future convergence path. Migration
-   `0040_recipe_content_refresh_v2.sql` may be generated only from this pinned
-   source after review; it must preserve recipe IDs, verify exact old/new states,
-   inspect child FKs and fail closed on unknown state.
+   Content Refresh V2 is a separate future convergence path. Before generating
+   `0040_recipe_content_refresh_v2.sql`, reconcile runtime/content loss, promote
+   ingredient authority with evidence, verify sources, certify nutrition, and
+   generate a complete final projection. The migration must preserve recipe IDs,
+   verify exact old/new states, inspect child FKs and fail closed on unknown state.
+
+**PR #11 remediation:** The original canonical package conflated source validity
+with release readiness. The source manifest now records four typed blockers,
+`productionReleaseReady=false`, `finalRuntimeFingerprint=null`, and a separate
+provisional projection fingerprint. All 500 source files retain URL references
+but distinguish structural validity from content verification. Generated
+`ING_ENR_*` identities are provisional until an explicit review record exists;
+the ingredient-authority assertion rejects provisional IDs. Per-recipe exclusion
+reasons and an aggregate coverage report make runtime loss auditable. This adds
+no D1 schema or runtime quantity contract change.
 
 **Consequences:** The canonical package can be reviewed and reproduced without
 production reads, network calls or AI. A refresh release may update the D1 500
