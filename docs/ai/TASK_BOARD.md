@@ -2451,6 +2451,8 @@ rolling `qwen3.7-flash` alias is canary-only.
 - [x] Full local regression PASS after audit hardening (`pnpm check`, 206 files /
   4,615 tests; focused 3 files / 35 tests; source/import/audit checks,
   typecheck, lint, migration smoke and build).
-- [ ] Finish documentation checkpoint, push, focused PR and exact-head hosted
-  CI. Release gate remains expected-red; no 0040/final
+- [x] Focused PR #12 opened and hosted implementation-head CI `36271741260`
+  SUCCESS on `e321122` (206 files / 4,615 tests, smoke and build).
+- [ ] Push final documentation receipt and require its exact-head CI. Release
+  gate remains expected-red; no 0040/final
   manifest/T20 enablement.

@@ -33,13 +33,16 @@ apply, production mutation, deployment or T20 enablement occurred.
 
 Local focused V2/refresh tests (3 files / 35 tests), source/import/audit checks,
 typecheck, lint and final `pnpm check` passed: 206 files / 4,615 tests,
-migration smoke and build. Require exact-head hosted CI before presenting this
-branch for review.
+migration smoke and build. Hosted PR #12 CI run `36271741260` / validate job
+`108486877920` succeeded on `e321122069c74b2d791cd13d3c7422ed7e02abbe`
+with the same 206 files / 4,615 tests, lint, typecheck, migration smoke and
+build. PR #12 is OPEN/MERGEABLE; this final docs receipt requires its own CI.
 Next: repair only the staging Environment Cloudflare D1 credential,
 re-dispatch the same reviewed workflow against current certified main, then
 capture production/media read-only evidence with verified identity. Independently
 review the conversion/ingredient/source/nutrition queues before any final
-release projection.
+release projection. Do not merge PR #12 as a staging or production readiness
+certificate.
 
 # Historical current state — Recipe Content Refresh V2 research canonicalization
 

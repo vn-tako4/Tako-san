@@ -28,8 +28,12 @@ fail with four blockers. No 0040 or final release manifest exists.
 
 Current local focused model/authority/refresh tests (3 files / 35 tests),
 typecheck, lint, source/import/audit checks and final `pnpm check` all passed:
-206 files / 4,615 tests, migration smoke and build. Next: complete hosted exact-head CI,
-push a review PR without merging; separately repair staging
+206 files / 4,615 tests, migration smoke and build. PR #12 is OPEN/MERGEABLE;
+hosted CI `36271741260` / validate `108486877920` SUCCESS on implementation/docs
+head `e321122069c74b2d791cd13d3c7422ed7e02abbe` with 206 files / 4,615
+tests, lint, typecheck, migration smoke and build. This final documentation
+receipt needs its own exact-head CI. Do not merge as release readiness.
+Next: independently review PR #12; separately repair staging
 credential and repeat the reviewed workflow before any remote audit or rollout.
 
 # Historical handoff — Recipe Content Refresh V2 PR #11 remediation
