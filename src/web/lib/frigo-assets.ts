@@ -72,7 +72,22 @@ export const FRIGO_ASSETS = {
       "basil": "/frigo/ingredients/vegetables/basil.png",
       "water-spinach": "/frigo/ingredients/vegetables/water-spinach.png",
       "bok-choy": "/frigo/ingredients/vegetables/bok-choy.png",
-      "avocado": "/frigo/ingredients/vegetables/avocado.png"
+      "avocado": "/frigo/ingredients/vegetables/avocado.png",
+      "shallot": "/frigo/ingredients/vegetables/shallot.png",
+      "lemongrass": "/frigo/ingredients/vegetables/lemongrass.png",
+      "cilantro": "/frigo/ingredients/vegetables/cilantro.png",
+      "vietnamese-coriander": "/frigo/ingredients/vegetables/vietnamese-coriander.png",
+      "bean-sprouts": "/frigo/ingredients/vegetables/bean-sprouts.png",
+      "bitter-melon": "/frigo/ingredients/vegetables/bitter-melon.png",
+      "luffa": "/frigo/ingredients/vegetables/luffa.png",
+      "winter-melon": "/frigo/ingredients/vegetables/winter-melon.png",
+      "zucchini": "/frigo/ingredients/vegetables/zucchini.png",
+      "galangal": "/frigo/ingredients/vegetables/galangal.png",
+      "turmeric": "/frigo/ingredients/vegetables/turmeric.png",
+      "leek": "/frigo/ingredients/vegetables/leek.png",
+      "mint": "/frigo/ingredients/vegetables/mint.png",
+      "pineapple": "/frigo/ingredients/vegetables/pineapple.png",
+      "white-radish": "/frigo/ingredients/vegetables/white-radish.png"
     },
     "pantry": {
       "egg": "/frigo/ingredients/pantry/egg.png",
@@ -98,7 +113,33 @@ export const FRIGO_ASSETS = {
       "fish-sauce": "/frigo/ingredients/pantry/fish-sauce.png",
       "soy-sauce": "/frigo/ingredients/pantry/soy-sauce.png",
       "sugar": "/frigo/ingredients/pantry/sugar.png",
-      "kimchi": "/frigo/ingredients/pantry/kimchi.png"
+      "kimchi": "/frigo/ingredients/pantry/kimchi.png",
+      "salt": "/frigo/ingredients/pantry/salt.png",
+      "pepper": "/frigo/ingredients/pantry/pepper.png",
+      "seasoning-powder": "/frigo/ingredients/pantry/seasoning-powder.png",
+      "water": "/frigo/ingredients/pantry/water.png",
+      "flour": "/frigo/ingredients/pantry/flour.png",
+      "peanut": "/frigo/ingredients/pantry/peanut.png",
+      "sesame": "/frigo/ingredients/pantry/sesame.png",
+      "honey": "/frigo/ingredients/pantry/honey.png",
+      "cooking-wine": "/frigo/ingredients/pantry/cooking-wine.png",
+      "squid": "/frigo/ingredients/pantry/squid.png",
+      "crab": "/frigo/ingredients/pantry/crab.png",
+      "spare-ribs": "/frigo/ingredients/pantry/spare-ribs.png",
+      "oyster-sauce": "/frigo/ingredients/pantry/oyster-sauce.png",
+      "sesame-oil": "/frigo/ingredients/pantry/sesame-oil.png",
+      "rice-paper": "/frigo/ingredients/pantry/rice-paper.png",
+      "vinegar": "/frigo/ingredients/pantry/vinegar.png"
+    },
+    "generic": {
+      "category-vegetable": "/frigo/ingredients/generic/category-vegetable.png",
+      "category-spice": "/frigo/ingredients/generic/category-spice.png",
+      "category-meat": "/frigo/ingredients/generic/category-meat.png",
+      "category-seafood": "/frigo/ingredients/generic/category-seafood.png",
+      "category-fruit": "/frigo/ingredients/generic/category-fruit.png",
+      "category-grain": "/frigo/ingredients/generic/category-grain.png",
+      "category-dairy": "/frigo/ingredients/generic/category-dairy.png",
+      "category-other": "/frigo/ingredients/generic/category-other.png"
     }
   },
   "recipes": {

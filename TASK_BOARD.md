@@ -1,3 +1,41 @@
+# Current — Ingredient icon pack v2 (2026-09-27)
+
+**Status: `ICON_V2_IMPLEMENTED_LOCAL_GATES_RUNNING`. Remote systems:
+`UNTOUCHED`.** Branch `feat/ingredient-icons-v2` from `origin/main` `8687ff9`.
+
+- [done] Audit old `getIngredientImage` if-chain on real data: 43.3% tomato
+  fallback, 18/48 PNGs unreferenced, mis-matches (cá lóc→salmon, dầu mè→oil,
+  trái bơ→butter).
+- [done] Add 39 new transparent PNGs to `public/frigo/ingredients/`
+  (15 vegetables, 16 pantry, 8 generic category icons).
+- [done] Add 214-rule `src/web/lib/ingredient-icon-rules.json` (single source
+  of truth, ordered most-specific-first) + rewrite `ingredient-images.ts` as
+  data-driven matcher (exact ID → Vietnamese substring → unaccented
+  word-boundary → category fallback → tomato last resort).
+- [done] Fix phase-1 ambiguous bare keywords: unaccented input no longer
+  matches `me`/`chao` ("Me"→category-other, not tamarind).
+- [done] Pre-PR semantic audit of grouped keywords (ngao→seafood,
+  hương thảo→spice, pate→meat, đá viên→water…): all land on truthful
+  category icons; kept.
+- [done] `tests/unit/ingredient-images.test.ts` (7 tests): ordering,
+  unaccented, no-guess, fallback, backward compat, asset existence on disk.
+- [done] `pnpm typecheck` PASS, `pnpm lint` PASS, `pnpm build` PASS,
+  `pnpm check:migrations` PASS, focused vitest 7/7 PASS,
+  `vitest run tests/unit` 116 files / 2,460 PASS (pre-rebase),
+  post-rebase 119 files / 2,478 PASS (incl. 18 new PR #12 tests),
+  integration chunk 1 (22 files) 1,138 passed / 8 skipped.
+  Sandbox confirmation gates stop long local runs; remaining integration
+  chunks go through hosted PR CI (no integration/e2e test covers icons).
+- [done] PR #13 opened (`feat/ingredient-icons-v2` → `main`,
+  head `95e21c2e`), body lists local gates + reviewer `vn-taphoanhatung`.
+- [monitoring] Hosted exact-head CI on PR #13 — final full-suite gate.
+- [blocked] Merge/deploy: needs Tun bee's separate approval. Not doing it here.
+
+Next authorized step after local gates: commit and open the PR; reviewer
+decides merge. Then the icon upgrade ships with the normal release train.
+
+---
+
 # Current — Recipe Content Refresh V2 canonical source (2026-09-27)
 
 **Status: `RECIPE_REFRESH_V2_CANONICAL_SOURCE_READY`. Remote systems:

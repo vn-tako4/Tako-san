@@ -44,6 +44,63 @@ review the conversion/ingredient/source/nutrition queues before any final
 release projection. Do not merge PR #12 as a staging or production readiness
 certificate.
 
+# Current state — Ingredient icon pack v2 (2026-09-27)
+
+**Latest (2026-09-27):** branch `feat/ingredient-icons-v2` rebased on `origin/main`
+`c6ea259` (PR #12 merge). Replaces the `getIngredientImage` if-chain with a
+data-driven rule table (`src/web/lib/ingredient-icon-rules.json`, 214 rules)
+plus 39 new transparent PNGs under `public/frigo/ingredients/`
+(15 vegetables, 16 pantry, 8 generic category icons). `frigo-assets.ts` gains
+the 39 keys and a new `ingredients.generic` section. All 8 existing call
+sites keep the 2-arg signature (new optional 3rd `category` param).
+
+**Status: `ICON_V2_PR_OPEN`.** PR #13
+(`feat/ingredient-icons-v2` → `main`) opened 2026-09-27, rebased on
+`origin/main` `c6ea259` (PR #12 merge), pushed via Git Data API
+(tree byte-identical to local). Hosted CI is the final full-suite gate;
+monitoring runs. No merge, no deploy from this task.
+
+Post-rebase local gates (2026-09-27): `pnpm typecheck` PASS, `pnpm lint`
+PASS, focused icon test 7/7 PASS, `vitest run tests/unit` 119 files /
+2,478 tests PASS (incl. 18 new PR #12 tests), `pnpm check:migrations`
+PASS, `pnpm build` PASS.
+
+Behavior vs the old if-chain (audited on the real 500-dish / 6,766-row data):
+- Old: 43.3% of displays fell back to the tomato icon (salt, pepper, sugar…);
+  18/48 existing PNGs were never referenced; mis-matches (cá lóc→salmon,
+  dầu mè→cooking-oil, trái bơ→butter).
+- New: specific icon or truthful category icon for ~99.8%; category fallback
+  (spice/meat/seafood/vegetable/fruit/grain/dairy/other) instead of tomato;
+  tomato survives only as a last resort when an asset key is missing.
+- Specific-before-generic ordering fixes cá hồi→salmon vs cá→white-fish,
+  dầu mè→sesame-oil vs dầu→cooking-oil, trái bơ→avocado vs bơ→butter.
+- Unaccented phase (word-boundary regex) recovers "Dau an", "Muoi", "Nuoc loc"
+  (no `oc`-in-`nuoc` collision), "Duong cat trang" (no `cat`→meat collision).
+- 11 ambiguous normalized forms (bo, ca, dau, me, chao, cat…) never guess:
+  phase 2 drops them, and phase 1 now also skips bare ambiguous keywords
+  (`me`, `chao`) when the input itself has no diacritics — fixes the old
+  `"Me"` → tamarind-fruit mis-resolution. Unaccented "Me"/"chao" now land on
+  category-other; accented "mè"/"cháo"/"chao môn" still resolve precisely.
+- Pre-PR semantic audit of grouped keywords: ngao→seafood, hương thảo→spice,
+  kỷ tử/ô liu→fruit, kinh giới/rong biển→vegetable, pate/pancetta→meat,
+  đá viên→water, mứt→fruit — each lands on its truthful category icon
+  (no wrong *specific* icon assigned); kept as designed.
+
+Tests: `tests/unit/ingredient-images.test.ts` covers exact-ID matching,
+specific-over-generic ordering, unaccented recovery, ambiguous no-guess,
+category fallback, 2-arg backward compatibility, and existence of every
+referenced asset in `frigo-assets.ts` and on disk (incl. all 39 new PNGs).
+
+Boundaries: no PayOS/payment/billing/checkout/webhook, auth or infra change;
+no migration; no deploy; production D1/R2 untouched. Not merged — PR only
+after local `pnpm check` completes.
+
+Next: finish `pnpm check`, commit, open PR from `feat/ingredient-icons-v2`,
+require hosted exact-head CI green and reviewer `vn-taphoanhatung` before any
+merge. Do not enable anything or deploy from this task.
+
+---
+
 # Historical current state — Recipe Content Refresh V2 research canonicalization
 
 **PR #11 remediation (2026-09-27): `RECIPE_REFRESH_V2_RESEARCH_CANONICALIZED`; production release blocked.**
