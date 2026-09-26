@@ -1,5 +1,40 @@
 # Architecture Decisions
 
+## ADR-033 — Runtime Ingredient Model V2 is an evidence-gated projection, not a V1 replacement
+
+**Status:** Proposed 2026-09-27 for review. No live cutover, D1 migration, 0040,
+final release manifest, production mutation or T20 enablement is authorized.
+
+**Context:** ADR-032 preserves 6,766 canonical research ingredient rows, but the
+closed V1 `RuntimeRecipeIngredient.requiredQuantity` projects only 3,770. That
+single V1 value is currently read as display, shopping/planner demand, cooking
+deduction and sometimes incorrectly as edible/nutrition amount. The 2,860
+release-required exclusions cannot be repaired with universal tablespoon,
+teaspoon, produce-weight or process-absorption defaults.
+
+**Options:** Expanding `StandardUnit`/nullable V1 quantities would immediately
+affect T02–T05, Week, cooking and T20. Mutating the canonical ZIP would lose
+source truth. A separate pure, versioned projection can make each semantic
+quantity and unresolved state explicit without changing live contracts.
+
+**Decision:** Add `RuntimeIngredientV2` as an offline projection candidate with
+separate display, shopping, process and consumed channels. Source adaptation
+never certifies edible yield. Shopping measurements are admitted automatically
+only for directly evidenced physical units; process scaling and qualitative or
+culinary measurements remain unresolved. A guarded V1 shopping projection
+throws on provisional authority, missing purchase quantity or unreviewed
+non-shopping exclusion. Exact physical conversions remain in the existing
+domain unit policy; no culinary conversion is inferred. Reviewed ingredient
+authority is a separate explicit decision: a new master row needs a reviewed
+concept with basis/reference, and an alias must target an existing ID.
+
+**Consequences:** The static 71 and present D1 hydration/fingerprint remain
+unchanged. The new audit pins the source SHA and classifies every current row;
+the release gate remains red. V2 is not yet a serving API, planner cutover or
+D1 schema: resolving the evidence queues, authorizing the V2 runtime/content
+wire model, and proving consumer compatibility are required before 0040.
+
+
 ## ADR-032 — Recipe Content Refresh V2 uses a richer canonical source and a separate deterministic runtime projection
 
 **Status:** Accepted 2026-09-27 for the canonical-source branch. No migration,

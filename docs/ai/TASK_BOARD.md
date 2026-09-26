@@ -2432,3 +2432,25 @@ rolling `qwen3.7-flash` alias is canary-only.
   authorized staging access proves target identity and ledger. Local Cloudflare
   credentials absent; GitHub staging secrets cannot be listed (403). No remote
   migration/deploy/enablement occurred. Production mutation not authorized.
+# Runtime Ingredient Model V2 — active review candidate (2026-09-27)
+
+- [x] Certify PR #11 merge on exact main `8687ff9`: hosted CI `36269257668`
+  SUCCESS, 204 files / 4,597 tests, migration smoke and build.
+- [ ] Certify staging 0039: reviewed workflow `36269963768` failed before D1
+  identity/ledger on Cloudflare authentication error 10000. Apply step skipped;
+  no bookmark or remote schema proof. Fix the staging Environment credential
+  through authorized controls, then retry the reviewed workflow; no ad-hoc SQL.
+- [ ] Production OOB and media/R2 snapshots: not started because exact remote
+  identity/credentials are unavailable. Read-only only after proof.
+- [x] Create `codex/runtime-ingredient-model-v2` from certified main; map V1
+  consumers, add ADR-033, separate V2 quantity channels and fail-closed V1
+  projection/ingredient-promotion helpers. No live cutover or DB migration.
+- [x] Deterministic audit/queues: 6,766 rows; 2,860 excluded review-required
+  and 169 already-projected conversion-review rows; zero newly certified
+  transformations. Source hash pinned and package unchanged.
+- [x] Full local regression PASS after audit hardening (`pnpm check`, 206 files /
+  4,615 tests; focused 3 files / 35 tests; source/import/audit checks,
+  typecheck, lint, migration smoke and build).
+- [ ] Finish documentation checkpoint, push, focused PR and exact-head hosted
+  CI. Release gate remains expected-red; no 0040/final
+  manifest/T20 enablement.

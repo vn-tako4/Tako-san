@@ -1,4 +1,38 @@
-# Handoff — Recipe Content Refresh V2 PR #11 remediation
+# Handoff — Runtime Ingredient Model V2 staging blocker and offline checkpoint
+
+Canonical `main` after PR #11: `8687ff9f3e8f6b6cbf466ee61968bb5f3469498c`.
+Exact-main CI `36269257668` SUCCESS (204 files / 4,597 tests, lint,
+typecheck, migration smoke, build). The staging-only 0039 workflow was
+dispatched once: run `36269963768`, job `108481914553`, exact same SHA. It
+failed at the first remote D1 identity read with Cloudflare authentication
+error 10000; the reviewed workflow skipped ledger, Time Travel, migration
+apply and post-checks. The staging config pins
+`frigo-db-staging-v3` / `7854298a-20f5-46aa-9cbf-917079c2a3dd`, but the
+remote identity was **not** verified. Do not retry with guessed credentials or
+manual SQL. No production D1/media/R2 reads occurred. T20 remains off by
+repository config; remote effective flags were not queried.
+
+Offline branch `codex/runtime-ingredient-model-v2` starts from certified main.
+Implementation checkpoint: `1c9a585cd39cfd9e3b2b8b8256dbd41ed9878110`.
+ADR-033 and `RUNTIME_INGREDIENT_MODEL_V2.md` define the review candidate and
+consumer map. The canonical recipe package and source hash
+`da87da20475fa8d7ec92c716e899ee572339573258ae6d9cc7f3f8f554f2d695`
+are unchanged. New deterministic audit pins that hash and reports 6,766 rows,
+3,770 provisionally projected, 2,996 excluded, 2,860 excluded needing review,
+136 semantic exclusions, plus 169 already-projected units needing conversion
+review. No transformation, ingredient identity, URL or nutrition profile was
+promoted. Provisional fingerprint stays
+`6d0e3eb85696bb7c31bc54ac62783bc94432aaf008028eca79b17041f3eaed87`;
+final fingerprint is absent. `pnpm recipe:refresh:release-check` must still
+fail with four blockers. No 0040 or final release manifest exists.
+
+Current local focused model/authority/refresh tests (3 files / 35 tests),
+typecheck, lint, source/import/audit checks and final `pnpm check` all passed:
+206 files / 4,615 tests, migration smoke and build. Next: complete hosted exact-head CI,
+push a review PR without merging; separately repair staging
+credential and repeat the reviewed workflow before any remote audit or rollout.
+
+# Historical handoff — Recipe Content Refresh V2 PR #11 remediation
 
 **Current (2026-09-27): `RECIPE_REFRESH_V2_RESEARCH_CANONICALIZED`; release projection blocked.**
 Implementation commit `1f77902` contains the remediated source, compiler,
