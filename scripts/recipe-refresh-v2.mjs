@@ -26,8 +26,8 @@ const option = (name) => {
   const index = args.indexOf(name);
   return index >= 0 ? args[index + 1] ?? true : null;
 };
-if (!['build', 'check'].includes(command)) {
-  console.error('usage: recipe-refresh-v2.mjs build --input <tako-enrichment-500-recipes.zip> | check');
+if (!['build', 'check', 'release-check'].includes(command)) {
+  console.error('usage: recipe-refresh-v2.mjs build --input <tako-enrichment-500-recipes.zip> | check | release-check');
   process.exit(2);
 }
 
@@ -81,7 +81,11 @@ try {
     if (!input || input === true) throw new Error('build requires --input <zip>');
     await build(path.resolve(ROOT, input));
   } else {
-    await check();
+    const { manifest, recipes, provisionalRuntimeProjectionFingerprint } = await check();
+    if (command === 'release-check') {
+      refresh.assertRefreshReleaseEligible(manifest.releaseEligibility, recipes, provisionalRuntimeProjectionFingerprint);
+      console.log('recipe-refresh-release-check=ok');
+    }
   }
 
   async function build(inputPath) {
@@ -138,7 +142,7 @@ try {
       const exact = resolver.resolve(sourceName);
       const direct = exact.status === 'unresolved' ? resolver.resolve(refresh.ingredientIdentityName(sourceName)) : exact;
       let ingredientId = null;
-      let resolution = 'new_reviewed_canonical_id';
+      let resolution = 'provisional_new_canonical_id';
       let reason = '';
       let conceptKey = '';
       if (!sourceName) {
@@ -187,8 +191,8 @@ try {
         const concept = concepts.get(row.conceptKey);
         row.ingredientId = concept.id;
         const duplicate = normalizeIngredientAlias(row.sourceName) !== normalizeIngredientAlias(concept.canonicalName);
-        row.resolution = duplicate ? 'duplicate_alias' : 'new_reviewed_canonical_id';
-        row.reason = duplicate ? `reviewed alias of ${concept.canonicalName} via the same evidence key` : 'new deterministic reviewed enrichment concept';
+        row.resolution = refresh.generatedIngredientResolution(duplicate);
+        row.reason = duplicate ? `provisional alias of ${concept.canonicalName} via the same name key` : 'new deterministic enrichment concept; ingredient authority review pending';
       }
     }
 
@@ -225,6 +229,7 @@ try {
       const cookTimeMinutes = finite(raw.total_time_minutes) && raw.total_time_minutes >= 0 ? raw.total_time_minutes : base.cookTimeMinutes;
       const difficulty = ['easy', 'medium', 'hard'].includes(raw.difficulty) ? raw.difficulty : base.difficulty;
       const runtimeExcludedIngredientPositions = ingredients.filter((ingredient) => refresh.runtimeIngredientFromSource(ingredient) === null).map((ingredient) => ingredient.position);
+      const runtimeExclusions = ingredients.map(refresh.runtimeExclusionFromSource).filter(Boolean);
 
       const recipe = refresh.RefreshRecipeSchema.parse({
         schemaVersion: SCHEMA_VERSION,
@@ -245,7 +250,7 @@ try {
         steps,
         nutrition,
         media: { sourceImageUrl: null, legacyRuntimeImageUrl: base.imageUrl, canonicalStatus: 'source_metadata_only' },
-        audit: { schemaRepairs: unique(repairs), encodingRepairs: unique(encodingRepairs), runtimeExcludedIngredientPositions },
+        audit: { schemaRepairs: unique(repairs), encodingRepairs: unique(encodingRepairs), runtimeExcludedIngredientPositions, runtimeExclusions },
       });
       canonicalRecipes.push(recipe);
       schemaRepairCount += repairs.length;
@@ -262,7 +267,11 @@ try {
         recipeId: base.id,
         sourceCount: sources.length,
         uniqueSourceCount: new Set(sources.map((source) => source.url)).size,
-        relevantCount: sources.filter((source) => source.relevance === 'relevant').length,
+        declaredCount: sources.filter((source) => source.role === 'declared').length,
+        structurallyValidCount: sources.filter((source) => source.verification === 'structurally_valid').length,
+        contentVerifiedCount: sources.filter((source) => source.verification === 'content_verified').length,
+        supportingCount: sources.filter((source) => source.role === 'supporting').length,
+        invalidCount: repairs.filter((repair) => repair === 'invalid_source_url_removed').length,
         exception: base.id === KNOWN_SOURCE_EXCEPTION ? 'Only one exact-recipe source; the second source supports chayote preparation only.' : null,
         sources,
       });
@@ -275,15 +284,16 @@ try {
       throw new Error(`runtime projection has recipes without safe structured ingredients: ${ids.join(', ')}`);
     }
 
-    const reconciliation = buildReconciliation(prepared, concepts);
+    const reconciliation = buildReconciliation(prepared, concepts).map((row) => refresh.RefreshIngredientReconciliationRowSchema.parse(row));
     const sourceExceptions = sourceQuality.filter((entry) => entry.exception !== null).length;
-    const unexpectedSourceGaps = sourceQuality.filter((entry) => entry.recipeId !== KNOWN_SOURCE_EXCEPTION && entry.relevantCount < 2);
-    if (unexpectedSourceGaps.length > 0) throw new Error(`recipes lack two relevant sources: ${unexpectedSourceGaps.map((entry) => entry.recipeId).join(', ')}`);
+    const unexpectedSourceGaps = sourceQuality.filter((entry) => entry.recipeId !== KNOWN_SOURCE_EXCEPTION && entry.declaredCount < 2);
+    if (unexpectedSourceGaps.length > 0) throw new Error(`recipes lack two declared structurally valid sources: ${unexpectedSourceGaps.map((entry) => entry.recipeId).join(', ')}`);
     const knownSourceQuality = sourceQuality.find((entry) => entry.recipeId === KNOWN_SOURCE_EXCEPTION);
-    if (knownSourceQuality?.relevantCount !== 1 || knownSourceQuality.sources.filter((source) => source.relevance === 'supporting').length !== 1) {
+    if (knownSourceQuality?.declaredCount !== 1 || knownSourceQuality.supportingCount !== 1) {
       throw new Error(`${KNOWN_SOURCE_EXCEPTION}: source exception classification drift`);
     }
     const auditSummary = buildAuditSummary(canonicalRecipes, reconciliation, schemaRepairCount, encodingRepairCount, sourceExceptions, rawAudit, sourceQuality);
+    const releaseEligibility = refresh.deriveRefreshReleaseEligibility(canonicalRecipes);
     const exceptions = buildExceptions(canonicalRecipes, sourceQuality);
     const nutritionEvidence = nutritionRemediation.map((entry) => ({
       recipeId: entry.recipeId,
@@ -309,7 +319,10 @@ try {
       schemaVersion: SCHEMA_VERSION,
       recipeVersion: 2,
       recipeCount: compiled.recipes.length,
-      expectedRuntimeFingerprint: compiled.fingerprint,
+      projectionStatus: 'provisional',
+      productionReleaseReady: false,
+      finalRuntimeFingerprint: null,
+      provisionalRuntimeProjectionFingerprint: compiled.provisionalRuntimeProjectionFingerprint,
       recipes: compiled.recipes,
     });
 
@@ -318,7 +331,7 @@ try {
     const canonicalArtifactSha256 = await refresh.fingerprintRefreshArtifact(fileHashes);
     const manifest = {
       schemaVersion: SCHEMA_VERSION,
-      releaseName: 'Recipe Content Refresh V2 canonical source',
+      sourceStatus: 'RECIPE_REFRESH_V2_RESEARCH_CANONICALIZED',
       baseReleaseId: currentManifest.releaseId,
       inputArtifact: path.basename(inputPath),
       inputSha256,
@@ -327,13 +340,15 @@ try {
       ingredientConceptCount: new Set(canonicalRecipes.flatMap((recipe) => recipe.ingredients.map((ingredient) => ingredient.canonicalIngredientId).filter(Boolean))).size,
       fileHashes,
       canonicalArtifactSha256,
-      expectedRuntimeFingerprint: compiled.fingerprint,
+      provisionalRuntimeProjectionFingerprint: compiled.provisionalRuntimeProjectionFingerprint,
+      releaseEligibility,
       auditSummary,
     };
-    write(path.join(DATA_ROOT, 'manifest.json'), manifest);
+    write(path.join(DATA_ROOT, 'manifest.json'), refresh.RefreshSourceManifestSchema.parse(manifest));
     write(path.join(ARTIFACT_ROOT, 'content-artifact.json'), {
       canonicalArtifactSha256,
-      expectedRuntimeFingerprint: compiled.fingerprint,
+      provisionalRuntimeProjectionFingerprint: compiled.provisionalRuntimeProjectionFingerprint,
+      releaseEligibility,
       inputSha256,
       recipeCount: canonicalRecipes.length,
     });
@@ -341,7 +356,7 @@ try {
 
     console.log(`recipe-refresh-build=ok recipes=${canonicalRecipes.length} ingredients=${auditSummary.ingredients} steps=${auditSummary.steps}`);
     console.log(`canonicalArtifactSha256=${canonicalArtifactSha256}`);
-    console.log(`runtimeFingerprint=${compiled.fingerprint}`);
+    console.log(`provisionalRuntimeProjectionFingerprint=${compiled.provisionalRuntimeProjectionFingerprint}`);
   }
 
   function normalizeIngredient(row) {
@@ -393,6 +408,7 @@ try {
       canonicalIngredientId: row.ingredientId,
       reconciliation: row.resolution,
       reconciliationReason: row.reason || 'no reviewed resolution available',
+      review: null,
       usageRole: semantics.usageRole,
       nutritionRole: semantics.nutritionRole,
       optional,
@@ -523,12 +539,17 @@ try {
     for (const value of values) {
       const url = refresh.normalizeText(value);
       if (!url || seen.has(url)) { if (url) repairs.push('duplicate_source_removed'); continue; }
-      try { new URL(url); } catch { repairs.push('invalid_source_url_removed'); continue; }
+      try {
+        const parsed = new URL(url);
+        if (!['https:', 'http:'].includes(parsed.protocol)) throw new Error('unsupported source URL protocol');
+      } catch { repairs.push('invalid_source_url_removed'); continue; }
       seen.add(url);
       const supporting = recipeId === KNOWN_SOURCE_EXCEPTION && out.length === 1;
       out.push({
         url,
-        relevance: supporting ? 'supporting' : 'relevant',
+        role: supporting ? 'supporting' : 'declared',
+        verification: 'structurally_valid',
+        verificationEvidence: null,
         note: supporting ? 'Supports chayote preparation only; not a second exact recipe source.' : null,
       });
     }
@@ -646,6 +667,7 @@ try {
         canonicalName: row.conceptKey ? concepts.get(row.conceptKey)?.canonicalName ?? row.sourceName : row.sourceName,
         resolution: row.resolution,
         reason: row.reason,
+        review: null,
       });
     }
     return [...rows.values()].sort((left, right) => compare(left.canonicalId ?? '', right.canonicalId ?? '') || compare(left.sourceName, right.sourceName));
@@ -654,8 +676,12 @@ try {
   function buildAuditSummary(recipes, reconciliation, schemaRepairs, encodingRepairs, sourceExceptions, rawAudit, sourceQuality) {
     const ingredients = recipes.flatMap((recipe) => recipe.ingredients);
     const nutrition = recipes.map((recipe) => recipe.nutrition.certification);
-    const reconciliationCounts = Object.fromEntries(['existing_canonical_id', 'new_reviewed_canonical_id', 'duplicate_alias', 'ambiguous', 'invalid']
+    const reconciliationCounts = Object.fromEntries(['existing_canonical_id', 'reviewed_new_canonical_id', 'provisional_new_canonical_id', 'duplicate_alias', 'ambiguous', 'invalid']
       .map((resolution) => [resolution, reconciliation.filter((row) => row.resolution === resolution).length]));
+    const exclusions = recipes.flatMap((recipe) => recipe.audit.runtimeExclusions);
+    const exclusionReasons = Object.fromEntries(['unsupported_unit', 'qualitative_quantity', 'process_only', 'estimated_process', 'no_runtime_quantity', 'non_shopping', 'other']
+      .map((reason) => [reason, exclusions.filter((entry) => entry.reason === reason).length]));
+    const projectedIngredientCount = ingredients.length - exclusions.length;
     return {
       recipes: recipes.length,
       steps: recipes.reduce((total, recipe) => total + recipe.steps.length, 0),
@@ -665,11 +691,27 @@ try {
       processOnlyIngredients: ingredients.filter((ingredient) => ingredient.usageRole === 'process_only').length,
       mixedProcessIngredients: ingredients.filter((ingredient) => ingredient.usageRole === 'mixed_process').length,
       unresolvedIngredients: ingredients.filter((ingredient) => ingredient.canonicalIngredientId === null).length,
-      runtimeProjectedIngredients: ingredients.filter((ingredient) => refresh.runtimeIngredientFromSource(ingredient) !== null).length,
-      runtimeExcludedIngredients: ingredients.filter((ingredient) => refresh.runtimeIngredientFromSource(ingredient) === null).length,
+      runtimeProjectedIngredients: projectedIngredientCount,
+      runtimeExcludedIngredients: exclusions.length,
+      runtimeProjectionCoverage: {
+        canonicalIngredientCount: ingredients.length,
+        projectedIngredientCount,
+        excludedIngredientCount: exclusions.length,
+        requiredTransformationCount: exclusions.filter((entry) => entry.requiresReviewedTransformation).length,
+        coverageRatio: Number((projectedIngredientCount / ingredients.length).toFixed(6)),
+        exclusionsByReason: exclusionReasons,
+      },
       ingredientConcepts: new Set(ingredients.map((ingredient) => ingredient.canonicalIngredientId).filter(Boolean)).size,
       sourceExceptions,
-      recipesWithTwoRelevantSources: sourceQuality.filter((entry) => entry.relevantCount >= 2).length,
+      recipesWithTwoDeclaredSources: sourceQuality.filter((entry) => entry.declaredCount >= 2).length,
+      sources: {
+        declaredUrls: sourceQuality.reduce((sum, entry) => sum + entry.declaredCount, 0),
+        structurallyValidUrls: sourceQuality.reduce((sum, entry) => sum + entry.structurallyValidCount, 0),
+        contentVerifiedUrls: sourceQuality.reduce((sum, entry) => sum + entry.contentVerifiedCount, 0),
+        supportingUrls: sourceQuality.reduce((sum, entry) => sum + entry.supportingCount, 0),
+        invalidUrls: sourceQuality.reduce((sum, entry) => sum + entry.invalidCount, 0),
+        exceptions: sourceExceptions,
+      },
       nutritionPublishable: nutrition.filter((status) => status === 'publishable').length,
       nutritionBlocked: nutrition.filter((status) => status === 'blocked').length,
       nutritionNull: nutrition.filter((status) => status === 'null_truthful').length,
@@ -748,23 +790,24 @@ try {
     const blockerLines = [...blockerCounts].sort((left, right) => right[1] - left[1] || compare(left[0], right[0]))
       .map(([code, count]) => `- ${code}: ${count}`).join('\n');
     return `# Recipe Content Refresh V2 Audit\n\n` +
-      `## Status\n\nRECIPE_REFRESH_V2_CANONICAL_SOURCE_READY\n\n` +
-      `The canonical source is deterministic and truthful. Nutrition that cannot be certified is null at runtime rather than fabricated. This status certifies the source/compiler package, not a migration or remote rollout.\n\n` +
+      `## Status\n\nRECIPE_REFRESH_V2_RESEARCH_CANONICALIZED\n\n` +
+      `Canonical source ready: ${manifest.releaseEligibility.canonicalSourceReady}; runtime projection ready: ${manifest.releaseEligibility.runtimeProjectionReady}; production release ready: ${manifest.releaseEligibility.productionReleaseReady}. Blockers: ${manifest.releaseEligibility.blockers.join(', ')}. Final release fingerprint: NOT GENERATED.\n\n` +
       `## ZIP audit\n\n- Input SHA-256: \`${manifest.inputSha256}\`\n- Recipes / unique IDs: ${summary.recipes} / ${summary.recipes}\n- Steps: ${summary.steps} (${summary.rawStepShapes.objects} objects, ${summary.rawStepShapes.strings} strings, ${summary.rawStepShapes.titleDescription} title/description objects)\n- Ingredient lines: ${summary.ingredients}; raw numeric quantity ${summary.rawQuantityShapes.numeric}, quantity_text ${summary.rawQuantityShapes.quantityText}, null-with-unit ${summary.rawQuantityShapes.nullWithUnit}, wholly qualitative ${summary.rawQuantityShapes.whollyQualitative}\n- Root schema variants: ${summary.schemaVariants}\n- Source references: ${summary.sourceReferences} (${summary.uniqueSourceUrls} unique URLs)\n- ZIP ingredient total is 6,766, not the reported production count 6,720. No data was changed to force reported handoff numbers.\n\n` +
-      `## What was wrong\n\n- The ZIP used 15 root shapes and three step representations instead of one release schema.\n- 52 raw ingredient rows lacked numeric \`quantity\`; only evidence-backed quantity_text rows were parsed, leaving ${summary.qualitativeIngredients} truthful canonical qualitative rows.\n- Nutrition counted process media such as 500 g salt beds and deep-frying oil as fully eaten.\n- Nutrition references cannot be ingredient identity authority: the same FDC proxy was reused for materially different foods. Identity now uses exact catalog aliases or conservative reviewed name keys.\n- The V1 import compiler is INSERT-only and remains unchanged; refresh V2 is a separate source/projection path.\n\n` +
-      `## Repairs\n\n- Schema repair operations: ${summary.schemaRepairs}; encoding repairs: ${summary.encodingRepairs}.\n- Process-only / mixed-process rows: ${summary.processOnlyIngredients} / ${summary.mixedProcessIngredients}.\n- Ingredient concepts: ${summary.ingredientConcepts}; reconciliation rows: ${summary.ingredientReconciliationRows}.\n- Reconciliation: existing ${summary.ingredientReconciliation.existing_canonical_id}, new reviewed ${summary.ingredientReconciliation.new_reviewed_canonical_id}, duplicate aliases ${summary.ingredientReconciliation.duplicate_alias}, ambiguous ${summary.ingredientReconciliation.ambiguous}, invalid ${summary.ingredientReconciliation.invalid}.\n- ${summary.recipesWithTwoRelevantSources}/500 recipes have at least two structurally relevant source URLs; the one reviewed exception is explicit and not padded with a fabricated second recipe source.\n- Approved titles applied: \`vn-bun-01\` → “Phở bò tái lăn Hà Nội”; \`imp-7d38862afc164a8d\` → “Mực xào xì dầu kiểu Hàn”.\n\n` +
+      `## What was wrong\n\n- The ZIP used 15 root shapes and three step representations instead of one source schema.\n- 52 raw ingredient rows lacked numeric \`quantity\`; only evidence-backed quantity_text rows were parsed, leaving ${summary.qualitativeIngredients} truthful canonical qualitative rows.\n- Nutrition counted process media such as 500 g salt beds and deep-frying oil as fully eaten.\n- Name-derived enrichment IDs were incorrectly labeled reviewed and structural URL validity was overstated as relevance. Both now retain explicit provisional states.\n- The V1 import compiler is INSERT-only and remains unchanged; refresh V2 is a separate source/projection path.\n\n` +
+      `## Repairs\n\n- Schema repair operations: ${summary.schemaRepairs}; encoding repairs: ${summary.encodingRepairs}.\n- Process-only / mixed-process rows: ${summary.processOnlyIngredients} / ${summary.mixedProcessIngredients}.\n- Ingredient concepts: ${summary.ingredientConcepts}; reconciliation rows: ${summary.ingredientReconciliationRows}.\n- Reconciliation: existing ${summary.ingredientReconciliation.existing_canonical_id}, reviewed new ${summary.ingredientReconciliation.reviewed_new_canonical_id}, provisional new ${summary.ingredientReconciliation.provisional_new_canonical_id}, duplicate aliases ${summary.ingredientReconciliation.duplicate_alias}, ambiguous ${summary.ingredientReconciliation.ambiguous}, invalid ${summary.ingredientReconciliation.invalid}. Aliases of provisional IDs do not confer ingredient authority.\n- ${summary.recipesWithTwoDeclaredSources}/500 recipes have at least two structurally valid declared URLs; URL-specific content verification has not been recorded. The one source exception remains explicit.\n- Approved titles applied: \`vn-bun-01\` → “Phở bò tái lăn Hà Nội”; \`imp-7d38862afc164a8d\` → “Mực xào xì dầu kiểu Hàn”.\n\n` +
       `## Nutrition\n\n- Original numeric profiles: ${summary.nutritionOriginalProfiles}.\n- Recomputed candidates: ${summary.nutritionRecomputedCandidates}.\n- Certified publishable: ${summary.nutritionPublishable}; blocked: ${summary.nutritionBlocked}; truthful null: ${summary.nutritionNull}.\n- Original energy outliers >= 2,000 kcal/serving: ${energyOutliers}; sodium outliers >= 10,000 mg/serving: ${sodiumOutliers}. They are quarantined, not clipped.\n- \`vn-hap-01\` no longer publishes 51,497.78 mg sodium/serving from the salt bed. \`imp-6eaf6ed6d417c52c\` no longer publishes 2,994.53 kcal/serving from 1 L frying oil.\n- Blocker classes:\n${blockerLines}\n\n` +
-      `## Canonical package\n\n- Path: \`data/recipe-refresh/v2\`\n- Recipes: ${manifest.recipeCount}\n- Canonical artifact SHA-256: \`${manifest.canonicalArtifactSha256}\`\n- Runtime fingerprint from the real \`fingerprintRecipes()\`: \`${manifest.expectedRuntimeFingerprint}\`\n- Machine-readable audit: \`artifacts/recipe-refresh-v2\`\n\n` +
-      `## Runtime compatibility\n\nMeasured positive quantities already in StandardUnit project directly. Reviewed gram equivalents may project to grams only when the source derivation is explicit and non-estimated. Qualitative rows, unsupported culinary measures, water/non-shopping rows, and estimated process quantities remain source-only. The current planner/inventory/shopping contracts are not made nullable. Process metadata and full cooking-display fidelity remain an explicit architecture gap until a future runtime contract supports them.\n\n` +
+      `## Canonical package\n\n- Path: \`data/recipe-refresh/v2\`\n- Recipes: ${manifest.recipeCount}\n- Previous source artifact SHA-256: \`fc7eefe6573ee9de1083728db1f34b058954fa60ff478f7c5e41dce9e4570dbe\`.\n- Remediated canonical artifact SHA-256: \`${manifest.canonicalArtifactSha256}\`\n- Provisional runtime projection fingerprint from \`fingerprintRecipes()\`: \`${manifest.provisionalRuntimeProjectionFingerprint}\`\n- Final release fingerprint: NOT GENERATED.\n- Machine-readable audit: \`artifacts/recipe-refresh-v2\`\n\n` +
+      `## Runtime compatibility\n\n${summary.runtimeProjectionCoverage.projectedIngredientCount}/${summary.runtimeProjectionCoverage.canonicalIngredientCount} rows project (${(summary.runtimeProjectionCoverage.coverageRatio * 100).toFixed(2)}%); ${summary.runtimeProjectionCoverage.requiredTransformationCount} excluded rows require reviewed transformation. Exclusions by reason: ${Object.entries(summary.runtimeProjectionCoverage.exclusionsByReason).map(([reason, count]) => `${reason}=${count}`).join(', ')}. Process-only cooking media can legitimately remain outside RuntimeRecipe. Required shopping/consumed rows cannot be silently dropped for a production release. Planner/inventory/shopping contracts remain unchanged.\n\n` +
       `## Source spot-check\n\nA bounded online check covered the known source exception, both approved title corrections, the salt-bed defect, the deep-frying defect, and nine referenced FDC IDs. Nine of ten recipe pages returned HTTP 200; one Điện Máy Xanh request timed out and is not classified as dead. All nine FDC IDs returned HTTP 200 with the expected food descriptions through the official API. Keyless normalized API references returned HTTP 403 as expected, and two legacy human-facing FDC page routes returned 404 even though the underlying API IDs are valid. See \`artifacts/recipe-refresh-v2/source-spot-check.json\`; this mutable-web check is evidence, not part of the canonical content hash.\n\n` +
       `## Exceptions\n\n${exceptions.map((entry) => `- ${entry.code}: ${entry.detail}`).join('\n')}\n\n` +
-      `## Findings\n\n- P0: none.\n- P1: 288 researched nutrition profiles remain blocked from runtime publication because material edible quantity, absorption/yield, or all seven nutrient values are not sufficiently evidenced.\n- P1: ${summary.runtimeExcludedIngredients} source ingredient rows cannot safely enter the current shopping-backed RuntimeRecipe ingredient shape without invention or semantic loss.\n- P2: live URL verification is a separate mutable-web concern; the committed source-quality artifact records structural coverage and the audit report records only bounded spot checks.\n\n` +
-      `## Remote boundary\n\n\`staging_mutation=NO\`  \n\`production_mutation=NO\`  \n\`deploy=NO\`  \n\`T20_enablement=NO\`\n`;
+      `## Findings\n\n- P0: none.\n- P1: production release blocked by ${manifest.releaseEligibility.blockers.join(', ')}.\n- P1: ${summary.runtimeExcludedIngredients} source ingredient rows are excluded from the provisional runtime projection; ${summary.runtimeProjectionCoverage.requiredTransformationCount} require reviewed transformation.\n- P1: 288 researched nutrition profiles remain blocked; ${summary.ingredientReconciliation.provisional_new_canonical_id} generated ingredient concepts lack authority review.\n- P2: declared source URLs have structural validation only; bounded web spot-check evidence is separate.\n\n` +
+      `## Remote boundary\n\n- \`staging_mutation=NO\`\n- \`production_mutation=NO\`\n- \`deploy=NO\`\n- \`0040_created=NO\`\n- \`final_release_manifest_created=NO\`\n- \`T20_enablement=NO\`\n\n` +
+      `## Next\n\nHoplite must reconcile runtime/content loss, promote ingredient authority with explicit review evidence, verify source content and nutrition, then produce a complete final release projection and fingerprint before generating 0040.\n`;
   }
 
   async function check() {
     if (!existsSync(path.join(DATA_ROOT, 'manifest.json'))) throw new Error('canonical refresh manifest is missing');
-    const manifest = JSON.parse(readFileSync(path.join(DATA_ROOT, 'manifest.json'), 'utf8'));
+    const manifest = refresh.RefreshSourceManifestSchema.parse(JSON.parse(readFileSync(path.join(DATA_ROOT, 'manifest.json'), 'utf8')));
     if (manifest.baseReleaseId !== currentManifest.releaseId) throw new Error('base release ID drift');
     if (JSON.stringify(manifest.orderedRecipeIds) !== JSON.stringify(expectedIds)) throw new Error('manifest recipe IDs drift from the current catalog release');
     const recipeFiles = readdirSync(RECIPE_ROOT).filter((name) => name.endsWith('.json')).sort(compare);
@@ -778,7 +821,19 @@ try {
       return recipe;
     });
     if (recipesById.size !== manifest.orderedRecipeIds.length) throw new Error('canonical package contains an unexpected recipe ID');
+    for (const recipe of recipes) {
+      const actual = recipe.ingredients.map(refresh.runtimeExclusionFromSource).filter(Boolean);
+      if (JSON.stringify(actual) !== JSON.stringify(recipe.audit.runtimeExclusions)
+        || JSON.stringify(actual.map((entry) => entry.position)) !== JSON.stringify(recipe.audit.runtimeExcludedIngredientPositions)) {
+        throw new Error(`${recipe.identity.id}: runtime exclusion audit drift`);
+      }
+    }
+    const eligibility = refresh.deriveRefreshReleaseEligibility(recipes);
+    if (JSON.stringify(eligibility) !== JSON.stringify(manifest.releaseEligibility)) throw new Error('release eligibility drift');
     const exceptions = JSON.parse(readFileSync(path.join(DATA_ROOT, 'exceptions.json'), 'utf8'));
+    const reconciliation = JSON.parse(readFileSync(path.join(DATA_ROOT, 'ingredient-reconciliation.json'), 'utf8'));
+    if (!Array.isArray(reconciliation)) throw new Error('ingredient reconciliation must be an array');
+    reconciliation.forEach((row) => refresh.RefreshIngredientReconciliationRowSchema.parse(row));
     refresh.assertReleaseExceptions(exceptions, ALLOWED_EXCEPTION_CODES, {
       code: 'SOURCE_RELEVANCE_EXCEPTION',
       recipeId: KNOWN_SOURCE_EXCEPTION,
@@ -800,19 +855,24 @@ try {
     if (rootHash !== manifest.canonicalArtifactSha256) throw new Error('canonical artifact root hash drift');
     const compiled = await refresh.compileRefreshCatalog(recipes);
     if (compiled.recipes.some((recipe) => recipe.ingredients.length === 0)) throw new Error('runtime projection contains a recipe without safe structured ingredients');
-    if (compiled.fingerprint !== manifest.expectedRuntimeFingerprint) throw new Error('runtime fingerprint drift');
+    if (compiled.provisionalRuntimeProjectionFingerprint !== manifest.provisionalRuntimeProjectionFingerprint) throw new Error('provisional runtime fingerprint drift');
     const committedProjection = JSON.parse(readFileSync(path.join(ARTIFACT_ROOT, 'runtime-projection.json'), 'utf8'));
-    if (committedProjection.expectedRuntimeFingerprint !== compiled.fingerprint || JSON.stringify(committedProjection.recipes) !== JSON.stringify(compiled.recipes)) {
+    if (committedProjection.projectionStatus !== 'provisional' || committedProjection.productionReleaseReady !== false
+      || committedProjection.finalRuntimeFingerprint !== null
+      || committedProjection.provisionalRuntimeProjectionFingerprint !== compiled.provisionalRuntimeProjectionFingerprint
+      || JSON.stringify(committedProjection.recipes) !== JSON.stringify(compiled.recipes)) {
       throw new Error('runtime projection artifact drift');
     }
     const committedAudit = JSON.parse(readFileSync(path.join(ARTIFACT_ROOT, 'audit-summary.json'), 'utf8'));
     if (JSON.stringify(committedAudit) !== JSON.stringify(manifest.auditSummary)) throw new Error('audit summary artifact drift');
     const contentArtifact = JSON.parse(readFileSync(path.join(ARTIFACT_ROOT, 'content-artifact.json'), 'utf8'));
-    if (contentArtifact.canonicalArtifactSha256 !== rootHash || contentArtifact.expectedRuntimeFingerprint !== compiled.fingerprint
+    if (contentArtifact.canonicalArtifactSha256 !== rootHash || contentArtifact.provisionalRuntimeProjectionFingerprint !== compiled.provisionalRuntimeProjectionFingerprint
+      || JSON.stringify(contentArtifact.releaseEligibility) !== JSON.stringify(eligibility)
       || contentArtifact.inputSha256 !== manifest.inputSha256 || contentArtifact.recipeCount !== recipes.length) {
       throw new Error('content artifact drift');
     }
-    console.log(`recipe-refresh-check=ok recipes=${recipes.length} canonicalArtifactSha256=${rootHash} runtimeFingerprint=${compiled.fingerprint}`);
+    console.log(`recipe-refresh-check=ok recipes=${recipes.length} canonicalArtifactSha256=${rootHash} provisionalRuntimeProjectionFingerprint=${compiled.provisionalRuntimeProjectionFingerprint}`);
+    return { manifest, recipes, provisionalRuntimeProjectionFingerprint: compiled.provisionalRuntimeProjectionFingerprint };
   }
 } finally {
   await vite.close();

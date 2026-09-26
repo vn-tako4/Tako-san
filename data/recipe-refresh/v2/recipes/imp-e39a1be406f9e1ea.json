@@ -25,12 +25,16 @@
     "sources": [
       {
         "url": "https://www.maangchi.com/recipe/ttukbaegi-gyeranjjim",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       },
       {
         "url": "https://kimchimari.com/korean-steamed-egg-hot-pot-gyeran-jjim/",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       }
     ],
@@ -43,6 +47,7 @@
       "canonicalIngredientId": "CHICKEN_EGG",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -79,7 +84,8 @@
       "sourceName": "Nước",
       "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
       "reconciliation": "duplicate_alias",
-      "reconciliationReason": "reviewed alias of Nước lọc via the same evidence key",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -117,6 +123,7 @@
       "canonicalIngredientId": "SCALLION",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -154,6 +161,7 @@
       "canonicalIngredientId": "FISH_SAUCE",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -188,6 +196,7 @@
       "canonicalIngredientId": "COOKING_OIL",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -223,8 +232,9 @@
       "position": 5,
       "sourceName": "Đường",
       "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -257,8 +267,9 @@
       "position": 6,
       "sourceName": "Hạt tiêu đen",
       "canonicalIngredientId": "ING_ENR_7C40D8BAB0E1B972",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -291,8 +302,9 @@
       "position": 7,
       "sourceName": "Ớt bột Hàn (gochugaru)",
       "canonicalIngredientId": "ING_ENR_397060224F2CC77D",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "garnish",
       "nutritionRole": "excluded_optional",
       "optional": true,
@@ -445,6 +457,33 @@
       5,
       6,
       7
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
     ]
   }
 }

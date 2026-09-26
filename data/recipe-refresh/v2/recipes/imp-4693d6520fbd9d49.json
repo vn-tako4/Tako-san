@@ -25,12 +25,16 @@
     "sources": [
       {
         "url": "https://www.chinasichuanfood.com/beef-and-garlic-stir-fry/",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       },
       {
         "url": "https://lynnandruss.com/2022/08/03/spicy-chinese-beef-skewers/",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       }
     ],
@@ -45,6 +49,7 @@
       "canonicalIngredientId": "BEEF_SIRLOIN",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -82,6 +87,7 @@
       "canonicalIngredientId": "GARLIC",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -119,6 +125,7 @@
       "canonicalIngredientId": "SCALLION",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -156,6 +163,7 @@
       "canonicalIngredientId": "SOY_SAUCE",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -190,6 +198,7 @@
       "canonicalIngredientId": "COOKING_OIL",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -222,8 +231,9 @@
       "position": 5,
       "sourceName": "Muối",
       "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -256,8 +266,9 @@
       "position": 6,
       "sourceName": "Tiêu đen xay",
       "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -416,6 +427,28 @@
       4,
       5,
       6
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
     ]
   }
 }

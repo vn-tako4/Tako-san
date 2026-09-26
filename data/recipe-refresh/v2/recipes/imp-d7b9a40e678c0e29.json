@@ -25,12 +25,16 @@
     "sources": [
       {
         "url": "https://blog.naver.com/gayagum12/224194252217",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       },
       {
         "url": "http://www.food.com/recipe/salt-grilled-chicken-thighs-461206",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       }
     ],
@@ -42,7 +46,8 @@
       "sourceName": "Đùi gà rút xương, còn da",
       "canonicalIngredientId": "ING_ENR_FEF9F1F97CA70AB5",
       "reconciliation": "duplicate_alias",
-      "reconciliationReason": "reviewed alias of Đùi gà rút xương via the same evidence key",
+      "reconciliationReason": "provisional alias of Đùi gà rút xương via the same name key",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -78,8 +83,9 @@
       "position": 1,
       "sourceName": "Muối hạt (muối ăn)",
       "canonicalIngredientId": "ING_ENR_A447FF4192C0B72C",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -112,8 +118,9 @@
       "position": 2,
       "sourceName": "Tiêu đen xay",
       "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -151,6 +158,7 @@
       "canonicalIngredientId": "SCALLION",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -188,6 +196,7 @@
       "canonicalIngredientId": "GARLIC",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -225,6 +234,7 @@
       "canonicalIngredientId": "LIME",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "optional",
       "nutritionRole": "excluded_optional",
       "optional": true,
@@ -390,6 +400,13 @@
     "encodingRepairs": [],
     "runtimeExcludedIngredientPositions": [
       1
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
     ]
   }
 }

@@ -85,6 +85,10 @@ export function ingredientConceptKey(value: unknown): string {
   return CONCEPT_ALIASES.get(key) ?? key;
 }
 
+export function generatedIngredientResolution(isAlias: boolean): 'duplicate_alias' | 'provisional_new_canonical_id' {
+  return isAlias ? 'duplicate_alias' : 'provisional_new_canonical_id';
+}
+
 export function nutritionFromRaw(value: unknown): RefreshNutrients | null {
   if (value === null || typeof value !== 'object' || Array.isArray(value)) return null;
   const row = value as Record<string, unknown>;

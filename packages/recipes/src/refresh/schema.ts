@@ -41,8 +41,9 @@ export const RefreshIngredientSchema = z.object({
   position: z.number().int().nonnegative(),
   sourceName: z.string().trim().min(1),
   canonicalIngredientId: CanonicalIngredientIdSchema.nullable(),
-  reconciliation: z.enum(['existing_canonical_id', 'new_reviewed_canonical_id', 'duplicate_alias', 'ambiguous', 'invalid']),
+  reconciliation: z.enum(['existing_canonical_id', 'reviewed_new_canonical_id', 'provisional_new_canonical_id', 'duplicate_alias', 'ambiguous', 'invalid']),
   reconciliationReason: z.string().trim().min(1),
+  review: z.object({ basis: z.string().trim().min(1), evidenceReference: z.string().trim().min(1) }).strict().nullable(),
   usageRole: z.enum(['consumed', 'process_only', 'mixed_process', 'optional', 'garnish', 'qualitative']),
   nutritionRole: z.enum(['consumed', 'excluded_process', 'unresolved_absorption', 'excluded_optional']),
   optional: z.boolean(),
@@ -53,7 +54,15 @@ export const RefreshIngredientSchema = z.object({
   sourceNutritionPer100g: RefreshNutrientsSchema.nullable(),
   sourceNutritionReference: z.string().nullable(),
   sourceNutritionNote: z.string().nullable(),
-}).strict();
+}).strict().superRefine((ingredient, ctx) => {
+  if ((ingredient.reconciliation === 'reviewed_new_canonical_id') !== (ingredient.review !== null)) {
+    ctx.addIssue({ code: z.ZodIssueCode.custom, message: 'Reviewed new ingredient ID requires explicit review evidence; other resolutions must not claim it' });
+  }
+  if (['reviewed_new_canonical_id', 'provisional_new_canonical_id'].includes(ingredient.reconciliation)
+    && !ingredient.canonicalIngredientId?.startsWith('ING_ENR_')) {
+    ctx.addIssue({ code: z.ZodIssueCode.custom, message: 'New enrichment identity requires an ING_ENR_ ID' });
+  }
+});
 
 export const RefreshStepSchema = z.object({
   stepNumber: z.number().int().positive(),
@@ -110,9 +119,15 @@ export const RefreshRecipeSchema = z.object({
     rawSchemaSignature: z.string().min(1),
     sources: z.array(z.object({
       url: z.string().url(),
-      relevance: z.enum(['relevant', 'supporting', 'exception']),
+      role: z.enum(['declared', 'supporting', 'exception']),
+      verification: z.enum(['structurally_valid', 'content_verified']),
+      verificationEvidence: z.string().trim().min(1).nullable(),
       note: z.string().nullable(),
-    }).strict()),
+    }).strict().superRefine((source, ctx) => {
+      if ((source.verification === 'content_verified') !== (source.verificationEvidence !== null)) {
+        ctx.addIssue({ code: z.ZodIssueCode.custom, message: 'Content verification requires URL-specific evidence' });
+      }
+    })),
     notes: z.array(z.string()),
   }).strict(),
   ingredients: z.array(RefreshIngredientSchema),
@@ -127,6 +142,11 @@ export const RefreshRecipeSchema = z.object({
     schemaRepairs: z.array(z.string()),
     encodingRepairs: z.array(z.string()),
     runtimeExcludedIngredientPositions: z.array(z.number().int().nonnegative()),
+    runtimeExclusions: z.array(z.object({
+      position: z.number().int().nonnegative(),
+      reason: z.enum(['unsupported_unit', 'qualitative_quantity', 'process_only', 'estimated_process', 'no_runtime_quantity', 'non_shopping', 'other']),
+      requiresReviewedTransformation: z.boolean(),
+    }).strict()),
   }).strict(),
 }).strict();
 

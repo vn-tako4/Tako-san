@@ -25,12 +25,16 @@
     "sources": [
       {
         "url": "https://redhousespice.com/spring-onion-oil-noodles/",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       },
       {
         "url": "https://getrecipecart.com/recipe/original-shanghai-scallion-oil-noodle-cong-you-ban-mian-/60576bf56b9dfc3f2f9679be",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       }
     ],
@@ -43,8 +47,9 @@
       "position": 0,
       "sourceName": "Mì sợi khô",
       "canonicalIngredientId": "ING_ENR_AA129E7B8F47998F",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -82,6 +87,7 @@
       "canonicalIngredientId": "SCALLION",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -119,6 +125,7 @@
       "canonicalIngredientId": "COOKING_OIL",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -151,8 +158,9 @@
       "position": 3,
       "sourceName": "Xì dầu nhạt",
       "canonicalIngredientId": "ING_ENR_19A3C60192F07ED5",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -185,8 +193,9 @@
       "position": 4,
       "sourceName": "Xì dầu đặc",
       "canonicalIngredientId": "ING_ENR_CA929D4F77522C8E",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -220,7 +229,8 @@
       "sourceName": "Đường cát",
       "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
       "reconciliation": "duplicate_alias",
-      "reconciliationReason": "reviewed alias of Đường via the same evidence key",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -253,8 +263,9 @@
       "position": 6,
       "sourceName": "Muối",
       "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "process_only",
       "nutritionRole": "unresolved_absorption",
       "optional": false,
@@ -407,6 +418,33 @@
       4,
       5,
       6
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      }
     ]
   }
 }

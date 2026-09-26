@@ -25,12 +25,16 @@
     "sources": [
       {
         "url": "https://thewoksoflife.com/wprm_print/salt-and-pepper-shrimp/",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       },
       {
         "url": "https://www.chinasichuanfood.com/chinese-salt-and-pepper-shrimp/?replytocom=967627",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       }
     ],
@@ -41,8 +45,9 @@
       "position": 0,
       "sourceName": "Tôm tươi lớn (còn vỏ, lấy chỉ lưng)",
       "canonicalIngredientId": "ING_ENR_0521A176A0B891DF",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -78,8 +83,9 @@
       "position": 1,
       "sourceName": "Hạt tiêu Tứ Xuyên (nguyên hạt)",
       "canonicalIngredientId": "ING_ENR_61F99A82F8245317",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -104,8 +110,9 @@
       "position": 2,
       "sourceName": "Muối biển",
       "canonicalIngredientId": "ING_ENR_881CFF1F982AA4BB",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -142,7 +149,8 @@
       "sourceName": "Bột bắp (để áo tôm)",
       "canonicalIngredientId": "ING_ENR_D2EAF583347FED22",
       "reconciliation": "duplicate_alias",
-      "reconciliationReason": "reviewed alias of Bột bắp via the same evidence key",
+      "reconciliationReason": "provisional alias of Bột bắp via the same name key",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -180,6 +188,7 @@
       "canonicalIngredientId": "COOKING_OIL",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "process_only",
       "nutritionRole": "unresolved_absorption",
       "optional": false,
@@ -217,6 +226,7 @@
       "canonicalIngredientId": "GARLIC",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -254,6 +264,7 @@
       "canonicalIngredientId": "CHILI",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -291,6 +302,7 @@
       "canonicalIngredientId": "SCALLION",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -328,6 +340,7 @@
       "canonicalIngredientId": "GINGER",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "process_only",
       "nutritionRole": "unresolved_absorption",
       "optional": false,
@@ -508,6 +521,18 @@
     "runtimeExcludedIngredientPositions": [
       1,
       4
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      }
     ]
   }
 }

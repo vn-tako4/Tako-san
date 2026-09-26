@@ -25,12 +25,16 @@
     "sources": [
       {
         "url": "https://thaicaliente.com/kai-jeow-thai-omelet/",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       },
       {
         "url": "https://www.ndinsider.com/story/entertainment/dining/2021/06/16/immigrant-dad-thai-omelet-fried-egg-recipe-kai-jeow/7695421002/",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       }
     ],
@@ -43,6 +47,7 @@
       "canonicalIngredientId": "CHICKEN_EGG",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -80,6 +85,7 @@
       "canonicalIngredientId": "FISH_SAUCE",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -114,6 +120,7 @@
       "canonicalIngredientId": "SCALLION",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -151,6 +158,7 @@
       "canonicalIngredientId": "CHILI",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "optional",
       "nutritionRole": "excluded_optional",
       "optional": true,
@@ -186,8 +194,9 @@
       "position": 4,
       "sourceName": "Dầu ăn (dầu canola hoặc dầu thực vật chịu nhiệt cao)",
       "canonicalIngredientId": "ING_ENR_003BD33DCF8D8ACC",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "process_only",
       "nutritionRole": "unresolved_absorption",
       "optional": false,
@@ -225,6 +234,7 @@
       "canonicalIngredientId": "LIME",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "optional",
       "nutritionRole": "excluded_optional",
       "optional": true,
@@ -257,8 +267,9 @@
       "position": 6,
       "sourceName": "Lá ngò rí (trang trí)",
       "canonicalIngredientId": "ING_ENR_83A4E3527D3FE9D2",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "garnish",
       "nutritionRole": "excluded_optional",
       "optional": true,
@@ -413,6 +424,23 @@
       1,
       4,
       5
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
     ]
   }
 }

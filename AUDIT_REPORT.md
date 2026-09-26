@@ -2,9 +2,9 @@
 
 ## Status
 
-RECIPE_REFRESH_V2_CANONICAL_SOURCE_READY
+RECIPE_REFRESH_V2_RESEARCH_CANONICALIZED
 
-The canonical source is deterministic and truthful. Nutrition that cannot be certified is null at runtime rather than fabricated. This status certifies the source/compiler package, not a migration or remote rollout.
+Canonical source ready: true; runtime projection ready: false; production release ready: false. Blockers: RUNTIME_PROJECTION_LOSS, INGREDIENT_RECONCILIATION_INCOMPLETE, SOURCE_CONTENT_VERIFICATION_INCOMPLETE, NUTRITION_EVIDENCE_INCOMPLETE. Final release fingerprint: NOT GENERATED.
 
 ## ZIP audit
 
@@ -18,10 +18,10 @@ The canonical source is deterministic and truthful. Nutrition that cannot be cer
 
 ## What was wrong
 
-- The ZIP used 15 root shapes and three step representations instead of one release schema.
+- The ZIP used 15 root shapes and three step representations instead of one source schema.
 - 52 raw ingredient rows lacked numeric `quantity`; only evidence-backed quantity_text rows were parsed, leaving 23 truthful canonical qualitative rows.
 - Nutrition counted process media such as 500 g salt beds and deep-frying oil as fully eaten.
-- Nutrition references cannot be ingredient identity authority: the same FDC proxy was reused for materially different foods. Identity now uses exact catalog aliases or conservative reviewed name keys.
+- Name-derived enrichment IDs were incorrectly labeled reviewed and structural URL validity was overstated as relevance. Both now retain explicit provisional states.
 - The V1 import compiler is INSERT-only and remains unchanged; refresh V2 is a separate source/projection path.
 
 ## Repairs
@@ -29,8 +29,8 @@ The canonical source is deterministic and truthful. Nutrition that cannot be cer
 - Schema repair operations: 64; encoding repairs: 0.
 - Process-only / mixed-process rows: 166 / 7.
 - Ingredient concepts: 1438; reconciliation rows: 2515.
-- Reconciliation: existing 505, new reviewed 1642, duplicate aliases 368, ambiguous 0, invalid 0.
-- 499/500 recipes have at least two structurally relevant source URLs; the one reviewed exception is explicit and not padded with a fabricated second recipe source.
+- Reconciliation: existing 505, reviewed new 0, provisional new 1642, duplicate aliases 368, ambiguous 0, invalid 0. Aliases of provisional IDs do not confer ingredient authority.
+- 499/500 recipes have at least two structurally valid declared URLs; URL-specific content verification has not been recorded. The one source exception remains explicit.
 - Approved titles applied: `vn-bun-01` → “Phở bò tái lăn Hà Nội”; `imp-7d38862afc164a8d` → “Mực xào xì dầu kiểu Hàn”.
 
 ## Nutrition
@@ -52,13 +52,15 @@ The canonical source is deterministic and truthful. Nutrition that cannot be cer
 
 - Path: `data/recipe-refresh/v2`
 - Recipes: 500
-- Canonical artifact SHA-256: `fc7eefe6573ee9de1083728db1f34b058954fa60ff478f7c5e41dce9e4570dbe`
-- Runtime fingerprint from the real `fingerprintRecipes()`: `6d0e3eb85696bb7c31bc54ac62783bc94432aaf008028eca79b17041f3eaed87`
+- Previous source artifact SHA-256: `fc7eefe6573ee9de1083728db1f34b058954fa60ff478f7c5e41dce9e4570dbe`.
+- Remediated canonical artifact SHA-256: `da87da20475fa8d7ec92c716e899ee572339573258ae6d9cc7f3f8f554f2d695`
+- Provisional runtime projection fingerprint from `fingerprintRecipes()`: `6d0e3eb85696bb7c31bc54ac62783bc94432aaf008028eca79b17041f3eaed87`
+- Final release fingerprint: NOT GENERATED.
 - Machine-readable audit: `artifacts/recipe-refresh-v2`
 
 ## Runtime compatibility
 
-Measured positive quantities already in StandardUnit project directly. Reviewed gram equivalents may project to grams only when the source derivation is explicit and non-estimated. Qualitative rows, unsupported culinary measures, water/non-shopping rows, and estimated process quantities remain source-only. The current planner/inventory/shopping contracts are not made nullable. Process metadata and full cooking-display fidelity remain an explicit architecture gap until a future runtime contract supports them.
+3770/6766 rows project (55.72%); 2860 excluded rows require reviewed transformation. Exclusions by reason: unsupported_unit=2243, qualitative_quantity=18, process_only=4, estimated_process=139, no_runtime_quantity=4, non_shopping=588, other=0. Process-only cooking media can legitimately remain outside RuntimeRecipe. Required shopping/consumed rows cannot be silently dropped for a production release. Planner/inventory/shopping contracts remain unchanged.
 
 ## Source spot-check
 
@@ -73,13 +75,20 @@ A bounded online check covered the known source exception, both approved title c
 ## Findings
 
 - P0: none.
-- P1: 288 researched nutrition profiles remain blocked from runtime publication because material edible quantity, absorption/yield, or all seven nutrient values are not sufficiently evidenced.
-- P1: 2996 source ingredient rows cannot safely enter the current shopping-backed RuntimeRecipe ingredient shape without invention or semantic loss.
-- P2: live URL verification is a separate mutable-web concern; the committed source-quality artifact records structural coverage and the audit report records only bounded spot checks.
+- P1: production release blocked by RUNTIME_PROJECTION_LOSS, INGREDIENT_RECONCILIATION_INCOMPLETE, SOURCE_CONTENT_VERIFICATION_INCOMPLETE, NUTRITION_EVIDENCE_INCOMPLETE.
+- P1: 2996 source ingredient rows are excluded from the provisional runtime projection; 2860 require reviewed transformation.
+- P1: 288 researched nutrition profiles remain blocked; 1642 generated ingredient concepts lack authority review.
+- P2: declared source URLs have structural validation only; bounded web spot-check evidence is separate.
 
 ## Remote boundary
 
-`staging_mutation=NO`  
-`production_mutation=NO`  
-`deploy=NO`  
-`T20_enablement=NO`
+- `staging_mutation=NO`
+- `production_mutation=NO`
+- `deploy=NO`
+- `0040_created=NO`
+- `final_release_manifest_created=NO`
+- `T20_enablement=NO`
+
+## Next
+
+Hoplite must reconcile runtime/content loss, promote ingredient authority with explicit review evidence, verify source content and nutrition, then produce a complete final release projection and fingerprint before generating 0040.

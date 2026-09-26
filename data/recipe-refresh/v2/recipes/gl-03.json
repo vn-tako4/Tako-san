@@ -24,12 +24,16 @@
     "sources": [
       {
         "url": "https://thewoksoflife.com/wprm_print/chinese-tomato-egg-stir-fry/",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       },
       {
         "url": "https://tasteasianfood.com/tomato-eggs/",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       }
     ],
@@ -42,6 +46,7 @@
       "canonicalIngredientId": "TOMATO",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -79,6 +84,7 @@
       "canonicalIngredientId": "CHICKEN_EGG",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -116,6 +122,7 @@
       "canonicalIngredientId": "SCALLION",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -151,8 +158,9 @@
       "position": 3,
       "sourceName": "Dầu đậu nành",
       "canonicalIngredientId": "ING_ENR_B7BEECA31176BC00",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -185,8 +193,9 @@
       "position": 4,
       "sourceName": "Muối",
       "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -219,8 +228,9 @@
       "position": 5,
       "sourceName": "Tiêu trắng xay",
       "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -255,6 +265,7 @@
       "canonicalIngredientId": "COOKING_OIL",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -287,8 +298,9 @@
       "position": 7,
       "sourceName": "Rượu Thiệu Hưng (Shaoxing)",
       "canonicalIngredientId": "ING_ENR_790F7173F74DF67C",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -322,7 +334,8 @@
       "sourceName": "Đường cát",
       "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
       "reconciliation": "duplicate_alias",
-      "reconciliationReason": "reviewed alias of Đường via the same evidence key",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -356,7 +369,8 @@
       "sourceName": "Nước",
       "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
       "reconciliation": "duplicate_alias",
-      "reconciliationReason": "reviewed alias of Nước lọc via the same evidence key",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -544,6 +558,43 @@
       7,
       8,
       9
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
     ]
   }
 }

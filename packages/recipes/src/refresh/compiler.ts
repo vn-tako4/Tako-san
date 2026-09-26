@@ -2,6 +2,13 @@ import { CanonicalIngredientIdSchema } from '../../../domain/src/foundation';
 import { fingerprintRecipes } from '../catalog-fingerprint';
 import { RuntimeRecipeSchema, type RuntimeRecipe } from '../runtime-recipe';
 import type { RefreshIngredient, RefreshNutrients, RefreshRecipe } from './schema';
+import { runtimeQuantity } from './normalize';
+
+export type RefreshRuntimeExclusion = {
+  position: number;
+  reason: 'unsupported_unit' | 'qualitative_quantity' | 'process_only' | 'estimated_process' | 'no_runtime_quantity' | 'non_shopping' | 'other';
+  requiresReviewedTransformation: boolean;
+};
 
 const emptyNutrients = (): RefreshNutrients => ({
   energyKcal: null,
@@ -26,6 +33,24 @@ export function runtimeIngredientFromSource(ingredient: RefreshIngredient): Runt
     requiredQuantity: runtime.amount,
     unit: runtime.unit,
     ...(ingredient.optional ? { isOptional: true } : {}),
+  };
+}
+
+export function runtimeExclusionFromSource(ingredient: RefreshIngredient): RefreshRuntimeExclusion | null {
+  if (runtimeIngredientFromSource(ingredient) !== null) return null;
+  let reason: RefreshRuntimeExclusion['reason'] = 'other';
+  if ((ingredient.usageRole === 'process_only' || ingredient.usageRole === 'mixed_process')
+    && ingredient.quantity.kind === 'measured' && ingredient.quantity.evidence === 'estimated') reason = 'estimated_process';
+  else if (ingredient.usageRole === 'process_only') reason = 'process_only';
+  else if (!ingredient.includeInShopping) reason = 'non_shopping';
+  else if (ingredient.quantity.kind === 'qualitative') reason = 'qualitative_quantity';
+  else if (ingredient.quantity.runtime === null) reason = runtimeQuantity(ingredient.quantity.amount, ingredient.quantity.unit) === null
+    ? 'unsupported_unit' : 'no_runtime_quantity';
+  return {
+    position: ingredient.position,
+    reason,
+    requiresReviewedTransformation: ingredient.usageRole !== 'process_only'
+      && (ingredient.includeInShopping || ['consumed', 'qualitative', 'mixed_process'].includes(ingredient.usageRole)),
   };
 }
 
@@ -106,7 +131,7 @@ export function assertReleaseExceptions(
 
 export async function compileRefreshCatalog(recipes: readonly RefreshRecipe[]): Promise<{
   recipes: RuntimeRecipe[];
-  fingerprint: string;
+  provisionalRuntimeProjectionFingerprint: string;
 }> {
   assertRefreshCatalog(recipes);
   const runtime = recipes.map((recipe) => {
@@ -114,7 +139,7 @@ export async function compileRefreshCatalog(recipes: readonly RefreshRecipe[]): 
     assertNutritionAgreement(recipe, compiled);
     return compiled;
   });
-  return { recipes: runtime, fingerprint: await fingerprintRecipes(runtime) };
+  return { recipes: runtime, provisionalRuntimeProjectionFingerprint: await fingerprintRecipes(runtime) };
 }
 
 export function nutrientsOrEmpty(value: RefreshNutrients | null | undefined): RefreshNutrients {

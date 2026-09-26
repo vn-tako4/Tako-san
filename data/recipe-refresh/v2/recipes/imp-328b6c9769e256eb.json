@@ -25,12 +25,16 @@
     "sources": [
       {
         "url": "https://www.maangchi.com/recipe/saeu-sogeum-gui",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       },
       {
         "url": "https://www.10000recipe.com/en/7002681/How_to_grill_shrimp_with_salt_and_how_to_cook_time_frying_pan__P",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       }
     ],
@@ -41,8 +45,9 @@
       "position": 0,
       "sourceName": "Tôm tươi (tôm sú/tôm thẻ lớn, còn vỏ)",
       "canonicalIngredientId": "ING_ENR_0C17978DA34A14F0",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -78,8 +83,9 @@
       "position": 1,
       "sourceName": "Muối biển hạt to (coarse sea salt)",
       "canonicalIngredientId": "ING_ENR_346986B34E3C2CA7",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -115,8 +121,9 @@
       "position": 2,
       "sourceName": "Tương ớt Hàn (gochujang)",
       "canonicalIngredientId": "ING_ENR_7B2DCEA4C5B68A51",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -143,6 +150,7 @@
       "canonicalIngredientId": "LIME",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -175,8 +183,9 @@
       "position": 4,
       "sourceName": "Mật ong",
       "canonicalIngredientId": "ING_ENR_32FA0711241370F1",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -211,6 +220,7 @@
       "canonicalIngredientId": "GARLIC",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -372,6 +382,23 @@
       2,
       3,
       4
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
     ]
   }
 }

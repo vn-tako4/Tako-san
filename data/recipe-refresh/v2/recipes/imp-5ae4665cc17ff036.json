@@ -25,12 +25,16 @@
     "sources": [
       {
         "url": "https://www.giallozafferano.com.br/images/PDF/GZRic-PT-Penne-all-Arrabbiata.pdf",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       },
       {
         "url": "https://anitalianinmykitchen.com/penne-all-arrabbiata/",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       }
     ],
@@ -43,8 +47,9 @@
       "position": 0,
       "sourceName": "Mì penne rigate",
       "canonicalIngredientId": "ING_ENR_A79100F7A665F1F7",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -80,8 +85,9 @@
       "position": 1,
       "sourceName": "Cà chua pelati đóng hộp (cà chua bóc vỏ)",
       "canonicalIngredientId": "ING_ENR_3C0A6A2E18349B4D",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -119,6 +125,7 @@
       "canonicalIngredientId": "GARLIC",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "process_only",
       "nutritionRole": "unresolved_absorption",
       "optional": false,
@@ -154,8 +161,9 @@
       "position": 3,
       "sourceName": "Ớt tươi (peperoncino)",
       "canonicalIngredientId": "ING_ENR_3CD911C250BF45A1",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -191,8 +199,9 @@
       "position": 4,
       "sourceName": "Ngò tây lá dẹt (parsley)",
       "canonicalIngredientId": "ING_ENR_CC12E8436E065128",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -225,8 +234,9 @@
       "position": 5,
       "sourceName": "Dầu ô liu nguyên chất",
       "canonicalIngredientId": "ING_ENR_3B7B05F341BDBC33",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -260,7 +270,8 @@
       "sourceName": "Muối (cho nước luộc mì)",
       "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
       "reconciliation": "duplicate_alias",
-      "reconciliationReason": "reviewed alias of Muối via the same evidence key",
+      "reconciliationReason": "provisional alias of Muối via the same name key",
+      "review": null,
       "usageRole": "process_only",
       "nutritionRole": "unresolved_absorption",
       "optional": false,
@@ -297,7 +308,8 @@
       "sourceName": "Muối tinh (nêm sốt)",
       "canonicalIngredientId": "ING_ENR_2E70A9B68938F282",
       "reconciliation": "duplicate_alias",
-      "reconciliationReason": "reviewed alias of Muối tinh via the same evidence key",
+      "reconciliationReason": "provisional alias of Muối tinh via the same name key",
+      "review": null,
       "usageRole": "qualitative",
       "nutritionRole": "consumed",
       "optional": false,
@@ -328,8 +340,9 @@
       "position": 8,
       "sourceName": "Nụ bạch hoa (capers)",
       "canonicalIngredientId": "ING_ENR_E253C0C06096BAA9",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "optional",
       "nutritionRole": "excluded_optional",
       "optional": true,
@@ -363,7 +376,8 @@
       "sourceName": "Phô mai Pecorino Romano bào (rắc khi dọn)",
       "canonicalIngredientId": "ING_ENR_933AA73D38ECEFCD",
       "reconciliation": "duplicate_alias",
-      "reconciliationReason": "reviewed alias of Phô mai Pecorino Romano bào mịn via the same evidence key",
+      "reconciliationReason": "provisional alias of Phô mai Pecorino Romano bào mịn via the same name key",
+      "review": null,
       "usageRole": "garnish",
       "nutritionRole": "excluded_optional",
       "optional": true,
@@ -530,6 +544,43 @@
       7,
       8,
       9
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 7,
+        "reason": "qualitative_quantity",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "qualitative_quantity",
+        "requiresReviewedTransformation": true
+      }
     ]
   }
 }

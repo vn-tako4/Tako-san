@@ -25,12 +25,16 @@
     "sources": [
       {
         "url": "https://www.youtube.com/shorts/Vqwz_zUebyg",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       },
       {
         "url": "https://www.carlottaeilbassotto.com/fusillotti-con-pesto-di-spinaci/",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       }
     ],
@@ -41,8 +45,9 @@
       "position": 0,
       "sourceName": "Mì spaghetti khô",
       "canonicalIngredientId": "ING_ENR_6D3475084F90DC20",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -79,7 +84,8 @@
       "sourceName": "Rau bina (cải bó xôi) tươi",
       "canonicalIngredientId": "ING_ENR_2EA75A0C4BDDC486",
       "reconciliation": "duplicate_alias",
-      "reconciliationReason": "reviewed alias of Rau bina (cải bó xôi) via the same evidence key",
+      "reconciliationReason": "provisional alias of Rau bina (cải bó xôi) via the same name key",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -115,8 +121,9 @@
       "position": 2,
       "sourceName": "Phô mai ricotta",
       "canonicalIngredientId": "ING_ENR_AA79074341C55FCB",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -153,7 +160,8 @@
       "sourceName": "Phô mai Parmigiano Reggiano bào",
       "canonicalIngredientId": "ING_ENR_C9AE2624E7F86759",
       "reconciliation": "duplicate_alias",
-      "reconciliationReason": "reviewed alias of Phô mai Parmigiano Reggiano bào mịn via the same evidence key",
+      "reconciliationReason": "provisional alias of Phô mai Parmigiano Reggiano bào mịn via the same name key",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -189,8 +197,9 @@
       "position": 4,
       "sourceName": "Hạnh nhân",
       "canonicalIngredientId": "ING_ENR_078000436A036C83",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -228,6 +237,7 @@
       "canonicalIngredientId": "GARLIC",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -263,8 +273,9 @@
       "position": 6,
       "sourceName": "Dầu ô liu nguyên chất",
       "canonicalIngredientId": "ING_ENR_3B7B05F341BDBC33",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -300,8 +311,9 @@
       "position": 7,
       "sourceName": "Muối",
       "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "process_only",
       "nutritionRole": "unresolved_absorption",
       "optional": false,
@@ -324,8 +336,9 @@
       "position": 8,
       "sourceName": "Tiêu đen xay",
       "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "qualitative",
       "nutritionRole": "consumed",
       "optional": false,
@@ -472,6 +485,18 @@
     "runtimeExcludedIngredientPositions": [
       7,
       8
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 7,
+        "reason": "process_only",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 8,
+        "reason": "qualitative_quantity",
+        "requiresReviewedTransformation": true
+      }
     ]
   }
 }

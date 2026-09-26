@@ -25,12 +25,16 @@
     "sources": [
       {
         "url": "https://www.ciociariaecucina.it/diario-di-cucina/spaghetti-aglio-olio-e-peperoncino-con-polpa-di-granchio-e-bottarga-di-muggine/",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       },
       {
         "url": "https://cucinaconmegraziellaeraffaele.it/spaghetti-al-granchio-blu/",
-        "relevance": "relevant",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
         "note": null
       }
     ],
@@ -43,8 +47,9 @@
       "position": 0,
       "sourceName": "Mì Ý spaghetti khô",
       "canonicalIngredientId": "ING_ENR_9AC85FC487BFBC5A",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -82,6 +87,7 @@
       "canonicalIngredientId": "CRAB_MEAT",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -119,6 +125,7 @@
       "canonicalIngredientId": "GARLIC",
       "reconciliation": "existing_canonical_id",
       "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -154,8 +161,9 @@
       "position": 3,
       "sourceName": "Dầu ô liu nguyên chất",
       "canonicalIngredientId": "ING_ENR_3B7B05F341BDBC33",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -188,8 +196,9 @@
       "position": 4,
       "sourceName": "Ớt khô",
       "canonicalIngredientId": "ING_ENR_D222D118E5B8BD04",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -225,8 +234,9 @@
       "position": 5,
       "sourceName": "Bottarga cá đối",
       "canonicalIngredientId": "ING_ENR_A23BF1D6EA6124A3",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "garnish",
       "nutritionRole": "excluded_optional",
       "optional": true,
@@ -257,8 +267,9 @@
       "position": 6,
       "sourceName": "Vỏ chanh vàng bào",
       "canonicalIngredientId": "ING_ENR_DA961A9056D3DC57",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -294,8 +305,9 @@
       "position": 7,
       "sourceName": "Mùi tây tươi",
       "canonicalIngredientId": "ING_ENR_D6EDD5F0078ABE8C",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -331,8 +343,9 @@
       "position": 8,
       "sourceName": "Muối",
       "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
-      "reconciliation": "new_reviewed_canonical_id",
-      "reconciliationReason": "new deterministic reviewed enrichment concept",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
       "usageRole": "consumed",
       "nutritionRole": "consumed",
       "optional": false,
@@ -486,6 +499,18 @@
     "runtimeExcludedIngredientPositions": [
       3,
       5
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "qualitative_quantity",
+        "requiresReviewedTransformation": true
+      }
     ]
   }
 }
