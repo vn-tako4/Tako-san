@@ -36,6 +36,60 @@ receipt needs its own exact-head CI. Do not merge as release readiness.
 Next: independently review PR #12; separately repair staging
 credential and repeat the reviewed workflow before any remote audit or rollout.
 
+# Handoff — Ingredient icon pack v2 (2026-09-27)
+
+**Current (2026-09-27): `ICON_V2_PR_OPEN`.** PR #13
+(`feat/ingredient-icons-v2` → `main`) opened; rebased on `origin/main`
+`c6ea259` (PR #12) and re-pushed via Git Data API, remote tree
+byte-identical to local. Post-rebase local gates: typecheck, lint,
+focused icon test 7/7, unit 119 files / 2,478 tests, migration smoke,
+build — all PASS. Monitoring hosted CI. No merge, no deploy from this task.
+
+What changed (all additive, no call-site edits — the 8 existing
+`getIngredientImage(id, name)` call sites are untouched):
+- `public/frigo/ingredients/`: +39 PNG (512px, RGBA transparent):
+  15 vegetables (shallot, lemongrass, cilantro, vietnamese-coriander,
+  bean-sprouts, bitter-melon, luffa, winter-melon, zucchini, galangal,
+  turmeric, leek, mint, pineapple, white-radish), 16 pantry (salt, pepper,
+  seasoning-powder, water, flour, peanut, sesame, honey, cooking-wine,
+  squid, crab, spare-ribs, oyster-sauce, sesame-oil, rice-paper, vinegar),
+  8 generic (category-vegetable/spice/meat/seafood/fruit/grain/dairy/other).
+- `src/web/lib/frigo-assets.ts`: 39 new keys + `ingredients.generic` section.
+- `src/web/lib/ingredient-icon-rules.json`: 214 ordered rules (new file).
+- `src/web/lib/ingredient-images.ts`: data-driven matcher replacing the
+  if-chain; new optional 3rd param `category` for the fallback.
+- `tests/unit/ingredient-images.test.ts`: 7 tests (new file).
+
+Verification: `pnpm typecheck` PASS, `pnpm lint` PASS, `pnpm build` PASS,
+`pnpm check:migrations` PASS, focused
+`vitest run tests/unit/ingredient-images.test.ts` 7/7 PASS,
+`vitest run tests/unit` 116 files / 2,460 tests PASS (pre-rebase),
+post-rebase: 119 files / 2,478 tests PASS (incl. 18 new PR #12 tests),
+`vitest run tests/integration` chunk 1 of 4 (22 files) 1,138 passed /
+8 skipped, 0 failed. The sandbox pauses long execs for user confirmation,
+so integration chunks 2–4 were not run locally; no integration/e2e test
+covers the icon modules. Hosted PR CI is the final full-suite gate.
+
+Known design decisions (audited, do not "fix" without review):
+- Unaccented names never guess: 11 ambiguous normalized forms are dropped
+  from phase 2, and phase 1 skips bare ambiguous keywords (`me`, `chao`)
+  for unaccented input.
+- Grouped keywords (ngao, hương thảo, kỷ tử, pate, đá viên…) resolve to
+  truthful *category* icons, never to a wrong specific icon.
+
+Boundaries respected: no PayOS/payment/billing/checkout/webhook, auth,
+migration, deploy, or production D1/R2 change.
+
+## Resume point
+
+1. PR #13 is open: https://github.com/tako-vn2/Tako-san/pull/13
+   (`feat/ingredient-icons-v2` → `main`, head `95e21c2e`).
+2. Watch hosted exact-head CI; report green/red to Tun bee.
+3. Require reviewer `vn-taphoanhatung` + Tun bee's separate approval
+   before any merge. No merge/deploy from this task.
+
+---
+
 # Historical handoff — Recipe Content Refresh V2 PR #11 remediation
 
 **Current (2026-09-27): `RECIPE_REFRESH_V2_RESEARCH_CANONICALIZED`; release projection blocked.**
