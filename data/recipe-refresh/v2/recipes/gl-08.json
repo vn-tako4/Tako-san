@@ -1,0 +1,822 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "gl-08",
+    "slug": "tokbokki-cay-ngot",
+    "title": "Bánh gạo Tokbokki sốt cay ngọt"
+  },
+  "content": {
+    "description": "Bánh gạo dẻo mềm đượm sốt ớt Gochujang cay nồng cùng trứng luộc lòng đào.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 18,
+    "servings": 2,
+    "difficulty": "easy",
+    "tags": [
+      "Hàn Quốc",
+      "Món ăn vặt",
+      "Cay"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/gl-08.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.koreanbapsang.com/tteokbokki-spicy-stir-fried-rice-cakes/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.maangchi.com/recipe/tteokbokki",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Bánh gạo Hàn Quốc (garaetteok, dạng thỏi)",
+      "canonicalIngredientId": "ING_ENR_B41D72940CF82712",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "Korean Bapsang dùng 1 lb (453,6 g) bánh gạo cho 3 phần → 2 phần ≈ 300 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Korean Bapsang dùng 1 lb bánh gạo cho 3 phần; nhân 2/3 cho 2 phần. Maangchi cũng dùng 1 lb cho công thức của cô (kèm nước dùng cá cơm–kombu). Nếu dùng bánh gạo đông lạnh thì ngâm/rã đông trước.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 238,
+        "proteinG": 5,
+        "carbohydrateG": 50,
+        "fatG": 1.5,
+        "fiberG": 3,
+        "sugarG": null,
+        "sodiumMg": 150
+      },
+      "sourceNutritionReference": "https://world.openfoodfacts.org/product/0846034024120/tteokbokki-rice-cakes-grand-supercenter",
+      "sourceNutritionNote": "Số liệu của sản phẩm bánh gạo tteokbokki Grand Supercenter; nguồn không liệt kê đường riêng nên để null."
+    },
+    {
+      "position": 1,
+      "sourceName": "Chả cá Hàn Quốc (eomuk), thái miếng",
+      "canonicalIngredientId": "ING_ENR_78C42D6B36B7B48B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "lá",
+        "text": "1 lá",
+        "gramEquivalent": 90,
+        "basis": "1 lá chả cá Hàn Quốc tiêu chuẩn ≈ 90 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Korean Bapsang dùng 1 lá eomuk cho 3 phần; công thức 2 phần dùng 1 lá nhỏ (hoặc 2/3 lá lớn), thái miếng vừa ăn. Maangchi coi chả cá là nguyên liệu tùy chọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 100,
+        "proteinG": 15.36,
+        "carbohydrateG": 6.79,
+        "fatG": 0.93,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 145
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173702",
+      "sourceNutritionNote": "Dùng cá surimi (USDA generic) làm tham chiếu gần nhất cho chả cá Hàn Quốc; chả cá thương phẩm các hãng có thể khác."
+    },
+    {
+      "position": 2,
+      "sourceName": "Bắp cải",
+      "canonicalIngredientId": "CABBAGE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 75,
+        "unit": "g",
+        "text": "75 g",
+        "gramEquivalent": 75,
+        "basis": "Korean Bapsang dùng 4 oz (113 g) bắp cải cho 3 phần → 2 phần ≈ 75 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 75,
+          "unit": "g"
+        }
+      },
+      "note": "Korean Bapsang dùng 4 oz bắp cải thái miếng cho 3 phần; bắp cải giúp sốt ngọt dịu và món đỡ ngấy.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 24,
+        "proteinG": 1.44,
+        "carbohydrateG": 5.58,
+        "fatG": 0.12,
+        "fiberG": 2.3,
+        "sugarG": 3.58,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/article/nutritionfacts-v1/cabbage-raw-1-cup-chopped",
+      "sourceNutritionNote": "Quy đổi từ số liệu 1 cốc bắp cải thái (89 g) của UHH."
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhánh",
+        "text": "2 nhánh",
+        "gramEquivalent": 30,
+        "basis": "1 nhánh hành lá ≈ 15 g (USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng hành lá cắt khúc cho vào cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 20,
+        "proteinG": 1.47,
+        "carbohydrateG": 4.53,
+        "fatG": 0.07,
+        "fiberG": 2.8,
+        "sugarG": 1.67,
+        "sodiumMg": 3.2
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/article/nutritionfacts-v1/onions-young-green-tops-only-1-stalk",
+      "sourceNutritionNote": "Quy đổi từ số liệu 1 nhánh (15 g) của UHH."
+    },
+    {
+      "position": 4,
+      "sourceName": "Nước dùng cá cơm–kombu (dashi)",
+      "canonicalIngredientId": "ING_ENR_4E8F9C93DD578020",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cốc",
+        "text": "2 cốc",
+        "gramEquivalent": 480,
+        "basis": "1 cốc = 240 ml ≈ 240 g; nấu từ cá cơm khô và kombu bên dưới",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi nấu nước dùng từ 7 con cá cơm khô + 1 miếng kombu với 4 cốc nước cho công thức của cô; Korean Bapsang dùng 3 cốc nước dùng cho 3 phần (có thể dùng nước lọc). Công thức 2 phần dùng 2 cốc, nấu từ 5 con cá cơm + 1 miếng kombu rồi vớt bỏ xác.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước dùng; cá cơm và kombu được vớt bỏ sau khi nấu nên phần dinh dưỡng còn lại không đáng kể — để null."
+    },
+    {
+      "position": 5,
+      "sourceName": "Cá cơm khô (nấu nước dùng)",
+      "canonicalIngredientId": "ING_ENR_752BFE047866D5B6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "con",
+        "text": "5 con",
+        "gramEquivalent": 10,
+        "basis": "1 con cá cơm khô cỡ vừa ≈ 2 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi dùng 7 con cho 4 cốc nước; điều chỉnh còn 5 con cho 2 cốc nước dùng. Cá được vớt bỏ sau khi nấu, chỉ lấy nước.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 293,
+        "proteinG": 64.4,
+        "carbohydrateG": 0.3,
+        "fatG": 3.8,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 5100
+      },
+      "sourceNutritionReference": "https://japanesetaste.co.uk/products/yamaki-dried-anchovy-additive-free-dried-japanese-fish-snack-30g",
+      "sourceNutritionNote": "Số liệu của sản phẩm cá cơm khô Yamaki (Nhật); nguồn không liệt kê chất xơ/đường riêng (carb tổng chỉ 0,3 g) nên để null."
+    },
+    {
+      "position": 6,
+      "sourceName": "Kombu (tảo bẹ khô, nấu nước dùng)",
+      "canonicalIngredientId": "ING_ENR_ECCDA1B443B087A4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "miếng",
+        "text": "1 miếng",
+        "gramEquivalent": 10,
+        "basis": "1 miếng kombu khô 10×10 cm ≈ 10 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi dùng 1 miếng kombu 6×8 inch cho 4 cốc nước; điều chỉnh 1 miếng 10×10 cm cho 2 cốc. Vớt bỏ sau khi nấu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 210,
+        "proteinG": 7.8,
+        "carbohydrateG": 21.5,
+        "fatG": 3,
+        "fiberG": 32.7,
+        "sugarG": 0,
+        "sodiumMg": 2600
+      },
+      "sourceNutritionReference": "https://world.openfoodfacts.org/product/8713576270181/kombu-terrasana",
+      "sourceNutritionNote": "Số liệu của sản phẩm kombu khô TerraSana (100% tảo bẹ khô)."
+    },
+    {
+      "position": 7,
+      "sourceName": "Tương ớt Hàn Quốc (gochujang)",
+      "canonicalIngredientId": "ING_ENR_98019AB77229F354",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 38,
+        "basis": "1 muỗng canh tương ớt Hàn ≈ 19 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Giá trị dinh dưỡng của gochujang thay đổi mạnh theo nhãn hiệu (năng lượng 195–253 kcal/100 g, muối 2,48–7 g/100 g theo các nguồn bán lẻ đã tra: Sempio, OBAP); không có số liệu chung đáng tin nên để null toàn bộ. Korean Bapsang dùng 3 muỗng canh cho 3 phần → 2 muỗng canh cho 2 phần; Maangchi dùng 1/3 cốc cho công thức của cô.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Ớt bột Hàn Quốc (gochugaru)",
+      "canonicalIngredientId": "ING_ENR_088E23BFC8ECDCCE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2.5,
+        "basis": "1 muỗng cà phê ớt bột ≈ 2,5 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Số liệu giữa các nguồn chênh lệch quá lớn (ví dụ sodium 12,8–680 mg/100 g, đường 0–25 g/100 g) nên để null toàn bộ. Korean Bapsang dùng 1–3 muỗng cà phê cho 3 phần tùy độ cay; lấy 1 muỗng cà phê cho 2 phần (vị cay vừa).",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Nước tương (shoyu)",
+      "canonicalIngredientId": "ING_ENR_47C2428D34783146",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 10.7,
+        "basis": "1 muỗng cà phê ≈ 5,3 g (1 muỗng canh = 16 g theo MyFoodData)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Korean Bapsang dùng 1 muỗng canh nước tương cho 3 phần → 2 muỗng cà phê cho 2 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "Quy đổi từ số liệu 1 muỗng canh (16 g) của MyFoodData. [audit round 4: đồng bộ lại toàn bộ 7 chỉ số theo bản ghi FDC 174277 — Soy sauce made from soy and wheat (shoyu)]"
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "muỗng cà phê",
+        "text": "4 muỗng cà phê",
+        "gramEquivalent": 16.8,
+        "basis": "Korean Bapsang dùng 2 muỗng canh đường cho 3 phần → 2 phần ≈ 4 muỗng cà phê; 1 muỗng cà phê đường = 4,2 g (UHH)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Korean Bapsang dùng 2 muỗng canh đường + 1 muỗng canh syrup bắp cho 3 phần để tạo vị ngọt cân bằng vị cay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 100,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 100,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/nutrition-facts/article/nutritionfacts-v1/sugars-granulated-1-tsp",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Syrup bắp nhạt (corn syrup)",
+      "canonicalIngredientId": "ING_ENR_4995D3C3BFF451E9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 15,
+        "basis": "Korean Bapsang dùng 1 muỗng canh syrup bắp cho 3 phần → 2 phần ≈ 2 muỗng cà phê; 1 muỗng canh syrup bắp nhạt = 22 g (UHH)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Korean Bapsang dùng 1 muỗng canh syrup bắp cho 3 phần để sốt có độ bóng và ngọt dịu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 283,
+        "proteinG": 0,
+        "carbohydrateG": 76.8,
+        "fatG": 0.2,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 62
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/article/nutritionfacts-v1/syrups-corn-light-1-cup",
+      "sourceNutritionNote": "Quy đổi từ số liệu 1 cốc (341 g) của UHH; trường đường: UHH và MyFoodData mâu thuẫn nhau nên để null."
+    },
+    {
+      "position": 12,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 7,
+        "basis": "1 muỗng cà phê tỏi băm ≈ 3,5 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Korean Bapsang dùng 1 muỗng canh tỏi băm cho 3 phần → 2 muỗng cà phê cho 2 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.33,
+        "carbohydrateG": 33,
+        "fatG": 0.67,
+        "fiberG": 2,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/nutrition-facts/article/nutritionfacts-v1/garlic-raw-1-clove",
+      "sourceNutritionNote": "Quy đổi từ số liệu 1 tép (3 g) của UHH."
+    },
+    {
+      "position": 13,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "1 muỗng cà phê dầu mè ≈ 4,5 g (1 muỗng canh = 13,6 g theo UHH)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rưới cuối cùng để tạo mùi thơm theo Korean Bapsang.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/article/nutritionfacts-v1/oil-sesame-salad-or-cooking-1-tablespoon",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Trứng gà luộc chín (ăn kèm)",
+      "canonicalIngredientId": "ING_ENR_460D114CF31A5B34",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Trứng gà luộc via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 100,
+        "basis": "1 quả trứng gà lớn ≈ 50 g (USDA; UHH dùng 50 g cho trứng luộc)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguyên liệu tùy chọn: cả Maangchi và Korean Bapsang đều công nhận trứng luộc là biến thể phổ biến ăn kèm tteokbokki.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 155,
+        "proteinG": 12.58,
+        "carbohydrateG": 1.12,
+        "fatG": 10.61,
+        "fiberG": 0,
+        "sugarG": 1.12,
+        "sodiumMg": 124
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/article/nutritionfacts-v1/egg-whole-cooked-hard-boiled-1-large",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Nấu nước dùng: cho 2 cốc nước, 5 con cá cơm khô và 1 miếng kombu vào nồi, đun sôi rồi hạ lửa nhỏ nấu 10 phút cho ra vị ngọt. Vớt bỏ cá cơm và kombu, giữ lại nước dùng.",
+      "tip": "Maangchi: không nấu kombu quá lâu vì sẽ làm nước dùng bị nhớt và đắng.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Nếu dùng bánh gạo đông lạnh, ngâm trong nước ấm 10 phút cho mềm rồi vớt ra để ráo. Bánh gạo tươi dùng ngay không cần ngâm.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho nước dùng vào chảo sâu lòng, thêm tương ớt gochujang, ớt bột gochugaru, nước tương, đường, syrup bắp và tỏi băm; khuấy đều cho sốt tan hoàn toàn.",
+      "tip": "Hòa tan sốt trước khi cho bánh gạo vào giúp sốt thấm đều, không bị vón cục."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho bánh gạo vào chảo, đun sôi rồi hạ xuống lửa vừa, nấu 8–10 phút, thỉnh thoảng đảo nhẹ để bánh gạo không dính đáy chảo.",
+      "tip": "Đảo nhẹ tay vì bánh gạo khi mềm rất dễ gãy nát.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Khi bánh gạo đã mềm và sốt bắt đầu sánh, cho bắp cải thái miếng và chả cá vào, nấu thêm 3–4 phút cho rau vừa chín tới.",
+      "tip": "Korean Bapsang cho rau và chả cá vào sau để chúng không bị nấu quá mềm.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Tiếp tục đun đến khi nước sốt sánh lại, áo đều quanh từng thỏi bánh gạo. Nêm nếm lại: thiếu ngọt thêm chút đường, thiếu cay thêm ớt bột.",
+      "tip": "Sốt đạt là khi múc lên thấy sánh, bám vào bánh gạo thay vì loãng như nước.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho trứng luộc đã bóc vỏ vào chảo (nếu dùng), đảo nhẹ cho trứng áo đều sốt, nấu thêm 1 phút.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rắc hành lá cắt khúc lên trên, rưới dầu mè, đảo đều lần cuối rồi tắt bếp."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Múc tteokbokki ra đĩa sâu lòng hoặc thố, chan thêm sốt lên trên."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn ăn ngay khi còn nóng hổi. Tteokbokki ngon nhất khi bánh gạo còn dẻo dai và sốt đang sôi nhẹ."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 2,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Bánh gạo Hàn Quốc (garaetteok, dạng thỏi): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Chả cá Hàn Quốc (eomuk), thái miếng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Bắp cải: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 4,
+        "detail": "Nước dùng cá cơm–kombu (dashi): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 5,
+        "detail": "Cá cơm khô (nấu nước dùng): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 6,
+        "detail": "Kombu (tảo bẹ khô, nấu nước dùng): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tương ớt Hàn Quốc (gochujang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Ớt bột Hàn Quốc (gochugaru): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Nước tương (shoyu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Syrup bắp nhạt (corn syrup): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/recipes/global/kimchi-fried-rice.webp",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 4,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 5,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 6,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,692 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "vn-sang-01",
+    "slug": "com-chien-trung-toi-hanh-hoa",
+    "title": "Cơm chiên trứng vàng giòn tỏi phi"
+  },
+  "content": {
+    "description": "Hạt cơm nguội vàng óng bọc đều lớp trứng gà bóng bẩy, chiên giòn tơi xốp dậy mùi thơm nức của tỏi phi và hành hoa.",
+    "cuisine": "vietnamese",
+    "category": "mon_nhanh_sang",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 12,
+    "servings": 2,
+    "difficulty": "easy",
+    "tags": [
+      "Ăn sáng",
+      "Cơm chiên",
+      "Dưới 20 phút",
+      "Tiết kiệm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/vn-sang-01.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://vnexpress.net/doi-song-cooking-com-chien-toi-4570849.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://phunutoday.vn/cach-lam-com-chien-trung-sieu-ngon-cho-bua-sang-d91516.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cơm nguội",
+      "canonicalIngredientId": "RICE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "chén",
+        "text": "2 chén",
+        "gramEquivalent": 360,
+        "basis": "1 chén cơm nguội ≈ 180 g (ước lượng thực tế)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "VnExpress (Bùi Thủy): 4 chén cơm nguội cho 4–5 người → 2 chén cho 2 phần; Phunutoday: 2 chén cơm — hai nguồn thống nhất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 130,
+        "proteinG": 2.69,
+        "carbohydrateG": 28.17,
+        "fatG": 0.28,
+        "fiberG": 0.4,
+        "sugarG": 0.05,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168878",
+      "sourceNutritionNote": "Cơm nguội để lạnh qua đêm; dùng số liệu cơm trắng nấu chín (long-grain, enriched, cooked) làm tương đương."
+    },
+    {
+      "position": 1,
+      "sourceName": "Trứng gà tươi",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 100,
+        "basis": "1 quả trứng gà lớn ≈ 50 g (USDA FoodData Central: 1 large egg = 50 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Phunutoday: 2 quả trứng cho 2 chén cơm — thống nhất cho 2 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi (băm + thái lát phi giòn)",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 35,
+        "basis": "1 củ tỏi nhỏ ≈ 35 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "VnExpress: 1 củ tỏi lớn cho 4–5 phần (một nửa băm, một nửa thái lát phi giòn); Phunutoday: 2 tép cho 2 chén cơm — mâu thuẫn về lượng, ưu tiên VnExpress vì là kỹ thuật phi tỏi giòn đặc trưng của món, điều chỉnh còn ~1 củ nhỏ cho 2 phần theo yêu cầu \"tỏi băm nhiều\" trong tên món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cọng",
+        "text": "2 cọng",
+        "gramEquivalent": 15,
+        "basis": "1 cọng hành lá ≈ 7–8 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Phunutoday: 2 cọng hành lá; VnExpress: hành lá cắt nhỏ rắc cuối — thống nhất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Dầu ăn (phi tỏi + chiên cơm)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "thìa canh",
+        "text": "3 thìa canh",
+        "gramEquivalent": 41,
+        "basis": "1 thìa canh = 15 ml; tỉ trọng dầu ≈ 0.91 → 3 thìa ≈ 41 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Không nguồn nào định lượng rõ (VnExpress chỉ ghi \"mỡ lợn hoặc dầu ăn\"); ước 3 thìa canh cho phi tỏi ngập dầu và chiên cơm — đây là ước lượng, ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "Dầu ăn Việt Nam thường là dầu đậu nành; dùng số liệu tương đương."
+    },
+    {
+      "position": 5,
+      "sourceName": "Nước mắm ngon",
+      "canonicalIngredientId": "ING_ENR_352C1AA29FB15A32",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "thìa cà phê",
+        "text": "2 thìa cà phê",
+        "gramEquivalent": 12,
+        "basis": "1 thìa cà phê = 5 ml; tỉ trọng nước mắm ≈ 1.2 → 2 thìa ≈ 12 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Mâu thuẫn: VnExpress ướp 2 thìa cà phê nước mắm cho 4 chén cơm (→ 1 thìa cho 2 chén); Phunutoday nêm 1 thìa canh cho 2 chén cơm. Ưu tiên VnExpress (công thức chi tiết của Bùi Thủy), lấy 2 thìa cà phê cho 2 chén cơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": "USDA \"Sauce, fish, ready-to-serve\" là nước mắm generic."
+    },
+    {
+      "position": 6,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "thìa cà phê",
+        "text": "0.5 thìa cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 thìa cà phê hạt nêm ≈ 6 g (ước lượng) → 1⁄2 thìa ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "VnExpress: 1 thìa cà phê hạt nêm ướp 4 chén cơm → 1⁄2 thìa cho 2 chén.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có hạt nêm — để null."
+    },
+    {
+      "position": 7,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "thìa cà phê",
+        "text": "0.5 thìa cà phê",
+        "gramEquivalent": 1.2,
+        "basis": "1 thìa cà phê tiêu xay ≈ 2.3 g (USDA) → 1⁄2 thìa ≈ 1.2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "VnExpress: 1 thìa cà phê hạt tiêu ướp 4 chén cơm → 1⁄2 thìa cho 2 chén; Phunutoday: \"một ít tiêu\" — thống nhất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "thìa cà phê",
+        "text": "0.5 thìa cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 thìa cà phê đường ≈ 4 g (ước lượng) → 1⁄2 thìa ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Phunutoday: 1 thìa cà phê đường cho 2 chén cơm; VnExpress không dùng đường — mâu thuẫn nhẹ, giữ 1⁄2 thìa cho cân bằng vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "thìa cà phê",
+        "text": "0.25 thìa cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "1 thìa cà phê muối ≈ 6 g (ước lượng) → 1⁄4 thìa ≈ 1.5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Phunutoday: 1⁄2 thìa cà phê muối cho 2 chén cơm; VnExpress không dùng muối (chỉ ướp nước mắm + hạt nêm) — mâu thuẫn, lấy 1⁄4 thìa để không quá mặn vì đã có nước mắm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Bột ngọt",
+      "canonicalIngredientId": "ING_ENR_0A4564D231578559",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "thìa cà phê",
+        "text": "0.25 thìa cà phê",
+        "gramEquivalent": 1,
+        "basis": "1⁄4 thìa cà phê bột ngọt ≈ 1 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Phunutoday: 1⁄2 thìa cà phê bột ngọt; VnExpress không dùng — mâu thuẫn, lấy 1⁄4 thìa, ghi rõ.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có monosodium glutamate — để null."
+    },
+    {
+      "position": 11,
+      "sourceName": "Bột chiên giòn (tạo hạt cơm giòn, tùy chọn)",
+      "canonicalIngredientId": "ING_ENR_9D5FCCF96F7849F8",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Bột chiên giòn via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "thìa canh",
+        "text": "1 thìa canh",
+        "gramEquivalent": 8,
+        "basis": "1 thìa canh bột chiên giòn ≈ 8 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kỹ thuật của VnExpress: trộn 1⁄4 chén cơm với chút bột chiên giòn rồi chiên vàng ruộm, trộn lại tạo độ giòn như ngoài hàng. Tùy chọn.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có bột chiên giòn pha sẵn — để null."
+    },
+    {
+      "position": 12,
+      "sourceName": "Cà chua bi (trang trí, tùy chọn)",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 30,
+        "basis": "1 quả cà chua bi ≈ 10 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Phunutoday dùng cà chua bi trang trí; không bắt buộc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": "USDA không có cà chua bi; dùng số liệu cà chua đỏ thường làm tương đương."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Chuẩn bị cơm: cơm nguội đánh tơi đều, bọc màng bọc thực phẩm cho vào ngăn mát tủ lạnh vài tiếng hoặc qua đêm để hạt cơm săn lại. Trước khi chiên, lấy cơm ra ngoài cho bớt lạnh.",
+      "tip": "VnExpress: cơm để lạnh giúp hạt cơm săn, khi chiên tơi và không bị nát."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Ướp cơm: cho cơm vào tô, nêm 2 thìa cà phê nước mắm, 1⁄2 thìa cà phê hạt nêm, 1⁄2 thìa cà phê hạt tiêu, 1⁄2 thìa cà phê đường, 1⁄4 thìa cà phê muối, 1⁄4 thìa cà phê bột ngọt và 2 thìa cà phê dầu ăn. Đeo găng tay bóp đều để hạt cơm tơi và thấm vị.",
+      "tip": "VnExpress: ướp cơm trước vừa giúp thấm vị vừa giúp hạt cơm tơi, bóng láng khi chiên."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế: tỏi bóc vỏ — một nửa băm nhỏ, một nửa thái lát mỏng; hành lá rửa sạch cắt nhỏ; cà chua bi bổ đôi để trang trí."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Phi tỏi giòn: cho dầu ăn vào chảo sâu lòng, đun nóng (thử đầu đũa thấy sủi tăm là đạt). Hạ lửa nhỏ vừa, cho tỏi băm vào đảo đều mấy lượt; khi tỏi se vàng thì vớt ra giấy thấm dầu. Tiếp tục cho tỏi thái lát vào, khi lát tỏi nổi lên bề mặt thì đảo nhanh tay, vớt ra để ráo dầu.",
+      "tip": "VnExpress: tỏi phi phải vớt đúng lúc se vàng — để quá lửa tỏi sẽ đắng. Giữ lại phần dầu phi tỏi để rang cơm cho thơm.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Chiên trứng: cho dầu phi tỏi vào chảo chống dính, đập 2 quả trứng gà vào, để yên khoảng 10 giây cho trứng định hình rồi dùng đũa khuấy đều tạo vân mây.",
+      "tip": "VnExpress: để trứng yên 10 giây trước khi khuấy giúp tạo vân mây đẹp, không bị nát vụn.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Rang cơm: trút phần cơm đã ướp vào chảo trứng, vặn lửa lớn, đảo liên tục để hạt cơm tơi đều và trứng bám đều từng hạt cơm. Rang đến khi hạt cơm săn se, rời rạc và khô ráo.",
+      "tip": "Phunutoday: đảo liên tục trên lửa lớn giúp cơm tơi, giòn ngon; dùng đũa đảo để không xước chảo chống dính.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nêm nếm lại cho vừa miệng. Rắc tỏi băm phi và tỏi lát phi giòn cùng hành lá cắt nhỏ vào, thêm chút hạt tiêu, đảo đều lần cuối rồi tắt bếp.",
+      "tip": "Cho tỏi phi vào cuối để giữ độ giòn — đảo lâu trong chảo nóng tỏi sẽ mềm lại."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Múc cơm ra đĩa, trang trí cà chua bi bổ đôi và vài cọng ngò nếu thích, rắc thêm chút tiêu xay. Dọn ăn ngay khi còn nóng.",
+      "tip": "Cơm chiên tỏi phải ăn ngay — để lâu hạt cơm hết giòn sẽ mất ngon."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 2,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cơm nguội: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Trứng gà tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi (băm + thái lát phi giòn): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 4,
+        "detail": "Dầu ăn (phi tỏi + chiên cơm): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Nước mắm ngon: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Đường trắng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Bột ngọt: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      0,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 0,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 5,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

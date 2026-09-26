@@ -1,0 +1,529 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-329f0579ddc26919",
+    "slug": "ca-chua-tron-toi",
+    "title": "Cà chua trộn tỏi"
+  },
+  "content": {
+    "description": "Cà chua múi trộn tỏi-dầu thơm, món lạnh giải ngấy Trung Hoa mát lành.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Món lạnh",
+      "Cà chua",
+      "Thanh mát",
+      "Khai vị"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-329f0579ddc26919.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,nutrition_per_serving,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/watch?v=aWvy5ltH4Pw",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.city.mishima.shizuoka.jp/uploaded/attachment/5389.pdf",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cà chua chín đỏ",
+      "canonicalIngredientId": "ING_ENR_4FD54CF2AC8D4C57",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "quả",
+        "text": "4 quả",
+        "gramEquivalent": 600,
+        "basis": "Cân định lượng trực tiếp; quả cà chua trung bình ≈ 150 g. vcancook dùng 3 quả cà chua cho món trộn kiểu Macau; Mishima dùng 2 quả cho 2 khẩu phần",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Mâu thuẫn nguồn: vcancook chần cà chua 30 giây, bóc vỏ, cho vào túi với nước sốt và ướp lạnh 1 giờ; Mishima cắt múi cau, trộn sốt rồi ăn ngay. Công thức này kết hợp: bóc vỏ theo vcancook, ướp lạnh cho ngấm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho cà chua nên để null."
+    },
+    {
+      "position": 1,
+      "sourceName": "Tỏi tép băm nhuyễn",
+      "canonicalIngredientId": "ING_ENR_62F221DC68B6B235",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Tỏi tép via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "tép",
+        "text": "4 tép",
+        "gramEquivalent": 20,
+        "basis": "Quy ước: 1 tép tỏi trung bình ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Mâu thuẫn nguồn: tên món có tỏi nhưng cả 2 nguồn đã đọc đều không dùng tỏi — vcancook dùng nước mắm + giấm ớt + ngò, Mishima dùng hẹ + gừng + mè. Tỏi băm được thêm theo tên món và phong cách 蒜拌 (tỏi trộn) Trung Hoa; định lượng theo tỷ lệ món trộn lạnh thông thường.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho tỏi nên để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành lá thái nhỏ",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "Quy ước: 1 cây hành lá trung bình ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Mâu thuẫn nguồn: theo tên món/gợi ý có hành lá; vcancook không dùng hành (dùng ngò), Mishima dùng 20 g hẹ (nira) cho 2 khẩu phần. Dùng hành lá thái nhỏ thay hẹ theo gợi ý assignment.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho hành lá nên để null."
+    },
+    {
+      "position": 3,
+      "sourceName": "Xì dầu nhạt",
+      "canonicalIngredientId": "ING_ENR_19A3C60192F07ED5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tbsp",
+        "text": "2 tbsp",
+        "gramEquivalent": 36,
+        "basis": "2 tbsp = 30 ml; tỷ trọng xì dầu ≈ 1.2 → ≈ 36 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Mâu thuẫn nguồn: Mishima dùng 2/3 tbsp xì dầu cho 2 khẩu phần; vcancook không dùng xì dầu mà dùng 2 tbsp nước mắm cho 3 quả cà chua. Theo tên món và gợi ý, dùng xì dầu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 57,
+        "proteinG": 9.05,
+        "carbohydrateG": 5.59,
+        "fatG": 0.3,
+        "fiberG": 0.7,
+        "sugarG": null,
+        "sodiumMg": 3598
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172473",
+      "sourceNutritionNote": "FDC không có bản ghi 'light soy sauce' nên dùng bản low-sodium shoyu làm gần đúng; total sugars không được liệt kê nên để null."
+    },
+    {
+      "position": 4,
+      "sourceName": "Giấm gạo (hoặc giấm đen)",
+      "canonicalIngredientId": "ING_ENR_74F7E522F9B17307",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tbsp",
+        "text": "1 tbsp",
+        "gramEquivalent": 15,
+        "basis": "1 tbsp = 15 ml ≈ 15 g (tỷ trọng giấm ≈ 1.0)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Mâu thuẫn nguồn: Mishima dùng 1/2 tbsp giấm cho 2 khẩu phần; vcancook dùng 2 tbsp giấm ớt cho 3 quả cà chua. Lấy 1 tbsp, dùng giấm gạo hoặc giấm đen Trấn Giang đều được.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0,
+        "carbohydrateG": 0.04,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172237",
+      "sourceNutritionNote": "FDC không có giấm gạo/giấm đen Trấn Giang; dùng số liệu giấm trắng chưng cất (Vinegar, distilled) làm tương đương theo quy tắc nguyên liệu tương đương. Total sugars không được liệt kê nên để null."
+    },
+    {
+      "position": 5,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tsp",
+        "text": "2 tsp",
+        "gramEquivalent": 8,
+        "basis": "Quy ước: 1 tsp đường trắng ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Mâu thuẫn nguồn: Mishima dùng 1 tsp đường cho 2 khẩu phần; vcancook dùng 1 tbsp đường cho 3 quả cà chua. Lấy 2 tsp cho 3 khẩu phần, cân bằng vị chua của giấm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": "FDC không liệt kê total sugars riêng cho đường cát; toàn bộ carb là đường nhưng vẫn để null theo quy tắc không suy luận."
+    },
+    {
+      "position": 6,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "g",
+        "text": "3 g",
+        "gramEquivalent": 3,
+        "basis": "Cân định lượng trực tiếp; tương đương khoảng 1/2 tsp muối tinh",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "g"
+        }
+      },
+      "note": "Không có trong 2 nguồn đã đọc (Mishima nêm bằng xì dầu, vcancook nêm bằng nước mắm). Thêm 1/2 tsp để cà chua ra nước và cân vị theo cách trộn lạnh thông thường.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho muối nên để null."
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tsp",
+        "text": "1 tsp",
+        "gramEquivalent": 4.5,
+        "basis": "1 tsp dầu mè ≈ 5 ml; tỷ trọng ≈ 0.91 → ≈ 4.5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả 2 nguồn đều dùng dầu mè: Mishima 1 tsp cho 2 khẩu phần, vcancook 1 tbsp cho 3 quả cà chua. Lấy 1 tsp, cho vào sau cùng để giữ mùi thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho dầu mè nên để null."
+    },
+    {
+      "position": 8,
+      "sourceName": "Rau mùi (ngò) trang trí",
+      "canonicalIngredientId": "ING_ENR_D138D9416E825816",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 10,
+        "basis": "Quy ước: 1 cây rau mùi ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "vcancook dùng 1 cây rau mùi; Mishima không dùng. Đặt tùy chọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tra cứu dinh dưỡng cho nguyên liệu trang trí tùy chọn, lượng dùng rất nhỏ; để null toàn bộ."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Chọn và rửa cà chua: Chọn 4 quả cà chua chín đỏ, cầm chắc tay, vỏ căng bóng. Rửa sạch dưới vòi nước, dùng dao khía hình chữ thập ở đáy mỗi quả. Tip: cà chua chín vừa tới (không quá mềm) thì khi trộn mới giữ được hình múi."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Chần và bóc vỏ cà chua: Đun sôi một nồi nước lớn. Cho cà chua vào chần đúng 30 giây rồi vớt ra ngâm ngay vào tô nước đá. Lột bỏ vỏ từ chỗ đã khía — vỏ sẽ bong ra rất dễ dàng (theo vcancook).",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cắt cà chua: Bỏ cuống, cắt mỗi quả cà chua thành 6-8 múi cau hoặc miếng vừa ăn. Tránh cắt quá nhỏ vì cà chua sẽ nát khi trộn và ướp."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Sơ chế tỏi và hành lá: Tỏi bóc vỏ, băm thật nhuyễn. Hành lá rửa sạch, thái nhỏ; để riêng một phần lá xanh để rắc trang trí sau cùng."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Pha nước trộn trong bát nhỏ: xì dầu, giấm gạo, đường, muối. Khuấy đều đến khi đường và muối tan hoàn toàn. Nếm thử, điều chỉnh chua-ngọt-mặn theo khẩu vị."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Trộn cà chua với sốt: Cho cà chua vào tô lớn, rưới đều nước trộn. Thêm tỏi băm và phần đầu hành trắng thái nhỏ. Dùng tay hoặc muỗng trộn thật nhẹ nhàng để cà chua không bị nát."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Ướp lạnh cho ngấm: Đậy kín tô bằng màng bọc thực phẩm, cho vào tủ lạnh ít nhất 30 phút, tốt nhất 1 giờ để cà chua ngấm đều gia vị (theo vcancook). (Bản Mishima trộn xong ăn ngay — món này ngon hơn khi ướp lạnh.)",
+      "timerMinutes": 60
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Trộn lại và thêm dầu mè: Lấy tô ra khỏi tủ lạnh, trộn nhẹ lại một lần cho đều nước sốt đã lắng xuống đáy. Rưới dầu mè lên trên — cho dầu mè sau cùng để giữ mùi thơm."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Hoàn thiện và thưởng thức: Gắp cà chua ra đĩa, rưới phần nước sốt còn lại lên. Rắc hành lá xanh và rau mùi thái nhỏ trang trí. Dùng lạnh ngay như món khai vị hoặc ăn kèm cơm. Tip: không để món đã trộn ở nhiệt độ phòng quá 2 giờ vì cà chua ướp lạnh dễ bị chua hỏng.",
+      "tip": "Muốn biến tấu kiểu Macau như vcancook: thay xì dầu bằng 2 tbsp nước mắm và giấm gạo bằng 2 tbsp giấm ớt, cho cà chua vào túi zip lắc đều rồi ướp lạnh 1 giờ. Muốn kiểu Nhật nhẹ nhàng như Mishima: giảm tỏi, thêm 1 lát gừng băm và 1 tsp mè rang."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cà chua chín đỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Tỏi tép băm nhuyễn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành lá thái nhỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Xì dầu nhạt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Giấm gạo (hoặc giấm đen): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Đường trắng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      4,
+      5,
+      7
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

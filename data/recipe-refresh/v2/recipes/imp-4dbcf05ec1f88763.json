@@ -1,0 +1,701 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-4dbcf05ec1f88763",
+    "slug": "nam-xao-sa-ot-chay",
+    "title": "Nấm xào sả ớt chay"
+  },
+  "content": {
+    "description": "Nấm xào sả-ớt thơm nồng nước tương, món chay đậm đà nhanh tay cho mâm cơm mặn chay.",
+    "cuisine": "vietnamese",
+    "category": "mon_chay",
+    "region": "nam",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Chay",
+      "Nấm",
+      "Sả",
+      "Đậm vị"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-4dbcf05ec1f88763.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "http://dienmaycholon.com/mon-ngon/cach-lam-nam-dui-ga-kho-sa-chay",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://2sao.vn/cach-lam-mon-nam-xao-sa-ot-mon-chay-ngon-cho-nhung-ngay-kieng-thit-159374.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nấm đùi gà tươi",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 375,
+        "unit": "g",
+        "text": "375 g",
+        "gramEquivalent": 375,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 375,
+          "unit": "g"
+        }
+      },
+      "note": "Điện máy Chợ Lớn: 500 g nấm đùi gà (không ghi khẩu phần, ước ~4 phần) → 375 g cho 3 phần. Dân Việt/2sao: 200 g nấm (rơm/chân gà/bào ngư) cho ~2 phần — tỉ lệ nấm/phần tương đương hai nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": 1.11,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "USDA không có số liệu generic cho nấm đùi gà (king oyster); dùng nấm sò (oyster) tươi làm nguyên liệu tương đương gần nhất."
+    },
+    {
+      "position": 1,
+      "sourceName": "Sả tươi",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 90,
+        "basis": "1 cây sả sau khi bóc vỏ già, lấy phần non dùng được ~30 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "MÂU THUẪN: Điện máy Chợ Lớn dùng 3-4 cây sả cho 500 g nấm; Dân Việt/2sao dùng 3-4 cây sả cho chỉ 200 g nấm (tỉ lệ sả cao gấp ~2.5 lần). Ưu tiên Điện máy Chợ Lớn vì cùng dùng nấm đùi gà, công thức chay rõ ràng và có định lượng gia vị đầy đủ. Lấy 3 cây cho 3 phần (quy từ 3-4 cây/~4 phần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.31,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "API USDA không trả số liệu chất xơ và đường cho sả (Lemon grass, citronella, raw) nên để null, không tự điền."
+    },
+    {
+      "position": 2,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "trái",
+        "text": "1 trái",
+        "gramEquivalent": 5,
+        "basis": "1 trái ớt hiểm ~5 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Điện máy Chợ Lớn: 1-2 trái ớt cho 500 g nấm → 1 trái cho 3 phần, điều chỉnh theo độ cay. Dân Việt/2sao: 'ớt quả' không định lượng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 2,
+        "carbohydrateG": 9.46,
+        "fatG": 0.2,
+        "fiberG": 1.5,
+        "sugarG": 5.1,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170497",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi ~3 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Điện máy Chợ Lớn: 2-3 tép tỏi băm cho 500 g nấm, một nửa ướp cùng nấm, một nửa phi thơm → 2 tép cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhánh",
+        "text": "2 nhánh",
+        "gramEquivalent": 20,
+        "basis": "1 nhánh hành lá ~10 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Dân Việt/2sao và hint dùng hành lá (đầu hành đập dập phi thơm, lá thái nhỏ cho vào khi xào). Điện máy Chợ Lớn không dùng hành lá — ghi nhận khác biệt, giữ theo hint + Dân Việt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Nước tương chay (xì dầu)",
+      "canonicalIngredientId": "ING_ENR_75B8BAA2BF1F7A43",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "1 muỗng canh = 15 ml; xì dầu/nước tương tỉ trọng ~1.2 g/ml → 2 muỗng ≈ 36 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện máy Chợ Lớn: 2-3 muỗng canh nước tương chay để ướp 500 g nấm → 2 muỗng cho 3 phần. Dân Việt/2sao nêm bằng 'nước mắm' (không ghi chay) + 'xì dầu' không định lượng — khác hệ gia vị; ưu tiên Điện máy Chợ Lớn vì món chay và định lượng rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 10.51,
+        "carbohydrateG": 5.57,
+        "fatG": 0.1,
+        "fiberG": 0.8,
+        "sugarG": 1.7,
+        "sodiumMg": 5586
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174278",
+      "sourceNutritionNote": "Dùng số liệu nước tương thường của USDA; nước tương chay thành phần dinh dưỡng tương tự."
+    },
+    {
+      "position": 6,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 12.5,
+        "basis": "USDA: 1 muỗng canh đường cát ≈ 12.5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện máy Chợ Lớn: 1-1.5 muỗng canh đường ướp 500 g nấm → 1 muỗng cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.33,
+        "unit": "muỗng cà phê",
+        "text": "0.33 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê muối ≈ 6 g; 1/3 muỗng ≈ 2 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện máy Chợ Lớn: 1/2 muỗng cà phê muối ướp 500 g nấm → ~1/3 muỗng cho 3 phần. Dân Việt/2sao: 1/2 muỗng cà phê muối cho 200 g nấm (tỉ lệ mặn hơn) — ghi nhận, theo Điện máy Chợ Lớn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Bột ngọt",
+      "canonicalIngredientId": "ING_ENR_0A4564D231578559",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1/4 muỗng cà phê bột ngọt ≈ 1 g (ước lượng theo thể tích).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện máy Chợ Lớn ghi rõ 'bột ngọt (nếu dùng)' — optional. USDA FoodData Central không có số liệu generic cho bột ngọt/MSG (chỉ có Branded, không dùng theo quy tắc) nên để null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Hạt nêm chay",
+      "canonicalIngredientId": "ING_ENR_E0E5BC7DAA233BCD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2.5,
+        "basis": "1 muỗng cà phê hạt nêm chay ≈ 5 g (ước lượng theo thể tích hạt).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện máy Chợ Lớn: nêm hạt nêm chay 'cho vừa khẩu vị' khi nấm đã săn (không định lượng); Dân Việt/2sao: 1/2 muỗng cà phê hạt nêm cho 200 g nấm. Lấy 1/2 muỗng cà phê cho 3 phần (~375 g nấm) theo tỉ lệ Dân Việt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.66,
+        "carbohydrateG": 18.01,
+        "fatG": 13.88,
+        "fiberG": 0,
+        "sugarG": 17.36,
+        "sodiumMg": 23875
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "Dùng số liệu hạt nêm gà khô (chicken bouillon, dry) của USDA làm gần đúng cho hạt nêm chay dạng hạt."
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "1 muỗng canh = 15 ml; dầu ăn tỉ trọng ~0.91 → ≈ 13.6 g (USDA).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện máy Chợ Lớn: 'một ít dầu ăn' để phi sả tỏi; Dân Việt/2sao: 2 muỗng cà phê dầu ăn cho 200 g nấm → quy ra ~1 muỗng canh cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Mè trắng rang",
+      "canonicalIngredientId": "ING_ENR_E99C1D9D107FBAED",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê mè trắng ≈ 3 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện máy Chợ Lớn: rắc mè trắng rang 'tùy chọn' khi hoàn thiện.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 565,
+        "proteinG": 16.96,
+        "carbohydrateG": 25.74,
+        "fatG": 48,
+        "fiberG": 14,
+        "sugarG": null,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170151",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Rau mùi (ngò rí)",
+      "canonicalIngredientId": "ING_ENR_D6CB7B7A9989F08F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "ít",
+        "text": "1 ít",
+        "gramEquivalent": 5,
+        "basis": "1 ít rau mùi thái nhỏ ~5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Dân Việt/2sao: rắc rau mùi thái nhỏ khi tắt bếp. Điện máy Chợ Lớn không dùng — ghi nhận khác biệt; để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": "Dùng số liệu lá ngò rí (cilantro) tươi của USDA."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế nấm: cắt bỏ phần chân nấm bẩn, rửa sạch với nước, để ráo. Thái nấm thành lát dày khoảng 1 cm theo chiều dọc thân nấm; cây nấm to thì cắt đôi hoặc ba theo chiều ngang trước khi thái lát.",
+      "tip": "Điện máy Chợ Lớn: thái lát dọc dày ~1 cm giúp nấm giữ độ dai giòn, không bị nát khi xào."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế sả, ớt, tỏi, hành: sả bóc bỏ lớp vỏ già bên ngoài, rửa sạch, thái lát mỏng. Tỏi bóc vỏ, băm nhỏ. Ớt bỏ cuống, băm nhỏ hoặc thái khoanh (điều chỉnh theo độ cay). Hành lá thái nhỏ, để riêng phần đầu hành.",
+      "tip": "Chia sả và tỏi băm làm hai phần: một nửa để ướp nấm, một nửa để phi thơm — đây là điểm then chốt của công thức Điện máy Chợ Lớn."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Ướp nấm: cho nấm đã thái vào tô lớn, thêm 2 muỗng canh nước tương chay, 1 muỗng canh đường, 1/3 muỗng cà phê muối, 1/4 muỗng cà phê bột ngọt (nếu dùng) và một nửa lượng sả, tỏi băm. Trộn đều nhẹ tay, ướp 15-20 phút cho nấm ngấm gia vị.",
+      "tip": "Trộn nhẹ tay để lát nấm không bị nát. Có thể ướp đến 30 phút nếu muốn nấm thấm đậm hơn (Điện máy Chợ Lớn).",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Phi thơm: đun nóng 1 muỗng canh dầu ăn trong chảo, cho phần sả và tỏi băm còn lại cùng đầu hành vào phi đến khi vàng nhẹ, dậy mùi thơm.",
+      "tip": "Phi sả tỏi vừa vàng tới — cháy quá sẽ đắng và át mùi nấm.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Xào nấm: cho toàn bộ nấm đã ướp vào chảo, xào lửa vừa, đảo nhẹ nhàng để nấm chín đều và không nát.",
+      "tip": "Điện máy Chợ Lớn: đảo nhẹ tay là yêu cầu quan trọng vì lát nấm mỏng dễ nát."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Khi nấm bắt đầu săn lại và hơi khô, nêm 1/2 muỗng cà phê hạt nêm chay, đảo đều cho thấm. Tiếp tục xào đến khi nấm chín hoàn toàn, có màu vàng đẹp mắt và hơi se lại.",
+      "tip": "Dân Việt/2sao: xào lửa lớn, đảo nhanh tay khoảng 6-8 phút. Nếu chảo quá khô có thể thêm chút nước lọc, nhưng không cho nhiều kẻo mất độ 'khô' đặc trưng của món.",
+      "timerMinutes": 7
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho hành lá thái nhỏ vào, đảo nhanh tay rồi tắt bếp.",
+      "tip": "Cho hành lá vào cuối để giữ màu xanh tươi."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Gắp nấm ra đĩa, rắc mè trắng rang và rau mùi thái nhỏ lên trên (tùy chọn).",
+      "tip": "Mè rang và rau mùi chỉ rắc khi đã tắt bếp để giữ hương thơm."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Dùng nóng với cơm trắng. Món có thể bảo quản trong hộp kín ở ngăn mát tủ lạnh 2-3 ngày.",
+      "tip": "Điện máy Chợ Lớn: món này càng để càng thấm, hâm nóng lại vẫn ngon."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 41.25,
+      "proteinG": 4.14,
+      "carbohydrateG": 7.61,
+      "fatG": 0.51,
+      "fiberG": 2.88,
+      "sugarG": 1.39,
+      "sodiumMg": 22.5
+    },
+    "originalPerServing": {
+      "energyKcal": 148.18,
+      "proteinG": 6.58,
+      "carbohydrateG": 21.7,
+      "fatG": 5.85,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Sả tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Ớt hiểm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Nước tương chay (xì dầu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Hạt nêm chay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

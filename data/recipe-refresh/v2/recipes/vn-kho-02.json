@@ -1,0 +1,787 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "vn-kho-02",
+    "slug": "ca-loc-kho-to-tieu-den",
+    "title": "Cá lóc kho tộ tiêu đen cay nồng"
+  },
+  "content": {
+    "description": "Thịt cá lóc đồng săn chắc ngấm đậm vị mắm đường, thơm nức tiêu đen xay và tóp mỡ giòn rụm trong niêu đất.",
+    "cuisine": "vietnamese",
+    "category": "mon_kho",
+    "region": "nam",
+    "cookTimeMinutes": 30,
+    "servings": 3,
+    "difficulty": "medium",
+    "tags": [
+      "Món kho",
+      "Đặc sản",
+      "Đậm đà",
+      "Niêu đất"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/vn-kho-02.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://yeutre.vn/bai-viet/ca-loc-kho-tieu-7-cach-nau-don-gian-ma-cuc-ngon-va-hao-com.37991/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://bepxua.vn/bi-quyet-nau-ca-loc-kho-to-ngon-vet-sach-noi-com/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cá lóc",
+      "canonicalIngredientId": "FISH_FRESHWATER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Yeutre (cách 2 truyền thống) và bepxua đều dùng 500 g cá lóc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 96,
+        "proteinG": 20.08,
+        "carbohydrateG": 0,
+        "fatG": 1.7,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 52
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175176",
+      "sourceNutritionNote": "FDC không có cá lóc (snakehead); dùng số liệu cá rô phi tươi (cùng loại cá nước ngọt, thịt trắng, nạc) làm nguyên liệu tương đương."
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt ba chỉ heo (thái mỏng, thắng lấy tóp mỡ)",
+      "canonicalIngredientId": "PORK_BELLY",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "Yeutre cách 3: 200 g ba chỉ cho 700 g cá (≈ 29%); bepxua: 200 g ba chỉ cho 500 g cá. Với 500 g cá: hai phía cho 143–200 g — lấy 150 g theo tỉ lệ của yeutre cách 3 (khớp công thức thịt ba chỉ đi kèm cá kho tiêu).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 518,
+        "proteinG": 9.34,
+        "carbohydrateG": 0,
+        "fatG": 53.01,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 32
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167812",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "ml",
+        "text": "50 ml",
+        "gramEquivalent": 55,
+        "basis": "tỉ trọng nước mắm ước tính ≈ 1,1 → 50 ml ≈ 55 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 50,
+          "unit": "ml"
+        }
+      },
+      "note": "Yeutre cách 2: 50 ml nước mắm ngon; bepxua: không định lượng cụ thể (ghi 'nước mắm').",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá (đầu hành + lá)",
+      "canonicalIngredientId": "ING_ENR_1AE7E8EB5A1B88AF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhánh",
+        "text": "2 nhánh",
+        "gramEquivalent": 30,
+        "basis": "1 nhánh hành lá ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Yeutre: 2 nhánh hành lá, tách riêng đầu hành (đập dập ướp) và lá (cắt khúc rắc lên).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "trái",
+        "text": "2 trái",
+        "gramEquivalent": 10,
+        "basis": "1 trái ớt hiểm ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Yeutre cách 2: 1–2 trái ớt đỏ; bepxua: 'ớt chỉ thiên'. Số liệu dinh dưỡng dùng tương đương ớt đỏ tươi (FDC 170106).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 10,
+        "basis": "1 tép tỏi ≈ 3 g (USDA: 1 clove garlic ≈ 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Yeutre cách 2: 3 tép tỏi băm; bepxua chỉ ghi 'tỏi'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 15,
+        "basis": "1 củ hành tím ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Gợi ý assignment có 'hành tím & tỏi khô'; bepxua dùng đầu hành + tỏi băm phi thơm. Yeutre cách 2 không ghi hành tím nhưng yeutre cách 3 dùng 4 củ hành khô — lấy 1 củ dung hòa.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "thìa cà phê",
+        "text": "1 thìa cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 thìa cà phê tiêu xay ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Yeutre: 1 thìa cà phê hạt tiêu xay (ướp) + rắc thêm lúc hoàn thành; bepxua: 1 thìa cafe tiêu xay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước hàng (nước màu kho cá)",
+      "canonicalIngredientId": "ING_ENR_0684B26953156AED",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "thìa cà phê",
+        "text": "1 thìa cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 thìa cà phê ≈ 5 ml ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Yeutre: 1 thìa cà phê nước hàng; bepxua: 'nước màu' không định lượng.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước hàng là đường thắng thủ công, không có số liệu chuẩn trên FDC; không dùng số liệu đường thô thay thế nên để null."
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng canh",
+        "text": "0.5 muỗng canh",
+        "gramEquivalent": 7,
+        "basis": "0,5 muỗng canh dầu = 7,5 ml ≈ 6,8 g (tỉ trọng ~0,91), làm tròn 7 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Yeutre: 1/2 muỗng canh dầu ăn; bepxua: 'ít dầu ăn'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "thìa cà phê",
+        "text": "2 thìa cà phê",
+        "gramEquivalent": 8,
+        "basis": "1 thìa cà phê đường ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Yeutre: 2 thìa cà phê đường trắng (ướp).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Bột nêm",
+      "canonicalIngredientId": "ING_ENR_2D7ADE7EE7D247E3",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "thìa cà phê",
+        "text": "1 thìa cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 thìa cà phê bột nêm ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Yeutre: 1 thìa cà phê bột nêm (ướp); bepxua: 1 thìa cafe hạt nêm.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "FDC không có mục generic (SR Legacy/Foundation) cho bột nêm; không dùng số liệu Branded nên để null."
+    },
+    {
+      "position": 12,
+      "sourceName": "Bột ngọt",
+      "canonicalIngredientId": "ING_ENR_0A4564D231578559",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "thìa cà phê",
+        "text": "0.5 thìa cà phê",
+        "gramEquivalent": 2.5,
+        "basis": "1 thìa cà phê bột ngọt ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Yeutre: 1/2 thìa cà phê bột ngọt.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "FDC chỉ có sản phẩm Branded cho MSG, không có mục generic nên để null."
+    },
+    {
+      "position": 13,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "thìa cà phê",
+        "text": "0.5 thìa cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 thìa cà phê muối ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Yeutre: 1/2 thìa cà phê muối (ướp) + xát muối sơ chế cá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Nước dừa tươi",
+      "canonicalIngredientId": "ING_ENR_CB6A815FDB3F7AC3",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "ml",
+        "text": "200 ml",
+        "gramEquivalent": 200,
+        "basis": "tỉ trọng nước dừa ≈ 1,0 → 200 ml ≈ 200 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 200,
+          "unit": "ml"
+        }
+      },
+      "note": "Bepxua dùng '1 trái dừa' cho 4 người (chiết nước kho); yeutre cách 2 truyền thống KHÔNG dùng nước dừa — mâu thuẫn, để tùy chọn theo bepxua với 200 ml (nửa trái).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 19,
+        "proteinG": 0.72,
+        "carbohydrateG": 3.71,
+        "fatG": 0.2,
+        "fiberG": 1.1,
+        "sugarG": 2.61,
+        "sodiumMg": 105
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170174",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Xát muối khắp mình cá lóc, rửa sạch nhiều lần với nước lạnh cho hết nhớt và giảm mùi tanh. Khứa nhẹ 2–3 đường chéo trên thân cá rồi cắt thành khúc dày vừa ăn, để ráo nước.",
+      "tip": "Yeutre: khứa chéo giúp cá thấm gia vị; bepxua: nên chọn cá lóc đồng 0,5–1 kg thì thịt ngọt, chắc.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Rửa sạch thịt ba chỉ, thái lát mỏng (hoặc miếng nhỏ). Cho vào chảo nóng đảo đến khi ra hết mỡ và tóp mỡ vàng giòn, vớt tóp mỡ ra chén riêng, giữ lại phần mỡ.",
+      "tip": "Theo gợi ý assignment: lấy tóp mỡ — tóp mỡ rắc lên món ăn lúc hoàn thành cho béo thơm.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế hành, tỏi, ớt, hành lá: ớt rửa sạch bỏ cuống (để nguyên hoặc thái nhỏ); tỏi và hành tím băm nhuyễn; đầu hành trắng đập dập, lá hành cắt khúc khoảng 4 cm.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Ướp cá với đầu hành trắng, ớt, tỏi băm, 1 thìa cà phê bột nêm, 1 thìa cà phê tiêu đen xay, 1/2 thìa cà phê muối, 2 thìa cà phê đường, 1/2 thìa cà phê bột ngọt và 50 ml nước mắm, trộn nhẹ tay, để ít nhất 20–30 phút.",
+      "tip": "Yeutre: ướp ít nhất 20 phút; bepxua: 30 phút cho thấm đều.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun nóng 1/2 muỗng canh dầu ăn (hoặc dùng chính mỡ heo từ bước 2), phi thơm hành tím và tỏi băm cho vàng thơm.",
+      "tip": "Yeutre: phi bằng mỡ heo từ tóp mỡ cho thơm hơn.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Gắp từng khúc cá vào chiên sơ 2 mặt cho thịt săn lại rồi gắp ra, tiếp tục cho thịt ba chỉ vào xào săn.",
+      "tip": "Yeutre: chiên sơ giúp cá thấm vị, lên màu đẹp và không bị nát khi kho.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Xếp cá và thịt đã chiên vào nồi đất (thịt ở dưới, cá ở trên), rưới đều nước hàng lên trên cùng với phần nước ướp cá.",
+      "tip": "Nên dùng nồi đất cho đúng chuẩn 'kho tộ' (yeutre, bepxua)."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Bật lửa lớn cho nước kho sôi bùng lên khoảng 1 phút, rồi hạ lửa nhỏ liu riu, kho khoảng 35–40 phút đến khi nước kho cạn sệt lại.",
+      "tip": "Yeutre: lửa lớn 1 phút đầu rồi liu riu; không trở cá nhiều để cá không nát. (Nếu dùng nước dừa tùy chọn: đổ vào ở bước này cho xâm xấp cá.)",
+      "timerMinutes": 40
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Rắc thêm tiêu đen xay, tóp mỡ đã thắng và lá hành cắt khúc vào, đảo nhẹ, nêm nếm lại cho vừa ăn rồi tắt bếp.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn ra đĩa, ăn nóng với cơm trắng.",
+      "tip": "Bepxua: ăn kèm cơm trắng và đĩa rau luộc là ngon nhất."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 419,
+      "proteinG": 38.14,
+      "carbohydrateG": 0,
+      "fatG": 29.34,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 102.67
+    },
+    "originalPerServing": {
+      "energyKcal": 483.8,
+      "proteinG": 40.2,
+      "carbohydrateG": 9.2,
+      "fatG": 31.88,
+      "fiberG": 1.44,
+      "sugarG": 5.91,
+      "sodiumMg": 2002.82
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá (đầu hành + lá): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Ớt hiểm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Hành tím: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước hàng (nước màu kho cá): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Đường trắng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Bột nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Bột ngọt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=800&q=80",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

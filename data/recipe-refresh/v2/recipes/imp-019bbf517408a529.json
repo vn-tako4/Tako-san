@@ -1,0 +1,664 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-019bbf517408a529",
+    "slug": "ca-chien-sot-ca-chua",
+    "title": "Cá chiên sốt cà chua"
+  },
+  "content": {
+    "description": "Khúc cá chiên vàng phủ sốt cà chua sánh chua nhẹ, món chiên-kho đưa cơm quen thuộc nhà Việt.",
+    "cuisine": "vietnamese",
+    "category": "mon_chien",
+    "region": "nam",
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Chiên",
+      "Cá",
+      "Cà chua",
+      "Đưa cơm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-019bbf517408a529.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://haisanloccantho.com/ca-cam-sot-ca-chua/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://unityfitness.vn/mach-ban-cach-lam-ca-sot-ca-chua-dam-vi-cuc-dua-com/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cá thu",
+      "canonicalIngredientId": "ING_ENR_D843F6C564AD9E19",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Unity Fitness: 500 g cá thu cho công thức 3–4 người — giữ nguyên cho 4 phần. Hải Sản Lộc dùng 300 g cá cam cho 2–3 người; chọn cá thu vì định lượng rõ ràng và phổ biến hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 205,
+        "proteinG": 18.6,
+        "carbohydrateG": 0,
+        "fatG": 13.89,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 90
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175119",
+      "sourceNutritionNote": "[AUTO-FIX 2026-09-26] FDC ID cũ 15046 (mã NDB legacy) trả 404 trên FDC API mới; đã thay bằng bản ghi SR Legacy tương đương 175119, số liệu lấy trực tiếp từ API (nutrient 208/203/205/204/291/269/307). fat hiệu chỉnh 13.9 → 13.89 theo bản ghi mới."
+    },
+    {
+      "position": 1,
+      "sourceName": "Cà chua",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 300,
+        "basis": "1 quả cà chua vừa ≈ 100 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Unity Fitness: 3 quả; Hải Sản Lộc: 2 quả cho 300 g cá — giữ 3 quả cho 500 g cá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": "[AUTO-FIX 2026-09-26] FDC ID cũ 11529 (mã NDB legacy) trả 404 trên FDC API mới; đã thay bằng bản ghi SR Legacy tương đương 170457, số liệu lấy trực tiếp từ API (nutrient 208/203/205/204/291/269/307). Số liệu giữ nguyên, khớp bản ghi mới."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "củ",
+        "text": "2 củ",
+        "gramEquivalent": 30,
+        "basis": "1 củ hành tím vừa ≈ 15 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Unity Fitness: 3 củ; Hải Sản Lộc: 2 củ — chọn 2 củ cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi ≈ 3 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Unity Fitness: 2 tép tỏi băm để phi thơm sốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "Natri và đường không được báo cáo trong nguồn FDC nên để null, không ước tính."
+    },
+    {
+      "position": 4,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "trái",
+        "text": "1 trái",
+        "gramEquivalent": 4,
+        "basis": "1 trái ớt hiểm ≈ 4 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Unity Fitness ghi ớt 'tùy chọn'; để optional cho người không ăn cay có thể bỏ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 2,
+        "carbohydrateG": 9.46,
+        "fatG": 0.2,
+        "fiberG": 1.5,
+        "sugarG": 5.1,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170497",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá vừa ≈ 15 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng hành lá rắc lên khi hoàn thiện món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "muỗng canh",
+        "text": "4 muỗng canh",
+        "gramEquivalent": 54,
+        "basis": "USDA: 1 muỗng canh dầu ăn ≈ 13.6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Unity Fitness: 4 muỗng canh — dùng chiên cá và xào sốt cà chua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "USDA: 1 muỗng canh nước mắm = 18 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Unity Fitness: 2 muỗng canh; Hải Sản Lộc: 2 muỗng canh — hai nguồn khớp nhau.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13,
+        "basis": "USDA: 1 muỗng canh đường ≈ 12.6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Unity Fitness: 1 muỗng canh; Hải Sản Lộc: 1 muỗng canh — hai nguồn khớp nhau, dùng cân bằng vị chua của cà chua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "Chất xơ và đường không được báo cáo riêng trong nguồn FDC nên để null, không ước tính."
+    },
+    {
+      "position": 9,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "USDA: 1 muỗng cà phê muối ăn ≈ 6 g; 1/2 muỗng ≈ 3 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Ướp cá trước khi chiên cho cá săn và đậm đà (Hải Sản Lộc).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "1 muỗng cà phê tiêu đen xay ≈ 2.3 g; 1/4 muỗng ≈ 0.6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rắc khi hoàn thiện, thêm mùi thơm cho món sốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê dầu hào ≈ 5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Unity Fitness: 1 muỗng cà phê trong sốt. Đường không được báo cáo trong nguồn generic nên để null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.92,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": null,
+        "sodiumMg": 2733
+      },
+      "sourceNutritionReference": "https://mobile.fatsecret.co.nz/calories-nutrition/generic/oyster-sauce?portionid=57598&portionamount=100.000",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế cá: làm sạch, cắt khúc dày 3–4 cm, rửa với nước muối loãng rồi thấm thật khô. Ướp cá với muối và chút tiêu khoảng 10 phút.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cà chua rửa sạch, thái múi cau (hoặc thái hạt lựu nếu muốn sốt nhuyễn mịn). Hành tím, tỏi băm nhỏ; ớt thái lát; hành lá cắt khúc 2 cm."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun nóng dầu ăn trên lửa vừa, cho cá vào chiên vàng đều hai mặt rồi vớt ra để ráo dầu.",
+      "tip": "Thấm khô cá trước khi chiên để không bị bắn dầu và cá giòn, không nát."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Chắt bớt dầu, chừa lại khoảng 2 muỗng canh trong chảo; cho hành tím, tỏi vào phi thơm."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho cà chua vào xào đến khi mềm nhuyễn, thêm 1/2 chén nước (khoảng 120 ml), đun sôi nhẹ.",
+      "tip": "Hải Sản Lộc xào cà chua thật nhuyễn trước khi cho cá — sốt sẽ sánh và bám cá tốt hơn."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Nêm nước mắm, đường, dầu hào vào sốt; nếm lại cho vị chua-ngọt-mặn hài hòa."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho cá đã chiên vào chảo sốt, hạ lửa nhỏ rim khoảng 10 phút cho cá thấm đều.",
+      "tip": "MÂU THUẪN NGUỒN: Unity Fitness rim nhanh ~2 phút, Hải Sản Lộc rim ~10 phút — chọn 10 phút để cá thấm sốt kỹ hơn.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Thêm ớt và hành lá vào, đảo nhẹ, rắc tiêu xay rồi tắt bếp."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Bày cá ra đĩa, rưới đều sốt cà chua lên trên, ăn nóng với cơm trắng.",
+      "tip": "Cả hai nguồn đều gợi ý món ăn kèm cơm nóng và chấm nước mắm."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 256.25,
+      "proteinG": 23.25,
+      "carbohydrateG": 0,
+      "fatG": 17.36,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 112.5
+    },
+    "originalPerServing": {
+      "energyKcal": 416.11,
+      "proteinG": 24.84,
+      "carbohydrateG": 9.04,
+      "fatG": 31.06,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1149.92
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Cà chua: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành tím: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Dầu hào: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

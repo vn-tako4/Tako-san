@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-4b592ae31a81a527",
+    "slug": "bo-kho-tuong-han",
+    "title": "Bò kho tương Hàn"
+  },
+  "content": {
+    "description": "Bò kho tương-hành ngọt mặn mềm thấm, món braise Hàn Quốc cho cuối tuần gia đình.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 80,
+    "servings": 5,
+    "difficulty": "medium",
+    "tags": [
+      "Braise",
+      "Bò",
+      "Tương",
+      "Hàn Quốc"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-4b592ae31a81a527.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.maangchi.com/recipe/jangjorim",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.korea.net/NewsFocus/Culture/view?articleId=144009",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt bò (thăn lưng trên/top round hoặc bắp bò/shank)",
+      "canonicalIngredientId": "ING_ENR_F460C54F6A18A274",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "g",
+        "text": "250 g",
+        "gramEquivalent": 250,
+        "basis": "đơn vị gốc đã là gram (Korea.net)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 250,
+          "unit": "g"
+        }
+      },
+      "note": "Korea.net không ghi số khẩu phần; sách '100 Best-Loved Recipes' thường chuẩn 4 khẩu phần — nhân 1.25× cho 5 khẩu phần. Maangchi dùng 454 g flank steak/brisket/eye round/shank cắt dọc thớ miếng 6×4×0.6 cm; Korea.net cắt khối 5×6×5 cm rồi xé lát 1 cm sau khi kho — mâu thuẫn cách cắt, lấy theo Korea.net (nguồn chính thức, định lượng metric rõ ràng).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 140.63,
+        "proteinG": 21.48,
+        "carbohydrateG": 0.85,
+        "fatG": 5.7,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 45.54
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2646173",
+      "sourceNutritionNote": "USDA Foundation 'Beef, round, top round, boneless, choice, raw' không công bố fiber và đường — để null, không bịa số."
+    },
+    {
+      "position": 1,
+      "sourceName": "Nước",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 750,
+        "unit": "g",
+        "text": "750 g",
+        "gramEquivalent": 750,
+        "basis": "Korea.net ghi 3 cups = 600 g (cup Hàn 200 ml); nhân 1.25× = 3.75 cups ≈ 750 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 750,
+          "unit": "g"
+        }
+      },
+      "note": "dùng để hầm thịt, phần lớn đổ bỏ/cạn bớt sau khi kho",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành lá (gia vị thơm, vớt bỏ sau khi hầm)",
+      "canonicalIngredientId": "ING_ENR_3F3DC54C35D1DDAB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 13,
+        "unit": "g",
+        "text": "13 g",
+        "gramEquivalent": 13,
+        "basis": "đơn vị gốc đã là gram (Korea.net: 10 g × 1.25)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 13,
+          "unit": "g"
+        }
+      },
+      "note": "hầm cùng thịt 30 phút rồi vớt bỏ (Korea.net); Maangchi bản chuẩn không dùng hành lá ở bước này mà dùng hành tây tạo ngọt — mâu thuẫn, lấy theo Korea.net.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi (gia vị thơm, vớt bỏ sau khi hầm)",
+      "canonicalIngredientId": "ING_ENR_BD8BAA56EF1499F0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 25,
+        "unit": "g",
+        "text": "25 g",
+        "gramEquivalent": 25,
+        "basis": "đơn vị gốc đã là gram (Korea.net: 20 g × 1.25)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 25,
+          "unit": "g"
+        }
+      },
+      "note": "hầm cùng thịt 30 phút rồi vớt bỏ (Korea.net)",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Xì dầu (nước tương)",
+      "canonicalIngredientId": "ING_ENR_F68EF5C1E847770A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 125,
+        "unit": "g",
+        "text": "125 g",
+        "gramEquivalent": 125,
+        "basis": "đơn vị gốc đã là gram (Korea.net: 100 g = 51⁄2 tbsp, × 1.25)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 125,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi dùng 1⁄2 cup cho 454 g thịt và dặn không dùng loại giảm muối (món cần độ mặn để bảo quản).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "Dùng mục 'Soy sauce made from soy and wheat (shoyu)' — loại xì dầu phổ biến cho món Hàn."
+    },
+    {
+      "position": 5,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "đơn vị gốc đã là gram (Korea.net: 24 g = 2 tbsp, × 1.25)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi bản chuẩn KHÔNG dùng đường mà dùng 1 củ hành tây (170-200 g) tạo ngọt — mâu thuẫn, lấy theo Korea.net; Maangchi cho phép thêm mật ong/đường nếu thích ngọt hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Tỏi (cho vào kho sau)",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 38,
+        "unit": "g",
+        "text": "38 g",
+        "gramEquivalent": 38,
+        "basis": "đơn vị gốc đã là gram (Korea.net: 30 g × 1.25)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 38,
+          "unit": "g"
+        }
+      },
+      "note": "cho vào sau khi thịt đã kho với xì dầu 30 phút, đun thêm 10 phút (Korea.net). Tổng tỏi cả món 63 g — khá nhiều nhưng đúng công thức gốc; Maangchi chỉ dùng 12 tép (~36 g) cho 454 g thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Ớt cherry xay",
+      "canonicalIngredientId": "ING_ENR_EEF029A106E7D4CA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 62,
+        "unit": "g",
+        "text": "62 g",
+        "gramEquivalent": 62,
+        "basis": "đơn vị gốc đã là gram (Korea.net: 50 g × 1.25)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 62,
+          "unit": "g"
+        }
+      },
+      "note": "Korea.net cho ớt xay vào 3 phút cuối rồi dùng trang trí; Maangchi dùng 2 quả ớt xanh nguyên quả (serrano/jalapeño/shishito) cắt khúc 1.2 cm — mâu thuẫn, lấy theo Korea.net.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 2,
+        "carbohydrateG": 9.46,
+        "fatG": 0.2,
+        "fiberG": 1.5,
+        "sugarG": 5.1,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170497",
+      "sourceNutritionNote": "USDA không có 'cherry pepper' trong SR Legacy/Foundation; dùng số liệu ớt cay xanh (hot chili, green, raw) làm tương đương gần nhất."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Lau sạch máu trên bề mặt thịt bò bằng khăn sạch, rồi cắt thành khối 5 cm rộng × 6 cm dài × 5 cm dày.",
+      "tip": "Korea.net khuyên dùng top round (thăn lưng trên) hoặc shank (bắp bò) — thịt có thớ để xé sau khi kho."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Tỏi bóc vỏ, rửa sạch (chia 25 g để hầm, 38 g để kho sau); hành lá rửa sạch cắt khúc; ớt rửa sạch, bỏ cuống."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho nước và thịt vào nồi, đun lửa lớn khoảng 3 phút. Khi nước sôi, hạ lửa vừa, cho hành lá và 25 g tỏi (gia vị thơm) vào, hầm 30 phút rồi vớt bỏ gia vị thơm.",
+      "tip": "Vớt bỏ hành tỏi đã hầm để nước kho trong, không bị đắng.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Khi thịt đã chín mềm, cho xì dầu và đường vào nồi, đun tiếp 30 phút cho nước kho cạn còn khoảng một nửa.",
+      "tip": "Maangchi: dùng xì dầu thường, không dùng loại giảm muối vì món này cần độ mặn để bảo quản được lâu.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho 38 g tỏi còn lại vào nồi, đun 10 phút; cho ớt cherry xay vào, đun thêm 3 phút rồi tắt bếp.",
+      "timerMinutes": 13
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Vớt thịt ra đĩa, xé dọc thớ thành lát dày khoảng 1 cm.",
+      "tip": "Xé dọc thớ để miếng thịt tơi, thấm nước kho — đúng kiểu jangjorim truyền thống."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Xếp thịt ra đĩa, trang trí tỏi và ớt xung quanh, rưới nước kho lên trên."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Để nguội rồi cho vào hộp kín, bảo quản trong tủ lạnh đến 1 tuần (càng nhiều xì dầu càng để được lâu). Khi ăn hâm nóng lại.",
+      "tip": "Maangchi: sau khi để tủ lạnh có thể thấy váng mỡ trắng nổi trên mặt — hâm nóng là tan hết, vị như mới nấu."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 5,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 52.75,
+      "proteinG": 2.77,
+      "carbohydrateG": 10.92,
+      "fatG": 0.21,
+      "fiberG": 0.55,
+      "sugarG": 6.8,
+      "sodiumMg": 1375.47
+    },
+    "originalPerServing": {
+      "energyKcal": 131.35,
+      "proteinG": 13.87,
+      "carbohydrateG": 13.19,
+      "fatG": 3.09,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1399.51
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Thịt bò (thăn lưng trên/top round hoặc bắp bò/shank): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Nước: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 2,
+        "detail": "Hành lá (gia vị thơm, vớt bỏ sau khi hầm): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 3,
+        "detail": "Tỏi (gia vị thơm, vớt bỏ sau khi hầm): consumed/absorbed amount is not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

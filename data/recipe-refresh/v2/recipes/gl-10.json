@@ -1,0 +1,678 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "gl-10",
+    "slug": "thai-green-curry",
+    "title": "Cà ri gà kiểu Thái (Green Curry)"
+  },
+  "content": {
+    "description": "Thịt gà mềm ngập trong nước sốt cà ri cốt dừa béo ngậy thơm nồng lá quế và ớt xanh.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "medium",
+    "tags": [
+      "Thái Lan",
+      "Béo ngậy",
+      "Cay nồng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/gl-10.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://hot-thai-kitchen.com/green-curry-new-2/print/6636/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://norecipes.com/green-curry-chicken-recipe/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nước cốt dừa đóng hộp",
+      "canonicalIngredientId": "ING_ENR_C715ED70A73B3EA4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.33,
+        "unit": "cup",
+        "text": "1.33 cup",
+        "gramEquivalent": 296,
+        "basis": "1 cup nước cốt dừa = 226 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen (bản gốc 4 phần) dùng 13⁄4 cup, trong đó 3⁄4 cup để 'tách dầu' xào paste và phần còn lại cho vào sau; ×0,75 cho 3 phần = khoảng 11⁄3 cup. MÂU THUẪN KỸ THUẬT: Hot Thai Kitchen tách dầu trực tiếp từ cốt dừa, không thêm dầu ăn; No Recipes dùng 1 tbsp dầu ăn để xào paste. Lượng cốt dừa của No Recipes cũng khác (không định lượng cup cụ thể trong bản tóm tắt).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có bộ dữ liệu đầy đủ đạt chuẩn: các nguồn mâu thuẫn về fiber (0 g theo freefoodfacts/foodstruct/fitwatch vs 2,2 g theo bảng so sánh vegnt) và sugar (0 g vs không có dữ liệu). Theo quy tắc chống bịa đặt, để toàn object null."
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt đùi gà (không da, không xương)",
+      "canonicalIngredientId": "ING_ENR_B71A071EF2ECA133",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 340,
+        "unit": "g",
+        "text": "340 g",
+        "gramEquivalent": 340,
+        "basis": "1 lb = 454 g; bản gốc 1 lb cho 4 phần, ×0,75 ≈ 340 g cho 3 phần",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 340,
+          "unit": "g"
+        }
+      },
+      "note": "Hot Thai Kitchen dùng 1 lb đùi gà cho 4 phần; No Recipes dùng 550 g đùi gà cho 4 phần — hai nguồn mâu thuẫn về lượng gà. Giữ tỉ lệ ×0,75 từ nguồn chính (Hot Thai Kitchen). Cắt miếng vừa ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 121,
+        "proteinG": 19.66,
+        "carbohydrateG": 0,
+        "fatG": 4.12,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 95
+      },
+      "sourceNutritionReference": "https://www.aqua-calc.com/calculate/food-calories/substance/chicken-coma-and-blank-broilers-blank-or-blank-fryers-coma-and-blank-dark-blank-meat-blank-only-coma-and-blank-raw",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước dùng gà",
+      "canonicalIngredientId": "ING_ENR_11FB997D0B872A56",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "cup",
+        "text": "0.75 cup",
+        "gramEquivalent": 180,
+        "basis": "1 cup nước dùng ≈ 240 g; bản gốc 1 cup cho 4 phần, ×0,75 = 3⁄4 cup",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 1 cup nước dùng gà cho 4 phần và cho phép thay bằng nước lọc; No Recipes dùng nước lọc (không dùng nước dùng gà) — mâu thuẫn nguyên liệu nền. Giữ nước dùng gà theo nguồn chính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 6,
+        "proteinG": 0.64,
+        "carbohydrateG": 0.44,
+        "fatG": 0.21,
+        "fiberG": 0,
+        "sugarG": 0.43,
+        "sodiumMg": 371
+      },
+      "sourceNutritionReference": "https://www.caloriesta.com/en/calories-in-food/soup-chicken-broth-ready-to-serve?i=6194",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Bột cà ri xanh (green curry paste)",
+      "canonicalIngredientId": "ING_ENR_A7E882A84977DD5F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.625,
+        "unit": "muỗng canh",
+        "text": "2.625 muỗng canh",
+        "gramEquivalent": 42,
+        "basis": "1 muỗng canh curry paste ≈ 16 g; bản gốc 31⁄2 tbsp cho 4 phần, ×0,75 ≈ 25⁄8 tbsp",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 31⁄2 tbsp paste mua sẵn cho 4 phần và TĂNG CƯỜNG bằng cách xay thêm 15 lá basil + 1 tsp mắm tôm (fingerroot/krachai tùy chọn); No Recipes chỉ dùng paste mua sẵn, không tăng cường. Giữ cách tăng cường của nguồn chính.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có dữ liệu dinh dưỡng chuẩn cho curry paste thương mại (thành phần và nhãn hiệu khác nhau rất lớn); để toàn object null."
+    },
+    {
+      "position": 4,
+      "sourceName": "Mắm tôm (shrimp paste)",
+      "canonicalIngredientId": "ING_ENR_AA671B1519778887",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "muỗng cà phê",
+        "text": "0.75 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 tsp mắm tôm ≈ 5 g; bản gốc 1 tsp cho 4 phần, ×0,75 = 3⁄4 tsp",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen trộn mắm tôm vào paste để tăng độ đậm đà; No Recipes không dùng. Người dị ứng hải sản có thể bỏ qua.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có dữ liệu dinh dưỡng chuẩn cho mắm tôm Thái đúng loại; để toàn object null."
+    },
+    {
+      "position": 5,
+      "sourceName": "Lá húng quế (để xay cùng curry paste)",
+      "canonicalIngredientId": "ING_ENR_0121EB2200008912",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Lá húng quế tươi via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 11,
+        "unit": "lá",
+        "text": "11 lá",
+        "gramEquivalent": 8,
+        "basis": "bản gốc 15 lá cho 4 phần, ×0,75 ≈ 11 lá; 1 lá basil lớn ≈ 0,7 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 11,
+          "unit": "piece"
+        }
+      },
+      "note": "Hot Thai Kitchen xay 15 lá basil cùng paste và mắm tôm để 'làm mới' paste mua sẵn — kỹ thuật riêng của nguồn chính, No Recipes không có.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 3.15,
+        "carbohydrateG": 2.65,
+        "fatG": 0.64,
+        "fiberG": 1.6,
+        "sugarG": 0.3,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://www.caloriesta.com/en/calories-in-food/basil-fresh?i=2044",
+      "sourceNutritionNote": "Dùng số liệu basil tươi generic (USDA) làm proxy cho Thai basil; chưa có dữ liệu chuẩn riêng cho Thai basil."
+    },
+    {
+      "position": 6,
+      "sourceName": "Đường thốt nốt",
+      "canonicalIngredientId": "ING_ENR_A21CCD219EA432B0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 22,
+        "basis": "1 muỗng canh đường thốt nốt ≈ 15 g; bản gốc 2 tbsp cho 4 phần, ×0,75 = 11⁄2 tbsp",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 2 tbsp đường thốt nốt cho 4 phần; No Recipes dùng đường dừa (coconut sugar) — hai nguồn dùng loại đường khác nhau. Giữ đường thốt nốt theo nguồn chính; nêm theo khẩu vị vì độ ngọt của đường thốt nốt khác nhau theo loại.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Dữ liệu coconut palm sugar theo nhãn thương mại thay đổi rất mạnh, không có nguồn chuẩn cho đường thốt nốt Thái; để toàn object null."
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.25,
+        "unit": "muỗng canh",
+        "text": "1.25 muỗng canh",
+        "gramEquivalent": 22,
+        "basis": "1 muỗng canh nước mắm ≈ 18 g (USDA mirror)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 11⁄2–2 tbsp cho 4 phần (ghi khoảng, nêm theo khẩu vị); No Recipes cũng nêm nước mắm theo khẩu vị. Giữ 11⁄4 tbsp (mức giữa ×0,75) rồi nếm lại khi nấu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.1,
+        "carbohydrateG": 3.6,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://foodstruct.com/food/fish-sauce",
+      "sourceNutritionNote": "Giá trị natri thay đổi mạnh theo nhãn hiệu; đây là số liệu nước mắm generic của USDA."
+    },
+    {
+      "position": 8,
+      "sourceName": "Lá chanh makrut (lá chanh Thái)",
+      "canonicalIngredientId": "ING_ENR_C1005AAB22C5855A",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Lá chanh Makrut via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "lá",
+        "text": "4 lá",
+        "gramEquivalent": 2,
+        "basis": "bản gốc 5 lá cho 4 phần, ×0,75 = 4 lá; 1 lá chanh makrut ≈ 0,5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Hot Thai Kitchen dùng 5 lá cho 4 phần, xé nhỏ cho vào khi om gà; No Recipes cũng dùng lá makrut. Không thay bằng lá chanh thường vì hương khác hẳn.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có dữ liệu dinh dưỡng chuẩn cho lá chanh makrut; để toàn object null."
+    },
+    {
+      "position": 9,
+      "sourceName": "Cà tím Thái (Thai eggplant)",
+      "canonicalIngredientId": "ING_ENR_D32A1D5D5451CD7E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 170,
+        "unit": "g",
+        "text": "170 g",
+        "gramEquivalent": 170,
+        "basis": "1⁄2 lb = 227 g; bản gốc 1⁄2 lb cho 4 phần, ×0,75 ≈ 170 g cho 3 phần",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 170,
+          "unit": "g"
+        }
+      },
+      "note": "Hot Thai Kitchen dùng 1⁄2 lb cà tím Thái cho 4 phần, bổ múi cau và cho vào CUỐI để không bị nát; No Recipes dùng cà tím cùng măng và bắp non, nấu rau khoảng 10 phút — mâu thuẫn về loại rau và thời gian nấu. Giữ cà tím Thái + ớt chuông theo nguồn chính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.98,
+        "carbohydrateG": 5.88,
+        "fatG": 0.18,
+        "fiberG": 3,
+        "sugarG": 3.53,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://www.caloriesta.com/en/calories-in-food/eggplant-raw?i=11209",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Lá húng quế Thái (Thai basil, để cho vào cuối)",
+      "canonicalIngredientId": "ING_ENR_0121EB2200008912",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Lá húng quế tươi via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "cup",
+        "text": "0.75 cup",
+        "gramEquivalent": 15,
+        "basis": "1 cup lá basil ≈ 20 g; bản gốc 1 cup cho 4 phần, ×0,75 = 3⁄4 cup",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 1 cup Thai basil cho 4 phần, cho vào khi tắt bếp; No Recipes cũng cho basil cuối. Đây là lượng basil để hoàn thiện món, khác với 11 lá xay cùng paste ở trên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 3.15,
+        "carbohydrateG": 2.65,
+        "fatG": 0.64,
+        "fiberG": 1.6,
+        "sugarG": 0.3,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://www.caloriesta.com/en/calories-in-food/basil-fresh?i=2044",
+      "sourceNutritionNote": "Dùng số liệu basil tươi generic (USDA) làm proxy cho Thai basil; chưa có dữ liệu chuẩn riêng cho Thai basil."
+    },
+    {
+      "position": 11,
+      "sourceName": "Ớt chuông đỏ",
+      "canonicalIngredientId": "ING_ENR_3908D9685441601A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 22,
+        "unit": "g",
+        "text": "22 g",
+        "gramEquivalent": 22,
+        "basis": "1 quả ớt chuông đỏ vừa ≈ 119 g; bản gốc 1⁄4 quả cho 4 phần, ×0,75 ≈ 1⁄5 quả",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 22,
+          "unit": "g"
+        }
+      },
+      "note": "Hot Thai Kitchen dùng 1⁄4 quả ớt chuông đỏ thái sợi cho 4 phần để tạo màu; No Recipes dùng ớt đỏ thái lát. Giữ theo nguồn chính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 26,
+        "proteinG": 0.99,
+        "carbohydrateG": 6.03,
+        "fatG": 0.3,
+        "fiberG": 2.1,
+        "sugarG": 4.2,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170108",
+      "sourceNutritionNote": "Số liệu theo USDA/100 g; trang tra cứu hiển thị nhãn serving 119 g nhưng các giá trị chi tiết (protein 1,2 g, fiber 2,5 g, sugar 5 g, sodium 4,8 mg) khớp tuyệt đối bộ USDA tính trên 100 g. [audit round 4: đồng bộ lại toàn bộ 7 chỉ số theo bản ghi FDC 170108 — Peppers, sweet, red, raw]"
+    },
+    {
+      "position": 12,
+      "sourceName": "Riềng ngón (fingerroot/krachai)",
+      "canonicalIngredientId": "ING_ENR_D6E1500D6DD43127",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "ước lượng 10 g thái sợi (nguồn chính ghi tùy chọn, không định lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Hot Thai Kitchen ghi là nguyên liệu TÙY CHỌN khi tăng cường paste; No Recipes không dùng. Có thể bỏ qua nếu không tìm mua được.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có dữ liệu dinh dưỡng chuẩn cho fingerroot; để toàn object null."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Tăng cường curry paste: cho 25⁄8 muỗng canh green curry paste, 11 lá húng quế và 3⁄4 muỗng cà phê mắm tôm (kèm riềng ngón thái sợi nếu dùng) vào cối hoặc máy xay, xay/giã thành hỗn hợp nhuyễn mịn.",
+      "tip": "Hot Thai Kitchen: đây là bí quyết làm paste mua sẵn thơm như paste giã tay — basil tươi và mắm tôm 'đánh thức' hương vị paste đóng hộp."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Múc khoảng 1⁄2 cup phần đặc của nước cốt dừa cho vào wok/chảo sâu lòng, đun lửa vừa đến khi nước bốc hơi hết và dầu trong nổi lên trên, hỗn hợp thơm lừng.",
+      "tip": "Hot Thai Kitchen: 'tách dầu' (cracking) là bước then chốt của cà ri Thái — đun đến khi thấy dầu trong óng ánh nổi lên và nghe mùi thơm béo, đừng để cháy.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho toàn bộ hỗn hợp paste đã tăng cường vào phần dầu dừa, xào 3–5 phút cho paste thấm dầu và dậy mùi thơm nồng.",
+      "tip": "Xào paste thật kỹ trong dầu dừa là bí quyết để cà ri thơm sâu; paste chưa chín kỹ sẽ có vị hăng sống.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho thịt đùi gà cắt miếng vừa ăn vào, đảo đều cho thịt săn lại và áo đều paste.",
+      "tip": "Cắt gà miếng vừa ăn (khoảng 3–4 cm) để gà chín đều mà không bị bở khi om.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đổ 3⁄4 cup nước dùng gà vào, xé nhỏ 4 lá chanh makrut thả vào, đun sôi rồi hạ lửa nhỏ, om 10–15 phút cho gà chín mềm và thấm vị cà ri.",
+      "tip": "Hot Thai Kitchen om gà 10–15 phút; No Recipes om khoảng 15 phút. Om lửa nhỏ liu riu, gà vừa mềm tới là dừng để thịt không bị khô bở.",
+      "timerMinutes": 12
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho cà tím Thái bổ múi cau và ớt chuông đỏ thái sợi vào, nấu thêm khoảng 5 phút đến khi cà vừa mềm nhưng vẫn giữ được hình dạng.",
+      "tip": "MÂU THUẪN: Hot Thai Kitchen cho rau vào cuối, nấu vừa chín tới; No Recipes nấu rau khoảng 10 phút cùng măng và bắp non. Giữ 5 phút để cà tím không bị nát và ớt chuông giữ màu đỏ đẹp.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nêm 11⁄2 muỗng canh đường thốt nốt và 11⁄4 muỗng canh nước mắm, khuấy tan, nếm và điều chỉnh độ mặn-ngọt cho vừa khẩu vị.",
+      "tip": "Vị chuẩn của green curry là mặn-ngọt hài hòa, béo thơm cốt dừa; nêm từng ít một vì nước mắm các hãng mặn khác nhau."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Đổ phần nước cốt dừa còn lại (khoảng 3⁄4 cup) vào, khuấy nhẹ, đun sôi lăn tăn 1–2 phút cho hòa quyện.",
+      "tip": "Sau khi cho cốt dừa lần hai thì không đun sôi mạnh để cà ri không bị tách dầu và lợn cợn.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tắt bếp, cho 3⁄4 cup lá húng quế Thái vào, đảo đều cho lá vừa héo và dậy mùi thơm.",
+      "tip": "Cho basil khi đã tắt bếp để giữ hương thơm tươi — cùng nguyên tắc như món pad krapow (Hot Thai Kitchen)."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Múc cà ri ra bát sâu, dọn nóng cùng cơm trắng hoặc bún. Lượng này đủ cho 3 phần ăn.",
+      "tip": "Hot Thai Kitchen gợi ý ăn với cơm jasmine nóng hoặc bún; cà ri ngon nhất khi ăn ngay, hâm lại vẫn ngon nhưng basil sẽ thâm."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Nước cốt dừa đóng hộp: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Thịt đùi gà (không da, không xương): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nước dùng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Bột cà ri xanh (green curry paste): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Mắm tôm (shrimp paste): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Lá húng quế (để xay cùng curry paste): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Đường thốt nốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Lá chanh makrut (lá chanh Thái): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Cà tím Thái (Thai eggplant): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Lá húng quế Thái (Thai basil, để cho vào cuối): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Ớt chuông đỏ: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/recipes/global/pad-krapow.webp",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      0,
+      2,
+      3,
+      4,
+      6,
+      7,
+      10
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 0,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

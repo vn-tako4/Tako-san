@@ -1,0 +1,665 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-80ce5736becc08da",
+    "slug": "canh-ca-chua-trung-nha-la",
+    "title": "Canh cà chua trứng nhà lá"
+  },
+  "content": {
+    "description": "Trứng đánh tơi thành những vệt hoa vàng trong nước cà chua chua nhẹ, món canh nhanh mười phút cho bữa cơm vội.",
+    "cuisine": "vietnamese",
+    "category": "mon_canh",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Món canh",
+      "Nhanh",
+      "Dễ nấu",
+      "Cơm nhà"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-80ce5736becc08da.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://nhathuoclongchau.com.vn/bai-viet/canh-trung-ca-chua-co-doc-khong-cach-nau-canh-trung-ca-chua-thom-ngon-bo-duong.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://eva.vn/meo-hay-nha-bep/nau-canh-trung-ca-chua-dung-dap-trung-vao-truc-tiep-lam-cach-nay-canh-noi-van-dep-lai-sieu-ngon-khong-tanh-c279a534895.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cà chua chín",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 300,
+        "basis": "Ước lượng: 1 quả cà chua vừa ~100 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn nhẹ: nhathuoclongchau 2 quả cà chua vừa cho 2-3 người; eva.vn 2 quả cà chua + 3 quả trứng. Lấy 3 quả cho 3 phần để cân với 3 quả trứng. Dùng cà chua chín đỏ, nhiều nước (mytour).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 150,
+        "basis": "USDA FoodData Central: 1 quả trứng gà lớn (large egg) = 50 g.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn: nhathuoclongchau 2 quả; eva.vn 3 quả. Lấy 3 quả cho 3 phần (mỗi người ~1 quả).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 148,
+        "proteinG": 12.4,
+        "carbohydrateG": 0.2,
+        "fatG": 9.96,
+        "fiberG": 0,
+        "sugarG": 0.2,
+        "sodiumMg": 129
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/748967",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.25,
+        "unit": "lít",
+        "text": "1.25 lít",
+        "gramEquivalent": 1250,
+        "basis": "Đơn vị gốc đã là ml.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1.25,
+          "unit": "l"
+        }
+      },
+      "note": "nhathuoclongchau: 1-1,5 lít nước cho 2-3 người. Lấy 1,25 lít cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 10,
+        "basis": "Ước lượng: 1 củ hành tím ~10 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều phi thơm hành tím trước khi xào cà chua. pharmacity: phi với 1/2 thìa dầu ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "Ước lượng: 1 tép tỏi ~3 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ eva.vn dùng ('vài tép tỏi thái lát mỏng' phi cùng đầu hành trắng); nhathuoclongchau không dùng tỏi. Để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 15,
+        "basis": "Ước lượng: 1 cây hành lá ~7-8 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều rắc hành lá thái nhỏ khi tắt bếp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Ngò rí",
+      "canonicalIngredientId": "ING_ENR_0F9D040BCEE6A9AF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 5,
+        "basis": "Ước lượng: một nhúm ngò rí ~5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "nhathuoclongchau liệt kê ngò rí trong nguyên liệu và rắc cùng hành lá lúc hoàn thiện. Để optional vì 2sao.vn cũng có bản chỉ dùng hành lá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng dầu ăn ~0,91 → 15 × 0,91 ≈ 13,6 g/muỗng.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Dùng để phi thơm hành tím (nhathuoclongchau: 'một ít dầu ăn'; pharmacity: 1/2 thìa).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 17,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng nước mắm ~1,15 → 15 × 1,15 ≈ 17 g/muỗng.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "nhathuoclongchau: xào cà chua 'cùng một ít nước mắm để tăng hương vị'. Nêm 1 muỗng canh lúc xào cà chua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7850
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2.5,
+        "basis": "1 muỗng cà phê muối ~5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "pharmacity: 1 thìa muối cho 1 lít nước. Điều chỉnh còn 1/2 thìa cho 1,25 lít vì đã có nước mắm và hạt nêm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38800
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê bột hạt nêm ~4 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều nêm hạt nêm (pharmacity: 1 thìa hạt nêm cho 1 lít nước).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.7,
+        "carbohydrateG": 18,
+        "fatG": 13.9,
+        "fiberG": null,
+        "sugarG": 17.4,
+        "sodiumMg": 23900
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "USDA không có đúng 'hạt nêm gà' — dùng số liệu tương đương 'Soup, chicken broth or bouillon, dry' (SR Legacy 171562), chỉ tham chiếu gần đúng."
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "1 muỗng cà phê tiêu xay ~2,3 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "2sao.vn: nêm tiêu xay trước khi bắc xuống. Để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Cà chua rửa sạch, cắt múi cau hoặc miếng nhỏ vừa ăn. Hành tím bóc vỏ, băm nhỏ. Hành lá, ngò rí rửa sạch, thái nhỏ.",
+      "tip": "Muốn cà chua nhanh tan trong canh, có thể trụng qua nước sôi 15-30 giây rồi bóc vỏ trước khi cắt (nhathuoclongchau)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đập 3 quả trứng ra bát, thêm một chút muối, đánh tan đều, để riêng.",
+      "tip": "eva.vn: đánh trứng trước với chút muối giúp trứng đậm vị và khi cho vào canh sẽ nổi vân đẹp, không bị tanh. TUYỆT ĐỐI không đập trứng trực tiếp vào nồi nước đang sôi mạnh."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đặt nồi lên bếp, cho 1 muỗng canh dầu ăn vào đun nóng. Phi thơm hành tím băm (và tỏi thái lát nếu dùng) khoảng 30 giây.",
+      "tip": "Phi vừa thơm tới, không để hành tỏi cháy vàng sẽ đắng."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho cà chua vào xào cùng 1 muỗng canh nước mắm, đảo khoảng 2 phút đến khi cà chua mềm, ra màu đỏ đẹp.",
+      "tip": "Xào cà chua với nước mắm trước giúp canh thơm và có màu đỏ hấp dẫn (nhathuoclongchau, pharmacity).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Thêm 1,25 lít nước vào nồi, đun sôi. Nêm 1/2 muỗng cà phê muối và 1 muỗng cà phê hạt nêm (nếu dùng), nếm cho vừa miệng.",
+      "tip": "Đun sôi bùng rồi hạ lửa vừa trước khi cho trứng vào để trứng không bị vỡ vụn.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Hạ lửa vừa-nhỏ, rót từ từ trứng đã đánh tan vào nồi theo dòng mỏng, chờ vài giây cho trứng hơi đông lại rồi mới khuấy nhẹ một chiều để tạo vân trứng đẹp.",
+      "tip": "Bí quyết của eva.vn: rót chậm, đợi trứng se mặt rồi khuấy nhẹ một chiều — vân trứng nổi đẹp, không vón cục, không tanh."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nêm nếm lại lần cuối cho vừa ăn, đun thêm khoảng 1 phút cho trứng chín hoàn toàn.",
+      "tip": "Không đun quá lâu sau khi cho trứng để vân trứng không bị nát.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rắc hành lá và ngò rí thái nhỏ vào nồi, thêm chút tiêu xay nếu thích.",
+      "tip": "Cho rau thơm vào lúc tắt bếp để giữ màu xanh và mùi thơm tươi."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tắt bếp, múc canh ra tô lớn."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dùng nóng với cơm trắng.",
+      "tip": "Canh trứng cà chua ngon nhất khi dùng nóng — giữ trọn hương vị và dưỡng chất (nhathuoclongchau)."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 74,
+      "proteinG": 6.2,
+      "carbohydrateG": 0.1,
+      "fatG": 4.98,
+      "fiberG": 0,
+      "sugarG": 0.1,
+      "sodiumMg": 64.5
+    },
+    "originalPerServing": {
+      "energyKcal": 146.66,
+      "proteinG": 7.95,
+      "carbohydrateG": 6.21,
+      "fatG": 10.07,
+      "fiberG": 1.58,
+      "sugarG": 3.58,
+      "sodiumMg": 1158.68
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cà chua chín: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "MISSING_NUTRIENT_REFERENCE",
+        "ingredientPosition": 2,
+        "detail": "Nước lọc: nutrient values have no source reference"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành tím: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

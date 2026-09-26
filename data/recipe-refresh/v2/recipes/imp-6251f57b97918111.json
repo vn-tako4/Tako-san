@@ -1,0 +1,706 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-6251f57b97918111",
+    "slug": "tom-kho-tuong-dam",
+    "title": "Tôm kho tương đậm"
+  },
+  "content": {
+    "description": "Tôm kho tương keo mặn ngọt đậm đà, món kho nhanh 15 phút cho bữa tối bận rộn.",
+    "cuisine": "vietnamese",
+    "category": "mon_kho",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Kho",
+      "Tôm",
+      "Tương",
+      "Nhanh"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-6251f57b97918111.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://vnexpress.net/bien-tau-voi-mon-tom-kho-to-3238331.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://eva.vn/bep-eva/kho-tom-them-nguyen-lieu-nay-vua-ngon-lai-an-duoc-ca-vo-tom-thom-nuc-co-mau-do-dep-c162a490871.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm tươi",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Eva: 500 g tôm; VnExpress (Đinh Hương): 10 con tôm càng (tôm càng lớn 10 con ≈ 400–500 g) — hai nguồn tương đương, lấy 500 g theo Eva.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "API không trả Fiber (291) và Total Sugars (269) cho tôm → null, không tự suy ra."
+    },
+    {
+      "position": 1,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 30,
+        "basis": "1 củ tỏi ≈ 10 tép; 1 tép tỏi ≈ 3 g theo USDA FoodData Central → ≈30 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Eva: 1 củ tỏi; VnExpress: hành tím + tỏi băm (không định lượng).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 15,
+        "basis": "1 củ hành tím trung bình ≈ 15 g (ước lượng phổ biến)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ VnExpress dùng (phi chung với tỏi); Eva không có hành tím.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Xì dầu (nước tương)",
+      "canonicalIngredientId": "ING_ENR_F68EF5C1E847770A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Eva: 20 g nước tương; VnExpress: 1 muỗng nước tương ngọt (≈15 ml, tỉ trọng nước tương ≈1.2 → ≈18 g) — hai nguồn tương đồng, lấy 20 g theo Eva.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 10.51,
+        "carbohydrateG": 5.57,
+        "fatG": 0.1,
+        "fiberG": 0.8,
+        "sugarG": 1.7,
+        "sodiumMg": 5586
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174278",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Eva: 20 g dầu hào; VnExpress: 1 muỗng dầu hào (≈18 g) — hai nguồn tương đồng, lấy 20 g theo Eva.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.92,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": 0,
+        "sodiumMg": 2733
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174529",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 8,
+        "unit": "g",
+        "text": "8 g",
+        "gramEquivalent": 8,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 8,
+          "unit": "g"
+        }
+      },
+      "note": "Eva: 8 g đường; VnExpress: 1/2 muỗng đường (≈7–8 g) — hai nguồn tương đồng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng nước mắm ≈1.2 → ≈18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ VnExpress dùng: 1 muỗng trong nước ướp + 'một chút' khi chưng gạch; Eva không có nước mắm. Lấy 1 muỗng canh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng dầu ăn ≈0.91 → ≈13.6 g; 2 muỗng ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN: Eva dùng 50 g bơ lạt THAY DẦU ĂN để chiên tôm; VnExpress dùng 'một chút dầu ăn' (không định lượng). Hint món liệt kê dầu ăn nên lấy 2 muỗng canh dầu ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Rượu nấu ăn",
+      "canonicalIngredientId": "ING_ENR_CA3FEDAA923D315C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ Eva dùng (30 g rượu nấu ăn trong nước sốt); VnExpress không có. Lấy theo Eva.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.5,
+        "carbohydrateG": 6.3,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 1.55,
+        "sodiumMg": 626
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169070",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Bột ngọt (mì chính)",
+      "canonicalIngredientId": "ING_ENR_EF5F332E947479B3",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "g",
+        "text": "2 g",
+        "gramEquivalent": 2,
+        "basis": "1/3 muỗng cà phê ≈ 2 g (ước lượng; 1 muỗng cà phê bột ngọt ≈ 5–6 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ VnExpress dùng (1/3 muỗng mì chính); Eva không có. Tra USDA FoodData Central không trả kết quả phù hợp cho monosodium glutamate → null, không tự bịa số.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1 muỗng cà phê tiêu đen ≈ 2.3 g theo USDA; 1/2 muỗng ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "VnExpress ghi 'một chút tiêu' (không định lượng) — ước lượng 1/2 muỗng cà phê, ghi rõ là ước lượng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhánh",
+        "text": "2 nhánh",
+        "gramEquivalent": 20,
+        "basis": "1 nhánh (cây) hành lá trung bình ≈ 10 g → 2 nhánh ≈ 20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Hint món có hành lá; cả hai nguồn công thức không định lượng hành lá (VnExpress nhắc mùi hành lá khi ăn kèm món khác). Dùng 2 nhánh rắc trang trí, ghi rõ là bổ sung theo hint.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 27,
+        "proteinG": 0.97,
+        "carbohydrateG": 5.74,
+        "fatG": 0.47,
+        "fiberG": 1.8,
+        "sugarG": 3.91,
+        "sodiumMg": 15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170006",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Hạt màu điều",
+      "canonicalIngredientId": "ING_ENR_DBA8F0526776592C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê hạt màu điều ≈ 3 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ VnExpress dùng để chưng lấy màu đỏ; Eva không dùng. Kết quả duy nhất trên USDA là hỗn hợp gia vị sazon (có coriander, Na 17000 mg) — không tương đương hạt màu điều nguyên chất → null, không tự bịa số.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 muỗng canh nước = 15 ml ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "VnExpress: đổ thêm 'hai muỗng nước lọc hoặc nước dừa' khi kho để tôm ngấm gia vị; Eva không thêm nước. Nước không có giá trị dinh dưỡng đáng kể nên để null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Tôm rửa sạch, cắt râu và chân; dùng tăm rút chỉ đen ở lưng, để ráo. Tôm càng thì bóc phần đầu, tách gạch để riêng ra chén (VnExpress). Tôm thẻ/sú không có gạch thì bỏ qua bước tách gạch.",
+      "tip": "VnExpress: tôm càng xanh còn sống là ngon nhất; để tôm ráo nước trước khi ướp."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Tỏi và hành tím bóc vỏ, băm nhỏ, chia làm hai phần bằng nhau. Hành lá thái nhỏ để riêng."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Bắc nồi (tốt nhất nồi đất) lên bếp, cho 2 muỗng canh dầu ăn vào đun nóng; cho hạt màu điều vào chưng đến khi dầu lên màu đỏ đẹp thì vớt bỏ hạt. Cho một nửa phần hành tỏi băm vào phi thơm (VnExpress).",
+      "tip": "Eva dùng 50 g bơ lạt thay dầu ăn ở bước này — nếu thích mùi bơ, có thể thay theo Eva (xem note nguyên liệu)."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Pha nước sốt: 20 g xì dầu, 20 g dầu hào, 8 g đường, 30 g rượu nấu ăn (nếu dùng) khuấy tan. Ướp tôm với nước sốt cùng nửa phần hành tỏi băm còn lại, 1 muỗng canh nước mắm, bột ngọt, tiêu đen; trộn đều, để 15 phút cho thấm (VnExpress, Eva).",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Chưng gạch tôm (nếu có): cho phần hành tỏi băm còn lại vào chảo với chút dầu, cho gạch tôm vào chưng, thêm 'một chút' nước mắm; gạch chín thì múc ra để riêng (VnExpress)."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho tôm đã ướp vào nồi, đảo đều tay cho tôm săn lại và chuyển màu đỏ. Đổ thêm 2 muỗng canh nước lọc (hoặc nước dừa tươi) vào, đun nhỏ lửa liu riu cho tôm ngấm gia vị (VnExpress).",
+      "tip": "Thỉnh thoảng lật mặt tôm cho chín và ngấm đều."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Khi tôm gần chín, đổ phần gạch đã chưng lên bề mặt tôm (nếu có), kho thêm vài phút cho nước hơi sánh; nêm nếm lại cho vừa miệng (VnExpress).",
+      "tip": "VnExpress: không kho cạn hoàn toàn mà giữ chút nước sốt để chấm/chan cơm."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rắc hành lá thái nhỏ và tiêu đen lên mặt, tắt bếp. Dọn ra đĩa, ăn nóng với cơm trắng (VnExpress: 'Tôm kho tộ thích hợp ăn cùng cơm nóng')."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 17.72,
+      "proteinG": 0.79,
+      "carbohydrateG": 3.77,
+      "fatG": 0.02,
+      "fiberG": 0.07,
+      "sugarG": 2.77,
+      "sodiumMg": 554.63
+    },
+    "originalPerServing": {
+      "energyKcal": 267.18,
+      "proteinG": 35.5,
+      "carbohydrateG": 9.36,
+      "fatG": 9.97,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1289.99
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Tôm tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành tím: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      10,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

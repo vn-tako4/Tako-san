@@ -1,0 +1,675 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-d2ab8a9e07388289",
+    "slug": "muc-nuong-teriyaki",
+    "title": "Mực nướng teriyaki"
+  },
+  "content": {
+    "description": "Mực nguyên nướng quét sốt teriyaki bóng ngọt, da cháy cạnh thơm, món nướng Nhật dễ làm trên than nhỏ.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Nướng",
+      "Teriyaki",
+      "Mực",
+      "Nhật Bản"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-d2ab8a9e07388289.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://tastehongkong.com/grilled-squid-with-teriyaki-sauce/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "http://san-j.com/recipes/grilled-teriyaki-squid/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mực tươi (đã làm sạch)",
+      "canonicalIngredientId": "SQUID",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "con",
+        "text": "3 con",
+        "gramEquivalent": 690,
+        "basis": "3 con mực × ~230 g/con (tastehongkong: 1 con mực ~230 g, đã làm sạch)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "tastehongkong dùng 1 con ~230 g; San-J dùng 1,5 lb (~680 g) mực đã làm sạch — hai mức tương đương, lấy 3 con ~690 g cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 92,
+        "proteinG": 15.58,
+        "carbohydrateG": 3.08,
+        "fatG": 1.38,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 44
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174223",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Xì dầu (shoyu)",
+      "canonicalIngredientId": "ING_ENR_4B3D4B69D5D57916",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 90,
+        "unit": "ml",
+        "text": "90 ml",
+        "gramEquivalent": 108,
+        "basis": "90 ml xì dầu ≈ 108 g (tỉ trọng xì dầu ~1,2)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 90,
+          "unit": "ml"
+        }
+      },
+      "note": "tastehongkong (sốt teriyaki tự pha cho 1 con mực): 2 Tbsp xì dầu → nhân 3 cho 3 con mực = 6 Tbsp (90 ml). San-J dùng sốt teriyaki đóng chai nên không đối chiếu được tỉ lệ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Rượu sake (nấu ăn)",
+      "canonicalIngredientId": "ING_ENR_8BE07081859D0A69",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 90,
+        "unit": "ml",
+        "text": "90 ml",
+        "gramEquivalent": 90,
+        "basis": "90 ml sake ≈ 90 g (tỉ trọng sake ~1,0)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 90,
+          "unit": "ml"
+        }
+      },
+      "note": "tastehongkong: 2 Tbsp sake cho 1 con mực → 90 ml cho 3 con. Sake bay hơi gần hết khi đun, chỉ còn hương thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 134,
+        "proteinG": 0.5,
+        "carbohydrateG": 5,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167723",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Mirin",
+      "canonicalIngredientId": "ING_ENR_ADD0B636AF255631",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "ml",
+        "text": "60 ml",
+        "gramEquivalent": 68,
+        "basis": "60 ml mirin ≈ 68 g (tỉ trọng mirin ~1,14)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 60,
+          "unit": "ml"
+        }
+      },
+      "note": "tastehongkong: 4 tsp mirin cho 1 con mực → 60 ml cho 3 con. Không tra được số liệu dinh dưỡng nên để null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có entry SR Legacy/Foundation cho mirin; để null theo quy tắc không bịa số."
+    },
+    {
+      "position": 4,
+      "sourceName": "Đường nâu",
+      "canonicalIngredientId": "ING_ENR_BCD3DFAFE3C19745",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27.5,
+        "basis": "2 Tbsp đường nâu ≈ 27,5 g (1 Tbsp đường nâu nén ~13,8 g theo USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "tastehongkong: 2 tsp đường nâu cho 1 con mực → 2 Tbsp cho 3 con. Đường nâu cho màu sốt đẹp và vị đậm hơn đường trắng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 380,
+        "proteinG": 0.12,
+        "carbohydrateG": 98.09,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 97.02,
+        "sodiumMg": 28
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168833",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Bột bắp",
+      "canonicalIngredientId": "ING_ENR_D2EAF583347FED22",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1,5 tsp bột bắp ≈ 4 g (1 tsp bột bắp ~2,7 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "tastehongkong: 1/2 tsp bột bắp hòa với 2 tsp nước để làm sánh sốt cho 1 con mực → nhân 3.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 381,
+        "proteinG": 0.26,
+        "carbohydrateG": 91.27,
+        "fatG": 0.05,
+        "fiberG": 0.9,
+        "sugarG": 0,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169698",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước lọc (pha bột bắp)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "ml",
+        "text": "30 ml",
+        "gramEquivalent": 30,
+        "basis": "đơn vị gốc đã là gram (30 ml nước ≈ 30 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "ml"
+        }
+      },
+      "note": "Chỉ dùng để hòa bột bắp làm sánh sốt, không phải nguyên liệu nêm nếm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước lọc không có giá trị dinh dưỡng; không tra USDA."
+    },
+    {
+      "position": 7,
+      "sourceName": "Gừng tươi bào nhuyễn",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 6,
+        "basis": "1 Tbsp gừng bào ~6 g (1 tsp gừng bào ~2 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "tastehongkong ướp mực với 1 tsp gừng bào + 1/4 tsp muối trong 15 phút cho 1 con → nhân 3. Gừng khử tanh mực rất hiệu quả.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 9,
+        "basis": "3 tép tỏi ~9 g (1 tép tỏi vừa ~3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Theo hint món ăn (có tỏi); công thức mực nướng sốt teriyaki của 10000recipe cũng dùng 1 tsp tỏi băm cho 2 phần. tastehongkong gợi ý thêm tỏi băm vào sốt để tăng hương.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "muỗng cà phê",
+        "text": "0.75 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "3/4 tsp muối ≈ 4,5 g (1 tsp muối ~6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "tastehongkong: 1/4 tsp muối ướp 1 con mực → 3/4 tsp cho 3 con. Chỉ ướp sơ, vị mặn chính đến từ xì dầu trong sốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "2 cây hành lá ~30 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Theo hint món ăn; dùng rắc lên mực khi dọn để tăng màu sắc và hương thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "1 muỗng canh dầu ăn = 15 ml ≈ 13,6 g (tỉ trọng dầu ~0,91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Quét mỏng lên khay nướng và vỉ để mực không dính (San-J: quét dầu lên vỉ nướng và chảo).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế mực: tách đầu mực khỏi thân, cắt bỏ phần mỏ và mắt nhưng giữ lại râu. Rút bỏ xương trong suốt bên trong thân, lột bỏ lớp màng mỏng bên ngoài thân và râu. Để dễ rửa bên trong, có thể cắt rời đoạn gốc thân dài 2-3 cm (vẫn giữ lại để nướng). Rửa sạch dưới vòi nước chảy, thấm thật khô.",
+      "tip": "tastehongkong: khâu làm sạch tốn công nhất nhưng quyết định độ ngon — màng mỏng còn sót làm mực dai và có mùi.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Ướp mực: cho mực vào tô, thêm 1 Tbsp gừng bào, tỏi băm và 3/4 tsp muối, xoa đều khắp thân và râu, để 15 phút cho thấm.",
+      "tip": "Gừng và muối khử tanh; tỏi thêm theo hint món ăn và gợi ý của tastehongkong.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun sôi một nồi nước đủ ngập mực. Chần nhanh cả thân và râu mực trong 10-15 giây cho thịt co lại, thân mực thành ống săn chắc thì vớt ra ngay, thấm khô.",
+      "tip": "tastehongkong: chỉ chần 10-15 giây rồi vớt ngay — chần lâu mực dai. San-J nướng trực tiếp không chần (2-3 phút mỗi mặt trên lửa lớn); cách chần trước theo phong cách Nhật ika-maruyaki giúp mực săn và rút ngắn thời gian nướng.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Khứa thân mực: dùng dao sắc rạch ngang thân, mỗi đường cách nhau khoảng 1,5 cm, sâu khoảng nửa thân (các khoanh vẫn dính nhau).",
+      "tip": "tastehongkong: khứa giúp sốt thấm sâu và rút ngắn thời gian nướng. San-J khứa 3-4 đường dọc một mặt thân — kiểu nào cũng được, miễn không cắt đứt."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Nấu sốt teriyaki: cho 90 ml xì dầu, 90 ml sake, 60 ml mirin và 2 Tbsp đường nâu vào nồi nhỏ. Đun lửa nhỏ, khuấy nhẹ đến khi đường tan hoàn toàn. Hòa 1,5 tsp bột bắp với 30 ml nước, đổ từ từ vào nồi vừa đổ vừa khuấy đến khi sốt sánh lại thì tắt bếp.",
+      "tip": "tastehongkong: đun lửa nhỏ cho tan đường rồi mới cho bột bắp — sốt sánh như lớp vecni là đạt.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Bật lò ở chế độ nướng (grill) 175°C (350°F) cho nóng trước. Quét một lớp dầu ăn mỏng lên khay nướng chịu nhiệt.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Quét khoảng một nửa sốt teriyaki đều khắp mực và râu. Xếp mực lên khay, cho vào lò nướng 5 phút.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Lấy khay ra, quét thêm một lớp sốt teriyaki lên mực, cho vào lò nướng tiếp 5 phút đến khi mực vừa chuyển đục, mặt ngoài bóng sốt, không còn ướt.",
+      "tip": "tastehongkong: nướng tổng ~10 phút; San-J: nướng lửa lớn 2-3 phút mỗi mặt. Điểm chung của hai nguồn: KHÔNG nướng quá lâu — mực quá lửa sẽ dai như cao su.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Lấy mực ra, cắt thân thành khoanh vừa ăn, xếp ra đĩa cùng râu mực. Rưới phần sốt teriyaki còn lại lên trên, rắc hành lá thái nhỏ. Dọn nóng, ăn kèm cơm trắng.",
+      "tip": "tastehongkong: món này ở quán nướng Nhật thường ăn riêng như món nhậu, nhưng ăn với cơm hoặc mì đều ngon."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Mực tươi (đã làm sạch): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Xì dầu (shoyu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Rượu sake (nấu ăn): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Mirin: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Đường nâu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Bột bắp: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước lọc (pha bột bắp): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Gừng tươi bào nhuyễn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      4,
+      5,
+      6,
+      7,
+      9,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

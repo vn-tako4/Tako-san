@@ -1,0 +1,490 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-97ba5787e2d4113b",
+    "slug": "canh-tuong-dau-han",
+    "title": "Canh tương đậu Hàn"
+  },
+  "content": {
+    "description": "Canh doenjang nồng nàn hạt tương đậu lên men cùng rau bina-nấm, tô canh ấm trọn vị bàn ăn Hàn.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Doenjang",
+      "Hàn Quốc",
+      "Canh",
+      "Ấm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-97ba5787e2d4113b.json",
+    "rawSchemaSignature": "ingredients,notes,nutrition_computed,recipe_id,servings,sources,steps,title",
+    "sources": [
+      {
+        "url": "https://mykoreankitchen.com/korean-soybean-paste-soup-doenjang-guk/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.10000recipe.com/recipe/6958060",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "notes: Nguồn mâu thuẫn về rau và nấm: My Korean Kitchen (4 phần) dùng bí ngòi + nấm hương + nấm kim châm + hành tây, KHÔNG có rau bina; 10000recipe (đúng 3 phần) dùng rau bina + hành tây + hành lá + đậu phụ, KHÔNG có nấm. File này kết hợp theo gợi ý món được giao: rau bina + đậu phụ + nấm đùi gà.",
+      "notes: Nguồn mâu thuẫn về nêm nếm: gợi ý món được giao nhắc đến 'nước tương', nhưng 10000recipe (nguồn đúng 3 phần) nói rõ chỉ nêm bằng tương đậu, không dùng muối hay xì dầu ('소금이나 간장을 넣지 않고 된장으로만'). File này theo nguồn, không thêm xì dầu.",
+      "notes: USDA không có mục doenjang và giấm gạo/nước dùng cá cơm Hàn: đã dùng mục tương đương gần nhất (miso; giấm trắng chưng cất; fish stock home-prepared) và ghi rõ trong nutrition_note; riêng đường tổng của nấm đùi gà (mục Foundation) không được công bố nên để null.",
+      "notes: My Korean Kitchen cho thêm 1 tsp gochujang vào canh 4 phần; 10000recipe (3 phần) không dùng. File này theo 10000recipe, không thêm gochujang."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nước dùng cá cơm – tảo bẹ",
+      "canonicalIngredientId": "ING_ENR_F30EA2EE8B76A0D5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 900,
+        "unit": "g",
+        "text": "900 g",
+        "gramEquivalent": 900,
+        "basis": "900 ml nước dùng đã lọc ≈ 900 g (tỉ trọng ≈ nước)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 900,
+          "unit": "g"
+        }
+      },
+      "note": "Tự ninh từ khoảng 20 g cá cơm khô + 1 miếng tảo bẹ khô (~10 g) + 1000 ml nước, vớt bỏ xác còn ~900 ml (theo cách của 10000recipe: ninh xong vớt cá cơm ra; My Korean Kitchen dùng nước dùng cá cơm–tảo bẹ 4.5 cup cho 4 phần)",
+      "sourceNutritionPer100g": {
+        "energyKcal": 16,
+        "proteinG": 2.3,
+        "carbohydrateG": 0,
+        "fatG": 0.8,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 156
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172885",
+      "sourceNutritionNote": "Dùng số liệu 'Soup, stock, fish, home-prepared' (SR Legacy, fdcId 172885) làm tương đương cho nước dùng cá cơm–tảo bẹ Hàn Quốc tự ninh."
+    },
+    {
+      "position": 1,
+      "sourceName": "Rau bina",
+      "canonicalIngredientId": "SPINACH",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "10000recipe (đúng 3 phần ăn): 'một nắm' (한 웅큼) rau bina cắt khúc vừa ăn; rau xẹp nhiều khi nấu nên 150 g rau sống là vừa cho 3 người",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.9,
+        "carbohydrateG": 3.6,
+        "fatG": 0.4,
+        "fiberG": 2.2,
+        "sugarG": 0.4,
+        "sodiumMg": 79
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168462",
+      "sourceNutritionNote": "USDA FoodData Central: Spinach, raw (SR Legacy, fdcId 168462)."
+    },
+    {
+      "position": 2,
+      "sourceName": "Đậu phụ",
+      "canonicalIngredientId": "TOFU",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "10000recipe: nửa bìa đậu phụ (두부반모) cho 3 phần — 1 bìa đậu Hàn ≈ 300 g; My Korean Kitchen dùng 250 g đậu medium-firm cho 4 phần (quy ra 3 phần ≈ 188 g), chênh lệch không đáng kể",
+      "sourceNutritionPer100g": {
+        "energyKcal": 76,
+        "proteinG": 8.1,
+        "carbohydrateG": 1.9,
+        "fatG": 4.8,
+        "fiberG": 0.3,
+        "sugarG": 0.6,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172476",
+      "sourceNutritionNote": "Dùng số liệu 'Tofu, raw, regular, prepared with calcium sulfate' (SR Legacy, fdcId 172476); nguồn dùng đậu medium-firm Hàn, số liệu đậu regular là tương đương gần nhất."
+    },
+    {
+      "position": 3,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "Theo gợi ý món được giao; My Korean Kitchen (bản 4 phần) dùng 50 g nấm hương + 200 g nấm kim châm — ở đây thay bằng nấm đùi gà, cắt lát vừa ăn",
+      "sourceNutritionPer100g": {
+        "energyKcal": 46.4,
+        "proteinG": 2.4,
+        "carbohydrateG": 8.5,
+        "fatG": 0.3,
+        "fiberG": 3,
+        "sugarG": null,
+        "sodiumMg": 0.8
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003599",
+      "sourceNutritionNote": "USDA: 'Mushroom, king oyster' (Foundation, fdcId 2003599). Mục này không công bố đường tổng (Total Sugars) nên trường sugar_g để null thay vì bịa số."
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "1/2 củ hành tây nhỏ ≈ 50 g; 10000recipe thái miếng vừa ăn nấu cùng rau bina",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.3,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.2,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": "USDA FoodData Central: Onions, raw (SR Legacy, fdcId 170000)."
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá ≈ 15 g (USDA: 1 stalk green onion)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "10000recipe: hành lá thái nhỏ cho vào cuối cùng cùng đậu phụ",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.8,
+        "carbohydrateG": 7.3,
+        "fatG": 0.2,
+        "fiberG": 2.6,
+        "sugarG": 2.3,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "USDA FoodData Central: Onions, spring or scallions (includes tops and bulb), raw (SR Legacy, fdcId 170005)."
+    },
+    {
+      "position": 6,
+      "sourceName": "Tương đậu Hàn (doenjang)",
+      "canonicalIngredientId": "ING_ENR_1D58A56322089A4E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 34,
+        "basis": "1 muỗng canh tương đậu ≈ 17 g (USDA: 1 tbsp miso = 17 g; doenjang đặc tương đương)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "10000recipe (3 phần): nêm đúng 2 thìa tương đậu, KHÔNG thêm muối hay xì dầu — '간은 소금이나 간장을 넣지 않고 된장으로만 맞춰줘요'",
+      "sourceNutritionPer100g": {
+        "energyKcal": 198,
+        "proteinG": 12.8,
+        "carbohydrateG": 25.4,
+        "fatG": 6,
+        "fiberG": 5.4,
+        "sugarG": 6.2,
+        "sodiumMg": 3730
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172442",
+      "sourceNutritionNote": "USDA không có mục doenjang (tương đậu Hàn Quốc); dùng số liệu 'Miso' Nhật Bản (SR Legacy, fdcId 172442) làm tương đương — cùng là tương đậu nành lên men, thành phần dinh dưỡng gần nhất có thể tra được."
+    },
+    {
+      "position": 7,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2.8,
+        "basis": "1 muỗng cà phê tỏi băm ≈ 2.8 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "10000recipe cho tỏi băm vào cùng lúc với tương đậu; My Korean Kitchen cũng dùng 1 tsp tỏi cho 4 phần",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.4,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "USDA FoodData Central: Garlic, raw (SR Legacy, fdcId 169230)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Cho khoảng 20 g cá cơm khô và 1 miếng tảo bẹ khô vào nồi với 1000 ml nước lạnh, đun sôi rồi hạ lửa nhỏ ninh 10 phút.",
+      "tip": "Cho tảo bẹ từ nước lạnh để ra hết vị ngọt; nước sôi mới cho vào sẽ kém thơm.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Vớt bỏ hết xác cá cơm và tảo bẹ, lọc nước dùng qua rây cho trong.",
+      "tip": "Xác cá để lâu trong nồi nước dùng sẽ bị tanh và đục.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đặt nồi nước dùng lên bếp, cho 2 muỗng canh tương đậu và 1 muỗng cà phê tỏi băm vào; dùng vá hoặc rây khuấy cho tương tan hoàn toàn.",
+      "tip": "Hòa tương qua rây/vá giúp canh mịn, không lợn cợn xác tương (cách của My Korean Kitchen).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho 50 g hành tây thái miếng vừa ăn và 150 g rau bina cắt khúc vào nồi, đun sôi rồi nấu đến khi hành chín mềm.",
+      "tip": "Rau bina rất nhanh chín và xẹp nhiều — đừng nấu quá lâu kẻo mất màu xanh.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho 150 g nấm đùi gà thái lát vào, nấu thêm khoảng 2 phút.",
+      "tip": "Nấm đùi gà thái lát mỏng vừa ăn, nấu vừa chín tới giữ được độ giòn ngọt.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Nếm canh và chỉ chỉnh mặn bằng cách thêm chút tương đậu nếu nhạt — không nêm thêm muối hay xì dầu.",
+      "tip": "Đúng kiểu 10000recipe: vị mặn của canh doenjang-guk đến từ tương đậu, nêm thêm muối/xì dầu sẽ làm mất vị thanh của tương.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho 150 g đậu phụ cắt miếng vuông vừa ăn và 2 cây hành lá thái nhỏ vào, đun sôi bùng trở lại một dạo rồi tắt bếp.",
+      "tip": "Đậu cho vào cuối để không bị nát; hành lá cho cuối giữ màu xanh và mùi thơm.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Múc canh ra bát, dùng nóng với cơm trắng.",
+      "tip": "Canh tương đậu ngon nhất khi ăn nóng hổi; có thể rắc thêm chút tiêu nếu thích.",
+      "timerMinutes": 1
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 56.17,
+      "proteinG": 5.68,
+      "carbohydrateG": 4.3,
+      "fatG": 2.62,
+      "fiberG": 1.53,
+      "sugarG": 1.2,
+      "sodiumMg": 43.67
+    },
+    "originalPerServing": {
+      "energyKcal": 154.4,
+      "proteinG": 15.47,
+      "carbohydrateG": 12.47,
+      "fatG": 5.87,
+      "fiberG": 3.92,
+      "sugarG": null,
+      "sodiumMg": 936.56
+    },
+    "blockers": [
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 0,
+        "detail": "Nước dùng cá cơm – tảo bẹ: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 3,
+        "detail": "Nấm đùi gà: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Tương đậu Hàn (doenjang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      0,
+      6,
+      7
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 0,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

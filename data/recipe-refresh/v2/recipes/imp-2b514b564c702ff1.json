@@ -1,0 +1,490 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-2b514b564c702ff1",
+    "slug": "tom-nuong-chanh-ot",
+    "title": "Tôm nướng chanh ớt"
+  },
+  "content": {
+    "description": "Tôm nướng cháy cạnh vắt chanh-ớt cay, món nướng Thái nhiệt đới mọng ngọt.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Nướng",
+      "Tôm",
+      "Thái Lan",
+      "Cay"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-2b514b564c702ff1.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://recipewise.net/recipe/grilled-shrimp-nam-prik/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.nzwomansweeklyfood.co.nz/recipe/lunch/seafood-skewers-with-nam-jim-19109/0/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm tươi cỡ lớn (bóc vỏ, bỏ chỉ đen, giữ đuôi)",
+      "canonicalIngredientId": "ING_ENR_4094DAF61CF758CA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "Recipe Wise: 1,5–2 lbs (680–900 g) tôm cỡ lớn cho 4 phần; nhân 0,75 cho 3 phần ≈ 510–680 g, làm tròn 500 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Tôm bóc vỏ bỏ chỉ đen, giữ đuôi (Recipe Wise bước 2; NZ Woman's Weekly: 'green prawns, peeled, deveined, tails intact' cho xiên nướng).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "SR Legacy 'Crustaceans, shrimp, raw'. fiber/sugar không được báo cáo trong mục SR Legacy → null. nutrient 208 = 85.0 kcal (unitName=kcal), không nhầm với 268 = 356.0 kJ."
+    },
+    {
+      "position": 1,
+      "sourceName": "Chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "quả",
+        "text": "1.5 quả",
+        "gramEquivalent": 75,
+        "basis": "1 quả chanh ~50 g; 1,5 quả vắt được ~2,25 Tbsp (34 ml) nước cốt theo Recipe Wise cho 3 phần (3 Tbsp/4 phần × 0,75)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Recipe Wise dùng nước cốt chanh trong sốt; NZ Woman's Weekly nam jim dùng 1/4 cup nước cốt chanh (~1 quả) — cùng thành phần sốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 30,
+        "proteinG": 0.7,
+        "carbohydrateG": 10.54,
+        "fatG": 0.2,
+        "fiberG": 2.8,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168155",
+      "sourceNutritionNote": "SR Legacy 'Limes, raw'. nutrient 208 = 30.0 kcal (unitName=kcal)."
+    },
+    {
+      "position": 2,
+      "sourceName": "Ớt hiểm tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 4,
+        "basis": "Recipe Wise: 1 tsp ớt băm cho 4 phần → 0,75 tsp ≈ 4 g cho 3 phần ≈ 2 quả ớt hiểm (~2 g/quả), băm nhỏ",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Recipe Wise ghi 'minced chili, to taste'; NZ Woman's Weekly nam jim dùng 2 quả ớt đỏ dài bỏ hạt băm — tương đương lượng ớt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "SR Legacy 'Peppers, hot chili, red, raw'. nutrient 208 = 40.0 kcal (unitName=kcal)."
+    },
+    {
+      "position": 3,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.25,
+        "unit": "muỗng canh",
+        "text": "2.25 muỗng canh",
+        "gramEquivalent": 40,
+        "basis": "Recipe Wise: 3 Tbsp nam pla cho 4 phần → 2,25 Tbsp (= 34 ml) cho 3 phần ≈ 40 g (tỉ trọng nước mắm ~1,2)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Recipe Wise gọi là 'nam pla (Thai fish sauce)'; NZ Woman's Weekly nam jim cũng dùng nước mắm trong sốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": "SR Legacy 'Sauce, fish, ready-to-serve'. nutrient 208 = 35.0 kcal (unitName=kcal)."
+    },
+    {
+      "position": 4,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.25,
+        "unit": "muỗng cà phê",
+        "text": "2.25 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "Recipe Wise: 1 Tbsp đường cho 4 phần → 0,75 Tbsp = 2,25 tsp cho 3 phần ≈ 9 g (1 Tbsp đường cát ≈ 12,5 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Đường khuấy tan cùng sốt; NZ Woman's Weekly nam jim dùng 1,5 Tbsp đường nâu — cùng vai trò tạo ngọt hài hòa sốt chua-mặn-cay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": "SR Legacy 'Sugars, granulated'. nutrient 208 = 387.0 kcal (unitName=kcal)."
+    },
+    {
+      "position": 5,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 1,
+        "basis": "1 nhúm muối ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Recipe Wise bước 4: 'Season the shrimp with salt' trước khi phết sốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "SR Legacy 'Salt, table'. nutrient 208 = 0.0 kcal (unitName=kcal)."
+    },
+    {
+      "position": 6,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi ~3 g; băm/giã nhỏ cho vào sốt",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Recipe Wise KHÔNG dùng tỏi trong sốt. NZ Woman's Weekly giã 1 tép tỏi lớn cùng ớt trong nam jim và ướp tôm với tỏi đập dập — thêm tỏi là optional để dậy mùi, không bắt buộc theo công thức gốc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "SR Legacy 'Garlic, raw'. nutrient 208 = 149.0 kcal (unitName=kcal)."
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu ăn (dầu thực vật)",
+      "canonicalIngredientId": "ING_ENR_DBE4377CA2A0A47E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "1 Tbsp = 15 ml ≈ 13,6 g (tỉ trọng dầu ăn ~0,91); chỉ dùng để quét vỉ nướng chống dính",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Recipe Wise không dùng dầu. NZ Woman's Weekly trộn tôm với 2 Tbsp dầu trước khi xiên và nướng để không dính vỉ — optional chỉ để chống dính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "SR Legacy 'Oil, soybean, salad or cooking'. nutrient 208 = 884.0 kcal (unitName=kcal)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Nếu dùng xiên tre, ngâm xiên trong nước lạnh ít nhất 30 phút để khi nướng xiên không bị cháy.",
+      "tip": "NZ Woman's Weekly dùng '8 soaked bamboo skewers' cho tôm nướng xiên kiểu này.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Tôm rửa sạch, bóc vỏ bỏ chỉ đen (giữ lại đuôi cho đẹp), thấm thật khô bằng khăn giấy. Rắc 1 nhúm muối lên tôm, trộn đều.",
+      "tip": "Recipe Wise: ướp muối trước rồi mới phết sốt. Tôm thấm khô thì sốt bám tốt hơn."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Pha sốt: cho đường cát vào bát nhỏ, thêm nước cốt chanh (2,25 Tbsp) và nước mắm (2,25 Tbsp), khuấy cho đường tan hết rồi thêm ớt băm (và tỏi băm nếu dùng).",
+      "tip": "Recipe Wise: khuấy đường + ớt + nước chanh + nước mắm thành một. Nếm: vị phải chua – mặn – cay – ngọt hài hòa, hơi đậm một chút vì khi nướng vị sẽ nhạt bớt."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Phết một lớp mỏng sốt lên tôm, để ướp khoảng 10 phút cho thấm. Phần sốt còn lại giữ riêng để phết trong lúc nướng.",
+      "tip": "Không ướp tôm trong sốt chanh quá 15 phút — axit chanh sẽ làm tôm bị 'chín' bở như ceviche.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Xiên tôm vào que (4–5 con/xiên), không xiên quá dày để tôm chín đều.",
+      "tip": "NZ Woman's Weekly xiên 2 tôm xen kẽ; với tôm lớn thì 4–5 con một xiên là vừa tay lật."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Làm nóng vỉ nướng ở lửa cao. Nếu dùng dầu optional, quét một lớp thật mỏng lên vỉ để chống dính.",
+      "tip": "Recipe Wise: preheat grill/grill pan to high heat. NZ Woman's Weekly nướng trên grill plate lửa vừa."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Xếp xiên tôm lên vỉ nóng, nướng 2–3 phút mỗi mặt, tổng khoảng 4–6 phút. Trong lúc nướng, phết thêm sốt chanh ớt lên mặt tôm 1–2 lần.",
+      "tip": "Recipe Wise: nướng đến khi tôm chuyển hồng, hơi cháy xém cạnh là đạt. NZ Woman's Weekly: '1-2 minutes each side, until prawns are just cooked through'. Tôm chín quá sẽ dai.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Gắp tôm ra đĩa, phết nốt phần sốt còn lại lên trên khi tôm còn nóng để sốt thấm và bóng đẹp.",
+      "tip": "Recipe Wise bước cuối: 'Brush with remaining sauce and serve immediately' — sốt phết lại lúc nóng là lớp glaze tạo vị đặc trưng của món."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Dọn ngay khi còn nóng, ăn kèm cơm trắng, rau sống, hoặc dùng làm món khai vị/mồi nhậu.",
+      "tip": "Recipe Wise: món này thường được dọn như snack/appetizer; có thể điều chỉnh độ cay của sốt theo khẩu vị."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 210.21,
+      "proteinG": 34.5,
+      "carbohydrateG": 6.9,
+      "fatG": 5.58,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1375.32
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Tôm tươi cỡ lớn (bóc vỏ, bỏ chỉ đen, giữ đuôi): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Chanh tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Ớt hiểm tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      4,
+      5,
+      7
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

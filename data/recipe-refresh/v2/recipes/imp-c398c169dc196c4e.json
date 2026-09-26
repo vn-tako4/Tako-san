@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-c398c169dc196c4e",
+    "slug": "tom-nuong-toi-chanh-y",
+    "title": "Tôm nướng tỏi chanh Ý"
+  },
+  "content": {
+    "description": "Tôm nướng bơ-tỏi-chanh gambri vàng thơm, món khai vị Ý biển ngọt mọng.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Gamberoni",
+      "Ý",
+      "Tôm",
+      "Khai vị"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-c398c169dc196c4e.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://memoriediangelina.com/2021/08/14/gamberoni-alla-griglia-grilled-shrimp/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=s1m4MLgpaDA",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm sú (hoặc tôm thẻ) lớn, tươi, nguyên vỏ",
+      "canonicalIngredientId": "ING_ENR_65D841055BFA21AB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 600,
+        "unit": "g",
+        "text": "600 g",
+        "gramEquivalent": 600,
+        "basis": "Nguồn A (4-6 phần, lấy mốc 5 phần) dùng 1 kg tôm lớn → 3 phần = 600 g.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 600,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn A khuyên dùng tôm lớn còn nguyên vỏ, tốt nhất còn đầu — vỏ bảo vệ thịt khỏi nhiệt trực tiếp của vỉ nướng; người ăn tự bóc vỏ. Nguồn B dùng 500 g tôm cho công thức của họ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "Số liệu cho tôm sống nguyên con; USDA không công bố chất xơ/đường cho mục này (không đáng kể)."
+    },
+    {
+      "position": 1,
+      "sourceName": "Dầu ô liu extra virgin",
+      "canonicalIngredientId": "ING_ENR_DE4B6B013D75B239",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "ml",
+        "text": "150 ml",
+        "gramEquivalent": 137,
+        "basis": "Nguồn A dùng 250 ml cho 5 phần → 3 phần = 150 ml; 150 ml × 0.91 g/ml ≈ 137 g. Một phần dầu dùng ướp, phần còn lại làm sốt rưới khi dọn.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 150,
+          "unit": "ml"
+        }
+      },
+      "note": "'Bơ' trong hint của assignment không xuất hiện ở cả hai nguồn Ý — món nướng kiểu Ý này chỉ dùng dầu ô liu; công thức dựng theo nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 116,
+        "basis": "Nguồn A dùng nước cốt 2 quả chanh cho 5 phần → 3 phần ≈ 1.2 quả; dùng 2 quả để vừa vắt lấy ~45 ml nước cốt vừa bào vỏ 1 quả; 1 quả chanh ≈ 58 g (USDA).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn B dùng thêm 1 quả cam và 1 tbsp hạt thì là (fennel) trong marinade — không lấy theo vì nguồn A là công thức Ý chuẩn, đơn giản hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 22,
+        "proteinG": 0.35,
+        "carbohydrateG": 6.9,
+        "fatG": 0.24,
+        "fiberG": 0.3,
+        "sugarG": 2.52,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167747",
+      "sourceNutritionNote": "Số liệu cho nước cốt chanh (phần dùng chính ~45 ml); vỏ bào lượng không đáng kể."
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tép",
+        "text": "1 tép",
+        "gramEquivalent": 5,
+        "basis": "Nguồn A dùng 1-2 tép cho 5 phần → 3 phần = 1 tép lớn; 1 tép tỏi lớn ≈ 5 g (USDA: 1 clove = 3 g, lấy tép lớn).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Ngò tây tươi băm nhỏ",
+      "canonicalIngredientId": "ING_ENR_D6EDD5F0078ABE8C",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Mùi tây tươi via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "Nguồn A dùng 'vài nhánh' (a few sprigs) cho 5 phần ≈ 15 g → 3 phần ≈ 9 g, làm tròn 10 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "'Hành lá' trong hint nhiều khả năng chính là ngò tây (prezzemolo) — gia vị lá đặc trưng của món Ý này.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 2.97,
+        "carbohydrateG": 6.33,
+        "fatG": 0.79,
+        "fiberG": 3.3,
+        "sugarG": 0.85,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170416",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "g",
+        "text": "6 g",
+        "gramEquivalent": 6,
+        "basis": "Cả hai nguồn đều ghi 'vừa đủ' (to taste); định lượng 1 tsp ≈ 6 g (USDA) cho 3 phần theo mức nêm phổ biến của món nướng.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn đều không định lượng muối — 1 tsp là ước lượng của người nghiên cứu, nêm nếm lại theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38800
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.2,
+        "unit": "g",
+        "text": "1.2 g",
+        "gramEquivalent": 1.2,
+        "basis": "Cả hai nguồn đều ghi 'vừa đủ'; định lượng 1/2 tsp ≈ 1.2 g cho 3 phần theo mức nêm phổ biến.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.2,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn đều không định lượng tiêu — 1/2 tsp là ước lượng của người nghiên cứu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế tôm: rửa sạch dưới vòi nước lạnh, giữ nguyên vỏ và đầu (nếu có). Dùng dao khía một đường dọc phần bụng tôm để dễ bóc vỏ khi ăn, rút bỏ chỉ đen ở lưng.",
+      "tip": "Nguồn A: vỏ và đầu bảo vệ thịt tôm khỏi nhiệt trực tiếp, giúp tôm không bị khô; đầu tôm còn giúp nhận biết độ tươi."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Tỏi bóc vỏ, băm thật nhuyễn. Ngò tây rửa sạch, băm nhỏ. Chanh: bào lấy vỏ của 1 quả (chỉ lấy phần vàng), rồi vắt lấy nước cốt khoảng 45 ml."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Pha marinade/sốt: cho dầu ô liu, nước cốt chanh, vỏ chanh bào, tỏi băm, ngò tây băm, muối và tiêu vào tô, đánh đều cho hòa quyện. Nếm và chỉnh vị.",
+      "tip": "Hỗn hợp này vừa để ướp vừa làm sốt rưới khi dọn — chỉ dùng một phần để ướp, giữ lại phần sạch làm sốt."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho tôm vào tô, rưới một phần marinade vừa đủ áo đều, trộn nhẹ. Ướp khoảng 30 phút trong ngăn mát.",
+      "tip": "Nguồn B cảnh báo: không ướp quá lâu vì axit chanh sẽ 'nấu chín' thịt tôm khi còn sống, làm tôm bị bở.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Trong lúc ướp tôm, chuẩn bị vỉ nướng: đốt than hoặc bật bếp cho vỉ thật nóng, phết một lớp dầu mỏng chống dính.",
+      "tip": "Không có vỉ ngoài trời có thể dùng chảo gang rãnh (grill pan) thật nóng hoặc chế độ broil ở ngăn trên cùng của lò (nguồn A)."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Xếp tôm trực tiếp lên vỉ đang rất nóng, nướng khoảng 3-5 phút cho mặt dưới chuyển hồng và hơi xém.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Lật tôm, nướng tiếp mặt còn lại 3-5 phút đến khi tôm chín đều.",
+      "tip": "Nguồn A: không nướng quá kỹ — tôm quá lửa sẽ dai và khô.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Kiểm tra độ chín: vỏ chuyển hồng cam, thịt đục, thân tôm cong hình chữ C và hơi xém cạnh là đạt.",
+      "tip": "Tôm cong thành hình chữ O (cuộn tròn) thường là đã quá chín."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Gắp tôm ra đĩa, rưới phần marinade sạch còn lại lên trên như sốt."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn ngay khi còn nóng, trang trí thêm ngò tây băm và vài lát chanh. Có thể dọn kèm phần sốt riêng cho ai thích chấm thêm.",
+      "tip": "Món này ăn nóng là ngon nhất; để nguội tôm sẽ kém thơm."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 586.89,
+      "proteinG": 40.58,
+      "carbohydrateG": 3.69,
+      "fatG": 46.83,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1017.53
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Tôm sú (hoặc tôm thẻ) lớn, tươi, nguyên vỏ: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Dầu ô liu extra virgin: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Chanh tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Ngò tây tươi băm nhỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [],
+    "runtimeExclusions": []
+  }
+}

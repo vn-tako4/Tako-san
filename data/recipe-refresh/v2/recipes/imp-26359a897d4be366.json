@@ -1,0 +1,676 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-26359a897d4be366",
+    "slug": "sup-tom-nam-trung",
+    "title": "Súp tôm nấm Trung"
+  },
+  "content": {
+    "description": "Súp tôm-nấm trong veo gừng ấm ngọt thanh, món khai vị nhà hàng Trung Hoa nấu nhanh tại gia.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Súp",
+      "Tôm",
+      "Nấm",
+      "Khai vị"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-26359a897d4be366.json",
+    "rawSchemaSignature": "ingredients,note,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://simplechinesefood.com/recipe/shrimp-and-mushroom-soup-11529",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://chinesehealthycooking.com/easy-chinese-shrimp-and-mushroom-soup-introducing-another-secret-ingredient/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "note: Mâu thuẫn nguồn: (1) Simple Chinese Food dùng cà chua + trứng + oyster mushroom, tôm ướp rượu nấu ăn, cho tôm vào cuối; (2) Chinese Healthy Cooking dùng 10 con tôm nhỏ + tôm khô + seafood mushrooms + tỏi + ngò, 4 cups (~950 ml) nước lọc, không ghi servings, không dùng xì dầu. Gợi ý món yêu cầu: tôm tươi, nấm đùi gà, gừng, hành lá, xì dầu — file này giữ đúng 5 nguyên liệu gợi ý, loại bỏ cà chua/trứng của nguồn 1 và tôm khô/ngò của nguồn 2 (ghi rõ). Nước: nguồn 2 dùng nước lọc; ở đây dùng 1200 ml nước dùng gà cho 4 phần để nước ngọt hơn — ghi rõ khác biệt. Loài nấm: hai nguồn đều không dùng nấm đùi gà (king oyster); giữ nấm đùi gà theo gợi ý món."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm tươi",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "g",
+        "text": "250 g",
+        "gramEquivalent": 250,
+        "basis": "tôm tươi bóc vỏ, bỏ chỉ lưng ≈ 250 g (khoảng 15-20 con cỡ vừa)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 250,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn 2 dùng 10 con tôm nhỏ không ghi servings; nguồn 1 không định lượng — lấy 250 g cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "USDA SR Legacy 175179 (tôm sống, không phụ gia). USDA không công bố chất xơ/đường tổng cho mục này → fiber_g và sugar_g để null, không tự điền 0."
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "2 cây nấm đùi gà vừa ≈ 200 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn 2 dùng seafood mushrooms, nguồn 1 dùng oyster mushrooms — giữ nấm đùi gà theo gợi ý món; lượng 200 g cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 46.395,
+        "proteinG": 2.406,
+        "carbohydrateG": 8.501,
+        "fatG": 0.307,
+        "fiberG": 3.009,
+        "sugarG": null,
+        "sodiumMg": 0.771
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003599",
+      "sourceNutritionNote": "USDA Foundation 2003599 không công bố đường tổng → sugar_g để null, không tự điền."
+    },
+    {
+      "position": 2,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "lát",
+        "text": "4 lát",
+        "gramEquivalent": 10,
+        "basis": "4 lát gừng ≈ 10 g (ước ~2.5 g/lát; nguồn 2 ghi 4 lát không định lượng gram)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "slice"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "2 cây hành lá vừa; USDA: 1 cây vừa ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn 2 dùng 2 cây hành lá, tách đầu trắng phi thơm và lá xanh rắc cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "2 tép tỏi ≈ 6 g (3 tép ≈ 9 g theo NutritionValue/USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ nguồn 2 dùng 2 tép tỏi thái lát phi cùng gừng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu nhạt",
+      "canonicalIngredientId": "ING_ENR_19A3C60192F07ED5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 16,
+        "basis": "1 muỗng canh xì dầu = 16 g (USDA)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 16,
+          "unit": "g"
+        }
+      },
+      "note": "Theo gợi ý món. Nguồn 2 chỉ nêm muối + tiêu trắng, nguồn 1 dùng oyster sauce — chọn xì dầu nhạt để đúng gợi ý, ghi rõ khác biệt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Rượu nấu ăn (Shaoxing)",
+      "canonicalIngredientId": "ING_ENR_1FA5BEAAEA900081",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "1 muỗng canh ≈ 15 ml; tỉ trọng rượu ≈ 1 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn 1 ướp tôm với rượu nấu ăn trước khi nấu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 135,
+        "proteinG": 1,
+        "carbohydrateG": 10,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 600
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Linchen%2C_cooking_shaohsing_wine_by_Linchen%2C_Inc._393097_nutritional_value.html?query=",
+      "sourceNutritionNote": "Không có mục generic trong USDA; dùng số liệu sản phẩm thương hiệu Linchen cooking shaohsing wine (USDA Branded-derived). Lượng dùng nhỏ (15 g) nên ảnh hưởng tổng thể thấp."
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước dùng gà",
+      "canonicalIngredientId": "ING_ENR_11FB997D0B872A56",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1200,
+        "unit": "ml",
+        "text": "1200 ml",
+        "gramEquivalent": 1200,
+        "basis": "1200 ml nước dùng gà; tỉ trọng ≈ 1 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1200,
+          "unit": "ml"
+        }
+      },
+      "note": "Nguồn 2 dùng 4 cups (~950 ml) nước lọc, không ghi servings; ở đây dùng 1200 ml nước dùng gà cho 4 phần để nước ngọt hơn — ghi rõ khác biệt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 6,
+        "proteinG": 0.64,
+        "carbohydrateG": 0.44,
+        "fatG": 0.21,
+        "fiberG": 0,
+        "sugarG": 0.43,
+        "sodiumMg": 371
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174536",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ≈ 6 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn 2 nêm muối nhưng không định lượng; nêm theo khẩu vị, có thể gia giảm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Tiêu trắng xay",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.5,
+        "basis": "1/4 muỗng cà phê tiêu trắng xay ≈ 0.5 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn 2 rắc tiêu trắng khi hoàn thiện.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.61,
+        "fatG": 2.12,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": "USDA SR Legacy 170933 không công bố đường tổng → sugar_g để null, không tự điền."
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "1 muỗng canh dầu ≈ 14 g (NutritionValue)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn 2 dùng dầu bơ hoặc dầu thực vật; ở đây dùng dầu ăn thường.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172336",
+      "sourceNutritionNote": "Số liệu dầu canola; các loại dầu thực vật khác có giá trị tương đương."
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "1 muỗng cà phê dầu mè ≈ 4.4 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn 2 rưới dầu mè khi hoàn thiện món súp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Tôm bóc vỏ, bỏ chỉ lưng, rửa sạch, để ráo. Ướp tôm với rượu nấu ăn và một nhúm muối trong 10 phút.",
+      "tip": "Ướp rượu giúp tôm thơm, bớt tanh (kỹ thuật của nguồn 1).",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Nấm đùi gà thái lát mỏng khoảng 0.5 cm. Gừng thái lát. Tỏi thái lát mỏng. Hành lá cắt riêng phần đầu trắng và phần lá xanh."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun nóng dầu ăn trong nồi, cho gừng, đầu trắng hành lá và tỏi vào phi thơm khoảng 10-20 giây.",
+      "tip": "Phi nhanh tay, không để tỏi cháy."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đổ nước dùng gà vào nồi, đun sôi."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho nấm đùi gà vào, nấu khoảng 3 phút cho nấm vừa chín.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Nêm muối và xì dầu nhạt, khuấy đều, nếm lại cho vừa miệng."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho tôm đã ướp vào, nấu 2-3 phút đến khi tôm cong lại và chuyển màu hồng thì tắt bếp ngay.",
+      "tip": "Cả hai nguồn đều cho tôm vào cuối và không nấu lâu — tôm quá lửa sẽ bị dai, khô.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nêm tiêu trắng xay, khuấy nhẹ cho đều."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Rưới dầu mè lên mặt, rắc phần lá hành xanh cắt nhỏ."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Múc súp ra tô, dùng nóng."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 2.12,
+      "proteinG": 0.33,
+      "carbohydrateG": 0.2,
+      "fatG": 0.02,
+      "fiberG": 0.03,
+      "sugarG": 0.02,
+      "sodiumMg": 219.72
+    },
+    "originalPerServing": {
+      "energyKcal": 149.4,
+      "proteinG": 16.34,
+      "carbohydrateG": 7.72,
+      "fatG": 5.79,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 2013.14
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Tôm tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Nấm đùi gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Gừng tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Rượu nấu ăn (Shaoxing): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước dùng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tiêu trắng xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

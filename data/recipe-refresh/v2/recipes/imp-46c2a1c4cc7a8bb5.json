@@ -1,0 +1,863 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-46c2a1c4cc7a8bb5",
+    "slug": "mi-udon-bo-hanh",
+    "title": "Mì udon bò hành"
+  },
+  "content": {
+    "description": "Sợi udon dày dai trong nước dùng ngọt hành tây, lát bò mỏng chần tái, tô niku udon ấm bụng chiều mưa.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Udon",
+      "Nhật Bản",
+      "Bò",
+      "Bữa trưa"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-46c2a1c4cc7a8bb5.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.justonecookbook.com/beef-udon/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://japanesecooking101.com/niku-udon-recipe/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì udon đông lạnh",
+      "canonicalIngredientId": "ING_ENR_F7DB2DF3764CF33A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 750,
+        "unit": "g",
+        "text": "750 g",
+        "gramEquivalent": 750,
+        "basis": "JOC: 500 g mì udon đông lạnh cho 2 phần → 750 g cho 3 phần (tương đương 270 g mì khô: JOC ghi 180 g mì khô/2 phần)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 750,
+          "unit": "g"
+        }
+      },
+      "note": "FDC không có mục udon chín riêng; dùng 'Noodles, japanese, somen, cooked' (mì lúa mì Nhật đã nấu chín) làm tham chiếu gần đúng; fiber và sugar không có dữ liệu trong FDC → null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 131,
+        "proteinG": 4,
+        "carbohydrateG": 27.54,
+        "fatG": 0.18,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 161
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168909",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt bò thái lát mỏng",
+      "canonicalIngredientId": "ING_ENR_5108DE6138589EE8",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "JOC: 170–227 g/2 phần; japanesecooking101: 225 g/2 phần — hai nguồn gần khớp; ×1.5 ≈ 255–340 g, lấy 300 g (mốc giữa). FDC (Foundation) không công bố fiber/sugar; carbohydrate = 0 nên để 0.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 254,
+        "proteinG": 18.744,
+        "carbohydrateG": 0,
+        "fatG": 20.04,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 42.54
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2646172",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 80,
+        "unit": "g",
+        "text": "80 g",
+        "gramEquivalent": 80,
+        "basis": "japanesecooking101: 1/2 củ/2 phần → 3/4 củ/3 phần; 1 củ hành tây vừa ≈ 110 g (USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 80,
+          "unit": "g"
+        }
+      },
+      "note": "JOC dùng củ hành Tokyo negi thay hành tây — mâu thuẫn; lấy theo japanesecooking101 vì khớp tên món 'bò hành' và gợi ý món có gừng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram (cân trực tiếp)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "japanesecooking101: 15 g/2 phần → ~22 g/3 phần, làm tròn 20 g. JOC không dùng gừng — mâu thuẫn; lấy theo japanesecooking101 vì gợi ý món có gừng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "cây",
+        "text": "4 cây",
+        "gramEquivalent": 60,
+        "basis": "1 cây hành lá ≈ 15 g (USDA NDB 11291: 1 whole scallion = 15 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "japanesecooking101: 4 cây/2 phần (= 6 cây/3 phần); JOC chỉ dùng 1 cây trang trí — mâu thuẫn; lấy 4 cây (60 g) ở giữa, vừa đủ rắc đậm cho món 'bò hành'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 7,
+        "basis": "1 muỗng cà phê dầu ăn ≈ 4.5 g (1 muỗng canh = 13.6 g theo USDA); japanesecooking101: 1 muỗng cà phê/2 phần",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172336",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Đường (ướp thịt bò)",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 19,
+        "basis": "1 muỗng canh đường = 12.6 g (USDA: 1 tsp = 4.2 g); japanesecooking101: 1 muỗng canh/2 phần → 1.5 muỗng canh/3 phần",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 19,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Xì dầu (ướp thịt bò)",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4.5,
+        "unit": "muỗng canh",
+        "text": "4.5 muỗng canh",
+        "gramEquivalent": 81,
+        "basis": "1 muỗng canh xì dầu = 18 g (USDA NDB: 1 tbsp shoyu = 18 g); japanesecooking101: 3 muỗng canh/2 phần → 4.5 muỗng canh/3 phần",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 81,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Mirin (ướp thịt bò)",
+      "canonicalIngredientId": "ING_ENR_ADD0B636AF255631",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Mirin via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 48,
+        "basis": "1 muỗng canh = 15 ml ≈ 16 g (ước tính tỉ trọng mirin ~1.07 do hàm lượng đường cao; không có số liệu chuẩn công bố); japanesecooking101: 2 muỗng canh/2 phần → 3 muỗng canh/3 phần",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "FDC chỉ có entry mirin dạng branded (Kikkoman Aji-Mirin); fiber không được công bố → null. Mirin thật (hon-mirin) có cồn ~14%, aji-mirin là gia vị mirin ít cồn — dùng loại nào cũng được cho món xào.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 233,
+        "proteinG": 0,
+        "carbohydrateG": 46.67,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 43.33,
+        "sodiumMg": 600
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2039206",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Rượu sake nấu ăn",
+      "canonicalIngredientId": "ING_ENR_684BD07DF56380DC",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 44,
+        "basis": "1 muỗng canh = 15 ml ≈ 14.7 g (tỉ trọng sake ~0.98); japanesecooking101: 2 muỗng canh/2 phần → 3 muỗng canh/3 phần",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "JOC không dùng sake cho thịt bò — chỉ có ở japanesecooking101; giữ lại vì giúp thịt mềm và khử mùi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 134,
+        "proteinG": 0.5,
+        "carbohydrateG": 5,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167723",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Nước lọc (ướp thịt bò)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 45,
+        "basis": "đơn vị gốc đã là ml; 45 ml ≈ 45 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "japanesecooking101: 2 muỗng canh/2 phần; nước không có giá trị dinh dưỡng đáng kể nên nutrition để null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước dashi",
+      "canonicalIngredientId": "ING_ENR_B5A5B8AAC509234E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 900,
+        "unit": "ml",
+        "text": "900 ml",
+        "gramEquivalent": 900,
+        "basis": "JOC: 600 ml (2.5 cups)/2 phần → 900 ml/3 phần; pha từ ~1.5 gói bột dashi (gói tiêu chuẩn 8 g → ~12 g bột)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 900,
+          "unit": "ml"
+        }
+      },
+      "note": "japanesecooking101 dùng 960 ml (4 cups)/2 phần (= 1440 ml/3 phần) — mâu thuẫn lớn; ưu tiên JOC (900 ml/3 phần) vì tỉ lệ nước dùng/mì của JOC đặc trưng cho niku udon. FDC không có entry dashi tự nấu (nước dùng loãng từ kombu/katsuobushi) → nutrition null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Xì dầu (nước dùng)",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.25,
+        "unit": "muỗng canh",
+        "text": "2.25 muỗng canh",
+        "gramEquivalent": 40,
+        "basis": "1 muỗng canh xì dầu = 18 g (USDA); JOC: 1.5 muỗng canh/2 phần → 2.25 muỗng canh/3 phần ≈ 40 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "japanesecooking101: 2 muỗng canh/2 phần (= 3 muỗng canh/3 phần ≈ 54 g) — mâu thuẫn; ưu tiên JOC (40 g/3 phần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Mirin (nước dùng)",
+      "canonicalIngredientId": "ING_ENR_ADD0B636AF255631",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Mirin via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 24,
+        "basis": "1 muỗng canh = 15 ml ≈ 16 g (như trên); JOC: 1 muỗng canh/2 phần → 1.5 muỗng canh/3 phần",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "japanesecooking101: 3 muỗng canh/2 phần (= 4.5 muỗng canh/3 phần) — mâu thuẫn; ưu tiên JOC. Fiber null như đã nêu ở mục mirin ướp thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 233,
+        "proteinG": 0,
+        "carbohydrateG": 46.67,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 43.33,
+        "sodiumMg": 600
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2039206",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Đường (nước dùng)",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê đường = 4.2 g (USDA); JOC: 1 muỗng cà phê/2 phần → 1.5 muỗng cà phê/3 phần",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 6,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "g",
+        "text": "1 g",
+        "gramEquivalent": 1,
+        "basis": "JOC: 1/8 muỗng cà phê muối Diamond Crystal/2 phần → ~1/6 muỗng cà phê/3 phần ≈ 1 g (1 tsp muối = 6 g USDA); muối tinh dùng một nửa lượng so với muối Diamond Crystal",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 16,
+      "sourceName": "Bột ớt shichimi",
+      "canonicalIngredientId": "ING_ENR_A3C17F22B0917E47",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 0.5,
+        "basis": "một nhúm ≈ 0.5 g (không cân chính xác)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Gia vị rắc mặt tùy thích (cả hai nguồn đều ghi optional); FDC không có entry chuẩn → nutrition null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Nấu nước dashi: đun sôi 900 ml nước, cho bột dashi (hoặc 1–2 túi dashi) vào, đun lửa vừa 2–3 phút rồi vớt túi bã ra, vắt kiệt nước.",
+      "tip": "JOC: dùng túi dashi cho nhanh; muốn nấu từ đầu thì ninh kombu + katsuobushi theo cách làm dashi cơ bản.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Nêm nước dùng: cho xì dầu, mirin, đường và muối vào nồi dashi đang nóng, khuấy tan hoàn toàn. Nếm thử, chỉnh vị mặn-ngọt vừa miệng rồi đậy nắp giữ ấm, tắt bếp.",
+      "tip": "JOC: muối giúp dậy vị mà không cần thêm xì dầu/đường; nước dùng phải hơi đậm một chút vì khi chan vào mì sẽ loãng ra."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế: thịt bò nếu lát quá to thì cắt đôi thành miếng vừa ăn; hành tây thái lát mỏng; gừng thái sợi nhỏ; hành lá thái xéo mỏng.",
+      "tip": "JOC: cắt lát thịt bò thành miếng rộng 3.8–5 cm để dễ gắp; hành lá thái xéo để rắc mặt đẹp mắt."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun nóng dầu ăn trong chảo to lửa vừa, cho thịt bò vào xào, dàn đều một lớp, đến khi thịt chuyển màu hết đỏ.",
+      "tip": "JOC: dùng chảo rộng để thịt áp chảo thay vì bị hấp hơi; thịt thái mỏng chín chỉ trong vài chục giây — vớt/xử lý ngay khi hết màu hồng để không bị dai.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Thêm gừng thái sợi và hành tây vào chảo, xào đến khi hành mềm, trong.",
+      "tip": "japanesecooking101: cho gừng vào cùng lúc với hành để dậy mùi thơm.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho đường, xì dầu, mirin, sake và nước lọc vào chảo thịt, đảo đều, nấu 2–3 phút cho thịt thấm gia vị và sốt hơi sánh lại; tắt bếp, để thịt nghỉ trong chảo.",
+      "tip": "japanesecooking101: để thịt nguội dần trong chảo giúp thấm vị sâu hơn; không nấu quá lâu kẻo thịt dai.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đun sôi một nồi nước to, cho mì udon đông lạnh vào luộc theo hướng dẫn trên bao bì (mì đông lạnh thường chỉ cần 1 phút), dùng đũa gỡ tơi cho mì không vón.",
+      "tip": "JOC: mì đông lạnh chỉ cần trụng nóng lại, không luộc lâu sẽ mất độ dai; vớt ra để ráo kỹ để nước dùng không bị loãng.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Chia mì đã ráo vào 3 tô lớn."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Chan nước dùng đang nóng vào từng tô, ngập mặt mì.",
+      "tip": "Nước dùng phải thật nóng khi chan để cả tô giữ nhiệt."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Xếp thịt bò xào cùng phần sốt lên trên mỗi tô mì.",
+      "tip": "Xếp thịt gọn lên mặt mì, rưới thêm chút sốt xào thịt cho đậm đà."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Rắc hành lá thái xéo lên trên; ai ăn cay thì rắc thêm một nhúm bột ớt shichimi."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Dọn ngay khi còn nóng hổi.",
+      "tip": "JOC: có thể bảo quản riêng thịt, nước dùng và mì trong tủ lạnh tối đa 3 ngày; khi ăn hâm nóng nước dùng + thịt trước, trụng mì sau cùng để giữ độ dai."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 305.89,
+      "proteinG": 21.06,
+      "carbohydrateG": 10.85,
+      "fatG": 20.24,
+      "fiberG": 0.35,
+      "sugarG": 8.54,
+      "sodiumMg": 1526.6
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Mì udon đông lạnh: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Mirin (ướp thịt bò): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Rượu sake nấu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Nước lọc (ướp thịt bò): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước dashi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Xì dầu (nước dùng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Mirin (nước dùng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 15,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      16
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 16,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

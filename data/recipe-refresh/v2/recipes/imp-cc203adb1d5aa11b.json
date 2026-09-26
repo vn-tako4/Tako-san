@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-cc203adb1d5aa11b",
+    "slug": "canh-ca-sa-ca-chua",
+    "title": "Canh cá sả cà chua"
+  },
+  "content": {
+    "description": "Canh cá sả-cà chua chua nhẹ nước trong, món canh Thái thanh mát ấm lòng.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Canh",
+      "Cá",
+      "Sả",
+      "Thái Lan"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-cc203adb1d5aa11b.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://hungryinthailand.com/tom-yum-pla/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://hot-thai-kitchen.com/tom-yum-goong/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cá tươi (cá rô phi phi lê, cắt khúc)",
+      "canonicalIngredientId": "ING_ENR_C135C28F73E00BF0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 900,
+        "unit": "g",
+        "text": "900 g",
+        "gramEquivalent": 900,
+        "basis": "đơn vị gốc đã là gram; quy từ Hungry in Thailand (1,5 lb ≈ 680 g cá trắng cho 3 phần) scale lên 4 phần",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 900,
+          "unit": "g"
+        }
+      },
+      "note": "Hungry in Thailand ghi 'firm white fish' chung chung, không chỉ rõ loại cá; công thức này lấy cá rô phi làm đại diện vì là loại cá trắng phổ biến cho canh chua Thái. Hot Thai Kitchen (tom yum goong) cũng dùng nguyên liệu chính theo mùa, không cố định loại cá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 96,
+        "proteinG": 20.08,
+        "carbohydrateG": 0,
+        "fatG": 1.7,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 52
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175176",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Sả tươi",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 45,
+        "basis": "Hungry in Thailand: 2 cây/3 phần → 3 cây/4 phần; 1 cây sả tươi (phần non dùng được) ~15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn (Hungry in Thailand, Hot Thai Kitchen) đều là công thức tom-yum-pla dùng thêm riềng + lá chanh kaffir; món này theo mô tả catalog là 'chua nhẹ nước trong' và hint chỉ có sả nên giữ bản đơn giản chỉ dùng sả.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.31,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Cà chua chín",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram; Hungry in Thailand: 2⁄3 cup (~100 g)/3 phần → ~135 g/4 phần; nâng lên 200 g vì cà chua là nguyên liệu chính trong tên món",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn dùng ít cà chua hơn (Hungry in Thailand 2⁄3 cup cho 3 phần); công thức này tăng lên 200 g (3 quả vừa) cho đúng tên món 'cá sả cà chua'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Chanh tươi (vắt lấy nước cốt)",
+      "canonicalIngredientId": "ING_ENR_AE8F7395B4BFD54D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 30,
+        "basis": "2 quả chanh ~30 ml nước cốt (1 quả chanh ~15 ml); số liệu dinh dưỡng tính cho nước cốt chanh",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Hungry in Thailand tạo vị chua bằng me (2 tbsp tamarind); món này dùng chanh tươi theo hint, cho vào sau khi tắt bếp để giữ mùi thơm (kỹ thuật của Hot Thai Kitchen).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.42,
+        "carbohydrateG": 8.42,
+        "fatG": 0.07,
+        "fiberG": 0.4,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168156",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "cây",
+        "text": "5 cây",
+        "gramEquivalent": 50,
+        "basis": "Hungry in Thailand: 4 cây/3 phần → ~5 cây/4 phần; 1 cây hành lá ~10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 52,
+        "basis": "Hungry in Thailand: 2 tbsp/3 phần → ~2,7 tbsp/4 phần, lấy 3 tbsp = 45 ml; tỉ trọng nước mắm ~1,15",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 12,
+        "basis": "Hungry in Thailand: 1⁄2 tbsp/3 phần → 2 tsp/4 phần; 1 tsp muối ăn ≈ 6 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 tsp đường cát ≈ 4 g; lượng nhỏ để cân vị chua",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hungry in Thailand không dùng đường; thêm 1 tsp đường để cân vị chua theo thói quen nêm canh chua (gia giảm theo khẩu vị).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "lít",
+        "text": "2 lít",
+        "gramEquivalent": 2000,
+        "basis": "Hungry in Thailand: 61⁄4 cups (~1,5 L)/3 phần → 2 L/4 phần",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "l"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế cá: đánh vảy, bỏ ruột nếu dùng cá nguyên con, rửa sạch. Xát đều muối hạt lên mình cá rồi rửa lại bằng nước sạch để khử mùi tanh, cắt khúc vừa ăn, thấm khô.",
+      "tip": "Hungry in Thailand khuyên xát muối rồi rửa lại giúp giảm mùi tanh của cá nước ngọt."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sả bóc bỏ lớp già bên ngoài, đập dập, cắt khúc dài khoảng 5 cm. Cà chua bổ múi cau. Hành lá rửa sạch, cắt khúc 2 cm. Chanh vắt lấy nước cốt để riêng."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun 2 lít nước trên lửa vừa cho sôi, thả sả đập dập vào, nấu 5 phút cho nước dùng dậy mùi thơm.",
+      "tip": "Hungry in Thailand: ninh các loại thơm (sả, riềng...) khoảng 5 phút trước khi cho cá.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Nêm 3 muỗng canh nước mắm, 2 muỗng cà phê muối và 1 muỗng cà phê đường vào nồi, khuấy tan, nếm thử nước dùng."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Thả nhẹ từng khúc cá vào nồi nước đang sôi liu riu, nấu khoảng 3 phút cho cá se mặt.",
+      "tip": "Thả cá khi nước đang sôi để cá không tanh.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho cà chua bổ múi cau vào, nấu thêm 3–4 phút đến khi cá chín tới (thịt cá tách nhẹ là rời) và cà chua vừa mềm. Vớt bọt nếu có.",
+      "tip": "Hungry in Thailand: không đảo mạnh sau khi cho cá để cá không bị nát.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nêm nếm lại cho vừa miệng: vị mặn của nước mắm, chua nhẹ của cà chua, ngọt thanh của nước dùng."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Tắt bếp, rưới nước cốt 2 quả chanh vào nồi, khuấy nhẹ một vòng.",
+      "tip": "Cho nước chanh sau khi tắt bếp để giữ mùi thơm tươi — kỹ thuật nêm tom yum của Hot Thai Kitchen."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho hành lá cắt khúc vào, múc canh ra tô lớn."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Ăn nóng với cơm trắng. Có thể dọn kèm ớt tươi cắt lát cho người thích ăn cay."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 250.43,
+      "proteinG": 46.74,
+      "carbohydrateG": 7.81,
+      "fatG": 4.01,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 2305.7
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cá tươi (cá rô phi phi lê, cắt khúc): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Sả tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Cà chua chín: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Chanh tươi (vắt lấy nước cốt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-ff9fd0fdcdd85b79",
+    "slug": "bap-cai-nuong-bo",
+    "title": "Bắp cải nướng bơ"
+  },
+  "content": {
+    "description": "Lá bắp cải nướng chảo với bơ tan thơm, món phụ izakaya Nhật đơn giản mà đậm vị.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Izakaya",
+      "Nhật Bản",
+      "Bắp cải",
+      "Bơ"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-ff9fd0fdcdd85b79.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.buzzfeed.com/jp/shinobuuchihara/cabbage-grilled-butter-shoyu-recipe",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://cookpad.com/jp/recipes/21452727",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://explorecookeat.com/easy-japanese-cabbage-recipe-with-butter-soy-sauce/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Bắp cải",
+      "canonicalIngredientId": "CABBAGE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "cây",
+        "text": "0.25 cây",
+        "gramEquivalent": 300,
+        "basis": "Tasty Japan ghi 'キャベツ 1/4個(約300g)' cho 2 phần; cookpad 焼きキャベツ (4 phần) cũng dùng 1/4 cây. 3 phần dùng 1/4 cây ~300 g, hợp lý cho món ăn kèm.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.25,
+          "unit": "piece"
+        }
+      },
+      "note": "Tasty Japan: 1/4 cây ≈ 300 g cho 2 phần; cookpad: 1/4 cây cho 4 phần. Với 3 phần, 1/4 cây (~300 g) vừa đủ — lượng bắp cải co lại khi nấu nên món ăn kèm 3 người hợp lý.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 1.28,
+        "carbohydrateG": 5.8,
+        "fatG": 0.1,
+        "fiberG": 2.5,
+        "sugarG": 3.2,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169975",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Bơ lạt",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "Tasty Japan: 15 g bơ cho 2 phần → quy ra 3 phần ≈ 22,5 g; cookpad: bơ 2 muỗng canh (~28 g) cho 4 phần → quy ra 3 phần ≈ 21 g. Hai nguồn quy đổi gần khớp, lấy 20 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn nhẹ về lượng: Tasty Japan 15 g/2 phần, cookpad 2 tbsp/4 phần. Quy đổi ra 3 phần đều ≈ 20–22 g nên lấy 20 g. Cookpad dùng bơ có muối (ghi 'có muối thì nêm nhạt tay'), Tasty Japan không ghi loại — dùng bơ lạt để kiểm soát độ mặn, lấy theo nguồn editorial (Tasty Japan).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": "Bản Foundation (fdcId 789828) của USDA thiếu các chỉ số energy/protein/carbs nên dùng số liệu bản SR Legacy 'Butter, without salt'."
+    },
+    {
+      "position": 2,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 6.9,
+        "basis": "1 muỗng cà phê = 5 ml; tỉ trọng dầu ăn (đậu nành tinh luyện) ≈ 0,92 → 7,5 ml ≈ 6,9 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tasty Japan dùng dầu salad 1 muỗng cà phê cho 2 phần để áp chảo trước khi cho bơ. Quy ra 3 phần = 1,5 muỗng cà phê.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Xì dầu (shoyu)",
+      "canonicalIngredientId": "ING_ENR_4B3D4B69D5D57916",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê = 5 ml; tỉ trọng xì dầu ≈ 1,19 → 5 ml ≈ 6,0 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tasty Japan: xì dầu 1/2 muỗng cà phê cho 2 phần → quy ra 3 phần ≈ 3/4 muỗng cà phê (~4 ml). Làm tròn lên 1 muỗng cà phê (5 ml) cho dễ đong, chênh lệch không đáng kể vì chỉ là nêm nếm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "1 muỗng cà phê muối tinh ≈ 6 g (USDA) → 1/4 muỗng ≈ 1,5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tasty Japan: muối 1/8 muỗng cà phê cho 2 phần → quy ra 3 phần = 3/16, làm tròn 1/4 muỗng cà phê. Cookpad chỉ ghi 'vừa đủ'. Lưu ý xì dầu đã mặn nên nêm muối nhẹ tay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "1 muỗng cà phê tiêu đen xay ≈ 2,3 g (USDA: khoảng 2,1–2,3 g/tsp) → 1/4 muỗng ≈ 0,6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn Nhật đều chỉ ghi 'vừa đủ'. Định lượng 1/4 muỗng cà phê là ước lượng nêm nếm thông thường cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế bắp cải: bóc bỏ lớp lá già bên ngoài, rửa sạch dưới vòi nước, để ráo. Cắt thành miếng to vừa ăn (khoảng 4–5 cm). Phần lõi cứng thái lát mỏng để dễ chín đều.",
+      "tip": "Tasty Japan: thái mỏng phần lõi cứng thì khi nướng lõi vẫn mềm, không bị sượng; lõi thực ra rất ngọt nên đừng bỏ."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Thái nhỏ hành lá (cả phần xanh), để riêng ra chén."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Bắc chảo lớn (tốt nhất là chảo chống dính hoặc chảo gang) lên bếp, để lửa vừa. Cho dầu ăn vào, nghiêng chảo láng đều mặt.",
+      "tip": "Tasty Japan dùng dầu salad để áp chảo trước, bơ chỉ cho vào sau — cách này bơ không bị cháy khét."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Xếp bắp cải vào chảo, trải đều thành một lớp, KHÔNG đảo ngay. Để yên khoảng 2–3 phút cho mặt dưới xém vàng nhẹ.",
+      "tip": "Điểm then chốt của Tasty Japan: 'nướng' (để yên) chứ không 'xào' (đảo liên tục) — như vậy bắp cải không ra nước, giữ được vị ngọt và có mùi thơm xém cạnh.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Trở mặt các miếng bắp cải (dùng đũa và xẻng lật cho khỏi vỡ), áp tiếp 2–3 phút cho mặt còn lại xém vàng.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho bơ lên trên bắp cải, hạ lửa vừa-nhỏ, đun đến khi bơ chảy hoàn toàn và dậy mùi thơm.",
+      "tip": "Tasty Japan: từ khi cho bơ vào thì dễ cháy nên canh lửa nhỏ và thao tác nhanh tay.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Rưới xì dầu quanh mép chảo, rắc muối và tiêu đen lên, đảo nhanh tay cho gia vị thấm đều từng miếng bắp cải.",
+      "tip": "Rưới xì dầu vào thành chảo đang nóng sẽ dậy mùi thơm hơn là rưới trực tiếp lên rau (kinh nghiệm chung của các công thức Nhật bơ-xì dầu)."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Đậy nắp, để lửa vừa thêm 2–3 phút cho phần lõi chín mềm hẳn.",
+      "tip": "Bước hấp đậy nắp này theo phong cách cookpad 焼きキャベツ (đậy nắp nướng 6–7 phút mỗi mặt). Nếu thích ăn giòn sần sật thì bỏ qua bước này.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Mở nắp, nếm thử và điều chỉnh: thiếu mặn thì thêm vài giọt xì dầu, thích thơm thì rắc thêm tiêu.",
+      "tip": "Xì dầu đã mặn nên nêm muối nhẹ tay ngay từ đầu, điều chỉnh dần ở bước này."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn bắp cải ra đĩa, rắc hành lá thái nhỏ lên trên, ăn nóng ngay.",
+      "tip": "Món này ăn nóng mới ngon — bơ nguội sẽ đông lại và mất mùi thơm."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 94.69,
+      "proteinG": 1.52,
+      "carbohydrateG": 6.03,
+      "fatG": 7.83,
+      "fiberG": 2.57,
+      "sugarG": 3.21,
+      "sodiumMg": 322.42
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Bắp cải: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Bơ lạt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Xì dầu (shoyu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

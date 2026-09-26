@@ -1,0 +1,724 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-327ffa644fbe1a7d",
+    "slug": "chao-tom-nam-nong",
+    "title": "Cháo tôm nấm nóng"
+  },
+  "content": {
+    "description": "Cháo trắng nấu nhừ với tôm tươi-nấm ngọt, gừng sợi ấm bụng, tô cháo tối ngày mưa trọn vẹn.",
+    "cuisine": "vietnamese",
+    "category": "mon_nhanh_sang",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 40,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Cháo",
+      "Tôm",
+      "Nấm",
+      "Ấm bụng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-327ffa644fbe1a7d.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://ecomushrooms.vn/cam-nang/cong-thuc-chao-nam-moi-den-nau-tom-thom-ngon-bo-duong/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://congnghenhat.com/tin-tuc/cong-thuc-nau-an/nau-chao-tom-nam-voi-noi-com-dien-cao-tan-hitachi.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Gạo tẻ",
+      "canonicalIngredientId": "ING_ENR_E917189F6ABE168C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "1 chén nhỏ gạo tẻ ≈ 150 g; congnghenhat dùng cốc đong 180 ml ≈ 150 g gạo cho 4–5 người",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "ECOMUSHROOMS: 1 chén nhỏ cho 4 khẩu phần; congnghenhat: 1 cốc (180 ml) cho 4–5 người — hai mức tương đương nhau, lấy 150 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 365,
+        "proteinG": 7.13,
+        "carbohydrateG": 80,
+        "fatG": 0.66,
+        "fiberG": 1.3,
+        "sugarG": 0.12,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169756",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm tươi",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram; cân sau khi bóc vỏ, bỏ đầu và rút chỉ đen",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "ECOMUSHROOMS: 200 g tôm tươi cho 4 khẩu phần (chọn tôm sú hoặc tôm thẻ); congnghenhat: 1 cốc tôm tươi cắt ngang (~180 ml) — lấy 200 g theo ECOMUSHROOMS vì định rõ 4 khẩu phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "USDA 'Crustaceans, shrimp, raw' (fdcId 175179) không liệt kê dòng fiber/sugar (giá trị 0, khớp mục tôm canned cùng họ); để 0.0."
+    },
+    {
+      "position": 2,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "congnghenhat: 120 g nấm đùi gà cho 4–5 người; ECOMUSHROOMS: 150–200 g nấm mối đen cho 4 khẩu phần — lấy 150 g (ưu tiên nguồn định rõ 4 khẩu phần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": 1.11,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "Dùng số liệu 'Mushrooms, oyster, raw' (SR Legacy) làm tương đương gần nhất: mục 'Mushroom, king oyster' (Foundation, fdcId 2003599) thiếu chỉ số energy kcal chuẩn nên không dùng."
+    },
+    {
+      "position": 3,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "1 nhánh gừng nhỏ ≈ 15 g (ước lượng phổ biến)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "ECOMUSHROOMS: 1 nhánh nhỏ, thái sợi; congnghenhat: 1/3 cốc gừng thái lát mỏng (~60 ml, trang trí) — mâu thuẫn, lấy 1 nhánh nhỏ ≈ 15 g theo ECOMUSHROOMS.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.8,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "2 củ hành tím; 1 củ hành tím ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "ECOMUSHROOMS: 2 củ, băm nhỏ để phi thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "3 nhánh hành lá; 1 nhánh ≈ 6–7 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn ghi '1 ít'/'hành lá thái nhỏ' rắc khi ăn, không định lượng — ước 3 nhánh ≈ 20 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "1 muỗng canh = 15 ml ≈ 13.6 g (tỉ trọng dầu ăn ~0.91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ECOMUSHROOMS liệt kê dầu ăn trong gia vị (dùng phi hành, xào tôm) nhưng không định lượng — lấy 1 muỗng canh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 17,
+        "basis": "1 muỗng canh = 15 ml ≈ 17 g (tỉ trọng nước mắm ~1.13)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ECOMUSHROOMS: 'một chút nước mắm' để nêm — lấy 1 muỗng canh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7850
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1/2 muỗng cà phê ≈ 3 g (1 muỗng cà phê muối ≈ 6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "congnghenhat: 1/2 muỗng cà phê muối; ECOMUSHROOMS ướp tôm 'nhẹ với muối' — lấy 1/2 muỗng cà phê.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38800
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê bột ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ECOMUSHROOMS liệt kê hạt nêm trong gia vị nhưng không định lượng — lấy 1 muỗng cà phê.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.7,
+        "carbohydrateG": 18,
+        "fatG": 13.9,
+        "fiberG": 0,
+        "sugarG": 17.4,
+        "sodiumMg": 23900
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Soup, chicken broth or bouillon, dry' làm tương đương gần nhất cho hạt nêm dạng bột."
+    },
+    {
+      "position": 10,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "1/2 muỗng cà phê tiêu xay ≈ 1.5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn: rắc tiêu xay khi ăn nóng, không định lượng — lấy 1/2 muỗng cà phê.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "lít",
+        "text": "1.5 lít",
+        "gramEquivalent": 1500,
+        "basis": "1.5 lít = 1500 g (tỉ trọng nước = 1)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "l"
+        }
+      },
+      "note": "ECOMUSHROOMS: ~1.5 lít nước cho 4 khẩu phần; congnghenhat: 8 cốc nước lọc + 1 cốc nước hầm gà = 9 cốc 180 ml ≈ 1.62 lít — mâu thuẫn nhẹ, lấy 1.5 lít theo ECOMUSHROOMS (không dùng nước hầm gà vì món này là cháo tôm nấm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 12,
+      "sourceName": "Ngò rí",
+      "canonicalIngredientId": "ING_ENR_0F9D040BCEE6A9AF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "đơn vị gốc đã là gram; '1 ít' ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "ECOMUSHROOMS: 'hành lá, ngò rí: 1 ít'; congnghenhat dùng rau mùi trang trí — để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": "Ngò rí = coriander/cilantro leaves."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Vo gạo tẻ cho sạch, để ráo rồi cho vào chảo rang sơ trên lửa vừa đến khi hạt gạo se khô và dậy mùi thơm.",
+      "tip": "ECOMUSHROOMS: rang sơ giúp cháo thơm và hạt gạo không bị nát khi ninh.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cho gạo đã rang và khoảng 1.5 lít nước vào nồi, đun sôi rồi hạ lửa nhỏ ninh đến khi gạo nở nhừ thành cháo.",
+      "tip": "Thỉnh thoảng khuấy để cháo không bén đáy nồi.",
+      "timerMinutes": 40
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế tôm: rửa sạch, bóc vỏ, bỏ đầu, rút chỉ đen ở lưng, để ráo rồi ướp nhẹ với một ít muối và tiêu xay khoảng 10 phút.",
+      "tip": "ECOMUSHROOMS: chọn tôm tươi sống, thịt chắc, vỏ bóng.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Sơ chế nấm đùi gà: rửa sạch, ngâm nước muối loãng khoảng 5 phút, vớt ra để ráo rồi thái lát vừa ăn.",
+      "tip": "Không ngâm nấm quá lâu sẽ làm nấm ngấm nước, mất vị ngọt.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Hành tím bóc vỏ, băm nhỏ. Gừng cạo vỏ, thái sợi. Hành lá và ngò rí rửa sạch, cắt nhỏ."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Bắc chảo lên bếp, cho 1 muỗng canh dầu ăn vào đun nóng, phi thơm hành tím băm rồi cho tôm vào xào nhanh đến khi thịt tôm săn lại.",
+      "tip": "ECOMUSHROOMS: xào săn để tôm giữ được độ ngọt; không xào quá chín vì tôm còn nấu tiếp trong cháo.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Khi cháo đã nhừ, cho nấm đùi gà vào nồi, nấu thêm khoảng 7–10 phút để nấm tiết vị ngọt.",
+      "tip": "ECOMUSHROOMS: cho nấm vào trước tôm để nấm kịp chín mềm.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho tôm đã xào vào nồi cháo, khuấy đều, nêm muối, hạt nêm và một chút nước mắm cho vừa ăn.",
+      "tip": "Nêm từ từ vì tôm và nấm đã có vị ngọt tự nhiên.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho gừng thái sợi, hành lá và ngò rí cắt nhỏ vào nồi rồi tắt bếp ngay.",
+      "tip": "Cho rau thơm vào cuối để giữ màu xanh và mùi thơm."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Múc cháo ra tô, rắc thêm tiêu xay và vài cọng ngò rí lên trên, dùng ngay khi còn nóng.",
+      "tip": "Cháo ngon nhất khi ăn nóng; có thể ăn kèm quẩy giòn (ECOMUSHROOMS)."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 12.38,
+      "proteinG": 1.24,
+      "carbohydrateG": 2.28,
+      "fatG": 0.15,
+      "fiberG": 0.86,
+      "sugarG": 0.42,
+      "sodiumMg": 6.75
+    },
+    "originalPerServing": {
+      "energyKcal": 237.86,
+      "proteinG": 14.8,
+      "carbohydrateG": 35.24,
+      "fatG": 4.29,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 994.34
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Gạo tẻ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Tôm tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Gừng tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành tím: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

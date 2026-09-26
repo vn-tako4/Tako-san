@@ -1,0 +1,660 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-8fdcddab058d5f65",
+    "slug": "mi-y-sot-ca-chua-tuoi",
+    "title": "Mì Ý sốt cà chua tươi"
+  },
+  "content": {
+    "description": "Sốt cà chua tươi đơn giản bao sợi mì Ý, món pomodoro kinh điển chuẩn vị nước Ý.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Pomodoro",
+      "Ý",
+      "Mì Ý",
+      "Kinh điển"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-8fdcddab058d5f65.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.recipesfromitaly.com/spaghetti-al-pomodoro/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.mamaflorence.com/uploads/Ricette/Fresh_Tomato_Sauce.pdf",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì spaghetti khô",
+      "canonicalIngredientId": "ING_ENR_6D3475084F90DC20",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 260,
+        "unit": "g",
+        "text": "260 g",
+        "gramEquivalent": 260,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 260,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn A dùng 350 g spaghetti cho 4 phần → 262 g cho 3 phần, làm tròn 260 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 371,
+        "proteinG": 13.04,
+        "carbohydrateG": 74.67,
+        "fatG": 1.51,
+        "fiberG": 3.2,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168927",
+      "sourceNutritionNote": "Dùng số liệu pasta khô generic (SR Legacy), tương đương spaghetti khô."
+    },
+    {
+      "position": 1,
+      "sourceName": "Cà chua cherry chín (hoặc cà chua thường chín)",
+      "canonicalIngredientId": "ING_ENR_D6DE01CFE2F41B57",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn B dùng 500 g cà chua cherry tươi cho 4 phần → 375 g cho 3 phần, làm tròn 400 g. Nguồn A dùng 800 g cà chua bóc vỏ cho 4 phần nhưng là cho sốt nấu lâu (30-35 phút); món này là sốt cà chua tươi nấu nhanh nên lấy theo nguồn B. Nếu dùng cà chua thường thì chọn quả chín mọng, bổ múi cau.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": "Dùng số liệu cà chua đỏ chín sống generic (SR Legacy)."
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng 2 tép tỏi cho 4 phần; giữ 2 tép cho 3 phần. Nguồn A: để nguyên tép phi thơm rồi vớt ra cho vị nhẹ, hoặc băm nhỏ cho vị đậm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Dầu olive extra virgin",
+      "canonicalIngredientId": "ING_ENR_84084B36AB5F7081",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "đơn vị gốc đã là gram (≈ 2 muỗng canh)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn A dùng 40 g cho 4 phần → 30 g cho 3 phần. Nguồn B dùng 4 muỗng canh (~55 g) cho 4 phần — mâu thuẫn, lấy theo nguồn A vì là công thức pasta al pomodoro chuẩn Ý.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": "Dùng số liệu dầu olive generic (SR Legacy) thay cho bản extra virgin Foundation vì bản Foundation thiếu số liệu macros."
+    },
+    {
+      "position": 4,
+      "sourceName": "Lá húng quế tươi",
+      "canonicalIngredientId": "ING_ENR_0121EB2200008912",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "lá",
+        "text": "6 lá",
+        "gramEquivalent": 3,
+        "basis": "1 lá húng quế tươi ≈ 0,5 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn A dùng 4-5 lá cho 4 phần; nguồn B dùng 8 lá cho 4 phần → khoảng 4-6 lá cho 3 phần, lấy 6 lá. Cả hai nguồn đều cho húng quế vào cuối để giữ mùi thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 3.15,
+        "carbohydrateG": 2.65,
+        "fatG": 0.64,
+        "fiberG": 1.6,
+        "sugarG": null,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172232",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tương cà cô đặc (tomato paste)",
+      "canonicalIngredientId": "ING_ENR_369256A2AE745C8A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "1 muỗng cà phê tương cà cô đặc ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ nguồn B dùng (2 muỗng cà phê cho 4 phần → 1,5 muỗng cho 3 phần); nguồn A không dùng. Thêm vào để sốt cà chua tươi nhanh có độ đậm và màu đẹp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 82,
+        "proteinG": 4.32,
+        "carbohydrateG": 18.91,
+        "fatG": 0.47,
+        "fiberG": 4.1,
+        "sugarG": null,
+        "sodiumMg": 59
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170459",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Muối (nêm sốt)",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Muối via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối tinh ≈ 5-6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn B nêm muối 'generously' (hào phóng); nguồn A nêm 'to taste'. Dùng 1 muỗng cà phê cho sốt, điều chỉnh theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Muối (cho nước luộc mì)",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Muối via the same name key",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh muối tinh ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Không phải nguyên liệu nêm vào sốt: dùng để nêm nước luộc mì theo chuẩn Ý (nước phải mặn như nước biển để sợi mì có vị từ bên trong).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.5,
+        "basis": "1 muỗng cà phê tiêu đen xay ≈ 2,3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn B nêm tiêu đen 'to taste'; nguồn A không dùng tiêu. Dùng một nhúm nhỏ theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": null,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 20,
+        "basis": "1 cây hành lá ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Assignment liệt kê 'hành lá' nhưng cả hai nguồn Ý đều KHÔNG dùng hành lá — sốt chỉ dùng húng quế tươi làm rau thơm. Để nguyên liệu này ở dạng tùy chọn: thái nhỏ rắc lên khi dọn nếu muốn giữ đúng gợi ý gốc.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tra cứu dinh dưỡng vì là nguyên liệu tùy chọn, lượng rất nhỏ."
+    },
+    {
+      "position": 10,
+      "sourceName": "Phô mai Parmigiano Reggiano bào (dọn kèm)",
+      "canonicalIngredientId": "ING_ENR_6A3CC40557011F42",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn A: tùy chọn khi dọn — nhiều nhà Ý ăn spaghetti al pomodoro không phô mai để vị cà chua làm chủ đạo; nếu dùng thì rắc ít.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 392,
+        "proteinG": 35.75,
+        "carbohydrateG": 3.22,
+        "fatG": 25,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 1175
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170848",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước luộc mì (giữ lại)",
+      "canonicalIngredientId": "ING_ENR_4C9FDCDAC6D4EAE4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "ml",
+        "text": "100 ml",
+        "gramEquivalent": 100,
+        "basis": "100 ml nước ≈ 100 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 100,
+          "unit": "ml"
+        }
+      },
+      "note": "Không phải nguyên liệu mua riêng: múc lại từ nồi luộc mì trước khi vớt. Nguồn A dùng 120 ml cho 4 phần → ~100 ml cho 3 phần, dùng để làm loãng và giúp sốt bám đều sợi mì.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Là nước luộc mì (nước + tinh bột), không tra cứu dinh dưỡng riêng."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế: cà chua cherry rửa sạch, bổ đôi; tỏi bóc vỏ, đập dập để nguyên tép; húng quế rửa nhẹ, để ráo.",
+      "tip": "Nguồn B: cà chua cherry chỉ cần bổ đôi — nấu nhanh sẽ tự xẹp và ra nước ngọt.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đun một nồi lớn nước cho sôi mạnh, cho 1 muỗng canh muối vào khuấy tan, thả spaghetti vào luộc, bớt khoảng 1 phút so với thời gian trên bao bì.",
+      "tip": "Nguồn A: luộc mì non hơn 1 phút vì mì còn chín tiếp trong chảo sốt — đây là bí quyết để sợi mì al dente đúng chuẩn.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Trong lúc chờ mì chín, đun nóng dầu olive trong chảo lớn ở lửa vừa-nhỏ. Cho tỏi vào phi 1-2 phút cho thơm, không để tỏi chuyển nâu.",
+      "tip": "Nguồn A: phi tỏi lửa nhỏ-vừa, tuyệt đối không để cháy — tỏi cháy sẽ làm sốt bị đắng. Muốn vị nhẹ thì để nguyên tép rồi vớt ra sau.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho cà chua bổ đôi vào chảo, nêm 1 muỗng cà phê muối, tăng lửa lớn, đảo 3-4 phút cho cà chua mềm xẹp và ra nước.",
+      "tip": "Nguồn B: đun lửa lớn nhất 3-4 phút cho cà chua tươi nhanh mềm mà vẫn giữ vị tươi, không nấu rục như sốt đóng hộp.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho tương cà cô đặc vào, đảo đều cho tan vào sốt, hạ lửa vừa nấu thêm 5 phút đến khi sốt hơi sánh lại.",
+      "tip": "Nguồn B: tương cà giúp sốt nhanh đậm màu và có chiều sâu vị ngọt — bước này chỉ có ở nguồn B, nguồn A nấu sốt lâu hơn nên không cần.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Xé nhỏ 4 lá húng quế cho vào sốt, rắc một nhúm tiêu đen, đảo đều rồi tắt bếp.",
+      "tip": "Nguồn A: húng quế phải cho vào cuối cùng, nấu lâu sẽ mất mùi thơm đặc trưng."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Trước khi vớt mì, múc giữ lại khoảng 100 ml nước luộc mì.",
+      "tip": "Nguồn A: nước luộc giàu tinh bột là 'chất kết dính' tự nhiên giúp sốt bám đều từng sợi mì."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Vớt mì cho thẳng vào chảo sốt, bật lửa vừa, đảo nhanh tay khoảng 1 phút cho sốt bám đều. Nếu sốt đặc quá, thêm nước luộc mì từng ít một.",
+      "tip": "Nguồn A: xóc mì trong sốt 1 phút trên bếp — sợi mì sẽ hút sốt vào trong, ngon hơn hẳn cách chan sốt lên trên.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Dọn ngay ra đĩa sâu lòng, rắc nốt 2 lá húng quế tươi xé nhỏ lên trên. Ai thích thì rắc thêm ít Parmigiano bào và hành lá thái nhỏ.",
+      "tip": "Nguồn A: có thể rắc Parmigiano nhưng chỉ một ít — món này càng đơn giản càng tôn được vị cà chua tươi."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Ăn ngay khi còn nóng.",
+      "tip": "Cả hai nguồn: pasta sốt cà chua tươi phải ăn ngay — để nguội mì sẽ bở và sốt tách nước."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Mì spaghetti khô: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Cà chua cherry chín (hoặc cà chua thường chín): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Dầu olive extra virgin: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Lá húng quế tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tương cà cô đặc (tomato paste): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Muối (nêm sốt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 7,
+        "detail": "Muối (cho nước luộc mì): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước luộc mì (giữ lại): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      8,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

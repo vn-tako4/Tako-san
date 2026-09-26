@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-d8001a64eeaa9150",
+    "slug": "com-tron-trung-tan-nhat",
+    "title": "Cơm trộn trứng tan Nhật"
+  },
+  "content": {
+    "description": "Cơm nóng trộn trứng sống? trứng tươi tan mịn với xì dầu-hành lá, tô tamago kake gohan Nhật mười phút.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 10,
+    "servings": 2,
+    "difficulty": "easy",
+    "tags": [
+      "Tamago kake",
+      "Nhật Bản",
+      "Cơm",
+      "Nhanh"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-d8001a64eeaa9150.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.justonecookbook.com/tamago-kake-gohan/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://cdn.1mal1japan.de/wp-content/uploads/2026/03/Rezept_Tamago-Kake-Gohan_Druckansicht.pdf",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cơm trắng nóng (gạo Nhật hạt ngắn, nấu chín)",
+      "canonicalIngredientId": "ING_ENR_CDFB1F00C0D803B0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "JOC: 1 phần cơm = 150 g cơm chín (3⁄4 cup/150 g gạo khô nấu được 330 g cơm chín); ×2 phần = 300 g. 1mal1japan ghi '200 g Reis' cho 2 phần nhưng không rõ là gạo khô hay cơm chín — mâu thuẫn, lấy theo JOC.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 130,
+        "proteinG": 2.36,
+        "carbohydrateG": 28.73,
+        "fatG": 0.19,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168932",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Trứng gà tươi (dùng sống)",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 100,
+        "basis": "JOC: 1 large egg = 50 g (không tính vỏ); ×2 quả",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "JOC yêu cầu trứng thật tươi, free-range, từ nguồn tin cậy để ăn sống (ở Nhật trứng ăn sống được xử lý theo quy định). Nếu không chắc về nguồn trứng, dùng trứng tiệt trùng (pasteurized) — JOC có hướng dẫn tự pasteurize tại nhà.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Xì dầu (shoyu)",
+      "canonicalIngredientId": "ING_ENR_4B3D4B69D5D57916",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 35,
+        "basis": "2 muỗng canh ≈ 30 ml; tỉ trọng xì dầu ~1.17 g/ml ≈ 35 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "1mal1japan: 2 muỗng canh cho 2 phần (đánh cùng lòng trắng, 1 muỗng/lòng trắng). JOC chỉ rưới 'a small amount' và cảnh báo không cho quá nhiều vì vị mặn sẽ lấn át vị ngọt của trứng — lấy 1 muỗng canh/bát theo nguồn Đức, người nấu tự điều chỉnh theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 15,
+        "basis": "1 cây hành lá trung bình ≈ 12–15 g (tính cả phần xanh và củ)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "1mal1japan dùng 2 cây cho 2 phần; JOC liệt kê hành lá thái nhỏ là topping phổ biến nhưng không định lượng — lấy 1 cây cho 2 phần vì chỉ dùng rắc trang trí.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Cá bào khô (katsuobushi)",
+      "canonicalIngredientId": "ING_ENR_CE1A1EC22D7A37C9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 8,
+        "unit": "g",
+        "text": "8 g",
+        "gramEquivalent": 8,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 8,
+          "unit": "g"
+        }
+      },
+      "note": "1mal1japan: 8 g cho 2 phần; JOC: topping yêu thích của tác giả (không định lượng).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có bản ghi phù hợp cho katsuobushi (cá bào khô); tra cứu 'bonito' chỉ trả về kết quả không liên quan — để null theo quy tắc fail-closed."
+    },
+    {
+      "position": 5,
+      "sourceName": "Furikake (gia vị rắc cơm Nhật)",
+      "canonicalIngredientId": "ING_ENR_EC5EF34B52D63EAB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê furikake ≈ 2–3 g (ước lượng vì nguồn không cho gram; chỉ là topping rắc)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "1mal1japan: 2 muỗng cà phê cho 2 phần; JOC liệt kê là topping phổ biến (không định lượng). Tùy chọn — không có vẫn đúng vị TKG cơ bản.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có bản ghi cho furikake — để null theo quy tắc fail-closed."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Nấu cơm gạo Nhật hạt ngắn cho thật nóng, bốc khói (hoặc hâm nóng cơm nguội bằng lò vi sóng đến khi nóng hổi).",
+      "tip": "JOC: cơm càng nóng càng tốt — nhiệt của cơm giúp lòng trắng trứng sánh nhẹ, tạo kết cấu xốp mịn như risotto. Đây là món ăn sáng kinh điển của Nhật, chỉ gồm 3 nguyên liệu: cơm, trứng sống, xì dầu."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Hành lá rửa sạch, thái khoanh mỏng. Bóp nhẹ katsuobushi giữa các ngón tay cho tơi ra.",
+      "tip": "1mal1japan: bóp tơi katsuobushi trước khi dùng giúp rắc đều hơn và hòa quyện tốt hơn với trứng."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đập từng quả trứng, tách riêng lòng trắng và lòng đỏ ra hai bát nhỏ.",
+      "tip": "Cách tách riêng theo 1mal1japan cho kết cấu kem mịn hơn. JOC làm đơn giản hơn: đập nguyên quả trứng vào hõm cơm — hai cách đều đúng."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đánh mỗi lòng trắng với 1 muỗng canh xì dầu bằng đũa cho tan đều.",
+      "tip": "1mal1japan: nên nêm xì dầu dè dặt trước, thiếu thì thêm sau. JOC cũng cảnh báo: không rưới quá tay vì vị mặn sẽ lấn át vị ngọt béo của trứng."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Xới cơm nóng ra 2 bát, dùng muỗng tạo một hõm nhỏ ở giữa mỗi bát cơm."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ lòng trắng đã đánh xì dầu vào cơm, trộn nhanh tay cho hơi sánh thành lớp nền kem.",
+      "tip": "Trộn kỹ để lòng trắng quyện đều vào từng hạt cơm — đây là bước tạo độ 'tan' kem của món."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Rắc đều katsuobushi đã bóp tơi, hành lá thái khoanh và furikake lên trên mỗi bát."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nhẹ nhàng đặt một lòng đỏ lên giữa mỗi bát cơm.",
+      "tip": "Đặt lòng đỏ sau cùng để giữ nguyên hình, trông đẹp mắt khi dọn."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Dọn ăn ngay khi cơm còn nóng. Khi ăn dùng đũa trộn mạnh đến khi cơm chuyển màu vàng nhạt, trứng hòa quyện hoàn toàn.",
+      "tip": "JOC: trộn đến khi trứng chuyển màu vàng nhạt, xốp nhẹ là đạt. Chỉ dùng trứng tươi từ nguồn tin cậy để ăn sống; nếu không chắc, hãy dùng trứng pasteurized."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 2,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 71.5,
+      "proteinG": 6.28,
+      "carbohydrateG": 0.36,
+      "fatG": 4.76,
+      "fiberG": 0,
+      "sugarG": 0.19,
+      "sodiumMg": 71
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Cơm trắng nóng (gạo Nhật hạt ngắn, nấu chín): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Xì dầu (shoyu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      5
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,694 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-af8a9cdb17d5e9fd",
+    "slug": "bo-xao-bulgogi-hanh-tay-ca-rot",
+    "title": "Bò xào Bulgogi hành tây cà rốt"
+  },
+  "content": {
+    "description": "Thịt bò thái mỏng ướp xì dầu, tỏi và đường rồi xào nhanh với hành tây, cà rốt, vị ngọt mặn đặc trưng Bulgogi, ăn kèm cơm hoặc cuốn rau.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Hàn Quốc",
+      "Thịt bò",
+      "Món xào",
+      "Được yêu thích"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-af8a9cdb17d5e9fd.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.koreanbapsang.com/bulgogi-korean-bbq-beef/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.maangchi.com/recipe/bulgogi",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt bò thăn (sirloin) thái mỏng",
+      "canonicalIngredientId": "ING_ENR_3324D4508E351290",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi (classic bulgogi) dùng 1 lb (454 g) thịt thăn bò thái mỏng; Korean Bapsang dùng 2 lb thịt rib eye/top sirloin và khuyên chọn thịt ngon, thái mỏng sau khi đông lạnh 1 giờ. Lấy 450 g thịt thăn bò cho 3 phần (scale từ công thức 1 lb của Maangchi). Số liệu dinh dưỡng dùng mục top sirloin của USDA làm tham chiếu gần nhất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 214,
+        "proteinG": 19.92,
+        "carbohydrateG": 0,
+        "fatG": 14.28,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 51
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168728",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "củ",
+        "text": "0.5 củ",
+        "gramEquivalent": 80,
+        "basis": "1/2 củ hành tây trung bình ≈ 80 g (USDA: 1 củ hành tây trung bình ≈ 110 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Korean Bapsang dùng 1 củ nhỏ cho 2 lb thịt; món này hành tây là rau chính nên dùng 1/2 củ cho 3 phần (~450 g thịt). Maangchi classic dùng 1/4 cup hành tây xay nhuyễn trong nước ướp thay vì hành thái lát — hai nguồn khác cách dùng hành tây, món này theo kiểu xào với hành thái lát.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "củ",
+        "text": "0.5 củ",
+        "gramEquivalent": 50,
+        "basis": "1/2 củ cà rốt trung bình ≈ 50 g (1 củ cà rốt trung bình ≈ 100 g, USDA FoodData Central)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi classic chỉ dùng 'several thin slices of carrot'; Korean Bapsang dùng 1 củ cà rốt nhỏ (tùy chọn) cho 2 lb thịt. Món này có cà rốt trong tên nên dùng 1/2 củ thái lát mỏng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá trung bình ≈ 15 g (USDA FoodData Central: 1 medium green onion ≈ 15 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi classic: 1 cây hành lá thái nhỏ trong nước ướp cho 1 lb; Korean Bapsang: 3 cây cắt khúc 5 cm cho 2 lb — hai nguồn mâu thuẫn về lượng và cách cắt, lấy 2 cây cắt khúc cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "tép",
+        "text": "4 tép",
+        "gramEquivalent": 12,
+        "basis": "1 tép tỏi ≈ 3 g (khối lượng chuẩn USDA FoodData Central)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi classic dùng 4 tép cho 1 lb; Korean Bapsang dùng 2 muỗng canh tỏi băm (~5-6 tép) cho 2 lb — đồng thuận khoảng 4 tép cho 450 g thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "1 muỗng canh xì dầu ≈ 18 g (tỉ trọng xì dầu ~1.2 g/ml, khối lượng chuẩn USDA FoodData Central)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi classic: 2 muỗng canh cho 1 lb; Korean Bapsang: 6 muỗng canh cho 2 lb — đồng thuận 2 muỗng canh cho 450 g thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 25,
+        "basis": "1 muỗng canh đường cát ≈ 12.5 g (khối lượng chuẩn USDA FoodData Central)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi classic: 2 muỗng canh đường nâu cho 1 lb; Korean Bapsang: 4 muỗng canh đường cho 2 lb (hoặc 2 đường + 2 mật ong; ghi chú dùng 3 muỗng nếu muốn ít ngọt) — đồng thuận 2 muỗng canh cho 450 g thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu mè rang",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "1 muỗng canh dầu mè ≈ 13.6 g (tỉ trọng dầu mè ~0.92 g/ml, khối lượng chuẩn USDA FoodData Central)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi classic: 1 muỗng canh cho 1 lb; Korean Bapsang: 2 muỗng canh cho 2 lb — đồng thuận. Korean Bapsang nhấn mạnh dùng nhiều tỏi và dầu mè mới ra vị bulgogi chuẩn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Lê Hàn (xay nhuyễn)",
+      "canonicalIngredientId": "ING_ENR_9112EDE15ABBD58A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "quả",
+        "text": "0.25 quả",
+        "gramEquivalent": 60,
+        "basis": "1/4 quả lê Hàn trung bình ≈ 60 g (1 quả lê Hàn ≈ 240 g, ước tính)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.25,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi classic: 1/2 cup lê xay cho 1 lb; Korean Bapsang: 1/2 quả lê cho 2 lb, ghi rõ có thể thay bằng táo hoặc bỏ qua nếu không có — lấy 1/4 quả cho 3 phần, tùy chọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 42,
+        "proteinG": 0.5,
+        "carbohydrateG": 10.65,
+        "fatG": 0.23,
+        "fiberG": 3.6,
+        "sugarG": 7.05,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168177",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Gừng băm",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê gừng băm ≈ 2 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi classic dùng 1 muỗng cà phê gừng băm cho 1 lb; bản easy-bulgogi của cùng tác giả Maangchi không dùng gừng — hai công thức của cùng một nguồn mâu thuẫn, để tùy chọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Hạt mè rang",
+      "canonicalIngredientId": "ING_ENR_36C1725FFCC0FB57",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 9,
+        "basis": "1 muỗng canh hạt mè ≈ 9 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi easy-bulgogi dùng 1 muỗng canh mè rang giã thô cho 1 lb; Korean Bapsang dùng 2 muỗng cà phê cho 2 lb — hai nguồn mâu thuẫn, lấy theo Maangchi easy (kiểu xào chảo), ghi rõ lý do.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 573,
+        "proteinG": 17.73,
+        "carbohydrateG": 23.45,
+        "fatG": 49.67,
+        "fiberG": 11.8,
+        "sugarG": 0.3,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170150",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.5,
+        "basis": "1/4 muỗng cà phê tiêu xay ≈ 0.5 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi classic: 'a pinch'; Korean Bapsang: 1/8 muỗng cà phê cho 2 lb — lấy 1/4 muỗng cà phê cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "1 muỗng canh dầu ăn ≈ 13.6 g (khối lượng chuẩn USDA FoodData Central cho dầu thực vật)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi easy-bulgogi xào thịt trực tiếp trên chảo nóng không thêm dầu; Korean Bapsang cũng không thêm dầu khi xào. Món này có rau (hành tây, cà rốt) nên dùng 1 muỗng canh dầu để xào rau không bị khô — tùy chọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Thịt bò để ngăn đá 1-2 giờ cho hơi cứng lại, thái ngang thớ thành lát mỏng khoảng 3 mm.",
+      "tip": "Korean Bapsang: đông lạnh khoảng 1 giờ để thái mỏng dễ hơn; Maangchi: thái mỏng khoảng 1/8 inch để thịt chín nhanh."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Hành tây thái lát mỏng. Cà rốt gọt vỏ, thái lát xéo mỏng. Hành lá cắt khúc 5 cm."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Trộn nước ướp trong tô lớn: xì dầu, đường, tỏi băm, gừng băm (nếu dùng), dầu mè, tiêu, lê xay (nếu dùng); khuấy đến khi đường tan hết.",
+      "tip": "Maangchi: khuấy kỹ cho đường tan hết trước khi cho thịt vào."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho thịt bò, hành tây, cà rốt, hành lá vào tô nước ướp, trộn đều bằng tay cho thịt thấm đều. Bọc kín, để tủ lạnh ít nhất 30 phút (có thể để qua đêm).",
+      "tip": "Korean Bapsang: 30 phút - 1 giờ là đủ cho thịt thái mỏng; Maangchi: ít nhất 30 phút.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun nóng chảo lớn trên lửa lớn thật nóng, cho dầu ăn (nếu dùng) vào tráng đều chảo."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho thịt và rau đã ướp vào chảo (chia 2 mẻ nếu chảo nhỏ để thịt cháy xém đẹp), xào nhanh 5-7 phút đến khi thịt chín, hơi cháy cạnh.",
+      "tip": "Maangchi: chảo thật nóng, thịt mỏng nên chín nhanh không ra nhiều nước. Korean Bapsang: cũng có thể để thịt om trong nước thịt của chính nó cho mềm và có sốt chan cơm.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nêm nếm lại: nếu nhạt thêm xíu xì dầu, nếu thiếu ngọt thêm xíu đường."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rắc hạt mè rang (nếu dùng) lên, đảo đều."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Dọn nóng ra đĩa, ăn kèm cơm trắng.",
+      "tip": "Maangchi: cuốn thịt với cơm, ssamjang và xà lách; Korean Bapsang: thịt bulgogi thừa để tủ lạnh được 4 ngày, dùng làm bibimbap rất ngon."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 321,
+      "proteinG": 29.88,
+      "carbohydrateG": 0,
+      "fatG": 21.42,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 76.5
+    },
+    "originalPerServing": {
+      "energyKcal": 492.96,
+      "proteinG": 32.4,
+      "carbohydrateG": 18.13,
+      "fatG": 32.21,
+      "fiberG": 2.49,
+      "sugarG": 11.99,
+      "sodiumMg": 751.04
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu mè rang: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

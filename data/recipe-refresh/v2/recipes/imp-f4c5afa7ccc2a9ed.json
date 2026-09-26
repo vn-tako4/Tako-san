@@ -1,0 +1,667 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-f4c5afa7ccc2a9ed",
+    "slug": "ca-chua-nhoi-thit-nuong",
+    "title": "Cà chua nhồi thịt nướng"
+  },
+  "content": {
+    "description": "Cà chua nhồi thịt-phô mai nướng lò mềm mọng nước, pomodori ripieni Ý đẹp mắt chiêu đãi.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 50,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Pomodori ripieni",
+      "Ý",
+      "Nướng lò",
+      "Chiêu đãi"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-f4c5afa7ccc2a9ed.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.ilcucinologo.com/ricette/pomodori-ripieni-di-carne/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.gustoblog.it/2014/06/15/i-pomodori-ripieni-di-carne-macinata-nella-ricetta-del-secondo-sfizioso/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.misya.info/ricetta/pomodori-ripieni-di-carne.htm",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.cibo360.it/cucina/mondo/pomodori_ripieni_carne.htm",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cà chua chín to, chắc",
+      "canonicalIngredientId": "ING_ENR_678AB9C6815ADDDB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 8,
+        "unit": "quả",
+        "text": "8 quả",
+        "gramEquivalent": 984,
+        "basis": "8 quả × 123 g/quả (USDA FoodData Central: 1 medium whole tomato (2-3/5\" dia) = 123 g)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 8,
+          "unit": "piece"
+        }
+      },
+      "note": "ilcucinologo (công thức chuẩn 4 persone): 8 pomodori medi. Gustoblog: 6 quả nhưng không ghi số phần. Chọn 8 quả cỡ vừa, chín đỏ nhưng còn chắc để giữ form khi nướng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt heo xay",
+      "canonicalIngredientId": "GROUND_PORK",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "ilcucinologo: 300 g carne macinata mista (vitello + maiale) cho 4 phần; Gustoblog: 150 g vitello + 150 g maiale. Cả hai nguồn Ý đều khuyên dùng thịt trộn bê+heo cho vị đậm đà — ở đây dùng 100% thịt heo xay theo gợi ý của assignment.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 263,
+        "proteinG": 16.88,
+        "carbohydrateG": 0,
+        "fatG": 21.19,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167902",
+      "sourceNutritionNote": "USDA không công bố giá trị đường (Total Sugars) cho Pork, fresh, ground, raw nên sugar_g để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 50,
+        "basis": "1 quả trứng gà lớn ~50 g (USDA FoodData Central: 1 large egg = 50 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "ilcucinologo: 1 uovo cho 4 phần; Gustoblog: 2 uova (nhưng không ghi số phần) — mâu thuẫn, lấy theo ilcucinologo là nguồn ghi rõ 4 persone được ưu tiên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Bột chiên xù (pane grattugiato)",
+      "canonicalIngredientId": "ING_ENR_AF9D34767F5B1734",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "ilcucinologo: 50 g pane grattugiato cho 4 phần; Gustoblog: pangrattato q.b. — lấy theo ilcucinologo.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 395,
+        "proteinG": 13.35,
+        "carbohydrateG": 71.98,
+        "fatG": 5.3,
+        "fiberG": 4.5,
+        "sugarG": 6.2,
+        "sodiumMg": 732
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174928",
+      "sourceNutritionNote": "Dùng số liệu USDA của nguyên liệu tương đương 'Bread, crumbs, dry, grated, plain' (fdcId 174928, SR Legacy)."
+    },
+    {
+      "position": 4,
+      "sourceName": "Phô mai Parmigiano bào mịn",
+      "canonicalIngredientId": "ING_ENR_A629948A38A7B9D5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "2 muỗng canh phô mai bào ≈ 20 g (USDA: 1 tbsp parmesan grated ≈ 5 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "ilcucinologo: 2 cucchiai (~20 g) cho 4 phần; Gustoblog: 40 g — mâu thuẫn, lấy theo ilcucinologo (công thức chuẩn 4 persone). Misya phủ thêm scamorza trên mặt nhưng ilcucinologo không phủ phô mai mặt — theo ilcucinologo, chỉ dùng parmigiano trong nhân.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 392,
+        "proteinG": 35.75,
+        "carbohydrateG": 3.22,
+        "fatG": 25,
+        "fiberG": 0,
+        "sugarG": 0.11,
+        "sodiumMg": 1175
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170848",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "2 tép × 3 g/tép (USDA: 1 clove garlic = 3 g)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "ilcucinologo: 2 spicchi d'aglio cho 4 phần. cib360: 1 spicchio — lấy theo ilcucinologo.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "2 cây × 15 g/cây (USDA: 1 medium green onion (4-1/8\" long) = 15 g)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Misya (4 persone) dùng 1 cipollotto cho nhân; thay bằng 2 cây hành lá Việt Nam cho 4 phần. Hành lá chỉ là biến thể hợp khẩu vị — nguồn gốc Ý dùng cipollotto/hành tây.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Onions, spring or scallions (includes tops and bulb), raw'."
+    },
+    {
+      "position": 7,
+      "sourceName": "Rau mùi tây (ngò tây)",
+      "canonicalIngredientId": "ING_ENR_5A5C294EC5AA8588",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "mớ nhỏ",
+        "text": "1 mớ nhỏ",
+        "gramEquivalent": 15,
+        "basis": "1 mớ nhỏ ≈ 15 g (các nguồn Ý ghi '1 mazzetto' không định lượng — ước lượng mớ nhỏ vừa tay)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "bunch"
+        }
+      },
+      "note": "ilcucinologo: 1 mazzetto di prezzemolo fresco cho 4 phần (không định lượng). Gustoblog: prezzemolo + basilico q.b.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 2.97,
+        "carbohydrateG": 6.33,
+        "fatG": 0.79,
+        "fiberG": 3.3,
+        "sugarG": 0.85,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170416",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Lá húng quế tươi",
+      "canonicalIngredientId": "ING_ENR_0121EB2200008912",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm nhỏ",
+        "text": "1 nhúm nhỏ",
+        "gramEquivalent": 5,
+        "basis": "vài lá ≈ 5 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ilcucinologo: basilico fresco per decorare (opzionale) — chỉ để trang trí khi dọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 3.15,
+        "carbohydrateG": 2.65,
+        "fatG": 0.64,
+        "fiberG": 1.6,
+        "sugarG": 0.3,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172232",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu ô liu nguyên chất",
+      "canonicalIngredientId": "ING_ENR_3B7B05F341BDBC33",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "3 muỗng canh × 15 ml × 0.91 g/ml ≈ 41 g (tỉ trọng dầu ô liu ~0.91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ilcucinologo chỉ ghi olio EVO q.b. (phết khay + rưới mặt). cib360 định lượng rõ 3 cucchiai cho 4 persone — lấy theo cib360.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ≈ 6 g (USDA: 1 tsp table salt = 6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tất cả các nguồn Ý đều ghi sale q.b. — 1 muỗng cà phê là ước lượng hợp lý cho 300 g thịt + 8 quả cà chua, bao gồm cả phần muối rắc trong ruột cà chua để ráo nước (Misya, ilcucinologo).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.2,
+        "basis": "1/2 muỗng cà phê tiêu xay ≈ 1.2 g (USDA: 1 tsp ground black pepper = 2.3 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tất cả các nguồn Ý đều ghi pepe q.b. — ước lượng 1/2 muỗng cà phê cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Làm nóng lò nướng ở 180°C (chế độ lửa trên-dưới). Phết một lớp dầu ô liu mỏng vào khay nướng.",
+      "tip": "ilcucinologo nướng 180°C; Misya dùng 200°C — chọn 180°C theo ilcucinologo (công thức chuẩn 4 phần) để cà chua chín mềm mà không nát.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Rửa sạch cà chua, lau khô. Cắt ngang phần nắp trên của mỗi quả (giữ lại nắp để đậy sau), dùng muỗng nhỏ nạo hết ruột và hạt ra, cẩn thận không làm thủng vỏ.",
+      "tip": "ilcucinologo: dùng cucchiaino nạo ruột, giữ lại nắp làm 'coperchio'. Ruột cà chua giữ lại để trộn vào nhân (bước 6)."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Rắc một nhúm muối vào trong mỗi quả cà chua đã nạo ruột, úp ngược xuống đĩa/rá để ráo nước khoảng 10 phút.",
+      "tip": "Misya: 'Salate leggermente l'interno e metteteli a sgocciolare capovolti' — bước này giúp cà chua ra bớt nước, nhân không bị nhão khi nướng.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Bóc tỏi, băm thật nhuyễn. Hành lá rửa sạch, thái nhỏ cả phần trắng và xanh. Rau mùi tây nhặt lá, băm nhỏ.",
+      "tip": "ilcucinologo: 'aglio tritato finemente, prezzemolo tritato' — băm nhuyễn để nhân đồng nhất, không lợn cợn."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho thịt heo xay vào tô lớn, thêm trứng gà, bột chiên xù, phô mai Parmigiano bào, tỏi băm, hành lá, mùi tây băm, muối và tiêu đen. Trộn đều bằng tay đến khi thành khối đồng nhất, dẻo.",
+      "tip": "ilcucinologo trộn nhân SỐNG trực tiếp (không xào trước). Misya xào nhân trước với carota + cipollotto và rượu trắng — hai cách mâu thuẫn; chọn cách ilcucinologo vì đơn giản và phổ biến hơn cho bản nướng lò."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Phần ruột cà chua đã nạo: bỏ bớt hạt, cắt nhỏ, trộn vào tô nhân thịt. Nêm nếm lại muối tiêu cho vừa.",
+      "tip": "ilcucinologo (bước 4): 'Aggiungi al composto di carne i pezzetti di polpa di pomodoro' — ruột cà chua giúp nhân ẩm, không bị khô khi nướng."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nhồi nhân vào từng quả cà chua, nén vừa phải (không nén quá chặt để nhân còn chỗ nở), đậy nắp cà chua lại.",
+      "tip": "ilcucinologo: 'non compattarlo troppo' — nén quá chặt nhân sẽ bị chắc, khô."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Xếp cà chua đã nhồi vào khay đã phết dầu, rưới đều 1-2 muỗng canh dầu ô liu còn lại lên mặt từng quả.",
+      "tip": "Dầu giúp mặt cà chua không bị khô và hơi xém vàng đẹp mắt (ilcucinologo: 'Irrora leggermente la superficie')."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho khay vào lò đã nóng 180°C, nướng 30-40 phút đến khi thịt chín hẳn, cà chua mềm nhưng vẫn giữ được form, mặt hơi vàng.",
+      "tip": "ilcucinologo: 180°C 30-40 phút. Gustoblog: 25-30 phút; Misya: 200°C 30 phút. Kiểm tra bằng cách xiên tăm vào nhân thấy không còn nước hồng. Nếu mặt vàng quá sớm, che giấy bạc lên trên (mẹo của cib360).",
+      "timerMinutes": 35
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Lấy khay ra, để cà chua nghỉ 5 phút trong khay cho nhân định hình. Dọn ra đĩa, trang trí vài lá húng quế tươi, ăn nóng hoặc để nguội ở nhiệt độ phòng đều ngon.",
+      "tip": "primochef: món này 'si possono gustare freddi o a temperatura ambiente' — ăn nguội vẫn ngon, có thể bảo quản tủ lạnh 2 ngày (primochef, petitchef).",
+      "timerMinutes": 5
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 98.29,
+      "proteinG": 4.07,
+      "carbohydrateG": 19.61,
+      "fatG": 1.18,
+      "fiberG": 3.74,
+      "sugarG": 7.43,
+      "sodiumMg": 105.26
+    },
+    "originalPerServing": {
+      "energyKcal": 426.02,
+      "proteinG": 20.27,
+      "carbohydrateG": 20.33,
+      "fatG": 29.8,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 807.54
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Thịt heo xay: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Trứng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Phô mai Parmigiano bào mịn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Rau mùi tây (ngò tây): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu ô liu nguyên chất: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

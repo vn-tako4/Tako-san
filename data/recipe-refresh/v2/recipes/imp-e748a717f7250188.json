@@ -1,0 +1,517 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-e748a717f7250188",
+    "slug": "salad-ca-hoi-dua-leo",
+    "title": "Salad cá hồi dưa leo"
+  },
+  "content": {
+    "description": "Salad cá hồi trần nhẹ-dưa leo giòn chanh thanh, món khai vị mát lành nhẹ bụng.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Salad",
+      "Cá hồi",
+      "Mát lành",
+      "Ý"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-e748a717f7250188.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.buttalapasta.it/articolo/insalata-di-cetrioli-e-salmone-affumicato-ricetta/201821",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://ostariaallatorre.it/post/insalata-con-salmone-grigliato/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cá hồi phi lê tươi (không da)",
+      "canonicalIngredientId": "ING_ENR_E958613F68AC479A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn: Buttalapasta dùng cá hồi hun khói 200 g cho 4 phần (50 g/phần, dạng antipasto nhẹ, không nấu); Ostaria alla Torre dùng phi lê cá hồi tươi nướng/áp chảo cho 4 phần (không ghi gram, là món chính). Theo tên và gợi ý món (cá hồi tươi), chọn phi lê tươi; định lượng 400 g cho 3 phần (~133 g/phần, mức salad món chính).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 208,
+        "proteinG": 20.4,
+        "carbohydrateG": 0,
+        "fatG": 13.4,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 59
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175167",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Dưa leo",
+      "canonicalIngredientId": "CUCUMBER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 300,
+        "basis": "2 quả dưa leo vừa ≈ 300 g (dưa leo vừa ~150 g/quả)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Buttalapasta: 1 quả dưa leo lớn cho 4 phần; Ostaria alla Torre: dưa leo lượng vừa đủ (q.b.) cho 4 phần — không mâu thuẫn đáng kể. Dùng 2 quả vừa cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 0.65,
+        "carbohydrateG": 3.63,
+        "fatG": 0.11,
+        "fiberG": 0.5,
+        "sugarG": 1.67,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168409",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 30,
+        "basis": "1 quả chanh vừa vắt được ~30 ml nước cốt ≈ 30 g (USDA SR Legacy: 1 quả chanh ~58 g cả quả)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Buttalapasta: 1 quả chanh (lấy nước cốt) cho 4 phần; Ostaria: nước cốt chanh vừa đủ cho 4 phần — không mâu thuẫn. Dùng 1 quả cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 29,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.32,
+        "fatG": 0.3,
+        "fiberG": 2.8,
+        "sugarG": 2.5,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167746",
+      "sourceNutritionNote": "Số liệu cho nước cốt chanh được tính trên khối lượng chanh tươi (USDA: Lemons, raw, without peel)."
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "2 cây hành lá ≈ 30 g (USDA: 1 cây hành lá trung bình ~15 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Theo gợi ý món. Nguồn Ý không dùng hành lá: Buttalapasta dùng lá bạc hà tươi, foodbloggermania dùng erba cipollina (hẹ lá) cho món tương tự — hành lá được thay theo gợi ý món, ghi rõ không tương đương hoàn toàn với bạc hà.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Xà lách",
+      "canonicalIngredientId": "ING_ENR_A6796F878436D240",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "Buttalapasta: 4 lá xà lách cho 4 phần; Ostaria alla Torre: xà lách trộn (insalata mista) lượng vừa đủ cho 4 phần — cả hai đều không định lượng gram. 100 g xà lách cho 3 phần là mức ước lượng hợp lý cho salad món chính, đã ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.36,
+        "carbohydrateG": 2.87,
+        "fatG": 0.15,
+        "fiberG": 1.3,
+        "sugarG": 0.78,
+        "sodiumMg": 28
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169249",
+      "sourceNutritionNote": "Số liệu cho xà lách lá xanh (green leaf lettuce)."
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu ô liu nguyên chất",
+      "canonicalIngredientId": "ING_ENR_3B7B05F341BDBC33",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 45,
+        "unit": "ml",
+        "text": "45 ml",
+        "gramEquivalent": 41,
+        "basis": "45 ml × 0,91 g/ml (tỉ trọng dầu ô liu ~0,91)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 45,
+          "unit": "ml"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng dầu ô liu nhưng chỉ ghi 'vừa đủ' (q.b.), không định lượng; 45 ml (~3 muỗng canh: 1 muỗng ướp cá + 2 muỗng pha nước trộn) là mức ước lượng cho 3 phần, đã ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "g",
+        "text": "4 g",
+        "gramEquivalent": 4,
+        "basis": "khoảng 2/3 muỗng cà phê ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn chỉ ghi 'muối vừa đủ' (sale q.b.), không định lượng; 4 g dùng cho cả ướp cá và nước trộn là mức ước lượng cho 3 phần, đã ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38800
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "g",
+        "text": "1 g",
+        "gramEquivalent": 1,
+        "basis": "khoảng 1/2 muỗng cà phê tiêu xay ≈ 1 g (USDA: 1 muỗng cà phê ~2,3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "g"
+        }
+      },
+      "note": "Ostaria alla Torre dùng tiêu xay cho món salad cá hồi nướng; Buttalapasta không dùng tiêu — ghi rõ khác biệt. 1 g cho 3 phần là mức ước lượng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Rau thơm tươi (bạc hà hoặc mùi tây)",
+      "canonicalIngredientId": "ING_ENR_E13F75C1CB90E24C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "đơn vị gốc đã là gram (một nắm nhỏ rau thơm)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Buttalapasta dùng lá bạc hà tươi xé nhỏ trong nước trộn; Ostaria không dùng rau thơm — ghi rõ khác biệt. Để optional vì món vẫn hoàn chỉnh không có rau thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 70,
+        "proteinG": 3.75,
+        "carbohydrateG": 14.9,
+        "fatG": 0.94,
+        "fiberG": 8,
+        "sugarG": null,
+        "sodiumMg": 31
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173474",
+      "sourceNutritionNote": "Số liệu cho bạc hà tươi (Peppermint, fresh); USDA SR Legacy không có số liệu đường (sugar) cho mục này nên để null."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế cá hồi: rửa sạch phi lê, thấm thật khô bằng giấy bếp, kiểm tra và nhổ bỏ xương dăm còn sót, cắt thành miếng vừa ăn dày khoảng 2-3 cm.",
+      "tip": "Thấm khô cá trước khi áp chảo giúp mặt cá vàng đẹp thay vì bị hấp hơi (Ostaria alla Torre)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Ướp cá hồi với một nửa lượng muối, tiêu đen xay và 1 muỗng canh dầu ô liu, xoa đều, để thấm 10 phút ở nhiệt độ phòng.",
+      "tip": "Ostaria alla Torre: ướp cá với muối và tiêu trước khi nướng/áp chảo để thịt cá đậm vị.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Dưa leo rửa sạch, cắt bỏ hai đầu, bổ đôi theo chiều dọc rồi thái lát mỏng khoảng 0,5 cm. Cho dưa leo vào rổ, rắc một nhúm muối trong phần muối còn lại, để ráo 15 phút cho ra bớt nước.",
+      "tip": "Buttalapasta: để dưa leo trong rổ cho thoát bớt nước sẽ giúp salad không bị lõng bõng và giòn hơn.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Xà lách rửa sạch, để ráo nước, xé hoặc cắt miếng vừa ăn. Hành lá rửa sạch, thái nhỏ. Chanh vắt lấy nước cốt, lọc bỏ hạt."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Pha nước trộn: cho nước cốt chanh, phần muối còn lại, phần dầu ô liu còn lại và hành lá thái nhỏ vào bát, khuấy đều tay đến khi hỗn hợp hơi sánh lại thành dạng nhũ tương.",
+      "tip": "Buttalapasta: đánh nước cốt chanh với muối và dầu ô liu thành emulsion — nước trộn sánh sẽ bám đều rau củ hơn."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Làm nóng chảo chống dính ở lửa vừa-cao với một lớp dầu ô liu thật mỏng. Cho miếng cá hồi vào áp chảo, mỗi mặt 2-3 phút đến khi mặt ngoài vàng nhẹ và thịt vừa chín tới.",
+      "tip": "Ostaria alla Torre: áp chảo/nướng cá đến khi hơi vàng (dorato) thì tắt bếp — đừng nấu quá kỹ, cá hồi chín tới mới mềm ngọt.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Gắp cá ra đĩa, để nguội bớt khoảng 5 phút rồi gỡ thành miếng vừa ăn, cẩn thận không làm nát.",
+      "tip": "Ostaria alla Torre: sau khi nấu mới xé cá thành miếng (fate a pezzetti) để thịt cá giữ được độ ẩm.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Xếp xà lách ra đĩa hoặc tô lớn, cho dưa leo đã ráo nước lên trên, đặt các miếng cá hồi lên cùng."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Rưới đều nước trộn chanh-dầu-hành lá lên toàn bộ đĩa salad, trộn thật nhẹ tay cho rau củ thấm đều mà không làm nát cá."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Nếm và điều chỉnh muối, nước cốt chanh cho vừa miệng. Rắc rau thơm tươi xé nhỏ lên trên (nếu dùng). Dọn ngay khi còn mát, có thể để tủ lạnh 20-30 phút trước khi ăn cho salad thật lạnh.",
+      "tip": "Buttalapasta: salad cá hồi dưa leo ngon nhất khi ăn thật lạnh — có thể bọc kín để tủ lạnh khoảng nửa tiếng trước khi dọn."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 282.33,
+      "proteinG": 27.65,
+      "carbohydrateG": 0.96,
+      "fatG": 17.92,
+      "fiberG": 0.43,
+      "sugarG": 0.26,
+      "sodiumMg": 88
+    },
+    "originalPerServing": {
+      "energyKcal": 427.42,
+      "proteinG": 28.76,
+      "carbohydrateG": 6.96,
+      "fatG": 31.78,
+      "fiberG": 1.82,
+      "sugarG": null,
+      "sodiumMg": 610.51
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Dưa leo: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Chanh tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Dầu ô liu nguyên chất: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [],
+    "runtimeExclusions": []
+  }
+}

@@ -1,0 +1,631 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-4d9fae75b597d2c5",
+    "slug": "bo-nuong-sa-thai",
+    "title": "Bò nướng sả Thái"
+  },
+  "content": {
+    "description": "Xiên bò ướp sả nướng than cay chanh, món nướng Thái đậm vị cho bữa nhậu.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Sate bò",
+      "Thái Lan",
+      "Nướng",
+      "Món nhậu"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-4d9fae75b597d2c5.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://importfood.com/recipes/main-courses/recipe/1257-grilled-lemongrass-chicken-gai-yang-takrai",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://michiganplum.org/recipes/lemongrass-grilled-beef-recipe",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt bò thăn (thái lát mỏng)",
+      "canonicalIngredientId": "ING_ENR_745FC31DDEB3506D",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Thịt bò thăn via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "ImportFood (Gai Yang Takrai, 4 người): 1 lb (454 g) thịt thái lát 1/4 inch (~0.6 cm). Michigan Plum (công thức bò, không ghi suất): 1.5 lb (680 g) thăn bò thái lát mỏng — lấy 500 g cho 4 phần (~125 g/người). Thái ngược thớ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 131,
+        "proteinG": 22.09,
+        "carbohydrateG": 0,
+        "fatG": 4.08,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174055",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Sả tươi",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 60,
+        "basis": "ước lượng: 1 cây sả sau khi bóc bẹ già, lấy phần trắng ≈ 20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đồng thuận: 3 cây sả cho ~0.5-0.7 kg thịt. ImportFood: băm nhỏ, dùng 4 tbsp. Michigan Plum: chỉ lấy phần trắng, băm nhuyễn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.31,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "USDA không công bố chất xơ và đường cho sả tươi → để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "tép",
+        "text": "4 tép",
+        "gramEquivalent": 12,
+        "basis": "ước lượng phổ biến: 1 tép tỏi ≈ 3 g (USDA: 1 clove garlic = 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Michigan Plum: 4 tép cho 1.5 lb thịt bò; ImportFood: 2 tép cho 1 lb thịt gà — mâu thuẫn, lấy theo Michigan Plum (công thức dành cho thịt bò). Giã/băm nhuyễn cùng tiêu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "USDA (Foundation) không công bố đường và natri cho tỏi tươi → để null."
+    },
+    {
+      "position": 3,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "ước lượng phổ biến: 1 muỗng cà phê tiêu đen xay ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Michigan Plum: 1 tsp tiêu đen xay. ImportFood (bản gà): giã 3/4 tsp hạt ngò + 1/4 tsp bột ớt Thái cùng tỏi — biến thể khác, ghi nhận ở đây; lấy theo Michigan Plum cho công thức bò.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Xì dầu (nước tương loãng)",
+      "canonicalIngredientId": "ING_ENR_A232AC7F32AFCA39",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 26,
+        "basis": "1.5 muỗng canh = 22.5 ml; tỉ trọng xì dầu ~1.15 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Michigan Plum: 2 tbsp cho 680 g thịt → 1.5 tbsp cho 500 g. ImportFood (bản gà): 3 tbsp cho 454 g thịt (không dùng nước mắm) — mâu thuẫn về tỉ lệ; lấy theo Michigan Plum vì là công thức bò.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1.5 muỗng canh = 22.5 ml; tỉ trọng nước mắm ~1.2 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Michigan Plum: 2 tbsp cho 680 g thịt → 1.5 tbsp cho 500 g. ImportFood (bản gà) không dùng nước mắm trong ướp (ăn kèm tương ớt ngọt) — mâu thuẫn; lấy theo Michigan Plum (công thức bò, hợp hint_ingredients có nước mắm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 19,
+        "basis": "1 muỗng canh đường ≈ 12.5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Michigan Plum: 2 tbsp đường nâu cho 680 g thịt → 1.5 tbsp cho 500 g. ImportFood: 1 tbsp đường cho 454 g thịt — lấy theo Michigan Plum. Trộn đến khi đường tan hết.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "Michigan Plum dùng đường nâu (brown sugar); dùng số liệu đường trắng USDA, chênh lệch không đáng kể."
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu ăn (dầu thực vật)",
+      "canonicalIngredientId": "ING_ENR_DBE4377CA2A0A47E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng dầu ăn ~0.91 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Michigan Plum: 1 tbsp cho 680 g thịt → ~3/4 tbsp cho 500 g, làm tròn 1 tbsp. ImportFood: 2 tbsp cho 454 g thịt — mâu thuẫn lớn; lấy theo Michigan Plum (công thức bò).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu mè (tùy chọn)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "1 muỗng cà phê = 5 ml; tỉ trọng dầu mè ~0.92 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ Michigan Plum dùng (1 tsp); ImportFood không dùng — tùy chọn, tạo mùi thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Chanh tươi (ăn kèm, tùy chọn)",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 35,
+        "basis": "ước lượng: 1 quả chanh ta cỡ vừa ≈ 30-40 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Không có trong 2 nguồn công thức (ImportFood ăn kèm tương ớt ngọt); có trong hint_ingredients của assignment — cắt múi cau để vắt ăn kèm theo kiểu Thái.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 30,
+        "proteinG": 0.7,
+        "carbohydrateG": 10.54,
+        "fatG": 0.2,
+        "fiberG": 2.8,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168155",
+      "sourceNutritionNote": "Dùng số liệu lime xanh USDA cho chanh ta."
+    },
+    {
+      "position": 10,
+      "sourceName": "Ớt hiểm tươi (ăn kèm, tùy chọn)",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 4,
+        "basis": "ước lượng: 1 quả ớt hiểm ≈ 1.5-2 g (không có chuẩn USDA cho ớt hiểm tươi)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Không có trong hỗn hợp ướp của 2 nguồn (ImportFood dùng bột ớt Thái khô giã cùng tỏi); có trong hint_ingredients — để ăn kèm cho người thích cay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế sả: bóc bỏ bẹ già bên ngoài, chỉ lấy phần thân trắng non, băm thật nhuyễn (đong khoảng 4 muỗng canh sả băm).",
+      "tip": "ImportFood: băm nhỏ sả, để riêng 4 tbsp dùng cho ướp. Michigan Plum: chỉ lấy phần trắng."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Tỏi bóc vỏ, băm/giã nhuyễn cùng 1 muỗng cà phê tiêu đen xay.",
+      "tip": "ImportFood (bản gốc Thái): giã tỏi với hạt ngò và bột ớt Thái bằng cối chày cho nhuyễn mịn."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho vào tô lớn: sả băm, hỗn hợp tỏi tiêu, 1.5 muỗng canh xì dầu, 1.5 muỗng canh nước mắm, 1.5 muỗng canh đường, 1 muỗng canh dầu ăn (và 1 muỗng cà phê dầu mè nếu dùng). Trộn đều đến khi đường tan hết.",
+      "tip": "Michigan Plum: trộn kỹ hỗn hợp ướp trước khi cho thịt vào."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Thịt bò thái lát mỏng khoảng 0.5 cm, ngược thớ (độ dày tương đương 1/4 inch theo ImportFood).",
+      "tip": "Mẹo thái đều: cho thịt vào ngăn đá 20-30 phút trước khi thái (mẹo thái thịt bò của Susie Cooks Thai)."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho thịt bò vào tô hỗn hợp ướp, trộn/bóp đều cho từng lát thịt thấm gia vị. Bọc kín, để tủ lạnh ướp ít nhất 30 phút (để qua đêm càng ngon).",
+      "tip": "Cả hai nguồn: tối thiểu 30 phút. Michigan Plum: ướp qua đêm cho thấm sâu nhất.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Nếu dùng xiên tre: ngâm xiên trong nước ít nhất 1 giờ trước khi nướng để xiên không bị cháy. Xiên các lát thịt đã ướp vào que.",
+      "tip": "ImportFood. Không bắt buộc — có thể nướng trực tiếp từng lát trên vỉ.",
+      "timerMinutes": 60
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Làm nóng vỉ nướng/than ở lửa vừa-cao. Vệ sinh vỉ và phết một lớp dầu mỏng chống dính.",
+      "tip": "Cả hai nguồn: nướng ở medium-high heat."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Lấy thịt ra khỏi hỗn hợp ướp, gạt/rũ bớt phần ướp thừa bám trên thịt (bỏ phần nước ướp còn lại, không dùng lại). Xếp thịt lên vỉ, các lát không chồng lên nhau.",
+      "tip": "Michigan Plum: rũ bớt nước ướp thừa và BỎ phần còn lại — không tái sử dụng nước ướp thịt sống."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nướng khoảng 2-3 phút mỗi mặt, đến khi thịt xém cạnh thơm, vừa chín tới (lát thịt mỏng chín rất nhanh).",
+      "tip": "Michigan Plum cho lát bò mỏng. Lưu ý: ImportFood nướng 5-7 phút/mặt là cho miếng thịt gà dày xiên que — không áp dụng cho lát bò mỏng.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Gắp thịt ra đĩa, để nghỉ vài phút cho thịt mềm và giữ nước ngọt.",
+      "tip": "Michigan Plum: rest a few minutes.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Chanh cắt thành múi cau. Dọn thịt bò nướng sả ra đĩa cùng chanh múi cau và ớt hiểm tươi ăn kèm.",
+      "tip": "Theo hint_ingredients của assignment. ImportFood (bản gốc): ăn kèm xôi/cơm nếp và tương ớt ngọt — biến thể dọn kèm được ghi nhận."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Ăn nóng kèm cơm trắng, xôi nếp hoặc bún; có thể cuốn bánh tráng với rau sống.",
+      "tip": "Michigan Plum: ăn kèm cơm/mì hoặc cuốn xà lách. ImportFood: ăn với xôi nếp."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 163.75,
+      "proteinG": 27.61,
+      "carbohydrateG": 0,
+      "fatG": 5.1,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 70
+    },
+    "originalPerServing": {
+      "energyKcal": 252.15,
+      "proteinG": 29.09,
+      "carbohydrateG": 11.27,
+      "fatG": 9.9,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Sả tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Xì dầu (nước tương loãng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu ăn (dầu thực vật): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

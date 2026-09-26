@@ -1,0 +1,659 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-b8d2cb0b37dbdb81",
+    "slug": "ga-sot-chanh-bo-y",
+    "title": "Gà sốt chanh bơ Ý"
+  },
+  "content": {
+    "description": "Miếng ức gà áp chảo tắm trong sốt chanh-bơ chua thanh, món pollo al limone Ý nhẹ nhàng sang trọng.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Pollo al limone",
+      "Ý",
+      "Chanh",
+      "Bơ"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-b8d2cb0b37dbdb81.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/shorts/e33XEdHxCP0",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://allourway.com/chicken-piccata-pollo-alla-piccata/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Ức gà (lọc da, lọc xương)",
+      "canonicalIngredientId": "ING_ENR_FE597081058BB3B7",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 375,
+        "unit": "g",
+        "text": "375 g",
+        "gramEquivalent": 375,
+        "basis": "đơn vị gốc đã là gram (ức gà lọc da, lọc xương)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 375,
+          "unit": "g"
+        }
+      },
+      "note": "GZ Straccetti: 500 g ức gà; trang không ghi số phần → ước tính 4 phần (500 g ≈ 4 × 125 g, ghi rõ là ước tính của em), quy đổi ×0,75 cho 3 phần ≈ 375 g. All Our Way (AOW) piccata: 4 ức gà (~600-700 g) cho 4 phần — cùng cỡ phần ăn, không mâu thuẫn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 120,
+        "proteinG": 22.5,
+        "carbohydrateG": 0,
+        "fatG": 2.62,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 45
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171077",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Nước cốt chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 68,
+        "unit": "g",
+        "text": "68 g",
+        "gramEquivalent": 68,
+        "basis": "1 quả chanh tươi vắt được ~30-45 ml nước cốt → 68 g ≈ nước cốt 1,5-2 quả chanh",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 68,
+          "unit": "g"
+        }
+      },
+      "note": "GZ Straccetti: 90 g nước cốt chanh cho ~4 phần → 68 g cho 3 phần. Vergaro (TikTok, đầu bếp Ý): nước cốt 2 quả chanh cho 500 g gà — tương đương GZ, không mâu thuẫn. AOW piccata: 1/2 cup (~120 g) nước cốt + 1,5 tbsp lúc áp chảo — nhiều hơn GZ; công thức theo GZ vì món này không có nụ bạch hoa (capers) như piccata (ghi rõ).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 22,
+        "proteinG": 0.35,
+        "carbohydrateG": 6.9,
+        "fatG": 0.24,
+        "fiberG": 0.3,
+        "sugarG": 2.52,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167747",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Bơ lạt",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "đơn vị gốc đã là gram (GZ: 40 g bơ cho ~4 phần → 30 g cho 3 phần; chia 20 g áp chảo + 10 g hoàn thiện sốt)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "GZ Straccetti: 40 g bơ. Video GZ Scaloppine di pollo al limone: 50 g bơ cho 800 g gà (tỉ lệ bơ/gà thấp hơn) — mâu thuẫn nhẹ, ưu tiên Straccetti vì là công thức chính được chọn. Kỹ thuật chung cả ba nguồn: một phần bơ để áp chảo, phần còn lại cho vào cuối khi đã tắt bếp để sốt bóng mịn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Bột mì đa dụng",
+      "canonicalIngredientId": "ING_ENR_A9194AD78D914D6C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "đơn vị gốc đã là gram (GZ: 20 g bột mì cho ~4 phần → 15 g cho 3 phần)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "GZ Straccetti dùng 20 g bột mì để áo gà và làm sánh sốt. Mâu thuẫn: Vergaro dùng 1 tbsp tinh bột bắp (cornstarch) thay bột mì; video GZ Scaloppine dùng 50 g bột mì cho 800 g gà (tỉ lệ bột/gà cao hơn). Công thức theo GZ Straccetti (ghi rõ).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 364,
+        "proteinG": 10.33,
+        "carbohydrateG": 76.31,
+        "fatG": 0.98,
+        "fiberG": 2.7,
+        "sugarG": 0.27,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168894",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Nước lọc (hoặc nước dùng rau củ)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 95,
+        "unit": "ml",
+        "text": "95 ml",
+        "gramEquivalent": 95,
+        "basis": "95 ml nước ≈ 95 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 95,
+          "unit": "ml"
+        }
+      },
+      "note": "GZ Straccetti: 125 g nước cho ~4 phần → 95 g cho 3 phần. Video GZ Scaloppine dùng 150 g nước dùng rau củ nóng thay nước lọc — có thể thay thế tương đương (ghi rõ là phương án, không phải nguyên bản Straccetti). Dinh dưỡng của nước không đáng kể → null, không bịa số.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước lọc: dinh dưỡng không đáng kể → null."
+    },
+    {
+      "position": 5,
+      "sourceName": "Vỏ chanh bào",
+      "canonicalIngredientId": "ING_ENR_F7CB073C6D573793",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "quả",
+        "text": "1.5 quả",
+        "gramEquivalent": 9,
+        "basis": "vỏ bào của 1,5 quả chanh ≈ 9 g (vỏ 1 quả chanh ≈ 5-6 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "piece"
+        }
+      },
+      "note": "GZ Straccetti: vỏ bào của 2 quả chanh cho ~4 phần → 1,5 quả cho 3 phần (chỉ bào phần vỏ vàng). Vergaro: vỏ nửa quả chanh cho 500 g gà — ít hơn; công thức theo GZ Straccetti (ghi rõ).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 47,
+        "proteinG": 1.5,
+        "carbohydrateG": 16,
+        "fatG": 0.3,
+        "fiberG": 10.6,
+        "sugarG": 4.17,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167749",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tép",
+        "text": "1 tép",
+        "gramEquivalent": 3,
+        "basis": "USDA FoodData Central: 1 tép tỏi = 3 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "GZ Straccetti: 1 tép tỏi cho ~4 phần — giữ nguyên 1 tép cho 3 phần (ghi rõ không quy đổi lẻ). AOW piccata: 2 tép tỏi băm cho 4 ức gà — tương đương, không mâu thuẫn. Gợi ý món ghi có tỏi — khớp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Hương thảo tươi (rosemary)",
+      "canonicalIngredientId": "ING_ENR_6F72BAB16C69F7A9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhánh",
+        "text": "2 nhánh",
+        "gramEquivalent": 2,
+        "basis": "2 nhánh hương thảo tươi ≈ 2 g (ước lượng thực tế)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "GZ Straccetti: 3 nhánh cho ~4 phần → 2 nhánh cho 3 phần. AOW piccata không dùng hương thảo (dùng ngò tây) — khác công thức, không phải mâu thuẫn trong cùng món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 131,
+        "proteinG": 3.31,
+        "carbohydrateG": 20.7,
+        "fatG": 5.86,
+        "fiberG": 14.1,
+        "sugarG": null,
+        "sodiumMg": 26
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173473",
+      "sourceNutritionNote": "API không trả sugar cho mục này → để null, không tự điền."
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu olive extra virgin",
+      "canonicalIngredientId": "ING_ENR_84084B36AB5F7081",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "USDA FoodData Central: 1 tbsp dầu olive = 13,5 g → 2 tbsp ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "GZ Straccetti ghi 'q.b.' (vừa đủ), không định lượng — đặt 2 muỗng canh cho 3 phần là ước lượng thực tế của em (ghi rõ). AOW piccata: 2 tbsp dầu olive cho 4 ức gà — cùng cỡ, hỗ trợ ước lượng này.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Ngò tây tươi (rắc trang trí)",
+      "canonicalIngredientId": "ING_ENR_D6EDD5F0078ABE8C",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Mùi tây tươi via the same name key",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 5,
+        "basis": "1 nắm nhỏ ngò tây tươi ≈ 5 g (ước lượng thực tế)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Video GZ Scaloppine và AOW piccata đều rắc ngò tây khi dọn; GZ Straccetti không ghi. Để optional. LƯU Ý: gợi ý món ghi 'hành lá' nhưng không nguồn Ý nào dùng hành lá cho món này — công thức dùng ngò tây theo nguồn (ghi rõ).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 2.97,
+        "carbohydrateG": 6.33,
+        "fatG": 0.79,
+        "fiberG": 3.3,
+        "sugarG": 0.85,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170416",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "USDA FoodData Central: 1 tsp muối ăn = 6 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 6,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn đều 'q.b.'/to taste. Đặt 1 muỗng cà phê cho 3 phần là ước lượng (ghi rõ); nêm nhạt lúc đầu, chỉnh cuối vì nước cốt chanh đã tạo vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.2,
+        "basis": "1/2 tsp tiêu đen xay ≈ 1,2 g (ước lượng: 1 tsp ≈ 2,3 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn 'q.b.'/to taste. GZ Straccetti ghi muối và tiêu vừa đủ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Ức gà rửa sạch, thấm thật ráo. Cắt thành miếng vừa ăn, kích thước đều nhau (không quá nhỏ để khỏi khô, không quá to để chín đều).",
+      "tip": "Vergaro nhấn mạnh miếng gà đều nhau là điều kiện để vàng đều; GZ Straccetti cắt dạng straccetti (dải/miếng nhỏ)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Bào vỏ 1,5 quả chanh (chỉ lấy phần vỏ vàng), vắt lấy 68 g nước cốt. Băm nhỏ tỏi, ngắt hương thảo thành đoạn ngắn.",
+      "tip": "Chuẩn bị sẵn nước cốt và vỏ chanh trước khi bật bếp vì các bước sau diễn ra nhanh."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho bột mì ra đĩa, lăn đều từng miếng gà qua bột, rũ nhẹ cho rớt bớt bột thừa.",
+      "tip": "GZ Straccetti: áo bột mì; Vergaro: áo tinh bột bắp — hai nguồn mâu thuẫn, công thức theo GZ. Lớp bột mỏng giúp gà vàng đẹp và làm sánh sốt sau này."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun nóng chảo lớn với 2 muỗng canh dầu olive và 20 g bơ ở lửa vừa. Khi bơ tan hết và bắt đầu sủi bọt, xếp gà vào chảo thành một lớp, không chồng lên nhau (chia nhiều mẻ nếu cần).",
+      "tip": "Vergaro: lúc đầu không đảo vội, để yên cho gà xém vàng một mặt rồi mới lật — vàng đều và không ra nước."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Áp chảo gà mỗi mặt khoảng 3-4 phút đến khi vàng đều. Vớt gà ra đĩa, đậy lại giữ ấm.",
+      "tip": "AOW: áp chảo đến khi chín vàng hai mặt; đừng nấu quá kỹ ở bước này vì gà còn rim tiếp trong sốt.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Vẫn chảo đó, hạ lửa vừa-nhỏ, cho tỏi băm và hương thảo vào phi khoảng 30 giây cho thơm (không để tỏi cháy). Đổ nước lọc (hoặc nước dùng) và nước cốt chanh vào, dùng muỗng gỗ cạo sạch phần cháy xém dưới đáy chảo.",
+      "tip": "AOW cảnh báo tỏi cháy sẽ đắng — phi nhanh tay. Bước cạo đáy chảo (deglaze) lấy hết vị ngon từ phần xém của gà.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho gà trở lại chảo, thêm vỏ chanh bào, nêm muối và tiêu. Đun liu riu 3-5 phút, thỉnh thoảng đảo nhẹ, đến khi sốt hơi sánh lại và bám quanh miếng gà.",
+      "tip": "GZ Straccetti: rim đến khi sốt sánh. Nếu sốt loãng, mở lửa to thêm 1-2 phút; nếu đặc quá, thêm một ít nước nóng.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "TẮT BẾP. Cho 10 g bơ còn lại (để lạnh, cắt nhỏ) vào chảo, khuấy/đảo liên tục đến khi bơ tan hoàn toàn, sốt trở nên bóng mịn, bao quanh miếng gà.",
+      "tip": "Kỹ thuật chung của cả GZ Straccetti, Vergaro và AOW: cho bơ vào NGOÀI bếp lửa — bơ tan từ từ tạo nhũ tương sánh mịn; cho vào lúc lửa to sốt dễ bị tách.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nếm thử, điều chỉnh muối/tiêu/nước cốt chanh cho vừa miệng. Rắc ngò tây thái nhỏ lên trên.",
+      "tip": "Vị chuẩn: chua thanh của chanh nổi bật, béo nhẹ của bơ, thơm vỏ chanh — không nên mặn gắt."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn ngay khi còn nóng, rưới đều sốt chanh bơ lên miếng gà. Ăn kèm cơm trắng, mì Ý hoặc bánh mì đều hợp.",
+      "tip": "AOW gợi ý ăn kèm pasta/cơm; GZ ăn như món chính (secondo). Không nên để lâu — sốt bơ-chanh để nguội sẽ đặc và kém bóng."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 151.49,
+      "proteinG": 28.19,
+      "carbohydrateG": 0.33,
+      "fatG": 3.28,
+      "fiberG": 0.02,
+      "sugarG": 0.01,
+      "sodiumMg": 831.58
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Nước cốt chanh tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Bơ lạt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Bột mì đa dụng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Nước lọc (hoặc nước dùng rau củ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Vỏ chanh bào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hương thảo tươi (rosemary): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Dầu olive extra virgin: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      4,
+      8,
+      9,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

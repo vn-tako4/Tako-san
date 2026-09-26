@@ -1,0 +1,752 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-1b54108818405e6a",
+    "slug": "com-chien-ba-chi-kim-chi",
+    "title": "Cơm chiên ba chỉ kim chi"
+  },
+  "content": {
+    "description": "Cơm chiên ba chỉ béo giòn với kim chi cay đỏ, món cơm Hàn mười lăm phút gây nghiện.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Cơm chiên",
+      "Ba chỉ",
+      "Kim chi",
+      "Hàn Quốc"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-1b54108818405e6a.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.koreanbapsang.com/kimchi-fried-rice-kimchi-bokkeum-bap/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.maangchi.com/recipe/kimchi-bokkeumbap",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cơm nguội (gạo tẻ hạt ngắn, nấu chín để nguội)",
+      "canonicalIngredientId": "RICE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 770,
+        "unit": "g",
+        "text": "770 g",
+        "gramEquivalent": 770,
+        "basis": "Korean Bapsang: 2.5 cups cơm chín cho 2 phần → ×1.5 = 3.75 cups cho 3 phần; USDA FDC 168932 (Rice, white, short-grain, cooked, unenriched): 1 cup = 205 g → 3.75 × 205 = 769 g ≈ 770 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 770,
+          "unit": "g"
+        }
+      },
+      "note": "Cơm nguội để tủ lạnh là chuẩn nhất (KB); nếu cơm cứng thì quay lò vi sóng cho mềm bớt rồi bóp tơi trước khi xào (KB). Maangchi cho rằng cơm mới nấu để nguội bớt cũng ngon không kém — ghi nhận hai ý kiến. FDC không công bố fiber/sugar cho cơm chín → null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 130,
+        "proteinG": 2.36,
+        "carbohydrateG": 28.73,
+        "fatG": 0.19,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Rice, white, short-grain, cooked, unenriched' (FDC ID 168932, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt ba chỉ heo (thái miếng vừa ăn)",
+      "canonicalIngredientId": "PORK_BELLY",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 170,
+        "unit": "g",
+        "text": "170 g",
+        "gramEquivalent": 170,
+        "basis": "Đơn vị gốc đã là gram. Korean Bapsang: 'about 4 ounces ham or spam' cho 2 phần → 113 g × 1.5 = 170 g cho 3 phần (tương đương 57 g/phần như công thức gốc).",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 170,
+          "unit": "g"
+        }
+      },
+      "note": "KB dùng bacon/thịt nguội/spam; món này dùng ba chỉ tươi theo tên món, ướp muối + tiêu trước khi xào (gợi ý của KB cho thịt sống: 'season it with salt and pepper'). Lượng thịt giữa các nguồn chênh nhau: Swee San dùng 200 g ba chỉ/2 phần, Oishibook dùng 150 g thịt heo/2 phần — file này lấy theo tỉ lệ của KB (nguồn chính).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 518,
+        "proteinG": 9.34,
+        "carbohydrateG": 0,
+        "fatG": 53,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 32
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Pork, fresh, belly, raw' (FDC ID 167812, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Kim chi cải thảo (lên men kỹ, cắt nhỏ)",
+      "canonicalIngredientId": "ING_ENR_EC9C3FE3D678828E",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Kim chi cải thảo via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 170,
+        "unit": "g",
+        "text": "170 g",
+        "gramEquivalent": 170,
+        "basis": "Korean Bapsang: 3/4 cup kim chi cho 2 phần → ×1.5 = 1.125 cup cho 3 phần; USDA FDC 170392 (Cabbage, kimchi): 1 cup = 150 g → 169 g ≈ 170 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 170,
+          "unit": "g"
+        }
+      },
+      "note": "KB nhấn mạnh phải dùng kim chi lên men kỹ (well-fermented) mới dậy vị; Maangchi: kim chi phải già và chua ('should be aged, well-fermented and sour'). Tỉ lệ kim chi:cơm của KB (0.75:2.5) và Maangchi (1:3) tương đương nhau — hai nguồn nhất quán.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": 1.06,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Cabbage, kimchi' (FDC ID 170392, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành tây (thái hạt lựu)",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 25,
+        "unit": "g",
+        "text": "25 g",
+        "gramEquivalent": 25,
+        "basis": "Korean Bapsang: 1/4 củ hành tây nhỏ cho 2 phần → ×1.5; USDA FDC 170000: 1 small onion = 70 g → 70 × 0.375 ≈ 26 g, làm tròn 25 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 25,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Onions, raw' (FDC ID 170000, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá (cắt khúc, để riêng phần trắng và xanh)",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 22,
+        "unit": "g",
+        "text": "22 g",
+        "gramEquivalent": 22,
+        "basis": "Korean Bapsang: 1 cây hành lá cho 2 phần → ×1.5; USDA FDC 170005: 1 cây cỡ vừa = 15 g → 22.5 g ≈ 22 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 22,
+          "unit": "g"
+        }
+      },
+      "note": "Phần trắng cho vào xào cùng hành tây, phần xanh cho vào cuối (KB).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Onions, spring or scallions (includes tops and bulb), raw' (FDC ID 170005, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Nước kim chi (nước trong hũ kim chi)",
+      "canonicalIngredientId": "ING_ENR_FCAAA69EF3D97088",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4.5,
+        "unit": "muỗng canh",
+        "text": "4.5 muỗng canh",
+        "gramEquivalent": 67,
+        "basis": "Korean Bapsang: 3 tbsp nước kim chi cho 2 phần → ×1.5 = 4.5 tbsp; 1 tbsp = 15 ml, xem như ≈ 1 g/ml → 67.5 g ≈ 67 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Không phải nguyên liệu mua riêng: giữ lại từ hũ kim chi. KB gọi đây là 'liquid gold' — cho vào xào cùng để tăng độ đậm đà. FDC không có mục riêng cho nước kim chi → null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu (nước tương)",
+      "canonicalIngredientId": "ING_ENR_F68EF5C1E847770A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 24,
+        "basis": "Korean Bapsang: 1 tbsp cho 2 phần → ×1.5 = 1.5 tbsp; USDA FDC 174277: 1 tbsp = 16 g → 24 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 24,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi không dùng xì dầu trong công thức gốc của cô (chỉ dùng gochujang + nước kim chi); KB dùng 1 tbsp xì dầu cho 2 phần — file này theo KB vì món có thịt cần vị đậm hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Soy sauce made from soy and wheat (shoyu)' (FDC ID 174277, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Tương ớt gochujang",
+      "canonicalIngredientId": "ING_ENR_97F1C0882906D492",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "Korean Bapsang: 1 tbsp cho 2 phần → ×1.5 = 1.5 tbsp = 22.5 ml; không có số liệu khối lượng chuẩn cho gochujang, xấp xỉ 1.2 g/ml ≈ 27 g (ước tính, ghi rõ)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "USDA FDC không có mục generic cho gochujang (chỉ có sản phẩm branded pha sẵn) → null, không dùng số liệu sản phẩm riêng để tránh sai lệch. Maangchi dùng 2-3 tbsp cho ~3 cups cơm (không thịt); KB dùng 1 tbsp cho 2 phần — file này theo KB. KB lưu ý: muốn cay hơn thì thêm gochugaru (ớt bột) thay vì tăng gochujang vì dễ bị mặn.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu ăn (láng chảo)",
+      "canonicalIngredientId": "ING_ENR_EC3E9F20B31D4A6A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "USDA FDC 171411 (Oil, soybean, salad or cooking — dùng làm đại diện cho 'dầu ăn'): 1 tbsp = 13.6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "KB chỉ ghi 'oil for stir-frying' không định lượng; thịt ba chỉ ra nhiều mỡ nên chỉ cần láng chảo chống dính lúc đầu. Dùng dầu đậu nành làm đại diện cho 'dầu ăn' thông dụng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Oil, soybean, salad or cooking' (FDC ID 171411, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu mè (rưới cuối)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "Korean Bapsang: 1/2 tbsp cho 2 phần → ×1.5 = 0.75 tbsp; USDA FDC 171016: 1 tbsp = 13.6 g → 10.2 g ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Cho vào cuối khi đã tắt bếp để giữ mùi thơm (KB). Maangchi dùng 3 tsp (1 tbsp) dầu mè cho ~3 cups cơm — tương đương tỉ lệ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Oil, sesame, salad or cooking' (FDC ID 171016, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "USDA FDC 173468 (Salt, table): 1 tsp = 6 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 3,
+          "unit": "g"
+        }
+      },
+      "note": "KB: ướp thịt sống với muối + tiêu trước khi xào; cuối món nêm 'salt and pepper to your taste' — 1/2 tsp là lượng khởi điểm, nêm nếm lại theo khẩu vị vì kim chi và xì dầu đã mặn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38800
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Salt, table' (FDC ID 173468, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "USDA FDC 170931 (Spices, pepper, black): 1 tsp = 2.3 g → 1/4 tsp ≈ 0.6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Ướp thịt và nêm cuối theo khẩu vị (KB).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Spices, pepper, black' (FDC ID 170931, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Trứng gà (chiên ốp la, ăn kèm)",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả (lớn)",
+        "text": "3 quả (lớn)",
+        "gramEquivalent": 150,
+        "basis": "Korean Bapsang: 2 trứng chiên cho 2 phần → 3 trứng cho 3 phần; USDA FDC 171287: 1 large egg = 50 g → 150 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguyên liệu optional theo KB ('2 eggs, fried to your taste'); Maangchi không dùng trứng trong công thức gốc của cô.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.6,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Egg, whole, raw, fresh' (FDC ID 171287, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Vừng rang",
+      "canonicalIngredientId": "ING_ENR_DAB9547F85EF53B1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "Korean Bapsang: 1 tsp cho 2 phần → 1.5 tsp cho 3 phần; quy đổi phổ biến 1 tsp vừng ≈ 3 g (1 tbsp ≈ 9 g); USDA FDC 170151 chỉ liệt kê 1 oz = 28.35 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguyên liệu optional theo KB. FDC không công bố sugar cho mục này → null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 565,
+        "proteinG": 16.96,
+        "carbohydrateG": 25.74,
+        "fatG": 48,
+        "fiberG": 14,
+        "sugarG": null,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Seeds, sesame seeds, whole, roasted and toasted' (FDC ID 170151, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Rong biển gim (cắt sợi, rắc mặt)",
+      "canonicalIngredientId": "ING_ENR_6E85FCDBC9E8CE04",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "tờ",
+        "text": "1.5 tờ",
+        "gramEquivalent": 4,
+        "basis": "Korean Bapsang: 1 tờ gim cho 2 phần → 1.5 tờ cho 3 phần; ước tính 1 tờ ≈ 2.5 g (không có số liệu USDA; tùy hãng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguyên liệu optional theo KB ('1 sheet roasted gim'). USDA FDC không có mục generic cho rong biển gim khô/nướng → null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế: cơm nguội bóp tơi; kim chi cắt miếng vừa ăn, giữ lại nước kim chi; hành tây thái hạt lựu; hành lá cắt khúc, để riêng phần trắng và phần xanh.",
+      "tip": "KB: cơm để tủ lạnh bị cứng thì quay lò vi sóng cho mềm bớt rồi bóp tơi trước khi xào, cơm sẽ không bị vón."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Thịt ba chỉ thái miếng vừa ăn, ướp với muối, tiêu (thêm chút tỏi hoặc gừng băm nếu thích — gợi ý của KB khi dùng thịt sống)."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Làm nóng chảo lớn với 1 tbsp dầu ăn trên lửa vừa; cho thịt ba chỉ vào chiên đến hơi vàng và ra mỡ, khoảng 5-7 phút.",
+      "tip": "KB (bản dùng bacon): nếu mỡ ra nhiều quá có thể chắt bớt, chỉ giữ lại 1-2 tbsp mỡ để xào cơm cho thơm.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho hành tây và phần trắng của hành lá vào, đảo nhanh trên lửa lớn khoảng 30 giây cho thơm."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho kim chi, nước kim chi, xì dầu và gochujang vào; xào 3-4 phút đến khi kim chi mềm và sậm màu.",
+      "tip": "KB: đừng vội ở bước này — xào kỹ kim chi cho mềm sậm màu mới dậy được vị đậm đà.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho cơm vào, hạ lửa vừa-nhỏ, đảo đều 3-4 phút cho cơm tơi ra và thấm đều gia vị.",
+      "tip": "Hạ lửa ở bước này để cơm không dính chảo quá nhiều trong lúc bóp tơi (KB).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Khi cơm đã thấm đều gia vị, tăng lửa lớn, đảo thưa tay để hạt cơm cháy xém, thơm.",
+      "tip": "KB: tăng lửa lớn cuối cùng để cơm được 'nicely toasted' — hạt cơm săn, thơm mùi chảo.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nêm muối, tiêu cho vừa ăn; rưới dầu mè vào, trộn đều rồi tắt bếp.",
+      "tip": "Nêm từ từ vì kim chi, xì dầu và gochujang đều đã mặn. Dầu mè cho vào cuối để giữ mùi thơm."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Chiên trứng ốp la riêng từng quả theo ý thích (lòng đào hoặc chín kỹ)."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn cơm ra bát, đặt trứng ốp la lên trên, rắc vừng rang, hành lá cắt nhỏ và rong biển sợi. Ăn ngay khi còn nóng."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 297.77,
+      "proteinG": 5.94,
+      "carbohydrateG": 0.39,
+      "fatG": 30.08,
+      "fiberG": 0.06,
+      "sugarG": 0.03,
+      "sodiumMg": 845.57
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cơm nguội (gạo tẻ hạt ngắn, nấu chín để nguội): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Kim chi cải thảo (lên men kỹ, cắt nhỏ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành tây (thái hạt lựu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá (cắt khúc, để riêng phần trắng và xanh): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Nước kim chi (nước trong hũ kim chi): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tương ớt gochujang: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Dầu ăn (láng chảo): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu mè (rưới cuối): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      7,
+      8,
+      11,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,649 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-2862e7aa0ae0d8fe",
+    "slug": "bo-xao-dua-chua-ngot",
+    "title": "Bò xào dứa chua ngọt"
+  },
+  "content": {
+    "description": "Lát bò mềm xào ra nước chua ngọt tự nhiên từ dứa tươi cùng hành tây giòn, món xào Nam Bộ đưa cơm.",
+    "cuisine": "vietnamese",
+    "category": "mon_xao",
+    "region": "nam",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Xào",
+      "Bò",
+      "Dứa",
+      "Chua ngọt"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-2862e7aa0ae0d8fe.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://kingfoodmart.com/bai-viet/cach-lam-thit-bo-xao-dua-chua-ngot-dam-da",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://fptshop.com.vn/tin-tuc/dien-may/thit-bo-xao-dua-166776",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt thăn bò",
+      "canonicalIngredientId": "BEEF_SIRLOIN",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Kingfoodmart (2 người): 200 g thịt thăn bò → quy đổi tuyến tính cho 3 người là 300 g, khớp tuyệt đối với FPT Shop (300 g). Hai nguồn đồng thuận ở mức 300 g cho 3 người. Chọn phần thăn, thái lát mỏng ngang thớ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 135,
+        "proteinG": 21.91,
+        "carbohydrateG": 0,
+        "fatG": 4.62,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 57
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174763",
+      "sourceNutritionNote": "Dùng entry SR Legacy 'Beef, top sirloin, steak, separable lean only, trimmed to 1/8 inch fat, choice, raw' — số liệu đầy đủ (entry Foundation thiếu energy)."
+    },
+    {
+      "position": 1,
+      "sourceName": "Dứa chín",
+      "canonicalIngredientId": "PINEAPPLE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "quả",
+        "text": "0.5 quả",
+        "gramEquivalent": 300,
+        "basis": "1/2 quả dứa chín (cả quả ~700 g) gọt vỏ, bỏ mắt còn khoảng 300 g thịt dứa",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Kingfoodmart (2 người): 1/2 quả; FPT Shop: 1/2 quả; Mytour (4 người): 1/2 quả. Quy đổi tuyến tính từ Kingfoodmart cho 3 người sẽ là 3/4 quả, nhưng cả FPT Shop và Mytour đều dùng 1/2 quả cho khẩu phần lớn hơn — chọn 1/2 quả để dứa làm nền chua ngọt, không lấn át thịt bò. Ghi rõ lý do ưu tiên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.54,
+        "carbohydrateG": 13.12,
+        "fatG": 0.12,
+        "fiberG": 1.4,
+        "sugarG": 9.85,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169124",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 150,
+        "basis": "1 củ hành tây to vừa ≈ 150 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Hint catalog. Kingfoodmart không dùng hành tây; FPT Shop dùng 1 củ hành tím băm (ướp + phi). Bản này dùng hành tây thái múi cau xào cùng dứa theo hint — ghi rõ là bổ sung theo hint, không có trong 2 nguồn chính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "tép",
+        "text": "4 tép",
+        "gramEquivalent": 12,
+        "basis": "USDA: 1 tép tỏi = 3 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Kingfoodmart (2 người): 3 tép tỏi băm (ướp thịt). Quy đổi cho 3 người ≈ 4-5 tép; FPT Shop dùng tỏi băm nhưng không định lượng (chia 2 lần: ướp và phi). Chọn 4 tép: một nửa ướp thịt, một nửa phi thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "Số liệu từ entry Foundation 'Garlic, raw'; entry này không công bố đường và natri."
+    },
+    {
+      "position": 4,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh = 15 ml ≈ 18 g (tỉ trọng nước mắm ~1,2 g/ml)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kingfoodmart (2 người): 1 muỗng canh (ướp). FPT Shop: 1 muỗng canh ướp + 1/2 muỗng canh nêm lúc xào dứa. Gộp cho 3 người: 1 muỗng canh ướp + 1/2 muỗng canh nêm — khớp cả hai nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "USDA: 1 muỗng canh dầu thực vật = 13,6 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 41,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN: Kingfoodmart (2 người) chỉ dùng 1 muỗng canh (→ 1,5 muỗng cho 3 người); FPT Shop dùng tổng 4-5 muỗng canh (2-3 muỗng xào bò + 2 muỗng xào dứa). Chọn 3 muỗng canh làm mức trung gian: đủ để xào bò lửa lớn 2 lần mà không quá ngấy. Ghi rõ lý do.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": "Dùng số liệu dầu đậu nành tinh luyện (Oil, vegetable, soybean, refined) làm dầu ăn generic."
+    },
+    {
+      "position": 6,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13,
+        "basis": "USDA: 1 muỗng canh đường cát = 12,6 g (3 muỗng cà phê × 4,2 g)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 13,
+          "unit": "g"
+        }
+      },
+      "note": "FPT Shop: 1 muỗng canh đường ướp thịt + 1/4 muỗng cà phê nêm lúc xào dứa (vị chua ngọt đặc trưng của món). Kingfoodmart không dùng đường. Giữ 1 muỗng canh theo FPT Shop vì tên món có 'chua ngọt' — ghi rõ nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh = 15 ml ≈ 18 g (tỉ trọng dầu hào ~1,2 g/ml)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "FPT Shop: 1 muỗng canh dầu hào ướp thịt. Kingfoodmart không dùng. Giữ theo FPT Shop để thịt bò đậm đà — ghi rõ nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.92,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": 0,
+        "sodiumMg": 2733
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174529",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "Ước lượng phổ biến: 1 muỗng cà phê hạt nêm ≈ 4-6 g; lấy 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "FPT Shop: 1/3 muỗng canh (≈ 1 muỗng cà phê) ướp thịt + 1/4 muỗng cà phê nêm lúc xào dứa. Kingfoodmart không dùng. Gộp tròn 1 muỗng cà phê cho 3 người.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có số liệu generic cho hạt nêm (seasoning blend, thành phần thay đổi theo hãng); không dùng số liệu branded."
+    },
+    {
+      "position": 9,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "USDA: 1 muỗng cà phê muối = 6 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 3,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN NHẸ: Kingfoodmart (2 người): 1/4 muỗng cà phê (→ ~1/3 muỗng cho 3 người); FPT Shop: 1/2 muỗng cà phê ướp + 1/4 muỗng cà phê xào dứa. Chọn 1/2 muỗng cà phê tổng cho 3 người (gần mức FPT Shop, nhỉnh hơn Kingfoodmart) vì đã có nước mắm và dầu hào mặn — ghi rõ lý do.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.2,
+        "basis": "USDA: 1 muỗng cà phê tiêu đen xay = 2,3 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1.2,
+          "unit": "g"
+        }
+      },
+      "note": "Kingfoodmart (2 người): 1/4 muỗng cà phê (ướp); FPT Shop: 1/2 muỗng cà phê (ướp) + rắc thêm lúc dọn. Chọn 1/2 muỗng cà phê cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhánh",
+        "text": "2 nhánh",
+        "gramEquivalent": 25,
+        "basis": "1 nhánh hành lá vừa ≈ 12 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Hint catalog. Kingfoodmart (2 người): 1 nhánh hành lá (→ 1-2 nhánh cho 3 người); FPT Shop: 'một ít' hành lá cắt nhỏ. Chọn 2 nhánh thái khúc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế thịt bò: rửa sạch, có thể chà xát với muối hoặc ngâm rượu trắng loãng 15 phút để khử mùi rồi rửa lại, thấm thật khô. Thái thành lát mỏng vừa ăn, luôn cắt ngang thớ thịt.",
+      "tip": "FPT Shop: ngâm thịt với chút rượu trắng 15 phút để khử mùi tanh; hoặc chà chanh/muối 5-7 phút rồi rửa sạch. Kingfoodmart: thái mỏng theo thớ ngang để giữ độ mềm khi xào. Thấm khô thịt giúp khi xào không bị ra nước.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Ướp thịt bò với 1 muỗng canh nước mắm, 1 muỗng canh đường, 1 muỗng canh dầu hào, 1 muỗng cà phê hạt nêm, 1/2 muỗng cà phê muối, 1/2 muỗng cà phê tiêu xay và một nửa số tỏi băm. Trộn đều, để thấm 15-20 phút.",
+      "tip": "FPT Shop: ướp 15-20 phút với đúng bộ gia vị này. Mẹo: thêm 1 muỗng cà phê dầu ăn vào lúc ướp giúp thịt không bị khô khi xào lửa lớn.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế dứa: gọt vỏ, bỏ mắt, rửa sạch, bổ đôi lấy 1/2 quả, bỏ phần ruột cứng ở giữa (dễ gây rát lưỡi), thái miếng vừa ăn.",
+      "tip": "Mytour: chỉ dùng một nửa quả dứa, loại bỏ ruột để không gây cảm giác rát lưỡi. FPT Shop: chọn dứa chín vàng đều, mắt to, ấn hơi mềm là dứa chín cây ngọt thanh."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Hành tây bóc vỏ, thái múi cau. Hành lá rửa sạch, thái khúc khoảng 2-3 cm. Tỏi băm còn lại để riêng."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun nóng chảo với 2 muỗng canh dầu ăn trên lửa lớn. Cho một nửa số tỏi băm còn lại vào phi thơm vàng.",
+      "tip": "FPT Shop: đun nóng chảo, thêm 2-3 muỗng dầu ăn, phi thơm tỏi. Chảo phải thật nóng và luôn xào lửa lớn để thịt bò không bị chảy nước (mẹo giữ thịt mềm mọng)."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho thịt bò đã ướp vào xào nhanh tay khoảng 2-3 phút đến khi thịt chuyển màu tái, săn lại thì đổ ra đĩa riêng.",
+      "tip": "Kingfoodmart: xào nhanh tay trên lửa lớn 2-3 phút đến khi thịt chín tới và săn lại, sau đó vớt ra để riêng. Không xào kỹ ở bước này vì thịt sẽ còn chín tiếp ở bước sau — xào quá tay thịt bị dai.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Dùng lại chảo, thêm 1 muỗng canh dầu ăn nếu cần, phi thơm nốt số tỏi băm. Cho dứa và hành tây vào xào khoảng 2-3 phút cho dứa hơi mềm, dậy mùi thơm.",
+      "tip": "Kingfoodmart: xào dứa khoảng 2 phút đến khi hơi mềm và tỏa hương thơm; không xào quá lâu để dứa giữ độ giòn và vị chua ngọt tự nhiên. FPT Shop: xào dứa 2-3 phút.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nêm vào chảo dứa 1/2 muỗng canh nước mắm còn lại, đảo đều cho dứa thấm gia vị.",
+      "tip": "FPT Shop: nêm dứa lúc xào với 1/2 muỗng nước mắm (cùng chút muối, đường, hạt nêm, bột ngọt tùy khẩu vị) — ở đây chỉ giữ lại nước mắm vì các gia vị khác đã có trong phần ướp thịt."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho đĩa thịt bò đã xào tái trở lại chảo, đảo đều với dứa và hành tây trên lửa lớn khoảng 2-3 phút cho các nguyên liệu hòa quyện. Nêm nếm lại cho vừa miệng.",
+      "tip": "FPT Shop: khi dứa chín tới cho thịt bò vào, đảo đều, nêm nếm lại vừa khẩu vị rồi xào thêm 2-3 phút.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Cho hành lá thái khúc vào, rắc thêm chút tiêu xay, đảo nhanh rồi tắt bếp. Cho ra đĩa, dùng nóng với cơm trắng.",
+      "tip": "Kingfoodmart: thêm hành lá rồi tắt bếp; bày ra đĩa, rắc thêm chút tiêu nếu thích. Bò xào dứa phải ăn nóng để thịt mềm và giữ vị chua ngọt."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 256.82,
+      "proteinG": 21.95,
+      "carbohydrateG": 0.26,
+      "fatG": 18.3,
+      "fiberG": 0.1,
+      "sugarG": 0,
+      "sodiumMg": 444.66
+    },
+    "originalPerServing": {
+      "energyKcal": 358.1,
+      "proteinG": 24,
+      "carbohydrateG": 25.08,
+      "fatG": 18.53,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Dứa chín: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 6,
+        "detail": "Đường cát: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu hào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      4,
+      7,
+      8
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 4,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

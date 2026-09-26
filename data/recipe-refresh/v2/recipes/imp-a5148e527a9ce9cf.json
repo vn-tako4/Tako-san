@@ -1,0 +1,789 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-a5148e527a9ce9cf",
+    "slug": "ga-xao-gung-hanh-trung",
+    "title": "Gà xào gừng hành Trung"
+  },
+  "content": {
+    "description": "Đùi gà xào gừng-hành lá thơm nồng sốt mặn ngọt, món xào nhà Trung Hoa mười phút cho bữa tối vội.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Xào",
+      "Gừng",
+      "Trung Hoa",
+      "Đưa cơm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-a5148e527a9ce9cf.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/watch?v=Pta9ORkY7-I",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://thewoksoflife.com/ginger-chicken/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Đùi gà rút xương",
+      "canonicalIngredientId": "ING_ENR_FEF9F1F97CA70AB5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram (Spice N' Pans: 300 g cho 3-4 phần; assignment 3 phần lấy nguyên mức)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Spice N' Pans dùng 300 g đùi gà rút xương thái miếng cho 3-4 phần; WOL (ginger chicken) dùng 680 g cho khoảng 4 phần — hai nguồn khác quy mô, lấy nguyên mức của Spice N' Pans cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 121,
+        "proteinG": 19.7,
+        "carbohydrateG": 0,
+        "fatG": 4.12,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 95
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173627",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Gừng non (nạo, pha sốt)",
+      "canonicalIngredientId": "ING_ENR_A2C1AFCAAEB57CE9",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Gừng non via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "đơn vị gốc đã là gram (Spice N' Pans: 10 g gừng nạo cho sốt)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Spice N' Pans dùng 10 g gừng non nạo cho sốt; WOL dùng 6 lát gừng (~25 g) phi thơm — hai cách dùng gừng khác nhau (nạo pha sốt vs thái lát phi), lấy theo Spice N' Pans vì đang theo công thức của họ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 18,
+        "unit": "g",
+        "text": "18 g",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh dầu hào ~18 g (dầu hào đặc, tỉ trọng ~1,2 g/ml)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 18,
+          "unit": "g"
+        }
+      },
+      "note": "Spice N' Pans dùng 1 muỗng canh dầu hào cho sốt; WOL ghi dầu hào là tùy chọn (2 muỗng cà phê) — lấy theo Spice N' Pans.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.9,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": 0,
+        "sodiumMg": 2730
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174529",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Xì dầu nhạt (light soy sauce)",
+      "canonicalIngredientId": "ING_ENR_F4D1B45C3CF6671C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "ml",
+        "text": "30 ml",
+        "gramEquivalent": 36,
+        "basis": "2 muỗng canh = 30 ml, xì dầu tỉ trọng ~1,19 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "ml"
+        }
+      },
+      "note": "Spice N' Pans dùng 2 muỗng canh xì dầu nhạt cho sốt; WOL dùng 2 muỗng canh cho 680 g gà — tương đương tỉ lệ, không mâu thuẫn thực chất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Xì dầu đặc (dark soy sauce)",
+      "canonicalIngredientId": "ING_ENR_FDE6895A8FBD1E66",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 7.5,
+        "unit": "ml",
+        "text": "7.5 ml",
+        "gramEquivalent": 9,
+        "basis": "1/2 muỗng canh = 7,5 ml, xì dầu tỉ trọng ~1,19 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 7.5,
+          "unit": "ml"
+        }
+      },
+      "note": "Spice N' Pans dùng 1/2 muỗng canh xì dầu đặc cho sốt (tạo màu); WOL dùng 1 muỗng cà phê — gần nhau, lấy theo Spice N' Pans.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "USDA không có xì dầu đặc; dùng số liệu xì dầu nhạt (shoyu) làm tương đương — thực tế xì dầu đặc ngọt và sánh hơn một chút."
+    },
+    {
+      "position": 5,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.5,
+        "unit": "g",
+        "text": "2.5 g",
+        "gramEquivalent": 2.5,
+        "basis": "1/2 muỗng cà phê đường ~2,5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2.5,
+          "unit": "g"
+        }
+      },
+      "note": "Spice N' Pans dùng 1/2 muỗng cà phê đường cho sốt; WOL dùng 1 muỗng cà phê đường nâu cho 680 g gà — tương đương tỉ lệ, không mâu thuẫn thực chất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 100,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Rượu gạo Trung Quốc (rượu nấu ăn)",
+      "canonicalIngredientId": "ING_ENR_C8BD6FFDFE60DD7C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "ml",
+        "text": "15 ml",
+        "gramEquivalent": 15,
+        "basis": "1 muỗng canh = 15 ml ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "ml"
+        }
+      },
+      "note": "Spice N' Pans ghi rượu là tùy chọn (optional); WOL dùng 1/4 cup rượu Thiệu Hưng — để optional theo Spice N' Pans.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.5,
+        "carbohydrateG": 6.3,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 1.55,
+        "sodiumMg": 626
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169070",
+      "sourceNutritionNote": "USDA không có rượu Thiệu Hưng; dùng số liệu rượu nấu ăn generic có muối (Alcoholic beverage, wine, cooking) làm tương đương gần nhất."
+    },
+    {
+      "position": 7,
+      "sourceName": "Tiêu trắng",
+      "canonicalIngredientId": "ING_ENR_5CB91AEEAE9D0D29",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "g",
+        "text": "0.5 g",
+        "gramEquivalent": 0.5,
+        "basis": "vài rắc tiêu trắng ~0,5 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "g"
+        }
+      },
+      "note": "Cả Spice N' Pans và WOL đều dùng 'a few dashes' / 1/4 muỗng cà phê tiêu trắng — hai nguồn đồng thuận.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.6,
+        "fatG": 2.12,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": "USDA không công bố chỉ tiêu đường cho tiêu trắng nên để null."
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước (pha sốt)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "ml",
+        "text": "200 ml",
+        "gramEquivalent": 200,
+        "basis": "200 ml nước ≈ 200 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 200,
+          "unit": "ml"
+        }
+      },
+      "note": "Spice N' Pans pha sốt với 200 ml nước; WOL dùng 1,5 cups nước dùng gà — hai cách khác nhau (sốt loãng nhanh vs om với nước dùng), lấy theo Spice N' Pans vì đang theo công thức xào nhanh của họ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173647",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "2 cây hành lá, mỗi cây ~15 g (USDA: 1 cây hành lá vừa ~15 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Spice N' Pans chỉ dùng 1 cây hành lá cắt khúc; WOL dùng 3 cây cho 680 g gà — MÂU THUẪN về tỉ lệ (món tên 'gà xào gừng HÀNH' mà 1 cây là quá ít). Lấy 2 cây (~30 g) cho 300 g gà/3 phần: gấp đôi Spice N' Pans nhưng vẫn ít hơn tỉ lệ của WOL, đã ghi rõ lý do.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "1 củ hành tây vừa ~150 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "Spice N' Pans dùng 1 củ hành tây thái lát; WOL dùng 3 củ hành khô (shallot) thay — hai cách khác nhau, lấy theo Spice N' Pans.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 12,
+        "unit": "g",
+        "text": "12 g",
+        "gramEquivalent": 12,
+        "basis": "4 tép tỏi, mỗi tép ~3 g (USDA SR Legacy: 1 tép tỏi = 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 12,
+          "unit": "g"
+        }
+      },
+      "note": "Spice N' Pans dùng 3-4 tép tỏi băm; WOL dùng 4 tép — hai nguồn đồng thuận.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Bột bắp",
+      "canonicalIngredientId": "ING_ENR_D2EAF583347FED22",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "g",
+        "text": "3 g",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê bột bắp ~3 g (USDA: 1 muỗng canh bột bắp = 8 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "g"
+        }
+      },
+      "note": "Spice N' Pans pha 1 muỗng cà phê bột bắp với 2 muỗng canh nước làm sệt sốt; WOL dùng 1 muỗng canh bột bắp + 1 muỗng canh nước — tỉ lệ tương đương theo quy mô, không mâu thuẫn thực chất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 381,
+        "proteinG": 0.26,
+        "carbohydrateG": 91.27,
+        "fatG": 0.05,
+        "fiberG": 0.9,
+        "sugarG": 0,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169698",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước (pha bột bắp)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "ml",
+        "text": "30 ml",
+        "gramEquivalent": 30,
+        "basis": "2 muỗng canh = 30 ml ≈ 30 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "ml"
+        }
+      },
+      "note": "Nước pha cùng bột bắp làm hỗn hợp sệt (slurry), theo Spice N' Pans.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173647",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Dầu ăn (xào)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "ml",
+        "text": "15 ml",
+        "gramEquivalent": 14,
+        "basis": "1 muỗng canh = 15 ml dầu ăn, tỉ trọng ~0,91 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "ml"
+        }
+      },
+      "note": "Spice N' Pans không định lượng dầu xào (video mặc định có dùng dầu); WOL dùng 1 muỗng canh dầu — lấy 1 muỗng canh theo WOL, đã ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Đùi gà rửa sạch, thấm khô bằng khăn giấy, thái miếng vừa ăn cỡ 3-4 cm.",
+      "tip": "WOL: đùi gà chịu nhiệt tốt, xào/nấu lâu vẫn mềm ẩm; nếu dùng ức gà thì dễ bị khô."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Pha sốt: cho 200 ml nước vào bát, thêm gừng nạo, dầu hào, xì dầu nhạt, xì dầu đặc, đường, rượu gạo (nếu dùng) và tiêu trắng; khuấy đều cho tan.",
+      "tip": "Pha sẵn sốt trước khi bật bếp — món xào nhanh, không có thời gian nêm nếm giữa chừng (Spice N' Pans)."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Hành lá cắt khúc khoảng 2 cm; hành tây thái múi cau; tỏi băm nhỏ. Để riêng từng loại ra đĩa.",
+      "tip": "Chuẩn bị sẵn mọi thứ trước khi xào là nguyên tắc của món xào Trung Quốc (wok hei cần thao tác nhanh)."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Pha 1 muỗng cà phê bột bắp với 2 muỗng canh nước, khuấy tan hoàn toàn, để riêng.",
+      "tip": "Khuấy kỹ để không còn vón cục — vón cục sẽ làm sốt lợn cợn."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun nóng dầu ăn trong chảo/wok trên lửa lớn đến khi dầu vừa bốc khói; cho tỏi băm và hành tây vào, đảo nhanh khoảng 30 giây cho thơm.",
+      "tip": "WOL: có thể phi vài lát gừng đập dập trước 15 giây cho dậy mùi gừng đặc trưng rồi mới cho tỏi, hành."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho thịt gà vào chảo, dàn đều, đảo nhanh tay 4-5 phút đến khi thịt săn lại, mặt ngoài hơi vàng và chín tới.",
+      "tip": "Để lửa lớn suốt quá trình xào gà để thịt không ra nước, giữ được độ ngọt (kỹ thuật xào chung của cả hai nguồn).",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đổ bát sốt đã pha vào chảo, đảo đều cho sốt phủ kín thịt gà, đun cho sôi trở lại."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho hành lá cắt khúc vào, hạ lửa vừa, nấu thêm 2-3 phút cho gà thấm vị và hành vừa chín tới.",
+      "tip": "Biến thể om kiểu WOL (ginger chicken): sau khi cho sốt, đậy nắp nấu 5 phút rồi mở nắp đun cạn thêm 7 phút — sốt sẽ đậm đà, sánh hơn kiểu xào nhanh.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Rưới từ từ hỗn hợp bột bắp vào chảo, vừa rưới vừa đảo đều đến khi sốt sánh vừa ý thì dừng.",
+      "tip": "Cho từng ít một — sốt đặc quá sẽ át vị gà; nếu lỡ đặc, thêm chút nước nóng."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Nếm lại, điều chỉnh mặn ngọt cho vừa miệng; dọn nóng với cơm trắng.",
+      "tip": "Món này ngon nhất khi ăn ngay lúc còn nóng hổi, sốt sánh bóng phủ đều thịt gà."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 123.67,
+      "proteinG": 19.76,
+      "carbohydrateG": 0.59,
+      "fatG": 4.14,
+      "fiberG": 0.07,
+      "sugarG": 0.06,
+      "sodiumMg": 95.43
+    },
+    "originalPerServing": {
+      "energyKcal": 215.12,
+      "proteinG": 22.1,
+      "carbohydrateG": 10.89,
+      "fatG": 9.01,
+      "fiberG": null,
+      "sugarG": 3.42,
+      "sodiumMg": 1121.94
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Dầu hào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Xì dầu nhạt (light soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Xì dầu đặc (dark soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Đường trắng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tiêu trắng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước (pha sốt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Bột bắp: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước (pha bột bắp): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Dầu ăn (xào): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      8,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

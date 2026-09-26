@@ -1,0 +1,601 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-2865ee57783628d7",
+    "slug": "salad-mi-y-nguoi",
+    "title": "Salad mì Ý nguội"
+  },
+  "content": {
+    "description": "Mì Ý nguội trộn cà chua-dưa leo-phô mai sốt giấm, salad pasta mát lành cho trưa nóng.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Pasta salad",
+      "Ý",
+      "Mát lành",
+      "Bữa trưa"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-2865ee57783628d7.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://redketchup.it/insalata-di-pasta-alla-greca/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.carlogaiano.net/ricetta/pasta-fredda-allitaliana/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì Ý ngắn (fusilli)",
+      "canonicalIngredientId": "ING_ENR_48926F182CFBA407",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 190,
+        "unit": "g",
+        "text": "190 g",
+        "gramEquivalent": 190,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 190,
+          "unit": "g"
+        }
+      },
+      "note": "RedKetchup (4 phần): 250 g fusilli → tỉ lệ cho 3 phần là 187,5 g, làm tròn 190 g. Hai nguồn mâu thuẫn về cách làm nguội: RedKetchup xả mì dưới nước lạnh; Carlo Gaiano trộn mì còn ấm với cà chua ướp rồi để nguội tự nhiên — ghi rõ cả hai cách.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 371,
+        "proteinG": 13.04,
+        "carbohydrateG": 74.67,
+        "fatG": 1.51,
+        "fiberG": 3.2,
+        "sugarG": 2.67,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://www.aqua-calc.com/calculate/food-calories/substance/pasta-coma-and-blank-dry-coma-and-blank-enriched-blank--op-spaghetti-cp-",
+      "sourceNutritionNote": "Số liệu cho mì spaghetti khô enriched (USDA-derived, Aqua-Calc); dùng làm đại diện cho các loại mì Ý khô."
+    },
+    {
+      "position": 1,
+      "sourceName": "Cà chua bi",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 95,
+        "unit": "g",
+        "text": "95 g",
+        "gramEquivalent": 95,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 95,
+          "unit": "g"
+        }
+      },
+      "note": "RedKetchup (4 phần): 125 g cà chua bi → tỉ lệ cho 3 phần là ~94 g, làm tròn 95 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/4458/Aacps/b408760e-d7db-408a-84d9-517bbc3033d1/Tomatoes_-_Cherry__Fresh.pdf?disposition=inline",
+      "sourceNutritionNote": "Báo cáo dinh dưỡng USDA cho cà chua cherry tươi."
+    },
+    {
+      "position": 2,
+      "sourceName": "Dưa leo",
+      "canonicalIngredientId": "CUCUMBER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 110,
+        "unit": "g",
+        "text": "110 g",
+        "gramEquivalent": 110,
+        "basis": "đơn vị gốc đã là gram; khoảng 1/3 quả dưa leo dài (MedIndia: 1 quả dưa leo 81⁄4 inch ≈ 301 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 110,
+          "unit": "g"
+        }
+      },
+      "note": "RedKetchup (4 phần): 1/2 quả dưa leo → tỉ lệ cho 3 phần là 3/8 quả (~110 g). RedKetchup bỏ ruột dưa leo trước khi cắt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 0.65,
+        "carbohydrateG": 3.63,
+        "fatG": 0.11,
+        "fiberG": 0.5,
+        "sugarG": 1.67,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://www.caloriesta.com/en/calories-in-food/cucumber-with-peel-raw?i=11205",
+      "sourceNutritionNote": "Số liệu cho dưa leo sống còn vỏ (USDA-derived, caloriesta)."
+    },
+    {
+      "position": 3,
+      "sourceName": "Phô mai feta",
+      "canonicalIngredientId": "ING_ENR_7A8CCD4AD4BBDA23",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "RedKetchup (4 phần): 200 g feta → tỉ lệ cho 3 phần là 150 g. Carlo Gaiano dùng 250 g mozzarella tươi cho 4 phần — mâu thuẫn; theo gợi ý món và định hướng kiểu Hy Lạp của RedKetchup, dùng feta.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 265,
+        "proteinG": 14,
+        "carbohydrateG": 3.9,
+        "fatG": 21,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 1139
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Cheese%2C_feta_nutritional_value.html?size=100+g",
+      "sourceNutritionNote": "Phô mai feta (USDA-based, NutritionValue)."
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành tây đỏ",
+      "canonicalIngredientId": "ING_ENR_0413764B17666006",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 40,
+        "unit": "g",
+        "text": "40 g",
+        "gramEquivalent": 40,
+        "basis": "đơn vị gốc đã là gram (~1/2 củ hành đỏ nhỏ)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 40,
+          "unit": "g"
+        }
+      },
+      "note": "RedKetchup (4 phần): 1 củ hành đỏ nhỏ → tỉ lệ cho 3 phần là ~40 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 44,
+        "proteinG": 0.94,
+        "carbohydrateG": 9.93,
+        "fatG": 0.1,
+        "fiberG": 2.2,
+        "sugarG": 5.76,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Onions%2C_raw%2C_red_790577_nutritional_value.html?size=100+g",
+      "sourceNutritionNote": "Hành tây đỏ sống (USDA Foundation, NutritionValue); nguồn liệt kê đường riêng lẻ (glucose 2,29 g + fructose 1,79 g + sucrose 1,68 g) nên sugar_g = 5,76 g là tổng cộng dồn — không tự bịa, đã ghi rõ cách tính."
+    },
+    {
+      "position": 5,
+      "sourceName": "Lá húng quế tươi",
+      "canonicalIngredientId": "ING_ENR_0121EB2200008912",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "RedKetchup (4 phần): 15 g húng quế → tỉ lệ cho 3 phần là ~11 g, làm tròn 10 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 3.2,
+        "carbohydrateG": 2.7,
+        "fatG": 0.6,
+        "fiberG": 1.6,
+        "sugarG": 0.3,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Basil%2C_fresh_nutritional_value.html?size=100+g",
+      "sourceNutritionNote": "Húng quế tươi (USDA-based, NutritionValue)."
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ô liu",
+      "canonicalIngredientId": "ING_ENR_F3F7B0E29159178B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 21,
+        "basis": "1,5 muỗng canh × 14 g/muỗng canh (NutritionValue: 1 muỗng canh dầu ô liu = 14 g)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 21,
+          "unit": "g"
+        }
+      },
+      "note": "RedKetchup (4 phần): 2 muỗng canh dầu ô liu cho sốt → tỉ lệ cho 3 phần là 1,5 muỗng canh (~21 g).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 900,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Olive_oil_82104000_nutritional_value.html?size=100+g",
+      "sourceNutritionNote": "Dầu ô liu (USDA Food and Nutrient Database, FNDDS 82104000)."
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước cốt chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 24,
+        "unit": "g",
+        "text": "24 g",
+        "gramEquivalent": 24,
+        "basis": "nước cốt 1/2 quả chanh ≈ 24 g (USDA: 1 quả chanh cho 48 g nước cốt)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 24,
+          "unit": "g"
+        }
+      },
+      "note": "RedKetchup dùng cả nước cốt 1/2 quả chanh và 1 muỗng canh giấm rượu vang đỏ; theo gợi ý món chỉ có chanh tươi nên bỏ giấm, tăng vai trò của chanh — đã ghi rõ sự khác biệt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 22,
+        "proteinG": 0.4,
+        "carbohydrateG": 6.9,
+        "fatG": 0.2,
+        "fiberG": 0.3,
+        "sugarG": 2.5,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Lemon_juice%2C_raw_nutritional_value.html?size=100%2Bg",
+      "sourceNutritionNote": "Nước cốt chanh tươi sống (USDA Standard Reference, NutritionValue)."
+    },
+    {
+      "position": 8,
+      "sourceName": "Lá oregano khô",
+      "canonicalIngredientId": "ING_ENR_182F424AF80EEAAE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "1,5 muỗng cà phê × 1 g/muỗng cà phê (dietandfitnesstoday: 1 tsp lá oregano khô = 1 g)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "g"
+        }
+      },
+      "note": "RedKetchup (4 phần): 2 muỗng cà phê oregano khô → tỉ lệ cho 3 phần là 1,5 muỗng cà phê.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 265,
+        "proteinG": 9,
+        "carbohydrateG": 68.9,
+        "fatG": 4.28,
+        "fiberG": 42.5,
+        "sugarG": 4.09,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://glycemic-index.net/spices-oregano-dried/",
+      "sourceNutritionNote": "Oregano khô (USDA-derived, glycemic-index.net); đường 4,09 g từ dietandfitnesstoday; nguồn không công bố natri nên sodium_mg để null — không tự điền."
+    },
+    {
+      "position": 9,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "g",
+        "text": "3 g",
+        "gramEquivalent": 3,
+        "basis": "1/2 muỗng cà phê ≈ 3 g (NutritionValue: 1 muỗng cà phê muối = 6 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "g"
+        }
+      },
+      "note": "RedKetchup ghi 'muối vừa đủ', không định lượng; 3 g (~1/2 muỗng cà phê) là mức ước lượng cho 3 phần vì feta đã mặn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38750
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Salt%2C_table_nutritional_value.html",
+      "sourceNutritionNote": "Muối ăn (NutritionValue: 6 g → 2325 mg natri, suy ra 38750 mg/100 g)."
+    },
+    {
+      "position": 10,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "g",
+        "text": "1 g",
+        "gramEquivalent": 1,
+        "basis": "~1/2 muỗng cà phê tiêu xay ≈ 1 g (USDA SR Legacy: 1 tsp ≈ 2,3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "g"
+        }
+      },
+      "note": "RedKetchup ghi 'tiêu vừa đủ', không định lượng; 1 g là mức ước lượng cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.3,
+        "fiberG": 25.3,
+        "sugarG": 0.6,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "http://www.dietandfitnesstoday.com/calories-nutrition-facts.php?id=2030",
+      "sourceNutritionNote": "Tiêu đen (USDA-derived, dietandfitnesstoday)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Đun một nồi lớn nước muối cho sôi, cho mì fusilli vào luộc đến chín tới (al dente) theo thời gian trên bao bì.",
+      "tip": "Salad mì nên luộc mì vừa chín tới, không luộc quá mềm vì mì còn ngấm sốt sau đó.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Vớt mì ra, xả ngay dưới vòi nước lạnh cho mì nguội hẳn, sau đó để ráo hoàn toàn trong rổ khoảng 5 phút.",
+      "tip": "RedKetchup xả mì nước lạnh để mì ngừng chín và không dính. Lưu ý: Carlo Gaiano làm ngược lại — trộn mì còn ấm với cà chua ướp rồi để nguội tự nhiên; cách xả lạnh cho salad ráo và mát hơn.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Trong lúc chờ mì ráo nước: cà chua bi cắt đôi; dưa leo bổ đôi theo chiều dọc, nạo bỏ ruột, cắt hạt lựu; hành tây đỏ thái lát thật mỏng; húng quế xé nhỏ; feta cắt hạt lựu khoảng 1,5 cm.",
+      "tip": "Thái hành đỏ thật mỏng để hành không hăng át vị các nguyên liệu khác. Cắt feta nhẹ tay để miếng phô mai không nát."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Pha nước sốt: cho dầu ô liu, nước cốt chanh, oregano khô, muối và tiêu vào chén nhỏ, dùng nĩa đánh đều cho hòa quyện.",
+      "tip": "Nếm sốt trước: phải có vị chua mặn rõ ràng vì khi trộn với mì vị sẽ nhạt đi."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho mì đã ráo hoàn toàn vào tô lớn, rưới nước sốt lên, trộn đều cho từng sợi mì ngấm sốt.",
+      "tip": "Mì phải thật ráo nước — nếu còn ướt, sốt sẽ bị loãng và salad nhạt vị."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Thêm cà chua bi, dưa leo và hành đỏ vào tô, trộn nhẹ nhàng cho đều."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Thêm feta cắt hạt lựu và một nửa lượng húng quế vào, đảo thật nhẹ tay để phô mai không bị nát.",
+      "tip": "Để dành một ít húng quế rắc lên mặt khi dọn cho đẹp."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nếm và điều chỉnh: thêm chanh nếu thiếu chua, thêm muối nếu nhạt, thêm dầu ô liu nếu khô.",
+      "tip": "Feta đã mặn sẵn nên nêm muối từ từ, nếm sau mỗi lần thêm."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Đậy kín tô, cho vào tủ lạnh ít nhất 30 phút cho salad thật mát và các vị ngấm đều vào mì.",
+      "tip": "Carlo Gaiano để salad nghỉ trong tủ lạnh vài giờ cho ngấm — nếu có thời gian, để 1–2 giờ sẽ ngon hơn. Cũng có thể ăn ngay nếu thích.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Trước khi dọn, trộn lại salad một lần, rắc nốt phần húng quế còn lại lên trên. Dọn lạnh."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 436.93,
+      "proteinG": 15.64,
+      "carbohydrateG": 50.56,
+      "fatG": 18.54,
+      "fiberG": 2.46,
+      "sugarG": 2.53,
+      "sodiumMg": 575.16
+    },
+    "originalPerServing": {
+      "energyKcal": 452.22,
+      "proteinG": 16.12,
+      "carbohydrateG": 54.33,
+      "fatG": 18.64,
+      "fiberG": 3.26,
+      "sugarG": 4.14,
+      "sodiumMg": 963.67
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Dưa leo: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành tây đỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước cốt chanh tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 8,
+        "detail": "Lá oregano khô: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      7
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

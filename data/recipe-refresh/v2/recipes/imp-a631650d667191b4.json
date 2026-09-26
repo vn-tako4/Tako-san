@@ -1,0 +1,903 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-a631650d667191b4",
+    "slug": "muc-nuong-cay-han",
+    "title": "Mực nướng cay Hàn"
+  },
+  "content": {
+    "description": "Mực nướng quét sốt cay ojingeo gui cháy cạnh thơm nồng, món nhậu Hàn khó cưỡng.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Ojingeo gui",
+      "Hàn Quốc",
+      "Nướng",
+      "Cay"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-a631650d667191b4.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.koreanbapsang.com/ojingeo-gui-spicy-grilled-squid/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.maangchi.com/recipe/ojingeo-tonggui",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mực tươi (đã làm sạch)",
+      "canonicalIngredientId": "SQUID",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 1 con mực lớn 1.5 lbs (680 g) cho 4 phần → ~510 g cho 3 phần; KB: 1.5 lbs (5-8 con nhỏ hoặc 2 con vừa/lớn). Lấy 500 g cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 92.02,
+        "proteinG": 15.58,
+        "carbohydrateG": 3.08,
+        "fatG": 1.38,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 44
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174223",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Tương ớt Hàn (gochujang)",
+      "canonicalIngredientId": "ING_ENR_7B2DCEA4C5B68A51",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 45,
+        "unit": "g",
+        "text": "45 g",
+        "gramEquivalent": 45,
+        "basis": "2.5 tbsp × ~18 g/tbsp (tương ớt đặc)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 45,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 3 tbsp cho 4 phần; KB: 3 tbsp cho 1.5 lbs mực — hai nguồn tương đương, lấy 2.5 tbsp ≈ 45 g cho 3 phần.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có mục gochujang; mục gần nhất là ớt tươi đỏ nhưng thành phần khác xa (tương ớt có gạo nếp lên men và đường) nên không dùng → để null, tuyệt đối không bịa số."
+    },
+    {
+      "position": 2,
+      "sourceName": "Ớt bột Hàn (gochugaru)",
+      "canonicalIngredientId": "ING_ENR_397060224F2CC77D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 8,
+        "unit": "g",
+        "text": "8 g",
+        "gramEquivalent": 8,
+        "basis": "1 tbsp ớt bột Hàn ≈ 7-8 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 8,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ KB dùng 1 tbsp trong sốt ướp; Maangchi không dùng ớt bột. Lấy 1 tbsp, tăng/giảm theo độ cay mong muốn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 318.12,
+        "proteinG": 12.01,
+        "carbohydrateG": 56.63,
+        "fatG": 17.27,
+        "fiberG": 27.2,
+        "sugarG": 10.34,
+        "sodiumMg": 30
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170932",
+      "sourceNutritionNote": "dùng số liệu ớt bột cayenne của USDA làm tương đương gần nhất cho gochugaru."
+    },
+    {
+      "position": 3,
+      "sourceName": "Siro ngô/gạo Hàn (oligodang)",
+      "canonicalIngredientId": "ING_ENR_75698A751BE1E08F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 45,
+        "unit": "g",
+        "text": "45 g",
+        "gramEquivalent": 45,
+        "basis": "2.5 tbsp × ~18 g/tbsp (siro đặc)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 45,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 3 tbsp siro gạo cho 4 phần; KB: 2 tbsp siro ngô (oligodang) — hai loại siro tương đương nhau trong bếp Hàn, lấy 2.5 tbsp ≈ 45 g cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 285.61,
+        "proteinG": 0,
+        "carbohydrateG": 77.59,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 77.59,
+        "sodiumMg": 155
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168836",
+      "sourceNutritionNote": "dùng số liệu siro ngô của USDA làm tương đương gần nhất cho oligodang (siro ngô/mạch nha Hàn)."
+    },
+    {
+      "position": 4,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "ml",
+        "text": "15 ml",
+        "gramEquivalent": 16,
+        "basis": "15 ml × tỉ trọng xì dầu ~1.07 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "ml"
+        }
+      },
+      "note": "KB: 2 tbsp; Maangchi: chỉ 1 tsp — mâu thuẫn lớn, lấy 1 tbsp ở giữa để tránh quá mặn vì gochujang vốn đã mặn; nêm thêm nếu thấy nhạt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 8,
+        "unit": "g",
+        "text": "8 g",
+        "gramEquivalent": 8,
+        "basis": "2 tsp × ~4 g/tsp",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 8,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ KB dùng 1 tbsp đường (kèm 2 tbsp siro); Maangchi chỉ dùng siro không thêm đường — lấy 2 tsp cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Rượu nấu ăn",
+      "canonicalIngredientId": "ING_ENR_CA3FEDAA923D315C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "ml",
+        "text": "15 ml",
+        "gramEquivalent": 15,
+        "basis": "15 ml × tỉ trọng ~1.0",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "ml"
+        }
+      },
+      "note": "Chỉ KB dùng 1 tbsp để khử tanh mực; Maangchi không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 49.95,
+        "proteinG": 0.5,
+        "carbohydrateG": 6.3,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 1.55,
+        "sodiumMg": 626
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169070",
+      "sourceNutritionNote": "số liệu rượu nấu ăn (cooking wine) generic của USDA."
+    },
+    {
+      "position": 7,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "2-3 tép × ~5 g/tép",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 1 tbsp cho 1.5 lbs mực; Maangchi: 2 tép cho 1.5 lbs — mâu thuẫn, lấy ~10 g cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Gừng băm",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "g",
+        "text": "4 g",
+        "gramEquivalent": 4,
+        "basis": "~3/4 tsp gừng băm",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 1 tsp; Maangchi: 1/2 tsp — lấy 3/4 tsp ≈ 4 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": null,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 9,
+        "unit": "g",
+        "text": "9 g",
+        "gramEquivalent": 9,
+        "basis": "2 tsp × ~4.5 g/tsp (tỉ trọng dầu ~0.91)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 9,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 1 tbsp trộn trong sốt; Maangchi: 1-2 tsp rưới khi dọn — lấy 2 tsp, một nửa trộn sốt, một nửa rưới khi dọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "g",
+        "text": "1 g",
+        "gramEquivalent": 1,
+        "basis": "~1/4 tsp",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "g"
+        }
+      },
+      "note": "KB: một nhúm tiêu trong sốt ướp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": null,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "2 cây × ~15 g/cây",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 2 tbsp hành lá thái nhỏ trộn vào sốt ướp; Maangchi: 2 cây rắc lên khi dọn — lấy 2 cây, một nửa băm vào sốt, một nửa thái nhỏ trang trí.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Mè trắng rang",
+      "canonicalIngredientId": "ING_ENR_E99C1D9D107FBAED",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "g",
+        "text": "3 g",
+        "gramEquivalent": 3,
+        "basis": "1 tsp mè ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 1/2 tsp; Maangchi: 1 tsp — lấy 1 tsp rắc khi dọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 572.9,
+        "proteinG": 17.73,
+        "carbohydrateG": 23.45,
+        "fatG": 49.67,
+        "fiberG": 11.8,
+        "sugarG": 0.3,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170150",
+      "sourceNutritionNote": "số liệu mè nguyên hạt của USDA (mè trắng/đen chênh lệch dinh dưỡng không đáng kể)."
+    },
+    {
+      "position": 13,
+      "sourceName": "Chanh vàng",
+      "canonicalIngredientId": "ING_ENR_65CF0EED63D1DE92",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "1/2 quả chanh vừa ≈ 30 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 1/2 quả chanh vắt lên mực khi dọn và trang trí; Maangchi không dùng chanh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 28.92,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.32,
+        "fatG": 0.3,
+        "fiberG": 2.8,
+        "sugarG": 2.5,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167746",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Mù tạt vàng",
+      "canonicalIngredientId": "ING_ENR_9A6D139B394D9910",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "1 tsp mù tạt ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ Maangchi dùng 1 tsp mù tạt trong sốt (tạo vị hăng nhẹ); KB không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60.71,
+        "proteinG": 4.25,
+        "carbohydrateG": 5.3,
+        "fatG": 3.38,
+        "fiberG": 4.3,
+        "sugarG": null,
+        "sodiumMg": 1100
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/326698",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Muối hạt (để sơ chế mực)",
+      "canonicalIngredientId": "ING_ENR_F41B8E96DFA48C8E",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Muối hạt via the same name key",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 18,
+        "unit": "g",
+        "text": "18 g",
+        "gramEquivalent": 18,
+        "basis": "1 tbsp muối ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 18,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: dùng muối chà xát thân và xúc tu mực cho hết nhớt, lột da dễ hơn, sau đó rửa sạch hoàn toàn.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "muối chỉ dùng để chà rửa rồi rửa sạch hoàn toàn, không ngấm vào món → để null."
+    },
+    {
+      "position": 16,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "g",
+        "text": "4 g",
+        "gramEquivalent": 4,
+        "basis": "~1 tsp",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: vài giọt dầu ăn phết đều chảo nướng để chống dính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 17,
+      "sourceName": "Lá tía tô (ăn kèm)",
+      "canonicalIngredientId": "ING_ENR_F23B72762DAA75B9",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Lá tía tô via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "6 lá × ~1.7 g/lá",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 6-8 lá tía tô thái sợi lót đĩa hoặc để cuốn ăn kèm; Maangchi lót đĩa bằng xà lách/arugula.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có mục lá tía tô (kết quả gần nhất là lá cúc tần, không tương đương) → để null; lượng dùng nhỏ (vài lá trang trí)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế mực: một tay giữ thân, một tay kéo mạnh đầu và nội tạng ra khỏi thân. Loại bỏ túi nội tạng, cắt bỏ phần mắt và mỏ (beak) ở giữa xúc tu. Rút bỏ xương sống trong suốt trong thân mực.",
+      "tip": "KB: làm khéo để không làm vỡ túi mực; nếu mực còn da, có thể lột bỏ."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cho muối hạt vào chà xát kỹ thân và xúc tu mực cho hết nhớt, rửa lại nhiều lần dưới vòi nước lạnh đến khi không còn trơn, để ráo.",
+      "tip": "Maangchi: chà muối vào các giác hút của xúc tu để sạch cát bẩn; rắc muối lên tay để có độ bám khi lột da mực."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Khía mặt trong của thân mực thành hình caro nông (không cắt thủng). Có thể kê 2 chiếc đũa hai bên thân mực để dao không cắt quá sâu.",
+      "tip": "Maangchi: đường khía giúp sốt bám đều, mực nhanh chín và khi nướng sẽ cuộn đẹp mắt. Khía cả xúc tu và vây mực."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Pha sốt ướp: trộn đều tương ớt, ớt bột, xì dầu, đường, siro, rượu nấu ăn, tỏi băm, gừng băm, tiêu đen và 1/2 lượng hành lá thái nhỏ trong tô lớn, khuấy đến khi mịn."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho mực vào tô sốt, trộn đều cho sốt phủ kín mọi mặt. Bọc lại, ướp trong tủ lạnh 30 phút.",
+      "tip": "KB: ướp 30 phút là đủ; không ướp qua đêm vì mực sẽ bị bở.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Làm nóng chảo nướng hoặc vỉ nướng ở lửa lớn, phết một lớp dầu ăn thật mỏng.",
+      "tip": "Chảo phải thật nóng trước khi cho mực vào thì mực mới săn nhanh và không ra nước."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho mực lên chảo, để mặt khía hướng lên trên. Nướng 1 phút đến khi mặt dưới săn lại và chuyển màu đục.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Lật mực, phết thêm sốt ướp lên trên mặt mực, nướng thêm khoảng 2 phút. Nếu thân mực cuộn lại, dùng kẹp duỗi thẳng ra.",
+      "tip": "Maangchi: vừa nướng vừa phết sốt để sốt thấm và tạo lớp bóng.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Lật mực lần nữa, phết đều sốt khắp thân mực, nướng thêm 1 phút đến khi sốt keo lại, mực chuyển màu đỏ bóng.",
+      "tip": "Maangchi: tổng thời gian nướng chỉ khoảng 4-5 phút — nướng quá lâu mực sẽ dai.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Bày mực ra đĩa đã lót lá tía tô thái sợi (hoặc xà lách).",
+      "tip": "KB: mực nướng cay ăn kèm lá tía tô rất hợp — có thể dùng lá tía tô để cuốn."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Rắc nốt 1/2 lượng hành lá và mè rang lên trên, rưới phần dầu mè còn lại, vắt nước cốt chanh lên mực."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Dùng kéo cắt thân mực thành khoanh, xúc tu cắt miếng vừa ăn ngay trước khi dọn. Ăn nóng.",
+      "tip": "Maangchi: cắt mực ngay tại bàn khi còn xèo xèo là cách thưởng thức đúng kiểu quán nhậu Hàn."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 153.37,
+      "proteinG": 25.97,
+      "carbohydrateG": 5.13,
+      "fatG": 2.3,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 73.33
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Tương ớt Hàn (gochujang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Ớt bột Hàn (gochugaru): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Siro ngô/gạo Hàn (oligodang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Rượu nấu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Gừng băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Mè trắng rang: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Chanh vàng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Mù tạt vàng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 15,
+        "detail": "Muối hạt (để sơ chế mực): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 16,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      15
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 15,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      }
+    ]
+  }
+}

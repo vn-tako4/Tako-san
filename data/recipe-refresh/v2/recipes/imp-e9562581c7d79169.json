@@ -1,0 +1,622 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-e9562581c7d79169",
+    "slug": "com-cua-kanimeshi",
+    "title": "Cơm cua kanimeshi"
+  },
+  "content": {
+    "description": "Cơm nấu cùng nước cua ngọt, rắc trứng tơ cua tươi, món kanimeshi Hokkaido ấm áp đậm biển.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 35,
+    "servings": 3,
+    "difficulty": "medium",
+    "tags": [
+      "Kanimeshi",
+      "Nhật Bản",
+      "Cua",
+      "Cơm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-e9562581c7d79169.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.buzzfeed.com/jp/sachiyosuginohara/rice-cooker-fried-rice",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.youtube.com/shorts/kmFUsTYFJF0",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Gạo tẻ (gạo Nhật hạt ngắn)",
+      "canonicalIngredientId": "ING_ENR_5F98D3FD3F8CB2E4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "2合; 1合 gạo Nhật = 180 ml ≈ 150 g (chuẩn đo lường Nhật)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn Nhật đều dùng 2合 gạo cho công thức này.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 358,
+        "proteinG": 6.5,
+        "carbohydrateG": 79.2,
+        "fatG": 0.52,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168931",
+      "sourceNutritionNote": "USDA FoodData Central (SR Legacy/Foundation) không báo cáo chỉ số đường tổng (sugar_g) cho nguyên liệu này — để null, không ước lượng."
+    },
+    {
+      "position": 1,
+      "sourceName": "Thanh cua kanikama (cua giả Nhật)",
+      "canonicalIngredientId": "ING_ENR_33FA6533CE2CFE4B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "thanh",
+        "text": "4 thanh",
+        "gramEquivalent": 60,
+        "basis": "1 thanh kanikama ≈ 15 g (thanh kanikama Nhật phổ biến)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "MÂU THUẪN: Tasty dùng 4 thanh cho 2合; nguồn カニカマめし dùng 2 gói = 150 g cho 2合. Lấy theo Tasty vì công thức có trứng, khớp hint món ăn hơn. Muốn vị cua đậm hơn có thể tăng lên 150 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 95,
+        "proteinG": 7.62,
+        "carbohydrateG": 15,
+        "fatG": 0.46,
+        "fiberG": 0.5,
+        "sugarG": null,
+        "sodiumMg": 529
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174203",
+      "sourceNutritionNote": "USDA FoodData Central (SR Legacy/Foundation) không báo cáo chỉ số đường tổng (sugar_g) cho nguyên liệu này — để null, không ước lượng."
+    },
+    {
+      "position": 2,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 100,
+        "basis": "USDA FoodData Central: 1 large egg = 50 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn カニカマめし (kanimeshi thuần) KHÔNG dùng trứng; trứng chỉ có ở công thức Tasty. Giữ trứng theo hint món ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.6,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": "USDA FoodData Central (SR Legacy/Foundation) không báo cáo chỉ số đường tổng (sugar_g) cho nguyên liệu này — để null, không ước lượng."
+    },
+    {
+      "position": 3,
+      "sourceName": "Mayonnaise",
+      "canonicalIngredientId": "ING_ENR_E8490934D6365804",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 tsp = 5 ml; tỉ trọng mayonnaise ≈ 0.94 → ≈ 4.7 g, làm tròn 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tasty: trộn mayo vào trứng để trứng mềm xốp, không bị cứng khi hâm lại; có thể bỏ qua nếu không thích.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 680,
+        "proteinG": 0.96,
+        "carbohydrateG": 0.57,
+        "fatG": 74.8,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 635
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171009",
+      "sourceNutritionNote": "USDA FoodData Central (SR Legacy/Foundation) không báo cáo chỉ số đường tổng (sugar_g) cho nguyên liệu này — để null, không ước lượng."
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá cắt nhỏ",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "1 cây hành lá ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "USDA FoodData Central (SR Legacy/Foundation) không báo cáo chỉ số đường tổng (sugar_g) cho nguyên liệu này — để null, không ước lượng."
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu Nhật (shoyu)",
+      "canonicalIngredientId": "ING_ENR_BB99A54F52B28EBA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 tbsp = 15 ml; tỉ trọng xì dầu ≈ 1.19 → ≈ 17.9 g, làm tròn 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": null,
+        "sodiumMg": 5490
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "USDA FoodData Central (SR Legacy/Foundation) không báo cáo chỉ số đường tổng (sugar_g) cho nguyên liệu này — để null, không ước lượng."
+    },
+    {
+      "position": 6,
+      "sourceName": "Rượu sake nấu ăn",
+      "canonicalIngredientId": "ING_ENR_684BD07DF56380DC",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "1 tbsp = 15 ml; tỉ trọng sake ≈ 1.0 → ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 134,
+        "proteinG": 0.5,
+        "carbohydrateG": 5,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167723",
+      "sourceNutritionNote": "Số liệu USDA tính cho sake nguyên chất (134 kcal/100 g, có cồn); khi nấu cơm cồn bay hơi gần hết nên năng lượng thực tế thấp hơn. USDA FoodData Central (SR Legacy/Foundation) không báo cáo chỉ số đường tổng (sugar_g) cho nguyên liệu này — để null, không ước lượng. USDA FoodData Central (SR Legacy/Foundation) không báo cáo chỉ số đường tổng (sugar_g) cho nguyên liệu này — để null, không ước lượng."
+    },
+    {
+      "position": 7,
+      "sourceName": "Hạt nêm gà Nhật (鶏ガラスープの素)",
+      "canonicalIngredientId": "ING_ENR_740A2AE056CC7BDA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 tsp hạt nêm dạng hạt ≈ 2.5 g (định lượng muỗng trên bao bì hạt nêm Nhật)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Ở Việt Nam có thể thay bằng hạt nêm gà thông thường với lượng tương đương.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.7,
+        "carbohydrateG": 18,
+        "fatG": 13.9,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 23900
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "USDA FoodData Central (SR Legacy/Foundation) không báo cáo chỉ số đường tổng (sugar_g) cho nguyên liệu này — để null, không ước lượng."
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "1 tbsp = 15 ml; tỉ trọng dầu mè ≈ 0.92 → ≈ 13.8 g, làm tròn 14 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": "USDA FoodData Central (SR Legacy/Foundation) không báo cáo chỉ số đường tổng (sugar_g) cho nguyên liệu này — để null, không ước lượng."
+    },
+    {
+      "position": 9,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "g",
+        "text": "2 g",
+        "gramEquivalent": 2,
+        "basis": "đơn vị gốc đã là gram; Tasty ghi 'vừa ăn', lấy 2 g làm chuẩn cho 3 phần",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "g"
+        }
+      },
+      "note": "Tasty chỉ ghi 'muối vừa ăn', không định lượng — 2 g là mức chuẩn hóa để tính toán.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 38800
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "USDA FoodData Central (SR Legacy/Foundation) không báo cáo chỉ số đường tổng (sugar_g) cho nguyên liệu này — để null, không ước lượng."
+    },
+    {
+      "position": 10,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "g",
+        "text": "0.5 g",
+        "gramEquivalent": 0.5,
+        "basis": "đơn vị gốc đã là gram; Tasty ghi 'vừa ăn', lấy 0.5 g làm chuẩn",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "g"
+        }
+      },
+      "note": "Tasty chỉ ghi 'tiêu vừa ăn', không định lượng — 0.5 g là mức chuẩn hóa.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": null,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "USDA FoodData Central (SR Legacy/Foundation) không báo cáo chỉ số đường tổng (sugar_g) cho nguyên liệu này — để null, không ước lượng."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Vo gạo nhẹ tay 2-3 lần cho sạch, để ráo rồi cho vào nồi cơm điện."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cho xì dầu, sake và hạt nêm gà vào nồi, đổ nước đến đúng vạch 2合 rồi bớt đi khoảng 2 mm nước.",
+      "tip": "Mẹo của Tasty: bớt 2 mm nước so với vạch chuẩn thì cơm tơi, không bị nhão."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đậy nắp, bật chế độ nấu cơm thường và nấu cho đến khi chín.",
+      "tip": "Tasty: tổng thời gian khoảng 45 phút gồm cả nấu cơm, tùy nồi.",
+      "timerMinutes": 45
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Trong lúc chờ cơm: xé thanh cua thành sợi nhỏ; hành lá cắt nhỏ; đập trứng ra bát, cho mayonnaise vào đánh tan đều."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cơm vừa chín còn thật nóng: mở nắp, cho ngay thanh cua xé sợi, hành lá cắt nhỏ và dầu mè vào, dùng muôi xới trộn đều."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Rưới đều trứng đã đánh lên mặt cơm, đậy nắp ngay và bật chế độ hâm/nấu thêm khoảng 5 phút cho trứng chín bằng hơi nóng.",
+      "tip": "Mẹo quan trọng của Tasty: phải cho trứng lúc cơm còn thật nóng và đậy nắp ngay, nếu cơm nguội trứng sẽ không chín đẹp. Sau 5 phút hâm lại, hơi nước thừa cũng bay bớt.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Mở nắp, xới tơi cơm cho trứng, cua và gia vị quyện đều, nêm muối và tiêu cho vừa ăn."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Xới cơm ra bát, rắc thêm chút hành lá nếu thích và thưởng thức nóng.",
+      "tip": "Món này ngon nhất khi ăn ngay; để nguội trứng sẽ bớt mềm."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 493.6,
+      "proteinG": 13.14,
+      "carbohydrateG": 83.77,
+      "fatG": 9.98,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1152.05
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Gạo tẻ (gạo Nhật hạt ngắn): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Thanh cua kanikama (cua giả Nhật): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 2,
+        "detail": "Trứng gà: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Mayonnaise: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá cắt nhỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Xì dầu Nhật (shoyu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Rượu sake nấu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hạt nêm gà Nhật (鶏ガラスープの素): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 9,
+        "detail": "Muối: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 10,
+        "detail": "Tiêu đen xay: all seven nutrients are not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

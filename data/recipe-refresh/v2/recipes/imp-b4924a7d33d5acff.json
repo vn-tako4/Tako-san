@@ -1,0 +1,572 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-b4924a7d33d5acff",
+    "slug": "chao-trung-trung",
+    "title": "Cháo trứng Trung"
+  },
+  "content": {
+    "description": "Cháo trắng sánh với trứng rơi bông vàng hành lá, bữa sáng Trung ấm nhẹ dễ tiêu.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 35,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Cháo",
+      "Trứng",
+      "Trung Hoa",
+      "Bữa sáng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-b4924a7d33d5acff.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://simplechinesefood.com/recipe/egg-congee-168598",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.australianeggs.org.au/recipes-and-cooking/egg-congee",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Gạo tẻ",
+      "canonicalIngredientId": "ING_ENR_E917189F6ABE168C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "australianeggs dùng 1 cup gạo (1/2 nếp + 1/2 tẻ) với 10 cups nước cho 4 phần (tỉ lệ 1:10); ở đây dùng 100% gạo tẻ theo hint assignment, 150 g ≈ 3/4 cup cho 3 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 374,
+        "proteinG": 7.51,
+        "carbohydrateG": 80.89,
+        "fatG": 1.03,
+        "fiberG": 1.8,
+        "sugarG": 0.33,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169707",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1800,
+        "unit": "ml",
+        "text": "1800 ml",
+        "gramEquivalent": 1800,
+        "basis": "tỉ trọng nước ≈ 1.0 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1800,
+          "unit": "ml"
+        }
+      },
+      "note": "Tỉ lệ gạo:nước 1:10 theo australianeggs (1 cup gạo : 10 cups nước); 150 g gạo ≈ 3/4 cup → 7.5 cups ≈ 1.8 L. simplechinesefood ghi 'đủ nước' không định lượng cụ thể.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 2,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 150,
+        "basis": "1 quả trứng gà lớn ~50 g (USDA FoodData Central: 1 large egg = 50 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "australianeggs dùng 4 quả trứng cho 4 phần (kiểu đập nguyên quả ốp la trong cháo); simplechinesefood đánh tan trứng rồi rưới thành dòng mỏng tạo vân trứng (kiểu 鸡蛋花粥) — lấy theo simplechinesefood vì đúng tên món 'cháo trứng' kiểu Hoa phổ biến, 3 quả cho 3 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá trung bình ~15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "simplechinesefood dùng hành lá thái nhỏ cho vào trước khi tắt bếp; australianeggs dùng 2 cây hành cho 4 phần để rắc khi dọn — lấy 2 cây cho 3 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 27,
+        "proteinG": 0.97,
+        "carbohydrateG": 5.74,
+        "fatG": 0.47,
+        "fiberG": 1.8,
+        "sugarG": 3.91,
+        "sodiumMg": 15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170006",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Gừng tươi thái sợi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "đơn vị gốc đã là gram (cân gừng tươi đã thái sợi)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "australianeggs dùng gừng thái sợi để ăn kèm khi dọn; simplechinesefood không dùng gừng — để tùy chọn theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu nhạt (light soy sauce)",
+      "canonicalIngredientId": "ING_ENR_F4D1B45C3CF6671C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "ml",
+        "text": "15 ml",
+        "gramEquivalent": 18,
+        "basis": "tỉ trọng xì dầu ≈ 1.2 g/ml → 15 ml ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "ml"
+        }
+      },
+      "note": "australianeggs dọn kèm xì dầu nhạt để nêm thêm khi ăn; simplechinesefood chỉ nêm muối + bột gà — mâu thuẫn nhẹ, lấy xì dầu làm gia vị ăn kèm theo australianeggs, mỗi người tự nêm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Muối ăn",
+      "canonicalIngredientId": "ING_ENR_361639D21BDA1726",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "muỗng cà phê",
+        "text": "0.75 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê muối ăn ≈ 6 g → 3/4 tsp ≈ 4.5 g, làm tròn 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "australianeggs dùng 1 tsp muối cho 4 phần → quy 3/4 tsp cho 3 phần; simplechinesefood nêm 'muối vừa ăn' không định lượng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Tiêu trắng xay",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "muỗng cà phê",
+        "text": "0.75 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê tiêu trắng xay ≈ 2.3 g → 3/4 tsp ≈ 1.7 g, làm tròn 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "australianeggs dùng 1 tsp tiêu trắng cho 4 phần → quy 3/4 tsp cho 3 phần; simplechinesefood không dùng tiêu. Tiêu trắng là gia vị đặc trưng của cháo Hoa nên giữ lại.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.61,
+        "fatG": 2.12,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "ml",
+        "text": "5 ml",
+        "gramEquivalent": 5,
+        "basis": "tỉ trọng dầu ăn ≈ 0.91 g/ml → 5 ml ≈ 4.6 g, làm tròn 5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "ml"
+        }
+      },
+      "note": "simplechinesefood cho 'một chút dầu' vào nồi cùng hành lá trước khi tắt bếp để cháo bóng mượt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171410",
+      "sourceNutritionNote": "Dầu ăn generic, tính theo số liệu dầu lạc."
+    },
+    {
+      "position": 9,
+      "sourceName": "Bột gà (chicken essence)",
+      "canonicalIngredientId": "ING_ENR_30F9F1C9585D2303",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê bột gà ≈ 3 g (ước lượng theo bột nêm dạng hạt thông thường)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "simplechinesefood nêm 'chicken essence' khi ăn; australianeggs dùng 1 tbsp bột súp + 1/2 tsp bột ngọt cho 4 phần — hai nguồn khác loại gia vị, lấy 1 tsp bột gà cho 3 phần, tùy chọn theo khẩu vị.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có mục bột gà/bột ngọt phù hợp nên để null; lượng dùng nhỏ, ảnh hưởng dinh dưỡng không đáng kể."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Vo gạo tẻ 2-3 lần cho sạch, cho vào tô cùng nước lạnh ngâm khoảng 1 giờ (có thể ngâm qua đêm trong tủ lạnh để sáng hôm sau nấu nhanh nhừ).",
+      "tip": "simplechinesefood: ngâm gạo trước giúp hạt gạo nhanh nở bung, cháo sánh mịn mà không cần ninh quá lâu.",
+      "timerMinutes": 60
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cho gạo đã ngâm (chắt bỏ nước ngâm) và 1.8 L nước lọc vào nồi lớn, đun lửa lớn cho sôi bùng.",
+      "tip": "Dùng nồi đáy dày để cháo không bén; tỉ lệ gạo:nước 1:10 cho cháo vừa sánh kiểu Hoa (australianeggs)."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Hạ xuống lửa vừa-nhỏ, đun liu riu và khuấy đều tay mỗi vài phút để chống bén đáy nồi, đến khi hạt gạo nở bung, nước cháo sánh và nổi những bong bóng nhỏ dày đặc.",
+      "tip": "simplechinesefood: thấy 'bong bóng nhỏ dày đặc' (dense little bubbles) nghĩa là cháo đã gần chín nhừ. Khuấy thường xuyên ở giai đoạn đầu là bí quyết cháo không khê.",
+      "timerMinutes": 45
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Trong lúc chờ cháo nhừ: đập 3 quả trứng vào bát, đánh tan đều thành 'egg liquid'; hành lá thái nhỏ; gừng thái sợi để riêng.",
+      "tip": "Đánh trứng thật tan và đều tay để khi rưới vào cháo tạo thành những vân trứng mịn đẹp."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Khi cháo đã nhừ sánh: giữ lửa vừa, một tay khuấy nhẹ cháo theo một chiều, tay kia rưới từ từ trứng đã đánh tan thành dòng mỏng vào nồi.",
+      "tip": "simplechinesefood: 'pour the egg liquid into the pot in a thin stream' — rưới chậm và khuấy liên tục thì trứng thành sợi vân mịn; đổ ồ ạt một lúc trứng sẽ vón cục to.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Nêm 3/4 muỗng cà phê muối, 3/4 muỗng cà phê tiêu trắng và 1 muỗng cà phê bột gà (nếu dùng), khuấy đều rồi nếm lại cho vừa miệng.",
+      "tip": "Nêm nhạt một chút vì khi dọn còn chấm thêm xì dầu; tiêu trắng là linh hồn vị cháo Hoa — đừng bỏ qua."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho hành lá thái nhỏ và 1 muỗng cà phê dầu ăn vào nồi, khuấy đều rồi tắt bếp, đậy nắp ủ thêm 2 phút cho hành chín tới và cháo bóng mượt.",
+      "tip": "simplechinesefood: cho hành + chút dầu vào rồi mới tắt bếp — dầu giúp cháo óng ả, hành giữ được màu xanh và mùi thơm.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Múc cháo ra tô, rắc gừng thái sợi lên trên mỗi tô.",
+      "tip": "australianeggs dọn cháo kèm gừng sợi, hành lá, xì dầu nhạt và thêm tiêu trắng — mỗi người tự nêm theo khẩu vị."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Dọn cháo nóng ngay, kèm chén xì dầu nhạt để chấm/nêm thêm.",
+      "tip": "Cháo để nguội sẽ đặc lại — khi hâm nóng lại, thêm một chút nước sôi và khuấy đều để cháo loãng ra như cũ."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Biến tấu (tùy chọn): muốn cháo kiểu ốp la như australianeggs, thay vì rưới trứng đánh tan, hãy đập nguyên quả trứng vào nồi cháo đang sôi liu riu, đậy nắp 3-4 phút cho lòng đào rồi múc ra.",
+      "tip": "Hai kiểu trứng đều phổ biến trong ẩm thực Hoa: vân trứng (鸡蛋花粥) mịn màng, còn trứng ốp la nguyên quả béo ngậy — tùy sở thích."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 187,
+      "proteinG": 3.76,
+      "carbohydrateG": 40.45,
+      "fatG": 0.52,
+      "fiberG": 0.9,
+      "sugarG": 0.17,
+      "sodiumMg": 1
+    },
+    "originalPerServing": {
+      "energyKcal": 283.75,
+      "proteinG": 10.75,
+      "carbohydrateG": 42.72,
+      "fatG": 7.06,
+      "fiberG": 1.37,
+      "sugarG": 0.82,
+      "sodiumMg": 920.32
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Trứng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Xì dầu nhạt (light soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Muối ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tiêu trắng xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      6,
+      7,
+      9
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

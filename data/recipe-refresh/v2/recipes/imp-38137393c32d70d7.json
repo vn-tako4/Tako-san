@@ -1,0 +1,768 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-38137393c32d70d7",
+    "slug": "risotto-tom",
+    "title": "Risotto tôm"
+  },
+  "content": {
+    "description": "Risotto tôm hồng kem sánh hạt gạo mềm thấm, món Ý biển cần tay đảo kiên nhẫn.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 40,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Risotto",
+      "Tôm",
+      "Ý",
+      "Kem sánh"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-38137393c32d70d7.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.fattoincasadabenedetta.it/ricetta/risotto-con-gamberoni/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.paginainizio.com/public/ricette/recipe.php?recipe=00018363",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Gạo Arborio hoặc Carnaroli",
+      "canonicalIngredientId": "ING_ENR_CF108EC14B33C342",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 320,
+        "unit": "g",
+        "text": "320 g",
+        "gramEquivalent": 320,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 320,
+          "unit": "g"
+        }
+      },
+      "note": "Benedetta: 320 g cho 4 người; Paginainizio: 350 g. Hai nguồn mâu thuẫn, lấy 320 g theo Benedetta (công thức chi tiết, uy tín). Benedetta gợi ý có thể dùng Carnaroli, Vialone Nano hoặc giống gạo risotto khác.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 358,
+        "proteinG": 6.5,
+        "carbohydrateG": 79.15,
+        "fatG": 0.52,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168931",
+      "sourceNutritionNote": "Số liệu SR Legacy của 'Rice, white, short-grain, raw, unenriched' (168931) không có mục Fiber (291) và Total Sugars (269) nên hai chỉ số này để null."
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm tươi nguyên con (cả vỏ và đầu)",
+      "canonicalIngredientId": "ING_ENR_86F058C2DF703866",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram (cân cả vỏ và đầu)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "Benedetta: 300 g gamberoni tươi cho 4 người; Paginainizio: 600 g gamberi. Hai nguồn chênh nhau gấp đôi. Lấy 400 g cả vỏ đầu: phần thịt sau bóc vỏ ≈ 250 g, vỏ và đầu dùng để nấu nước dùng tôm (fumetto) theo cả hai nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "Số liệu SR Legacy của 'Crustaceans, shrimp, raw' (175179) không có mục Fiber (291) và Total Sugars (269) nên hai chỉ số này để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hẹ tây (scalogno)",
+      "canonicalIngredientId": "ING_ENR_46D7BE25D076430A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "củ",
+        "text": "2 củ",
+        "gramEquivalent": 100,
+        "basis": "1 củ hẹ tây (scalogno) ~50 g; 2 củ ≈ 100 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Benedetta: 1 củ cho risotto + 1 củ cho nước dùng. Paginainizio không dùng hẹ. Lấy 2 củ theo Benedetta.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": "SR Legacy không có mục hẹ tây nên dùng số liệu hành tây (170000) làm đại diện gần nhất."
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi trung bình ~3 g; 2 tép ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Benedetta: 1 tép cho risotto + 1 tép cho nước dùng; Paginainizio: 1 tép. Lấy 2 tép theo Benedetta.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Rượu vang trắng khô",
+      "canonicalIngredientId": "ING_ENR_F568CF3B013695D9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "ml",
+        "text": "150 ml",
+        "gramEquivalent": 150,
+        "basis": "rượu vang trắng có tỉ trọng ≈ 1 nên 150 ml ≈ 150 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 150,
+          "unit": "ml"
+        }
+      },
+      "note": "Benedetta: 1 bicchiere (~100 ml) cho risotto + 1⁄2 bicchiere cho nước dùng; Paginainizio: 10 cl. Lấy tổng 150 ml theo Benedetta.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 82,
+        "proteinG": 0.07,
+        "carbohydrateG": 2.6,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.96,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174837",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Bơ lạt",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Benedetta: 30 g để mantecatura; Paginainizio: 1 noce burro (~15–20 g). Lấy 30 g theo Benedetta. QUAN TRỌNG: cả hai nguồn đều chỉ dùng bơ để làm sánh kem (mantecatura), KHÔNG dùng Parmesan hay phô mai — đúng truyền thống Ý không kết hợp phô mai với hải sản. Gợi ý 'phô mai' trong assignment không được áp dụng cho món này.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.1,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 643
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173410",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ô liu extra virgin",
+      "canonicalIngredientId": "ING_ENR_DE4B6B013D75B239",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh = 15 ml ≈ 13,6 g (tỉ trọng dầu ô liu ~0,91); 2 muỗng canh ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Benedetta: q.b. (một ít để rang vỏ tôm, một ít để xào hẹ, một ít để áp chảo tôm); Paginainizio: vài muỗng canh. Định lượng 2 muỗng canh cho toàn bộ quá trình.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 80,
+        "unit": "g",
+        "text": "80 g",
+        "gramEquivalent": 80,
+        "basis": "1 củ cà rốt nhỏ ~80 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 80,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ dùng để nấu nước dùng tôm theo Benedetta (1 carota). Paginainizio không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Cần tây",
+      "canonicalIngredientId": "ING_ENR_29B7EDD21E6B7106",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "g",
+        "text": "60 g",
+        "gramEquivalent": 60,
+        "basis": "1 cọng cần tây ~60 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 60,
+          "unit": "g"
+        }
+      },
+      "note": "Benedetta: 1 costa di sedano cho nước dùng; Paginainizio: 2 gambi sedano bianco cho vào risotto lúc giữa chừng. Lấy 1 cọng ~60 g nấu nước dùng theo Benedetta.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 14,
+        "proteinG": 0.69,
+        "carbohydrateG": 2.97,
+        "fatG": 0.17,
+        "fiberG": 1.6,
+        "sugarG": 1.34,
+        "sodiumMg": 80
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169988",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Mùi tây tươi",
+      "canonicalIngredientId": "ING_ENR_D6EDD5F0078ABE8C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "đơn vị gốc đã là gram (cân thực tế)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Benedetta: cọng mùi tây cho vào nước dùng, lá băm để mantecatura và trang trí. Định lượng 15 g cho cả hai việc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 2.97,
+        "carbohydrateG": 6.33,
+        "fatG": 0.79,
+        "fiberG": 3.3,
+        "sugarG": 0.85,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170416",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê muối tinh ~5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn đều ghi 'q.b.'. Định lượng 5 g (~1 muỗng cà phê) chia cho nước dùng và nêm risotto.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "g",
+        "text": "2 g",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê tiêu đen xay ~2 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn đều ghi 'q.b.'. Định lượng 2 g (~1 muỗng cà phê).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Nước dùng tôm (fumetto)",
+      "canonicalIngredientId": "ING_ENR_89514F9844B8626D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.2,
+        "unit": "lít",
+        "text": "1.2 lít",
+        "gramEquivalent": 1200,
+        "basis": "nước dùng có tỉ trọng ≈ 1 nên 1,2 l ≈ 1200 g (sau khi lọc bỏ bã)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.2,
+          "unit": "l"
+        }
+      },
+      "note": "Nấu từ vỏ và đầu tôm + rau củ theo cả hai nguồn (Benedetta: 1,5 l nước ninh 30 phút; Paginainizio: fumetto từ vỏ và đầu). Dùng entry 'Soup, stock, fish, home-prepared' (172885) trong SR Legacy làm đại diện gần nhất cho nước dùng hải sản tự nấu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 16,
+        "proteinG": 2.26,
+        "carbohydrateG": 0,
+        "fatG": 0.81,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 156
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172885",
+      "sourceNutritionNote": "Số liệu là của nước dùng cá tự nấu (172885), dùng làm đại diện gần nhất vì SR Legacy không có mục nước dùng tôm."
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "lít",
+        "text": "1.5 lít",
+        "gramEquivalent": 1500,
+        "basis": "nước có tỉ trọng = 1 nên 1,5 l = 1500 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "l"
+        }
+      },
+      "note": "Chỉ dùng để nấu nước dùng tôm (fumetto), không phải nguyên liệu ăn trực tiếp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Bóc vỏ tôm: tách vỏ, giữ lại đầu và vỏ; rút bỏ chỉ đen trên lưng. Để riêng một nửa số tôm nguyên con để trang trí, nửa còn lại băm nhỏ.",
+      "tip": "Mua tôm còn đầu và vỏ là bắt buộc — vỏ đầu chính là nguyên liệu làm nên nước dùng thơm ngọt.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đun nóng 1 muỗng canh dầu ô liu trong nồi; cho đầu và vỏ tôm vào rang 2–3 phút đến khi chuyển màu hồng và dậy mùi thơm.",
+      "tip": "Rang vỏ tôm thật kỹ là bí quyết của Benedetta: vỏ càng thơm, nước dùng càng ngọt đậm vị biển.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Thêm 1 tép tỏi nguyên, 1 củ hẹ tây bổ đôi, cà rốt và cần tây cắt khúc to, cùng cọng mùi tây vào nồi; xào thêm 5 phút.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đổ 75 ml rượu vang trắng vào, để bay hơi cồn; thêm 1,5 lít nước và chút muối, đun sôi rồi hạ lửa nhỏ ninh 30 phút.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Trong lúc ninh nước dùng, áp chảo nhanh tôm nguyên con với 1 muỗng canh dầu ô liu và ít mùi tây băm, 2–3 phút đến khi vừa chín tới và hơi xém; gắp ra để riêng.",
+      "tip": "Tôm chín rất nhanh — áp chảo quá lâu tôm sẽ dai. Chỉ cần vừa chuyển đục là được.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Lọc nước dùng tôm qua rây, bỏ bã; đổ lại vào nồi và giữ nóng liu riu trên bếp nhỏ trong suốt quá trình nấu risotto.",
+      "tip": "Nước dùng phải luôn nóng — châm nước dùng nguội vào sẽ làm gạo 'sốc nhiệt', hạt gạo chín không đều."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Phi thơm hẹ tây băm nhỏ và tỏi băm với chút dầu ô liu trong chảo sâu lòng, khoảng 5 phút đến khi hẹ trong và mềm.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho gạo vào chảo, đảo liên tục 2 phút đến khi hạt gạo nóng ran và trong ở rìa (tostatura).",
+      "tip": "Rang gạo (tostatura) giúp hạt gạo giữ được độ dai và không bị nát khi châm nước dùng nhiều lần.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Đổ 75 ml rượu vang trắng còn lại vào, để cồn bay hơi; sau đó châm từng muôi nước dùng tôm nóng, khuấy đều, chờ gạo ngấm hết mới châm muôi tiếp theo. Nấu 18–20 phút đến khi gạo chín al dente.",
+      "tip": "Khuấy thường xuyên nhưng nhẹ tay để gạo ra tinh bột tạo độ sánh, không nát hạt. Tổng lượng nước dùng dùng hết khoảng 1,2 lít.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Khi gạo gần chín, cho tôm băm nhỏ vào, đảo nhẹ 2 phút cho tôm chín và quyện vào gạo.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Tắt bếp; cho bơ và mùi tây băm vào, đảo nhanh cho bơ tan chảy quyện đều — đây là bước mantecatura tạo độ sánh kem đặc trưng. Nêm lại muối tiêu.",
+      "tip": "Mantecatura phải làm khi đã tắt bếp: bơ tan từ từ sẽ nhũ hóa thành lớp kem bóng mượt thay vì tách dầu."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Múc risotto ra đĩa sâu lòng khi còn nóng hổi, xếp tôm nguyên con đã áp chảo lên trên, rắc thêm mùi tây tươi và dùng ngay.",
+      "tip": "Benedetta gợi ý thêm: một nhúm vỏ chanh bào mịn hoặc vài giọt dầu ô liu extra virgin rưới lên trên sẽ làm món ăn tươi sáng hơn."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 55.13,
+      "proteinG": 0.18,
+      "carbohydrateG": 0.24,
+      "fatG": 6.11,
+      "fiberG": 0.12,
+      "sugarG": 0.04,
+      "sodiumMg": 50.33
+    },
+    "originalPerServing": {
+      "energyKcal": 588.74,
+      "proteinG": 32.99,
+      "carbohydrateG": 70.05,
+      "fatG": 16.34,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1151.76
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Gạo Arborio hoặc Carnaroli: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Tôm tươi nguyên con (cả vỏ và đầu): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hẹ tây (scalogno): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Rượu vang trắng khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu ô liu extra virgin: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Cần tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 12,
+        "detail": "Nước dùng tôm (fumetto): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

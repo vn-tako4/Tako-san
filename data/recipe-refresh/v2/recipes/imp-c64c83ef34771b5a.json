@@ -1,0 +1,611 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-c64c83ef34771b5a",
+    "slug": "canh-nam-sa-thai",
+    "title": "Canh nấm sả Thái"
+  },
+  "content": {
+    "description": "Canh nấm sả chua thanh dịu không cay, canh chay Thái khai vị mát lành dễ làm.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Canh chay",
+      "Nấm",
+      "Sả",
+      "Thái Lan"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-c64c83ef34771b5a.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.realthairecipes.com/recipes/clear-mushroom-lemongrass-soup/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://greenbowl2soul.com/mushroom-tom-yum-soup-vegan/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram (~2.5 cups nấm thái lát; ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "RTR: 2 cups nấm hỗn hợp (nấm rơm, enoki, nấm đen, oyster, mộc nhĩ...); GB2S: 2 cups (cremini + enoki) và khuyên dùng ít nhất 2 loại nấm để thêm kết cấu. Món này dùng nấm đùi gà theo hint. Số liệu dinh dưỡng từ USDA 'Mushroom, king oyster' (fdc 2003599) khớp đúng loại.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 46.4,
+        "proteinG": 2.41,
+        "carbohydrateG": 8.5,
+        "fatG": 0.31,
+        "fiberG": 3.01,
+        "sugarG": null,
+        "sodiumMg": 0.77
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003599",
+      "sourceNutritionNote": "khớp đúng loại nấm đùi gà (king oyster)"
+    },
+    {
+      "position": 1,
+      "sourceName": "Sả tươi",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 40,
+        "basis": "RTR: 1 cây sả cắt khúc 4 inch (~10 cm), đập dập; GB2S: 1 cây. Lấy 2 cây cho 3 phần ăn theo lượng nước; phần lõi dùng được ~20 g/cây (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Sả chỉ dùng lấy mùi, không ăn. RTR: đập dập bằng chày/cối hoặc sống dao rồi cho vào nước.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.31,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Lá chanh Thái (makrut/kaffir)",
+      "canonicalIngredientId": "ING_ENR_BC0280D3996F3546",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "lá",
+        "text": "5 lá",
+        "gramEquivalent": 2.5,
+        "basis": "5 lá ~2.5 g (ước lượng; lá chỉ dùng lấy mùi, không ăn)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "RTR: 4-6 lá xé đôi cho ra tinh dầu; GB2S: 3-4 lá. Lấy 5 lá ở giữa. Lá không ăn được — RTR khuyên vớt ra trước khi dọn. USDA không có dữ liệu dinh dưỡng cho lá chanh Thái.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có dữ liệu cho lá chanh Thái — để null"
+    },
+    {
+      "position": 3,
+      "sourceName": "Riềng tươi",
+      "canonicalIngredientId": "ING_ENR_A08FA02195519CE4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "lát",
+        "text": "3 lát",
+        "gramEquivalent": 8,
+        "basis": "RTR: 3 slices galangal; ~2-3 g/lát (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "slice"
+        }
+      },
+      "note": "RTR: 3 lát riềng; GB2S: 1 khúc riềng 1 inch. Lấy theo RTR (nguồn Thái). Riềng không ăn, chỉ lấy mùi; USDA không có dữ liệu cho riềng.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có dữ liệu cho riềng — để null, không thay bằng gừng"
+    },
+    {
+      "position": 4,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 10,
+        "basis": "3 quả ớt hiểm ~10 g (ớt hiểm nhỏ ~3 g/quả; ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "RTR: 3-20 quả 'to taste' — biên độ rất rộng; GB2S: 1 quả ớt đỏ Thái thái lát + 1⁄2 tsp ớt bột. Hai nguồn mâu thuẫn về độ cay — lấy 3 quả ở giữa, điều chỉnh theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "USDA không có mục riêng cho ớt hiểm Thái; dùng số liệu 'Peppers, hot chili, red, raw' (ớt đỏ cay nói chung, fdc 170106)"
+    },
+    {
+      "position": 5,
+      "sourceName": "Cà chua",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 120,
+        "basis": "đơn vị gốc đã là gram (1 quả cà chua ~120 g, cắt 8 theo chiều dọc)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "RTR: 1 quả cà chua cắt 8 theo chiều dọc; GB2S: 1 cup cà chua bi cắt đôi. Hai nguồn khác loại cà chua — lấy theo RTR (nguồn Thái).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram (2-3 cây hành lá thái nhỏ)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Hint món dùng hành lá; cả hai nguồn dùng ngò rí (RTR: 1-2 cọng ngò cả rễ đập dập lấy mùi + lá trang trí; GB2S: 1⁄4 cup ngò tươi) — có thể thay hành lá bằng ngò rí tùy thích.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "2 Tbsp = 30 ml, tỉ trọng ~1 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hint món dùng nước mắm; RTR và GB2S (bản chay) dùng 2 Tbsp white soy sauce — lấy nước mắm theo hint món. Nêm sau khi tắt bếp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 tsp đường cát ≈ 4 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "RTR: 1 tsp đường trắng; GB2S: 1 tsp đường nâu/palm — hai nguồn khớp nhau.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Nước cốt chanh",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 45,
+        "basis": "3 Tbsp = 45 ml, tỉ trọng ~1 g/ml (cả hai nguồn: 3 tablespoons lime juice)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "RTR: cho nước chanh vào CUỐI CÙNG sau khi tắt bếp vì nước chanh mất vị chua khi đun sôi. Nếm và thêm nếu cần — vị phải chua cay nổi bật.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.42,
+        "carbohydrateG": 8.42,
+        "fatG": 0.07,
+        "fiberG": 0.4,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168156",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "cup",
+        "text": "4 cup",
+        "gramEquivalent": 960,
+        "basis": "4 cups = 960 ml, tỉ trọng 1 g/ml",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 960,
+          "unit": "g"
+        }
+      },
+      "note": "RTR: 3 cups nước; GB2S: 6 cups vegetable stock — mâu thuẫn, cả hai đều không ghi số khẩu phần. Lấy 4 cups (~960 ml) cho 3 khẩu phần (~320 ml/người).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế sả: bóc bỏ lớp vỏ già bên ngoài, cắt bỏ phần ngọn, đập dập phần lõi rồi cắt khúc khoảng 10 cm.",
+      "tip": "RTR: đập dập bằng chày cối đá hoặc sống dao để tinh dầu dễ thoát ra."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Lá chanh xé nhỏ cho thơm; riềng thái lát mỏng; ớt thái lát hoặc giã dập.",
+      "tip": "RTR: xé lá chanh để giải phóng tinh dầu; ớt cho nguyên quả nếu muốn ít cay."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Nấm đùi gà rửa sạch, thái lát vừa ăn; cà chua cắt 8 theo chiều dọc; hành lá thái nhỏ.",
+      "tip": "GB2S: dùng ít nhất 2 loại nấm để thêm kết cấu thú vị; cà chua không nấu quá 1-2 phút để vỏ không bong."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho 4 cups nước, sả, riềng và lá chanh vào nồi, đun sôi rồi hạ lửa vừa, nấu 5 phút cho ra mùi thơm (nước hơi chuyển xanh nhạt là đạt).",
+      "tip": "RTR: đun gia vị thơm khoảng 5 phút để hương thấm vào nước.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho nấm và ớt vào, nấu 2-3 phút đến khi nấm mềm.",
+      "tip": "RTR: nấu nấm 2-3 phút đến khi mềm.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho cà chua vào, nấu chưa đầy 1 phút đến khi cà chua vừa mềm.",
+      "tip": "RTR: cà chua chín rất nhanh; GB2S: không nấu quá 1-2 phút, đừng để vỏ cà chua bong ra.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "TẮT BẾP. Nêm nước mắm và đường, khuấy tan.",
+      "tip": "RTR: tắt bếp rồi mới nêm — nêm khi còn sôi làm vị gắt."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cuối cùng cho nước cốt chanh vào, nếm: vị phải chua cay nổi bật; nếu chưa đủ chua thì thêm chanh.",
+      "tip": "RTR: nước chanh mất vị chua khi đun sôi nên phải cho vào cuối cùng, sau khi tắt bếp."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Vớt bỏ sả, riềng, lá chanh (không ăn được) hoặc dặn người ăn tránh nhai phải. Múc canh ra tô, rắc hành lá, dùng ngay khi còn nóng hổi.",
+      "tip": "RTR: sả, riềng, lá chanh, rễ ngò đều không ăn — có thể vớt ra trước khi dọn cho dễ ăn."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 2.13,
+      "proteinG": 0.12,
+      "carbohydrateG": 0.49,
+      "fatG": 0.01,
+      "fiberG": 0.17,
+      "sugarG": 0.16,
+      "sodiumMg": 1.07
+    },
+    "originalPerServing": {
+      "energyKcal": 82.68,
+      "proteinG": 3.76,
+      "carbohydrateG": 17.17,
+      "fatG": 0.49,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 790.35
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Nấm đùi gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Sả tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Lá chanh Thái (makrut/kaffir): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Riềng tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Ớt hiểm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Cà chua: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Nước cốt chanh: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "MISSING_NUTRIENT_REFERENCE",
+        "ingredientPosition": 10,
+        "detail": "Nước lọc: nutrient values have no source reference"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

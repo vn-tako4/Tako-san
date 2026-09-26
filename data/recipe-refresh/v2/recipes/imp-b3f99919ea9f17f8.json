@@ -1,0 +1,847 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-b3f99919ea9f17f8",
+    "slug": "canh-bi-dao-thit-bam-kieu-hoa",
+    "title": "Canh bí đao thịt bằm kiểu Hoa"
+  },
+  "content": {
+    "description": "Bí đao nấu mềm trong nước dùng thịt bằm viên nhỏ, thêm gừng và hành lá, món canh thanh nhẹ giải nhiệt trong bữa cơm Trung Hoa.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Trung Hoa",
+      "Món canh",
+      "Thanh mát",
+      "Cơm nhà"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-b3f99919ea9f17f8.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://thewoksoflife.com/chinese-winter-melon-soup-meatballs/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://fobbyfoody.com/recipes/2014/10/19/winter-melon-soup",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://smellylunchbox.com/winter-melon-soup/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt heo xay",
+      "canonicalIngredientId": "GROUND_PORK",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "WOL công thức gốc dùng 450 g thịt (không ghi số phần ăn); Fobby Foody dùng 2/3 lb (~300 g) thịt cho một nồi tương đương. Định lượng 300 g ở đây được quy về 4 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 263,
+        "proteinG": 16.88,
+        "carbohydrateG": 0,
+        "fatG": 21.19,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167902",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Bí đao (đã gọt vỏ, bỏ hạt)",
+      "canonicalIngredientId": "WINTER_MELON",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 600,
+        "unit": "g",
+        "text": "600 g",
+        "gramEquivalent": 600,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 600,
+          "unit": "g"
+        }
+      },
+      "note": "WOL dùng 450 g bí đao; Fobby Foody dùng 1.5 lb (~680 g). Lấy 600 g cho 4 phần ăn, cắt miếng con chì dày ~0.6 cm (WOL: 1/4-inch chunks).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 13,
+        "proteinG": 0.4,
+        "carbohydrateG": 3,
+        "fatG": 0.2,
+        "fiberG": 2.9,
+        "sugarG": null,
+        "sodiumMg": 111
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170069",
+      "sourceNutritionNote": "USDA không có số liệu đường (sugars) cho mục này nên để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Lòng trắng trứng",
+      "canonicalIngredientId": "ING_ENR_1F7EDFA788052ACA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cái",
+        "text": "1 cái",
+        "gramEquivalent": 33,
+        "basis": "1 quả trứng gà lớn ~50 g (USDA FoodData Central: 1 large egg = 50 g); lòng trắng chiếm khoảng 2/3 quả ≈ 33 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "WOL dùng 1 lòng trắng trứng cho 450 g thịt (giúp thịt viên dai, kết dính); Fobby Foody dùng 1 quả trứng nguyên quả cho 300 g thịt — hai nguồn mâu thuẫn, lấy theo WOL.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 52,
+        "proteinG": 10.9,
+        "carbohydrateG": 0.73,
+        "fatG": 0.17,
+        "fiberG": 0,
+        "sugarG": 0.71,
+        "sodiumMg": 166
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172183",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Gừng tươi băm nhỏ",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "đơn vị gốc đã là gram (cân gừng tươi đã băm)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "WOL dùng 1 tbsp gừng băm cho 450 g thịt → quy 2 tsp (~10 g) cho 300 g thịt, trộn vào thịt viên để khử mùi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá trung bình ~15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "WOL dùng 1 cây thái nhỏ trộn thịt viên + 2 cây (lấy phần trắng) xào thơm nước dùng; Fobby Foody dùng 4 cây hành. Ở đây 2 cây: 1 cây thái nhỏ trộn thịt, 1 cây tách trắng/xanh (trắng xào thơm, xanh rắc trang trí).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 27,
+        "proteinG": 0.97,
+        "carbohydrateG": 5.74,
+        "fatG": 0.47,
+        "fiberG": 1.8,
+        "sugarG": 3.91,
+        "sodiumMg": 15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170006",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu nhạt (light soy sauce)",
+      "canonicalIngredientId": "ING_ENR_F4D1B45C3CF6671C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 25,
+        "unit": "ml",
+        "text": "25 ml",
+        "gramEquivalent": 30,
+        "basis": "tỉ trọng xì dầu ≈ 1.2 g/ml → 25 ml ≈ 30 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 25,
+          "unit": "ml"
+        }
+      },
+      "note": "WOL dùng 2.5 tbsp cho 450 g thịt → quy 25 ml cho 300 g thịt; Fobby Foody không dùng xì dầu trong thịt viên — mâu thuẫn, lấy theo WOL.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Rượu Thiệu Hưng (Shaoxing wine)",
+      "canonicalIngredientId": "ING_ENR_579A6A19552283BE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "ml",
+        "text": "20 ml",
+        "gramEquivalent": 20,
+        "basis": "tỉ trọng rượu nấu ăn ≈ 1.0 g/ml → 20 ml ≈ 20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "ml"
+        }
+      },
+      "note": "WOL dùng 2 tbsp cho 450 g thịt → quy 20 ml cho 300 g thịt, để khử mùi tanh và tăng hương vị thịt viên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.5,
+        "carbohydrateG": 6.3,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 1.55,
+        "sodiumMg": 626
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169070",
+      "sourceNutritionNote": "USDA không có mục Shaoxing wine riêng; dùng số liệu rượu nấu ăn (cooking wine) generic gần nhất, chỉ mang tính tham chiếu."
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "ml",
+        "text": "5 ml",
+        "gramEquivalent": 5,
+        "basis": "tỉ trọng dầu mè ≈ 0.92 g/ml → 5 ml ≈ 4.6 g, làm tròn 5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "ml"
+        }
+      },
+      "note": "WOL dùng 1 tsp trong thịt viên + 1/2 tsp trong nước dùng cho 450 g công thức gốc → quy tổng 5 ml cho 300 g (3 ml ướp thịt, 2 ml nêm canh).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Tiêu trắng xay",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "muỗng cà phê",
+        "text": "0.75 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê tiêu trắng xay ≈ 2.3 g → 3/4 tsp ≈ 1.7 g, làm tròn 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL dùng 1/2 tsp trong thịt viên + 1/2 tsp trong nước dùng cho 450 g → quy 3/4 tsp cho 300 g (1/2 tsp ướp thịt, 1/4 tsp nêm canh).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.61,
+        "fatG": 2.12,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.33,
+        "unit": "muỗng cà phê",
+        "text": "0.33 muỗng cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "1 muỗng cà phê đường cát ≈ 4.2 g → 1/3 tsp ≈ 1.4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL dùng 1/2 tsp đường cho 450 g thịt (cân bằng vị mặn) → quy 1/3 tsp cho 300 g thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": "USDA không có số liệu đường (sugars) cho mục này nên để null."
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối ăn",
+      "canonicalIngredientId": "ING_ENR_361639D21BDA1726",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ăn ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL dùng 1/4 tsp ướp thịt + nêm 'to taste' trong canh; smellylunchbox dùng 1.5-2 tsp muối cho 8 cups (~1.9 L) nước. Với 1 L nước dùng ở đây, dùng tổng ~1 tsp (1/4 tsp ướp thịt, còn lại nêm canh), nếm lại vừa miệng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước dùng gà",
+      "canonicalIngredientId": "ING_ENR_11FB997D0B872A56",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 650,
+        "unit": "ml",
+        "text": "650 ml",
+        "gramEquivalent": 650,
+        "basis": "tỉ trọng nước dùng ≈ 1.0 g/ml → 650 ml ≈ 650 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 650,
+          "unit": "ml"
+        }
+      },
+      "note": "WOL dùng 4 cups (~950 ml) nước dùng gà + 2 cups (~475 ml) nước cho công thức gốc → quy 650 ml nước dùng + 350 ml nước cho 4 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 2.52,
+        "carbohydrateG": 3.53,
+        "fatG": 1.2,
+        "fiberG": 0,
+        "sugarG": 1.58,
+        "sodiumMg": 143
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172884",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Nước lọc (nấu canh)",
+      "canonicalIngredientId": "ING_ENR_0516DEDB4CC96E65",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 350,
+        "unit": "ml",
+        "text": "350 ml",
+        "gramEquivalent": 350,
+        "basis": "tỉ trọng nước ≈ 1.0 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 350,
+          "unit": "ml"
+        }
+      },
+      "note": "Pha cùng nước dùng gà theo tỉ lệ của WOL (quy về 4 phần ăn).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước lọc không đóng góp dinh dưỡng đáng kể nên để null."
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước lọc (trộn thịt viên)",
+      "canonicalIngredientId": "ING_ENR_C85AAB390B256788",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "ml",
+        "text": "20 ml",
+        "gramEquivalent": 20,
+        "basis": "tỉ trọng nước ≈ 1.0 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "ml"
+        }
+      },
+      "note": "WOL dùng 2 tbsp nước cho 450 g thịt → quy 20 ml cho 300 g thịt, giúp thịt viên mọng nước.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước lọc không đóng góp dinh dưỡng đáng kể nên để null."
+    },
+    {
+      "position": 14,
+      "sourceName": "Dầu lạc (dầu ăn)",
+      "canonicalIngredientId": "ING_ENR_F62048ADFE1B502B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "ml",
+        "text": "10 ml",
+        "gramEquivalent": 9,
+        "basis": "tỉ trọng dầu ăn ≈ 0.91 g/ml → 10 ml ≈ 9.1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "ml"
+        }
+      },
+      "note": "WOL dùng 1 tbsp dầu để xào phần trắng hành lá cho công thức gốc → quy 2 tsp (~10 ml) cho bản 4 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171410",
+      "sourceNutritionNote": "Dầu ăn generic, tính theo số liệu dầu lạc."
+    },
+    {
+      "position": 15,
+      "sourceName": "Ngò rí (trang trí)",
+      "canonicalIngredientId": "ING_ENR_0F9D040BCEE6A9AF",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Ngò rí via the same name key",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "WOL dùng 'a large handful of cilantro' rắc lên khi dọn; Fobby Foody dùng 1/2 cup ngò. Không bắt buộc, chỉ để trang trí và tăng hương.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế bí đao: gọt bỏ lớp vỏ xanh dày bên ngoài, nạo sạch hạt và phần ruột xốp, rửa sạch rồi cắt thành miếng con chì dày khoảng 0.6 cm, cỡ vừa ăn.",
+      "tip": "WOL: cắt miếng 1/4-inch (6 mm); không nấu quá nhừ — bí đao chín tới vẫn giữ được độ giòn nhẹ, trong veo là đạt."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Ướp thịt viên: cho thịt heo xay vào tô lớn, thêm xì dầu nhạt, rượu Thiệu Hưng, dầu mè (3 ml), 1/2 muỗng cà phê tiêu trắng, đường, 1/4 muỗng cà phê muối, lòng trắng trứng, gừng băm, 1 cây hành lá thái nhỏ và 20 ml nước.",
+      "tip": "Cho đủ gia vị ướp vào một lần rồi mới quết — WOL nhấn mạnh bước quết kỹ quyết định độ dai của thịt viên."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Quết thịt một chiều: dùng đũa quết hỗn hợp thịt theo một chiều ít nhất 8-10 phút, đến khi thịt dẻo quánh, dính và có sức cản rõ rệt.",
+      "tip": "WOL: quết một chiều giúp sợi thịt liên kết, thịt viên dai giòn kiểu Hoa; có thể dùng máy đánh trứng (đầu paddle) tốc độ thấp 6-7 phút thay cho quết tay.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Vo viên: thoa một lớp dầu mỏng vào lòng bàn tay, vo từng viên thịt cỡ quả bóng golf (đường kính ~3 cm). Xếp viên ra đĩa đã thoa dầu, để tủ lạnh trong lúc nấu nước dùng.",
+      "tip": "Fobby Foody vo viên cỡ 1 inch (~2.5 cm); để lạnh giúp viên chắc, khi thả vào nước sôi không bị vỡ."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Phi thơm: đặt nồi canh lên bếp lửa vừa, cho dầu lạc vào, xào phần trắng của 1 cây hành lá khoảng 1 phút cho thơm.",
+      "tip": "WOL: chỉ xào phần trắng hành khoảng 1 phút, không để cháy — đây là lớp hương nền cho nước canh.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Nấu bí đao: đổ nước dùng gà và nước lọc vào nồi, cho bí đao vào, đun sôi rồi hạ lửa vừa, nấu khoảng 8-10 phút đến khi bí đao gần trong.",
+      "tip": "Cho bí đao vào từ khi nước còn nguội/lúc mới sôi để bí chín đều từ ngoài vào trong, không bị nát mặt ngoài mà trong còn sống.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Thả thịt viên: khi nước đang sôi, nhẹ nhàng thả từng viên thịt vào nồi bằng muỗng đã thoa dầu. Đun cho nước sôi trở lại.",
+      "tip": "WOL: thả viên khi nước đang sôi để viên se mặt ngay, không bị rã; Fobby Foody: viên nổi lên mặt nước là dấu hiệu đã chín.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nêm nếm: thêm 1/4 muỗng cà phê tiêu trắng còn lại, 2 ml dầu mè và muối (khoảng 3/4 muỗng cà phê), khuấy nhẹ, nếm lại cho vừa miệng.",
+      "tip": "smellylunchbox nêm 1.5-2 muỗng cà phê muối cho 1.9 L nước; với 1 L nước ở đây khoảng 1 muỗng cà phê là vừa, nhưng luôn nếm lại vì độ mặn nước dùng gà mỗi loại khác nhau."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Hoàn thiện: nấu thêm 3-4 phút đến khi thịt viên nổi hẳn lên mặt và chín đều, bí đao trong veo nhưng không nát. Tắt bếp.",
+      "tip": "WOL: tổng thời gian sau khi thả viên khoảng 3-4 phút; không đun lâu quá bí đao sẽ bở và đục nước.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn món: múc canh ra tô lớn, rắc phần xanh hành lá thái nhỏ và ngò rí lên trên. Dùng nóng ngay.",
+      "tip": "Biến tấu theo WOL: có thể thêm 30-50 g miến dong đã ngâm mềm vào nồi ở bước 8 để thành bản canh miến thịt viên đầy đủ như công thức gốc."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 2,
+      "proteinG": 0.05,
+      "carbohydrateG": 0.44,
+      "fatG": 0.02,
+      "fiberG": 0.05,
+      "sugarG": 0.04,
+      "sodiumMg": 0.33
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Thịt heo xay: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Bí đao (đã gọt vỏ, bỏ hạt): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Lòng trắng trứng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Xì dầu nhạt (light soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Rượu Thiệu Hưng (Shaoxing wine): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tiêu trắng xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Muối ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước dùng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Nước lọc (nấu canh): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước lọc (trộn thịt viên): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Dầu lạc (dầu ăn): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

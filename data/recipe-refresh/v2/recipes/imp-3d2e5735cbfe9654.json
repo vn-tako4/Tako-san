@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-3d2e5735cbfe9654",
+    "slug": "tom-rang-muoi-tieu",
+    "title": "Tôm rang muối tiêu"
+  },
+  "content": {
+    "description": "Tôm rang vỏ giòn muối-tiêu-ớt ăn cả vỏ, món tôm muối tiêu Hồng Kông mặn mà khai vị.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Muối tiêu",
+      "Tôm",
+      "Hồng Kông",
+      "Khai vị"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-3d2e5735cbfe9654.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://thewoksoflife.com/wprm_print/salt-and-pepper-shrimp/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.chinasichuanfood.com/chinese-salt-and-pepper-shrimp/?replytocom=967627",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm tươi lớn (còn vỏ, lấy chỉ lưng)",
+      "canonicalIngredientId": "ING_ENR_0521A176A0B891DF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 350,
+        "unit": "g",
+        "text": "350 g",
+        "gramEquivalent": 350,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 350,
+          "unit": "g"
+        }
+      },
+      "note": "WOL dùng 1 lb (450 g) tôm lớn còn vỏ; CSF dùng 300 g tôm đã bóc chỉ. Hai nguồn chênh nhau, lấy ~350 g cho 3 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "USDA không phân tích chất xơ và đường cho tôm (thực phẩm động vật) — ghi 0."
+    },
+    {
+      "position": 1,
+      "sourceName": "Hạt tiêu Tứ Xuyên (nguyên hạt)",
+      "canonicalIngredientId": "ING_ENR_61F99A82F8245317",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng canh hạt tiêu nguyên hạt ≈ 6 g (USDA: 1 tbsp tiêu đen nguyên hạt ≈ 6,4 g; hạt tiêu Tứ Xuyên nhẹ và xốp hơn một chút)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: tỉ lệ 2 phần tiêu : 1 phần muối (theo thể tích); CSF: 1 tbsp tiêu + 1 tsp muối. Bột muối tiêu làm ra nhiều hơn lượng rắc thực tế — chỉ rắc vừa ăn, phần dư bảo quản dùng dần.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có mục tiêu Tứ Xuyên — để null, tuyệt đối không bịa số."
+    },
+    {
+      "position": 2,
+      "sourceName": "Muối biển",
+      "canonicalIngredientId": "ING_ENR_881CFF1F982AA4BB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 9,
+        "unit": "g",
+        "text": "9 g",
+        "gramEquivalent": 9,
+        "basis": "1 muỗng cà phê muối ăn ≈ 6 g (USDA): 1/2 tsp để ướp tôm (3 g) + 1 tsp để làm bột muối tiêu (6 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 9,
+          "unit": "g"
+        }
+      },
+      "note": "CSF: 1/2 tsp ướp tôm + 1 tsp rang cùng tiêu; WOL: tỉ lệ 2:1 tiêu:muối theo thể tích. Tổng ~1,5 tsp ≈ 9 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Bột bắp (để áo tôm)",
+      "canonicalIngredientId": "ING_ENR_D2EAF583347FED22",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Bột bắp via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 25,
+        "unit": "g",
+        "text": "25 g",
+        "gramEquivalent": 25,
+        "basis": "3 muỗng canh bột bắp ≈ 25 g (USDA: 1 tbsp bột bắp = 8 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 25,
+          "unit": "g"
+        }
+      },
+      "note": "WOL dùng 3 tbsp bột bắp hoặc bột năng; CSF dùng 1/4 cup bột bắp (≈ 30 g) — hai nguồn chênh nhẹ, lấy 3 tbsp theo WOL.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 381,
+        "proteinG": 0.26,
+        "carbohydrateG": 91.27,
+        "fatG": 0.05,
+        "fiberG": 0.9,
+        "sugarG": 0,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169698",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Dầu ăn (để chiên)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 80,
+        "unit": "ml",
+        "text": "80 ml",
+        "gramEquivalent": 73,
+        "basis": "1/3 cup ≈ 80 ml (WOL); tỉ trọng dầu ăn ~0,91 → ≈ 73 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 80,
+          "unit": "ml"
+        }
+      },
+      "note": "Định lượng là lượng dầu dùng để chiên ngập/chảo — chỉ một phần nhỏ thấm vào tôm, phần lớn còn lại trong chảo nên không tính là lượng ăn vào.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "tép",
+        "text": "6 tép",
+        "gramEquivalent": 18,
+        "basis": "1 tép tỏi ≈ 3 g (USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6,
+          "unit": "piece"
+        }
+      },
+      "note": "WOL: 6 tép băm nhuyễn để phi; CSF: 2 tép băm — hai nguồn chênh nhau, lấy theo WOL là nguồn chi tiết hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "quả",
+        "text": "4 quả",
+        "gramEquivalent": 6,
+        "basis": "mỗi quả ớt hiểm ~1,5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "WOL dùng 1 quả ớt dài (xanh hoặc đỏ) thái lát; CSF dùng 1/4 quả ớt chuông xanh + 1/4 quả ớt chuông đỏ (tùy chọn) — hai nguồn khác loại ớt; theo gợi ý món dùng ớt hiểm, lấy 4 quả thái lát.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "Dùng số liệu ớt cay đỏ tươi (hot chili, red, raw) làm đại diện cho ớt hiểm."
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "mỗi cây hành lá vừa ~15 g (USDA: 1 cây hành lá lớn ≈ 25 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "WOL: 1 cây thái nhỏ; CSF: 1 cây (lấy phần trắng) băm — dùng 2 cây cho 3 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Gừng tươi (để ướp tôm)",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "đơn vị gốc đã là gram (CSF: '1 thumb ginger' — 1 mẩu gừng bằng ngón tay cái)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ CSF dùng gừng ướp tôm 15 phút rồi bỏ đi; WOL không ướp gừng — giữ theo CSF.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế khô: tỏi bóc vỏ băm nhuyễn; ớt hiểm thái lát mỏng; hành lá cắt khúc ngắn; đong sẵn bột bắp, muối và hạt tiêu Tứ Xuyên."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Làm bột muối tiêu (椒盐): cho hạt tiêu Tứ Xuyên vào nồi hoặc chảo khô, rang trên lửa vừa-nhỏ đến khi dậy mùi thơm nồng. Để nguội hoàn toàn rồi giã hoặc xay thành bột mịn.",
+      "tip": "WOL rang ~15 phút cho thật thơm; CSF rang nhanh ~1 phút trên lửa nhỏ — hai nguồn mâu thuẫn về thời gian; điểm chung là rang đến thơm và TUYỆT ĐỐI không để cháy vì cháy sẽ đắng.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Vẫn chảo khô đó, cho muối vào rang trên lửa vừa đến khi muối hơi ngả vàng. Để nguội rồi trộn đều với tiêu đã xay — được bột muối tiêu.",
+      "tip": "Bột làm dư ra, cho vào lọ kín để dùng dần cho các món rang muối khác (gà, mực, đậu hũ).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Sơ chế tôm: cắt râu, giữ nguyên vỏ, dùng tăm lấy chỉ lưng, rửa sạch rồi thấm thật khô bằng khăn giấy.",
+      "tip": "Tôm phải thật khô thì lớp bột áo mới bám và chiên mới giòn (WOL)."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Ướp tôm với 1/2 muỗng cà phê muối và gừng đập dập, trộn đều, để yên 15 phút cho ngấm rồi gạt bỏ gừng.",
+      "tip": "Bước ướp gừng theo CSF; WOL bỏ qua bước này.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Lăn từng con tôm qua bột bắp cho phủ đều một lớp mỏng, giũ nhẹ cho rơi hết bột thừa.",
+      "tip": "Lớp bột phải mỏng và giũ thật kỹ — bột dày sẽ bở, không giòn."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đun nóng dầu trong chảo sâu lòng đến khi mặt dầu gợn sóng (khoảng 175–190°C). Chiên tôm từng mẻ nhỏ, mỗi mặt khoảng 30–60 giây đến vàng giòn. Vớt ra để ráo trên giấy thấm dầu, rắc ngay một lớp bột muối tiêu khi tôm còn nóng.",
+      "tip": "Dầu đủ nóng là yếu tố quyết định độ giòn (CSF). Chiên mẻ nhỏ, không chen chúc — dầu tụt nhiệt tôm sẽ ngấm dầu, ỉu (WOL).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Chắt bớt dầu trong chảo, chỉ để lại khoảng 1/2 muỗng canh. Cho tỏi băm vào phi trên lửa vừa đến vừa ngả vàng thì vớt ra để ráo trên giấy thấm dầu.",
+      "tip": "Tỏi vừa vàng là vớt ngay — để cháy sẽ đắng và hỏng cả món (WOL).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho ớt thái lát và hành lá vào chảo (vẫn còn chút dầu), đảo nhanh cho dậy mùi thơm. Tắt bếp, cho tỏi phi trở lại chảo đảo khoảng 1 phút; cho tôm đã chiên vào đảo nhanh tay khoảng 10 giây, rắc thêm bột muối tiêu cho vừa ăn.",
+      "tip": "Đây là món 'khô' — chảo chỉ còn rất ít dầu ở bước này (WOL)."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn tôm ra đĩa, rắc nốt phần bột muối tiêu còn lại lên mặt. Ăn nóng, có thể ăn cả vỏ giòn.",
+      "tip": "CSF gợi ý rắc phần bột còn lại lên mặt đĩa khi dọn để vừa đẹp vừa đậm vị."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Tôm tươi lớn (còn vỏ, lấy chỉ lưng): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Hạt tiêu Tứ Xuyên (nguyên hạt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Muối biển: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Bột bắp (để áo tôm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 4,
+        "detail": "Dầu ăn (để chiên): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Ớt hiểm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 8,
+        "detail": "Gừng tươi (để ướp tôm): consumed/absorbed amount is not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      4
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      }
+    ]
+  }
+}

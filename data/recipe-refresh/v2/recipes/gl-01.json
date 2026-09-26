@@ -1,0 +1,452 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "gl-01",
+    "slug": "pasta-pomodoro",
+    "title": "Mì Ý sốt cà chua Pomodoro"
+  },
+  "content": {
+    "description": "Món mì Ý kinh điển với sốt cà chua tươi, tỏi phi thơm và dầu olive tinh tế.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 18,
+    "servings": 2,
+    "difficulty": "easy",
+    "tags": [
+      "Ý",
+      "Pasta",
+      "Dưới 20 phút"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/gl-01.json",
+    "rawSchemaSignature": "conflicts_notes,ingredients,nutrition_computed,recipe_id,servings,sources_read,steps",
+    "sources": [
+      {
+        "url": "https://www.recipesfromitaly.com/spaghetti-al-pomodoro/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.vincenzosplate.com/spaghetti-al-pomodoro/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.youtube.com/shorts/7X5bAKGGJXo",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "conflicts_notes: Định lượng mì khô cho 2 người: video chef Ý dùng 200 g/2 phần; Recipes from Italy dùng 350 g/4 phần (tương đương 175 g/2 phần); Vincenzo's Plate dùng 300 g/4 phần (150 g/2 phần). File này dùng 200 g theo chuẩn khẩu phần Ý phổ biến (khoảng 100 g mì khô/người).",
+      "conflicts_notes: Lượng dầu olive: Recipes from Italy dùng 40 g/4 phần; video 2 phần dùng tới 4-5 muỗng canh. File này dùng 2 muỗng canh (~27 g) để sốt vừa bóng, không ngấy.",
+      "conflicts_notes: Thời gian ninh sốt: Recipes from Italy ninh tổng ~40 phút cho sốt sánh đặc; Vincenzo ninh nhanh ~20 phút cho vị tươi. File này chọn cách ninh chậm theo Recipes from Italy."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì spaghetti khô",
+      "canonicalIngredientId": "ING_ENR_6D3475084F90DC20",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "Định lượng chuẩn Ý cho 2 người ăn: video của đầu bếp Ý dùng 200 g mì khô cho 2 phần; Recipes from Italy dùng 350 g cho 4 phần.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 371,
+        "proteinG": 13,
+        "carbohydrateG": 74.7,
+        "fatG": 1.51,
+        "fiberG": 3.2,
+        "sugarG": 2.67,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "USDA FoodData Central (https://fdc.nal.usda.gov/) — tra cứu theo FDC ID 169736 (Pasta, dry, enriched)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Dầu olive",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "2 muỗng canh dầu olive, mỗi muỗng ~13,5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "USDA FoodData Central (https://fdc.nal.usda.gov/) — tra cứu theo FDC ID 171413 (Oil, olive, salad or cooking)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "2 tép tỏi lớn, mỗi tép ~3 g (lột vỏ).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "USDA FoodData Central (https://fdc.nal.usda.gov/) — tra cứu theo FDC ID 169230 (Garlic, raw)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Cà chua lột vỏ đóng hộp",
+      "canonicalIngredientId": "ING_ENR_A636B35990491B30",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "1 lon cà chua lột vỏ đóng hộp loại 400 g (dùng cả phần nước trong lon).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 16,
+        "proteinG": 0.79,
+        "carbohydrateG": 3.47,
+        "fatG": 0.25,
+        "fiberG": 1.9,
+        "sugarG": 2.55,
+        "sodiumMg": 115
+      },
+      "sourceNutritionReference": "USDA FoodData Central (https://fdc.nal.usda.gov/) — tra cứu theo FDC ID 170051 (Tomatoes, red, ripe, canned, packed in tomato juice)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "mixed_process",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê muối gạt ngang ~5 g; chia một nửa cho nước luộc mì, một nửa nêm sốt.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38800
+      },
+      "sourceNutritionReference": "USDA FoodData Central (https://fdc.nal.usda.gov/) — tra cứu theo FDC ID 173468 (Salt, table)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Lá húng quế tươi",
+      "canonicalIngredientId": "ING_ENR_0121EB2200008912",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "lá",
+        "text": "4 lá",
+        "gramEquivalent": 1,
+        "basis": "4 lá húng quế tươi lớn, mỗi lá ~0,25 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 3.15,
+        "carbohydrateG": 2.65,
+        "fatG": 0.64,
+        "fiberG": 1.6,
+        "sugarG": 0.3,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "USDA FoodData Central (https://fdc.nal.usda.gov/) — tra cứu theo FDC ID 172232 (Basil, fresh)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Phô mai Parmesan bào (tùy chọn)",
+      "canonicalIngredientId": "ING_ENR_F6C4C13C28CEABC4",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Phô mai Parmesan bào via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "Phô mai Parmesan bào sẵn, dùng khi dọn món (tùy chọn).",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 420,
+        "proteinG": 28.4,
+        "carbohydrateG": 13.9,
+        "fatG": 27.8,
+        "fiberG": 0,
+        "sugarG": 0.07,
+        "sodiumMg": 1800
+      },
+      "sourceNutritionReference": "USDA FoodData Central (https://fdc.nal.usda.gov/) — tra cứu theo FDC ID 171247 (Cheese, parmesan, grated)",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Đun sôi một nồi to nước (ít nhất 2 lít) rồi cho 1/2 muỗng cà phê muối vào; nước luộc mì cần đủ mặn để mì ngấm vị từ bên trong."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Trong lúc chờ nước sôi, lột vỏ 2 tép tỏi, đập dập nhẹ hoặc cắt lát mỏng; mở lon cà chua 400 g, dùng tay bóp dập hoặc dùng dĩa nghiền sơ để còn lợn cợn tự nhiên."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Bắc chảo sâu lòng lên bếp lửa vừa, cho 2 muỗng canh dầu olive vào; khi dầu ấm (chưa bốc khói) cho tỏi vào phi 1-2 phút đến khi vàng nhạt và thơm, không để tỏi cháy vì sẽ đắng."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Trút toàn bộ cà chua nghiền vào chảo, đảo đều với dầu tỏi; nêm 1/2 muỗng cà phê muối còn lại. Hạ lửa nhỏ, ninh liu riu 30-35 phút, thỉnh thoảng khuấy để sốt sánh lại và bay bớt vị chua gắt."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Khi sốt đã sánh, thả 4 lá húng quế tươi vào, đảo nhẹ rồi ninh thêm 8-10 phút cho hương húng quế quyện vào sốt; nếm lại và chỉnh muối cho vừa miệng."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Khi sốt gần xong, cho 200 g mì spaghetti vào nồi nước đang sôi mạnh; luộc đúng thời gian ghi trên bao bì trừ đi 1 phút để mì đạt độ al dente (còn hơi cứng lõi)."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Trước khi vớt mì, múc riêng khoảng 120 ml nước luộc mì để riêng — phần nước giàu tinh bột này giúp sốt bám đều vào sợi mì."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Vớt mì cho thẳng vào chảo sốt, thêm 2-3 muỗng canh nước luộc mì; đảo và xóc chảo trên lửa lớn 1-2 phút cho sợi mì ngấm sốt, bóng mượt. Nếu sốt đặc quá thì thêm từng ít nước luộc mì."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tắt bếp, chia mì ra 2 đĩa sâu lòng; rắc 20 g phô mai Parmesan bào lên trên (tùy chọn) cùng 1-2 lá húng quế tươi trang trí."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn ngay khi còn nóng; món ngon nhất khi sợi mì còn độ dai và sốt cà chua tươi, thơm mùi tỏi và húng quế."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 2,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 371,
+      "proteinG": 13,
+      "carbohydrateG": 74.7,
+      "fatG": 1.51,
+      "fiberG": 3.2,
+      "sugarG": 2.67,
+      "sodiumMg": 6
+    },
+    "originalPerServing": {
+      "energyKcal": 568.93,
+      "proteinG": 17.63,
+      "carbohydrateG": 84.04,
+      "fatG": 18.31,
+      "fiberG": 7.07,
+      "sugarG": 7.81,
+      "sodiumMg": 1386.8
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Dầu olive: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Cà chua lột vỏ đóng hộp: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 4,
+        "detail": "Muối: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Lá húng quế tươi: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/recipes/global/pasta-pomodoro.webp",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [
+      "string_step_to_structured",
+      "sources_read_to_sources"
+    ],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 2,
+        "reason": "no_runtime_quantity",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "no_runtime_quantity",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

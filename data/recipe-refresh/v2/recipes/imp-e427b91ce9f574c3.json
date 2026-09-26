@@ -1,0 +1,710 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-e427b91ce9f574c3",
+    "slug": "sup-nam-kem-y",
+    "title": "Súp nấm kem Ý"
+  },
+  "content": {
+    "description": "Súp nấm xay mịn thêm kem sữa béo ngậy, món khai vị Ý ấm áp mùa mưa.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Súp",
+      "Nấm",
+      "Kem",
+      "Ý"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-e427b91ce9f574c3.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.larapedia.com/ricette_veloci_primi_piatti/crema_di_funghi_porcini_ricetta_ingredienti_preparazione.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=WnIl0Eu44Yo",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nấm đùi gà tươi",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "cân trực tiếp",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN VỀ LOẠI VÀ LƯỢNG NẤM: nguồn A dùng 400 g nấm porcini tươi; nguồn B dùng 300 g nấm (không nêu rõ loại). Chọn 400 g theo nguồn A (công thức viết đầy đủ, đúng 4 phần). Về loại nấm: nguồn Ý gốc dùng porcini/champignon, nhưng món ăn theo yêu cầu dùng nấm đùi gà (Pleurotus eryngii) — kết cấu thịt dày, khi nấu súp kem cho vị ngọt tương đương. Giữ nấm đùi gà theo đúng món ăn, đã ghi rõ khác biệt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": null,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "USDA không có số liệu nấm đùi gà (Pleurotus eryngii); dùng số liệu nấm sò (oyster, cùng chi Pleurotus) loại gần nhất trong SR Legacy"
+    },
+    {
+      "position": 1,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 110,
+        "basis": "1 củ hành tây vừa ~110 g (USDA: 1 củ vừa đường kính ~6 cm nặng 110 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn B dùng 1 củ hành tây; nguồn A không dùng hành tây mà dùng 1 tép tỏi phi với nấm. Giữ cả hành tây (theo B và gợi ý món ăn) và tỏi (theo A).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": null,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Sữa tươi nguyên kem",
+      "canonicalIngredientId": "ING_ENR_3D34F4B09B331BD5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "ml",
+        "text": "250 ml",
+        "gramEquivalent": 258,
+        "basis": "25 cl = 250 ml; tỉ trọng sữa ~1,03 → 250 ml ≈ 258 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 250,
+          "unit": "ml"
+        }
+      },
+      "note": "MÂU THUẪN VỀ CHẤT BÉO: nguồn A dùng 25 cl sữa tươi (latte) trong sốt besciamella; nguồn B dùng 400 g kem nấu ăn (panna da cucina). Chọn 250 ml sữa tươi theo nguồn A vì tên món 'súp nấm kem' theo gợi ý dùng sữa tươi — kem nấu ăn sẽ béo và nặng hơn nhiều. Đã ghi rõ khác biệt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 61,
+        "proteinG": 3.15,
+        "carbohydrateG": 4.8,
+        "fatG": 3.25,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 43
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171265",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tép",
+        "text": "1 tép",
+        "gramEquivalent": 3,
+        "basis": "1 tép tỏi ~3 g (USDA FoodData Central: 1 clove garlic = 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn A: 1 tép tỏi phi cùng nấm rồi vớt bỏ trước khi xay (để lấy mùi thơm, không bị hăng). Nguồn B dùng tỏi khô (không định lượng). Chọn 1 tép theo nguồn A.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Bơ lạt",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "cân trực tiếp",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN: nguồn A dùng 30 g bơ (làm sốt besciamella với bột mì); nguồn B dùng 50 g bơ. Chọn 30 g theo nguồn A (công thức viết đầy đủ, đúng 4 phần); đã ghi rõ nguồn B dùng nhiều hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Bột mì đa dụng",
+      "canonicalIngredientId": "ING_ENR_A9194AD78D914D6C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "cân trực tiếp",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn A: 30 g bột mì nấu với bơ thành roux rồi đổ sữa làm sốt besciamella — chất làm sánh chính của súp. Nguồn B không dùng bột mì mà dùng khoai tây + cà rốt nấu nhừ rồi xay để tạo độ sánh. Chọn phương pháp besciamella theo nguồn A; đã ghi rõ khác biệt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 364,
+        "proteinG": 10.33,
+        "carbohydrateG": 76.31,
+        "fatG": 0.98,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169761",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu olive extra virgin",
+      "canonicalIngredientId": "ING_ENR_84084B36AB5F7081",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng dầu olive ~0,91 → 3 muỗng canh (45 ml) ≈ 41 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn A: 3 muỗng canh dầu để xào nấm với tỏi. Nguồn B chỉ ghi 'un filo d'olio' (một vệt dầu), không định lượng. Chọn 3 muỗng canh theo nguồn A.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước dùng rau củ (brodo vegetale)",
+      "canonicalIngredientId": "ING_ENR_D4F343F48C2D2614",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "ml",
+        "text": "500 ml",
+        "gramEquivalent": 500,
+        "basis": "đong bằng cốc đong (500 ml)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "ml"
+        }
+      },
+      "note": "Nguồn A: 50 cl nước dùng rau củ cô đặc (brodo vegetale concentrato), cho dần vào khi nấu. Nguồn B không dùng nước dùng. Số liệu dinh dưỡng để null vì thành phần nước dùng tự nấu thay đổi tùy công thức, không có số liệu chuẩn.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước dùng tự nấu, thành phần thay đổi tùy công thức nên không có số liệu chuẩn — để null, không bịa số"
+    },
+    {
+      "position": 8,
+      "sourceName": "Ngò tây băm",
+      "canonicalIngredientId": "ING_ENR_D6EDD5F0078ABE8C",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Mùi tây tươi via the same name key",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng canh ngò tây băm ~4 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn A dùng 1 muỗng canh ngò tây băm (trộn vào súp + xào với lát nấm trang trí); nguồn B không dùng. Đánh dấu optional vì không phải nguyên liệu cấu trúc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 2.97,
+        "carbohydrateG": 6.33,
+        "fatG": 0.79,
+        "fiberG": 3.3,
+        "sugarG": null,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170416",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhánh",
+        "text": "2 nhánh",
+        "gramEquivalent": 20,
+        "basis": "1 nhánh hành lá ~10 g (ước lượng theo bó hành lá tươi)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguyên liệu theo gợi ý món ăn (dùng thái nhỏ rắc trang trí). Cả hai nguồn Ý gốc đều không dùng hành lá (nguồn A dùng ngò tây). Đánh dấu optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Bánh mì baguette (làm crostini ăn kèm)",
+      "canonicalIngredientId": "ING_ENR_66EB5A87A6199E07",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "lát",
+        "text": "4 lát",
+        "gramEquivalent": 100,
+        "basis": "cân trực tiếp (4 lát bánh mì ~25 g/lát)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "slice"
+        }
+      },
+      "note": "Cả hai nguồn đều dọn súp kèm bánh mì: nguồn A 'crostini di pane fritti o tostati', nguồn B dùng 3-4 lát bánh mì. Đánh dấu optional. Số liệu dinh dưỡng để null vì batch này không tra USDA cho bánh mì — không bịa số.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "chưa tra USDA trong batch này nên để null"
+    },
+    {
+      "position": 11,
+      "sourceName": "Muối tinh",
+      "canonicalIngredientId": "ING_ENR_2E70A9B68938F282",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối tinh ~6 g (USDA: 1 tsp table salt = 6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn ghi 'sale' không định lượng. Định lượng 1 muỗng cà phê để app tính toán; nêm nếm lại vì nước dùng rau củ đã có vị mặn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.2,
+        "basis": "1 muỗng cà phê tiêu đen xay ~2,3 g (USDA) → 1/2 muỗng cà phê ≈ 1,2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn ghi 'pepe' không định lượng. Định lượng 1/2 muỗng cà phê để app tính toán.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": null,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế nấm đùi gà: cắt bỏ phần gốc già, lau sạch bằng khăn ẩm (không ngâm nước để nấm không bị nhũn). Chọn 3 cây nấm đẹp nhất thái lát mỏng để riêng làm topping; phần còn lại thái miếng vừa.",
+      "tip": "Nguồn A giữ lại 'le tre cappelle più belle' (3 mũ nấm đẹp nhất) để áp chảo trang trí; nấm chỉ lau, không rửa ngập nước."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Hành tây bóc vỏ, thái hạt lựu nhỏ. Tỏi bóc vỏ, để nguyên tép. Hành lá rửa sạch, thái nhỏ phần lá xanh để riêng."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun nóng 3 muỗng canh dầu olive trong chảo lớn ở lửa vừa. Cho tép tỏi và nấm thái miếng vào, thêm một nhúm muối, xào khoảng 10 phút cho nấm ra hết nước và hơi vàng.",
+      "tip": "Theo nguồn A: xào nấm với dầu + tỏi 10 phút. Tỏi chỉ để lấy mùi thơm.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Vớt bỏ tép tỏi ra khỏi chảo nấm (tránh vị hăng khi xay). Cho hành tây thái hạt lựu vào chảo nấm, đảo thêm 3-4 phút cho hành mềm trong.",
+      "tip": "Nguồn A dặn vớt tỏi ra trước khi trộn nấm vào sốt ('dai quali avrete tolto l'aglio').",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Trong một nồi khác, đun chảy 30 g bơ ở lửa nhỏ. Cho 30 g bột mì vào, khuấy liên tục bằng muỗng gỗ 1-2 phút cho bột chín thơm, không để cháy.",
+      "tip": "Đây là bước làm roux/sốt besciamella theo nguồn A — chất làm sánh chính của súp, thay cho cách dùng khoai tây của nguồn B.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Từ từ đổ 250 ml sữa tươi vào nồi bơ-bột, vừa đổ vừa khuấy đều tay để không vón cục. Đun sôi nhẹ, khuấy đến khi sốt sánh mịn.",
+      "tip": "Nguồn A: 'unire il latte e portare all'ebollizione mescolando sempre' — đổ sữa từ từ, khuấy liên tục.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho toàn bộ nấm đã xào (kèm hành tây) vào nồi sốt. Đổ 500 ml nước dùng rau củ vào, nêm 1 muỗng cà phê muối và 1/2 muỗng cà phê tiêu. Đun lửa nhỏ 15 phút, thỉnh thoảng khuấy.",
+      "tip": "Nguồn A: nấu nấm với sốt 15 phút, cho thêm nước dùng và để sánh lại ở lửa vừa.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Trước khi tắt bếp 5 phút, dùng máy xay cầm tay xay nhuyễn súp ngay trong nồi đến khi mịn hoàn toàn. Nêm nếm lại muối tiêu cho vừa miệng.",
+      "tip": "Nguồn A: '5 minuti prima della fine immergete il mixer e frullate il tutto'. Nếu súp quá đặc, thêm chút nước dùng nóng.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Áp chảo nhanh các lát nấm để riêng: đun nóng một vệt dầu olive, cho lát nấm vào áp mỗi mặt 1-2 phút cho vàng thơm, rắc chút muối, tiêu và ngò tây băm.",
+      "tip": "Theo nguồn A: lát nấm đẹp áp chảo với 'poco olio e prezzemolo' rồi đặt lên mặt súp khi dọn.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Cắt bánh mì baguette thành lát mỏng, nướng giòn trong lò hoặc áp chảo vàng hai mặt làm crostini.",
+      "tip": "Cả hai nguồn đều dọn súp kèm bánh mì nướng giòn (crostini). Có thể bỏ qua nếu muốn ăn kiêng tinh bột.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Múc súp ra 4 bát sâu lòng khi còn nóng. Xếp vài lát nấm áp chảo lên mặt, rắc ngò tây băm và hành lá thái nhỏ. Dọn ngay kèm crostini.",
+      "tip": "Nguồn A gợi ý: ai thích vị béo mềm hơn có thể đánh thêm 1 lòng đỏ trứng vào súp lúc đã tắt bếp."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Nấm đùi gà tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Sữa tươi nguyên kem: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 4,
+        "detail": "Bơ lạt: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 5,
+        "detail": "Bột mì đa dụng: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu olive extra virgin: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 7,
+        "detail": "Nước dùng rau củ (brodo vegetale): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Muối tinh: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      6,
+      7,
+      8,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

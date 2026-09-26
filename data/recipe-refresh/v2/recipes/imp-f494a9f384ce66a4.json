@@ -1,0 +1,681 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-f494a9f384ce66a4",
+    "slug": "cua-xao-cay-thai",
+    "title": "Cua xào cay Thái"
+  },
+  "content": {
+    "description": "Cua xào sốt ớt-tỏi cay đậm poo pad prik, món biển Thái sang trọng đầy dư vị.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Poo pad prik",
+      "Thái Lan",
+      "Cua",
+      "Cay"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-f494a9f384ce66a4.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.wongnai.com/recipes/ugc/b83f50a422b1408aaed6a1688bd8df92",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=c_DfMmiuWe0",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt cua bóc sẵn (cua thịt)",
+      "canonicalIngredientId": "ING_ENR_D570077A56CC689D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "Wongnai dùng 250 g thịt cua cho 2-3 người → 400 g cho 4 người. Cua bóc sẵn đã luộc chín nên khi xào chỉ cần làm nóng nhanh, không xào lâu. FoodTravel (bản cua nguyên con kiểu Hoa) dùng 450 g cua biển nguyên con cho 1 phần ăn kèm gừng, rễ ngò, rượu nấu ăn Trung Hoa và dầu mè — các gia vị này không bắt buộc cho bản thịt cua này, ghi chú để tham khảo.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 87,
+        "proteinG": 18.06,
+        "carbohydrateG": 0.04,
+        "fatG": 1.08,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 293
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174204",
+      "sourceNutritionNote": "Dùng số liệu cua xanh (blue crab) sống của USDA."
+    },
+    {
+      "position": 1,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "quả",
+        "text": "5 quả",
+        "gramEquivalent": 10,
+        "basis": "ớt hiểm tươi ~2 g/quả",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "Wongnai dùng 3 quả ớt hiểm cho 2-3 người → 5 quả cho 4 người. Đập dập/băm nhỏ để dậy vị cay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "Dùng số liệu ớt cay đỏ tươi của USDA."
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "tép",
+        "text": "4 tép",
+        "gramEquivalent": 16,
+        "basis": "1 tép tỏi ~4 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Wongnai ghi 'phi tỏi với ớt cho thơm' nhưng KHÔNG định lượng tỏi trong danh sách nguyên liệu — ước 4 tép cho 4 người. FoodTravel dùng 2 muỗng canh tỏi Thái cho 1 phần cua nguyên con, cho thấy món này cần lượng tỏi khá nhiều.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "Bản Foundation của USDA thiếu số liệu đường và natri nên để null."
+    },
+    {
+      "position": 3,
+      "sourceName": "Ớt chuông xanh",
+      "canonicalIngredientId": "ING_ENR_1B7EC2B27135D737",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 120,
+        "basis": "1 quả ớt chuông xanh ~120 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Wongnai dùng 1 quả ớt chuông cho 2-3 người; giữ 1 quả cho 4 người để không lấn át vị cua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 20,
+        "proteinG": 0.86,
+        "carbohydrateG": 4.64,
+        "fatG": 0.17,
+        "fiberG": 1.7,
+        "sugarG": 2.4,
+        "sodiumMg": 3
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170427",
+      "sourceNutritionNote": "Dùng số liệu ớt ngọt xanh của USDA."
+    },
+    {
+      "position": 4,
+      "sourceName": "Ớt sừng đỏ",
+      "canonicalIngredientId": "ING_ENR_C86DB0034E210DD2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 15,
+        "basis": "1 quả ớt sừng đỏ ~15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Wongnai dùng 1/2 quả ớt sừng thái lát cho 2-3 người; 1 quả cho 4 người — tạo màu đẹp và thêm vị cay nhẹ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "Dùng số liệu ớt cay đỏ tươi của USDA."
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 45,
+        "basis": "1 cây hành lá ~15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Wongnai dùng 2 cây hành lá cho 2-3 người → 3 cây cho 4 người; cắt khúc, cho vào cuối cùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 51,
+        "basis": "1 muỗng canh dầu hào ≈ 17 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Wongnai dùng 2 muỗng canh dầu hào cho 2-3 người → 3 muỗng canh cho 4 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.92,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": 0,
+        "sodiumMg": 2733
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174529",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Xì dầu (nước tương nhạt)",
+      "canonicalIngredientId": "ING_ENR_77D166C0B7CD1291",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê xì dầu ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Wongnai dùng 'ซอสปรุงรส' (seasoning sauce) 1/2 muỗng cà phê cho 2-3 người → 1 muỗng cà phê cho 4 người; thay bằng xì dầu nhạt tương đương. FoodTravel dùng ซีอิ๊วขาว (xì dầu trắng) trong sốt cơ bản của bản cua nguyên con.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê đường hạt ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Wongnai dùng 1/2 muỗng cà phê đường cho 2-3 người → 1 muỗng cà phê cho 4 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1/2 muỗng cà phê tiêu xay ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Wongnai dùng 1/4 muỗng cà phê tiêu cho 2-3 người → 1/2 muỗng cà phê cho 4 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu ăn (dầu thực vật)",
+      "canonicalIngredientId": "ING_ENR_DBE4377CA2A0A47E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "muỗng canh",
+        "text": "5 muỗng canh",
+        "gramEquivalent": 68,
+        "basis": "1 muỗng canh dầu ăn = 15 ml ≈ 13.6 g (tỉ trọng dầu ~0.91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Wongnai dùng 3 muỗng canh dầu thực vật cho 2-3 người → 5 muỗng canh cho 4 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "Dùng số liệu dầu đậu nành (salad/cooking) của USDA."
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước dùng gà hoặc nước lọc",
+      "canonicalIngredientId": "ING_ENR_EE4482070678D3F8",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 120,
+        "unit": "ml",
+        "text": "120 ml",
+        "gramEquivalent": 120,
+        "basis": "đơn vị gốc đã là ml ≈ gram",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 120,
+          "unit": "ml"
+        }
+      },
+      "note": "Wongnai cho '1 muôi' nước (khoảng 75 ml) vào chảo cùng gia vị trước khi cho cua, cho 2-3 người → 120 ml cho 4 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước lọc/nước dùng loãng — không tra USDA, dinh dưỡng không đáng kể nên để null toàn bộ."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Kiểm tra thịt cua, gỡ bỏ mảnh vỏ cứng còn sót; để ráo nước.",
+      "tip": "Thịt cua bóc sẵn dễ còn lẫn mảnh vỏ — kiểm tra kỹ để khi ăn không bị hóc."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế gia vị: ớt hiểm đập dập rồi băm nhỏ; tỏi băm nhỏ; ớt chuông bỏ hạt, cắt miếng vừa ăn; ớt sừng thái lát xéo mỏng; hành lá cắt khúc khoảng 3 cm."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Pha sốt: cho dầu hào, xì dầu, đường, tiêu xay và nước dùng vào chén, khuấy đều cho tan.",
+      "tip": "Wongnai nêm gia vị trước khi cho cua vào chảo — vị chuẩn là mặn ngọt nhẹ (tiếng Thái: 'เค็มหวานนิดๆ')."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun nóng dầu ăn trong chảo hoặc wok trên lửa vừa-lớn."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Phi tỏi và ớt hiểm đến khi vàng thơm, khoảng 30-60 giây, cẩn thận không để tỏi cháy.",
+      "tip": "Tỏi cháy sẽ đắng và làm hỏng mùi thơm của món.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho ớt chuông và ớt sừng vào, đảo nhanh tay khoảng 1 phút cho hơi mềm nhưng vẫn giòn.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đổ hỗn hợp sốt đã pha vào chảo, đun sôi nhẹ; nếm lại và chỉnh mặn-ngọt cho vừa miệng."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho thịt cua vào, đảo nhẹ tay 1-2 phút cho cua nóng đều và thấm sốt.",
+      "tip": "Thịt cua bóc sẵn đã chín và rất mỏng manh — FoodTravel lưu ý không xào lâu kẻo cua nát và ra nước, mất vị ngọt.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho hành lá cắt khúc vào, đảo nhanh 15-20 giây rồi tắt bếp."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn ra đĩa, ăn nóng với cơm trắng.",
+      "tip": "Có thể rắc thêm hành lá thái nhỏ lên trên khi dọn như cách FoodTravel trình bày."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Thịt cua bóc sẵn (cua thịt): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Ớt hiểm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Ớt chuông xanh: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Ớt sừng đỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu hào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Xì dầu (nước tương nhạt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Đường trắng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dầu ăn (dầu thực vật): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước dùng gà hoặc nước lọc: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

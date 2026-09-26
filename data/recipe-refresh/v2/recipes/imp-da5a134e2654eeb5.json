@@ -1,0 +1,691 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-da5a134e2654eeb5",
+    "slug": "dau-phu-tron-kimchi",
+    "title": "Đậu phụ trộn kim chi"
+  },
+  "content": {
+    "description": "Đậu phụ nguội mềm topping kim chi xào cay mè, món lạnh Hàn khai vị mát lại đầy vị.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Đậu phụ",
+      "Kim chi",
+      "Món lạnh",
+      "Khai vị"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-da5a134e2654eeb5.json",
+    "rawSchemaSignature": "ingredients,notes,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.koreanbapsang.com/dubu-kimchi-tofu-with-stir-fried-kimchi/?showComment=1330135254120",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "http://www.blueapocalypse.com/2013/03/dubu-kimchi-tofu-with-stir-fried-kimchi.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "notes: Cả hai nguồn gốc đều có thịt heo (pork belly) trong công thức; Korean Bapsang cho phép bỏ thịt để làm món chay ('You can omit the pork to make it a meatless dish') — công thức này theo bản không thịt, phù hợp gợi ý nguyên liệu của assignment (không có thịt)."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Đậu phụ mềm",
+      "canonicalIngredientId": "ING_ENR_0BB9F002248B28E5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "hộp",
+        "text": "1 hộp",
+        "gramEquivalent": 510,
+        "basis": "1 hộp đậu phụ 18 oz = 510 g (Korean Bapsang)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1,
+          "unit": "pack"
+        }
+      },
+      "note": "Korean Bapsang dùng 1 hộp 18 oz; Blue Apocalypse (theo sách Asian Tofu của Andrea Nguyen) dùng 300-400 g cho món tương tự — chênh lệch do khẩu phần linh hoạt, lấy theo Korean Bapsang.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 59,
+        "proteinG": 6.38,
+        "carbohydrateG": 2.19,
+        "fatG": 2.71,
+        "fiberG": 0.8,
+        "sugarG": 0.53,
+        "sodiumMg": 34
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173787",
+      "sourceNutritionNote": "Mục gần khớp nhất trong SR Legacy là 'HOUSE FOODS Premium Soft Tofu' (đậu phụ mềm đóng gói)."
+    },
+    {
+      "position": 1,
+      "sourceName": "Kim chi cải thảo (đã lên men chua)",
+      "canonicalIngredientId": "ING_ENR_EC9C3FE3D678828E",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Kim chi cải thảo via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cup",
+        "text": "2 cup",
+        "gramEquivalent": 300,
+        "basis": "2 cup kim chi cắt nhỏ ≈ 300 g (USDA: 1 cup kimchi ≈ 150 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều nhấn mạnh dùng kim chi đã lên men chua (fully fermented/sour kimchi), không dùng kim chi mới muối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": 1.06,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "củ",
+        "text": "0.5 củ",
+        "gramEquivalent": 80,
+        "basis": "1/2 củ hành tây vừa ≈ 80 g (Maangchi: 1/2 củ ≈ 3 oz = 85 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá vừa ≈ 15 g (USDA FoodData Central)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 8,
+        "basis": "1 tbsp tỏi băm ≈ 8 g (USDA: 1 tsp ≈ 2.8 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Gừng nạo",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 tsp gừng nạo ≈ 5 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 tbsp xì dầu = 18 g (USDA FoodData Central)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 18,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 10.51,
+        "carbohydrateG": 5.57,
+        "fatG": 0.1,
+        "fiberG": 0.8,
+        "sugarG": 1.7,
+        "sodiumMg": 5586
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174278",
+      "sourceNutritionNote": "Dùng số liệu 'Soy sauce made from soy (tamari)' — mục xì dầu generic gần nhất trong SR Legacy."
+    },
+    {
+      "position": 7,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 12,
+        "basis": "1 tbsp đường = 12.5 g ≈ 12 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "1 tbsp dầu ăn = 15 ml ≈ 13.6 g (USDA; tỉ trọng dầu ~0.91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Tương ớt Hàn (gochujang)",
+      "canonicalIngredientId": "ING_ENR_7B2DCEA4C5B68A51",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "1 tbsp gochujang ≈ 18 g (ước lượng theo tỉ trọng tương đặc)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN: Korean Bapsang dùng 2-3 Tbsp gochujang cho toàn món; Blue Apocalypse chỉ dùng 2-3 tsp (nêm vừa miệng). Lấy 2 Tbsp theo Korean Bapsang — nguồn Hàn có định lượng rõ cho món ăn hoàn chỉnh.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có mục gochujang trong SR Legacy/Foundation (tìm kiếm trả về 0 kết quả) — để null, không điền số liệu bịa."
+    },
+    {
+      "position": 10,
+      "sourceName": "Vừng trắng rang",
+      "canonicalIngredientId": "ING_ENR_290707F4C2139F2E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 tsp vừng = 3 g (USDA)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 3,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 573,
+        "proteinG": 17.73,
+        "carbohydrateG": 23.45,
+        "fatG": 49.67,
+        "fiberG": 11.8,
+        "sugarG": 0.3,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170150",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Hạt tiêu đen",
+      "canonicalIngredientId": "ING_ENR_7C40D8BAB0E1B972",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 0.5,
+        "basis": "1 nhúm ≈ 0.5 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Nước (để luộc đậu phụ)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "cup",
+        "text": "4 cup",
+        "gramEquivalent": 950,
+        "basis": "4 cup nước ≈ 950 ml (Korean Bapsang)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ dùng để luộc đậu phụ rồi đổ bỏ.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước không cung cấp dinh dưỡng đáng kể."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế: nếu lá kim chi to thì cắt thành miếng vừa ăn. Thái mỏng 1/2 củ hành tây. Cắt hành lá thành khúc ngắn. Nạo gừng, băm nhỏ tỏi.",
+      "tip": "Dùng kim chi đã lên men chua (fully fermented) — Korean Bapsang: kim chi càng chua càng hợp với món này."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cho kim chi, hành tây, hành lá, tỏi, gừng, xì dầu, đường, dầu mè, gochujang và hạt tiêu vào tô lớn, trộn đều. Để nghỉ 15 phút cho ngấm gia vị.",
+      "tip": "Blue Apocalypse nêm kim chi trước với 1/2 tsp đường + 1/4 tsp ớt bột để giảm độ chua gắt.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun sôi khoảng 4 cup nước trong nồi vừa. Cắt đậu phụ thành 2 khối lớn. Giảm lửa vừa-cao, nhẹ nhàng cho đậu phụ vào luộc 5 phút.",
+      "tip": "Korean Bapsang thích luộc vì đậu phụ mềm; có thể hấp hoặc áp chảo vàng mặt ngoài nếu muốn.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Vớt đậu phụ ra rổ cho ráo nước. Cắt mỗi khối thành lát dày khoảng 1,2 cm, nhẹ tay tránh vỡ."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun nóng chảo lớn trên lửa vừa-cao. Cho hỗn hợp kim chi đã ướp vào xào 5-6 phút, đảo đều đến khi kim chi mềm và phần lớn nước tiết ra đã bay hơi.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Nếm lại: nếu kim chi quá chua thêm chút đường; muốn cay hơn thêm gochujang; muốn đậm hơn thêm chút xì dầu.",
+      "tip": "Blue Apocalypse: nêm vừa miệng là chính vì độ chua của kim chi mỗi mẻ khác nhau."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Xếp các lát đậu phụ quanh đĩa, chừa khoảng trống ở giữa. Múc kim chi xào vào giữa đĩa.",
+      "tip": "Hoặc bày đậu phụ và kim chi xào cạnh nhau trên đĩa — Korean Bapsang."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rắc vừng rang và chút hành lá thái nhỏ lên trên. Dọn nóng ngay với cơm trắng.",
+      "tip": "Ở Hàn, dubu kimchi còn là món nhậu (anju) phổ biến với rượu soju hoặc makgeolli — Korean Bapsang."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 109.63,
+      "proteinG": 11.65,
+      "carbohydrateG": 4.29,
+      "fatG": 5.11,
+      "fiberG": 1.53,
+      "sugarG": 1.01,
+      "sodiumMg": 393.07
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Kim chi cải thảo (đã lên men chua): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Gừng nạo: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tương ớt Hàn (gochujang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Hạt tiêu đen: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Nước (để luộc đậu phụ): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      4,
+      5,
+      7,
+      8,
+      9,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

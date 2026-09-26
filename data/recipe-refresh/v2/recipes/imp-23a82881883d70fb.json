@@ -1,0 +1,584 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-23a82881883d70fb",
+    "slug": "mi-udon-nam-dau",
+    "title": "Mì udon nấm đậu"
+  },
+  "content": {
+    "description": "Sợi udon dày trong nước nóng ngọt nấm với đậu phụ mềm, tô udon chay thanh mát cho bữa nhẹ.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Udon",
+      "Nhật Bản",
+      "Chay",
+      "Thanh mát"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-23a82881883d70fb.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.justonecookbook.com/vegetarian-udon/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.shinagawa-japanese-cooking.com/post/mushroom-uson-noodle-soup-きのこ煮込みうどん",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì udon (đông lạnh hoặc tươi)",
+      "canonicalIngredientId": "ING_ENR_E63F7248CA30928D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 510,
+        "unit": "g",
+        "text": "510 g",
+        "gramEquivalent": 510,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 510,
+          "unit": "g"
+        }
+      },
+      "note": "JOC (2 phần) dùng 340 g udon; Shinagawa (1 phần) dùng 200 g udon đông lạnh — hai nguồn chênh lệch (170 g/phần so với 200 g/phần). Lấy theo JOC ×1,5 = 510 g cho 3 phần vì JOC là nguồn Nhật chuẩn được ưu tiên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 124,
+        "proteinG": 2.8,
+        "carbohydrateG": 28,
+        "fatG": 0.2,
+        "fiberG": 1.6,
+        "sugarG": 0,
+        "sodiumMg": 116
+      },
+      "sourceNutritionReference": "https://tools.myfooddata.com/nutrition-facts/2430260/wt1",
+      "sourceNutritionNote": "Dữ liệu nhãn sản phẩm Wegmans Udon Noodles (mì udon đã nấu chín) dùng làm proxy; không tìm được mục udon generic phù hợp trong USDA."
+    },
+    {
+      "position": 1,
+      "sourceName": "Đậu phụ chiên (atsuage)",
+      "canonicalIngredientId": "ING_ENR_D273C0EF99CBE75B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 130,
+        "unit": "g",
+        "text": "130 g",
+        "gramEquivalent": 130,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 130,
+          "unit": "g"
+        }
+      },
+      "note": "JOC dùng 85 g atsuage cho 2 phần → ×1,5 ≈ 127,5 g, làm tròn 130 g cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 275,
+        "proteinG": 18.9,
+        "carbohydrateG": 8.9,
+        "fatG": 20.4,
+        "fiberG": 3.9,
+        "sugarG": 2.8,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172451",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Nấm đùi gà tươi",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Assignment gợi ý nấm đùi gà; JOC cho phép thay nấm trong công thức bằng king oyster (nấm đùi gà). JOC không dùng nấm tươi ngoài nấm hương khô nấu dashi; Shinagawa dùng tới 200 g nấm hỗn hợp cho 1 phần. Lấy 200 g cho 3 phần là mức trung gian do người làm chọn, ghi rõ không theo sát nguồn nào.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 46,
+        "proteinG": 2.4,
+        "carbohydrateG": 8.5,
+        "fatG": 0.31,
+        "fiberG": 3,
+        "sugarG": null,
+        "sodiumMg": 0.77
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003599",
+      "sourceNutritionNote": "Nguồn không công bố Total Sugars nên trường sugar_g để null."
+    },
+    {
+      "position": 3,
+      "sourceName": "Nấm hương khô",
+      "canonicalIngredientId": "ING_ENR_2DB57285E9ED967F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 25,
+        "unit": "g",
+        "text": "25 g",
+        "gramEquivalent": 25,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 25,
+          "unit": "g"
+        }
+      },
+      "note": "JOC: 17 g cho 2 phần → ×1,5 ≈ 25,5 g, làm tròn 25 g cho 3 phần. Dùng để nấu dashi, sau đó thái lát cho lại vào tô.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 357,
+        "proteinG": 21.4,
+        "carbohydrateG": 64.3,
+        "fatG": 0,
+        "fiberG": 35.7,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://tools.myfooddata.com/nutrition-facts/398160/wt1",
+      "sourceNutritionNote": "Dữ liệu nhãn sản phẩm nấm hương khô (branded), không phải mục generic USDA; dùng làm proxy cho nấm hương khô nấu dashi."
+    },
+    {
+      "position": 4,
+      "sourceName": "Tảo kombu khô",
+      "canonicalIngredientId": "ING_ENR_8EFB0D6EB5B42BA9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "g",
+        "text": "6 g",
+        "gramEquivalent": 6,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 6,
+          "unit": "g"
+        }
+      },
+      "note": "JOC: 4 g kombu cho 2 phần → 6 g cho 3 phần. Chỉ dùng nấu dashi rồi vớt ra trước khi nước sôi.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tìm được dữ liệu dinh dưỡng đã xác minh cho kombu khô (dữ liệu kelp tươi không tương ứng trạng thái nguyên liệu) nên để null toàn bộ object."
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 90,
+        "unit": "g",
+        "text": "90 g",
+        "gramEquivalent": 90,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 90,
+          "unit": "g"
+        }
+      },
+      "note": "Shinagawa: 30 g hành lá cho 1 phần → 90 g cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 1.8,
+        "carbohydrateG": 7.3,
+        "fatG": 0.2,
+        "fiberG": 2.6,
+        "sugarG": 2.3,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu (shoyu)",
+      "canonicalIngredientId": "ING_ENR_4B3D4B69D5D57916",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 24,
+        "unit": "g",
+        "text": "24 g",
+        "gramEquivalent": 24,
+        "basis": "1,5 muỗng canh xì dầu; 1 muỗng canh xì dầu ≈ 16 g (khẩu phần USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 24,
+          "unit": "g"
+        }
+      },
+      "note": "JOC: 1 muỗng canh xì dầu cho 2 phần → 1,5 muỗng canh (24 g) cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "[audit round 4: đồng bộ lại toàn bộ 7 chỉ số theo bản ghi FDC 174277 — Soy sauce made from soy and wheat (shoyu)]"
+    },
+    {
+      "position": 7,
+      "sourceName": "Mirin",
+      "canonicalIngredientId": "ING_ENR_ADD0B636AF255631",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 22.5,
+        "basis": "1,5 muỗng canh mirin ≈ 22,5 ml; quy đổi ≈ 22,5 g (tỉ trọng mirin gần 1 g/ml)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "JOC: 1 muỗng canh mirin cho 2 phần → 1,5 muỗng canh cho 3 phần.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tìm được dữ liệu dinh dưỡng đã xác minh cho mirin nên để null toàn bộ object."
+    },
+    {
+      "position": 8,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "g",
+        "text": "6 g",
+        "gramEquivalent": 6,
+        "basis": "1,5 muỗng cà phê đường cát; 1 muỗng cà phê đường ≈ 4 g (khẩu phần USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6,
+          "unit": "g"
+        }
+      },
+      "note": "JOC: 1 muỗng cà phê đường cho 2 phần → 1,5 muỗng cà phê (6 g) cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 375,
+        "proteinG": 0,
+        "carbohydrateG": 100,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 100,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://tools.myfooddata.com/nutrition-facts/619564/wt1",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.25,
+        "unit": "g",
+        "text": "2.25 g",
+        "gramEquivalent": 2.25,
+        "basis": "JOC: 1⁄4 muỗng cà phê muối cho 2 phần → ×1,5 = 3⁄8 muỗng cà phê cho 3 phần; 1 muỗng cà phê muối ăn ≈ 6 g (USDA) nên 3⁄8 muỗng ≈ 2,25 g. Lưu ý JOC dùng muối kosher (nhẹ hơn muối ăn một chút) nên đây là giá trị gần đúng.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2.25,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ dùng nêm nước dùng dashi. JOC dùng 1⁄4 muỗng cà phê muối kosher cho 2 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 49167
+      },
+      "sourceNutritionReference": "https://www.myfooddiary.com/foods/7233383/morton-plain-table-salt",
+      "sourceNutritionNote": "Dữ liệu nhãn sản phẩm Morton Plain Table Salt (branded); không tìm được mục muối generic sạch nên dùng nhãn này làm proxy."
+    },
+    {
+      "position": 10,
+      "sourceName": "Nước (nấu dashi)",
+      "canonicalIngredientId": "ING_ENR_A6B0B16B617D49AF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 900,
+        "unit": "ml",
+        "text": "900 ml",
+        "gramEquivalent": 900,
+        "basis": "nước: 1 ml ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 900,
+          "unit": "ml"
+        }
+      },
+      "note": "JOC: 2,5 cup nước cho 2 phần → 3,75 cup ≈ 900 ml cho 3 phần. Nước luộc udon riêng không tính vào đây.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước lọc không đóng góp dinh dưỡng đáng kể nên để null toàn bộ object."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Ngâm dashi: cho 6 g kombu và 25 g nấm hương khô vào 900 ml nước lạnh, ngâm ít nhất 30 phút (ngâm qua đêm trong tủ lạnh càng ngon).",
+      "tip": "JOC: ngâm tối thiểu 30 phút để kombu và nấm hương ra vị umami — đây là nền dashi chay của món.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đặt nồi nước ngâm lên bếp lửa vừa. Canh ngay trước khi nước sôi thì vớt bỏ miếng kombu ra ngoài.",
+      "tip": "JOC: đun kombu quá sôi sẽ ra vị đắng và nhớt — phải vớt ra ngay trước khi sôi."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Khi nước sôi, hạ lửa nhỏ, đun liu riu khoảng 10 phút cho nấm hương tiết vị ngọt. Vớt nấm hương ra, thái lát mỏng để riêng, lát cho lại vào tô.",
+      "tip": "Nấm hương sau khi nấu dashi vẫn ngon — JOC thái lát cho lại vào mì thay vì bỏ đi.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Nêm vào nồi nước dùng: 24 g xì dầu, 1,5 muỗng canh mirin, 6 g đường, 2,25 g muối; khuấy tan, nếm lại cho vừa miệng (vị mặn-ngọt hài hòa)."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Sơ chế rau củ: nấm đùi gà lau sạch, thái lát dày khoảng 5 mm; đậu phụ chiên thái miếng vừa ăn; hành lá thái khoanh mỏng."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho nấm đùi gà và đậu phụ chiên vào nồi nước dùng đang sôi nhẹ, nấu lửa vừa khoảng 4 phút cho nấm chín mềm, thấm vị.",
+      "tip": "Shinagawa: nấu nấm trong nước dùng khoảng 4 phút là vừa chín tới, giữ được độ giòn ngọt.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Luộc udon riêng: đun một nồi nước sôi khác, cho 510 g udon vào luộc theo thời gian trên bao bì (udon đông lạnh thường 2–3 phút sau khi nước sôi lại). Vớt ra, xả nhanh qua nước lạnh, để ráo.",
+      "tip": "JOC: luôn luộc udon riêng, không luộc trong nước dùng — nước luộc mì đục sẽ làm hỏng vị dashi trong.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Chia udon đã ráo ra 3 tô lớn. Xếp nấm hương thái lát, nấm đùi gà và đậu phụ chiên lên trên mì."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Chan nước dùng đang sôi vào từng tô sao cho ngập mì."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Rắc hành lá thái khoanh lên trên, dùng ngay khi còn nóng.",
+      "tip": "Udon ngon nhất khi ăn nóng ngay — để lâu sợi mì trương, nước dùng nguội mất thơm."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 369.62,
+      "proteinG": 15.27,
+      "carbohydrateG": 59,
+      "fatG": 9.24,
+      "fiberG": 8.17,
+      "sugarG": 1.9,
+      "sodiumMg": 208.93
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 2,
+        "detail": "Nấm đùi gà tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 4,
+        "detail": "Tảo kombu khô: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Xì dầu (shoyu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Mirin: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Nước (nấu dashi): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      7,
+      10
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

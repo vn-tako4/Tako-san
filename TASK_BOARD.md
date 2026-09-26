@@ -1,4 +1,46 @@
-# Current takeover receipt - 2026-09-23
+# Current — Recipe Content Refresh V2 canonical source (2026-09-27)
+
+**Status: `RECIPE_REFRESH_V2_CANONICAL_SOURCE_READY`. Remote systems:
+`UNTOUCHED`.** Branch `codex/recipe-content-refresh-v2-canonical` starts from
+`origin/main` `c81d6da2b3a9c051270b97953bfbb2c5aa34d057`; pushed implementation
+checkpoint is `fc5e713e10e0b63c890ba31fc29d9678be896ed7`.
+
+- [done] Audit ZIP hash
+  `ebc18f06ee7fb4498f8cd2a7886f333a85b385f32af4407ae1b44b4ec3cc06fe`:
+  500 recipes / 500 unique expected IDs, 4,938 steps, 6,766 ingredients, 15
+  root schema variants, 1,102 source references, 289 numeric and 211 null
+  nutrition profiles.
+- [done] Normalize all 500 recipes to the strict canonical V2 schema under
+  `data/recipe-refresh/v2`; preserve qualitative/process truth without making
+  RuntimeRecipe quantities nullable or inventing measurements.
+- [done] Reconcile 2,515 ingredient rows (505 existing, 1,642 new reviewed,
+  368 aliases, 0 ambiguous/invalid); classify 166 process-only and 7
+  mixed-process rows; project 3,770 rows and exclude 2,996 unsafe rows.
+- [done] Re-audit nutrition: 353 candidates, 1 publishable, 288 blocked, 211
+  truthful null. Salt beds, frying media, discarded/process liquids, and
+  unresolved absorption are not counted as fully consumed.
+- [done] Add deterministic `pnpm recipe:refresh:check`, strict parser,
+  RuntimeRecipe projection, real catalog fingerprint, machine audit artifacts,
+  targeted 11-test regression suite, ADR-032, and `AUDIT_REPORT.md`.
+- [done] Pin canonical artifact SHA-256
+  `fc7eefe6573ee9de1083728db1f34b058954fa60ff478f7c5e41dce9e4570dbe`
+  and runtime fingerprint
+  `6d0e3eb85696bb7c31bc54ac62783bc94432aaf008028eca79b17041f3eaed87`.
+- [done] Final local gates: refresh/import checks, typecheck, lint,
+  `git diff --check`, focused 11/11, and `pnpm check` PASS; full Vitest 204
+  files / 4,591 tests. Sparse-checkout initially omitted tracked `public/`;
+  restoring that tracked directory fixed the unrelated CSP/PWA asset failures.
+- [pending] Open PR, require hosted exact-head CI and independent review. Do
+  not merge, deploy, create 0040, mutate D1/R2, change recipe authority, or
+  enable T20 in this task.
+
+Next authorized release task: generate the Content Refresh V2 manifest and
+`0040_recipe_content_refresh_v2.sql` from this canonical package, then certify
+staging before any production rollout.
+
+---
+
+# Historical takeover receipt - 2026-09-23
 
 **Status: `T19_V2_CODE_COMPLETE_PRODUCTION_BLOCKED`. Production: `UNTOUCHED`.**
 Repository ID `1368281478` is `vn-tako4/Frigo-dev`. Application PR #53 merged

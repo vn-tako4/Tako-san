@@ -1,0 +1,773 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-295e7045e644d2ca",
+    "slug": "goi-muc-mi-soi-thai",
+    "title": "Gỏi mực mì sợi Thái"
+  },
+  "content": {
+    "description": "Mực giòn mì sợi trong trộn chanh-ớt-sả chua cay, món yam wun sen lạnh mát mở màn bữa tiệc Thái.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "medium",
+    "tags": [
+      "Yam wun sen",
+      "Thái Lan",
+      "Gỏi",
+      "Mát lành"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-295e7045e644d2ca.json",
+    "rawSchemaSignature": "cuisine,ingredients,nutrition_computed,recipe_id,servings,source_conflicts,sources,steps,title",
+    "sources": [
+      {
+        "url": "http://tastygusto.com/recipes/thai-glass-noodle-salad",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.authenticworldfood.com/en/exotic-recipes/thailand/yum-woon-sen-thai-glass-noodle-salad-with-squid-and-prawns.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://asianinspirations.com.au/recipes/spicy-glass-noodle-salad-with-squid-prawns-yum-woon-sen-talay/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "source_conflicts: Mâu thuẫn về thành phần đạm: Tasty Gusto (2 phần) dùng gà xay + tôm tươi + tôm khô + 1 con mực nhỏ; Authentic World Food (4 phần) dùng 1 con mực nhỏ + 150 g tôm tươi; trong khi hint_ingredients của assignment chỉ nhấn mạnh 'Mực tươi'. Công thức này lấy mực làm đạm chính duy nhất (200 g cho 3 phần) cho sát tên món, giữ lại tôm khô (1 tbsp) trong nước trộn theo Tasty Gusto để tạo vị umami, và ghi rõ đã lược bỏ gà xay/tôm tươi của các nguồn. Mâu thuẫn về lượng miến (đã ghi trong note của nguyên liệu miến): 40 g/người (Tasty Gusto) so với 75–100 g/người (Authentic World Food); chọn 50 g/người. Ngoài ra Authentic World Food còn dùng cà chua và thính gạo rang (không bắt buộc) — đã lược bỏ để sát hint, ghi rõ tại đây."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Miến khô (miến dong/miến đậu xanh)",
+      "canonicalIngredientId": "ING_ENR_8A001638B1C98077",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "cân miến ở trạng thái khô trước khi ngâm",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn chênh lệch lớn về lượng miến: Tasty Gusto dùng 80 g cho 2 phần (≈40 g/người), Authentic World Food dùng 300–400 g cho 4 phần (≈75–100 g/người). Công thức này chọn 50 g/người (150 g cho 3 phần) ở khoảng giữa, vì miến chỉ là một thành phần trong gỏi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 351,
+        "proteinG": 0.16,
+        "carbohydrateG": 86.09,
+        "fatG": 0.06,
+        "fiberG": 0.5,
+        "sugarG": 0,
+        "sodiumMg": 10
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174258",
+      "sourceNutritionNote": "Mục 'Noodles, chinese, cellophane or long rice (mung beans), dehydrated' (SR Legacy, fdcId 174258); số liệu cho miến ở trạng thái KHÔ."
+    },
+    {
+      "position": 1,
+      "sourceName": "Mực tươi",
+      "canonicalIngredientId": "SQUID",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "1 con mực vừa, làm sạch bỏ túi mực và xương sống ≈ 200 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Đạm chính của món theo đúng tên gọi; chọn mực tươi, mình dày, không có mùi lạ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 79,
+        "proteinG": 16.24,
+        "carbohydrateG": 0.82,
+        "fatG": 0.7,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 372
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174215",
+      "sourceNutritionNote": "USDA dùng mục 'Mollusks, cuttlefish, mixed species, raw' (họ Sepiidae, SR Legacy, fdcId 174215) làm đại diện cho mực. FDC không công bố chỉ số Total Sugars (nutrient 269) cho mục này nên trường sugar_g để null riêng."
+    },
+    {
+      "position": 2,
+      "sourceName": "Tôm khô",
+      "canonicalIngredientId": "ING_ENR_3D4DC1E4FBE9101F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tbsp",
+        "text": "1 tbsp",
+        "gramEquivalent": 12,
+        "basis": "1 tbsp tôm khô ≈ 12 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Ngâm mềm rồi giã dập cùng ớt tỏi để tạo vị umami cho nước trộn (theo Tasty Gusto).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "KHÔNG tìm được nguồn chuẩn: tôm khô không có mục generic trong USDA FoodData Central. Để null toàn bộ object."
+    },
+    {
+      "position": 3,
+      "sourceName": "Sả tươi",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "2 cây sả thái lát mỏng ≈ 30 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Thái lát thật mỏng để ăn được cả lát sả mà không bị xơ.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nguyên liệu tạo mùi theo hint; chưa tra cứu USDA trong phạm vi batch này. Để null để tránh suy diễn số liệu."
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 45,
+        "basis": "3 cây hành lá vừa; USDA: 1 medium scallion = 15 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Cắt khúc 2–3 cm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "Mục 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy, fdcId 170005)."
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ nhỏ",
+        "text": "1 củ nhỏ",
+        "gramEquivalent": 20,
+        "basis": "1 củ hành tím nhỏ ≈ 20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Thái lát mỏng; Tasty Gusto dùng 1/2 củ hành đỏ cho 2 phần.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nguyên liệu phụ; chưa tra cứu USDA trong phạm vi batch này. Để null để tránh suy diễn số liệu."
+    },
+    {
+      "position": 6,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 4,
+        "basis": "ớt hiểm tươi ≈ 2 g/quả",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Điều chỉnh theo khả năng ăn cay; giã cùng tỏi tôm khô để vị cay thấm đều.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "USDA dùng mục 'Peppers, hot chili, red, raw' (SR Legacy, fdcId 170106) làm đại diện cho ớt hiểm."
+    },
+    {
+      "position": 7,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 9,
+        "basis": "3 tép tỏi; USDA: 1 clove garlic = 3 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "Mục 'Garlic, raw' (SR Legacy, fdcId 169230)."
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.5,
+        "unit": "tbsp",
+        "text": "2.5 tbsp",
+        "gramEquivalent": 45,
+        "basis": "USDA FoodData Central: 1 tbsp fish sauce = 18 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 45,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": "Mục 'Sauce, fish, ready-to-serve' (SR Legacy, fdcId 174531)."
+    },
+    {
+      "position": 9,
+      "sourceName": "Đường thốt nốt",
+      "canonicalIngredientId": "ING_ENR_A21CCD219EA432B0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "tbsp",
+        "text": "1.5 tbsp",
+        "gramEquivalent": 20,
+        "basis": "đường thốt nốt tán nhỏ, 1 tbsp ≈ 12–13 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Vị ngọt dịu, thơm hơn đường trắng; Authentic World Food gợi ý dùng đường thốt nốt thay đường thường với lượng gấp rưỡi.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "KHÔNG tìm được nguồn chuẩn: tìm 'palm sugar' trong USDA FoodData Central (SR Legacy) chỉ trả về 'Oil, palm' (dầu cọ), Foundation chỉ có đường trắng 'Sugars, granulated'. Không dùng số liệu đường trắng thay thế. Để null toàn bộ object."
+    },
+    {
+      "position": 10,
+      "sourceName": "Nước cốt chanh xanh",
+      "canonicalIngredientId": "ING_ENR_F7596AD2A0A8D0A6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 60,
+        "basis": "nước cốt 2 quả chanh xanh; USDA: 1 quả chanh vắt ≈ 44 g nước cốt",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Vắt chanh vào sau cùng để giữ mùi thơm tươi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.42,
+        "carbohydrateG": 8.42,
+        "fatG": 0.07,
+        "fiberG": 0.4,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168156",
+      "sourceNutritionNote": "Mục 'Lime juice, raw' (SR Legacy, fdcId 168156)."
+    },
+    {
+      "position": 11,
+      "sourceName": "Ngò rí",
+      "canonicalIngredientId": "ING_ENR_0F9D040BCEE6A9AF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "một nắm nhỏ ngò rí ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Nhặt rửa sạch, để ráo; có thể cắt khúc hoặc để nguyên lá.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nguyên liệu phụ, lượng dùng nhỏ; chưa tra cứu USDA trong phạm vi batch này. Để null để tránh suy diễn số liệu."
+    },
+    {
+      "position": 12,
+      "sourceName": "Bạc hà (rau thơm)",
+      "canonicalIngredientId": "ING_ENR_8B5DF7D4AF995BE8",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "một nắm nhỏ lá bạc hà ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Tạo mùi thơm mát đặc trưng của gỏi Thái (theo Asian Inspirations).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nguyên liệu phụ, lượng dùng nhỏ; chưa tra cứu USDA trong phạm vi batch này. Để null để tránh suy diễn số liệu."
+    },
+    {
+      "position": 13,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "tsp",
+        "text": "0.5 tsp",
+        "gramEquivalent": 3,
+        "basis": "1/2 tsp muối ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Authentic World Food dùng 1 tsp muối cho 4 phần; đây là lượng quy đổi cho 3 phần.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Lượng dùng rất nhỏ; chưa tra cứu USDA trong phạm vi batch này. Để null để tránh suy diễn số liệu."
+    },
+    {
+      "position": 14,
+      "sourceName": "Mè rang",
+      "canonicalIngredientId": "ING_ENR_DAB9547F85EF53B1",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Vừng rang via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tsp",
+        "text": "1 tsp",
+        "gramEquivalent": 3,
+        "basis": "1 tsp mè ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rắc lên mặt khi dọn (theo Asian Inspirations).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Lượng dùng rất nhỏ; chưa tra cứu USDA trong phạm vi batch này. Để null để tránh suy diễn số liệu."
+    },
+    {
+      "position": 15,
+      "sourceName": "Dầu đậu phộng (dầu ăn)",
+      "canonicalIngredientId": "ING_ENR_0D0AD59CE5046BC7",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tsp",
+        "text": "2 tsp",
+        "gramEquivalent": 9,
+        "basis": "2 tsp dầu đậu phộng; USDA: 1 tbsp peanut oil = 13.5 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 9,
+          "unit": "g"
+        }
+      },
+      "note": "Một ít dầu trong nước trộn giúp các vị hòa quyện (theo Authentic World Food).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171410",
+      "sourceNutritionNote": "Mục 'Oil, peanut, salad or cooking' (SR Legacy, fdcId 171410)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Ngâm miến khô trong nước lạnh 8–10 phút cho mềm. Đun sôi một nồi nước, cho miến vào luộc 1–3 phút đến khi sợi miến trong và mềm dai.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Vớt miến ra, xả ngay dưới vòi nước lạnh để ngừng quá trình nấu, giúp sợi miến dai và không bị dính. Để ráo nước rồi cắt ngắn vừa ăn.",
+      "tip": "Xả nước lạnh là bước quan trọng để miến không bị nát khi trộn gỏi.",
+      "timerMinutes": 0
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Mực làm sạch: bỏ túi mực, bỏ xương sống trong suốt, rửa sạch rồi thái khoanh. Tôm khô ngâm nước ấm 10 phút cho mềm, vớt ra để ráo.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun sôi một nồi nước, cho mực vào chần 1–2 phút đến khi khoanh mực cong lại và săn chắc thì vớt ra ngay.",
+      "tip": "Tuyệt đối không chần mực quá lâu — mực sẽ dai và mất ngọt. Tôm và mực chỉ cần chín tới.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Sơ chế rau thơm: sả thái lát thật mỏng; hành lá cắt khúc 2–3 cm; hành tím thái lát mỏng; ớt và tỏi băm nhỏ; ngò rí và bạc hà nhặt rửa sạch, để ráo.",
+      "timerMinutes": 0
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho tôm khô đã ngâm mềm vào cối cùng ớt và tỏi, giã dập để các nguyên liệu quyện vào nhau, tạo nền thơm cay cho nước trộn.",
+      "tip": "Không có cối thì băm thật nhuyễn cũng được.",
+      "timerMinutes": 0
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Pha nước trộn gỏi: cho nước mắm, đường thốt nốt, nước cốt chanh, muối và dầu đậu phộng vào bát, khuấy đều đến khi đường tan hoàn toàn.",
+      "tip": "Thứ tự cho đường tan trước khi nếm sẽ giúp cân vị chính xác hơn.",
+      "timerMinutes": 0
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho miến đã ráo vào âu lớn, rưới nước trộn vào, trộn đều tay cho từng sợi miến ngấm gia vị.",
+      "timerMinutes": 0
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Thêm mực đã chần, hỗn hợp tôm khô–ớt–tỏi giã, sả thái lát, hành lá, hành tím, ngò rí và bạc hà vào âu; trộn nhẹ tay cho tất cả hòa quyện mà không làm nát miến.",
+      "timerMinutes": 0
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Nếm lại và cân chỉnh cho đủ bốn vị chua – cay – mặn – ngọt đặc trưng của gỏi Thái. Rắc mè rang và vài lát ớt lên mặt, dọn dùng ngay khi còn tươi mát.",
+      "tip": "Gỏi miến ngon nhất khi ăn ngay; để lâu miến sẽ hút hết nước trộn và bị khô.",
+      "timerMinutes": 0
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 14.52,
+      "proteinG": 1.22,
+      "carbohydrateG": 2.64,
+      "fatG": 0.05,
+      "fiberG": 0.45,
+      "sugarG": 0.93,
+      "sodiumMg": 1180.56
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Miến khô (miến dong/miến đậu xanh): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Mực tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tôm khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Sả tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Ớt hiểm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Đường thốt nốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Nước cốt chanh xanh: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Ngò rí: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      8,
+      9,
+      10,
+      13,
+      14
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

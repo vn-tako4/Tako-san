@@ -1,0 +1,639 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-0a1f8e0bd042cbfd",
+    "slug": "ba-chi-xao-bap-cai",
+    "title": "Ba chỉ xào bắp cải"
+  },
+  "content": {
+    "description": "Lát ba chỉ mỏng xào cải bắp giòn, mỡ tan vào rau, món xào Trung Bắc quen thuộc.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Xào",
+      "Ba chỉ",
+      "Bắp cải",
+      "Đưa cơm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-0a1f8e0bd042cbfd.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://omnivorescookbook.com/pork-and-cabbage-stir-fry/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.bigoven.com/recipe/pork-and-cabbage-stir-fry/2540674",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt ba chỉ",
+      "canonicalIngredientId": "PORK_BELLY",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "Đơn vị gốc đã là gram.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Định lượng cho 3 phần: BigOven dùng 100 g ba chỉ (bỏ da, thái lát) cho 1 phần → 300 g cho 3 phần. Mâu thuẫn: Omnivore dùng thịt thăn nạc (pork tenderloin) 4 oz thay vì ba chỉ — giữ ba chỉ theo tên món, ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 518,
+        "proteinG": 9.34,
+        "carbohydrateG": 0,
+        "fatG": 53,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 32
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167812",
+      "sourceNutritionNote": "USDA FDC 167812 (Pork, fresh, belly, raw, SR Legacy)."
+    },
+    {
+      "position": 1,
+      "sourceName": "Bắp cải",
+      "canonicalIngredientId": "CABBAGE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "Đơn vị gốc đã là gram.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "BigOven: 5 lá to cho 1 phần → 15 lá cho 3 phần ≈ 400 g (1 lá to ≈ 27 g, ước lượng). Omnivore: 12 oz (340 g) bắp cải cho ~1–2 phần; chọn 400 g cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 1.28,
+        "carbohydrateG": 5.8,
+        "fatG": 0.1,
+        "fiberG": 2.5,
+        "sugarG": 3.2,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169975",
+      "sourceNutritionNote": "USDA FDC 169975 (Cabbage, raw, SR Legacy)."
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 18,
+        "unit": "g",
+        "text": "18 g",
+        "gramEquivalent": 18,
+        "basis": "Cân trực tiếp; 1 tép tỏi trung bình ≈ 3 g theo khẩu phần chuẩn trên nutritionvalue.org (khoảng 6 tép).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 18,
+          "unit": "g"
+        }
+      },
+      "note": "Mâu thuẫn định lượng: BigOven dùng 4 tép cho 1 phần (→ 12 tép cho 3 phần, rất đậm mùi tỏi); Omnivore dùng 2 tép thái lát cho lượng nguyên liệu tương đương ~2 phần. Chọn 6 tép (18 g) cho 3 phần để cân bằng, ghi rõ cả hai phía.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "USDA FDC 1104647 (Garlic, raw, Foundation) không công bố lượng đường và natri → để null."
+    },
+    {
+      "position": 3,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "Cân trực tiếp.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "BigOven: 1 miếng nhỏ thái lát cho 1 phần; Omnivore: 1/2 củ gừng thái sợi phi thơm (cộng 1/4 tsp gừng bào trong marinade). Dùng 15 g thái sợi cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.8,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": "USDA FDC 169231 (Ginger root, raw, SR Legacy)."
+    },
+    {
+      "position": 4,
+      "sourceName": "Ớt tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "Cân trực tiếp; 1 quả ớt tươi ≈ 10 g (2 quả).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "BigOven: 4 ớt Thái cho 1 phần — quá cay khi scale ×3; chọn 2 quả cho 3 phần, đánh dấu optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "Dùng số liệu USDA FDC 170106 (Peppers, hot chili, red, raw, SR Legacy) làm đại diện cho ớt tươi."
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "Cân trực tiếp; 1 cây hành lá trung bình ≈ 15 g (khoảng 2 cây).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "BigOven: 3 cây cho 1 phần (→ 9 cây cho 3 phần, quá nhiều); chọn 2 cây cho 3 phần, ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "USDA FDC 170005 (Onions, spring or scallions, raw, SR Legacy)."
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu nhạt",
+      "canonicalIngredientId": "ING_ENR_19A3C60192F07ED5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 48,
+        "unit": "g",
+        "text": "48 g",
+        "gramEquivalent": 48,
+        "basis": "1 tbsp xì dầu ≈ 16 g theo khẩu phần trên nhãn (myfooddata).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 48,
+          "unit": "g"
+        }
+      },
+      "note": "BigOven: 1 tbsp cho 1 phần → 3 tbsp cho 3 phần. Omnivore còn dùng thêm dark soy (1 tsp trong marinade + 1/2 tsp trong sốt) để tạo màu — không dùng vì nguồn chính (BigOven, đúng thịt ba chỉ) không có; ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "USDA FDC 174277 (Soy sauce made from soy and wheat, shoyu, SR Legacy)."
+    },
+    {
+      "position": 7,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4.5,
+        "unit": "g",
+        "text": "4.5 g",
+        "gramEquivalent": 4.5,
+        "basis": "1 tsp muối ≈ 6 g theo khẩu phần chuẩn hiển thị trên nutritionvalue.org (3/4 tsp ≈ 4,5 g).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4.5,
+          "unit": "g"
+        }
+      },
+      "note": "BigOven: 1/4 tsp cho 1 phần → 3/4 tsp (4,5 g) cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6.25,
+        "unit": "g",
+        "text": "6.25 g",
+        "gramEquivalent": 6.25,
+        "basis": "1 tbsp đường cát = 12,5 g (SweetWare Units Report); 1,5 tsp ≈ 6,25 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6.25,
+          "unit": "g"
+        }
+      },
+      "note": "BigOven: 1/2 tsp cho 1 phần → 1,5 tsp cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "USDA FDC 746784 (Sugars, granulated, Foundation) không công bố chất xơ → fiber_g null."
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20.7,
+        "unit": "g",
+        "text": "20.7 g",
+        "gramEquivalent": 20.7,
+        "basis": "1 tbsp dầu mè ≈ 13,8 g (15 ml × mật độ dầu mè 0,915–0,919 g/ml theo FAO CXS 210-1999).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20.7,
+          "unit": "g"
+        }
+      },
+      "note": "BigOven: 1/2 tbsp cho 1 phần → 1,5 tbsp cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": "USDA FDC 171016 (Oil, sesame, salad or cooking, SR Legacy)."
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu ăn (tráng chảo)",
+      "canonicalIngredientId": "ING_ENR_B707A266836521CC",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 13.6,
+        "unit": "g",
+        "text": "13.6 g",
+        "gramEquivalent": 13.6,
+        "basis": "1 tbsp dầu thực vật ≈ 13,6 g (howmany.wiki).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 13.6,
+          "unit": "g"
+        }
+      },
+      "note": "BigOven: 'a very little amount of oil' — thịt ba chỉ tự ra mỡ nên chỉ cần tráng chảo trước khi áp chảo.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "USDA FDC 171411 (Oil, soybean, salad or cooking, SR Legacy)."
+    },
+    {
+      "position": 11,
+      "sourceName": "Rượu Thiệu Hưng",
+      "canonicalIngredientId": "ING_ENR_C5C37A0DE8BC12FF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "15 ml ≈ 15 g (mật độ ≈ 1 g/ml, ước lượng; ghi rõ là ước lượng).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Omnivore dùng 2 tsp rượu Thiệu Hưng trong marinade thịt; BigOven không dùng. Thêm 1 tbsp để khử mùi khi áp chảo ba chỉ, ghi rõ nguồn. Không có số liệu dinh dưỡng đáng tin cho rượu Thiệu Hưng → nutrition để null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tìm được số liệu dinh dưỡng đáng tin cho rượu Thiệu Hưng (Shaoxing wine) trong USDA FDC hay nguồn uy tín khác → để null toàn bộ, tuyệt đối không bịa số."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Thịt ba chỉ rửa sạch, thấm khô, thái lát mỏng vừa ăn.",
+      "tip": "Thái thịt khi còn hơi lạnh sẽ dễ thái lát mỏng đều hơn."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Bắp cải tách lá, rửa sạch, để ráo hoàn toàn rồi xé hoặc cắt thành miếng vừa ăn.",
+      "tip": "Để bắp cải thật ráo nước, nếu không khi xào sẽ ra nhiều nước và bị mềm nhũn."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Tỏi thái lát, gừng thái sợi, ớt thái khoanh, hành lá cắt khúc; để riêng phần đầu hành trắng và phần lá xanh."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Tráng chảo (wok) với 1 tbsp dầu ăn trên lửa vừa–lớn cho nóng, cho thịt ba chỉ vào áp chảo 5–7 phút, đảo thỉnh thoảng, đến khi thịt ra bớt mỡ và xém vàng các cạnh.",
+      "tip": "Đừng đảo liên tục — để thịt yên một lúc mới xém vàng đẹp (kỹ thuật áp chảo theo BigOven).",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Gạt thịt sang một bên chảo, rưới 1 tbsp rượu Thiệu Hưng vào chỗ chảo nóng, đảo nhanh 30 giây cho bay hơi và khử mùi thịt."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho đầu hành trắng, tỏi, gừng và ớt vào chảo, phi thơm khoảng 30 giây đến khi dậy mùi.",
+      "tip": "Không để tỏi cháy — tỏi cháy sẽ đắng cả món."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho bắp cải vào, đảo nhanh tay trên lửa lớn khoảng 3 phút đến khi lá vừa mềm mà vẫn giữ độ giòn.",
+      "tip": "Xào lửa lớn và nhanh là bí quyết để bắp cải ngọt mà không ra nước (lưu ý của Omnivore).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rưới xì dầu quanh thành chảo nóng, thêm muối và đường, đảo đều cho gia vị ngấm vào bắp cải và thịt.",
+      "tip": "Rưới xì dầu vào thành chảo nóng giúp dậy mùi thơm hơn là đổ trực tiếp lên rau."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nếm lại một miếng bắp cải, chỉnh mặn–ngọt cho vừa miệng."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Rưới dầu mè, rắc phần lá hành xanh, đảo nhanh rồi tắt bếp.",
+      "tip": "Dầu mè cho vào cuối cùng để giữ mùi thơm, không đun lâu."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Trút món xào ra đĩa."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Dọn nóng với cơm trắng."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 555.33,
+      "proteinG": 11.14,
+      "carbohydrateG": 8.62,
+      "fatG": 53.17,
+      "fiberG": 3.43,
+      "sugarG": 4.35,
+      "sodiumMg": 56.65
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Xì dầu nhạt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dầu ăn (tráng chảo): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Rượu Thiệu Hưng: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [],
+    "runtimeExclusions": []
+  }
+}

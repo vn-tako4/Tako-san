@@ -1,0 +1,788 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-90fc2e140739a7d7",
+    "slug": "tom-yum-ca-nam",
+    "title": "Tom yum cá nấm"
+  },
+  "content": {
+    "description": "Nước tom yum trong đậm sả-chanh-ớt với cá tươi và nấm, chua cay tê chuẩn vị, tô tom yum pla ấm cả người.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Tom yum",
+      "Thái Lan",
+      "Cá",
+      "Chua cay"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-90fc2e140739a7d7.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://maejum.com/blogs/recipes/tom-yum-talay-soup",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://hot-thai-kitchen.com/tom-yum-fish/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cá tươi phi lê (cá thịt trắng)",
+      "canonicalIngredientId": "ING_ENR_DA28E49A6D141BAF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram (Maejum dùng 150 g cá ngừ cho món tom yum talay; món này chỉ dùng cá nên lấy 500 g phi lê cho 4 phần ăn).",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Maejum dùng cá ngừ 150 g trong món thập cẩm hải sản; HTK (tom yum cá) dùng thịt cá phi lê cho vào sau cùng, nấu 1-2 phút đến chín. Món này lấy 500 g cho 4 phần vì cá là đạm chính duy nhất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 96,
+        "proteinG": 20.08,
+        "carbohydrateG": 0,
+        "fatG": 1.7,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 52
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175176",
+      "sourceNutritionNote": "Dùng cá rô phi (tilapia) của USDA làm đại diện cho cá thịt trắng nói chung; các loại cá thịt trắng khác (cá chẽm, cá mú) có dinh dưỡng chênh lệch không lớn."
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram (Maejum: 300 g nấm hỗn hợp; món này chỉ dùng nấm đùi gà nên lấy 200 g cho 4 phần).",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Maejum dùng 300 g 'mixed mushrooms' (nấm hỗn hợp); assignment cố định nấm đùi gà. Thái lát dày khoảng 0,5 cm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 46.4,
+        "proteinG": 2.41,
+        "carbohydrateG": 8.5,
+        "fatG": 0.31,
+        "fiberG": 3.01,
+        "sugarG": null,
+        "sodiumMg": 0.77
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003599",
+      "sourceNutritionNote": "USDA Foundation không công bố energy/sugar cho nấm đùi gà — để null, không ước lượng. USDA Foundation 2003599 'Mushroom, king oyster' — energy từ nutrient 957 (Atwater General, kcal; không có 208); sugar null (không báo cáo)"
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 800,
+        "unit": "ml",
+        "text": "800 ml",
+        "gramEquivalent": 800,
+        "basis": "Maejum: 800 ml nước cho món tom yum (khẩu phần tương đương 4 người). 1 ml nước = 1 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 800,
+          "unit": "ml"
+        }
+      },
+      "note": "HTK nấu nước dùng từ xương cá 45 phút cho món tom yum cá; ở đây dùng nước lọc để đơn giản (Maejum cũng dùng 800 ml nước). Nếu có nước dùng gà nhạt thì thay thế được.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 3,
+      "sourceName": "Sả tươi",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 50,
+        "basis": "2 cây sả tươi (lấy phần gốc trắng) trung bình ~50 g. HTK (tom yum cá): dùng phần gốc sả (bottoms) cho vào nồi canh; Maejum: 20 g sả.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "HTK dặn: sả, riềng, lá chanh chỉ để lấy hương, KHÔNG ăn — dặn khách hoặc vớt bớt ra trước khi dọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.31,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "USDA SR Legacy không công bố fiber/sugar cho sả tươi — để null."
+    },
+    {
+      "position": 4,
+      "sourceName": "Riềng tươi",
+      "canonicalIngredientId": "ING_ENR_A08FA02195519CE4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "HTK (tom yum cá): '8 slices galangal'. 6-8 lát riềng tươi dày ~30 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Assignment không liệt kê riềng nhưng cả HTK và công thức tom yum chuẩn đều dùng riềng (không thay bằng gừng — mùi khác hẳn). Chỉ lấy hương, không ăn.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Lá chanh kaffir (lá chanh Thái)",
+      "canonicalIngredientId": "ING_ENR_2A320C3B923A2437",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "lá",
+        "text": "5 lá",
+        "gramEquivalent": 2,
+        "basis": "HTK (tom yum cá): lá chanh kaffir xé nhỏ; Maejum: 5 lá. 5 lá chanh kaffir ~2 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "Assignment không liệt kê nhưng là hương liệu bắt buộc của tom yum theo cả hai nguồn. Xé/vò nát trước khi cho vào để dậy mùi; bỏ gân giữa. Chỉ lấy hương, không ăn.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "quả",
+        "text": "4 quả",
+        "gramEquivalent": 12,
+        "basis": "Maejum: 15 g ớt tươi. 4 quả ớt hiểm ~12 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Maejum: 15 g ớt; HTK: 2-5 quả ớt Thái, càng bẻ nhỏ càng cay. Điều chỉnh theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": null,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "Dùng số liệu ớt đỏ cay tươi (hot chili, red, raw) của USDA làm tương đương."
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "củ",
+        "text": "2 củ",
+        "gramEquivalent": 30,
+        "basis": "Maejum: 30 g hành tím. 2 củ hành tím trung bình ~30 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Maejum cắt đôi hành tím cho vào nồi; HTK (tom yum cá) cũng cho hành tím vào nấu nước dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": null,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": "USDA SR Legacy không công bố sugar cho hành tím tươi — để null."
+    },
+    {
+      "position": 8,
+      "sourceName": "Cà chua bi",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "Maejum: 150 g cà chua bi. Lấy 100 g cho món chỉ có cá + nấm (ít đạm hơn bản hải sản thập cẩm).",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "Assignment không liệt kê cà chua nhưng cả HTK (tom yum cá: 'mushroom, tomato, then the fish meat') và Maejum đều có. Bổ đôi quả cà chua trước khi cho vào.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": "USDA SR Legacy không công bố sugar cho cà chua tươi — để null."
+    },
+    {
+      "position": 9,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "Maejum: 20 g hành lá cắt khúc 2 inch. 2-3 cây hành lá ~20 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "USDA SR Legacy 170005 'Onions, spring or scallions (includes tops and bulb), raw' — bản ghi đầy đủ 7 chỉ số (thay 2727585 Foundation thiếu energy/carbs/fat; audit round 5)"
+    },
+    {
+      "position": 10,
+      "sourceName": "Ngò rí",
+      "canonicalIngredientId": "ING_ENR_0F9D040BCEE6A9AF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "Maejum: 10 g ngò rí. Một nắm nhỏ ngò rí ~10 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Rắc lên trên khi dọn (HTK: 'Top with chopped cilantro').",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": null,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": "USDA SR Legacy không công bố sugar cho ngò rí tươi — để null."
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 54,
+        "basis": "Maejum: 3 muỗng canh nước mắm. 1 muỗng canh ≈ 15 ml; tỉ trọng nước mắm ~1,2 → 45 ml ≈ 54 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Đường (thốt nốt hoặc đường cát)",
+      "canonicalIngredientId": "ING_ENR_7068FA9310AA3012",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 12,
+        "basis": "Maejum: 1 muỗng canh đường thốt nốt. 1 muỗng canh đường ≈ 12 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maejum dùng 1 muỗng canh palm sugar; nếu không có đường thốt nốt thì dùng đường cát trắng với lượng tương đương.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": "Dùng số liệu đường cát của USDA làm tương đương cho đường thốt nốt."
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước cốt chanh",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 45,
+        "basis": "Maejum: nước cốt 3 quả chanh. 3 muỗng canh nước cốt chanh ~45 ml ≈ 45 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều vắt chanh vào CUỐI CÙNG sau khi tắt bếp (HTK tom yum cá: 'Once the fish is fully cooked, add lime juice') — cho chanh vào khi đang sôi sẽ đắng và mất mùi thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.42,
+        "carbohydrateG": 8.42,
+        "fatG": 0.07,
+        "fiberG": 0.4,
+        "sugarG": null,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168156",
+      "sourceNutritionNote": "USDA SR Legacy không công bố sugar cho nước cốt chanh tươi — để null."
+    },
+    {
+      "position": 14,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1/2 tsp muối ≈ 3 g. Chỉ nêm thêm sau khi đã nêm nước mắm.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK: 'taste and more salt as needed' — nêm sau cùng, chỉ khi nước mắm chưa đủ mặn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế: sả lột bẹ già, đập dập, cắt khúc 5 cm. Riềng thái lát mỏng. Lá chanh kaffir vò nát, xé bỏ gân giữa. Ớt hiểm đập dập (càng bẻ nhỏ càng cay). Hành tím cắt đôi. Cà chua bi bổ đôi. Nấm đùi gà thái lát dày 0,5 cm. Cá cắt miếng vừa ăn. Hành lá cắt khúc 5 cm, ngò rí thái nhỏ.",
+      "tip": "Maejum cắt sả, hành lá, ngò thành khúc 5 cm (2 inch)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cho 800 ml nước vào nồi, đun sôi. Cho sả, riềng, lá chanh, ớt hiểm và hành tím vào; hạ lửa vừa, đun liu riu 4-5 phút cho ra hết hương thơm (HTK: simmer for 4-5 minutes).",
+      "tip": "Đây là bước 'nấu nước thơm' — đừng rút ngắn, hương tom yum nằm ở đây.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Vớt bớt sả, riềng, lá chanh ra nếu nồi quá đầy (giữ lại một ít để trang trí). Lưu ý: các loại lá này chỉ để lấy hương, không ăn được — nhớ dặn người ăn hoặc vớt hết ra trước khi dọn (HTK)."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Nêm 3 muỗng canh nước mắm và 1 muỗng canh đường vào nồi; khuấy tan. Nếm thử: vị nền lúc này phải mặn-ngọt vừa, vị chua sẽ cho sau.",
+      "tip": "Maejum cho nước mắm + đường thốt nốt vào ngay từ đầu cùng nước sôi."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho nấm đùi gà và cà chua bi vào nồi, nấu 2-3 phút cho nấm vừa chín tới.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Thả nhẹ từng miếng cá vào nồi đang sôi lăn tăn. Nấu 1-2 phút đến khi cá vừa chín (thịt chuyển đục, dễ tách thớ) — không đảo mạnh tay kẻo nát cá (HTK: 'Simmer until fish is fully cooked; 1-2 minutes').",
+      "tip": "Cá chín quá sẽ bở và tanh nước dùng; canh đúng 1-2 phút tùy độ dày miếng cá.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "TẮT BẾP. Chờ nồi ngừng sôi hẳn rồi mới vắt 3 muỗng canh nước cốt chanh vào, vừa vắt vừa khuấy nhẹ.",
+      "tip": "Cho chanh vào khi nước còn sôi sẽ bị đắng và bay mất mùi thơm — quy tắc bắt buộc của tom yum."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nếm lại và điều chỉnh: thiếu mặn thêm chút nước mắm (hoặc muối), thiếu chua thêm nước cốt chanh, thiếu ngọt thêm xíu đường. Vị chuẩn tom yum: chua-cay-mặn hài hòa, hậu ngọt nhẹ.",
+      "tip": "Nêm từng chút một (1/4 muỗng cà phê mỗi lần) vì nước mắm và chanh rất dễ lố."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho hành lá cắt khúc vào, đảo nhẹ."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Múc canh ra tô, rắc ngò rí thái nhỏ lên trên. Dọn nóng ngay.",
+      "tip": "HTK gợi ý cho cơm vào tô canh ăn như một bữa hoàn chỉnh — cơm trắng hoặc cơm gạo lứt đều hợp."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Cá tươi phi lê (cá thịt trắng): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Nấm đùi gà: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Sả tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Riềng tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Lá chanh kaffir (lá chanh Thái): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Ớt hiểm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hành tím: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 8,
+        "detail": "Cà chua bi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Ngò rí: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Đường (thốt nốt hoặc đường cát): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước cốt chanh: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      11,
+      12,
+      13,
+      14
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

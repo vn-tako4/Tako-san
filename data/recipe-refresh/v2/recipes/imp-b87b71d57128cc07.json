@@ -1,0 +1,774 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-b87b71d57128cc07",
+    "slug": "ca-loc-chien-sa-ot-vang-gion",
+    "title": "Cá lóc chiên sả ớt vàng giòn"
+  },
+  "content": {
+    "description": "Cá lóc cắt khúc ướp sả ớt băm rồi chiên vàng giòn lớp ngoài, thịt cá bên trong vẫn mềm ngọt, chấm nước mắm tỏi ớt rất hợp cơm.",
+    "cuisine": "vietnamese",
+    "category": "mon_chien",
+    "region": "nam",
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Món chiên",
+      "Cá tươi",
+      "Nam Bộ",
+      "Đưa cơm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-b87b71d57128cc07.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://vnexpress.net/ca-loc-chien-sa-3032857.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "http://naungon.com/index.php?id=-ca-loc-dong-chien-sa-ot-thom-ngon-va-hap-dan--ca-loc-dong-chien-sa-tram-pham-&pageindex=4899",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://dayhocnghe.edu.vn/sach-noi-com-voi-mon-ca-chien-sa-ot-gion-rum-thom-lung-an-hoai-khong-ngan/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cá lóc",
+      "canonicalIngredientId": "FISH_FRESHWATER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 700,
+        "unit": "g",
+        "text": "700 g",
+        "gramEquivalent": 700,
+        "basis": "đơn vị gốc đã là gram (cân thực tế)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 700,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN ĐỊNH LƯỢNG: naungon dùng 1 con cá lóc đồng ~400 g; vnexpress dùng 'một con' không ghi cân nặng (kèm 100 g sả, 50 g tỏi — quy mô gia đình 4-5 người); dayhocnghe dùng 300 g phi lê cho ~2-3 người. Quy về 4 khẩu phần: 1 con cá lóc ~700 g (hoặc 700 g phi lê).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 96,
+        "proteinG": 20.08,
+        "carbohydrateG": 0,
+        "fatG": 1.7,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 52
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175176",
+      "sourceNutritionNote": "Cá lóc (snakehead fish, Channa striata) không có trong USDA SR Legacy/Foundation (kết quả tìm 'snakehead' trả về bluefish — không phù hợp nên không dùng). Dùng số liệu cá rô phi (tilapia) tươi, loài cá thịt trắng nạc tương đương gần nhất."
+    },
+    {
+      "position": 1,
+      "sourceName": "Sả",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram (cân thực tế); 1 cây sả ≈ 18-20 g phần dùng được",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "vnexpress: 100 g sả; dayhocnghe: 3-4 cây sả; naungon: 1 cây sả (cho 400 g cá). Lấy 100 g (~5 cây) cho 700 g cá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.31,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "USDA không có số liệu fiber (291) và sugar (269) cho sả tươi — để null theo quy định, không tự suy ra."
+    },
+    {
+      "position": 2,
+      "sourceName": "Ớt sừng",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "trái",
+        "text": "1 trái",
+        "gramEquivalent": 10,
+        "basis": "1 trái ớt sừng vừa ≈ 10 g (cân ước tính)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "vnexpress: 1 trái ớt sừng (tỉa hoa trang trí) + 1 trái ớt hiểm băm. Lấy 1 trái ớt sừng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "trái",
+        "text": "2 trái",
+        "gramEquivalent": 4,
+        "basis": "1 trái ớt hiểm ≈ 2 g (cân ước tính)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "vnexpress: 1 trái ớt hiểm băm nhuyễn; dayhocnghe: 1 quả ớt sừng. Lấy 2 trái ớt hiểm, điều chỉnh theo độ cay mong muốn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "đơn vị gốc đã là gram (cân thực tế)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN: vnexpress dùng 50 g tỏi; naungon chỉ dùng 'tỏi băm' không định lượng. Lấy 30 g (~10 tép) ở giữa.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram (cân thực tế); 1 củ hành tím vừa ~20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "naungon dùng hành tím băm ướp cùng sả tỏi; vnexpress/dayhocnghe không dùng. Để tùy chọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ăn (để chiên)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "ml",
+        "text": "200 ml",
+        "gramEquivalent": 182,
+        "basis": "200 ml dầu ăn; tỉ trọng dầu ~0,91 g/ml ≈ 182 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 200,
+          "unit": "ml"
+        }
+      },
+      "note": "Chiên ngập/lưng chảo cho cá vàng giòn (naungon, dayhocnghe). LƯU Ý: đây là lượng dầu dùng để chiên, chỉ một phần thấm vào cá — giá trị dinh dưỡng tính trên 100 g dầu, không phản ánh lượng dầu thực tế ăn vào.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Bột chiên giòn",
+      "canonicalIngredientId": "ING_ENR_9D5FCCF96F7849F8",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "đơn vị gốc đã là gram (cân thực tế)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN CÁCH ÁO BỘT: vnexpress pha bột chiên giòn với ít nước thành hỗn hợp sệt (+ ít bột cà ri tạo màu) rồi lăn cá; dayhocnghe trộn 2 muỗng canh bột chiên xù khô vào cá đã ướp. Chọn cách pha sệt của vnexpress (nguồn uy tín hơn), 50 g bột + ~60 ml nước.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 363,
+        "proteinG": 7.23,
+        "carbohydrateG": 76.48,
+        "fatG": 2.78,
+        "fiberG": 4.6,
+        "sugarG": 0.66,
+        "sodiumMg": 8
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168898",
+      "sourceNutritionNote": "Bột chiên giòn pha sẵn của VN (thường là hỗn hợp bột gạo + bột mì + tinh bột) không có trong USDA; dùng số liệu bột gạo (rice flour) làm tương đương gần nhất."
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ≈ 6 g (USDA: 1 tsp table salt = 6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "naungon: 1 muỗng canh muối ướp cho 400 g cá; vnexpress: 1 muỗng cà phê muối (trộn sả) + 1 muỗng cà phê muối (pha bột). Quy về 1 muỗng cà phê cho 700 g cá để ướp và pha bột.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.2,
+        "basis": "1 muỗng cà phê đường cát ≈ 4,2 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "vnexpress liệt kê đường trong gia vị; saigonesebaguette (món cá lóc khô chiên sả ớt): 1 muỗng cà phê đường để tạo màu và dịu vị. Lấy 1 muỗng cà phê.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê hạt nêm dạng hạt ≈ 4 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "dayhocnghe: 2 muỗng cà phê hạt nêm ướp 300 g cá; vnexpress: 1/2 muỗng hạt nêm (trộn sả). Lấy 1 muỗng cà phê cho 700 g cá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 438,
+        "proteinG": 16.7,
+        "carbohydrateG": 64.88,
+        "fatG": 13.89,
+        "fiberG": 0.2,
+        "sugarG": 14.47,
+        "sodiumMg": 1067
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171613",
+      "sourceNutritionNote": "Dùng số liệu viên/nêm khô (bouillon cubes and granules, low sodium, dry) làm tương đương gần nhất cho hạt nêm dạng hạt."
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.2,
+        "basis": "1/2 muỗng cà phê tiêu xay ≈ 1,2 g (USDA: 1 tsp black pepper = 2,3 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "naungon: 1/2 muỗng cà phê tiêu ướp cá; dayhocnghe liệt kê tiêu trong gia vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Bột nghệ",
+      "canonicalIngredientId": "ING_ENR_7C1A16B2BAB19AAB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "1/2 muỗng cà phê bột nghệ ≈ 1,5 g (ước tính; bột nghệ nhẹ hơn muối)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN TẠO MÀU VÀNG: naungon dùng 1/2 muỗng cà phê bột nghệ ướp cá; vnexpress dùng 1 bịch bột cà ri pha vào bột chiên giòn để tạo màu vàng. Chọn bột nghệ theo naungon (đúng tên món 'vàng giòn', vị hợp cá chiên sả ớt hơn cà ri).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 312,
+        "proteinG": 9.68,
+        "carbohydrateG": 67.14,
+        "fatG": 3.25,
+        "fiberG": 22.7,
+        "sugarG": 3.21,
+        "sodiumMg": 27
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước mắm (pha nước chấm)",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 35,
+        "basis": "2 muỗng canh nước mắm ≈ 30 ml; tỉ trọng ~1,16 g/ml ≈ 35 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Theo hint của assignment. dayhocnghe: món này chấm với nước mắm ớt cay ăn cùng cơm nóng. Pha 2 muỗng canh nước mắm + ớt cắt lát (+ ít đường/chanh tùy khẩu vị) làm nước chấm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Cá lóc làm sạch, rửa với nước pha chút chanh hoặc giấm để khử mùi tanh, rửa lại nhiều lần với nước sạch rồi để trên rá cho ráo hoàn toàn.",
+      "tip": "naungon: rửa bằng nước chanh/giấm rồi để ráo; cá phải thật ráo nước mới ướp thấm và khi chiên không bị văng dầu."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cắt cá thành khúc dày khoảng 2 cm (hoặc miếng dày 1,5 cm theo dayhocnghe), khứa vài đường chéo trên da cá.",
+      "tip": "Khứa da giúp gia vị thấm sâu vào thịt cá (naungon)."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sả bóc vỏ già, rửa sạch, băm thật nhuyễn; ớt hiểm băm nhuyễn, ớt sừng một phần tỉa hoa trang trí; tỏi và hành tím bóc vỏ, băm nhuyễn.",
+      "tip": "Sả băm càng nhuyễn càng bám đều lên miếng cá khi chiên (vnexpress)."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Ướp cá với 1/2 số sả băm + tỏi, hành tím, ớt hiểm băm + 1 muỗng cà phê muối + 1 muỗng cà phê hạt nêm + 1 muỗng cà phê đường + 1/2 muỗng cà phê tiêu + 1/2 muỗng cà phê bột nghệ. Trộn đều, để 20-30 phút cho thấm.",
+      "tip": "naungon: sau khi ướp nên để cá nơi thoáng gió cho mặt cá khô ráo trở lại — cá khô mặt thì chiên giòn và không văng dầu.",
+      "timerMinutes": 25
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Pha bột áo: cho 50 g bột chiên giòn vào tô, thêm khoảng 60 ml nước, khuấy đều thành hỗn hợp sệt; nêm vào 1/2 muỗng cà phê muối.",
+      "tip": "Theo vnexpress. MÂU THUẪN: dayhocnghe áo bột chiên xù khô trực tiếp lên cá đã ướp — cách pha sệt của vnexpress cho lớp vỏ đều và giòn hơn nên được chọn."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Bắc chảo với 200 ml dầu, đun nóng. Cho phần sả băm còn lại vào chiên trước đến vàng giòn rồi vớt ra để ráo dầu.",
+      "tip": "vnexpress: sả lâu chín hơn tỏi nên phải cho sả vào chiên trước, sau đó mới cho tỏi vào — nếu chiên chung từ đầu tỏi sẽ cháy trước khi sả vàng.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho tỏi băm còn lại vào chảo dầu vừa chiên sả, phi vàng thơm rồi vớt ra để ráo.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Lăn từng miếng cá đã ướp qua hỗn hợp bột sệt cho bám đều, thả vào chảo dầu nóng, chiên lửa vừa.",
+      "tip": "Không cho quá nhiều cá một lúc kẻo hạ nhiệt dầu, cá bị ngấm dầu và không giòn.",
+      "timerMinutes": 7
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Trở đều hai mặt cho cá vàng ươm. Khi cá gần chín, tăng lửa lớn khoảng 1 phút để đẩy bớt dầu trong cá ra rồi tắt bếp.",
+      "tip": "Mẹo của vnexpress: tăng lửa cuối giúp miếng cá ráo dầu, vỏ giòn lâu.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Vớt cá ra đĩa có lót giấy thấm dầu, để ráo."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Cho cá đã chiên vào tô lớn hoặc chảo sạch, thêm sả và tỏi đã chiên vàng cùng ớt băm vào, đảo/xóc đều cho sả ớt tỏi bám quanh miếng cá.",
+      "tip": "vnexpress: bắc chảo dầu mới cho sả vàng đều, tắt bếp cho ớt vào xào sơ rồi bật bếp lại, thả cá vào đảo đều — đảo nhanh tay để lớp vỏ giòn không bị mềm."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Bày cá ra đĩa, xếp ớt sừng tỉa hoa lên trên trang trí. Pha nước mắm ớt (2 muỗng canh nước mắm + ớt cắt lát) để chấm, dùng nóng với cơm trắng.",
+      "tip": "dayhocnghe: cá chiên sả ớt lớp ngoài giòn rụm, thịt trong mềm thơm — chấm nước mắm ớt cay ăn với cơm nóng là đúng điệu."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 56.55,
+      "proteinG": 1.38,
+      "carbohydrateG": 12.04,
+      "fatG": 0.39,
+      "fiberG": 0.73,
+      "sugarG": 0.16,
+      "sodiumMg": 2.28
+    },
+    "originalPerServing": {
+      "energyKcal": 669.95,
+      "proteinG": 37.84,
+      "carbohydrateG": 21.98,
+      "fatG": 49.16,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1374.86
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Cá lóc: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Sả: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Ớt sừng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 6,
+        "detail": "Dầu ăn (để chiên): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Bột nghệ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước mắm (pha nước chấm): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

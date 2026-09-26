@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-324e0ea2e2f068bf",
+    "slug": "canh-miso-dau-phu-nam",
+    "title": "Canh miso đậu phụ nấm"
+  },
+  "content": {
+    "description": "Hạt miso tan cuối cùng tạo vị umami dịu cùng đậu phụ-nấm, tô canh miso nhà ấm bụng bữa sáng Nhật.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Miso",
+      "Nhật Bản",
+      "Canh",
+      "Bữa sáng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-324e0ea2e2f068bf.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.justonecookbook.com/wprm_print/spinach-and-mushroom-miso-soup",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://juliadunaway.substack.com/api/v1/file/afd697ec-70eb-4535-99be-eea17687d52b.pdf",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.allrecipes.com/recipe/208297/miso-soup-with-shiitake-mushrooms/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nước (nấu dashi)",
+      "canonicalIngredientId": "ING_ENR_A6B0B16B617D49AF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 720,
+        "unit": "ml",
+        "text": "720 ml",
+        "gramEquivalent": 720,
+        "basis": "nước: 1 ml ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 720,
+          "unit": "ml"
+        }
+      },
+      "note": "JOC dùng 3 cup nước (≈ 720 ml) cho công thức canh miso của họ.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước lọc không đóng góp dinh dưỡng đáng kể nên để null toàn bộ object."
+    },
+    {
+      "position": 1,
+      "sourceName": "Tảo kombu khô",
+      "canonicalIngredientId": "ING_ENR_8EFB0D6EB5B42BA9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "Julia Dunaway dùng kombu dashi làm nền; JOC dùng 2 gói dashi hòa tan cho 3 cup nước — hai nguồn mâu thuẫn về nền dashi. Công thức này chọn kombu dashi cho vị thanh (5 g kombu cho 720 ml, theo tỉ lệ JOC: 4 g kombu/2,5 cup nước) và ghi rõ khác biệt.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tìm được dữ liệu dinh dưỡng đã xác minh cho kombu khô (dữ liệu kelp tươi không tương ứng trạng thái nguyên liệu) nên để null toàn bộ object."
+    },
+    {
+      "position": 2,
+      "sourceName": "Tương miso",
+      "canonicalIngredientId": "ING_ENR_A6178B124CEF8D03",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 51,
+        "unit": "g",
+        "text": "51 g",
+        "gramEquivalent": 51,
+        "basis": "3 muỗng canh miso; 1 muỗng canh miso ≈ 17 g (khẩu phần USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 51,
+          "unit": "g"
+        }
+      },
+      "note": "JOC: 3 muỗng canh, có thể thêm 1 muỗng tùy khẩu vị; Julia Dunaway: 3–4 muỗng canh cho 4 phần (≈ 2,25–3 muỗng cho 3 phần) — mâu thuẫn nhẹ, lấy 3 muỗng canh (51 g) theo JOC. Không thêm xì dầu: cả hai nguồn đều không dùng xì dầu trong canh miso (hint_ingredients chỉ là gợi ý).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 200,
+        "proteinG": 12.9,
+        "carbohydrateG": 25.3,
+        "fatG": 5.9,
+        "fiberG": 5.4,
+        "sugarG": 6.5,
+        "sodiumMg": 3728
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172442",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Đậu phụ mềm (silken)",
+      "canonicalIngredientId": "ING_ENR_EF33E7E41F5E22B9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "JOC dùng 1⁄4 block đậu phụ mềm nhưng không ghi khối lượng block; Julia Dunaway dùng 7 oz (≈ 198 g) cho 4 phần → ≈ 150 g cho 3 phần. Lấy 150 g theo Julia vì có khối lượng rõ ràng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 4.7,
+        "carbohydrateG": 1.2,
+        "fatG": 2.4,
+        "fiberG": 1.2,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://tools.myfooddata.com/nutrition-facts/2599184/wt1",
+      "sourceNutritionNote": "Dữ liệu nhãn sản phẩm Morinaga Silken Tofu (branded); không có mục silken tofu generic phù hợp trong USDA nên dùng làm proxy."
+    },
+    {
+      "position": 4,
+      "sourceName": "Nấm đùi gà tươi",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn gốc dùng nấm hương tươi (JOC: 4 cây cho 3 cup) và 1⁄2 cup nấm hỗn hợp (Julia, cho 4 phần) — KHÔNG dùng nấm đùi gà. Đây là thay thế theo gợi ý assignment, ghi rõ không phải nguyên bản của nguồn. Lượng 100 g cho 3 phần là ước lượng của người làm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 46,
+        "proteinG": 2.4,
+        "carbohydrateG": 8.5,
+        "fatG": 0.31,
+        "fiberG": 3,
+        "sugarG": null,
+        "sodiumMg": 0.77
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003599",
+      "sourceNutritionNote": "Nguồn không công bố Total Sugars nên trường sugar_g để null."
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "Julia Dunaway: 2 cây hành lá cho 4 phần → khoảng 1,5 cây cho 3 phần ≈ 20 g (1 cây hành lá ≈ 10–15 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Julia Dunaway dùng 2 cây hành lá cho 4 phần; lấy ≈ 20 g cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 1.8,
+        "carbohydrateG": 7.3,
+        "fatG": 0.2,
+        "fiberG": 2.6,
+        "sugarG": 2.3,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Rong biển wakame khô",
+      "canonicalIngredientId": "ING_ENR_F8686E402213E119",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "g",
+        "text": "3 g",
+        "gramEquivalent": 3,
+        "basis": "đơn vị gốc đã là gram (trọng lượng khô trước khi ngâm)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "g"
+        }
+      },
+      "note": "Julia Dunaway ghi wakame là tùy chọn. Ngâm nở trước khi cho vào canh.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tìm được dữ liệu dinh dưỡng đã xác minh cho wakame khô nên để null toàn bộ object."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Ngâm dashi: cho 5 g kombu vào 720 ml nước lạnh, ngâm 20–30 phút (có thời gian thì ngâm qua đêm trong tủ lạnh cho dashi ngọt sâu).",
+      "tip": "Julia Dunaway dùng kombu dashi làm nền canh miso; JOC dùng dashi hòa tan — công thức này chọn kombu dashi cho vị thanh.",
+      "timerMinutes": 25
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đặt nồi lên bếp lửa vừa; ngay trước khi nước sôi thì vớt kombu ra, hạ lửa nhỏ giữ nước dùng ấm nóng nhưng không sôi bùng.",
+      "tip": "Vớt kombu trước khi sôi để dashi không bị đắng và nhớt — cùng nguyên tắc như nấu dashi udon."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế: đậu phụ mềm cắt khối vuông khoảng 2 cm (lướt dao nhẹ tay kẻo nát); nấm đùi gà thái lát mỏng 3–4 mm; hành lá thái khoanh."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Nếu dùng wakame khô: ngâm 3 g wakame trong nước ấm khoảng 5 phút cho nở mềm, vớt ra vắt nhẹ, để ráo.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho nấm đùi gà vào nồi dashi, nấu lửa vừa khoảng 3–4 phút cho nấm vừa chín tới.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Thả nhẹ đậu phụ vào nồi, đun thêm 1–2 phút cho đậu nóng đều rồi TẮT BẾP.",
+      "tip": "Đậu phụ mềm rất dễ nát — không khuấy mạnh, chỉ lắc nhẹ nồi.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Múc một muôi nước dùng nóng ra bát nhỏ, cho 51 g miso vào đánh tan hoàn toàn rồi đổ trở lại nồi, khuấy đều.",
+      "tip": "JOC và Julia Dunaway đều nhấn mạnh: TẮT BẾP rồi mới hòa miso, và KHÔNG đun sôi lại sau khi cho miso — sôi sẽ làm mất hương thơm và men có lợi của miso."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nếm lại: nếu nhạt, hòa thêm chút miso với nước dùng nóng rồi cho vào; không nêm thêm muối hay xì dầu vì miso và dashi đã đủ mặn."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Múc canh ra 3 bát (mỗi bát có đủ đậu và nấm), rắc hành lá và wakame (nếu dùng) lên trên, dùng nóng.",
+      "tip": "Canh miso ngon nhất khi dùng ngay — hâm đi hâm lại nhiều lần làm miso mất mùi thơm."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 26.5,
+      "proteinG": 2.35,
+      "carbohydrateG": 0.6,
+      "fatG": 1.2,
+      "fiberG": 0.6,
+      "sugarG": 0,
+      "sodiumMg": 0
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Nước (nấu dashi): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Tảo kombu khô: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tương miso: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 4,
+        "detail": "Nấm đùi gà tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      0
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 0,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

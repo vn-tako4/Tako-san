@@ -1,4 +1,25 @@
-# Task board — T20 release gate
+# Task board — Recipe Content Refresh V2 / T20 release gate
+
+## PR #11 remediation — current gate (2026-09-27)
+
+- [x] Rebuild 500-recipe canonical research source from the original ZIP with
+  explicit provisional ingredient identities, source verification state and
+  per-recipe runtime exclusion reasons.
+- [x] Separate provisional runtime fingerprint from null final release
+  fingerprint; derive four typed release blockers and a fail-closed release
+  assertion/CLI. Source validation remains independent.
+- [x] Local final checks passed and implementation checkpoint `1f77902` is
+  committed; source check passes, release check fails with four typed blockers,
+  import check and full `pnpm check` pass.
+- [x] Push PR #11 at `dea13cd`, update its description and verify hosted CI
+  `36268138066` SUCCESS on that exact head (204 files / 4,597 tests).
+- [ ] Verify hosted CI on the final documentation receipt head; keep PR open
+  for independent review.
+- [ ] Hoplite reconciliation of required ingredient loss, reviewed ingredient
+  authority, source content and nutrition evidence before final release
+  projection, fingerprint, or generated 0040.
+
+## Historical T20 board (unchanged)
 
 **Latest (2026-09-26):** PR #9 merged at `cb22cfb`; exact-main CI green.
 Local Cloudflare login and read-only staging D1 name/ID match are now verified;

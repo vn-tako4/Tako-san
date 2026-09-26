@@ -1,0 +1,744 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "vn-hap-01",
+    "slug": "ga-ta-hap-la-chanh",
+    "title": "Gà ta hấp lá chanh da giòn thịt ngọt"
+  },
+  "content": {
+    "description": "Gà thả vườn hấp cách thủy giữ nguyên 100% vị ngọt thanh tinh khiết, da gà vàng óng giòn sần sật thơm nức lá chanh thái chỉ.",
+    "cuisine": "vietnamese",
+    "category": "mon_hap_luoc",
+    "region": "bac",
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Món hấp",
+      "Gà ta",
+      "Thanh đạm",
+      "Đãi tiệc"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/vn-hap-01.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://giadinh.suckhoedoisong.vn/chi-voi-vai-buoc-don-gian-khong-ton-thoi-gian-ban-da-co-ngay-mon-ga-hap-la-chanh-khong-can-nuoc-rat-thom-ngon-dung-vi-172250306162225007.htm",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://phunutoday.vn/luoc-ga-bang-nuoc-lanh-hay-nuoc-soi-deu-la-dai-cach-luoc-ga-khong-can-nuoc-ngot-thit-an-roi-nho-mai-d506683.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Gà ta (nửa con)",
+      "canonicalIngredientId": "ING_ENR_FB0773358257CF93",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 800,
+        "unit": "g",
+        "text": "800 g",
+        "gramEquivalent": 800,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 800,
+          "unit": "g"
+        }
+      },
+      "note": "Assignment ghi 'nửa con hoặc đùi gà tươi'; hai nguồn đều dùng gà nguyên con 1,3-2 kg (giadinh.suckhoedoisong.vn: 1,5-2 kg; phunutoday.vn: 1,3-1,7 kg) — mâu thuẫn về cỡ, lấy nửa con ~800 g cho 4 khẩu phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 215,
+        "proteinG": 18.6,
+        "carbohydrateG": 0,
+        "fatG": 15.06,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 70
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171447",
+      "sourceNutritionNote": "Dùng số liệu 'Chicken, broilers or fryers, meat and skin, raw' (fdcId 171447) làm đại diện gần đúng cho thịt gà ta nguyên con cả da."
+    },
+    {
+      "position": 1,
+      "sourceName": "Muối hột (lót đáy nồi hấp)",
+      "canonicalIngredientId": "ING_ENR_9266BF108288156D",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Muối hột via the same name key",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "excluded_process",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "giadinh.suckhoedoisong.vn: 500 g cho gà 1,5-2 kg; phunutoday.vn: 500-700 g. Giữ 500 g cho nồi vừa nửa con gà.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "Số liệu muối ăn thông thường; muối chỉ làm môi trường truyền nhiệt, KHÔNG ăn trực tiếp — giá trị dinh dưỡng chỉ mang tính tham chiếu."
+    },
+    {
+      "position": 2,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "mixed_process",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ (vừa)",
+        "text": "1 củ (vừa)",
+        "gramEquivalent": 50,
+        "basis": "1 củ gừng vừa ~50 g (ước lượng theo kích thước củ gừng chợ Việt; không cân chính xác trong nguồn)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "giadinh.suckhoedoisong.vn dùng 2 củ vừa cho gà 1,5-2 kg; món này nửa con nên lấy 1 củ. Một nửa băm nhỏ ướp, một nửa thái lát lót nồi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Sả cây",
+      "canonicalIngredientId": "ING_ENR_78235616F82F8533",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 40,
+        "basis": "1 cây sả ~20 g (ước lượng; giadinh.suckhoedoisong.vn: 3-4 cây cho gà 1,5-2 kg)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Một số field null vì API không trả đủ nutrientNumber cho mục này; đã ghi null theo quy tắc, không suy ra.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.31,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "USDA trả thiếu fiber/sugar cho lemongrass — để null đúng quy tắc."
+    },
+    {
+      "position": 4,
+      "sourceName": "Lá chanh tươi",
+      "canonicalIngredientId": "ING_ENR_413BAA1E22524836",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Lá chanh via the same name key",
+      "review": null,
+      "usageRole": "mixed_process",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 12,
+        "unit": "lá",
+        "text": "12 lá",
+        "gramEquivalent": 8,
+        "basis": "1 lá chanh bánh tẻ ~0,6-0,7 g (ước lượng); 12 lá ≈ 8 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 12,
+          "unit": "piece"
+        }
+      },
+      "note": "giadinh.suckhoedoisong.vn: 10-15 lá. Một nửa thái chỉ ướp gà, một nửa để nguyên lót nồi.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có mục lá chanh (kaffir lime leaves); lượng dùng rất nhỏ nên để null, không dùng số liệu thay thế."
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "excluded_process",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 30,
+        "basis": "1 củ hành tím ~30 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "hint_ingredients có 'hành củ'; các nguồn chính không liệt kê hành củ trong công thức hấp muối lá chanh — giữ theo hint ở mức optional, dùng lót nồi cùng gừng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Ớt tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "trái",
+        "text": "3 trái",
+        "gramEquivalent": 15,
+        "basis": "1 trái ớt hiểm ~5 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "giadinh.suckhoedoisong.vn: ớt chẻ đôi bỏ hạt, không ghi số lượng cụ thể; 3 trái là ước lượng cho cả ướp và nước chấm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 29,
+        "proteinG": 0.91,
+        "carbohydrateG": 6.5,
+        "fatG": 0.37,
+        "fiberG": 2.8,
+        "sugarG": 4.12,
+        "sodiumMg": 3
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168576",
+      "sourceNutritionNote": "Dùng số liệu 'Peppers, jalapeno, raw' (fdcId 168576) làm đại diện gần đúng cho ớt tươi Việt Nam."
+    },
+    {
+      "position": 7,
+      "sourceName": "Muối ăn (ướp gà)",
+      "canonicalIngredientId": "ING_ENR_361639D21BDA1726",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Muối ăn via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 12,
+        "basis": "1 muỗng cà phê muối ăn ≈ 6 g (USDA FoodData Central: 1 tsp table salt = 6,08 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "giadinh.suckhoedoisong.vn: 2 muỗng cà phê muối ăn (hoặc hạt nêm), ướp 5-10 phút.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.2,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2,3 g (USDA); 1/2 muỗng ≈ 1,2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều ghi 'một ít tiêu' khi ướp và trong muối chấm, không định lượng — 1/2 muỗng cà phê là ước lượng hợp lý.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê hạt nêm ≈ 4 g (ước lượng theo hạt nêm Knorr phổ biến)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "giadinh.suckhoedoisong.vn cho phép dùng hạt nêm THAY muối ăn khi ướp ('2 muỗng cafe muối ăn (hoặc hạt nêm)') — để optional.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Hạt nêm là sản phẩm thương mại, USDA không có mục phù hợp; để null."
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối hột (làm muối chấm)",
+      "canonicalIngredientId": "ING_ENR_9266BF108288156D",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Muối hột via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh muối hột ≈ 18 g (USDA FoodData Central: 1 tbsp table salt = 18 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "giadinh.suckhoedoisong.vn (phần 'Làm muối chấm'): 1 muỗng canh muối hạt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Đường (muối chấm)",
+      "canonicalIngredientId": "ING_ENR_3F6745A8F60DCF1F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê đường ≈ 4 g (USDA); 1/2 muỗng ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "giadinh.suckhoedoisong.vn chỉ ghi 'đường' trong muối chấm, không định lượng — ước lượng theo khẩu vị, ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Bột ngọt (muối chấm)",
+      "canonicalIngredientId": "ING_ENR_B2B9E26FF6FAF501",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1/2 muỗng cà phê bột ngọt ≈ 2 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "giadinh.suckhoedoisong.vn: '1 ít bột ngọt' trong muối chấm, không định lượng — optional.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA SR Legacy không có mục bột ngọt (MSG) phù hợp; lượng rất nhỏ nên để null."
+    },
+    {
+      "position": 13,
+      "sourceName": "Chanh tươi (muối chấm)",
+      "canonicalIngredientId": "ING_ENR_5861852410E2812C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "trái",
+        "text": "0.5 trái",
+        "gramEquivalent": 25,
+        "basis": "1/2 trái chanh ~25 g (ước lượng; 1 trái chanh ta ~50 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "giadinh.suckhoedoisong.vn: 'vắt một ít nước cốt chanh' vào muối chấm — 1/2 trái là ước lượng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 30,
+        "proteinG": 0.7,
+        "carbohydrateG": 10.54,
+        "fatG": 0.2,
+        "fiberG": 2.8,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168155",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Gà mua về rửa sạch, cắt bỏ tuyến dầu ở đuôi. Dùng một nắm muối hột cùng vài lát gừng chà kỹ toàn bộ mình gà (cả trong lẫn ngoài) để khử mùi hôi và lông măng còn sót, sau đó rửa lại nhiều lần với nước sạch và để ráo.",
+      "tip": "giadinh.suckhoedoisong.vn: chà muối hột + gừng thật kỹ rồi rửa lại nhiều lần; phunutoday.vn: có thể chà thêm vài lát gừng lên da rồi rửa sạch."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế gia vị: gừng cạo vỏ, một nửa băm nhỏ, một nửa thái lát; lá chanh rửa sạch, một nửa thái chỉ, một nửa để nguyên; sả bóc lớp lá già, đập dập, cắt khúc 5-7 cm; ớt chẻ đôi, bỏ hạt.",
+      "tip": "giadinh.suckhoedoisong.vn."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Ướp sơ gà với 2 muỗng cà phê muối ăn (hoặc 1 muỗng cà phê hạt nêm thay thế) và 1/2 muỗng cà phê tiêu xay trong 5-10 phút, dùng tay mát-xa đều để gia vị thấm.",
+      "tip": "giadinh.suckhoedoisong.vn. Mẹo rút ngắn thời gian: dùng que nhọn xăm quanh mình gà cho thấm nhanh, nhưng da sẽ kém đẹp mắt.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Trộn gừng băm nhỏ, lá chanh thái chỉ, sả đập dập và ớt vào một chén; dùng tay chà hỗn hợp lên khắp mình gà, nhồi một phần vào bụng gà, ướp thêm 15 phút.",
+      "tip": "giadinh.suckhoedoisong.vn.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Chuẩn bị nồi to đáy dày: rải muối hột phủ kín đáy, dày khoảng 1-1,5 cm. Xếp lá sả, lá chanh để nguyên, gừng thái lát và ít ớt lên trên lớp muối.",
+      "tip": "giadinh.suckhoedoisong.vn. phunutoday.vn lưu ý: lớp lá lót phải đủ dày để gà không chạm trực tiếp vào muối quá lâu, tránh da bị mặn."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đặt gà lên trên lớp lá (không để gà tiếp xúc trực tiếp với muối bên dưới), đậy kín nắp, hấp lửa vừa 25-30 phút cho nửa con gà ~800 g.",
+      "tip": "giadinh.suckhoedoisong.vn: 30 phút cho gà nhỏ, 40-45 phút cho gà 1,5-2 kg — nửa con nên rút còn 25-30 phút (suy ra theo tỉ lệ, ghi rõ). Trong lúc hấp hạn chế mở nắp để giữ hương sả, lá chanh (cả hai nguồn).",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Kiểm tra chín: dùng đũa xiên vào phần đùi dày nhất, nếu nước tiết ra trong, không còn màu hồng là gà đã chín. Tắt bếp, để nguyên gà trong nồi thêm 5-10 phút cho thịt mềm mọng rồi mới lấy ra.",
+      "tip": "phunutoday.vn: xiên đùi thấy nước trong là chín; để thêm 5-10 phút sau tắt bếp giúp thịt mềm mọng hơn."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Trong lúc chờ gà chín, làm muối chấm: cho 1 muỗng canh muối hột, 1/2 muỗng cà phê bột ngọt, 1/2 muỗng cà phê đường, 1/2 muỗng cà phê tiêu xay và 1 trái ớt vào chén, dùng chày giã sơ, vắt nước cốt 1/2 trái chanh vào trộn đều. Có thể rắc thêm ít lá chanh thái chỉ cho bắt mắt.",
+      "tip": "giadinh.suckhoedoisong.vn (phần 'Làm muối chấm'); gia giảm ớt theo khả năng ăn cay."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Lấy gà ra, để nguội bớt rồi chặt thành miếng vừa ăn, xếp ra đĩa.",
+      "tip": "Chặt khi gà còn hơi ấm, thịt săn, dễ chặt đẹp miếng."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Rắc thêm ít lá chanh thái chỉ lên đĩa gà. Dọn kèm chén muối tiêu chanh ớt, ăn nóng.",
+      "tip": "Thành phẩm đạt chuẩn (giadinh.suckhoedoisong.vn): thịt trắng ngần, da bóng vàng giòn thơm, dậy mùi lá chanh, vị mằn mặn cuốn hút."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 430,
+      "proteinG": 37.2,
+      "carbohydrateG": 0,
+      "fatG": 30.12,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 140
+    },
+    "originalPerServing": {
+      "energyKcal": 460.95,
+      "proteinG": 37.91,
+      "carbohydrateG": 7.61,
+      "fatG": 30.31,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 51497.78
+    },
+    "blockers": [
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 2,
+        "detail": "Gừng tươi: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Sả cây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 4,
+        "detail": "Lá chanh tươi: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Ớt tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Muối ăn (ướp gà): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Muối hột (làm muối chấm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Đường (muối chấm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Chanh tươi (muối chấm): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": [
+      "excluded process ingredient #1: Muối hột (lót đáy nồi hấp)",
+      "excluded process ingredient #5: Hành tím",
+      "original sodium outlier reviewed; no clipping applied"
+    ]
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

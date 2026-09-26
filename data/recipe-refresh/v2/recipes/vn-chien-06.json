@@ -1,0 +1,683 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "vn-chien-06",
+    "slug": "ca-ro-phi-chien-gion-mam-gung",
+    "title": "Cá rô phi chiên giòn chấm mắm gừng"
+  },
+  "content": {
+    "description": "Cá rô phi làm sạch khía vảy chiên giòn tan từ vây đến da, thịt cá trắng ngọt chấm nước mắm gừng ớt ấm nồng.",
+    "cuisine": "vietnamese",
+    "category": "mon_chien",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Món chiên",
+      "Cá tươi",
+      "Cơm nhà",
+      "Dễ làm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/vn-chien-06.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://chocayenso.com/gion-tan-dam-da-cung-ca-ro-phi-chien-gion-cham-mam-gung-cuc-bat-vi-2396.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://afamily.vn/ca-ro-phi-chien-gion-va-nuoc-mam-gung-chua-cay-20101102121133237.chn",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://phunutoday.vn/meo-chien-ca-ro-phi-ngon-gion-tuyet-hao-d59176.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cá rô phi tươi nguyên con",
+      "canonicalIngredientId": "ING_ENR_A5EFEED9A836BDD3",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "con",
+        "text": "2 con",
+        "gramEquivalent": 1000,
+        "basis": "1 con cá rô phi vừa ~500g (cân ước lượng); 2 con ≈ 1000g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả ba nguồn đều dùng 1 con cá cho công thức của họ; nhân đôi thành 2 con cho 4 phần ăn. Làm sạch, khía chéo sâu 2 mặt (theo hint_ingredients).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 96,
+        "proteinG": 20.08,
+        "carbohydrateG": 0,
+        "fatG": 1.7,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 52
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175176",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Bột mì",
+      "canonicalIngredientId": "ING_ENR_D5E76564BF00477A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "muỗng canh",
+        "text": "4 muỗng canh",
+        "gramEquivalent": 32,
+        "basis": "1 muỗng canh bột mì ≈ 8g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "afamily/kingfood: 2 muỗng canh bột mì pha sền sệt với muối tiêu rồi nhúng cá cho 1 con (nhân đôi cho 2 con); chocayenso và phunutoday KHÔNG dùng bột mì, chiên trực tiếp — mâu thuẫn, giữ bột mì theo afamily vì giúp cá giòn và chống dính chảo.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 366,
+        "proteinG": 10.9,
+        "carbohydrateG": 77.3,
+        "fatG": 1.48,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/789890/nutrients",
+      "sourceNutritionNote": "Một số trường (fiber_g, sugar_g) không có trong response cho bột mì — để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ≈ 6g (USDA: Salt, table)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "chocayenso: chà muối hạt khắp mình và bụng cá khử tanh, rồi rắc muối ướp 10-15 phút; afamily: 1/4 muỗng cà phê muối pha cùng bột cho 1 con (nhân đôi = 1/2 tsp). Tổng 1 tsp cho cả ướp và bột.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hạt tiêu",
+      "canonicalIngredientId": "ING_ENR_9D76A9CE6BCF26D7",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1 muỗng cà phê tiêu đen xay ≈ 2.3g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "chocayenso: rắc hạt tiêu ướp cá 10-15 phút; afamily: 1/4 muỗng cà phê tiêu pha bột cho 1 con (nhân đôi = 1/2 tsp).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Dầu ăn (chiên cá)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "ml",
+        "text": "300 ml",
+        "gramEquivalent": 273,
+        "basis": "1 ml dầu ăn ≈ 0.91g (tỉ trọng dầu thực vật ~0.91)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 300,
+          "unit": "ml"
+        }
+      },
+      "note": "kingfood: đun nóng 150ml dầu ăn chiên 1 con (nhân đôi = 300ml cho 2 con). Chiên lửa vừa để cá chín từ trong, không cháy ngoài.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Nước mắm ngon (pha nước chấm)",
+      "canonicalIngredientId": "ING_ENR_352C1AA29FB15A32",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước mắm ngon via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "muỗng canh",
+        "text": "6 muỗng canh",
+        "gramEquivalent": 108,
+        "basis": "1 muỗng canh nước mắm ≈ 18g (USDA: Sauce, fish)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN TỈ LỆ NƯỚC CHẤM: chocayenso — 3 mắm : 2 nước lọc : 1 đường : 2 chanh + tỏi/ớt/gừng băm; kingfood/afamily — 1 mắm : 2 nước ấm : 1 đường : 1 chanh : 1 gừng băm + 1/3 tsp ớt băm. Lấy theo chocayenso (chi tiết và đầy đủ tỏi ớt gừng), nhân đôi cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước lọc ấm (pha nước chấm)",
+      "canonicalIngredientId": "ING_ENR_0BEB9BD7E37AC075",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "muỗng canh",
+        "text": "4 muỗng canh",
+        "gramEquivalent": 60,
+        "basis": "1 muỗng canh nước ≈ 15ml ≈ 15g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "chocayenso: 2 muỗng canh nước lọc cho 1 con (nhân đôi = 4 muỗng canh).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước lọc không chứa dưỡng chất đáng kể; để null toàn bộ, không suy ra số liệu."
+    },
+    {
+      "position": 7,
+      "sourceName": "Đường (pha nước chấm)",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 25,
+        "basis": "1 muỗng canh đường ≈ 12.5g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "chocayenso: 1 muỗng canh đường cho 1 con (nhân đôi = 2 muỗng canh). Khuấy tan đường với nước trước rồi mới cho nước mắm (kingfood/afamily).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "Một số trường (fiber_g, sugar_g) không có trong response cho đường — để null."
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước cốt chanh (pha nước chấm)",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "muỗng canh",
+        "text": "4 muỗng canh",
+        "gramEquivalent": 60,
+        "basis": "1 muỗng canh nước cốt chanh ≈ 15ml ≈ 15g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "chocayenso: 2 muỗng canh nước cốt chanh cho 1 con (nhân đôi = 4 muỗng canh); kingfood: 1 muỗng canh cho 1 con (nhân đôi = 2 muỗng canh) — mâu thuẫn, lấy theo chocayenso vì cùng hệ tỉ lệ 3:2:1:2.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.42,
+        "carbohydrateG": 8.42,
+        "fatG": 0.07,
+        "fiberG": 0.4,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168156",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 50,
+        "basis": "1 củ gừng tươi ~50g (cân ước lượng), giã/băm nhuyễn",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "chocayenso: 1 củ gừng cho nước chấm của 1 con; kingfood/afamily: 1 muỗng canh gừng băm nhuyễn (~15g) cho 1 con — đơn vị khác nhau; lấy 1 củ gừng (~50g) băm nhuyễn cho bát nước chấm 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 20,
+        "basis": "1 củ tỏi ~20g (cân ước lượng), bóc vỏ băm nhuyễn",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "chocayenso: 1 củ tỏi cho nước chấm của 1 con; kingfood/afamily KHÔNG dùng tỏi trong mắm gừng — mâu thuẫn, giữ tỏi theo chocayenso ở mức 1 củ cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "Một số trường (sugar_g, sodium_mg) không có trong response cho tỏi — để null."
+    },
+    {
+      "position": 11,
+      "sourceName": "Ớt tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 15,
+        "basis": "1 quả ớt tươi ~5g (cân ước lượng), bỏ hạt băm nhuyễn",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "chocayenso: 1-2 quả ớt cho 1 con (nhân đôi = 2-4 quả); kingfood: 1/3 muỗng cà phê ớt băm (~2g) cho 1 con — mâu thuẫn về lượng, lấy 3 quả (~15g), điều chỉnh theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 2,
+        "carbohydrateG": 9.46,
+        "fatG": 0.2,
+        "fiberG": 1.5,
+        "sugarG": 5.1,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170497",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế cá: đánh vảy, cắt bỏ vây và mang, mổ bụng bỏ ruột. Cạo sạch lớp màng đen trong bụng cá. Dùng muối hạt chà xát khắp mình và trong bụng cá để khử tanh, rửa sạch lại với nước, để ráo.",
+      "tip": "chocayenso: bắt buộc cạo sạch màng đen trong bụng và chà muối — đây là nguồn mùi tanh chính. Lau khô cá bằng khăn sạch để khi chiên không bị bắn dầu."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Dùng dao sắc khứa 3-4 đường chéo song song trên mỗi mặt thân cá, khía sâu vừa phải để cá nhanh chín và thấm gia vị.",
+      "tip": "phunutoday: chỉ khứa nhẹ, không khứa quá sâu kẻo thịt cá bị nát khi chiên."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Rắc đều 1/2 muỗng cà phê muối và 1/4 muỗng cà phê hạt tiêu lên hai mặt cá, thoa đều vào các đường khía. Ướp 10-15 phút.",
+      "tip": "chocayenso: ướp 10-15 phút giúp cá chiên giòn và đậm vị hơn.",
+      "timerMinutes": 12
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Pha bột nhúng: cho 4 muỗng canh bột mì, 1/2 muỗng cà phê muối, 1/4 muỗng cà phê hạt tiêu vào tô. Cho từ từ nước lọc vào, khuấy đều đến khi được hỗn hợp sền sệt (không quá lỏng).",
+      "tip": "afamily/kingfood: hỗn hợp bột sền sệt vừa đủ bám một lớp mỏng quanh cá."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Bắc chảo lên bếp, cho 300ml dầu ăn vào, đun lửa vừa đến khi dầu nóng già (nhúng đầu đũa vào thấy sủi tăm mạnh)."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Nhúng từng con cá qua tô bột cho bám đều một lớp mỏng, thả nhẹ vào chảo dầu. Chiên lửa vừa 15-20 phút, trở đều 2 mặt đến khi vàng giòn.",
+      "tip": "chocayenso: giữ lửa trung bình — lửa lớn cá cháy ngoài sống trong, lửa nhỏ cá chảy nước dễ nát. Không trở cá quá sớm khi lớp bột chưa se.",
+      "timerMinutes": 18
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Vớt cá ra đĩa có lót giấy thấm dầu, để ráo."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Pha nước mắm gừng: cho 2 muỗng canh đường và 4 muỗng canh nước ấm vào bát, khuấy tan đường. Thêm 6 muỗng canh nước mắm, 4 muỗng canh nước cốt chanh, khuấy đều. Cuối cùng cho gừng, tỏi, ớt băm nhuyễn vào.",
+      "tip": "kingfood/afamily: khuấy tan đường với nước trước rồi mới cho nước mắm; cho chanh và gừng/tỏi/ớt sau cùng để ớt tỏi nổi lên trên trông đẹp."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nếm lại nước chấm, điều chỉnh chua-cay-mặn-ngọt cho vừa miệng (thêm chanh nếu thích chua, thêm đường nếu thích dịu)."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn cá chiên giòn nóng ra đĩa, ăn kèm cơm trắng nóng và rau sống, chấm nước mắm gừng.",
+      "tip": "chocayenso: ngon nhất khi ăn kèm cơm trắng nóng hoặc cuốn bánh tráng với rau sống."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cá rô phi tươi nguyên con: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Bột mì: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hạt tiêu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Dầu ăn (chiên cá): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Nước mắm ngon (pha nước chấm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước lọc ấm (pha nước chấm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Đường (pha nước chấm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước cốt chanh (pha nước chấm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Gừng tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Ớt tươi: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,861 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-b808fb03d1e8ede6",
+    "slug": "com-ca-ri-ga-nhat",
+    "title": "Cơm cà ri gà Nhật"
+  },
+  "content": {
+    "description": "Sốt cà ri Nhật sánh vàng ngọt dịu ôm lấy gà-cà rốt-hành, chan cơm trắng nóng, món cà ri nhà bất hủ.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 50,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Cà ri",
+      "Nhật Bản",
+      "Cơm",
+      "Bữa tối"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-b808fb03d1e8ede6.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.americastestkitchen.com/recipes/15953-kare-raisu-japanese-curry-rice-with-chicken?extcode=NSCIB10FB",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.justonecookbook.com/simple-chicken-curry/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Đùi gà không xương, không da",
+      "canonicalIngredientId": "ING_ENR_EADFB6E3586AC0BD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": "ATK ghi 1 pound = 454 g, làm tròn 450 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "Hint ghi 'ức gà' nhưng cả hai nguồn đều dùng đùi gà: JOC dùng 1.5 lb đùi gà cho 8 phần (có ghi trong Notes là có thể thay bằng ức gà/thịt khác), ATK dùng 1 lb đùi gà cho 4 phần. Giữ đùi gà theo nguồn — đùi gà mềm, không bị khô khi ninh cà ri.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 121,
+        "proteinG": 19.66,
+        "carbohydrateG": 0,
+        "fatG": 4.12,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 95
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173627",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Muối kosher",
+      "canonicalIngredientId": "ING_ENR_D47E715919C7E9BC",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.25,
+        "unit": "muỗng cà phê",
+        "text": "1.25 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "Muối kosher Diamond Crystal ~2.9 g/tsp theo quy ước ATK/JOC (JOC: 'use half for table salt')",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ATK: 1.25 tsp chia 2 lần (ướp gà + xào hành); JOC chỉ dùng 1/4 tsp muối cho 8 phần khi dùng roux mua sẵn (optional) — hai nguồn khác biệt lớn, lấy theo ATK là nguồn chính đúng 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "Dùng số liệu muối ăn thường (table salt) làm đại diện; muối kosher thực tế ít natri hơn theo thể tích."
+    },
+    {
+      "position": 2,
+      "sourceName": "Dầu thực vật",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "Dầu đậu nành tỉ trọng ~0.91 → 15 ml ≈ 13.6 g, làm tròn 14 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ATK: 1 Tbsp cho 4 phần; JOC: 1.5 Tbsp cho 8 phần (tức 0.75 Tbsp/4 phần) — mâu thuẫn nhẹ, lấy theo ATK.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 200,
+        "basis": "ATK: 1 củ hành thái nhỏ được khoảng 11⁄4 cups; 1 cup hành thái nhỏ ≈ 160 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "ATK: 1 củ (~11⁄4 cups) cho 4 phần; JOC: 2 củ lớn (670 g) cho 8 phần → 335 g/4 phần — mâu thuẫn, lấy theo ATK.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Gừng tươi nạo",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.5,
+        "unit": "muỗng cà phê",
+        "text": "2.5 muỗng cà phê",
+        "gramEquivalent": 12,
+        "basis": "1 tsp gừng nạo ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ATK: 2.5 tsp gừng nạo cho 4 phần; JOC: 1 tsp cho 8 phần (tức 0.5 tsp/4 phần) — mâu thuẫn, lấy theo ATK.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tép",
+        "text": "1 tép",
+        "gramEquivalent": 5,
+        "basis": "1 tép tỏi trung bình ~5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "ATK: 1 tép băm cho 4 phần; JOC: 2 tép cho 8 phần → 1 tép/4 phần — hai nguồn khớp nhau.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Khoai tây",
+      "canonicalIngredientId": "ING_ENR_3A8C12C2984F3703",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": "ATK ghi 1 pound = 454 g, làm tròn 450 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "ATK: 1 lb khoai Yukon gold cho 4 phần; JOC: 15 oz (432 g) cho 8 phần → ~216 g/4 phần — mâu thuẫn lớn, lấy theo ATK là nguồn chính. JOC khuyên dùng khoai Yukon gold để giữ dáng khi ninh (khoai thường dễ nát).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 69,
+        "proteinG": 1.68,
+        "carbohydrateG": 15.71,
+        "fatG": 0.1,
+        "fiberG": 2.4,
+        "sugarG": 1.15,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170028",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "củ",
+        "text": "2 củ",
+        "gramEquivalent": 130,
+        "basis": "ATK: 2 củ cà rốt thái được khoảng 1 cup ≈ 128 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "ATK: 2 củ (~1 cup) cho 4 phần; JOC: 2 củ (190 g) cho 8 phần → 95 g/4 phần — lấy theo ATK.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước dùng gà",
+      "canonicalIngredientId": "ING_ENR_11FB997D0B872A56",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 630,
+        "unit": "ml",
+        "text": "630 ml",
+        "gramEquivalent": 630,
+        "basis": "1 cup = 240 ml → 22⁄3 cups ≈ 630 ml ≈ 630 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 630,
+          "unit": "ml"
+        }
+      },
+      "note": "ATK: 22⁄3 cups cho 4 phần; JOC: 4 cups cho 8 phần → 2 cups/4 phần — lấy theo ATK. JOC cho phép dùng nước lọc hoặc nửa nước dùng nửa nước lọc nếu sợ mặn (roux mua sẵn đã mặn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 16,
+        "proteinG": 2.02,
+        "carbohydrateG": 0.38,
+        "fatG": 0.57,
+        "fiberG": 0,
+        "sugarG": 0.29,
+        "sodiumMg": 306
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174551",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Bánh cà ri Nhật (curry roux)",
+      "canonicalIngredientId": "ING_ENR_6414E4C6598CA28A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 110,
+        "unit": "g",
+        "text": "110 g",
+        "gramEquivalent": 110,
+        "basis": "ATK: 1/2 công thức Curry-Roux Bricks ≈ 110 g; tương đương 1/2 hộp roux 200-230 g (JOC: 1 hộp 7-8 oz cho 8 phần)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 110,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn khớp nhau (~100-115 g cho 4 phần): ATK dùng 1/2 công thức roux tự làm; JOC dùng 1/2 hộp roux mua sẵn (7-8 oz). Chọn độ cay (mild/medium/hot) theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có entry generic cho bánh cà ri Nhật (chỉ có 'Spices, curry powder' — bột cà ri khô, khác hoàn toàn về thành phần). Dinh dưỡng thực tế in trên bao bì từng hãng (S&B, House); không lấy số liệu bao bì một hãng làm đại diện nên để null."
+    },
+    {
+      "position": 10,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 11,
+        "basis": "USDA: 1 Tbsp soy sauce = 16 g → 2 tsp ≈ 10.7 g, làm tròn 11 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ATK: 2 tsp cho 4 phần; JOC: 1 Tbsp cho 8 phần → 1.5 tsp/4 phần — lấy theo ATK.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Sốt Worcestershire",
+      "canonicalIngredientId": "ING_ENR_F6193AAFC4AEC936",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 tsp ≈ 5 ml, tỉ trọng sốt ~1.0 → ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ ATK dùng (1 tsp). JOC không dùng mà dùng bộ 'secret ingredients' khác: mật ong + ketchup + táo (mỗi thứ 1 Tbsp cho 8 phần) — hai nguồn khác nhau về gia vị tạo ngọt/chua, lấy theo ATK là nguồn chính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 77,
+        "proteinG": 0,
+        "carbohydrateG": 19.17,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 10.03,
+        "sodiumMg": 1300
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171610",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Gạo hạt ngắn Nhật",
+      "canonicalIngredientId": "ING_ENR_3A0EF72FDFDDFCB9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "1 cốc đong gạo Nhật (180 ml) ≈ 150 g; 2 cốc nấu được ~4 cups cơm chín (ATK: 4 cups cooked rice cho 4 phần)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "ATK ghi 4 cups cơm chín cho 4 phần — quy đổi ra 300 g gạo khô (2 cốc đong).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 358,
+        "proteinG": 6.5,
+        "carbohydrateG": 79.15,
+        "fatG": 0.52,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước (nấu cơm)",
+      "canonicalIngredientId": "ING_ENR_F65BB80618D334FD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 430,
+        "unit": "ml",
+        "text": "430 ml",
+        "gramEquivalent": 430,
+        "basis": "1 ml nước ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 430,
+          "unit": "ml"
+        }
+      },
+      "note": "Tỉ lệ gạo:nước 1:1.2 theo thể tích cho gạo hạt ngắn Nhật (2 cốc gạo 360 ml → ~430 ml nước).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173647",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 15,
+        "basis": "1 cây hành lá ~15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "ATK: rắc scallion thái xéo lên cà ri khi dọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 27,
+        "proteinG": 0.97,
+        "carbohydrateG": 5.74,
+        "fatG": 0.47,
+        "fiberG": 1.8,
+        "sugarG": 3.91,
+        "sodiumMg": 15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170006",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Fukujinzuke (dưa muối đỏ ăn kèm cà ri)",
+      "canonicalIngredientId": "ING_ENR_A60F7B763BB602AD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "ước lượng khẩu phần ăn kèm",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "ATK liệt kê là món ăn kèm tùy chọn (có thể thay bằng gừng muối hoặc chanh). Không bắt buộc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nguyên liệu ăn kèm tùy chọn, không tra dinh dưỡng."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Vo gạo 2-3 lần đến khi nước trong, cho vào nồi cơm với 430 ml nước, ngâm 20-30 phút rồi bật nấu. Khi cơm chín để nghỉ 10 phút rồi xới tơi.",
+      "tip": "JOC: ngâm gạo trước khi nấu giúp hạt cơm chín đều, dẻo."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Gà cắt miếng vuông khoảng 2.5 cm, ướp với 1 muỗng cà phê muối, trộn đều.",
+      "tip": "ATK: ướp muối trước giúp thịt gà đậm đà từ bên trong."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Khoai tây gọt vỏ, cắt miếng khoảng 2 cm, ngâm nước lạnh 15 phút cho ra bớt tinh bột rồi vớt ráo. Cà rốt gọt vỏ, cắt khoanh dày. Hành tây thái nhỏ. Gừng nạo nhuyễn, tỏi băm nhỏ.",
+      "tip": "JOC: ngâm khoai tây 15 phút để khoai không bị nát khi ninh; dùng khoai Yukon gold giữ dáng tốt hơn khoai thường.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun nóng dầu trong nồi lớn ở lửa vừa. Cho hành tây và 1/4 muỗng cà phê muối còn lại vào, xào khoảng 8 phút đến khi hành nâu vàng, đảo thường xuyên.",
+      "tip": "ATK: xào hành đến nâu vàng (không chỉ trong) là nền vị ngọt cho cà ri.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Thêm gừng nạo và tỏi băm vào, đảo nhanh 30 giây cho thơm.",
+      "tip": "Không để tỏi cháy — tỏi cháy sẽ đắng."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho gà vào nồi, đảo đều đến khi thịt không còn màu hồng, khoảng 3 phút.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho khoai tây và cà rốt vào đảo cùng, đổ nước dùng gà vào. Đun sôi ở lửa lớn rồi hạ lửa nhỏ, ninh liu riu khoảng 20 phút đến khi khoai chín mềm (xiên đũa qua dễ dàng).",
+      "tip": "ATK: giữ lửa liu riu nhẹ — sôi mạnh làm khoai nát và nước đục.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Hạ lửa xuống mức nhỏ nhất, bẻ bánh cà ri cho vào từng miếng, khuấy nhẹ đến khi roux tan hoàn toàn, khoảng 1 phút.",
+      "tip": "Cho roux vào khi lửa nhỏ/tắt bếp để roux tan mịn không vón cục (JOC: tắt bếp rồi mới cho roux vào khuấy tan).",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Thêm xì dầu và sốt Worcestershire, khuấy đều, ninh liu riu thêm 3-5 phút đến khi sốt sánh lại. Nêm nếm muối/tiêu cho vừa miệng.",
+      "tip": "ATK: khuấy nhẹ, cạo đáy nồi để cà ri không bén cháy khi sánh lại.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Xới cơm ra 4 bát hoặc đĩa sâu (mỗi phần khoảng 1 cup cơm), múc cà ri đặt cạnh phần cơm.",
+      "tip": "ATK: trình bày cơm một bên, cà ri một bên đĩa — đúng kiểu kare raisu Nhật."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Rắc hành lá thái xéo lên trên cà ri. Dọn kèm fukujinzuke (hoặc gừng muối) nếu có. Ăn nóng.",
+      "tip": "Cà ri để qua đêm trong tủ lạnh hôm sau ăn còn ngon hơn — vị các nguyên liệu quyện vào nhau (JOC)."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 77.63,
+      "proteinG": 1.89,
+      "carbohydrateG": 17.67,
+      "fatG": 0.11,
+      "fiberG": 2.7,
+      "sugarG": 1.29,
+      "sodiumMg": 18
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 0,
+        "detail": "Đùi gà không xương, không da: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Muối kosher: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Dầu thực vật: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Gừng tươi nạo: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước dùng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Bánh cà ri Nhật (curry roux): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Sốt Worcestershire: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Gạo hạt ngắn Nhật: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước (nấu cơm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      2,
+      4,
+      8,
+      10,
+      11,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

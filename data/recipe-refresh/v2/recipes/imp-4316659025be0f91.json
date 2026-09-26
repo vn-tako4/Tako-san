@@ -1,0 +1,1048 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-4316659025be0f91",
+    "slug": "mi-xao-bo-cay-thai",
+    "title": "Mì xào bò cay Thái"
+  },
+  "content": {
+    "description": "Sợi mì xào bò ớt cay nồng pad kee mao biến tấu, món mì Thái nhanh đậm vị.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Pad kee mao",
+      "Thái Lan",
+      "Mì xào",
+      "Cay"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-4316659025be0f91.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://hot-thai-kitchen.com/wprm_print/12218",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://susiecooksthai.com/drunken-noodles-pad-kee-mao-recipe/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì gạo bản rộng (khô)",
+      "canonicalIngredientId": "ING_ENR_DC0295E388DAF438",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 255,
+        "unit": "g",
+        "text": "255 g",
+        "gramEquivalent": 255,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 255,
+          "unit": "g"
+        }
+      },
+      "note": "HTK (2 phần): 1 lb mì tươi, hoặc 6 oz mì khô thay thế → 9 oz (255 g) cho 3 phần. Susie (4 phần): 8 oz mì khô → chỉ ~170 g cho 3 phần — mâu thuẫn, ưu tiên HTK (đầu bếp Thái, công thức chi tiết).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 364,
+        "proteinG": 5.95,
+        "carbohydrateG": 80.18,
+        "fatG": 0.56,
+        "fiberG": 1.6,
+        "sugarG": 0.12,
+        "sodiumMg": 182
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169742",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt bò thăn (thái lát mỏng)",
+      "canonicalIngredientId": "ING_ENR_745FC31DDEB3506D",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Thịt bò thăn via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 340,
+        "unit": "g",
+        "text": "340 g",
+        "gramEquivalent": 340,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 340,
+          "unit": "g"
+        }
+      },
+      "note": "HTK: 8 oz protein cho 2 phần → 12 oz (340 g) cho 3 phần. Susie: 1/2 lb cho 4 phần (~170 g cho 3 phần) — mâu thuẫn, ưu tiên HTK. Dùng thăn bò/thịt mềm, thái ngược thớ dày ≤ 0.6 cm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 131,
+        "proteinG": 22.09,
+        "carbohydrateG": 0,
+        "fatG": 4.08,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174055",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Xì dầu (ướp thịt bò)",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 17,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng xì dầu ~1.15 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK (note 2): ướp 8 oz thịt với 2 tsp xì dầu + 1/4 tsp đường + 1 tbsp nước, ít nhất 15 phút → nhân 1.5 cho 340 g thịt: 1 tbsp xì dầu, 1/2 tsp đường, 1.5 tbsp nước.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Đường (ướp thịt bò)",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê đường ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Xem ghi chú ở nguyên liệu 'Xì dầu (ướp thịt bò)'. Làm tròn từ 3/8 tsp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Nước (ướp thịt bò)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 22,
+        "basis": "1 muỗng canh = 15 ml; nước ≈ 1 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Xem ghi chú ở nguyên liệu 'Xì dầu (ướp thịt bò)'.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước lọc không có giá trị dinh dưỡng đáng kể; để null, chỉ giữ gram_equivalent theo thể tích."
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 7,
+        "unit": "tép",
+        "text": "7 tép",
+        "gramEquivalent": 21,
+        "basis": "ước lượng phổ biến: 1 tép tỏi ≈ 3 g (USDA: 1 clove garlic = 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 7,
+          "unit": "piece"
+        }
+      },
+      "note": "HTK: 4-5 tép cho 2 phần → 6-7 tép cho 3 phần. Susie: chỉ 3 tép cho 4 phần — mâu thuẫn, ưu tiên HTK.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "USDA (Foundation) không công bố đường và natri cho tỏi tươi → để null."
+    },
+    {
+      "position": 6,
+      "sourceName": "Ớt hiểm tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 5,
+        "basis": "ước lượng: 1 quả ớt hiểm ≈ 1.5-2 g (không có chuẩn USDA cho ớt hiểm tươi)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "HTK: 1-3 quả cho 2 phần (tùy khẩu vị) → 3 quả cho 3 phần, cay vừa. Susie: 1-2 quả cho 4 phần — mâu thuẫn, ưu tiên HTK.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Ớt sừng đỏ",
+      "canonicalIngredientId": "ING_ENR_C86DB0034E210DD2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 15,
+        "basis": "ước lượng: 1 quả ớt sừng dài ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "HTK: 1 quả ớt sừng (hoặc 1/8 quả ớt chuông đỏ) cho 2 phần; làm tròn 1 quả cho 3 phần. Susie dùng 1 quả ớt chuông cho 4 phần — tương đương về vai trò tạo màu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 26,
+        "proteinG": 0.99,
+        "carbohydrateG": 6.03,
+        "fatG": 0.3,
+        "fiberG": 2.1,
+        "sugarG": 4.2,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170108",
+      "sourceNutritionNote": "Dùng số liệu ớt chuông đỏ USDA cho ớt sừng đỏ (cùng họ ớt ngọt)."
+    },
+    {
+      "position": 8,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 85,
+        "unit": "g",
+        "text": "85 g",
+        "gramEquivalent": 85,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 85,
+          "unit": "g"
+        }
+      },
+      "note": "HTK: 2 oz (57 g) thái sợi cho 2 phần → 3 oz (85 g) cho 3 phần. Susie không dùng cà rốt (dùng ớt chuông + hành tây thay) — hai nguồn khác nhau về rau củ, lấy theo HTK.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Cải rổ (gai lan)",
+      "canonicalIngredientId": "ING_ENR_028BBD9B2EB7CE4C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 120,
+        "unit": "g",
+        "text": "120 g",
+        "gramEquivalent": 120,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 120,
+          "unit": "g"
+        }
+      },
+      "note": "HTK: 2.8 oz (79 g) cho 2 phần → 4.2 oz (120 g) cho 3 phần. Thái xéo thân, lá thái riêng (HTK note 3).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 26,
+        "proteinG": 1.2,
+        "carbohydrateG": 4.67,
+        "fatG": 0.76,
+        "fiberG": 2.6,
+        "sugarG": 0.88,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169404",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Lá húng quế (holy basil)",
+      "canonicalIngredientId": "ING_ENR_01D7059A6803D3FB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cup",
+        "text": "3 cup",
+        "gramEquivalent": 60,
+        "basis": "ước lượng: 1 cup lá húng quế ≈ 20 g (lá xốp nhẹ)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK: 2 cups cho 2 phần → 3 cups cho 3 phần; chấp nhận húng quế Thái/Ý thay thế (note 5). Susie: 1/2 cup cho 4 phần — mâu thuẫn lớn, ưu tiên HTK (húng quế là linh hồn món này). Cho vào cuối, tắt bếp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 3.15,
+        "carbohydrateG": 2.65,
+        "fatG": 0.64,
+        "fiberG": 1.6,
+        "sugarG": 0.3,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172232",
+      "sourceNutritionNote": "USDA không có holy basil (húng quế Thái thánh); dùng số liệu basil tươi thông thường."
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 54,
+        "basis": "3 muỗng canh = 45 ml; tỉ trọng dầu hào ~1.2 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK (sốt cho 2 phần): 2 tbsp dầu hào + 1 tbsp xì dầu + 1/2 tbsp Golden Mountain + 1/2 tbsp nước mắm → nhân 1.5 cho 3 phần: 3 tbsp / 1.5 tbsp / 2 tsp / 2 tsp. Susie (4 phần): 2 tbsp dầu hào + 1 tbsp xì dầu + 1 tbsp nước mắm + 1 tsp đường — tỉ lệ tương đồng, củng cố công thức HTK.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.92,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": 0,
+        "sodiumMg": 2733
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174529",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Xì dầu (nước tương)",
+      "canonicalIngredientId": "ING_ENR_F68EF5C1E847770A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 26,
+        "basis": "1.5 muỗng canh = 22.5 ml; tỉ trọng xì dầu ~1.15 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Xem ghi chú ở nguyên liệu 'Dầu hào'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Sốt Golden Mountain (hoặc xì dầu)",
+      "canonicalIngredientId": "ING_ENR_5CFC5D50E7DF620F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 12,
+        "basis": "2 muỗng cà phê = 10 ml; tỉ trọng ~1.15 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK: 1/2 tbsp cho 2 phần → 3/4 tbsp cho 3 phần, làm tròn 2 tsp. Có thể thay bằng xì dầu (HTK note).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "Golden Mountain là seasoning sauce đậu nành Thái, tương đương xì dầu loãng; dùng số liệu xì dầu USDA."
+    },
+    {
+      "position": 14,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 12,
+        "basis": "2 muỗng cà phê = 10 ml; tỉ trọng nước mắm ~1.2 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK: 1/2 tbsp cho 2 phần → 3/4 tbsp cho 3 phần, làm tròn 2 tsp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "muỗng cà phê",
+        "text": "4 muỗng cà phê",
+        "gramEquivalent": 16,
+        "basis": "1 muỗng cà phê đường ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK: 2.5 tsp cho 2 phần → 3.75 tsp cho 3 phần, làm tròn 4 tsp. Rắc trực tiếp lên mì khi xào (HTK).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 16,
+      "sourceName": "Dầu ăn (dầu thực vật)",
+      "canonicalIngredientId": "ING_ENR_DBE4377CA2A0A47E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "3 muỗng canh = 45 ml; tỉ trọng dầu ăn ~0.91 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK: ~2 tbsp để áp chảo thịt mỗi mẻ + một ít cho hỗn hợp ớt-tỏi; nấu 3 phần nên chia 2 mẻ → tổng ~3 tbsp. Susie: 2 tbsp cho 4 phần (nấu 1 mẻ lớn) — mâu thuẫn do khác số mẻ, ưu tiên cách chia mẻ của HTK.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 17,
+      "sourceName": "Hắc xì dầu (tùy chọn, tạo màu)",
+      "canonicalIngredientId": "ING_ENR_0DA67B990EB7B643",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Hắc xì dầu via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê = 5 ml; tỉ trọng ~1.15 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK note 4: 'a dash' — tùy chọn, cho màu đậm hơn; nếu dùng xì dầu đen Trung Quốc thì bớt lượng sốt khác vì mặn hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "Dùng số liệu xì dầu thường cho hắc xì dầu."
+    },
+    {
+      "position": 18,
+      "sourceName": "Tiêu trắng xay (tùy chọn)",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Tiêu trắng xay via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.5,
+        "basis": "ước lượng: 1 muỗng cà phê tiêu xay ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ Susie dùng (1/2 tsp cho 4 phần); HTK không dùng — tùy chọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "Dùng số liệu tiêu đen USDA cho tiêu trắng (cùng họ, gần tương đương)."
+    },
+    {
+      "position": 19,
+      "sourceName": "Cà chua bi (tùy chọn)",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.33,
+        "unit": "cup",
+        "text": "0.33 cup",
+        "gramEquivalent": 50,
+        "basis": "USDA: 1 cup cà chua bi ≈ 149 g → 1/3 cup ≈ 50 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ Susie dùng (1/2 cup cho 4 phần, tùy chọn); HTK không dùng — tùy chọn, cho vào cuối cùng với húng quế.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Đợt tra USDA này không gồm cà chua bi; TUYỆT ĐỐI không bịa số → để null toàn bộ theo quy tắc brief."
+    },
+    {
+      "position": 20,
+      "sourceName": "Hành lá (trang trí, tùy chọn)",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 20,
+        "basis": "ước lượng: 1 cây hành lá ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Không có trong 2 nguồn công thức; có trong hint_ingredients của assignment — tùy chọn để trang trí.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Thái thịt bò thành lát mỏng (dày khoảng 0.5 cm), ngược thớ. Ướp với 1 muỗng canh xì dầu, 1/2 muỗng cà phê đường và 1.5 muỗng canh nước, trộn đều, để ít nhất 15 phút.",
+      "tip": "HTK note 2: ướp tối thiểu 15 phút. Mẹo thái mỏng đều: cho thịt vào ngăn đá 20 phút trước khi thái (Susie Cooks Thai).",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Chuẩn bị mì: nếu dùng mì tươi, tách từng sợi cho rời nhau (mì lạnh bị cứng thì hâm mềm trước khi tách). Nếu dùng mì khô, ngâm nước ở nhiệt độ phòng khoảng 30 phút cho mềm dẻo nhưng chưa chín hẳn, vớt ráo.",
+      "tip": "Susie: KHÔNG ngâm nước sôi — mì sẽ nát trong chảo. HTK: mì khô cần ngâm + luộc + rửa nước lạnh; hai nguồn khác nhau ở bước luộc, cách ngâm nước nguội của Susie an toàn hơn cho người mới.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho ớt hiểm vào cối, giã nhuyễn; thêm tỏi và ớt sừng đỏ, giã thành hỗn hợp hơi lợn cợn.",
+      "tip": "HTK: giã cối chày để dậy mùi tinh dầu ớt tỏi."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Trộn đều trong bát nhỏ: 3 muỗng canh dầu hào, 1.5 muỗng canh xì dầu, 2 muỗng cà phê Golden Mountain, 2 muỗng cà phê nước mắm.",
+      "tip": "Cả hai nguồn đều nhấn mạnh: trộn sẵn sốt trước khi bật bếp vì món xào rất nhanh, không kịp đong giữa chừng (Susie)."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Sơ chế rau: cà rốt thái sợi mỏng; cải rổ thái xéo phần thân, phần lá thái riêng; nhặt lấy lá húng quế, rửa sạch để ráo.",
+      "tip": "HTK note 3: giữ thân và lá cải rổ riêng vì thời gian chín khác nhau."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Chia toàn bộ nguyên liệu đã sơ chế thành 2-3 mẻ (mỗi mẻ khoảng 1 phần ăn); chuẩn bị sẵn muỗng đong trong bát sốt và bát đựng thịt đã áp chảo.",
+      "tip": "HTK khuyến nghị nấu 1 phần/mẻ cho ngon nhất; Susie: không nhồi nhét chảo — quá 2 phần thì chia mẻ, nếu không thịt và mì sẽ bị hấp thay vì áp chảo."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đun wok/chảo thật nóng già, cho khoảng 1 muỗng canh dầu ăn, dàn thịt bò thành một lớp mỏng, áp chảo đến xém cạnh và vừa chín tới thì gắp ra bát riêng.",
+      "tip": "HTK: áp chảo đến xém/nâu một mặt rồi lật; Susie: lát thịt mỏng chín trong chưa đầy 2 phút — thịt dày sẽ dai và làm nguội chảo.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Vặn bếp về lửa vừa, cho hỗn hợp ớt-tỏi đã giã vào cùng một ít dầu, đảo nhanh đến khi tỏi bắt đầu chuyển vàng.",
+      "tip": "HTK: chỉ đảo đến khi miếng tỏi nhỏ bắt đầu vàng — tỏi cháy sẽ đắng."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho cà rốt và thân cải rổ vào, vặn lửa lớn, đảo khoảng 30 giây.",
+      "tip": "HTK: rau củ cứng vào trước, lá cho sau.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Cho mì vào chảo, rưới đều sốt (khoảng 2 muỗng canh mỗi phần ăn), rắc 4 muỗng cà phê đường lên trên, đảo nhanh cho sốt thấm đều từng sợi mì. Muốn màu đậm hơn thì thêm từng ít hắc xì dầu.",
+      "tip": "HTK: rưới sốt + rắc đường trực tiếp lên mì rồi đảo đến khi sốt được mì hút hết.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Cho thịt bò đã áp chảo trở lại chảo, đảo đều rồi để yên 15-20 giây cho mì xém nhẹ vài chỗ, lật mặt và lặp lại 1-2 lần.",
+      "tip": "HTK: để mì chạm chảo không đảo để tạo vết xém — đó là linh hồn của pad kee mao. Susie: mì xém cạnh, bóng sốt là đạt."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Cho lá húng quế và lá cải rổ (và cà chua bi nếu dùng) vào, TẮT BẾP ngay, đảo vài giây cho héo rồi dọn ra đĩa. Lặp lại với mẻ tiếp theo. Ăn ngay khi còn nóng.",
+      "tip": "Cả hai nguồn: húng quế cho vào cuối, tắt bếp — chỉ cần hơi nóng còn lại làm héo; nấu quá sẽ mất mùi thơm đặc trưng.",
+      "timerMinutes": 1
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 479.88,
+      "proteinG": 30.84,
+      "carbohydrateG": 72.74,
+      "fatG": 5.47,
+      "fiberG": 3.19,
+      "sugarG": 1.8,
+      "sodiumMg": 240.52
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Xì dầu (ướp thịt bò): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Đường (ướp thịt bò): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Nước (ướp thịt bò): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Ớt hiểm tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Ớt sừng đỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Lá húng quế (holy basil): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Dầu hào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Xì dầu (nước tương): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Sốt Golden Mountain (hoặc xì dầu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 15,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 16,
+        "detail": "Dầu ăn (dầu thực vật): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      3,
+      4,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 15,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 16,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 17,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 18,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 19,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

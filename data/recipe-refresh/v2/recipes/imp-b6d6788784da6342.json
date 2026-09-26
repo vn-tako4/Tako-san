@@ -1,0 +1,759 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-b6d6788784da6342",
+    "slug": "ca-chien-sot-cay-thai",
+    "title": "Cá chiên sốt cay Thái"
+  },
+  "content": {
+    "description": "Cá chiên da giòn phủ sốt cay-tỏi-chanh, món cá Thái đậm vị lạ miệng đưa cơm.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 40,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Cá chiên",
+      "Sốt cay",
+      "Thái Lan",
+      "Đậm vị"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-b6d6788784da6342.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://importfood.com/recipes/seafood/recipe/214-thai-crispy-fish-topped-with-chili-sauce-pla-rad-prik",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://delishglobe.com/recipe/thai-pla-rad-prik/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cá tươi nguyên con (cá rô phi, cá vược hoặc điêu hồng)",
+      "canonicalIngredientId": "ING_ENR_5E31C6E689819A1E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 800,
+        "unit": "g",
+        "text": "800 g",
+        "gramEquivalent": 800,
+        "basis": "đơn vị gốc đã là gram (cân cả con đã làm sạch). ImportFood (Pla Rad Prik): dùng cá nguyên con chiên giòn.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 800,
+          "unit": "g"
+        }
+      },
+      "note": "DelishGlobe dùng 1 con cá seabass/snapper 1.2 kg cho 4 phần; cá rô phi ở VN thường 600-800 g/con → lấy 1 con 800 g cho 4 phần là hợp lý, mỗi người ~200 g cá nguyên con.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 96,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 1.7,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 52
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175176",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    },
+    {
+      "position": 1,
+      "sourceName": "Nước mắm (để ướp cá)",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "DelishGlobe: xát 1 tbsp nước mắm đều mình cá trước khi ướp; 1 tbsp ≈ 18 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có bản ghi SR Legacy/Foundation cho nước mắm (chỉ có Branded theo từng hãng) nên để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Muối (để ướp cá)",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Muối via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "DelishGlobe: 1 tsp muối xát cá, ướp 15 phút; 1 tsp ≈ 6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tiêu trắng xay (để ướp cá)",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Tiêu trắng xay via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2.3,
+        "basis": "DelishGlobe: 1 tsp tiêu trắng xát cá; 1 tsp ≈ 2.3 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.6,
+        "fatG": 2.12,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    },
+    {
+      "position": 4,
+      "sourceName": "Bột mì đa dụng (để áo cá)",
+      "canonicalIngredientId": "ING_ENR_A9194AD78D914D6C",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Bột mì đa dụng via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 16,
+        "basis": "DelishGlobe: 2 tbsp bột mì áo mỏng mình cá; 1 tbsp bột mì ≈ 7.9 g (USDA).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Mâu thuẫn: DelishGlobe và ThaiCookbook.tv áo bột để cá giòn, giữ ẩm; ImportFood KHÔNG dùng bột mà chiên trực tiếp. Để optional — không có bột cá vẫn giòn nếu thấm khô kỹ và dầu đủ nóng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 364,
+        "proteinG": 10.3,
+        "carbohydrateG": 76.3,
+        "fatG": 0.98,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168894",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu ăn (để chiên cá)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "ml",
+        "text": "500 ml",
+        "gramEquivalent": 455,
+        "basis": "500 ml dầu ≈ 455 g (tỉ trọng ~0.91).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 500,
+          "unit": "ml"
+        }
+      },
+      "note": "Mâu thuẫn lượng dầu: ImportFood chiên ngập dầu với 2 cups (~475 ml); DelishGlobe chỉ dùng 1/4 cup (~60 ml) chiên nông. Lấy 500 ml — đủ ngập nửa thân cá trong wok/chảo sâu lòng. Dầu chiên còn lại lọc sạch có thể dùng lại; lượng dầu thực tế bám vào cá khi ăn chỉ khoảng 2 tbsp (~27 g).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ăn (để xào sốt)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "DelishGlobe: 3 tbsp dầu để phi ớt tỏi làm sốt; 1 tbsp ≈ 13.6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ImportFood chỉ để lại 1 tbsp dầu trong wok làm sốt — mâu thuẫn; lấy theo DelishGlobe (3 tbsp) vì lượng ớt tỏi nhiều cần đủ dầu để phi thơm không cháy.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "tép",
+        "text": "5 tép",
+        "gramEquivalent": 15,
+        "basis": "DelishGlobe: 5 tép tỏi băm nhỏ cho 4 phần; 1 tép ≈ 3 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "Mâu thuẫn: kênh YouTube 'The BEST Pla Rad Prik' dùng đến 70 g tỏi băm thô cho 1 con cá ~1 kg — nhiều gấp 4-5 lần. Lấy theo DelishGlobe cho vừa ăn; ai thích tỏi nhiều có thể tăng gấp đôi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Ớt hiểm đỏ",
+      "canonicalIngredientId": "ING_ENR_499027DF3272AE1D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "quả",
+        "text": "4 quả",
+        "gramEquivalent": 4,
+        "basis": "1 quả ớt hiểm ≈ 1 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Mâu thuẫn độ cay: DelishGlobe dùng 3-4 quả ớt hiểm ('adjust to taste'); ImportFood gợi ý 5 quả ớt đỏ tươi, có thể thêm nếu ớt không cay. Lấy 4 quả ở giữa — tăng/giảm tùy khả năng ăn cay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": null,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    },
+    {
+      "position": 9,
+      "sourceName": "Đường thốt nốt (hoặc đường cát trắng)",
+      "canonicalIngredientId": "ING_ENR_E6C614C97F3C89EC",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 25,
+        "basis": "DelishGlobe: 2 tbsp palm sugar; 1 tbsp đường ≈ 12.6 g (USDA).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Đường thốt nốt là vị ngọt chuẩn của sốt Pla Rad Prik (ImportFood, DelishGlobe); không có thì thay đường cát trắng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": "USDA không có bản ghi cho đường thốt nốt; dùng số liệu đường cát trắng làm nguyên liệu tương đương."
+    },
+    {
+      "position": 10,
+      "sourceName": "Nước mắm (cho sốt)",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "DelishGlobe: 2 tbsp nước mắm trong sốt; 1 tbsp ≈ 18 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có bản ghi SR Legacy/Foundation cho nước mắm (chỉ có Branded theo từng hãng) nên để null."
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước cốt chanh",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "DelishGlobe: 1 tbsp lime juice trong sốt; 1 tbsp ≈ 15.2 g (USDA).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Theo đúng hint món ('chanh tươi'). ImportFood không dùng chanh (dùng me tạo chua); DelishGlobe dùng cả me (3 tbsp) và chanh (1 tbsp). Công thức này bỏ me theo hint, chỉ giữ chanh làm vị chua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.42,
+        "carbohydrateG": 8.42,
+        "fatG": 0.07,
+        "fiberG": 0.4,
+        "sugarG": null,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168156",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    },
+    {
+      "position": 12,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "cup",
+        "text": "0.25 cup",
+        "gramEquivalent": 60,
+        "basis": "DelishGlobe: 1/4 cup nước cho sốt; 1/4 cup ≈ 60 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 13,
+      "sourceName": "Hành lá (trang trí)",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây ≈ 15 g (USDA); thái lát mỏng.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "ImportFood trang trí cá bằng hành lá thái lát + ớt đỏ thái lát; hint món có hành lá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Cá làm sạch, đánh vảy, bỏ mang và ruột, rửa sạch rồi thấm thật khô trong và ngoài mình cá bằng giấy bếp. Dùng dao khía 3-4 đường chéo sâu trên mỗi bên mình cá.",
+      "tip": "ImportFood: khía cá giúp chín đều, không bị cháy ngoài sống trong; Hungry in Thailand: thấm khô hoàn toàn là bí quyết để da cá giòn."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Xát đều nước mắm, muối và tiêu trắng lên khắp mình cá (cả trong bụng cá), ướp 15 phút.",
+      "tip": "DelishGlobe: bước ướp này giúp cá đậm đà và giòn hơn khi chiên.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Nếu dùng bột: áo một lớp bột mì thật mỏng đều khắp mình cá, giũ sạch bột thừa.",
+      "tip": "DelishGlobe: lớp bột mỏng giúp tạo vỏ giòn, khóa ẩm bên trong. ImportFood không dùng bột — bỏ qua bước này nếu chiên trực tiếp."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun nóng dầu chiên trong wok/chảo sâu lòng trên lửa vừa, đến dưới điểm bốc khói. Nhẹ nhàng thả cá vào (mẹo của ImportFood: cầm đuôi cá, cho cá trượt vào từ một bên để dầu không bắn). Chiên 6-8 phút mỗi mặt đến khi vàng giòn.",
+      "tip": "Mâu thuẫn thời gian: ImportFood chiên ~8 phút/mặt (chiên ngập); ThaiCookbook.tv chiên ~5 phút/mặt; DelishGlobe 5-7 phút/mặt. Lấy 6-8 phút/mặt và quan sát màu vàng giòn thực tế — cá dày mình cần lâu hơn.",
+      "timerMinutes": 16
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Vớt cá ra, để ráo dầu trên rack hoặc đĩa lót giấy thấm dầu.",
+      "tip": "ImportFood còn cho cá vào lò 180°C thêm 10 phút cho giòn hơn — không bắt buộc nếu cá đã chín giòn."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Trong lúc chờ: băm thô ớt hiểm với tỏi (giã bằng cối hoặc băm dao) — giữ hơi lợn cợn, đừng băm nhuyễn quá.",
+      "tip": "ImportFood: 'Don't pound it too much, keep the mix relatively rough' — sốt còn lợn cợn mới đúng kiểu."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Chắt bớt dầu chiên, chỉ để lại khoảng 3 muỗng canh trong chảo sạch. Phi hỗn hợp ớt tỏi trên lửa vừa 1-2 phút đến thơm và hơi vàng.",
+      "tip": "DelishGlobe: cẩn thận không để tỏi cháy — tỏi cháy sẽ làm sốt bị đắng.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho đường thốt nốt vào, đảo đều cho đường tan và hơi caramen. Rồi cho xì dầu, nước mắm, nước lọc và nước cốt chanh vào; đun liu riu 2-3 phút, khuấy đều đến khi sốt sánh lại, bóng mượt.",
+      "tip": "DelishGlobe: đun đến khi sốt 'syrupy'. Đường caramen nhẹ trước khi cho chất lỏng là bí quyết tạo độ sâu cho vị ngọt.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nếm sốt: phải cân bằng bốn vị mặn - ngọt - chua - cay. Nhạt thì thêm nước mắm, thiếu chua thêm chanh, thiếu ngọt thêm đường, thiếu cay thêm ớt.",
+      "tip": "DelishGlobe: 'Taste and adjust seasoning' — sốt Pla Rad Prik ngon là sốt cân bằng, không vị nào lấn át."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Bày cá chiên ra đĩa sâu lòng, rưới đều sốt ớt nóng lên khắp mình cá. Rắc hành lá thái lát lên trên. Dọn ngay với cơm trắng nóng.",
+      "tip": "ImportFood: rưới sốt lên cá ở phút cuối để giữ lớp da giòn; Hungry in Thailand: 'spoon that hot, sticky sauce right over the top at the very last second'. Ăn ngay — để lâu da cá sẽ mềm vì ngấm sốt."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Cá tươi nguyên con (cá rô phi, cá vược hoặc điêu hồng): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Nước mắm (để ướp cá): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Muối (để ướp cá): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tiêu trắng xay (để ướp cá): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 5,
+        "detail": "Dầu ăn (để chiên cá): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu ăn (để xào sốt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Ớt hiểm đỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Đường thốt nốt (hoặc đường cát trắng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Nước mắm (cho sốt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước cốt chanh: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

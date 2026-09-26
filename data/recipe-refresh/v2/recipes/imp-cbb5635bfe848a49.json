@@ -1,0 +1,828 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-cbb5635bfe848a49",
+    "slug": "ga-om-gung-tuong",
+    "title": "Gà om gừng tương"
+  },
+  "content": {
+    "description": "Đùi gà om gừng-tương nước sốt sánh thơm ấm, món om Trung Hoa mặn ngọt đưa cơm.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Om",
+      "Gừng",
+      "Gà",
+      "Đưa cơm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-cbb5635bfe848a49.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.theflouredcamera.com/chinese-braised-soy-sauce-chicken/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.angsarap.net/2026/03/13/ginger-chicken/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Đùi gà (có xương, có da)",
+      "canonicalIngredientId": "ING_ENR_28C3E7E7AAB54E0B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1400,
+        "unit": "g",
+        "text": "1400 g",
+        "gramEquivalent": 1400,
+        "basis": "đơn vị gốc đã là gram (The Floured Camera dùng 3 lbs ≈ 1360 g cho 4 phần ăn; làm tròn 1.4 kg)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1400,
+          "unit": "g"
+        }
+      },
+      "note": "The Floured Camera: 3 lbs (1360 g) đùi/cánh gà có xương có da cho 4 phần. Ang Sarap: 600 g đùi gà rút xương không da (không ghi rõ số phần ăn, ước 2-3 phần) — mâu thuẫn về định lượng; lấy theo The Floured Camera vì ghi rõ 4 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 221,
+        "proteinG": 16.52,
+        "carbohydrateG": 0.25,
+        "fatG": 16.61,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 81
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172385",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 40,
+        "unit": "g",
+        "text": "40 g",
+        "gramEquivalent": 40,
+        "basis": "đơn vị gốc đã là gram; cân gừng tươi đã gọt vỏ, thái lát",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 40,
+          "unit": "g"
+        }
+      },
+      "note": "The Floured Camera chỉ dùng 1/2 inch gừng thái lát (~10 g); Ang Sarap dùng 12 lát gừng già (~30-40 g) và nhấn mạnh gừng là nguyên liệu chính. Món có tên 'gà om gừng' nên lấy mức cao theo Ang Sarap.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "tép",
+        "text": "5 tép",
+        "gramEquivalent": 15,
+        "basis": "1 tép tỏi vừa ~3 g (ước lượng bếp); đập dập",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "The Floured Camera: 4 tép đập dập; Ang Sarap: 6 tép nghiền — mâu thuẫn nhẹ, lấy mức giữa 5 tép.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá vừa ~10 g (ước lượng bếp); cắt khúc, tách riêng phần trắng (phi thơm) và phần xanh (rắc sau)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "The Floured Camera: 3 cây, tách trắng/xanh; Ang Sarap: chỉ 1 cây thái nhỏ rắc sau — mâu thuẫn, lấy theo The Floured Camera.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ nhỏ",
+        "text": "1 củ nhỏ",
+        "gramEquivalent": 100,
+        "basis": "1 củ hành tây nhỏ ~100 g (ước lượng bếp); bổ múi cau",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Không có trong hai nguồn chính đã đọc; chỉ giữ lại từ danh sách gợi ý cũ của món nên để optional — có thể bỏ qua mà món vẫn đúng vị theo nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu nhạt (light soy sauce)",
+      "canonicalIngredientId": "ING_ENR_F4D1B45C3CF6671C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 120,
+        "unit": "ml",
+        "text": "120 ml",
+        "gramEquivalent": 144,
+        "basis": "120 ml × tỉ trọng ước lượng ~1.2 g/ml ≈ 144 g (xì dầu đặc hơn nước)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 120,
+          "unit": "ml"
+        }
+      },
+      "note": "The Floured Camera: 1/2 cup (120 ml) cho 4 phần; Ang Sarap: chỉ 1 tbsp — mâu thuẫn lớn, lấy theo The Floured Camera vì ghi rõ 4 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu đặc (dark soy sauce)",
+      "canonicalIngredientId": "ING_ENR_FDE6895A8FBD1E66",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "ml",
+        "text": "60 ml",
+        "gramEquivalent": 72,
+        "basis": "60 ml × tỉ trọng ước lượng ~1.2 g/ml ≈ 72 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 60,
+          "unit": "ml"
+        }
+      },
+      "note": "The Floured Camera: 1/4 cup (60 ml); Ang Sarap: 1 tsp — mâu thuẫn lớn, lấy theo The Floured Camera. USDA không có mục xì dầu đặc riêng nên dùng số liệu xì dầu nhạt (shoyu) làm tương đương.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "USDA không có mục xì dầu đặc (dark soy sauce) riêng; dùng số liệu xì dầu nhạt (shoyu) làm tương đương gần nhất."
+    },
+    {
+      "position": 7,
+      "sourceName": "Rượu Thiệu Hưng (Shaoxing wine)",
+      "canonicalIngredientId": "ING_ENR_579A6A19552283BE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "ml",
+        "text": "60 ml",
+        "gramEquivalent": 60,
+        "basis": "chất lỏng gốc rượu, tỉ trọng ≈ 1 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 60,
+          "unit": "ml"
+        }
+      },
+      "note": "The Floured Camera: 1/4 cup (60 ml); Ang Sarap: 1 tbsp — mâu thuẫn, lấy theo The Floured Camera. The Floured Camera nhấn mạnh rượu Thiệu Hưng giúp át mùi tanh của thịt gà.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.5,
+        "carbohydrateG": 6.3,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 1.55,
+        "sodiumMg": 626
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169070",
+      "sourceNutritionNote": "USDA không có rượu Thiệu Hưng; dùng số liệu 'Alcoholic beverage, wine, cooking' làm tương đương gần nhất."
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "ml",
+        "text": "15 ml",
+        "gramEquivalent": 14,
+        "basis": "1 tbsp = 15 ml; tỉ trọng dầu ~0.91 g/ml ≈ 14 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "ml"
+        }
+      },
+      "note": "The Floured Camera: 1 tbsp cho vào cùng nước sốt; Ang Sarap: 1 tsp rưới lúc cuối — mâu thuẫn, lấy theo The Floured Camera.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Đường nâu",
+      "canonicalIngredientId": "ING_ENR_BCD3DFAFE3C19745",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "đơn vị gốc đã là gram (1/4 cup đường nâu ≈ 50 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "The Floured Camera: 1/4 cup đường nâu cho 4 phần; Ang Sarap: chỉ 1/4 tsp đường — mâu thuẫn rất lớn, lấy theo The Floured Camera vì ghi rõ 4 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 380,
+        "proteinG": 0.12,
+        "carbohydrateG": 98.09,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 97.02,
+        "sodiumMg": 28
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168833",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Nước",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 120,
+        "unit": "ml",
+        "text": "120 ml",
+        "gramEquivalent": 120,
+        "basis": "chất lỏng, 1 ml ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 120,
+          "unit": "ml"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng 120 ml (1/2 cup) — nhất quán.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 11,
+      "sourceName": "Hoa hồi",
+      "canonicalIngredientId": "ING_ENR_E3301615B29A7FC8",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cái",
+        "text": "2 cái",
+        "gramEquivalent": 2,
+        "basis": "1 hoa hồi khô ~1 g (ước lượng bếp)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ The Floured Camera dùng (2 cái); Ang Sarap không dùng hoa hồi. USDA không có mục hoa hồi riêng nên dùng số liệu hạt hồi (anise seed) làm tương đương; chỉ số đường (number 269) không có trong dữ liệu nên để null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 337,
+        "proteinG": 17.6,
+        "carbohydrateG": 50.02,
+        "fatG": 15.9,
+        "fiberG": 14.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171316",
+      "sourceNutritionNote": "Dùng số liệu 'Spices, anise seed' làm tương đương gần nhất cho hoa hồi; number 269 (đường) không có trong response nên để null."
+    },
+    {
+      "position": 12,
+      "sourceName": "Lá nguyệt quế (bay leaf)",
+      "canonicalIngredientId": "ING_ENR_7A3270D3EA9194D1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "lá",
+        "text": "3 lá",
+        "gramEquivalent": 1.5,
+        "basis": "1 lá nguyệt quế khô ~0.5 g (ước lượng bếp)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ The Floured Camera dùng (3 lá); Ang Sarap không dùng. Chỉ số đường (number 269) không có trong dữ liệu USDA nên để null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 313,
+        "proteinG": 7.61,
+        "carbohydrateG": 74.97,
+        "fatG": 8.36,
+        "fiberG": 26.3,
+        "sugarG": null,
+        "sodiumMg": 23
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170917",
+      "sourceNutritionNote": "Number 269 (đường) không có trong response của USDA nên để null."
+    },
+    {
+      "position": 13,
+      "sourceName": "Dầu ăn (dầu trung tính)",
+      "canonicalIngredientId": "ING_ENR_E6E509ACF92EB36A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "ml",
+        "text": "15 ml",
+        "gramEquivalent": 14,
+        "basis": "1 tbsp = 15 ml; tỉ trọng dầu ~0.91 g/ml ≈ 14 g; dùng để phi thơm",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "ml"
+        }
+      },
+      "note": "Cả hai nguồn đều ghi dùng dầu trung tính để phi thơm nhưng không định lượng; lấy 1 tbsp vừa đủ phi gừng tỏi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "Dùng số liệu dầu đậu nành (soybean oil) cho dầu ăn thông thường."
+    },
+    {
+      "position": 14,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "g",
+        "text": "3 g",
+        "gramEquivalent": 3,
+        "basis": "đơn vị gốc đã là gram (1/2 tsp muối ≈ 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "g"
+        }
+      },
+      "note": "Ang Sarap dùng 1/4 tsp; The Floured Camera không nêm muối vì xì dầu đã mặn — mâu thuẫn, lấy 1/2 tsp và nêm nếm lại theo khẩu vị ở cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Tiêu trắng xay",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "g",
+        "text": "1 g",
+        "gramEquivalent": 1,
+        "basis": "1/4 tsp tiêu trắng xay ≈ 1 g (ước lượng bếp)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ Ang Sarap dùng (1/4 tsp); The Floured Camera không dùng. Chỉ số đường (number 269) không có trong dữ liệu USDA nên để null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.61,
+        "fatG": 2.12,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": "Number 269 (đường) không có trong response của USDA nên để null."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế gà: rửa sạch đùi gà, dùng khăn giấy thấm thật khô mặt ngoài. Gừng gọt vỏ thái lát mỏng; tỏi đập dập; hành lá cắt khúc 5-7 cm, tách riêng phần trắng và phần xanh.",
+      "tip": "The Floured Camera: thấm khô gà giúp khi áp chảo được vàng giòn hơn; nên dùng gà có xương có da vì thịt giữ ẩm, ngọt hơn."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cho 1 tbsp dầu ăn vào nồi đáy dày (nồi gang/dutch oven), đun lửa vừa. Cho gừng thái lát, tỏi đập dập và phần trắng của hành lá vào phi thơm.",
+      "tip": "The Floured Camera: phi khoảng 1-2 phút đến khi tỏi hơi ngả vàng là được, đừng để cháy sẽ đắng.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho đùi gà vào nồi, xếp một lớp không chồng lên nhau. Áp chảo đến khi mặt dưới vàng nhạt thì lật, áp vàng mặt còn lại.",
+      "tip": "Ang Sarap làm ngược lại: áp gà trước rồi mới cho gừng tỏi vào xào — hai nguồn mâu thuẫn về thứ tự; làm theo The Floured Camera (phi thơm trước) để gừng tỏi không bị cháy khi áp gà lâu. Không xếp gà chồng lên nhau để gà vàng đều.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Khi hai mặt gà đã vàng, cho xì dầu nhạt, xì dầu đặc, rượu Thiệu Hưng, dầu mè, đường nâu và nước vào nồi. Khuấy nhẹ cho đường tan, rồi cho hoa hồi và lá nguyệt quế vào.",
+      "tip": "The Floured Camera: xì dầu đặc chủ yếu tạo màu nâu bóng đẹp, vị ngọt dịu hơn xì dầu nhạt — đừng nhầm là mặn hơn."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun cho nước sốt sôi bùng lên rồi hạ xuống lửa nhỏ nhất, đậy nắp kín và om liu riu trong 35 phút. Khoảng phút thứ 15 mở nắp trở mặt gà một lần cho ngấm đều hai mặt.",
+      "tip": "The Floured Camera: om lửa thật nhỏ — xì dầu sôi mạnh dễ trào và khét. Ang Sarap chỉ om 5 phút lửa lớn rồi cạn sốt — mâu thuẫn lớn về thời gian; lấy theo The Floured Camera vì đùi gà có xương cần thời gian để chín mềm và ngấm.",
+      "timerMinutes": 35
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Mở nắp, nếm nước sốt và nêm muối, tiêu trắng cho vừa miệng. Nếu thích sốt sánh bóng hơn, mở nắp đun thêm vài phút cho sốt cạn bớt.",
+      "tip": "Ang Sarap: đun mở nắp đến khi sốt cạn thành lớp bóng áo đều miếng gà là đạt. Nêm muối cẩn thận vì xì dầu và đường đã đậm đà.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho phần xanh của hành lá vào nồi, đảo nhẹ rồi tắt bếp.",
+      "tip": "The Floured Camera: cho hành xanh vào lúc cuối để giữ màu tươi và mùi thơm."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Gắp gà ra đĩa sâu lòng, vớt bỏ hoa hồi và lá nguyệt quế. Chan nước sốt om lên trên miếng gà."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Dọn nóng ngay với cơm trắng; chan thêm nước sốt om lên cơm khi ăn.",
+      "tip": "The Floured Camera: nước sốt còn dư để tủ lạnh sẽ đông lại — khi dùng hâm nóng với chút nước dùng, có thể dùng chan cơm hoặc nấu món khác."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 8,
+      "proteinG": 0.18,
+      "carbohydrateG": 1.78,
+      "fatG": 0.08,
+      "fiberG": 0.2,
+      "sugarG": 0.17,
+      "sodiumMg": 1.3
+    },
+    "originalPerServing": {
+      "energyKcal": 948.59,
+      "proteinG": 63.28,
+      "carbohydrateG": 23.35,
+      "fatG": 65.69,
+      "fiberG": null,
+      "sugarG": 14.02,
+      "sodiumMg": 3642.12
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Đùi gà (có xương, có da): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Xì dầu nhạt (light soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Xì dầu đặc (dark soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Rượu Thiệu Hưng (Shaoxing wine): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Đường nâu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Nước: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Hoa hồi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Lá nguyệt quế (bay leaf): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Dầu ăn (dầu trung tính): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 15,
+        "detail": "Tiêu trắng xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      10
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 10,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

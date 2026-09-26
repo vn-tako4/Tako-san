@@ -1,0 +1,633 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-2ae4c4cdd97c5d02",
+    "slug": "com-bo-hanh-tay",
+    "title": "Cơm bò hành tây"
+  },
+  "content": {
+    "description": "Cơm chan bò xào hành tây đậm vị, món cơm nhanh cho bữa tối bận rộn 15 phút.",
+    "cuisine": "vietnamese",
+    "category": "mon_nhanh_sang",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Cơm",
+      "Bò",
+      "Nhanh",
+      "Bữa tối"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-2ae4c4cdd97c5d02.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://kingfoodmart.com/bai-viet/cach-lam-thit-bo-xao-hanh-tay-sieu-nhanh-gon",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "http://zaidap.com/cach-nau-thit-bo-xao-hanh-tay-don-gian-ngon-com-d364706.htm",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cơm trắng nóng",
+      "canonicalIngredientId": "ING_ENR_52B45E6F49B7918C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 600,
+        "unit": "g",
+        "text": "600 g",
+        "gramEquivalent": 600,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 600,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn đều không định lượng cơm (Kingfoodmart: 'thưởng thức cùng cơm nóng'; yeutre: 'ăn cùng với cơm'); ước 1 chén cơm chín (~200 g) mỗi khẩu phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 130,
+        "proteinG": 2.69,
+        "carbohydrateG": 28.17,
+        "fatG": 0.28,
+        "fiberG": 0.4,
+        "sugarG": 0.05,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168878",
+      "sourceNutritionNote": "USDA FoodData Central: Rice, white, long-grain, regular, enriched, cooked (SR Legacy, fdcId 168878)."
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt bò (thăn hoặc bắp mềm)",
+      "canonicalIngredientId": "ING_ENR_3F2075C47178C7FC",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Kingfoodmart: 200 g cho 2 người (= 100 g/người) — nguồn có khẩu phần rõ ràng nên lấy làm chuẩn. Yeutre: 500 g nhưng không ghi khẩu phần (ước ~4 người ≈ 125 g/người) — mâu thuẫn nhẹ, ưu tiên Kingfoodmart.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 133,
+        "proteinG": 22.03,
+        "carbohydrateG": 0,
+        "fatG": 4.99,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 63
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171776",
+      "sourceNutritionNote": "USDA FoodData Central: Beef, composite of trimmed retail cuts, separable lean only, trimmed to 0\" fat, select, raw (SR Legacy, fdcId 171776)."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "củ",
+        "text": "2 củ",
+        "gramEquivalent": 220,
+        "basis": "1 củ hành tây vừa ≈ 110 g (USDA FDC 170000: 1 medium onion = 110 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Kingfoodmart: 1 quả vừa cho 2 người; yeutre: 2 củ (ước ~4 người) — hai nguồn tương đương nhau, lấy 2 củ vừa cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": "USDA FoodData Central: Onions, raw (SR Legacy, fdcId 170000)."
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "đơn vị gốc đã là gram (~5 tép, 1 tép ≈ 3 g theo FDC 169230)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Kingfoodmart định lượng 10 g cho 2 người; yeutre chỉ ghi 'tỏi' băm nhỏ không định lượng — lấy theo Kingfoodmart.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "USDA FoodData Central: Garlic, raw (SR Legacy, fdcId 169230)."
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhánh",
+        "text": "1 nhánh",
+        "gramEquivalent": 15,
+        "basis": "1 nhánh hành lá vừa ≈ 15 g (USDA FDC 170005)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Kingfoodmart: 10 g cho 2 người; yeutre: 3 nhánh (ước ~4 người) — tương đương, lấy 1 nhánh (~15 g).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "USDA FoodData Central: Onions, spring or scallions (includes tops and bulb), raw (SR Legacy, fdcId 170005)."
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "1 muỗng canh dầu ăn = 15 ml ≈ 13,6 g (tỉ trọng dầu thực vật ~0,91); 3 × 13,6 ≈ 41 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kingfoodmart: 2 muỗng canh cho 2 người. Yeutre: '1 thìa nhỏ dầu ăn' để ướp + dầu xào không định lượng — lấy theo Kingfoodmart.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "USDA FoodData Central: Oil, soybean, salad or cooking (SR Legacy, fdcId 171411)."
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh ≈ 18 g (USDA FDC 174531: 1 tbsp fish sauce = 18 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN VỚI HINT: hint gợi ý xì dầu nhưng cả Kingfoodmart và yeutre đều dùng nước mắm để ướp/xào — lấy theo hai nguồn, có thể thay 1 phần nước mắm bằng xì dầu nếu thích vị Tàu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": "USDA FoodData Central: Sauce, fish, ready-to-serve (SR Legacy, fdcId 174531)."
+    },
+    {
+      "position": 7,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.3333333333333333,
+        "unit": "muỗng cà phê",
+        "text": "0.3333333333333333 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê muối ≈ 6 g (USDA FDC 173468); 1/3 tsp ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kingfoodmart: 1/4 muỗng cà phê cho 2 người; yeutre: 'nửa thìa muối nhỏ' ướp thịt (ước ~4 người) — tương đương, quy về ~1/3 tsp cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "USDA FoodData Central: Salt, table (SR Legacy, fdcId 173468)."
+    },
+    {
+      "position": 8,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.3333333333333333,
+        "unit": "muỗng cà phê",
+        "text": "0.3333333333333333 muỗng cà phê",
+        "gramEquivalent": 0.8,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2,3 g (USDA FDC 170931); 1/3 tsp ≈ 0,8 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kingfoodmart: 1/4 muỗng cà phê cho 2 người (ướp + rắc cuối); yeutre: 'ít hạt tiêu' — lấy ~1/3 tsp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "USDA FoodData Central: Spices, pepper, black (SR Legacy, fdcId 170931)."
+    },
+    {
+      "position": 9,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2.5,
+        "basis": "ước: 1 muỗng cà phê hạt nêm ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Yeutre dùng '1 thìa hạt nêm' khi xào (không rõ khẩu phần, ước ~4 người → ~1/2 tsp cho 3 người); Kingfoodmart không dùng — optional.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có bản ghi USDA FoodData Central phù hợp cho hạt nêm."
+    },
+    {
+      "position": 10,
+      "sourceName": "Gừng băm",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "Yeutre đập giập băm nhỏ gừng phi thơm cùng tỏi và đầu hành; Kingfoodmart không dùng — optional.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tra FDC cho lượng gừng nhỏ optional này; có thể bổ sung sau."
+    },
+    {
+      "position": 11,
+      "sourceName": "Rượu trắng (nấu ăn)",
+      "canonicalIngredientId": "ING_ENR_3D916BFBEDB80FF2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "ml",
+        "text": "5 ml",
+        "gramEquivalent": 5,
+        "basis": "đơn vị gốc đã là ml (≈ 5 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "ml"
+        }
+      },
+      "note": "Yeutre: 'thêm chút rượu trắng' khi xào thịt để khử mùi và mềm thịt; Kingfoodmart không dùng — optional.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có bản ghi FDC phù hợp cho rượu trắng nấu ăn VN."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Vo gạo, nấu cơm bằng nồi cơm điện như bình thường. Cơm chín thì xới tơi, giữ nóng.",
+      "tip": "Cơm nóng ăn kèm là đúng tinh thần món 'cơm bò' (Kingfoodmart).",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Thịt bò rửa sạch, thấm khô, thái lát mỏng vừa ăn theo thớ ngang.",
+      "tip": "Cả hai nguồn đều nhấn mạnh thái ngang thớ để thịt xào không bị dai."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Ướp thịt bò với nước mắm, muối, tiêu (và hạt nêm, rượu trắng nếu dùng), trộn đều, để 10–15 phút cho thấm.",
+      "tip": "Kingfoodmart ướp 10 phút; yeutre ướp 15–20 phút với thêm 1 thìa nhỏ dầu ăn.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Hành tây bóc vỏ, cắt múi cau. Hành lá rửa sạch, cắt khúc; để riêng phần đầu trắng. Tỏi (và gừng nếu dùng) băm nhỏ.",
+      "tip": "Yeutre để riêng phần thân trắng hành lá để phi thơm trước, phần lá xanh cho vào cuối."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Bắc chảo lên bếp, cho khoảng 2 muỗng canh dầu ăn vào đun nóng, phi thơm tỏi băm (cùng gừng và đầu hành trắng nếu dùng).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho thịt bò đã ướp vào xào nhanh trên lửa lớn khoảng 2–3 phút đến khi thịt vừa chín tới thì trút ra đĩa riêng.",
+      "tip": "Yeutre: xào lửa lớn, đảo nhanh tay giúp thịt mềm và không ra nước; xào riêng thịt trước để thịt không bị dai.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Dùng lại chảo, thêm 1 muỗng canh dầu ăn nếu cần. Cho hành tây vào xào nhanh trên lửa vừa khoảng 1–2 phút.",
+      "tip": "Kingfoodmart: xào đến khi hành mềm nhưng vẫn giữ độ giòn và thơm — không xào quá lâu.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho thịt bò trở lại chảo, đảo đều với hành tây thêm 1–2 phút cho thấm gia vị. Nêm nếm lại cho vừa ăn.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho hành lá cắt khúc vào, rắc thêm ít tiêu xay, đảo nhanh rồi tắt bếp."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Xới cơm trắng nóng ra đĩa hoặc tô, cho thịt bò xào hành tây lên trên (hoặc để riêng ăn kèm).",
+      "tip": "Kingfoodmart: món ngon hơn khi ăn cùng cơm nóng, thêm rau xanh hoặc dưa chua chống ngán."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 393,
+      "proteinG": 27.41,
+      "carbohydrateG": 56.34,
+      "fatG": 5.55,
+      "fiberG": 0.8,
+      "sugarG": 0.1,
+      "sodiumMg": 65
+    },
+    "originalPerServing": {
+      "energyKcal": 556.02,
+      "proteinG": 29.11,
+      "carbohydrateG": 65.71,
+      "fatG": 19.33,
+      "fiberG": 2.35,
+      "sugarG": 3.71,
+      "sodiumMg": 1034.61
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

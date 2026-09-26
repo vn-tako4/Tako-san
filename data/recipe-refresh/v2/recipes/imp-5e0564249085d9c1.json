@@ -1,0 +1,616 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-5e0564249085d9c1",
+    "slug": "canh-tom-bong-cai",
+    "title": "Canh tôm bông cải"
+  },
+  "content": {
+    "description": "Bông cải xanh nấu với tôm tươi ra nước canh ngọt thanh trong veo, món canh nhanh đầy sức sống.",
+    "cuisine": "vietnamese",
+    "category": "mon_canh",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Món canh",
+      "Tôm",
+      "Thanh",
+      "Cơm nhà"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-5e0564249085d9c1.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://cookpad.com/vn/cong-thuc/16300629",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "http://kingfoodmart.com/bai-viet/cong-thuc-nau-an/canh-tom-bong-cai",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm tươi",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "g",
+        "text": "250 g",
+        "gramEquivalent": 250,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 250,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn về lượng tôm: Cookpad (Rose Truong) dùng 200 g; Kingfoodmart/Maggi dùng 300 g (cả hai đều không ghi rõ số phần). Lấy 250 g cho 3 phần ăn. Tôm bóc vỏ, rút chỉ đen, đập dập/giã dập trước khi xào.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "USDA SR Legacy 'Crustaceans, shrimp, raw' (fdcId 175179). Chất xơ và đường không được báo cáo nên để null, không ước tính."
+    },
+    {
+      "position": 1,
+      "sourceName": "Bông cải xanh",
+      "canonicalIngredientId": "BROCCOLI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Cookpad dùng 200 g (không ghi số phần); Kingfoodmart không định lượng. Lấy 300 g (khoảng 1 cây vừa) cho 3 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 31,
+        "proteinG": 2.57,
+        "carbohydrateG": 6.27,
+        "fatG": 0.34,
+        "fiberG": 2.4,
+        "sugarG": null,
+        "sodiumMg": 36
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/747447",
+      "sourceNutritionNote": "USDA Foundation 'Broccoli, raw' (fdcId 747447). Đường không được báo cáo nên để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá ~15 g (ước lượng bếp phổ biến)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Cookpad dùng 2 cây hành lá; đầu hành cắt riêng để phi thơm, lá cắt nhỏ rắc lúc tắt bếp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "USDA SR Legacy 'Onions, spring or scallions (includes tops and bulb), raw' (fdcId 170005)."
+    },
+    {
+      "position": 3,
+      "sourceName": "Ngò rí",
+      "canonicalIngredientId": "ING_ENR_0F9D040BCEE6A9AF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "đơn vị gốc đã là gram ('1 ít' quy ước 5 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "Cookpad liệt kê 'lá ngò rí' nhưng không định lượng; Kingfoodmart không dùng. Để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": "USDA SR Legacy 'Coriander (cilantro) leaves, raw' (fdcId 169997)."
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tép",
+        "text": "1 tép",
+        "gramEquivalent": 5,
+        "basis": "1 tép tỏi vừa ~5 g (ước lượng bếp phổ biến)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ có trong hint_ingredients; cả hai nguồn đã đọc đều phi thơm bằng đầu hành (Cookpad) hoặc không ghi chất thơm (Kingfoodmart). Để optional — có thể bỏ qua hoặc thay bằng hành tím băm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "USDA Foundation 'Garlic, raw' (fdcId 1104647). Đường và natri không được báo cáo nên để null."
+    },
+    {
+      "position": 5,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ăn ≈ 6 g (USDA: 1 tsp table salt = 6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều nêm muối (Cookpad: muối hồng; Kingfoodmart không ghi chi tiết nêm nếm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "USDA SR Legacy 'Salt, table' (fdcId 173468)."
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng nước mắm ~1,2 g/ml ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Có trong hint_ingredients; Cookpad nêm bằng muối hồng (không dùng nước mắm). Ở đây dùng 1 muỗng canh nước mắm để tăng vị đậm đà theo khẩu vị Việt phổ biến.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": "USDA SR Legacy 'Sauce, fish, ready-to-serve' (fdcId 174531)."
+    },
+    {
+      "position": 7,
+      "sourceName": "Bột ngọt",
+      "canonicalIngredientId": "ING_ENR_0A4564D231578559",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê bột ngọt ≈ 4 g (ước lượng bếp phổ biến)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cookpad ghi 'bột ngọt (tùy sở thích)'.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có mục generic (SR Legacy/Foundation) cho bột ngọt (MSG) — kết quả tìm kiếm chỉ có Branded nên không dùng; để null toàn bộ theo quy tắc chống bịa đặt."
+    },
+    {
+      "position": 8,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1 muỗng cà phê tiêu đen xay ≈ 2,3 g (USDA) → 1/2 muỗng ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều dùng tiêu (Cookpad ướp tôm với tiêu; Kingfoodmart không ghi chi tiết).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "USDA SR Legacy 'Spices, pepper, black' (fdcId 170931)."
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng dầu ăn ~0,91 g/ml ≈ 13,6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hai nguồn mâu thuẫn: Cookpad dùng 1/2 muỗng dầu ăn; Kingfoodmart dùng 2 muỗng canh. Lấy 1 muỗng canh cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "USDA SR Legacy 'Oil, soybean, salad or cooking' (fdcId 171411)."
+    },
+    {
+      "position": 10,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1000,
+        "unit": "ml",
+        "text": "1000 ml",
+        "gramEquivalent": 1000,
+        "basis": "1 ml nước = 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "l"
+        }
+      },
+      "note": "Kingfoodmart dùng 500 ml (khẩu phần có vẻ cho bé/ít người); Cookpad ghi 'cho nước nóng' không định lượng. Lấy 1 lít cho 3 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước tinh khiết không chứa năng lượng và dinh dưỡng đáng kể — quy ước 0, không tra USDA."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế bông cải xanh: tách thành từng bông nhỏ vừa ăn, ngâm trong nước muối pha loãng khoảng 15 phút, sau đó rửa lại thật sạch dưới vòi nước và để ráo.",
+      "tip": "Cookpad: ngâm nước muối loãng giúp làm sạch bụi bẩn và côn trùng ẩn trong kẽ bông.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế tôm: bóc vỏ, rút chỉ đen ở sống lưng, rửa sạch, để ráo. Đập dập (hoặc giã dập) tôm với một ít muối và tiêu, ướp khoảng 5-10 phút cho thấm.",
+      "tip": "Cookpad giã dập tôm với muối, tiêu và hành ngò; Kingfoodmart đập dập tôm sau khi bóc vỏ.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Hành lá rửa sạch: cắt riêng phần đầu hành trắng để phi thơm, phần lá cắt nhỏ để rắc sau. Ngò rí nhặt rửa sạch, cắt nhỏ. Tỏi (nếu dùng) bóc vỏ, băm nhỏ."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Bắc nồi lên bếp, cho 1 muỗng canh dầu ăn vào đun nóng. Cho đầu hành (và tỏi băm nếu dùng) vào phi thơm đến khi vàng nhẹ, dậy mùi.",
+      "tip": "Không để hành tỏi cháy sẽ bị đắng."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho tôm đã ướp vào xào nhanh tay khoảng 1 phút đến khi tôm săn lại, chuyển màu hồng (chín tái).",
+      "tip": "Kingfoodmart: xào tôm khoảng 1 phút đến chín tái rồi mới cho nước — tôm không bị dai.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ 1 lít nước nóng vào nồi, đun cho sôi bùng. Vớt sạch bọt nổi lên để nước canh được trong.",
+      "tip": "Cookpad: cho nước nóng (không cho nước lạnh) rồi vớt thật sạch bọt nếu có."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Khi nước sôi trở lại, thả bông cải xanh vào, nấu khoảng 3-5 phút đến khi bông cải chín tới, còn giữ màu xanh và độ giòn nhẹ.",
+      "tip": "Không nấu quá lâu — bông cải nhũn sẽ mất màu xanh đẹp và vị giòn ngọt.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nêm 1 muỗng cà phê muối, 1 muỗng canh nước mắm và bột ngọt (nếu dùng). Khuấy tan, nếm lại và điều chỉnh cho vừa khẩu vị gia đình."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tắt bếp, rắc hành lá và ngò rí cắt nhỏ lên trên, thêm một ít tiêu xay. Múc canh ra tô, dọn nóng với cơm.",
+      "tip": "Canh tôm bông cải ăn nóng là ngon nhất; không nên để lâu bông cải sẽ bị úa màu."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 150.81,
+      "proteinG": 19.99,
+      "carbohydrateG": 7.97,
+      "fatG": 5.34,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1383.82
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Tôm tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Bông cải xanh: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

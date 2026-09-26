@@ -1,0 +1,685 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-8b2c852ba59f2143",
+    "slug": "risotto-rau-bina-nam",
+    "title": "Risotto rau bina nấm"
+  },
+  "content": {
+    "description": "Gạo nấu thêm dần nước thành risotto kem sánh với nấm vàng bơ và rau bina xanh, món Ý kiên nhẫn đậm dưỡng.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 40,
+    "servings": 3,
+    "difficulty": "medium",
+    "tags": [
+      "Risotto",
+      "Ý",
+      "Rau bina",
+      "Nấm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-8b2c852ba59f2143.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.livinglou.com/spinach-and-mushroom-risotto/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.italymagazine.com/recipe/porcini-mushroom-risotto",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Gạo arborio (gạo Ý nấu risotto)",
+      "canonicalIngredientId": "ING_ENR_6C02E3A160E50AB3",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "g",
+        "text": "250 g",
+        "gramEquivalent": 250,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 250,
+          "unit": "g"
+        }
+      },
+      "note": "Living Lou dùng 2 cup (~390 g, 1 cup gạo arborio ≈ 195 g) cho ~4 phần — trang không ghi số phần, ước ~4 phần theo lượng gạo; ITALY Magazine dùng 320 g cho 4 phần. Lấy 250 g cho 3 phần theo tỉ lệ 80 g/người của công thức Ý.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 358,
+        "proteinG": 6.5,
+        "carbohydrateG": 79.15,
+        "fatG": 0.52,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm đùi gà tươi",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Living Lou dùng 454 g nấm cremini cho ~4 phần (~340 g/3 phần); ITALY Magazine dùng 200 g nấm porcini cho 4 phần (~150 g/3 phần) — chênh lệch lớn do porcini thơm đậm nên dùng ít. Nấm đùi gà thịt dày, mùi nhẹ như cremini nên lấy theo Living Lou, làm tròn 300 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 46.3951,
+        "proteinG": 2.40625,
+        "carbohydrateG": 8.50065,
+        "fatG": 0.3075,
+        "fiberG": 3.009,
+        "sugarG": null,
+        "sodiumMg": 0.7713
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003599",
+      "sourceNutritionNote": "Dùng số liệu đúng loài nấm đùi gà (king oyster, Pleurotus eryngii), bản Foundation."
+    },
+    {
+      "position": 2,
+      "sourceName": "Rau bina baby tươi",
+      "canonicalIngredientId": "ING_ENR_209C9AC4886BD635",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 70,
+        "unit": "g",
+        "text": "70 g",
+        "gramEquivalent": 70,
+        "basis": "2,25 cup lá baby spinach; 1 cup rau bina sống ≈ 30 g (USDA: 1 cup spinach raw = 30 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 70,
+          "unit": "g"
+        }
+      },
+      "note": "Living Lou dùng 3 cup baby spinach cho ~4 phần (~2,25 cup ≈ 70 g cho 3 phần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 26.602,
+        "proteinG": 2.851875,
+        "carbohydrateG": 2.406325,
+        "fatG": 0.6188,
+        "fiberG": 1.558,
+        "sugarG": null,
+        "sodiumMg": 111.4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1999632",
+      "sourceNutritionNote": "Dùng số liệu baby spinach (Foundation), khớp loại rau trong công thức."
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ nhỏ",
+        "text": "1 củ nhỏ",
+        "gramEquivalent": 80,
+        "basis": "1 củ hành tây nhỏ ≈ 80 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Living Lou dùng 2 củ hành tây nhỏ thái hạt lựu cho ~4 phần → 1 củ nhỏ cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": null,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Living Lou dùng 2 tép tỏi băm cho ~4 phần; giữ 2 tép cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Rượu vang trắng khô",
+      "canonicalIngredientId": "ING_ENR_F568CF3B013695D9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 80,
+        "unit": "ml",
+        "text": "80 ml",
+        "gramEquivalent": 79,
+        "basis": "80 ml rượu vang trắng, tỉ trọng ≈ 0,99 → ≈ 79 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 80,
+          "unit": "ml"
+        }
+      },
+      "note": "Living Lou dùng 120 ml cho ~4 phần; ITALY Magazine dùng 100 ml cho 4 phần → ~80 ml cho 3 phần. Phần lớn cồn bay hơi khi nấu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 82,
+        "proteinG": 0.07,
+        "carbohydrateG": 2.6,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174837",
+      "sourceNutritionNote": "Số liệu cho rượu vang trắng nguyên chất; thực tế phần lớn cồn bay hơi khi nấu nên năng lượng thực nhận thấp hơn."
+    },
+    {
+      "position": 6,
+      "sourceName": "Bơ lạt",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Living Lou dùng 2 muỗng canh (~30 g) cho ~4 phần; ITALY Magazine dùng 50 g cho 4 phần (~37 g/3 phần) — hai nguồn chênh nhau, lấy 30 g, một nửa để xào, một nửa để lạnh cho bước mantecatura cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Phô mai Parmigiano Reggiano bào mịn",
+      "canonicalIngredientId": "ING_ENR_C9AE2624E7F86759",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 25,
+        "unit": "g",
+        "text": "25 g",
+        "gramEquivalent": 25,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 25,
+          "unit": "g"
+        }
+      },
+      "note": "Living Lou dùng 1/4 cup (~25 g) cho ~4 phần; ITALY Magazine dùng 30 g cho 4 phần (~22 g/3 phần) — lấy 25 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 392,
+        "proteinG": 35.75,
+        "carbohydrateG": 3.22,
+        "fatG": 25,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 1175
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170848",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu olive extra virgin",
+      "canonicalIngredientId": "ING_ENR_84084B36AB5F7081",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 20,
+        "basis": "1 muỗng canh dầu olive = 15 ml ≈ 13,6 g (tỉ trọng dầu ~0,91); 1,5 muỗng canh ≈ 20 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Living Lou dùng 2 muỗng canh cho ~4 phần → 1,5 muỗng canh cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": "Dùng số liệu dầu olive generic (SR Legacy) thay cho bản extra virgin Foundation vì bản Foundation thiếu số liệu macros."
+    },
+    {
+      "position": 9,
+      "sourceName": "Nước dùng rau củ (giữ nóng)",
+      "canonicalIngredientId": "ING_ENR_D74180A79DF48F0D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.2,
+        "unit": "lít",
+        "text": "1.2 lít",
+        "gramEquivalent": 1200,
+        "basis": "1,2 lít nước dùng ≈ 1200 g (tỉ trọng ≈ 1)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.2,
+          "unit": "l"
+        }
+      },
+      "note": "Living Lou dùng 8 cup (1,9 lít) cho ~4 phần (tỉ lệ khá cao); công thức risotto nấm của GialloZafferano dùng 1 lít cho 4 phần. Lượng nước dùng cho risotto luôn là 'q.b.' (vừa đủ) — thêm từng muôi đến khi gạo chín, 1,2 lít là ước lượng cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 5,
+        "proteinG": 0.24,
+        "carbohydrateG": 0.93,
+        "fatG": 0.07,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 296
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171583",
+      "sourceNutritionNote": "Số liệu cho nước dùng rau củ đóng hộp 'ready to serve'; nước dùng tự nấu thường nhạt và ít natri hơn."
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối tinh",
+      "canonicalIngredientId": "ING_ENR_2E70A9B68938F282",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê muối tinh ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Living Lou dùng 1/2 muỗng cà phê cho ~4 phần; nêm theo khẩu vị vì nước dùng và phô mai đã mặn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1 muỗng cà phê tiêu đen xay ≈ 2,3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ITALY Magazine nêm muối và tiêu 'to taste'; Living Lou không liệt kê tiêu. Dùng vừa đủ khi dọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": null,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Đun nước dùng rau củ trong nồi nhỏ đến liu riu, giữ luôn nóng trong suốt quá trình nấu.",
+      "tip": "Living Lou: nước dùng phải nóng — nếu chế nước lạnh vào, hạt gạo bị sốc nhiệt, risotto mất độ sánh.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế: nấm đùi gà lau sạch bằng khăn ẩm (không ngâm nước), thái lát dày khoảng 0,5 cm; hành tây thái hạt lựu nhỏ; tỏi băm nhuyễn; rau bina rửa sạch, để ráo.",
+      "tip": "ITALY Magazine: không bao giờ ngâm nấm vào nước — nấm sẽ mất mùi thơm và bị nhão."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun nóng dầu olive với một nửa lượng bơ trong chảo sâu lòng hoặc nồi đế dày, cho hành tây vào xào lửa vừa 3-5 phút cho mềm trong, thêm tỏi đảo thêm 1 phút cho thơm.",
+      "tip": "Living Lou: xào hành 3-5 phút rồi mới cho tỏi, tỏi chỉ cần 1 phút để không bị đắng.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Tăng lửa lớn, cho nấm đùi gà vào xào 5 phút cho ra nước rồi vàng xém các mặt. Nêm một nhúm muối nhỏ.",
+      "tip": "Living Lou: xào nấm khoảng 5 phút cho chín vàng; ITALY Magazine: xào lửa lớn 2-3 phút, nêm muối tiêu. Nấm phải vàng mới dậy mùi thơm.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Hạ về lửa vừa, cho gạo arborio vào, đảo đều 2 phút cho từng hạt gạo thấm dầu và trở nên trong ở viền (bước tostatura).",
+      "tip": "ITALY Magazine: rang gạo đến khi hạt trong mờ — bước này giúp hạt gạo giữ được độ dai, không bị nát khi nấu.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ rượu vang trắng vào, đảo đều đến khi rượu bay hơi gần hết và không còn mùi cồn.",
+      "tip": "Cả hai nguồn đều khử gạo bằng rượu vang trước khi chế nước dùng — giúp dậy mùi và cân bằng vị béo.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Chế nước dùng nóng vào từng muôi (khoảng 120 ml), khuấy đều tay; chờ nước ngấm gần hết mới chế muôi tiếp theo. Lặp lại khoảng 18-20 phút đến khi gạo chín al dente, hỗn hợp sánh mịn như kem.",
+      "tip": "Living Lou: nấu 20-22 phút, chế nước từng 1/2 cup một. GZ: gạo chín sau khoảng 20 phút. Không đổ ồ ạt cả nồi nước — risotto sánh nhờ tinh bột tiết ra từ từ.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Khi gạo gần chín (còn khoảng 2 phút), cho rau bina vào, đảo nhanh đến khi lá vừa héo và quyện vào cơm.",
+      "tip": "Living Lou: cho rau bina vào cuối cùng — rau chỉ cần hơi nóng là héo, nấu lâu sẽ mất màu xanh và vitamin.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tắt bếp. Cho nốt phần bơ lạnh và phô mai Parmigiano bào vào, đánh mạnh tay đến khi risotto bóng mịn (bước mantecatura). Đậy nắp nghỉ 1-2 phút.",
+      "tip": "ITALY Magazine: tắt bếp rồi mới cho bơ và phô mai vào đánh — nhiệt dư đủ làm bơ tan mà không tách dầu, risotto mới sánh mượt.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Nếm lại, điều chỉnh muối và rắc tiêu đen xay mới. Dọn ngay ra đĩa sâu lòng khi còn nóng.",
+      "tip": "Cả hai nguồn: risotto phải ăn ngay — để nguội sẽ đặc lại và mất độ sánh kem."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 570.31,
+      "proteinG": 12.99,
+      "carbohydrateG": 83.06,
+      "fatG": 18.07,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1701.12
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Gạo arborio (gạo Ý nấu risotto): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Nấm đùi gà tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Rau bina baby tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Rượu vang trắng khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 6,
+        "detail": "Bơ lạt: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 7,
+        "detail": "Phô mai Parmigiano Reggiano bào mịn: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Dầu olive extra virgin: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Nước dùng rau củ (giữ nóng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Muối tinh: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

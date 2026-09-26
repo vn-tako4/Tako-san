@@ -1,0 +1,435 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-57a8ece15d731efb",
+    "slug": "sup-miso-bap-cai",
+    "title": "Súp miso bắp cải"
+  },
+  "content": {
+    "description": "Canh miso bắp cải với nấm ngọt thanh, hạt tương tan cuối cùng giữ trọn hương, món canh Nhật mỗi ngày.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Miso",
+      "Nhật Bản",
+      "Bắp cải",
+      "Canh"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-57a8ece15d731efb.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.umami.recipes/recipe/tUFzIYujJhI1Rxq633f8",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://monasrestaurant.net/homemade-miso-soup-%e5%91%b3%e5%99%8c%e6%b1%81-just-one-cookbook.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Bắp cải xanh",
+      "canonicalIngredientId": "ING_ENR_D7A5F5604E2E1AE9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "1/4 đầu bắp cải cỡ vừa ≈ 200 g; umami.recipes dùng 1/8 đầu cho công thức của họ (~2-3 phần).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Dinh dưỡng: nutritionvalue.org dẫn dữ liệu từ USDA Standard Reference (entry 'Cabbage, green, raw'); các chỉ số macro khớp với FDC Foundation 2346407 ('Cabbage, green, raw': protein 0,96 / carb 6,38 / fat 0,23 / sodium 16,1) nhưng entry FDC này không công bố energy/fiber/sugar nên dùng bộ số đầy đủ của nutritionvalue.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 31,
+        "proteinG": 1,
+        "carbohydrateG": 6.4,
+        "fatG": 0.2,
+        "fiberG": 2.5,
+        "sugarG": 3.2,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Cabbage%2C_green%2C_raw_75103000_nutritional_value.html?size=100%2Bg",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm đùi gà tươi",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "Đơn vị gốc đã là gram.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "Không có trong công thức umami gốc (món của họ dùng trứng onsen); thêm theo gợi ý hint của assignment. JOC guide: nấm nấu khi dashi đang sôi liu riu, chỉ cần 1-2 phút là chín mềm. Dinh dưỡng: FDC Foundation 2003599 ('Mushroom, king oyster') không công bố energy và sugar → để null theo nguyên tắc không đoán; các nguồn khác mâu thuẫn (eatthismuch: 35 kcal/sugar 1 g; fddb: 33 kcal/fiber 8 g).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 46.4,
+        "proteinG": 2.41,
+        "carbohydrateG": 8.5,
+        "fatG": 0.31,
+        "fiberG": 3.01,
+        "sugarG": null,
+        "sodiumMg": 0.77
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003599",
+      "sourceNutritionNote": "USDA Foundation 2003599 'Mushroom, king oyster' — energy từ nutrient 957 (Atwater General, kcal; không có 208); sugar null (không báo cáo)"
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 15,
+        "basis": "1 cây hành lá ≈ 15 g (nutritionvalue: 1 stalk young green onion = 12 g).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "umami.recipes: 1 cây hành lá cho công thức của họ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 27,
+        "proteinG": 0.97,
+        "carbohydrateG": 5.74,
+        "fatG": 0.47,
+        "fiberG": 1.8,
+        "sugarG": 3.91,
+        "sodiumMg": 15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170006",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tương miso",
+      "canonicalIngredientId": "ING_ENR_A6178B124CEF8D03",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 54,
+        "basis": "3 muỗng canh × 18 g = 54 g (JOC: 1 Tbsp miso ≈ 18 g).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "umami.recipes dùng 3 Tbsp cho 3 cups (720 ml) nước — hơi loãng hơn quy tắc JOC (1 Tbsp/200 ml → 3 Tbsp cho 600 ml). Lấy 3 Tbsp theo JOC, đúng tỉ lệ cho 600 ml; điều chỉnh thêm theo khẩu vị khi nếm (umami: nếm và thêm miso nếu cần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 198,
+        "proteinG": 12.79,
+        "carbohydrateG": 25.37,
+        "fatG": 6.01,
+        "fiberG": 5.4,
+        "sugarG": 6.2,
+        "sodiumMg": 3728
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172442",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Gói dashi (dashi packet)",
+      "canonicalIngredientId": "ING_ENR_3787712C57027A51",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "gói",
+        "text": "1 gói",
+        "gramEquivalent": 5,
+        "basis": "1 gói dashi ≈ 5 g (gói dashi Nhật thông thường 4-6 g).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "pack"
+        }
+      },
+      "note": "umami.recipes: 2 gói cho 3 cups (720 ml); JOC: 2 gói cho 4 cups (950 ml) → ~1 gói cho 600 ml. JOC khuyên dùng gói dashi thay vì bột dashi vì bột thường có MSG và hương bay nhanh. Không có entry dinh dưỡng chuẩn cho gói dashi → null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu (nước tương Nhật)",
+      "canonicalIngredientId": "ING_ENR_73BB1C2EC065443A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê = 5 ml ≈ 6 g (tỉ trọng xì dầu ~1,2).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Không có trong công thức umami gốc; thêm theo gợi ý hint của assignment, chỉ dùng khi cần tăng vị umami/độ mặn lúc nếm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước (để nấu dashi)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 600,
+        "unit": "ml",
+        "text": "600 ml",
+        "gramEquivalent": 600,
+        "basis": "3 bát × 200 ml = 600 ml (JOC: 1 bát súp miso chuẩn ~200 ml; umami dùng 3 cups/720 ml cho công thức của họ).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 600,
+          "unit": "ml"
+        }
+      },
+      "note": "Nước tinh khiết, không có giá trị dinh dưỡng đáng kể → nutrition null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Bắp cải bỏ lõi cứng, cắt thành miếng vuông khoảng 2 cm. Phần cọng dày cứng có thể bỏ riêng hoặc cho vào nồi sớm hơn để có thêm thời gian mềm.",
+      "tip": "umami.recipes: cắt vuông 3⁄4 inch (2 cm); bỏ phần cọng dày cứng hoặc cho vào nấu trước phần lá."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Nấm đùi gà lau sạch bằng khăn ẩm, cắt bỏ gốc cứng, thái lát dày khoảng 5 mm. Hành lá cắt đôi theo chiều ngang rồi thái xéo lát mỏng.",
+      "tip": "umami.recipes: hành lá cắt xéo lát mỏng để đẹp và thơm."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho 600 ml nước và 1 gói dashi vào nồi vừa, đậy nắp, đun sôi trên lửa vừa.",
+      "tip": "umami.recipes: đậy nắp đun sôi lửa vừa; dùng đũa lắc gói dashi khi sôi để vị ra nhiều hơn."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Khi nước sôi, dùng đũa lắc nhẹ gói dashi cho vị ra hết. Hạ lửa vừa-nhỏ, đậy nắp nấu 4-5 phút rồi vớt bỏ gói dashi.",
+      "tip": "umami.recipes: nấu đậy nắp 4-5 phút rồi bỏ gói.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho bắp cải và nấm đùi gà vào nồi, đậy nắp, nấu 4-5 phút đến khi bắp cải và nấm đều mềm.",
+      "tip": "umami.recipes: nấu đậy nắp 4-5 phút đến khi bắp cải mềm. JOC guide: bắp cải và nấm đều thuộc nhóm nấu khi dashi đang sôi liu riu (không cần cho từ nước lạnh như rau củ cứng).",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "TẮT BẾP. Cho miso vào vá, múc nước dùng nóng vào vá khuấy cho miso tan hoàn toàn (có thể dùng rây miso cho nhanh), rồi đổ vào nồi khuấy đều.",
+      "tip": "umami.recipes: hòa miso trong vá với nước dùng nóng rồi mới đổ vào. JOC: cho miso vào NGAY TRƯỚC KHI ĂN và TUYỆT ĐỐI KHÔNG đun sôi súp sau khi cho miso."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nếm thử và điều chỉnh: nhạt thì thêm chút miso (hòa tan như bước 6) hoặc xì dầu; mặn quá thì thêm ít nước nóng hoặc dashi.",
+      "tip": "umami.recipes: nếm và thêm miso nếu cần; nếu mặn quá thì pha loãng bằng nước hoặc dashi."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Múc súp ra 3 bát, rắc hành lá thái mỏng lên trên, dọn ăn nóng ngay.",
+      "tip": "umami.recipes: múc ra bát, rắc hành lá. JOC: hành lá cho vào ngay trước khi ăn để giữ hương thơm và màu xanh."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Ăn ngay là ngon nhất vì súp miso để lâu mất mùi thơm. Nếu còn dư: để nguội (không quá 4 giờ), cho vào hộp kín để tủ lạnh tối đa 2 ngày; khi hâm lại chỉ làm nóng, không đun sôi.",
+      "tip": "umami.recipes: bảo quản tủ lạnh 2 ngày / đông lạnh 2 tuần; hâm lại trên lửa vừa, không đun sôi."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Bắp cải xanh: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Nấm đùi gà tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tương miso: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Gói dashi (dashi packet): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước (để nấu dashi): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      5,
+      6
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

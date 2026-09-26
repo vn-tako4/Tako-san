@@ -1,0 +1,658 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-f93013fb234d39d0",
+    "slug": "bun-xao-chay-nam",
+    "title": "Bún xào chay nấm"
+  },
+  "content": {
+    "description": "Sợi bún xào nấm-cải nước tương đậm, món chay xào mặn nhẹ bữa cơm ngày rằm.",
+    "cuisine": "vietnamese",
+    "category": "mon_chay",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Bún xào",
+      "Chay",
+      "Nấm",
+      "Ngày rằm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-f93013fb234d39d0.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://kingfoodmart.com/bai-viet/cong-thuc-nau-an/bun-gao-xao-chay-cung-rau-nam",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://afamily.vn/bun-xao-chay-mon-ngon-ngay-ram-20120416115133827.chn",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Bún tươi",
+      "canonicalIngredientId": "NOODLE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "Afamily: 1/2 kg bún cho 3–4 người ăn → quy về 3 phần ≈ 375–400 g. Lấy 400 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 108,
+        "proteinG": 1.79,
+        "carbohydrateG": 24.01,
+        "fatG": 0.2,
+        "fiberG": 1,
+        "sugarG": 0.03,
+        "sodiumMg": 19
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168914",
+      "sourceNutritionNote": "Bún tươi là bún gạo đã chín, độ ẩm tương đương 'Rice noodles, cooked' của USDA — dùng trực tiếp số liệu này."
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Theo gợi ý món ăn. Hai nguồn dùng nấm khác: Kingfoodmart dùng nấm linh chi (không ghi lượng); Afamily dùng 'vài chiếc' nấm mèo (mộc nhĩ) + nấm đông cô khô ngâm nở. Lấy 200 g nấm đùi gà tươi cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": 1.11,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "USDA không có số liệu riêng cho nấm đùi gà (king oyster); dùng số liệu nấm sò (oyster mushroom) tương đương gần nhất."
+    },
+    {
+      "position": 2,
+      "sourceName": "Bắp cải",
+      "canonicalIngredientId": "CABBAGE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "Theo gợi ý món ăn. Kingfoodmart dùng ớt chuông + đậu cove + bông cải xanh (không ghi lượng từng loại); Afamily dùng rau sống/giá/dưa leo ăn kèm. Món này dùng bắp cải làm rau xào chính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 1.28,
+        "carbohydrateG": 5.8,
+        "fatG": 0.1,
+        "fiberG": 2.5,
+        "sugarG": 3.2,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169975",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Cabbage, raw' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 3,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 100,
+        "basis": "1 củ cà rốt Việt ≈ 100–120 g; lấy 100 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Afamily: 1 củ cà rốt thái sợi mỏng; Kingfoodmart: cà rốt thái sợi nhỏ (không ghi lượng) — hai nguồn khớp về cách sơ chế.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Carrots, raw' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 20,
+        "basis": "1 củ tỏi ta bóc vỏ ≈ 15–25 g; lấy 20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "MÂU THUẪN: gợi ý món ăn ghi tỏi; Kingfoodmart dùng hành paro (hành boa-rô) phi thơm; Afamily dùng hành tím phi thơm. Ưu tiên tỏi theo gợi ý món ăn, ghi rõ hai nguồn dùng họ hành khác nhau nhưng vai trò (phi thơm) tương đương.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Garlic, raw' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 20,
+        "basis": "1 cây hành lá ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Theo gợi ý món ăn; cả hai nguồn đều nhắc rắc hành khi hoàn thành (Toyenxin/Afamily họ công thức bún xào).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 27,
+        "proteinG": 0.97,
+        "carbohydrateG": 5.74,
+        "fatG": 0.47,
+        "fiberG": 1.8,
+        "sugarG": 3.91,
+        "sodiumMg": 15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170006",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Onions, young green, tops only' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27.2,
+        "basis": "1 muỗng canh = 15 ml; dầu ăn tỉ trọng ≈ 0,91 g/ml → ≈ 13,6 g/muỗng; 2 muỗng ≈ 27,2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kingfoodmart: 'cho dầu vào chảo' xào rau nấm (không định lượng); Afamily: làm nóng dầu phi hành tím, chiên đậu hũ. Lấy 2 muỗng canh cho phần xào.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Oil, soybean, salad or cooking' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước tương (xì dầu)",
+      "canonicalIngredientId": "ING_ENR_D492E3A9BF8971C4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 45,
+        "basis": "1 muỗng canh = 15 ml; nước tương tỉ trọng ≈ 1 g/ml → ≈ 15 g/muỗng",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kingfoodmart: nêm 2 thìa canh nước tương khi xào rau nấm; Afamily: 'nêm nếm bằng nước tương, muối, đường cho vừa miệng' (không định lượng). Lấy 3 muỗng canh cho 3 phần (2 muỗng khi xào + 1 muỗng nêm cùng bún).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Soy sauce made from soy and wheat (shoyu)' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 8,
+      "sourceName": "Hạt nêm chay",
+      "canonicalIngredientId": "ING_ENR_E0E5BC7DAA233BCD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê bột nêm ≈ 4 g (5 ml bột mịn, tỉ trọng ≈ 0,8 g/ml)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kingfoodmart: 1 thìa cà phê hạt nêm (chay) khi xào. Afamily không dùng hạt nêm — mâu thuẫn nhỏ, giữ theo Kingfoodmart vì định lượng rõ.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Hạt nêm chay là hỗn hợp gia vị công nghiệp, USDA không có mục tương đương — để null, không ước tính."
+    },
+    {
+      "position": 9,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối = 5 ml ≈ 6 g (quy đổi chuẩn USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kingfoodmart: 1 thìa cà phê muối khi xào rau nấm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Salt, table' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 8.4,
+        "basis": "1 muỗng cà phê đường cát = 5 ml ≈ 4,2 g (quy đổi chuẩn USDA); 2 muỗng ≈ 8,4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kingfoodmart: 2 thìa cà phê đường khi xào. Afamily: nêm đường 'cho vừa miệng' không định lượng — lấy theo Kingfoodmart.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Sugars, granulated' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.55,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2,2 g (quy đổi chuẩn USDA) → 1/4 muỗng ≈ 0,55 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Afamily họ công thức nhắc rắc tiêu khi dọn; Kingfoodmart không nhắc. Để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Spices, pepper, black' (fdcId phía nutrition_source)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế nấm: nấm đùi gà cắt bỏ phần gốc già, ngâm nhanh trong nước muối pha loãng 5–10 phút, rửa sạch lại với nước lạnh, vớt ra để thật ráo rồi thái lát mỏng vừa ăn.",
+      "tip": "Kingfoodmart: rửa nấm bằng nước muối rồi xả sạch với nước lạnh; không ngâm quá lâu để nấm không bị nhạt.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cà rốt gọt vỏ, thái sợi mỏng. Bắp cải rửa sạch, thái sợi. Tỏi bóc vỏ, băm nhỏ. Hành lá rửa sạch, cắt khúc.",
+      "tip": "Thái rau củ sợi mỏng, đều nhau để khi xào chín đều và ngấm gia vị nhanh."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Nếu bún tươi còn cứng hoặc mua về để lâu: đun sôi nước, cho bún vào nấu qua khoảng 2 phút rồi vớt ra để ráo. Bún tươi mới, mềm thì có thể dùng ngay không cần trụng.",
+      "tip": "Kingfoodmart: bún gạo nấu qua với nước sôi khoảng 2 phút vớt để ráo — giúp sợi bún tơi, không bị dính khi xào.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Bắc chảo lên bếp, cho 2 muỗng canh dầu ăn vào đun nóng. Cho tỏi băm vào phi đến khi vàng thơm.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho cà rốt và bắp cải vào xào trên lửa lớn 2–3 phút. Nếu chảo bị khô, thêm một chút nước để rau không bị cháy.",
+      "tip": "Afamily: cho cà rốt vào xào trước vì cứng hơn, 'chú ý cho chút nước để chảo không bị cháy'.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Khi rau củ vừa chín tới, cho nấm đùi gà vào xào cùng thêm 2–3 phút đến khi nấm mềm, ra nước ngọt.",
+      "tip": "Afamily cho nấm vào sau cà rốt; nấm đùi gà thái lát mỏng chín nhanh nên không cần xào lâu.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nêm vào chảo 2 muỗng canh nước tương, 1 muỗng cà phê hạt nêm chay, 1 muỗng cà phê muối và 2 muỗng cà phê đường. Đảo đều cho rau nấm thấm gia vị.",
+      "tip": "Kingfoodmart nêm đúng tỉ lệ này khi xào rau nấm; nếm thử và điều chỉnh cho vừa miệng trước khi cho bún vào."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho bún tươi đã để ráo vào chảo, dùng đũa trộn nhẹ tay cho bún thấm đều gia vị và hòa quyện với rau nấm. Nêm thêm 1 muỗng canh nước tương, xào thêm 2–3 phút.",
+      "tip": "Trộn nhẹ tay, tránh đảo mạnh làm sợi bún bị nát. Nếu bún hút khô gia vị, thêm 1–2 muỗng canh nước.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nêm nếm lại lần cuối cho vừa ăn. Cho hành lá cắt khúc vào, đảo nhanh rồi tắt bếp."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Cho bún xào ra đĩa, rắc chút tiêu xay (nếu dùng). Dọn ăn nóng, kèm chén nước tương; có thể ăn cùng rau sống, giá, dưa leo như gợi ý của Afamily.",
+      "tip": "Kingfoodmart: 'ăn kèm với nước tương (nếu nhạt)'."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 178.5,
+      "proteinG": 5.23,
+      "carbohydrateG": 38.97,
+      "fatG": 0.59,
+      "fiberG": 4.12,
+      "sugarG": 2.38,
+      "sodiumMg": 46.33
+    },
+    "originalPerServing": {
+      "energyKcal": 303.3,
+      "proteinG": 7.27,
+      "carbohydrateG": 48.41,
+      "fatG": 9.89,
+      "fiberG": 5.48,
+      "sugarG": 7.14,
+      "sodiumMg": 1670.64
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước tương (xì dầu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Hạt nêm chay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Đường trắng: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,620 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "vn-chay-04",
+    "slug": "ca-tim-nuong-mo-hanh",
+    "title": "Cà tím nướng mỡ hành nước tương tỏi ớt"
+  },
+  "content": {
+    "description": "Cà tím nướng than thơm lừng mùi khói, thịt cà mềm mọng ngọt ngào phủ ngập mỡ hành béo ngậy và nước tương tỏi ớt.",
+    "cuisine": "vietnamese",
+    "category": "mon_chay",
+    "region": "nam",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Món chay",
+      "Dân dã",
+      "Nam Bộ",
+      "Ngon miệng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/vn-chay-04.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.bachhoaxanh.com/cu/ca-tim-nuong-mo-hanh-chay",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://nhaxinhplaza.vn/doi-song/hoi-dap/cach-lam-ca-nuong-mo-hanh.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cà tím dài",
+      "canonicalIngredientId": "ING_ENR_8D4B0D99B20903AB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Bách Hóa Xanh (bản chay): 500 g; Bếp Mina: 2-3 quả (quả cà dài ~150-200 g/quả, tức 450-600 g) — hai nguồn khớp nhau trong khoảng này, lấy 500 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.98,
+        "carbohydrateG": 5.88,
+        "fatG": 0.18,
+        "fiberG": 3,
+        "sugarG": 3.53,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169228",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "Bách Hóa Xanh: 100 g; Bếp Mina: 5 cây (1 cây hành lá ~15 g, tức ~75 g) — lấy 100 g theo Bách Hóa Xanh (bản chay).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "số liệu sugar_g null do response USDA không có nutrient 269 cho mặt hàng này."
+    },
+    {
+      "position": 2,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27.2,
+        "basis": "1 muỗng canh = 15 ml; dầu ăn tỉ trọng ~0,91 nên 2 muỗng canh ≈ 27,2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Bách Hóa Xanh (bản chay): 2 muỗng canh dầu ăn; Bếp Mina: 3 thìa mỡ nước (món mặn) — mâu thuẫn, lấy 2 muỗng canh dầu ăn theo bản chay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "số liệu sugar_g null do response USDA không có nutrient 269 cho mặt hàng này."
+    },
+    {
+      "position": 3,
+      "sourceName": "Nước tương",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 muỗng canh nước tương ≈ 15 ml ≈ 15 g (tỉ trọng ~1,0)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Bếp Mina: 3 thìa pha cùng nước lọc và đường thành sốt; Bách Hóa Xanh: chan 'chút nước tương' tùy thích khi ăn — lấy 2 muỗng canh pha sốt cho 3 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "tép",
+        "text": "4 tép",
+        "gramEquivalent": 12,
+        "basis": "USDA FoodData Central: 1 tép tỏi (1 clove) = 3 g; 4 tép ≈ 12 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Bếp Mina: 4 tép tỏi băm pha vào sốt; Bách Hóa Xanh (bản chay đơn giản) không dùng tỏi — lấy theo Bếp Mina vì tên món có 'tỏi ớt'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "mặt hàng Foundation; số liệu sugar_g và sodium_mg null do response USDA không có nutrient 269/307 cho mặt hàng này."
+    },
+    {
+      "position": 5,
+      "sourceName": "Ớt tươi băm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 10,
+        "basis": "1 quả ớt tươi (ớt hiểm/ớt sừng nhỏ) ~10 g (ước lượng nhà bếp thông thường)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Bếp Mina: 1 quả ớt cay băm nhuyễn pha vào sốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "USDA FoodData Central: 1 muỗng cà phê đường cát ≈ 4,2 g, làm tròn 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Bếp Mina ghi '1 thìa' đường pha sốt (không rõ thìa canh hay thìa cà phê); lấy 1 muỗng cà phê cho 3 phần ăn để sốt không quá ngọt vì nước tương đã đậm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "mặt hàng Foundation; số liệu fiber_g và sugar_g null do response USDA không có nutrient 291/269 cho mặt hàng này."
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "muỗng canh",
+        "text": "4 muỗng canh",
+        "gramEquivalent": 60,
+        "basis": "1 muỗng canh nước = 15 ml ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Bếp Mina: 4 thìa nước lọc pha loãng sốt nước tương.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "USDA FoodData Central: 1 muỗng cà phê muối ≈ 6 g; 1/2 muỗng ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Bách Hóa Xanh: 'chút muối' trộn vào mỡ hành; Bếp Mina: 1 thìa cà phê bột canh trộn hành — hai nguồn khác loại gia vị mặn; lấy 1/2 muỗng cà phê muối vì nước tương trong sốt đã mặn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "số liệu sugar_g null do response USDA không có nutrient 269 cho mặt hàng này."
+    },
+    {
+      "position": 9,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "1/4 muỗng cà phê tiêu xay ≈ 0,6 g (1 muỗng cà phê tiêu ~2,3 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Bách Hóa Xanh: rắc 'ít tiêu xay' khi hoàn thiện.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": null,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "số liệu sugar_g null do response USDA không có nutrient 269 cho mặt hàng này."
+    },
+    {
+      "position": 10,
+      "sourceName": "Lạc rang giã dập",
+      "canonicalIngredientId": "ING_ENR_815F6B34851A4A8C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "'1 nắm' lạc rang giã dập ~20 g (ước lượng nhà bếp thông thường)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Bếp Mina: '1 nắm (không bắt buộc)' — nguyên liệu tùy chọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 587,
+        "proteinG": 24.35,
+        "carbohydrateG": 21.26,
+        "fatG": 49.66,
+        "fiberG": 8.4,
+        "sugarG": 4.9,
+        "sodiumMg": 410
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174262",
+      "sourceNutritionNote": "Dùng số liệu mặt hàng 'Peanuts, all types, dry-roasted, with salt' (SR Legacy); lạc rang VN thường có chút muối nên phù hợp."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Chọn cà tím dài, quả thẳng, vỏ căng bóng, cuống còn xanh. Rửa sạch, cắt đôi theo chiều dọc; dùng dao khứa vài đường chéo trên mặt cắt để cà nhanh chín và thấm sốt.",
+      "tip": "Bách Hóa Xanh: nướng nguyên trái giữ được vị ngọt, khi ăn mới tách ruột; Bếp Mina: cắt đôi dọc trước khi nướng. Với 3 phần ăn, cắt đôi giúp chín đều và nhanh hơn."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Làm nóng lò nướng hoặc nồi chiên không dầu ở 180-200°C trước 5-10 phút.",
+      "tip": "Hai nguồn mâu thuẫn nhẹ: Bếp Mina nướng 180°C trong 12-15 phút; Bách Hóa Xanh nướng 200°C trong 15-20 phút. Lấy khoảng giữa 190°C và kiểm tra độ mềm.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Xếp cà tím lên khay có lót giấy bạc, cho vào lò nướng lần 1 khoảng 12-15 phút đến khi vỏ hơi xém và thịt cà mềm.",
+      "tip": "Nếu nướng bằng bếp than/bếp gas trực tiếp, trở đều các mặt mỗi 5 phút cho vỏ cháy xém thơm (Bách Hóa Xanh).",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Trong lúc chờ cà nướng, pha sốt nước tương tỏi ớt: cho tỏi băm, ớt băm, nước tương, đường và nước lọc vào bát, khuấy đều cho đường tan hết."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Hành lá rửa sạch, thái nhỏ cho vào bát, trộn cùng muối. Đun dầu ăn cho sôi già rồi đổ trực tiếp vào bát hành, trộn đều — đây là phần mỡ hành.",
+      "tip": "Bếp Mina: đổ dầu sôi già vào hành để hành giữ màu xanh đẹp và dậy mùi thơm; tắt bếp trước khi cho hành vào để hành không bị cháy đắng."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cà tím nướng xong lấy ra để nguội bớt. Dùng nĩa đâm nhẹ rồi tước thịt cà theo chiều dọc của thớ cho tơi, đẹp mắt."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Dùng thìa rưới đều sốt nước tương tỏi ớt lên mặt cà, phết thêm mỡ hành rồi cho cà vào lò nướng thêm 8-10 phút cho sốt thấm và dậy mùi.",
+      "tip": "Bước nướng lần 2 chỉ có ở Bếp Mina; bản chay của Bách Hóa Xanh chỉ rưới mỡ hành lên cà sau khi nướng. Nướng lần 2 giúp cà thấm sốt đậm đà hơn.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Lấy cà ra đĩa, rắc lạc rang giã dập và tiêu xay lên trên. Dọn nóng, ăn kèm cơm trắng.",
+      "tip": "Món phải ăn ngay khi còn nóng mới thơm béo; để nguội cà sẽ bớt thơm và mỡ hành dễ ngấy."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 41.67,
+      "proteinG": 1.63,
+      "carbohydrateG": 9.8,
+      "fatG": 0.3,
+      "fiberG": 5,
+      "sugarG": 5.88,
+      "sodiumMg": 3.33
+    },
+    "originalPerServing": {
+      "energyKcal": 189.6,
+      "proteinG": 5.03,
+      "carbohydrateG": 17.03,
+      "fatG": 12.84,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Hành lá: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Nước tương: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Ớt tươi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=800&q=80",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      3,
+      6,
+      7,
+      8,
+      9
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

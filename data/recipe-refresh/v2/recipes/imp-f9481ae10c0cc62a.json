@@ -1,0 +1,852 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-f9481ae10c0cc62a",
+    "slug": "sup-ca-chua-kem-y",
+    "title": "Súp cà chua kem Ý"
+  },
+  "content": {
+    "description": "Súp cà chua xay mịn thêm kem sữa chua dịu, món khai vị Ý ấm áp chấm bánh mì nướng.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Súp",
+      "Cà chua",
+      "Kem",
+      "Ý"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-f9481ae10c0cc62a.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.paginainizio.com/public/ricette/recipe.php?recipe=00005901",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.buttalapasta.it/ricette/ricetta-crema-di-pomodoro/22854/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://cucinare.meglio.it/ricetta-crema_di_pomodoro_con_crostini.foto.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.gustissimo.it/ricette/minestre-creme-zuppe/crema-di-pomodoro.htm",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cà chua chín",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 700,
+        "unit": "g",
+        "text": "700 g",
+        "gramEquivalent": 700,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 700,
+          "unit": "g"
+        }
+      },
+      "note": "Ba nguồn Ý mâu thuẫn lớn về lượng cà chua cho 4 phần: paginainizio 500 g; cucinare.meglio.it 700 g pomodori perini; buttalapasta 2 kg — chọn 700 g (mức trung gian hợp lý cho 4 phần súp đặc, theo meglio.it ghi rõ per 4). Nên dùng cà chua perini/San Marzano chín đỏ, vỏ căng (gustissimo).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ lớn",
+        "text": "1 củ lớn",
+        "gramEquivalent": 150,
+        "basis": "1 củ lớn ≈ 150 g (USDA FoodData Central: 1 large onion (4-1/2\" dia) = 150 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả ba nguồn (paginainizio, buttalapasta, meglio.it) đều dùng 1 củ hành tây cho 4 phần — không mâu thuẫn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "2 tép × 3 g/tép (USDA: 1 clove garlic = 3 g)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "buttalapasta: 2 spicchi d'aglio cho 4 phần. paginainizio và meglio.it không dùng tỏi — có dùng theo buttalapasta.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Sữa tươi nguyên kem",
+      "canonicalIngredientId": "ING_ENR_3D34F4B09B331BD5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "ml",
+        "text": "500 ml",
+        "gramEquivalent": 515,
+        "basis": "500 ml × 1.03 g/ml ≈ 515 g (tỉ trọng sữa tươi ~1.03)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 500,
+          "unit": "ml"
+        }
+      },
+      "note": "paginainizio (công thức 4 phần dùng sữa): 500 g latte. buttalapasta và meglio.it KHÔNG dùng sữa (chỉ dùng panna) — mâu thuẫn; món này có sữa tươi theo gợi ý assignment nên lấy theo paginainizio.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 61,
+        "proteinG": 3.15,
+        "carbohydrateG": 4.8,
+        "fatG": 3.25,
+        "fiberG": 0,
+        "sugarG": 5.05,
+        "sodiumMg": 43
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171265",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Milk, whole, 3.25% milkfat, with added vitamin D'."
+    },
+    {
+      "position": 4,
+      "sourceName": "Kem tươi (panna da cucina)",
+      "canonicalIngredientId": "ING_ENR_56CF3E01A2F23AE4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "ml",
+        "text": "100 ml",
+        "gramEquivalent": 101,
+        "basis": "100 ml × 1.01 g/ml ≈ 101 g (tỉ trọng kem tươi ~1.01)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 100,
+          "unit": "ml"
+        }
+      },
+      "note": "paginainizio: 200 g panna fresca; buttalapasta: 150 ml panna liquida; meglio.it: 100 cc panna fresca liquida — ba nguồn mâu thuẫn, chọn 100 ml theo meglio.it (mức nhẹ nhất, vì công thức đã có 500 ml sữa).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 340,
+        "proteinG": 2.84,
+        "carbohydrateG": 2.84,
+        "fatG": 36.08,
+        "fiberG": 0,
+        "sugarG": 2.92,
+        "sodiumMg": 27
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170859",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Cream, fluid, heavy whipping'."
+    },
+    {
+      "position": 5,
+      "sourceName": "Bơ lạt",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 40,
+        "unit": "g",
+        "text": "40 g",
+        "gramEquivalent": 40,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 40,
+          "unit": "g"
+        }
+      },
+      "note": "paginainizio: 40 g burro chia 2 lần (20 g nấu cà chua + 20 g làm sốt béchamel với sữa). buttalapasta chỉ dùng '1 noce di burro' (~15-20 g) — mâu thuẫn; lấy 40 g theo paginainizio vì công thức dùng sữa cần đủ bơ làm roux.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Butter, without salt' (bơ lạt, đúng loại dùng nấu ăn Ý)."
+    },
+    {
+      "position": 6,
+      "sourceName": "Bột mì đa dụng",
+      "canonicalIngredientId": "ING_ENR_A9194AD78D914D6C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 16,
+        "basis": "2 muỗng canh × 7.9 g/muỗng (USDA: 1 tbsp all-purpose flour = 7.9 g) ≈ 16 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "paginainizio và buttalapasta: 2 cucchiai di farina; meglio.it: 1 cucchiaio — mâu thuẫn, lấy 2 muỗng canh theo 2/3 nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 364,
+        "proteinG": 10.33,
+        "carbohydrateG": 76.31,
+        "fatG": 0.98,
+        "fiberG": 2.7,
+        "sugarG": 0.27,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169761",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước dùng rau củ",
+      "canonicalIngredientId": "ING_ENR_364BF98104DC7D15",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "ml",
+        "text": "500 ml",
+        "gramEquivalent": 500,
+        "basis": "500 ml ≈ 500 g (tỉ trọng nước dùng ~1 g/ml)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 500,
+          "unit": "ml"
+        }
+      },
+      "note": "meglio.it: 1/2 l di brodo cho 4 phần; buttalapasta: 3/4 l di brodo vegetale — mâu thuẫn, chọn 500 ml theo meglio.it (phù hợp với lượng sữa 500 ml đã có).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 5,
+        "proteinG": 0.24,
+        "carbohydrateG": 0.93,
+        "fatG": 0.07,
+        "fiberG": 0,
+        "sugarG": 0.55,
+        "sodiumMg": 296
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171583",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Soup, vegetable broth, ready to serve'."
+    },
+    {
+      "position": 8,
+      "sourceName": "Lá húng quế tươi",
+      "canonicalIngredientId": "ING_ENR_0121EB2200008912",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "lá",
+        "text": "10 lá",
+        "gramEquivalent": 5,
+        "basis": "10 lá ≈ 5 g (USDA: 2 tbsp húng quế tươi băm = 5.3 g, tương đương ~10 lá)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "piece"
+        }
+      },
+      "note": "meglio.it: 10 foglie di basilico; paginainizio: 20 foglie — mâu thuẫn, chọn 10 lá theo meglio.it.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 3.15,
+        "carbohydrateG": 2.65,
+        "fatG": 0.64,
+        "fiberG": 1.6,
+        "sugarG": 0.3,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172232",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.2,
+        "basis": "1 muỗng cà phê đường ≈ 4.2 g (USDA: 1 tsp granulated sugar = 4.2 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "buttalapasta: 1 cucchiaino di zucchero (để cân bằng vị chua của cà chua); paginainizio chỉ ghi 'pizzico' — lấy 1 muỗng cà phê theo buttalapasta.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ≈ 6 g (USDA: 1 tsp table salt = 6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tất cả các nguồn Ý đều ghi sale q.b. — 1 muỗng cà phê là ước lượng hợp lý cho nồi súp ~1.7 lít (lưu ý nước dùng rau củ đóng hộp thường đã mặn, cần nếm lại ở bước cuối).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.2,
+        "basis": "1/2 muỗng cà phê tiêu xay ≈ 1.2 g (USDA: 1 tsp ground black pepper = 2.3 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tất cả các nguồn Ý đều ghi pepe q.b. — ước lượng 1/2 muỗng cà phê cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Dầu ô liu nguyên chất",
+      "canonicalIngredientId": "ING_ENR_3B7B05F341BDBC33",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "2 muỗng canh × 15 ml × 0.91 g/ml ≈ 27 g (tỉ trọng dầu ô liu ~0.91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "buttalapasta: 2 cucchiai d'olio d'oliva extra vergine (xào cùng bơ); paginainizio KHÔNG dùng dầu — có dùng theo buttalapasta.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Bánh mì lát (làm crouton)",
+      "canonicalIngredientId": "ING_ENR_7D53A6C71807BF69",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "lát",
+        "text": "2 lát",
+        "gramEquivalent": 60,
+        "basis": "2 lát × 30 g/lát (USDA: 1 slice white bread ≈ 28-30 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "slice"
+        }
+      },
+      "note": "meglio.it: 4 fette di pan carrè làm crouton ăn kèm (không bắt buộc) — ở đây dùng 2 lát là đủ cho 4 phần súp, để riêng khi dọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 238,
+        "proteinG": 10.66,
+        "carbohydrateG": 43.91,
+        "fatG": 2.15,
+        "fiberG": 9.2,
+        "sugarG": 5,
+        "sodiumMg": 478
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167532",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Phô mai Parmigiano bào mịn",
+      "canonicalIngredientId": "ING_ENR_A629948A38A7B9D5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "gustissimo: rắc parmigiano grattugiato khi dọn súp — chỉ để trang trí/thêm vị, không bắt buộc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 392,
+        "proteinG": 35.75,
+        "carbohydrateG": 3.22,
+        "fatG": 25,
+        "fiberG": 0,
+        "sugarG": 0.11,
+        "sodiumMg": 1175
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170848",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 15,
+        "basis": "1 cây × 15 g/cây (USDA: 1 medium green onion = 15 g)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "KHÔNG có trong bất kỳ nguồn Ý nào — thêm theo gợi ý assignment, chỉ để trang trí khi dọn, không bắt buộc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Onions, spring or scallions (includes tops and bulb), raw'."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Rửa sạch cà chua, cắt mỗi quả thành 6-8 múi cau. Hành tây bóc vỏ, băm nhỏ. Tỏi bóc vỏ, băm nhuyễn. Húng quế rửa sạch, để ráo.",
+      "tip": "buttalapasta: 'pomodori lavati e tagliati'. gustissimo khuyên chọn cà chua perini/San Marzano vỏ căng, cuống xanh, mùi thơm."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đun chảy 20 g bơ trong một nồi lớn ở lửa vừa. Cho cà chua đã cắt múi và lá húng quế vào, đảo đều, nấu lửa nhỏ khoảng 10 phút cho cà chua mềm, ra nước.",
+      "tip": "paginainizio: nấu cà chua với 20 g bơ + húng quế 'a fuoco basso mescolando'. meglio.it: nấu 10 phút lửa vừa, đảo thỉnh thoảng.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Trong một nồi khác, đun chảy 20 g bơ còn lại cùng 2 muỗng canh dầu ô liu ở lửa nhỏ. Cho hành tây băm vào xào khoảng 10 phút đến khi trong mềm, cuối cùng cho tỏi băm vào đảo thêm 1 phút cho thơm.",
+      "tip": "buttalapasta (bước 1-2): xào hành 10 phút rồi mới cho tỏi băm nhuyễn vào cuối — tỏi cho sớm dễ cháy đắng.",
+      "timerMinutes": 11
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Rắc đều 2 muỗng canh bột mì vào nồi hành, đảo nhanh tay 2-3 phút cho bột chín, áo đều hành, không để bột cháy vàng.",
+      "tip": "buttalapasta (bước 3): 'Spolverate con la farina, e cuocete ancora qualche minuto mescolando con cura' — đây là bước roux giúp súp sánh mịn.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đổ sữa tươi vào nồi từng chút một (mỗi lần khoảng 100 ml), vừa đổ vừa khuấy đều tay để không vón cục. Nấu lửa vừa khoảng 10 phút, khuấy thường xuyên, đến khi thành sốt sánh mịn.",
+      "tip": "paginainizio: 'latte, poco per volta, mescolando sempre. Cuocere per 10 minuti' — đổ ồ ạt một lúc sẽ làm bột vón cục không cứu được.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ nước dùng rau củ vào nồi, thêm đường, muối và tiêu đen. Khuấy đều, đun đến sôi nhẹ.",
+      "tip": "buttalapasta (bước 4-5): cho brodo vegetale vào rồi 'portate ad ebollizione leggera'. Đường để cân bằng vị chua tự nhiên của cà chua."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Trút toàn bộ cà chua đã nấu mềm (cả nước) từ nồi ở bước 2 vào nồi súp. Hạ lửa nhỏ, nấu thêm khoảng 15 phút cho cà chua nhừ hoàn toàn, các vị hòa quyện.",
+      "tip": "buttalapasta ninh tổng cộng khoảng 30 phút lửa nhỏ ('mezzora a fuoco basso') — ở đây chia 2 giai đoạn: nấu cà chua riêng 10 phút + ninh chung 15 phút, tổng tương đương.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Tắt bếp, để súp nguội bớt khoảng 5 phút. Dùng máy xay cầm tay xay nhuyễn, sau đó lọc qua rây mịn (hoặc dùng máy xay cối rồi lọc) để súp thật mượt, bỏ bã vỏ/hạt.",
+      "tip": "buttalapasta (bước 7): xay bằng frullatore ad immersione rồi 'passate il tutto attraverso un setaccio o un colino' — lọc rây là bí quyết để crema mịn như nhà hàng.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Đổ súp đã lọc trở lại nồi. Cho kem tươi vào, khuấy đều cho hòa quyện. Hâm nóng lại ở lửa thật nhỏ cho súp ấm nóng — TUYỆT ĐỐI không để sôi bùng.",
+      "tip": "MÂU THUẪN NGUỒN: meglio.it đun sôi nhẹ thêm 10 phút sau khi cho panna; buttalapasta chỉ trộn panna vào rồi dọn. Chọn hâm nhẹ không sôi (theo buttalapasta) vì đun sôi dễ làm kem tách lớp, súp bị lợn cợn.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Làm crouton: cắt bánh mì lát thành hạt lựu khoảng 1 cm. Đun nóng chảo với 1 muỗng cà phê dầu ô liu (hoặc một mẩu bơ), cho bánh mì vào áp chảo, đảo thường xuyên đến khi vàng giòn đều các mặt, vớt ra để ráo.",
+      "tip": "meglio.it: 'Tagliate a quadretti le fette di pan carrè e fateli rosolare in padella con dell'olio, rigirandoli spesso per farli dorare'.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Nêm nếm lại muối, tiêu cho vừa miệng. Múc súp ra bát sâu lòng, rưới một vệt kem tươi lên mặt, rắc phô mai Parmigiano bào và hành lá thái nhỏ. Dọn nóng, để crouton riêng bên cạnh để ai ăn thì cho vào (giữ được độ giòn).",
+      "tip": "buttalapasta gợi ý trang trí 'un ciuffo di panna montata a neve freddissima o un filo di panna liquida'; gustissimo: rắc parmigiano + ăn kèm crostini. LƯU Ý: paginainizio ghi 'servire a temperatura ambiente' (dọn ở nhiệt độ phòng) — khác thường so với buttalapasta dọn nóng; chọn dọn nóng theo buttalapasta."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 105.44,
+      "proteinG": 1.72,
+      "carbohydrateG": 7.31,
+      "fatG": 8.47,
+      "fiberG": 2.13,
+      "sugarG": 4.62,
+      "sodiumMg": 10.11
+    },
+    "originalPerServing": {
+      "energyKcal": 426.91,
+      "proteinG": 11.14,
+      "carbohydrateG": 30.22,
+      "fatG": 30.27,
+      "fiberG": 4.45,
+      "sugarG": 16.05,
+      "sodiumMg": 1156.54
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Sữa tươi nguyên kem: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Kem tươi (panna da cucina): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Bột mì đa dụng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước dùng rau củ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Lá húng quế tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Dầu ô liu nguyên chất: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      9,
+      10,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

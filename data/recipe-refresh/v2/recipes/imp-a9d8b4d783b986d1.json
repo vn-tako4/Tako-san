@@ -1,0 +1,852 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-a9d8b4d783b986d1",
+    "slug": "com-tom-sa-thai",
+    "title": "Cơm tôm sả Thái"
+  },
+  "content": {
+    "description": "Cơm rang tôm sả thơm nồng mặn ngọt nhiệt đới, món cơm Thái nhanh gọn đậm vị.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Cơm chiên",
+      "Tôm",
+      "Sả",
+      "Thái Lan"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-a9d8b4d783b986d1.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://rosasthai.com/recipes/thai-style-fried-rice-with-shrimp-or-prawns",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://hot-thai-kitchen.com/tom-yum-fried-rice/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://susiecooksthai.com/thai-tom-yum-fried-rice-recipe/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cơm nguội (cơm trắng nấu chín, để nguội hoặc qua đêm)",
+      "canonicalIngredientId": "RICE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": "đơn vị gốc đã là gram. Rosa's Thai dùng 550 g cơm chín cho 4 phần (~137 g/phần); Hot Thai Kitchen dùng 300 g cho ~2 phần (~150 g/phần) → 450 g cho 3 phần (~3 chén).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "BẮT BUỘC dùng cơm nguội/để tủ lạnh qua đêm: Hot Thai Kitchen nhấn mạnh cơm phải thật khô, cơm mới nấu còn ướt sẽ làm cơm chiên bị nhão.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 130,
+        "proteinG": 2.69,
+        "carbohydrateG": 28.2,
+        "fatG": 0.28,
+        "fiberG": 0.4,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168878",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm tươi (bóc vỏ, bỏ chỉ đen)",
+      "canonicalIngredientId": "ING_ENR_7B8E16FCD96F052B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram. Rosa's Thai: 400 g tôm bóc vỏ cho 4 phần → 300 g cho 3 phần.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    },
+    {
+      "position": 2,
+      "sourceName": "Sả tươi",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 40,
+        "basis": "2 cây sả ≈ 40 g phần gốc non dùng được (1 cây ≈ 20 g). Hot Thai Kitchen (tom yum fried rice): 3 inches sả (~1 cây) thái lát mỏng cho ~2 phần → 2 cây cho 3 phần.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ lấy phần gốc non, lột bỏ bẹ già (Hot Thai Kitchen: 'use bottom half of the stalk only').",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.3,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "USDA không công bố chất xơ và 'Sugars, total' cho sả tươi."
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê (băm nhỏ)",
+        "text": "2 muỗng cà phê (băm nhỏ)",
+        "gramEquivalent": 6,
+        "basis": "Rosa's Thai: 2 tsp tỏi băm (~6 g) cho 4 phần → ~1.5 tsp cho 3 phần, làm tròn 2 tsp cho thơm; 1 tsp tỏi băm ≈ 3 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ nhỏ",
+        "text": "1 củ nhỏ",
+        "gramEquivalent": 60,
+        "basis": "Rosa's Thai: 2 củ cà rốt thái lát xéo cho 4 phần → 1.5 củ cho 3 phần, lấy 1 củ nhỏ cho gọn; 1 củ cà rốt cỡ vừa ≈ 61 g (USDA).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Rosa's Thai còn dùng 100 g nấm mỡ + 1 củ hành tây cho 4 phần — bỏ qua theo hint món gọn nhẹ, giữ cà rốt cho màu sắc và độ ngọt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": null,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 45,
+        "basis": "Rosa's Thai: 4 cây hành lá cho 4 phần; 1 cây hành lá cỡ vừa ≈ 15 g (USDA).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu (loại nhạt)",
+      "canonicalIngredientId": "ING_ENR_1F562881DE5E6615",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "Rosa's Thai: 2 tbsp cho 4 phần; 1 tbsp xì dầu ≈ 18 g (USDA).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": null,
+        "sodiumMg": 5490
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "Rosa's Thai: 2 tbsp cho 4 phần; 1 tbsp ≈ 18 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hint món chỉ liệt kê xì dầu, nhưng dầu hào là vị nền chính trong công thức gốc Rosa's Thai (đi cùng xì dầu + nước mắm). Nếu muốn nhạt/đơn giản hơn có thể bỏ, tăng xì dầu thêm 1 tsp.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có bản ghi SR Legacy/Foundation cho dầu hào (chỉ có Branded theo từng hãng, số liệu chênh lệch lớn) nên để null, không dùng số liệu hãng."
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "Rosa's Thai: 2 tsp (nam pla) cho 4 phần; 1 tsp ≈ 6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hint món không liệt kê nước mắm — thêm theo đúng công thức gốc Rosa's Thai (bộ ba xì dầu + dầu hào + nước mắm). Có thể bỏ nếu không quen.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có bản ghi SR Legacy/Foundation cho nước mắm (chỉ có Branded theo từng hãng) nên để null."
+    },
+    {
+      "position": 9,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 22,
+        "basis": "Rosa's Thai: 2 tbsp nước cho 4 phần (cho vào cùng sốt để sốt loãng, dễ áo đều hạt cơm); 1 tbsp ≈ 15 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "Rosa's Thai: 4 tbsp cho 4 phần; 1 tbsp dầu ăn ≈ 13.6 g (tỉ trọng dầu ~0.91).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "Cân bằng vị mặn của bộ sốt; 1 tsp đường ≈ 4.2 g (USDA).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rosa's Thai không dùng đường; các công thức cơm chiên Thái khác (hicookery, adapted from About.com Thai Food) dùng 2 tsp đường cho lượng tương đương — lấy 1 tsp cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Tiêu trắng xay",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 0.5,
+        "basis": "Rosa's Thai: 'pinch of ground white pepper'; 1 nhúm ≈ 0.3-0.5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.6,
+        "fatG": 2.12,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    },
+    {
+      "position": 13,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 100,
+        "basis": "1 quả trứng gà lớn ≈ 50 g (USDA FoodData Central).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Rosa's Thai KHÔNG dùng trứng; SusieCooksThai (tom yum fried rice) dùng 2 quả trứng đánh tan đảo tơi cho món cơm chiên Thái tương tự → để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.6,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    },
+    {
+      "position": 14,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 2,
+        "basis": "Hot Thai Kitchen: 'Thai chilies, to taste'; 1 quả ớt hiểm ≈ 1 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Tạo vị cay nhẹ; không bắt buộc vì sả đã là hương chính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": null,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    },
+    {
+      "position": 15,
+      "sourceName": "Nước cốt chanh",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "Rosa's Thai: 'juice of 1 lime' vắt lên cơm khi dọn cho 4 phần → ~1 tbsp cho 3 phần; 1 tbsp ≈ 15.2 g (USDA).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rosa's Thai viết cơm chiên Thái luôn ăn kèm vắt chanh; hint món không có chanh → để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.42,
+        "carbohydrateG": 8.42,
+        "fatG": 0.07,
+        "fiberG": 0.4,
+        "sugarG": null,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168156",
+      "sourceNutritionNote": "USDA SR Legacy không công bố chỉ số 'Sugars, total' cho mặt hàng này."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Tôm bóc vỏ, bỏ chỉ đen, rửa sạch rồi thấm thật khô bằng giấy bếp.",
+      "tip": "Hot Thai Kitchen áp chảo tôm trước: tôm khô ráo mới xém vàng được, tôm ướt sẽ ra nước và bị dai."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sả lột bỏ bẹ già bên ngoài, chỉ lấy phần gốc non, thái lát thật mỏng.",
+      "tip": "Hot Thai Kitchen: chỉ dùng nửa dưới của cây sả (bottom half), thái lát mỏng để sả tỏa hương mà không bị xơ cứng khi ăn."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Tỏi băm nhỏ; cà rốt thái lát xéo mỏng; hành lá cắt khúc 2-3 cm, để riêng phần đầu trắng; ớt thái lát (nếu dùng); trứng đánh tan (nếu dùng); cơm nguội đánh tơi, bóp nhẹ cho hạt rời nhau."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Pha sốt trong chén nhỏ: xì dầu + dầu hào + nước mắm + nước lọc + đường, khuấy tan.",
+      "tip": "Rosa's Thai rưới trực tiếp từng loại vào chảo; pha sẵn trong chén giúp sốt áo đều cơm hơn khi làm ở nhà."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun nóng 2 muỗng canh dầu ăn trong wok/chảo sâu lòng với lửa lớn đến khi dầu bốc khói nhẹ. Cho sả, phần đầu trắng hành lá, tỏi (và ớt nếu dùng) vào phi 20-30 giây đến thơm và hơi vàng.",
+      "tip": "Rosa's Thai: phi tỏi vài giây cho thơm là đủ. Cẩn thận không để tỏi/sả cháy — cháy sẽ đắng (Hot Thai Kitchen).",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho tôm vào, xào lửa lớn 2-3 phút đến khi tôm cong lại, chuyển màu hồng đục. Gắp tôm ra đĩa, để riêng.",
+      "tip": "Mâu thuẫn cách làm: Rosa's Thai xào tôm chung với sốt và rau trong chảo; Hot Thai Kitchen áp chảo tôm riêng rồi gắp ra trước để tôm không bị nấu quá dai. Lấy theo Hot Thai Kitchen vì tôm xào lâu trong chảo cơm rất dễ bị khô dai.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Thêm 1 muỗng canh dầu ăn vào chảo. Nếu dùng trứng: đổ trứng đánh tan vào, đảo nhanh cho tơi xốp rồi gạt sang một bên chảo. Cho cà rốt vào xào 1-2 phút cho hơi mềm.",
+      "tip": "Rosa's Thai xào rau 2 phút ở bước này (cà rốt, nấm, hành tây, hành lá). Trứng theo cách của SusieCooksThai.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho cơm nguội vào chảo, đảo đều tay trên lửa lớn 2-3 phút cho hạt cơm nóng đều, săn lại và tơi rời.",
+      "tip": "Rosa's Thai chỉ đảo cơm 1 phút 'cho nóng'; thực tế cơm nguội lấy từ tủ lạnh cần 2-3 phút mới tơi và hơi xém cạnh. Cơm phải khô từ đầu (Hot Thai Kitchen) nếu không sẽ nhão.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Rưới đều chén sốt quanh thành chảo nóng, đảo nhanh tay 1-2 phút cho sốt áo đều từng hạt cơm, cơm khô ráo và thấm vị.",
+      "tip": "Rưới sốt vào thành chảo nóng (thay vì đổ thẳng lên cơm) giúp sốt xém thơm kiểu wok trước khi thấm vào cơm.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Cho tôm trở lại chảo cùng phần hành lá xanh, rắc tiêu trắng; đảo đều khoảng 1 phút cho mọi thứ nóng lại.",
+      "tip": "Hot Thai Kitchen: cho hành lá vào lúc tắt bếp để giữ màu xanh và độ giòn.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Nếm lại: nhạt thì thêm chút xì dầu, gắt mặn thì thêm xíu đường. Vắt nước cốt chanh lên trên nếu dùng.",
+      "tip": "Vị chuẩn cơm chiên Thái: mặn vừa, thơm sả, hậu ngọt nhẹ (Rosa's Thai)."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Tắt bếp, dọn cơm ra đĩa, rắc thêm hành lá thái nhỏ lên trên. Ăn ngay khi còn nóng.",
+      "tip": "Rosa's Thai: 'serve immediately' — cơm chiên để nguội sẽ khô cứng, mất ngon."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cơm nguội (cơm trắng nấu chín, để nguội hoặc qua đêm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Tôm tươi (bóc vỏ, bỏ chỉ đen): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Sả tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Xì dầu (loại nhạt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu hào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Tiêu trắng xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      15
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 15,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

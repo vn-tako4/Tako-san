@@ -1,0 +1,747 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-f50c115d909f97f2",
+    "slug": "canh-nam-ca-chua-chua-nhe",
+    "title": "Canh nấm cà chua chua nhẹ"
+  },
+  "content": {
+    "description": "Nấm đùi gà nấu cà chua chua nhẹ ra nước ngọt thanh, món canh không thịt nhanh gọn cho bữa tối.",
+    "cuisine": "vietnamese",
+    "category": "mon_canh",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 20,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Món canh",
+      "Nấm",
+      "Chua nhẹ",
+      "Cơm nhà"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-f50c115d909f97f2.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://hayan.vn/vao-bep/2-cach-nau-canh-ca-chua-thit-bo-va-nam-mem-ngon-hap-dan-bo-duong-p3591.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://memart.vn/tin-tuc/blog2/canh-nam-ca-chua-vi-cb.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn đều không dùng nấm đùi gà: HAY ĂN dùng nấm bào ngư + nấm kim châm, Memart dùng 50 g nấm kim châm (gợi ý thay bằng nấm sò/nấm linh chi). Món này dùng nấm đùi gà theo gợi ý món ăn; lượng 200 g cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": 1.11,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "USDA không có số liệu riêng cho nấm đùi gà (king oyster); dùng số liệu nấm sò (oyster mushroom) tương đương — họ nấm giống nhau, giá trị gần đúng."
+    },
+    {
+      "position": 1,
+      "sourceName": "Cà chua chín",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 300,
+        "basis": "1 quả cà chua vừa ≈ 100 g (USDA: 1 medium tomato ≈ 123 g; cà chua Việt thường nhỏ hơn, lấy 100 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Memart: 2 quả cà chua (nước dùng chỉ 500 ml); HAY ĂN không ghi lượng cà chua nhưng dùng 2 lít nước. Lấy 3 quả cho 4 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Tomatoes, red, ripe, raw, year round average' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 20,
+        "basis": "1 cây hành lá ≈ 10 g (USDA: 1 medium green onion ≈ 15 g; hành lá Việt nhỏ hơn)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng hành lá cho vào cuối: HAY ĂN cắt khúc ~2 đốt tay; Memart thái nhỏ rắc lên trên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 27,
+        "proteinG": 0.97,
+        "carbohydrateG": 5.74,
+        "fatG": 0.47,
+        "fiberG": 1.8,
+        "sugarG": 3.91,
+        "sodiumMg": 15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170006",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Onions, young green, tops only' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 15,
+        "basis": "1 củ hành tím bóc vỏ ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "HAY ĂN dùng hành tím băm phi thơm đầu tiên. Memart thay bằng tỏi + gừng — mâu thuẫn, giữ hành tím theo HAY ĂN và thêm ít tỏi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Shallots, raw' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi ≈ 3 g (quy đổi chuẩn USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Memart: 3 tép tỏi băm phi thơm cùng gừng; HAY ĂN dùng tỏi băm trong món canh thịt bò nhưng món canh nấm chỉ ghi hành tím. Lấy 2 tép, kết hợp cả hai phía.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Garlic, raw' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 5,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ Memart dùng (5 g băm nhỏ phi thơm cùng tỏi); HAY ĂN không dùng. Để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Ginger root, raw' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "1 muỗng canh = 15 ml; dầu ăn tỉ trọng ≈ 0,91 g/ml → ≈ 13,6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HAY ĂN: 1 muỗng canh dầu ăn để phi hành và xào cà chua. Memart: chỉ 1 muỗng cà phê dầu — mâu thuẫn, ưu tiên HAY ĂN vì công thức chi tiết hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Oil, soybean, salad or cooking' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "lít",
+        "text": "1.5 lít",
+        "gramEquivalent": 1500,
+        "basis": "1 lít nước = 1000 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "l"
+        }
+      },
+      "note": "MÂU THUẪN LỚN: HAY ĂN dùng 2 lít nước; Memart chỉ 500 ml nước (công thức đó thiên về canh đặc). Lấy 1,5 lít cho 4 phần — ở giữa hai nguồn, đủ làm canh loãng chan cơm. Nước lọc không có dinh dưỡng đáng kể; nutrition để null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 muỗng canh = 15 ml; nước mắm tỉ trọng ≈ 1 g/ml → ≈ 15 g/muỗng",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Theo gợi ý món ăn (hint_ingredients có nước mắm); HAY ĂN món canh thịt bò dùng 1 muỗng canh nước mắm, món canh nấm chỉ ghi 'nêm nếm gia vị cho phù hợp'. Lấy 2 muỗng canh cho 4 phần, điều chỉnh theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Sauce, fish, ready-to-serve' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 9,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê muối = 5 ml ≈ 6 g (quy đổi chuẩn USDA) → 0,5 muỗng ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Memart: 1/2 muỗng cà phê muối; HAY ĂN: 1/3 muỗng cà phê muối khi xào cà chua + nêm lại sau. Lấy 1/2 muỗng cà phê, nêm lại khi sôi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Salt, table' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.2,
+        "basis": "1 muỗng cà phê đường cát = 5 ml ≈ 4,2 g (quy đổi chuẩn USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Memart: 1 muỗng cà phê đường; HAY ĂN: 1 muỗng cà phê đường khi xào cà chua — hai nguồn khớp nhau.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Sugars, granulated' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 11,
+      "sourceName": "Bột ngọt",
+      "canonicalIngredientId": "ING_ENR_0A4564D231578559",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2.5,
+        "basis": "1/2 muỗng cà phê bột ngọt ≈ 2,5 g (ước theo tỉ trọng tinh thể tương đương muối)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HAY ĂN: 1/2 muỗng cà phê bột ngọt khi xào cà chua; Memart không dùng. Để optional.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có mục bột ngọt (MSG) — search API trả về 0 kết quả. Để null, không ước tính."
+    },
+    {
+      "position": 12,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.55,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2,2 g (quy đổi chuẩn USDA) → 1/4 muỗng ≈ 0,55 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Memart: 1/4 muỗng cà phê tiêu; HAY ĂN: 1/3 muỗng cà phê tiêu — gần tương đương, lấy theo Memart.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Spices, pepper, black' (fdcId phía nutrition_source)."
+    },
+    {
+      "position": 13,
+      "sourceName": "Giấm ăn",
+      "canonicalIngredientId": "ING_ENR_D62FB82798CEBB76",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê = 5 ml; giấm tỉ trọng ≈ 1 g/ml → ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ Memart dùng (1 muỗng cà phê giấm) để tăng vị chua nhẹ; HAY ĂN dựa vào vị chua của cà chua. Món tên 'chua nhẹ' nên để optional cho người thích chua hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0,
+        "carbohydrateG": 0.04,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.04,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172237",
+      "sourceNutritionNote": "Dùng số liệu USDA 'Vinegar, distilled' (fdcId phía nutrition_source)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế nấm: cắt bỏ phần gốc già của nấm đùi gà, ngâm nhanh trong thau nước muối pha loãng 5–10 phút, sau đó rửa sạch lại với nước, vớt ra để thật ráo rồi thái lát mỏng vừa ăn.",
+      "tip": "HAY ĂN: không ngâm nấm quá lâu trong nước sẽ làm nấm mất độ ngọt và dưỡng chất.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cà chua rửa sạch, bổ múi cau. Hành lá rửa sạch, cắt khúc khoảng 2 đốt tay. Hành tím bóc vỏ băm nhuyễn; tỏi bóc vỏ băm nhỏ; gừng (nếu dùng) băm nhuyễn.",
+      "tip": "HAY ĂN mách nhỏ: có thể bỏ hạt cà chua để nước canh không bị lợn cợn và thơm ngon hơn."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Bắc nồi lên bếp, cho 1 muỗng canh dầu ăn vào đun nóng. Cho hành tím băm (và tỏi, gừng) vào phi đến khi dậy mùi thơm, hơi vàng.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho cà chua vào nồi, đảo đều. Nêm 1 muỗng cà phê đường, 1/2 muỗng cà phê bột ngọt (nếu dùng), 1/3 muỗng cà phê muối và 1/4 muỗng cà phê tiêu. Xào đến khi cà chua mềm, tiết nước và lên màu đẹp.",
+      "tip": "Xào cà chua với chút đường trước giúp cà chua nhanh mềm và nước canh có màu đỏ đẹp (HAY ĂN).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đổ 1,5 lít nước lọc vào nồi, đun lửa lớn đến khi sôi.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Khi nước sôi, cho toàn bộ nấm đùi gà đã thái lát vào, đợi nước sôi trở lại rồi hạ lửa vừa, nấu thêm 2–3 phút đến khi nấm mềm, trong.",
+      "tip": "Nấm đùi gà thái lát mỏng chín rất nhanh; nấu lâu quá nấm sẽ bị bở và nước canh đục.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nêm 2 muỗng canh nước mắm, nếm thử rồi điều chỉnh muối/đường cho vừa khẩu vị gia đình. Nếu thích chua hơn, thêm 1 muỗng cà phê giấm.",
+      "tip": "Nêm nước mắm khi canh đã sôi để giữ mùi thơm; không nêm quá sớm cùng lúc với muối để dễ kiểm soát độ mặn."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Khi nước sôi trở lại, cho hành lá cắt khúc vào, đảo nhẹ một vòng rồi tắt bếp ngay.",
+      "tip": "HAY ĂN: cho hành lá vào lúc cuối và tắt bếp ngay để hành giữ màu xanh và mùi thơm."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Múc canh ra bát, rắc thêm chút tiêu xay lên trên. Dùng nóng với cơm trắng.",
+      "tip": "Canh nấm cà chua ngon nhất khi ăn ngay; để lâu nấm sẽ tiếp tục ra nước làm canh loãng và nhạt."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 16.5,
+      "proteinG": 1.66,
+      "carbohydrateG": 3.05,
+      "fatG": 0.21,
+      "fiberG": 1.15,
+      "sugarG": 0.56,
+      "sodiumMg": 9
+    },
+    "originalPerServing": {
+      "energyKcal": 74.6,
+      "proteinG": 2.97,
+      "carbohydrateG": 9.01,
+      "fatG": 3.8,
+      "fiberG": 2.35,
+      "sugarG": 4.38,
+      "sodiumMg": 893.94
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Cà chua chín: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành tím: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Đường trắng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

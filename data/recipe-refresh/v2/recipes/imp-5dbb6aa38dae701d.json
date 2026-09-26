@@ -1,0 +1,748 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-5dbb6aa38dae701d",
+    "slug": "mi-xao-kimchi-han",
+    "title": "Mì xào kim chi Hàn"
+  },
+  "content": {
+    "description": "Sợi mì xào kim chi cay đậm trứng rán, món mì Hàn mười phút cho bữa tối bận rộn.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Mì xào",
+      "Kim chi",
+      "Hàn Quốc",
+      "Nhanh"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-5dbb6aa38dae701d.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "http://thenotsocreativecook.com/2022/01/20/kimchi-fried-noodles/?amp=1",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://cookwithdana.com/kimchi-udon-15-minutes-meal/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì ramen khô",
+      "canonicalIngredientId": "ING_ENR_6D35CF673269C980",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "gói",
+        "text": "3 gói",
+        "gramEquivalent": 240,
+        "basis": "1 gói mì ramen ăn liền phổ biến ≈ 75-85 g mì khô; lấy 80 g/gói (kiểm tra bao bì thực tế)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "pack"
+        }
+      },
+      "note": "Nguồn chính (The Not So Creative Cook): '2 ramen noodles' cho 2 phần, nấu theo hướng dẫn trên bao bì rồi BỎ gói gia vị. Quy đổi 3 phần = 3 gói.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 440,
+        "proteinG": 10.17,
+        "carbohydrateG": 60.26,
+        "fatG": 17.59,
+        "fiberG": 2.9,
+        "sugarG": null,
+        "sodiumMg": 1855
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171177",
+      "sourceNutritionNote": "Mục SR Legacy 'Soup, ramen noodle, any flavor, dry' — số liệu cho mì khô chưa nấu. Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 1,
+      "sourceName": "Kim chi cải thảo (cắt nhỏ)",
+      "canonicalIngredientId": "ING_ENR_EC9C3FE3D678828E",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Kim chi cải thảo via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "cup",
+        "text": "1.5 cup",
+        "gramEquivalent": 225,
+        "basis": "1 cup kim chi cắt nhỏ ≈ 150 g (ước lượng theo thể tích; thay đổi theo độ nén và lượng nước)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn chính: 1 cup kim chi cắt miếng nhỏ cho 2 phần. Kim chi càng chua (lên men kỹ) xào càng ngon — Cook with Dana cũng khuyên dùng kim chi chua và thêm nước kim chi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": null,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": "Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 2,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 150,
+        "basis": "USDA FoodData: 1 quả trứng gà lớn ≈ 50 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn chính: 'fried eggs to serve' — ốp la ăn kèm trên mỗi phần. 3 quả cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": "Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "tép",
+        "text": "6 tép",
+        "gramEquivalent": 18,
+        "basis": "USDA FoodData: 1 tép tỏi ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn chính: 4 tép tỏi băm cho 2 phần → 6 tép cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ lớn",
+        "text": "1 củ lớn",
+        "gramEquivalent": 150,
+        "basis": "USDA FoodData: 1 củ hành tây lớn ≈ 150 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn chính: '1 onion chopped' cho 2 phần. Quy đổi 3 phần ≈ 1 củ lớn (hoặc 1,5 củ vừa).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": null,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": "Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá (cắt lát)",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 20,
+        "basis": "1 mc hành lá cắt lát ≈ 6-7 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn chính: 2 mc hành lá cắt lát cho 2 phần (một phần xào cùng, một phần để trang trí). Quy đổi 3 phần = 3 mc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "Dùng mục SR Legacy 'Onions, spring or scallions (includes tops and bulb), raw' (đủ bộ chỉ số). Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 mc = 15 ml; tỉ trọng xì dầu ≈ 1,2 → ≈ 18 g/mc",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn chính: 1 mc xì dầu cho 2 phần → 1,5 mc cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": null,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "Mục SR Legacy 'Soy sauce made from soy and wheat (shoyu)'. Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 7,
+      "sourceName": "Xì dầu ngọt",
+      "canonicalIngredientId": "ING_ENR_B61C82C0AD542F3F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 mc ≈ 15 ml; tỉ trọng xì dầu ngọt cao ≈ 1,3 → ≈ 20 g/mc (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn chính dùng 1 mc 'sweet soy sauce' cho 2 phần (quy đổi 1,5 mc). MÂU THUẪN GIỮA 2 NGUỒN: nguồn phụ (Cook with Dana) không dùng xì dầu ngọt mà nêm bằng gochujang + đường + nước mắm. Nếu không có xì dầu ngọt, thay mỗi 1 mc bằng 1 mc xì dầu thường + 1 mcf đường.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có mục tương đương cho sweet soy sauce (kecap manis). Có thể thay 1 mc xì dầu ngọt ≈ 1 mc xì dầu thường + 1 mcf đường."
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 20.4,
+        "basis": "1 mc = 15 ml; tỉ trọng dầu ≈ 0,91 → ≈ 13,6 g/mc",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn chính: 1 mc dầu ăn cho 2 phần (dùng cùng bơ để phi thơm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": "Dầu thực vật (đậu nành) tinh luyện. Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 9,
+      "sourceName": "Bơ",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 21.3,
+        "basis": "USDA: 1 mc bơ ≈ 14,2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn chính: 1 mc bơ cho 2 phần, đun chảy cùng dầu ăn trước khi phi tỏi — tạo độ béo thơm cho mì. Có thể bỏ nếu muốn món nhẹ hơn (nguồn phụ không dùng bơ).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 643
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173410",
+      "sourceNutritionNote": "Bơ mặn (salted). Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 6.8,
+        "basis": "1 mcf = 5 ml; tỉ trọng dầu ≈ 0,91 → ≈ 4,5 g/mcf",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn chính: 1 mcf dầu mè cho 2 phần, rưới cuối cùng cho thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": "Dầu mè nguyên chất. Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước kim chi",
+      "canonicalIngredientId": "ING_ENR_27FD2253A7768761",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 22,
+        "basis": "1 mc ≈ 15 ml ≈ 15 g (tỉ trọng gần nước)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ nguồn phụ (Cook with Dana) dùng: 1 mc nước kim chi cho 1 phần để tăng vị chua đậm. Nguồn chính không dùng.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Lượng nhỏ, dùng tùy chọn; USDA không có mục riêng cho nước kim chi."
+    },
+    {
+      "position": 12,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "USDA FoodData: 1 mcf tiêu đen xay ≈ 2,3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ nguồn phụ dùng tiêu đen trong sốt. Nguồn chính không nêm tiêu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": null,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 13,
+      "sourceName": "Rong biển nori vụn (trang trí)",
+      "canonicalIngredientId": "ING_ENR_4637FA02B631A360",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 2,
+        "basis": "ước lượng",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn chính: 'crushed nori sheets optional' — trang trí tùy chọn, lượng rất nhỏ.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Gia vị trang trí lượng rất nhỏ và tùy chọn; bỏ qua số liệu dinh dưỡng."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Đun sôi một nồi nước lớn. Cho 3 gói mì ramen vào luộc theo thời gian ghi trên bao bì (thường 3-4 phút) đến khi sợi mì vừa chín tới. BỎ gói gia vị đi kèm, không dùng.",
+      "tip": "Nguồn chính nhấn mạnh: luộc mì riêng và bỏ gói gia vị vì vị mặn-ngọt của món đến từ kim chi và xì dầu.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Vớt mì ra rổ, xả nhanh qua nước lạnh cho sợi mì săn lại, xóc ráo nước rồi trộn với 1 mcf dầu ăn để sợi mì không dính vào nhau.",
+      "tip": "Mẹo của Cook with Dana cho mì udon cũng áp dụng: xả lạnh và trộn chút dầu giúp sợi mì tơi, khi xào thấm sốt đều hơn."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế các nguyên liệu còn lại: kim chi cắt miếng vừa ăn khoảng 2-3 cm; tỏi băm nhỏ; hành tây thái hạt lựu; hành lá cắt lát mỏng, để riêng khoảng 1 mc để trang trí.",
+      "tip": "Chuẩn bị xong hết trước khi bật bếp — món xào nhanh, quá trình xào chỉ mất vài phút (lời khuyên của Cook with Dana)."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Ốp la 3 quả trứng: đun nóng chảo chống dính với chút dầu ăn lửa vừa, đập từng quả trứng vào chiên đến độ chín mong muốn (lòng đào hoặc chín kỹ), gắp ra đĩa riêng giữ ấm.",
+      "tip": "Nguồn chính dọn trứng ốp la đặt trên mỗi phần mì. Muốn viền trứng giòn kiểu Hàn, cho thêm chút dầu quanh mép trứng khi chiên.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Dùng chảo lớn (có thể dùng lại chảo vừa ốp la), đun lửa vừa-cao, cho 1,5 mc dầu ăn và 1,5 mc bơ vào, đợi bơ tan chảy hoàn toàn.",
+      "tip": "Kết hợp bơ + dầu ăn theo nguồn chính: bơ tạo độ béo thơm, dầu ăn giúp bơ không bị cháy ở lửa lớn."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho tỏi băm vào phi thơm khoảng 30 giây (cẩn thận không để cháy), sau đó cho hành tây và 2 mc hành lá vào xào đến khi hành mềm, trong.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho kim chi đã cắt vào chảo, xào khoảng 2 phút cho kim chi săn lại, dậy mùi thơm và hơi xém cạnh.",
+      "tip": "Theo nguồn chính: xào kim chi trước 2 phút. Kim chi càng chua khi xào càng đậm vị; nếu kim chi quá chua có thể thêm 1 mcf đường (mẹo của Cook with Dana).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rưới 1,5 mc xì dầu và 1,5 mc xì dầu ngọt quanh thành chảo (cùng nước kim chi nếu dùng), đảo đều cho gia vị thấm vào kim chi.",
+      "tip": "Rưới xì dầu quanh thành chảo nóng giúp xì dầu dậy mùi thơm hơn là đổ thẳng vào giữa. LƯU Ý NGUỒN MÂU THUẪN: nguồn phụ (Cook with Dana) thay xì dầu ngọt bằng hỗn hợp gochujang + đường + nước mắm — vị sẽ cay nồng kiểu Hàn hơn."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho toàn bộ mì đã luộc vào chảo, đảo nhanh tay 1-2 phút cho từng sợi mì thấm đều sốt và hơi xém.",
+      "tip": "Đảo nhẹ tay để sợi mì không bị nát. Nếu chảo khô quá, thêm 1-2 mc nước lọc như cách Cook with Dana làm với mì udon.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Rưới 1,5 mcf dầu mè lên mì, cho nốt 1 mc hành lá và rong biển nori vụn (nếu dùng) vào, đảo đều lần cuối rồi tắt bếp.",
+      "tip": "Dầu mè cho vào cuối cùng, tắt bếp ngay để giữ mùi thơm — đun lâu dầu mè dễ bị đắng."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Chia mì ra 3 đĩa (hoặc tô), đặt 1 quả trứng ốp la lên mỗi phần, rắc thêm hành lá, nori vụn và vài miếng kim chi ăn kèm. Dọn nóng ngay.",
+      "tip": "Món này ngon nhất khi ăn nóng ngay sau khi xào — để lâu sợi mì sẽ hút hết sốt và bị khô."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Mì ramen khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Kim chi cải thảo (cắt nhỏ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Trứng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành lá (cắt lát): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Xì dầu ngọt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Bơ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

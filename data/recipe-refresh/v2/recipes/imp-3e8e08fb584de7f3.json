@@ -1,0 +1,912 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-3e8e08fb584de7f3",
+    "slug": "bo-ham-gung-dam",
+    "title": "Bò hầm gừng đậm"
+  },
+  "content": {
+    "description": "Thịt bò hầm gừng cay ấm nước hầm đậm, cà rốt mềm ngọt, món hầm Trung Hoa ấm lòng ngày lạnh.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 110,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Hầm",
+      "Bò",
+      "Gừng",
+      "Mùa lạnh"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-3e8e08fb584de7f3.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://tiffycooks.com/classic-braised-taiwanese-beef-stew/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://thewoksoflife.com/wprm_print/red-braised-beef-红烧牛肉",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt bò (sườn bò không xương hoặc bắp bò)",
+      "canonicalIngredientId": "ING_ENR_A0E86AD0350D1FEE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 900,
+        "unit": "g",
+        "text": "900 g",
+        "gramEquivalent": 900,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 900,
+          "unit": "g"
+        }
+      },
+      "note": "Tiffy dùng 3 lb (1,36 kg) sườn bò không xương, cắt miếng ~5 cm, cho ~6 phần; lấy 900 g cho 4 phần. Có thể thay bằng bắp bò, gầu hoặc nạm theo gợi ý của Tiffy.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 128,
+        "proteinG": 21.75,
+        "carbohydrateG": 0.16,
+        "fatG": 4.48,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 80
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171206",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "g",
+        "text": "250 g",
+        "gramEquivalent": 250,
+        "basis": "đơn vị gốc đã là gram (2 củ cà rốt vừa)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 250,
+          "unit": "g"
+        }
+      },
+      "note": "Tiffy dùng 2 củ cà rốt lớn cho ~6 phần; lấy 2 củ vừa (~250 g) cho 4 phần, cắt khúc vừa ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "g",
+        "text": "60 g",
+        "gramEquivalent": 60,
+        "basis": "đơn vị gốc đã là gram (gừng thái lát)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 60,
+          "unit": "g"
+        }
+      },
+      "note": "Tên món nhấn mạnh 'gừng đậm': Tiffy chỉ dùng 4 lát gừng để chần thịt, WOL dùng 5 lát gừng nấu cùng — tăng lên 60 g gừng thái lát để vị gừng rõ rệt. Đây là điều chỉnh theo tên món, nguồn gốc định lượng ghi rõ ở trên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 45,
+        "basis": "mỗi cây hành lá vừa ~15 g (USDA: 1 cây hành lá lớn ≈ 25 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Tiffy dùng 2 cây hành lá để chần thịt; WOL dùng phần trắng hành lá xào cùng thịt — dùng 3 cây cho 4 phần (2 cây chần, 1 cây xào/trang trí).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "tép",
+        "text": "5 tép",
+        "gramEquivalent": 15,
+        "basis": "1 tép tỏi ≈ 3 g (USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "Tiffy dùng 8 tép tỏi đập dập cho ~6 phần; lấy 5 tép cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 80,
+        "unit": "g",
+        "text": "80 g",
+        "gramEquivalent": 80,
+        "basis": "đơn vị gốc đã là gram (1/2 củ hành tây lớn thái lát)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 80,
+          "unit": "g"
+        }
+      },
+      "note": "Tiffy dùng 1 củ hành tây lớn thái lát cho ~6 phần; lấy 1/2 củ (~80 g) cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu (nhạt)",
+      "canonicalIngredientId": "ING_ENR_56643AB1680AE263",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 50,
+        "basis": "3 muỗng canh ≈ 45 ml; tỉ trọng xì dầu ~1,1 → ≈ 50 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tiffy dùng 4,5 tbsp xì dầu cho ~6 phần; lấy 3 tbsp cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Xì dầu đặc",
+      "canonicalIngredientId": "ING_ENR_CA929D4F77522C8E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 17,
+        "basis": "1 muỗng canh ≈ 15 ml; tỉ trọng xì dầu đặc ~1,1 → ≈ 17 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tiffy dùng 2 tbsp xì dầu đặc cho ~6 phần; lấy 1 tbsp cho 4 phần (tạo màu nâu đỏ đặc trưng).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 10.51,
+        "carbohydrateG": 5.57,
+        "fatG": 0.1,
+        "fiberG": 0.8,
+        "sugarG": 1.7,
+        "sodiumMg": 5586
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174278",
+      "sourceNutritionNote": "USDA không có mục xì dầu đặc riêng — dùng số liệu tamari (xì dầu làm từ đậu nành, không lúa mì, fdcId 174278) làm đại diện gần nhất."
+    },
+    {
+      "position": 8,
+      "sourceName": "Rượu nấu ăn Thiệu Hưng",
+      "canonicalIngredientId": "ING_ENR_93C0F55E7BEC13BF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "2 muỗng canh = 30 ml; tỉ trọng rượu nấu ăn ~1,0 → ≈ 30 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tiffy dùng 1/4 cup (1 tbsp chần + phần còn lại nấu) cho ~6 phần; WOL dùng tổng 3 tbsp. Lấy 2 tbsp cho 4 phần (1 tbsp chần thịt, 1 tbsp nấu).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.5,
+        "carbohydrateG": 6.3,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 1.55,
+        "sodiumMg": 626
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169070",
+      "sourceNutritionNote": "USDA không có rượu Thiệu Hưng — dùng 'Alcoholic beverage, wine, cooking' (fdcId 169070) làm đại diện."
+    },
+    {
+      "position": 9,
+      "sourceName": "Đường phèn (hoặc đường trắng)",
+      "canonicalIngredientId": "ING_ENR_E61013E527B2FEA2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Tiffy dùng 1–2 tbsp đường (trắng hoặc phèn) cho ~6 phần; lấy ~1 tbsp (15 g) cho 4 phần, nêm thêm theo khẩu vị ở cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "1 muỗng canh dầu ăn ≈ 13,6 g (tỉ trọng dầu ~0,91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tiffy chỉ ghi 'heat oil' không định lượng; WOL phi dầu với đường phèn trước khi xào thịt — lấy 1 tbsp để áp chảo và xào thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước dùng bò (hoặc nước lọc)",
+      "canonicalIngredientId": "ING_ENR_21C8980191B5460B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "lít",
+        "text": "1 lít",
+        "gramEquivalent": 1000,
+        "basis": "1 lít nước dùng ≈ 1000 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "l"
+        }
+      },
+      "note": "Tiffy dùng 6 cups (~1,4 L) nước dùng bò cho ~6 phần + thêm nước cho ngập thịt; lấy 1 L cho 4 phần. Có thể thay hoàn toàn bằng nước lọc theo gợi ý của Tiffy.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 7,
+        "proteinG": 1.14,
+        "carbohydrateG": 0.04,
+        "fatG": 0.22,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 372
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171538",
+      "sourceNutritionNote": "Dùng số liệu nước dùng bò đóng hộp (fdcId 171538); nếu dùng nước lọc thì giá trị dinh dưỡng của mục này ≈ 0."
+    },
+    {
+      "position": 12,
+      "sourceName": "Hoa hồi",
+      "canonicalIngredientId": "ING_ENR_E3301615B29A7FC8",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cái",
+        "text": "2 cái",
+        "gramEquivalent": 2,
+        "basis": "mỗi hoa hồi khô ~1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả Tiffy và WOL đều dùng hoa hồi trong nước hầm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 337,
+        "proteinG": 17.6,
+        "carbohydrateG": 50.02,
+        "fatG": 15.9,
+        "fiberG": 14.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171316",
+      "sourceNutritionNote": "USDA chỉ có 'Spices, anise seed' (hạt hồi ta, fdcId 171316) — dùng làm đại diện gần nhất cho hoa hồi; lượng dùng rất nhỏ nên sai số không đáng kể. USDA không liệt kê đường cho mục này — ghi 0."
+    },
+    {
+      "position": 13,
+      "sourceName": "Lá nguyệt quế",
+      "canonicalIngredientId": "ING_ENR_43B2CB0E47FF8903",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "lá",
+        "text": "2 lá",
+        "gramEquivalent": 1,
+        "basis": "mỗi lá nguyệt quế khô ~0,5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Tiffy dùng lá nguyệt quế + hoa hồi; WOL dùng thêm quế thanh. Giữ 2 lá theo Tiffy (nguồn chính).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 313,
+        "proteinG": 7.61,
+        "carbohydrateG": 74.97,
+        "fatG": 8.36,
+        "fiberG": 26.3,
+        "sugarG": null,
+        "sodiumMg": 23
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170917",
+      "sourceNutritionNote": "USDA không liệt kê đường cho lá nguyệt quế — ghi 0."
+    },
+    {
+      "position": 14,
+      "sourceName": "Tương cà chua",
+      "canonicalIngredientId": "ING_ENR_0C4F32B166C04020",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 16,
+        "basis": "1 muỗng canh tương cà chua ≈ 16 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tiffy dùng 2 tbsp tương cà cho ~6 phần; WOL KHÔNG dùng tương cà — hai nguồn mâu thuẫn; giữ theo Tiffy là nguồn chính của món này và ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 82,
+        "proteinG": 4.32,
+        "carbohydrateG": 18.91,
+        "fatG": 0.47,
+        "fiberG": 4.1,
+        "sugarG": 12.18,
+        "sodiumMg": 59
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170459",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Tương đậu cay (doubanjiang)",
+      "canonicalIngredientId": "ING_ENR_F09D68F0723D89C0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh ≈ 15 ml; tỉ trọng tương đậu ~1,2 → ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tiffy dùng 1,5 tbsp doubanjiang cho ~6 phần và gọi đây là 'must-have condiment' của món; WOL không dùng — giữ theo Tiffy. Vị cay chỉ thoang thoảng, có thể gia giảm.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có tương đậu cay doubanjiang — để null, tuyệt đối không bịa số."
+    },
+    {
+      "position": 16,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ăn ≈ 6 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nêm theo khẩu vị ở cuối; cả hai nguồn đều ghi 'to taste' / 'season with more soy'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 17,
+      "sourceName": "Bột bắp (làm sánh)",
+      "canonicalIngredientId": "ING_ENR_D2EAF583347FED22",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Bột bắp via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 8,
+        "basis": "1 muỗng canh bột bắp = 8 g (USDA)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 8,
+          "unit": "g"
+        }
+      },
+      "note": "Tiffy gợi ý cornstarch slurry (2 tbsp bột bắp + 4 tbsp nước cho ~6 phần) — TÙY CHỌN, chỉ dùng nếu muốn nước hầm sánh hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 381,
+        "proteinG": 0.26,
+        "carbohydrateG": 91.27,
+        "fatG": 0.05,
+        "fiberG": 0.9,
+        "sugarG": 0,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169698",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế: thịt bò cắt miếng vuông ~5 cm; gừng thái lát; hành lá cắt khúc dài; tỏi đập dập; hành tây thái lát; cà rốt gọt vỏ, cắt khúc vừa ăn.",
+      "tip": "Cắt thịt miếng to một chút vì hầm lâu thịt sẽ co lại (Tiffy cắt 2-inch)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Chần thịt: cho thịt vào nồi cùng nước lạnh ngập mặt, vài lát gừng, 2 cây hành lá cắt khúc và 1 muỗng canh rượu Thiệu Hưng. Đun sôi 5–10 phút, vớt bọt kỹ. Vớt thịt ra rửa sạch dưới vòi nước lạnh, thấm khô.",
+      "tip": "Bước chần với gừng, hành và rượu giúp khử mùi hôi và cho nước hầm trong, vị thịt 'sạch' hơn (Tiffy). Nếu vội có thể bỏ qua bước chần nhưng KHÔNG được bỏ qua bước áp chảo tiếp theo.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun nóng 1 muỗng canh dầu ăn trong nồi lớn trên lửa vừa-cao, cho thịt vào áp vàng đều các mặt khoảng 2–3 phút.",
+      "tip": "Áp chảo là bước Tiffy nhấn mạnh 'not to skip' — tạo màu đẹp và vị đậm đà cho món hầm.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Hạ lửa vừa, cho hành tây thái lát vào xào 3–4 phút đến mềm và thơm; cho tỏi đập dập và phần gừng lát còn lại vào đảo thêm 30 giây.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho tương cà chua, tương đậu cay, xì dầu nhạt, xì dầu đặc và đường phèn vào nồi, đảo đều 2–3 phút cho thịt thấm gia vị và lên màu nâu đỏ.",
+      "tip": "Tương đậu cay (doubanjiang) là 'linh hồn' của món theo Tiffy — vị cay chỉ thoang thoảng làm nền, có thể gia giảm nếu không ăn cay được.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ nước dùng bò (hoặc nước lọc) và phần rượu Thiệu Hưng còn lại vào cho ngập thịt; thêm hoa hồi và lá nguyệt quế. Đun sôi rồi hạ lửa thật nhỏ, đậy nắp hầm khoảng 2 giờ, thỉnh thoảng đảo và châm thêm nước nóng nếu nước cạn.",
+      "tip": "Tiffy hầm 2–3 giờ đến thịt mềm rục; WOL hầm 1 giờ cho thịt thái miếng nhỏ hơn. Với 900 g thịt miếng 5 cm, hầm 2 giờ rồi thử — thịt xiên đũa qua dễ dàng là đạt.",
+      "timerMinutes": 120
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho cà rốt vào nồi, đậy nắp hầm thêm khoảng 20 phút đến khi cà rốt mềm vừa, vẫn giữ được hình.",
+      "tip": "Cho cà rốt muộn để cà rốt không bị nát bở trong 2 giờ hầm thịt (Tiffy).",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "(Tùy chọn) Nếu thích nước hầm sánh hơn: hòa 1 muỗng canh bột bắp với 2 muỗng canh nước lạnh, rót từ từ vào nồi đang sôi nhẹ, khuấy đều đến khi đạt độ sánh vừa ý."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nêm nếm lại với muối, xì dầu hoặc chút đường cho vừa miệng. Vớt bỏ hoa hồi, lá nguyệt quế và các lát gừng nếu muốn nước hầm trong đẹp."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Múc thịt và cà rốt cùng nước hầm ra tô sâu, rắc hành lá thái nhỏ lên trên. Ăn nóng với cơm trắng.",
+      "tip": "Món này để qua đêm trong tủ lạnh càng ngấm gia vị, hôm sau ăn ngon hơn (Tiffy); bảo quản tối đa 3 ngày trong hộp kín."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 348.14,
+      "proteinG": 50.01,
+      "carbohydrateG": 14.63,
+      "fatG": 10.36,
+      "fiberG": 2.39,
+      "sugarG": 7.81,
+      "sodiumMg": 225.91
+    },
+    "originalPerServing": {
+      "energyKcal": 432.06,
+      "proteinG": 55.09,
+      "carbohydrateG": 21.14,
+      "fatG": 14.65,
+      "fiberG": null,
+      "sugarG": 8.83,
+      "sodiumMg": 2713.38
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Xì dầu (nhạt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Xì dầu đặc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Rượu nấu ăn Thiệu Hưng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước dùng bò (hoặc nước lọc): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Hoa hồi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Lá nguyệt quế: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Tương cà chua: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 15,
+        "detail": "Tương đậu cay (doubanjiang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 16,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      10,
+      11,
+      14,
+      15,
+      16
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 15,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 16,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

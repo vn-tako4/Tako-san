@@ -1,0 +1,899 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-f8fc539b7aa359ac",
+    "slug": "com-chien-dua-thai",
+    "title": "Cơm chiên dứa Thái"
+  },
+  "content": {
+    "description": "Cơm chiên dứa chín mọng với tôm-trứng trong chảo nóng, khao pad sapparot chua ngọt nhiệt đới Thái Lan.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Cơm chiên",
+      "Dứa",
+      "Thái Lan",
+      "Chua ngọt"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-f8fc539b7aa359ac.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://hot-thai-kitchen.com/pineapple-fried-rice-mini/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://insanelygoodrecipes.com/thai-pineapple-fried-rice/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm tươi (bóc vỏ, bỏ chỉ đen)",
+      "canonicalIngredientId": "ING_ENR_7B8E16FCD96F052B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 18,
+        "unit": "con vừa",
+        "text": "18 con vừa",
+        "gramEquivalent": 250,
+        "basis": "1 con tôm vừa bóc vỏ ~14 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 18,
+          "unit": "piece"
+        }
+      },
+      "note": "Hot Thai Kitchen dùng 12 con tôm vừa-lớn cho 2 phần hào phóng → 18 con (~250 g bóc vỏ) cho 3 phần. Áp chảo riêng trước rồi để riêng, cho lại vào cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "Dùng số liệu tôm sống của USDA."
+    },
+    {
+      "position": 1,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 150,
+        "basis": "1 quả trứng gà ~50 g (USDA FoodData Central: 1 large egg = 50 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Hot Thai Kitchen dùng 2 quả trứng cho 2 phần → 3 quả cho 3 phần; đánh tơi trong chảo đến chín khoảng 90% rồi mới cho cơm vào.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Cơm nguội (gạo jasmine nấu chín, để nguội hoặc qua đêm)",
+      "canonicalIngredientId": "RICE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 560,
+        "unit": "g",
+        "text": "560 g",
+        "gramEquivalent": 560,
+        "basis": "đơn vị gốc đã là gram (cơm đã nấu chín)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 560,
+          "unit": "g"
+        }
+      },
+      "note": "Hot Thai Kitchen dùng 375 g cơm jasmine đã nấu chín cho 2 phần hào phóng → 560 g cho 3 phần. Cơm nguội/để tủ lạnh giúp hạt cơm tơi, không bết khi chiên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 130,
+        "proteinG": 2.69,
+        "carbohydrateG": 28.17,
+        "fatG": 0.28,
+        "fiberG": 0.4,
+        "sugarG": 0.05,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168878",
+      "sourceNutritionNote": "Dùng số liệu cơm gạo trắng hạt dài nấu chín của USDA."
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "cup",
+        "text": "0.75 cup",
+        "gramEquivalent": 110,
+        "basis": "3/4 cup hành tây thái hạt lựu ≈ 110 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 1/2 cup hành tây thái hạt lựu nhỏ cho 2 phần → 3/4 cup cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Dứa chín (tươi)",
+      "canonicalIngredientId": "ING_ENR_CD6208DB7217BF50",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "cup",
+        "text": "1.5 cup",
+        "gramEquivalent": 230,
+        "basis": "1 cup dứa cắt miếng ≈ 155 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 1 cup dứa tươi cắt miếng 1/2\"x1/2\"x1\" cho 2 phần → 1.5 cup cho 3 phần. Trang nhấn mạnh DÙNG DỨA TƯƠI CHÍN (vỏ vàng) — dứa hộp quá ngọt hoặc nhạt vị sẽ làm hỏng món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60.11,
+        "proteinG": 0.46,
+        "carbohydrateG": 14.09,
+        "fatG": 0.21,
+        "fiberG": 0.93,
+        "sugarG": 11.42,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2346398",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hạt điều rang (không muối)",
+      "canonicalIngredientId": "ING_ENR_2D6B2B1B86EC622F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "cup",
+        "text": "0.75 cup",
+        "gramEquivalent": 90,
+        "basis": "3/4 cup hạt điều rang ≈ 90 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 1/2 cup hạt điều rang không muối cho 2 phần → 3/4 cup cho 3 phần; cho vào sau khi tắt bếp để giữ độ giòn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 574,
+        "proteinG": 15.31,
+        "carbohydrateG": 32.69,
+        "fatG": 46.35,
+        "fiberG": 3,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170571",
+      "sourceNutritionNote": "Dùng bản rang khô không muối cho khớp công thức."
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 45,
+        "basis": "1 cây hành lá ~15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Hot Thai Kitchen dùng 2 cây hành lá thái nhỏ cho 2 phần → 3 cây cho 3 phần; cho vào sau khi tắt bếp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Cà chua roma",
+      "canonicalIngredientId": "ING_ENR_546CA3FA082668E8",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "quả",
+        "text": "1.5 quả",
+        "gramEquivalent": 135,
+        "basis": "1 quả cà chua roma ~90 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Hot Thai Kitchen dùng 1 quả cà chua roma thái hạt lựu 1 inch cho 2 phần → 1.5 quả cho 3 phần; cho vào sau khi tắt bếp để cà chua không ra nước. Nguồn thứ hai (Insanely Good Recipes) không dùng cà chua mà dùng đậu Hà Lan/cà rốt — hai nguồn khác nhau, công thức này theo Hot Thai Kitchen.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": "Dùng số liệu cà chua đỏ chín thường của USDA."
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu ăn (dầu thực vật trung tính)",
+      "canonicalIngredientId": "ING_ENR_6A16415D22FE4EF9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4.5,
+        "unit": "muỗng canh",
+        "text": "4.5 muỗng canh",
+        "gramEquivalent": 61,
+        "basis": "1 muỗng canh dầu ăn = 15 ml ≈ 13.6 g (tỉ trọng dầu ~0.91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 3 muỗng canh dầu trung tính cho 2 phần → 4.5 muỗng canh cho 3 phần (2 muỗng để áp chảo tôm, phần còn lại chiên cơm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "Dùng số liệu dầu đậu nành (salad/cooking) của USDA."
+    },
+    {
+      "position": 9,
+      "sourceName": "Bột cà ri",
+      "canonicalIngredientId": "ING_ENR_1F36BC1C85BC8F35",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê bột cà ri ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 1 1/4 muỗng cà phê cho 2 phần → 2 muỗng cà phê cho 3 phần (làm tròn). Trang gợi ý bột cà ri Nhật S&B nhưng nhấn mạnh: dùng loại nào cũng được miễn là mình thích mùi của nó.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 325,
+        "proteinG": 14.29,
+        "carbohydrateG": 55.83,
+        "fatG": 14.01,
+        "fiberG": 53.2,
+        "sugarG": 2.76,
+        "sodiumMg": 52
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170924",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.25,
+        "unit": "muỗng cà phê",
+        "text": "2.25 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "1 muỗng cà phê đường hạt ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 1 1/2 muỗng cà phê đường cho 2 phần → 2 1/4 muỗng cà phê cho 3 phần; trộn chung với gia vị khô.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Muối ăn",
+      "canonicalIngredientId": "ING_ENR_361639D21BDA1726",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.375,
+        "unit": "muỗng cà phê",
+        "text": "0.375 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê muối ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 1/4 muỗng cà phê muối cho 2 phần → 3/8 muỗng cà phê cho 3 phần; trộn chung với gia vị khô.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Xì dầu (nước tương)",
+      "canonicalIngredientId": "ING_ENR_F68EF5C1E847770A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "1 muỗng canh xì dầu ≈ 15 g (tỉ trọng ~1.03)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 2 muỗng cà phê xì dầu cho 2 phần → 1 muỗng canh cho 3 phần; pha chung với nước mắm thành hỗn hợp gia vị ướt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "1 muỗng canh nước mắm ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 2 muỗng cà phê nước mắm cho 2 phần → 1 muỗng canh cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Tiêu trắng xay",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "muỗng cà phê",
+        "text": "0.75 muỗng cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "1 muỗng cà phê tiêu trắng xay ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen dùng 1/2 muỗng cà phê tiêu trắng cho 2 phần → 3/4 muỗng cà phê cho 3 phần; trộn chung với gia vị khô.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.61,
+        "fatG": 2.12,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Nho khô",
+      "canonicalIngredientId": "ING_ENR_25DB45A7AFFD8E5B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 muỗng canh nho khô ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen ghi rõ OPTIONAL (2 muỗng canh cho 2 phần → 3 muỗng canh cho 3 phần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 299,
+        "proteinG": 3.3,
+        "carbohydrateG": 79.32,
+        "fatG": 0.25,
+        "fiberG": 4.5,
+        "sugarG": null,
+        "sodiumMg": 26
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168165",
+      "sourceNutritionNote": "Dùng bản SR Legacy (đủ nutrients) thay cho bản Foundation thiếu nhiều trường, theo ghi chú trong cache."
+    },
+    {
+      "position": 16,
+      "sourceName": "Mắm tôm xào dầu (shrimp paste in oil)",
+      "canonicalIngredientId": "ING_ENR_DE64C1F04B82C4B9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.25,
+        "unit": "muỗng cà phê",
+        "text": "2.25 muỗng cà phê",
+        "gramEquivalent": 11,
+        "basis": "1 muỗng cà phê mắm tôm xào dầu ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen ghi rõ OPTIONAL (1 1/2 muỗng cà phê cho 2 phần → 2 1/4 muỗng cà phê cho 3 phần): là gạch tôm xào với gia vị, tạo vị đậm đà. Nếu dùng cơm dừa (coconut rice) thì chắt bớt dầu của mắm tôm để cơm không bị ngấy.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có mục tương ứng trong USDA SR Legacy/Foundation (kết quả gần nhất là bơ hạnh nhân, không liên quan) nên để null toàn bộ, không bịa số."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Nếu muốn trình bày trong bát dứa: bổ đôi quả dứa theo chiều dọc cả phần cuống xanh; dùng dao nhọn khía quanh viền để tạo lòng bát (không khía sát mép quá kẻo bát mỏng dễ vỡ); cắt bỏ lõi; khía ô vuông khoảng 1 cm rồi dùng muỗng múc lấy miếng dứa ra. Lau khô lòng bát dứa.",
+      "tip": "Cách của Hot Thai Kitchen: một lần bổ vừa được bát dứa vừa được sẵn miếng dứa để nấu, không cần gọt thêm, ít bẩn thớt. Lau khô bát để cơm không bị ướt khi bày."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế: tôm bóc vỏ, bỏ chỉ đen, thấm khô; cơm nguội đánh tơi cho rời hạt; hành tây thái hạt lựu nhỏ; hành lá thái nhỏ; cà chua thái hạt lựu 2-3 cm.",
+      "tip": "Mọi thứ phải sẵn sàng trước khi bật bếp vì các bước chiên diễn ra rất nhanh."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Trộn gia vị khô: cho bột cà ri, tiêu trắng, đường và muối vào chén, trộn đều cho bột cà ri tơi ra.",
+      "tip": "Hot Thai Kitchen: trộn trước giúp bột cà ri phân tán đều vào cơm, không bị vón cục."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Trộn gia vị ướt: cho xì dầu, nước mắm (và mắm tôm xào dầu nếu dùng) vào chén nhỏ, khuấy đều."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun wok hoặc chảo lớn trên lửa lớn với 2 muỗng canh dầu cho thật nóng. Cho tôm vào áp chảo không đảo đến khi xém một mặt và chín khoảng một nửa, lật mặt còn lại cho chín tới; tắt bếp, gắp tôm ra để riêng, giữ lại toàn bộ dầu trong chảo.",
+      "tip": "Hot Thai Kitchen: áp chảo không khuấy giúp tôm xém thơm; tôm chín tới là gắp ra ngay để không bị dai.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Thêm dầu vào chảo nếu cần. Đập trứng vào, đánh tơi đến khi trứng chín khoảng 90% thì cho cơm và hành tây vào, đảo đều cho quyện.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Rắc hỗn hợp gia vị khô và rưới hỗn hợp gia vị ướt vào chảo; đảo nhanh tay đến khi từng hạt cơm tơi rời và thấm đều gia vị.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho dứa (và nho khô nếu dùng) vào, đảo đến khi dứa nóng lên; sau đó để cơm yên 10-15 giây cho xém nhẹ rồi đảo, lặp lại vài lần cho cơm thơm mùi cháy cạnh. Cho tôm trở lại chảo, đảo đều.",
+      "tip": "Hot Thai Kitchen: để cơm 'nghỉ' vài giây cho xém rồi mới đảo là bí quyết tạo mùi thơm đặc trưng của cơm chiên.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tắt bếp; cho hạt điều, cà chua và hành lá vào, đảo nhanh cho vừa quyện.",
+      "tip": "Cho các nguyên liệu này sau khi tắt bếp để hạt điều giữ độ giòn, cà chua không ra nước."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Múc cơm ra đĩa hoặc cho vào bát dứa đã chuẩn bị; xếp tôm lên trên; ăn kèm dưa chuột thái lát nếu thích.",
+      "tip": "Hot Thai Kitchen: nếu nấu trước để ăn sau, hâm nóng cơm rồi mới cho hạt điều, cà chua, hành lá vào sau cùng."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 242.67,
+      "proteinG": 5.02,
+      "carbohydrateG": 52.58,
+      "fatG": 0.52,
+      "fiberG": 0.75,
+      "sugarG": 0.09,
+      "sodiumMg": 1.87
+    },
+    "originalPerServing": {
+      "energyKcal": 862.26,
+      "proteinG": 35.3,
+      "carbohydrateG": 92.27,
+      "fatG": 40.52,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1111.88
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Tôm tươi (bóc vỏ, bỏ chỉ đen): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Trứng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Dứa chín (tươi): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hạt điều rang (không muối): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Cà chua roma: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Dầu ăn (dầu thực vật trung tính): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Bột cà ri: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Đường trắng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Muối ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Xì dầu (nước tương): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Tiêu trắng xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 15,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 16,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

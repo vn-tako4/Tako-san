@@ -1,0 +1,574 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-88b58c0233dec53e",
+    "slug": "trung-xao-kim-chi",
+    "title": "Trứng xào kim chi"
+  },
+  "content": {
+    "description": "Trứng bông xào kim chi cay đỏ, món cơm nhà Hàn 10 phút cho bữa tối vội.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Xào",
+      "Trứng",
+      "Kim chi",
+      "Nhanh"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-88b58c0233dec53e.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://thecookbook.pk/recipes/kimchi-scrambled-eggs-recipe/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://everythingalexcooks.com/recipes/kimchi-soft-scrambled-eggs/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.nonguiltypleasures.com/kimchi-scrambled-eggs/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "quả",
+        "text": "6 quả",
+        "gramEquivalent": 300,
+        "basis": "USDA FoodData Central: 1 large egg = 50 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 6,
+          "unit": "piece"
+        }
+      },
+      "note": "thecookbook.pk: 4 large eggs cho 2 phần → nhân 1,5 cho 3 phần = 6 quả.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Kim chi cải thảo",
+      "canonicalIngredientId": "ING_ENR_EC9C3FE3D678828E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "cup",
+        "text": "0.75 cup",
+        "gramEquivalent": 112,
+        "basis": "FDC 170392: 1 cup kim chi = 150 g; 1/2 cup × 1,5 = 3/4 cup ≈ 112 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "thecookbook.pk: 1/2 cup chopped kimchi cho 2 phần → 3/4 cup cho 3 phần. everythingalexcooks dùng tỉ lệ mắt 2 trứng : 1 kim chi (không đong chính xác) — với 6 trứng thì tỉ lệ này tương đương ~3 phần kim chi theo thể tích, khớp ước lượng trên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": 1.06,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước kim chi",
+      "canonicalIngredientId": "ING_ENR_27FD2253A7768761",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 45,
+        "basis": "3 tbsp = 45 ml; tỉ trọng nước kim chi ≈ 1 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "thecookbook.pk: 2 tablespoons kimchi juice cho 2 phần → 3 tbsp cho 3 phần, ĐÁNH TAN CÙNG TRỨNG. MÂU THUẪN ĐÁNG CHÚ Ý: nonguiltypleasures.com cảnh báo độ chua của nước kim chi có thể làm trứng bị vón/curdle nên khuyên chỉ gắp miếng kim chi, bỏ nước; everythingalexcooks cũng chỉ rưới ~2 tsp nước kim chi lên trên sau khi trứng chín thay vì trộn vào. Công thức này theo thecookbook.pk (nguồn chính, khớp hint món), nhưng nếu trứng dễ vón thì nên làm theo cách của everythingalexcooks.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": 1.06,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": "Không có mục FDC riêng cho nước kim chi; dùng xấp xỉ số liệu kim chi cải thảo (170392)."
+    },
+    {
+      "position": 3,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 20.5,
+        "basis": "1,5 tbsp = 22,5 ml; tỉ trọng dầu ăn ≈ 0,91 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "thecookbook.pk: '1 tablespoon butter or cooking oil' cho 2 phần → 1,5 tbsp cho 3 phần. Nguồn cho chọn bơ HOẶC dầu ăn; hint món ghi 'dầu ăn' nên lấy dầu ăn làm chính, bơ là phương án thay thế.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": "Dùng số liệu dầu đậu nành tinh luyện (FDC 172370) làm đại diện cho 'dầu ăn' chung."
+    },
+    {
+      "position": 4,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.9,
+        "unit": "ml",
+        "text": "1.9 ml",
+        "gramEquivalent": 1.7,
+        "basis": "1/4 tsp × 1,5 = 3/8 tsp ≈ 1,9 ml; tỉ trọng dầu mè ≈ 0,91 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.9,
+          "unit": "ml"
+        }
+      },
+      "note": "thecookbook.pk: 1/4 teaspoon sesame oil cho 2 phần → 3/8 tsp (≈ 1,9 ml) cho 3 phần, đánh tan cùng trứng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.9,
+        "unit": "ml",
+        "text": "1.9 ml",
+        "gramEquivalent": 2,
+        "basis": "1/4 tsp × 1,5 = 3/8 tsp ≈ 1,9 ml; tỉ trọng xì dầu ≈ 1,05 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.9,
+          "unit": "ml"
+        }
+      },
+      "note": "thecookbook.pk: 1/4 teaspoon soy sauce (optional) cho 2 phần → ~1,9 ml cho 3 phần, đánh tan cùng trứng. Nguồn ghi optional; hint món liệt kê xì dầu nên giữ lại ở mức tùy chọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 10.51,
+        "carbohydrateG": 5.57,
+        "fatG": 0.1,
+        "fiberG": 0.8,
+        "sugarG": 1.7,
+        "sodiumMg": 5586
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174278",
+      "sourceNutritionNote": "Dùng số liệu tamari/soy sauce (FDC 174278) — xì dầu thường và tamari tương đương về dinh dưỡng ở mức dùng này."
+    },
+    {
+      "position": 6,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "1 tsp muối ≈ 6 g (USDA); lấy 1/4 tsp cho 3 phần",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "thecookbook.pk: 'Salt and pepper to taste' — không định lượng, lấy 1/4 tsp cho 3 phần. Kim chi và xì dầu đã mặn nên nêm nhạt tay, nếm lại sau khi trộn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "ước tính: 1/4 tsp tiêu xay ≈ 0,6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "thecookbook.pk: 'Salt and pepper to taste' — không định lượng, lấy 1/4 tsp cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Hành lá (trang trí)",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "FDC 170005: 1 cây hành lá trung bình = 15 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "thecookbook.pk: 'Optional: Chopped green onions and sesame seeds for garnish' — nguồn ghi là topping tùy chọn; hint món có hành lá nên liệt kê rõ ở đây. everythingalexcooks cũng dùng hành lá làm topping.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Vừng trắng rang (trang trí)",
+      "canonicalIngredientId": "ING_ENR_290707F4C2139F2E",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Vừng trắng rang via the same name key",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 tsp vừng ≈ 3 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "thecookbook.pk: 'sesame seeds for garnish' (optional). everythingalexcooks: 'white or black sesame seeds' làm topping tùy chọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 573,
+        "proteinG": 17.73,
+        "carbohydrateG": 23.45,
+        "fatG": 49.67,
+        "fiberG": 11.8,
+        "sugarG": 0.3,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170150",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế: kim chi cắt nhỏ; hành lá thái nhỏ để riêng làm topping.",
+      "tip": "everythingalexcooks: khi nấu (khác với ăn sống), người Hàn thường dùng kim chi đã lên men kỹ — chua hơn, thơm hơn, bớt đắng."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đập 6 quả trứng vào tô lớn. Thêm nước kim chi, dầu mè, xì dầu (nếu dùng), muối và tiêu. Đánh tan đều bằng phới hoặc đũa.",
+      "tip": "LƯU Ý MÂU THUẪN NGUỒN (ghi ở mục nước kim chi): thecookbook.pk trộn nước kim chi vào trứng; nonguiltypleasures cảnh báo nước kim chi chua có thể làm trứng vón. Nếu muốn an toàn, bỏ qua nước kim chi ở bước này và rưới lên sau cùng như everythingalexcooks."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đặt chảo chống dính lên bếp lửa vừa, cho dầu ăn vào tráng đều mặt chảo.",
+      "tip": "Dùng chảo chống dính tốt để trứng không dính và dễ tạo mảng mềm.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho kim chi cắt nhỏ vào chảo, xào khoảng 2 phút cho dậy mùi thơm.",
+      "tip": "thecookbook.pk: xào kim chi trước 2 phút 'until fragrant' — bước này làm kim chi thơm và hòa vị trước khi gặp trứng.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Hạ lửa xuống nhỏ, đổ hỗn hợp trứng vào chảo.",
+      "tip": "Hạ lửa là bắt buộc — lửa to làm trứng chín quá nhanh, bị khô và dai (everythingalexcooks nấu trứng kiểu soft-scramble ở lửa rất nhỏ)."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Dùng phới silicon đảo nhẹ nhàng, gạt phần trứng đã đông ở mép chảo vào giữa, để trứng đông thành những mảng mềm, mịn. Nấu khoảng 3–4 phút đến khi trứng vừa đông theo ý thích (còn hơi ướt mặt là ngon nhất).",
+      "tip": "everythingalexcooks: bí quyết trứng mềm mịn là lửa nhỏ + đảo chậm + nếu chảo quá nóng thì nhấc khỏi bếp một lúc rồi đặt lại. Đừng nấu quá kỹ — trứng còn chín tiếp bằng nhiệt dư.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Khi trứng đạt độ chín mong muốn, tắt bếp ngay, đảo thêm vài giây rồi dọn ra đĩa. Trứng xào kim chi phải ăn ngay.",
+      "tip": "Trứng để trong chảo nóng sẽ tiếp tục chín và bị dai — dọn ra đĩa ngay khi vừa ý."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rắc hành lá thái nhỏ và vừng rang lên trên. Dọn nóng với cơm trắng.",
+      "tip": "thecookbook.pk gợi ý ăn kèm cơm trắng, bánh mì nướng hoặc bơ; everythingalexcooks cũng dọn cùng cơm trắng."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 143,
+      "proteinG": 12.56,
+      "carbohydrateG": 0.72,
+      "fatG": 9.51,
+      "fiberG": 0,
+      "sugarG": 0.37,
+      "sodiumMg": 142
+    },
+    "originalPerServing": {
+      "energyKcal": 226.1,
+      "proteinG": 13.59,
+      "carbohydrateG": 3.11,
+      "fatG": 17.69,
+      "fiberG": 1.27,
+      "sugarG": 1.17,
+      "sodiumMg": 635.4
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Kim chi cải thảo: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nước kim chi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      9
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

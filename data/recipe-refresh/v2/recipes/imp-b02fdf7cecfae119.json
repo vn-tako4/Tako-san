@@ -1,0 +1,629 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-b02fdf7cecfae119",
+    "slug": "muc-kho-tuong",
+    "title": "Mực kho tương"
+  },
+  "content": {
+    "description": "Khoanh mực kho tương gừng nước sánh mặn ngọt, món kho Trung mềm ngọt khác bản xào.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 30,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Kho",
+      "Mực",
+      "Tương",
+      "Trung Hoa"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-b02fdf7cecfae119.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://tiepthitieudung.com/mon-ngon-gia-dinh/cach-lam-muc-kho-nuoc-tuong-dam-da-170580.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://kingfoodmart.com/bai-viet/cong-thuc-nau-an/muc-om-nuoc-tuong-thom-ngon",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://afamily.vn/muc-sot-tuong-mon-ngon-lam-nhanh-20180310031038387.chn",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mực tươi (mực ống)",
+      "canonicalIngredientId": "ING_ENR_7E3E208876C8A5A0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 750,
+        "unit": "g",
+        "text": "750 g",
+        "gramEquivalent": 750,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 750,
+          "unit": "g"
+        }
+      },
+      "note": "tiepthitieudung dùng 500 g cho 2 người; nhân 1,5 cho 3 phần. kingfoodmart/afamily không ghi định lượng chính xác (chỉ nói 'mực'), nên lấy theo tiepthitieudung — nguồn duy nhất cho số liệu cụ thể.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 92,
+        "proteinG": 15.6,
+        "carbohydrateG": 3.08,
+        "fatG": 1.38,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 44
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174223",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhánh",
+        "text": "1 nhánh",
+        "gramEquivalent": 20,
+        "basis": "1 nhánh gừng nhỏ ≈ 20 g (cân ước lượng; không nguồn nào cho định lượng chính xác)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "kingfoodmart: ướp mực với gừng thái sợi 15 phút. tiepthitieudung không ướp gừng mà dùng gừng + muối để xát rửa khử tanh ở bước sơ chế. Hai cách dùng khác nhau — công thức này làm cả hai: một ít gừng đập dập để xát rửa, phần còn lại thái sợi ướp cùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.8,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Xì dầu (nước tương)",
+      "canonicalIngredientId": "ING_ENR_F68EF5C1E847770A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "muỗng canh",
+        "text": "6 muỗng canh",
+        "gramEquivalent": 108,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng xì dầu ≈ 1,2 g/ml → ≈ 18 g/muỗng; 6 × 18 = 108 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "tiepthitieudung: 4 muỗng canh cho 500 g mực (2 phần) → 6 muỗng cho 3 phần. kingfoodmart chỉ nói 'ướp với nước tương' không định lượng; afamily dùng 'tương đậu nành' không định lượng. Lấy theo tiepthitieudung là nguồn duy nhất có số liệu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 10.5,
+        "carbohydrateG": 5.57,
+        "fatG": 0.1,
+        "fiberG": 0.8,
+        "sugarG": 1.7,
+        "sodiumMg": 5590
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174278",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 37.5,
+        "basis": "1 muỗng canh đường cát ≈ 12,5 g; 3 × 12,5 = 37,5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "tiepthitieudung: 2 muỗng canh cho 2 phần → 3 muỗng cho 3 phần (đường ướp). Chưa kể đường thốt nốt thắng màu (mục riêng, optional).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "Entry USDA này không công bố chỉ số đường/chất xơ tương ứng (trường thiếu trong foodNutrients); để null các trường thiếu, không điền bừa."
+    },
+    {
+      "position": 4,
+      "sourceName": "Muối hạt",
+      "canonicalIngredientId": "ING_ENR_F41B8E96DFA48C8E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "1 muỗng cà phê muối hạt ≈ 6 g; 1,5 × 6 = 9 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "tiepthitieudung: 1 muỗng cà phê cho 2 phần → 1,5 muỗng cho 3 phần; CHỦ YẾU dùng để xát rửa mực khử tanh, phần lớn được rửa trôi — lượng muối thực ăn vào thấp hơn nhiều.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38800
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "muỗng cà phê",
+        "text": "0.75 muỗng cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2 g; 0,75 × 2 = 1,5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "tiepthitieudung: 1/2 muỗng cà phê cho 2 phần → 3/4 muỗng cho 3 phần (ướp).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "1 muỗng canh dầu ≈ 13,6 g (15 ml × tỉ trọng 0,91); 3 × 13,6 ≈ 41 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "tiepthitieudung: 2 muỗng canh cho 2 phần → 3 muỗng cho 3 phần (để xào/kho). kingfoodmart không dùng dầu ăn (cho mực trực tiếp vào nồi đế dày đun to lửa) — mâu thuẫn; chọn có dầu theo tiepthitieudung vì cần chao mực săn trước khi kho.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "nhánh",
+        "text": "3 nhánh",
+        "gramEquivalent": 20,
+        "basis": "1 nhánh hành lá ≈ 6-7 g; 3 nhánh ≈ 20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "afamily: rắc hành lá thái nhỏ lên trên khi dọn. kingfoodmart/tiepthitieudung không nhắc hành lá — thêm theo afamily để đúng tên món trong danh mục được giao (có Hành lá).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước cốt me",
+      "canonicalIngredientId": "ING_ENR_FC20A824709D6756",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Me chua via the same name key",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": true,
+      "includeInShopping": false,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 45,
+        "basis": "1 muỗng canh nước cốt me ≈ 15 g; 3 × 15 = 45 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "CHỈ có trong tiepthitieudung (2 muỗng canh/2 phần → 3 muỗng/3 phần, dùng để ướp). kingfoodmart ('mực om nước tương': chỉ nước tương + đường + gừng) và afamily ('mực sốt tương': tương đậu nành + dầu hào) đều KHÔNG có me — đây là biến thể riêng của tiepthitieudung. Để optional: bỏ được nếu muốn đúng vị 'kho tương' thuần túy.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 239,
+        "proteinG": 2.8,
+        "carbohydrateG": 62.5,
+        "fatG": 0.6,
+        "fiberG": 5.1,
+        "sugarG": 38.8,
+        "sodiumMg": 28
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167763",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Bơ lạt",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 21,
+        "basis": "1 muỗng canh bơ ≈ 14 g; 1,5 × 14 = 21 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "CHỈ có trong tiepthitieudung (1 muỗng canh ướp cho thơm, 2 phần → 1,5 muỗng cho 3 phần). Không nguồn nào khác dùng bơ → optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.1,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường thốt nốt",
+      "canonicalIngredientId": "ING_ENR_A21CCD219EA432B0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 22.5,
+        "basis": "1 muỗng canh đường thốt nốt ≈ 15 g; 1,5 × 15 = 22,5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "CHỈ có trong tiepthitieudung (1 muỗng canh cho 2 phần → 1,5 muỗng cho 3 phần, cho vào khi kho để lên màu cánh gián và vị ngọt hậu). kingfoodmart chỉ dùng đường thường. Để optional — có thể thay bằng thêm đường trắng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế mực: nhẹ nhàng rút đầu và râu mực ra khỏi thân, bóc bỏ túi mực (cẩn thận đừng làm vỡ), cắt bỏ mắt, bóp nát phần cứng ở đầu mực. Dùng muối hạt và vài lát gừng đập dập xát đều khắp mình mực để khử tanh, sau đó rửa sạch lại với nước và để ráo.",
+      "tip": "tiepthitieudung nhấn mạnh: đừng làm vỡ túi mực khi rút đầu. Xát muối + gừng là cách khử tanh chung của cả ba nguồn (afamily cũng ghi 'mực rửa sạch').",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cắt mực thành khoanh vừa ăn (mực to có thể khứa vảy rồng cho đẹp). Gừng gọt vỏ, một nửa thái sợi mỏng để ướp, một nửa đã dùng đập dập ở bước 1. Hành lá rửa sạch, cắt khúc khoảng 3 cm."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Ướp mực trong tô với xì dầu, đường trắng, tiêu xay, gừng thái sợi (và bơ lạt, nước cốt me nếu dùng), trộn đều, để 15-20 phút cho ngấm.",
+      "tip": "kingfoodmart: ướp 15 phút với nước tương + đường + gừng thái sợi. tiepthitieudung: ướp 15 phút với nước tương + me + tiêu + đường + bơ.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Làm nóng nồi hoặc chảo đế dày với dầu ăn trên lửa vừa. Cho mực đã ướp vào (cả phần nước ướp), đảo đều khoảng 3 phút cho mực săn lại.",
+      "tip": "MÂU THUẪN TRÌNH TỰ: afamily luộc/chần mực qua nước sôi trước rồi mới xào; tiepthitieudung và kingfoodmart cho mực sống trực tiếp vào nồi/chảo nóng. Chọn cho trực tiếp theo đa số (2/3 nguồn) — mực chần trước dễ bị dai khi kho tiếp.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho đường thốt nốt (nếu dùng) và khoảng 100 ml nước lọc vào nồi sao cho nước xăm xắp mặt mực. Đun to lửa cho sôi bùng.",
+      "tip": "MÂU THUẪN: kingfoodmart KHÔNG thêm nước ('cho mực vào nồi đế dày, đun to lửa'); tiepthitieudung cho 'một ít nước'. Chọn thêm ~100 ml nước để mực có thời gian ngấm mà không cháy đáy nồi khi kho cạn.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Hạ lửa vừa-nhỏ, kho liu riu cho đến khi nước cạn sệt, mực lên màu vàng nâu bóng, thấm vị. Nêm nếm lại: cần đậm vị xì dầu và hơi có vị ngọt hậu.",
+      "tip": "kingfoodmart: tổng thời gian khoảng 25 phút, 'đảm bảo mực đậm vị nước tương và hơi có vị ngọt hậu'. Không kho quá lâu — mực sẽ dai.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Khi nước kho đã sệt lại gần cạn, tắt bếp. Rắc hành lá cắt khúc và một ít tiêu xay lên trên, đảo nhẹ.",
+      "tip": "afamily: rắc rau mùi/hành lá thái nhỏ lên trên khi dọn."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Múc mực kho tương ra đĩa, dùng nóng với cơm trắng.",
+      "tip": "tiepthitieudung: 'ăn với cơm nóng rất ngon'."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 230,
+      "proteinG": 39,
+      "carbohydrateG": 7.7,
+      "fatG": 3.45,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 110
+    },
+    "originalPerServing": {
+      "energyKcal": 544.17,
+      "proteinG": 43.55,
+      "carbohydrateG": 41,
+      "fatG": 23.06,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 3293.6
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Gừng tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Xì dầu (nước tương): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Đường trắng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Muối hạt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 8,
+        "detail": "Nước cốt me: consumed/absorbed amount is not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

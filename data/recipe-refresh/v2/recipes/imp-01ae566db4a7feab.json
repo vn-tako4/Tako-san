@@ -1,0 +1,623 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-01ae566db4a7feab",
+    "slug": "sup-bo-nam-trung",
+    "title": "Súp bò nấm Trung"
+  },
+  "content": {
+    "description": "Súp bò-nấm trong gừng ấm ngọt đậm, món súp Trung Hoa nâng bữa cơm thêm phần tinh tế.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 40,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Súp",
+      "Bò",
+      "Nấm",
+      "Ấm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-01ae566db4a7feab.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,nutrition_per_serving,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://simplechinesefood.com/recipe/stewed-beef-and-mushroom-soup",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.food.com/recipe/asian-beef-and-mushroom-soup-with-rice-525562?nav=recipe",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://wokyourworld.com/west-lake-beef-soup-recipe/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://helenrecipes.com/beef-and-enoki-mushroom-roll-soup-canh-bo-cuon-nam-kim-cham/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt bò thăn thái lát mỏng",
+      "canonicalIngredientId": "ING_ENR_375D2AE12DDA76BB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "simplechinesefood.com ninh thịt bò miếng to 2–2,5 giờ cho mềm rục; food.com dùng 250 g thịt bò thái lát nấu nhanh ~2 phút cho 4 phần. Công thức này dùng thịt thái lát theo gợi ý món, tăng lên 400 g cho 4 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 145,
+        "proteinG": 21,
+        "carbohydrateG": 0,
+        "fatG": 6,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 54
+      },
+      "sourceNutritionReference": "https://www.ars.usda.gov/ARSUserFiles/80400525/data/beef/retail_beef_cuts02.pdf",
+      "sourceNutritionNote": "Số liệu thịt thăn bò sống (flank), tài liệu USDA."
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Các nguồn dùng nhiều loại nấm khác nhau (nấm hương, nấm tuyết, nấm kim châm); công thức này dùng nấm đùi gà theo gợi ý món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 46,
+        "proteinG": 2.4,
+        "carbohydrateG": 8.5,
+        "fatG": 0.31,
+        "fiberG": 3,
+        "sugarG": null,
+        "sodiumMg": 0.77
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003599",
+      "sourceNutritionNote": "Đường không được báo cáo trên trang tra cứu."
+    },
+    {
+      "position": 2,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "cân trực tiếp; tương đương khoảng 4 lát dày (1 lát ~5 g, ước tính)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.8,
+        "carbohydrateG": 17.8,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "cân trực tiếp; tương đương khoảng 3 nhánh (trang tra cứu: 1 nhánh trung bình = 15 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 33.3,
+        "proteinG": 1.8,
+        "carbohydrateG": 7.3,
+        "fatG": 0.2,
+        "fiberG": 2.6,
+        "sugarG": 2.3,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "Quy đổi từ khẩu phần 15 g."
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "tương đương khoảng 3 tép (trang tra cứu: 1 tép = 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "food.com có dùng tỏi; simplechinesefood.com không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "Quy đổi từ 1 tép = 3 g. [audit round 4: đồng bộ lại toàn bộ 7 chỉ số theo bản ghi FDC 169230 — Garlic, raw]"
+    },
+    {
+      "position": 5,
+      "sourceName": "Nước",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1200,
+        "unit": "ml",
+        "text": "1200 ml",
+        "gramEquivalent": 1200,
+        "basis": "1 ml nước ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1200,
+          "unit": "ml"
+        }
+      },
+      "note": "simplechinesefood.com dùng 2.000 ml nước ninh lâu; food.com và wokyourworld.com dùng 1 L nước dùng bò. Công thức này dùng nước lọc cho đơn giản, có thể thay bằng nước dùng bò.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu nhạt",
+      "canonicalIngredientId": "ING_ENR_19A3C60192F07ED5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "tương đương khoảng 2 muỗng canh (trang tra cứu: 1 muỗng canh = 14 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "USDA Soy sauce made from soy and wheat (shoyu) (FDC 174277) — thay ID 404 (audit round 4)"
+    },
+    {
+      "position": 7,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38750
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Salt%2C_table_nutritional_value.html",
+      "sourceNutritionNote": "Quy đổi từ 6 g muối = 2.325 mg natri; các chỉ số còn lại bằng 0."
+    },
+    {
+      "position": 8,
+      "sourceName": "Tiêu trắng xay",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "g",
+        "text": "2 g",
+        "gramEquivalent": 2,
+        "basis": "cân trực tiếp; tương đương khoảng 1 muỗng cà phê (ước tính)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.6,
+        "fatG": 2.1,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": "Đường không được báo cáo trên trang tra cứu."
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "tương đương khoảng 1 muỗng cà phê (trang tra cứu: 1 muỗng canh = 14 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 928.6,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://tools.myfooddata.com/nutrition-facts/386483/wt1",
+      "sourceNutritionNote": "Quy đổi từ khẩu phần 14 g."
+    },
+    {
+      "position": 10,
+      "sourceName": "Bột bắp",
+      "canonicalIngredientId": "ING_ENR_D2EAF583347FED22",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Tùy chọn, tạo độ sánh nhẹ kiểu West Lake (wokyourworld.com); các nguồn canh trong không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 381.25,
+        "proteinG": 0.26,
+        "carbohydrateG": 91.25,
+        "fatG": 0.05,
+        "fiberG": 0.94,
+        "sugarG": 0,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169698",
+      "sourceNutritionNote": "Quy đổi từ 1 cup = 128 g."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Thấm khô thịt bò bằng khăn giấy, thái lát mỏng 2–3 mm, thái ngang thớ thịt để thịt mềm.",
+      "tip": "Thịt bò thái ngang thớ sẽ không bị dai khi nấu nhanh (food.com)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Ướp thịt bò với 15 g xì dầu, dầu mè và một nửa lượng tiêu trắng; để 15 phút cho thấm.",
+      "tip": "Không ướp muối vào thịt lúc này để thịt không bị ra nước.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Nấm đùi gà rửa sạch, cắt bỏ phần gốc già, thái lát dọc dày khoảng 0,5 cm."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Gừng thái lát, tỏi băm nhỏ, hành lá cắt khúc 3–4 cm; phần gốc hành trắng đập dập để riêng."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun sôi 1,2 lít nước trong nồi; cho gừng, gốc hành trắng và tỏi vào, đun 5 phút cho nước thơm.",
+      "tip": "Vớt bỏ gừng và gốc hành sau bước này nếu muốn nước canh trong.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho thịt bò vào nồi nước đang sôi, đun 2–3 phút, vớt bọt để nước trong.",
+      "tip": "simplechinesefood.com ninh thịt bò miếng to 2–2,5 giờ cho mềm rục; công thức này theo food.com dùng thịt thái lát nấu nhanh ~2 phút để giữ độ mềm ngọt.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho nấm đùi gà vào, nấu thêm 8–10 phút đến khi nấm chín mềm, ngấm vị.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nêm phần xì dầu còn lại, muối và tiêu trắng còn lại cho vừa miệng."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "(Tùy chọn, kiểu West Lake) Pha 10 g bột bắp với 3 muỗng canh nước lạnh, rót từ từ vào nồi vừa khuấy để tạo độ sánh nhẹ.",
+      "tip": "wokyourworld.com (West Lake beef soup) làm sánh bằng bột bắp; nếu thích canh trong thì bỏ qua bước này."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Rắc hành lá, múc canh ra tô, dùng ngay khi còn nóng."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 145,
+      "proteinG": 21,
+      "carbohydrateG": 0,
+      "fatG": 6,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 538.38
+    },
+    "originalPerServing": {
+      "energyKcal": 216.32,
+      "proteinG": 23.85,
+      "carbohydrateG": 11.63,
+      "fatG": 7.6,
+      "fiberG": 2.81,
+      "sugarG": null,
+      "sodiumMg": 953.45
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Nấm đùi gà: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Gừng tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Nước: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Xì dầu nhạt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tiêu trắng xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

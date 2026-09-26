@@ -1,0 +1,817 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-f0039d3d3f6299b3",
+    "slug": "nam-kho-dau-phu-tuong",
+    "title": "Nấm kho đậu phụ tương"
+  },
+  "content": {
+    "description": "Nấm kho tương sánh đậm cùng đậu phụ thấm màu cánh gián, món mặn chay đậm đà cho ngày rằm.",
+    "cuisine": "vietnamese",
+    "category": "mon_chay",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Chay",
+      "Kho",
+      "Nấm",
+      "Ngày rằm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-f0039d3d3f6299b3.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://noithatphuongdong.vn/tin-tuc/3307/cong-thuc-lam-dau-phu-kho-tuong-nam-chuan-ngon-dua-com",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://memart.vn/tin-tuc/blog2/dau-ga-kho-nam-vi-cb.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "http://anvinhco.vn/dau-kho-nam/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Đậu phụ",
+      "canonicalIngredientId": "TOFU",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "bìa",
+        "text": "4 bìa",
+        "gramEquivalent": 400,
+        "basis": "1 bìa đậu phụ trắng Việt Nam ~90-110 g; 4 bìa ≈ 400 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "NTPĐ: 5 bìa cho 3-4 người -> 4 bìa cho 3 người. Memart dùng 1 miếng đậu hũ non (không ghi suất); Anvinhco dùng 3 miếng đậu hũ trắng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 144,
+        "proteinG": 17.27,
+        "carbohydrateG": 2.78,
+        "fatG": 8.72,
+        "fiberG": 2.3,
+        "sugarG": null,
+        "sodiumMg": 14
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172475",
+      "sourceNutritionNote": "Số liệu USDA 'Tofu, raw, firm, prepared with calcium sulfate' (sugar_g không có trong response -> null)."
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Cả ba nguồn đều dùng ~200 g nấm đùi gà.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": 1.11,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "Số liệu cache dùng chung: USDA 'Mushrooms, oyster, raw' (fdcId 168580) - họ nấm sò, tương đương gần nhất cho nấm đùi gà (king oyster)."
+    },
+    {
+      "position": 2,
+      "sourceName": "Cà chua",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 160,
+        "basis": "1 quả cà chua vừa ~80 g; 2 quả ≈ 160 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "NTPĐ: 2 quả cho 3-4 người; Memart: 2 quả chín thái nhỏ. Anvinhco KHÔNG dùng cà chua - mâu thuẫn, giữ theo đa số (2/3 nguồn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tương đậu nành",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "ml",
+        "text": "100 ml",
+        "gramEquivalent": 115,
+        "basis": "Tỉ trọng tương đậu nành đặc ~1,15 g/ml -> 100 ml ≈ 115 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 100,
+          "unit": "ml"
+        }
+      },
+      "note": "NTPĐ: 140 ml cho 3-4 người -> ~100 ml cho 3 người. Memart và Anvinhco KHÔNG dùng tương đậu nành (chỉ dùng nước tương/xì dầu) - giữ tương vì tên món có 'tương' và NTPĐ là công thức đúng tên món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 198,
+        "proteinG": 12.79,
+        "carbohydrateG": 25.37,
+        "fatG": 6.01,
+        "fiberG": 5.4,
+        "sugarG": 6.2,
+        "sodiumMg": 3728
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172442",
+      "sourceNutritionNote": "USDA không có mục riêng cho tương đậu nành Việt Nam; dùng số liệu 'Miso' (tương đậu nành lên men, fdcId 172442) là tương đương gần nhất."
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "tép",
+        "text": "4 tép",
+        "gramEquivalent": 20,
+        "basis": "1 tép tỏi ~5 g; 4 tép ≈ 20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Memart: 2 tép băm (không ghi suất) -> 4 tép cho 3 người. NTPĐ và Anvinhco không dùng tỏi (Anvinhco dùng hành boa rô) - mâu thuẫn, giữ tỏi theo hint assignment và Memart.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "Số liệu cache dùng chung fdcId 1104647 'Garlic, raw'; sugar_g và sodium_mg không có trong response -> null."
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhánh",
+        "text": "2 nhánh",
+        "gramEquivalent": 20,
+        "basis": "1 nhánh hành lá ~10 g; 2 nhánh ≈ 20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Memart dùng hành lá trang trí. NTPĐ trang trí bằng mùi ta; Anvinhco dùng lá hành boa rô - giữ hành lá theo hint assignment.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "Số liệu cache dùng chung fdcId 170005 'Onions, spring or scallions, raw'."
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu (nước tương)",
+      "canonicalIngredientId": "ING_ENR_F68EF5C1E847770A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.5,
+        "unit": "muỗng canh",
+        "text": "2.5 muỗng canh",
+        "gramEquivalent": 39,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng xì dầu ~1,03 -> 2,5 muỗng ≈ 37,5 ml ≈ 39 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "NTPĐ: 3 muỗng canh cho 3-4 người; Memart: 2 muỗng canh; Anvinhco: 2-3 muỗng canh - lấy 2,5 muỗng cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 10.51,
+        "carbohydrateG": 5.57,
+        "fatG": 0.1,
+        "fiberG": 0.8,
+        "sugarG": 1.7,
+        "sodiumMg": 5586
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174278",
+      "sourceNutritionNote": "Số liệu cache dùng chung fdcId 174278 'Soy sauce made from soy (tamari)'."
+    },
+    {
+      "position": 7,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 19,
+        "basis": "1 muỗng canh đường cát ~12,5 g -> 1,5 muỗng ≈ 19 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN: NTPĐ dùng 2 muỗng canh đường cho 3-4 người; Memart và Anvinhco chỉ dùng 1 muỗng cà phê. Lấy 1,5 muỗng canh cho 3 người (trung gian, ưu tiên NTPĐ là công thức đúng tên món).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "Số liệu cache dùng chung fdcId 746784 'Sugars, granulated'; fiber_g và sugar_g không có trong response -> null."
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "1 muỗng cà phê muối tinh ~6 g -> 1,5 muỗng ≈ 9 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "NTPĐ: 1 muỗng canh muối tinh cho 3-4 người -> ~2 muỗng cà phê cho 3 người; Memart/Anvinhco chỉ ghi 'muối vừa đủ'. Lấy 1,5 muỗng cà phê (giảm nhẹ vì đã có tương + xì dầu mặn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "Số liệu cache dùng chung fdcId 173468 'Salt, table'."
+    },
+    {
+      "position": 9,
+      "sourceName": "Mì chính (bột ngọt)",
+      "canonicalIngredientId": "ING_ENR_4108B1D81F780830",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "1 muỗng cà phê mì chính ~4-5 g -> 2 muỗng ≈ 9 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "NTPĐ: 1 muỗng canh mì chính cho 3-4 người -> ~2 muỗng cà phê cho 3 người. Memart ghi bột ngọt 'tùy khẩu vị', Anvinhco dùng hạt nêm chay thay thế.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có mục generic phù hợp cho mì chính (monosodium glutamate); để null, không bịa số."
+    },
+    {
+      "position": 10,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.2,
+        "basis": "1 muỗng cà phê tiêu xay ~2,3 g -> 0,5 muỗng ≈ 1,2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "NTPĐ: 1 muỗng cà phê hạt tiêu cho 3-4 người (ghi có thể bỏ nếu không ăn cay). Lấy 1/2 muỗng cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "Số liệu cache dùng chung fdcId 170931 'Spices, pepper, black'."
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh dầu ăn = 15 ml; tỉ trọng dầu ~0,91 -> 2 muỗng ≈ 30 ml ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Memart: phi hành tỏi + chiên sơ đậu (không định lượng); Anvinhco: 1 muỗng dầu phi hành boa rô. NTPĐ không dùng dầu (xếp nguyên liệu kho trực tiếp). Lấy 2 muỗng canh cho cả phi tỏi và chiên sơ đậu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": "Số liệu cache dùng chung fdcId 172370 'Oil, vegetable, soybean, refined'."
+    },
+    {
+      "position": 12,
+      "sourceName": "Nước hàng (nước màu)",
+      "canonicalIngredientId": "ING_ENR_AD17235697C53003",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng nước hàng (siro đường thắng) ~1,2 -> 1,5 muỗng ≈ 22,5 ml ≈ 27 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "NTPĐ: 2 muỗng canh nước hàng cho 3-4 người -> 1,5 muỗng cho 3 người, để tạo màu cho đậu kho. Memart và Anvinhco KHÔNG dùng nước hàng.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có mục riêng cho nước hàng/nước màu (caramel); thành phần chủ yếu là đường nhưng không dùng số liệu thay thế để tránh bịa - để null."
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "ml",
+        "text": "400 ml",
+        "gramEquivalent": 400,
+        "basis": "1 ml nước = 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 400,
+          "unit": "ml"
+        }
+      },
+      "note": "NTPĐ: 3 muỗng nước lọc ~210 ml để pha sốt + thêm nước cho ngập nồi; Memart: 100 ml nước lọc; Anvinhco: 200 ml nước dừa/nước lọc. Lấy 400 ml cho 3 người (đủ xâm xấp nguyên liệu trong nồi kho).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước lọc không chứa năng lượng/dinh dưỡng; không áp dụng nutrition_source."
+    },
+    {
+      "position": 14,
+      "sourceName": "Ớt tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "trái",
+        "text": "1 trái",
+        "gramEquivalent": 10,
+        "basis": "1 trái ớt tươi ~10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Memart: ớt thái lát trang trí; Anvinhco: 1 trái ớt tươi 'nếu thích cay'. NTPĐ không dùng ớt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 2,
+        "carbohydrateG": 9.46,
+        "fatG": 0.2,
+        "fiberG": 1.5,
+        "sugarG": 5.1,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170497",
+      "sourceNutritionNote": "Số liệu cache dùng chung fdcId 170497 'Peppers, hot chili, green, raw'."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Rửa sạch đậu phụ, để ráo rồi cắt mỗi bìa thành 3 miếng vừa ăn.",
+      "tip": "Cắt miếng dày một chút để khi kho không bị nát."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Nấm đùi gà cắt bỏ phần chân nấm già, rửa sạch, thái lát dày khoảng 0,5 cm hoặc cắt miếng vừa ăn.",
+      "tip": "Thái lát giúp nấm nhanh thấm gia vị khi kho."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cà chua rửa sạch, cắt bỏ cuống, bổ múi cau. Tỏi bóc vỏ băm nhuyễn. Hành lá rửa sạch, cắt khúc 2-3 cm. Ớt thái lát (nếu dùng)."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Bắc chảo với 1 muỗng canh dầu ăn, chiên sơ các miếng đậu phụ cho vàng đều hai mặt rồi gắp ra để ráo dầu.",
+      "tip": "NTPĐ xếp đậu kho trực tiếp không chiên; Memart và Anvinhco đều chiên sơ để đậu chắc, không vỡ khi kho - làm theo cách chiên sơ.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Dùng lại chảo (thêm 1 muỗng canh dầu ăn nếu cần), phi thơm tỏi băm trên lửa vừa.",
+      "tip": "Phi vừa vàng tới, không để tỏi cháy sẽ đắng.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho nấm đùi gà vào đảo đều 2-3 phút cho nấm săn lại, nêm 1/2 muỗng canh xì dầu và một nhúm tiêu, đảo cho thấm.",
+      "tip": "Anvinhco: xào nấm săn trước khi kho giúp nấm đậm đà, không ra nước làm loãng sốt.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Xếp cà chua xuống đáy nồi kho, tiếp đến là nấm đã xào, xếp đậu phụ đã chiên lên trên cùng.",
+      "tip": "Xếp cà chua dưới đáy theo NTPĐ: cà chua ra nước chua ngọt làm nền sốt, đậu ở trên không bị nát."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Pha nước sốt kho: cho tương đậu nành, xì dầu còn lại, đường, muối, mì chính, tiêu và khoảng 200 ml nước lọc vào tô, khuấy đều cho đường và mì chính tan hết.",
+      "tip": "Nêm nếm lại hỗn hợp theo khẩu vị gia đình trước khi đổ vào nồi (NTPĐ)."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Đổ đều nước sốt đã pha vào nồi, thêm nước lọc cho xâm xấp mặt nguyên liệu, cho nước hàng vào để tạo màu nâu đẹp."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Đun sôi nồi kho trên lửa lớn, hớt bọt, sau đó hạ nhỏ lửa, đậy hé vung và kho liu riu cho đậu và nấm thấm gia vị, nước sốt sánh lại.",
+      "tip": "MÂU THUẪN thời gian: NTPĐ ninh 30-40 phút; Memart kho 10-15 phút; Anvinhco kho 15-20 phút. Kho đến khi nước sánh và đậu thấm là đạt, không cứng nhắc theo đồng hồ.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Trong lúc kho, thỉnh thoảng nghiêng/lắc nhẹ nồi cho gia vị thấm đều, không dùng đũa đảo mạnh làm nát đậu.",
+      "tip": "Mẹo từ Anvinhco."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Khi nước kho đã sánh nhẹ, nêm nếm lại lần cuối cho vừa miệng (thêm xì dầu nếu nhạt, thêm chút đường nếu mặn gắt), tắt bếp."
+    },
+    {
+      "stepNumber": 13,
+      "instruction": "Múc đậu phụ kho nấm ra đĩa sâu lòng, rưới nước sốt lên trên, rắc hành lá cắt khúc và ớt thái lát. Dùng nóng với cơm trắng.",
+      "tip": "Món chay nên dùng hết trong bữa; hâm lại vẫn ngon."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 22,
+      "proteinG": 2.21,
+      "carbohydrateG": 4.06,
+      "fatG": 0.27,
+      "fiberG": 1.53,
+      "sugarG": 0.74,
+      "sodiumMg": 12
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Đậu phụ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Cà chua: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tương đậu nành: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Xì dầu (nước tương): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Mì chính (bột ngọt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Nước hàng (nước màu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

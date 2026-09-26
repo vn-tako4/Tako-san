@@ -1,0 +1,699 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-b6496331f7aa0ee9",
+    "slug": "mi-y-tom-kem-chanh",
+    "title": "Mì Ý tôm kem chanh"
+  },
+  "content": {
+    "description": "Sợi mì Ý quyện sốt kem sữa chua nhẹ với tôm tươi hồng, vắt chanh cuối cùng, món pasta biển thanh mát.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Pasta",
+      "Tôm",
+      "Kem",
+      "Biển"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-b6496331f7aa0ee9.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.saltandlavender.com/creamy-lemon-shrimp-spaghetti/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.sipandfeast.com/lemon-garlic-shrimp-pasta/comment-page-2/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì spaghetti",
+      "canonicalIngredientId": "ING_ENR_223DECC3151BD4AA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 170,
+        "unit": "g",
+        "text": "170 g",
+        "gramEquivalent": 170,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 170,
+          "unit": "g"
+        }
+      },
+      "note": "Salt & Lavender (S&L): 8 oz (227 g) cho ~4 phần; quy đổi ×0,75 cho 3 phần ≈ 170 g. S&L không ghi rõ số phần trong phần text đọc được; bảng dinh dưỡng của trang 750 kcal/phần ÷ tổng năng lượng ước tính ≈ 2.900 kcal → công thức gốc ≈ 4 khẩu phần (ước tính, ghi rõ). Sip and Feast (S&F): 227 g spaghetti cho 454 g tôm — tỉ lệ mì:tôm tương đương S&L, không mâu thuẫn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 371,
+        "proteinG": 13.04,
+        "carbohydrateG": 74.67,
+        "fatG": 1.51,
+        "fiberG": 3.2,
+        "sugarG": 2.67,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169736",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm tươi (bóc vỏ, bỏ chỉ đen)",
+      "canonicalIngredientId": "ING_ENR_7B8E16FCD96F052B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 340,
+        "unit": "g",
+        "text": "340 g",
+        "gramEquivalent": 340,
+        "basis": "đơn vị gốc đã là gram (tôm đã bóc vỏ, bỏ chỉ, thấm ráo)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 340,
+          "unit": "g"
+        }
+      },
+      "note": "S&L: 1 lb (454 g) tôm 31-40 count đã bóc vỏ, rã đông cho ~4 phần → 340 g cho 3 phần. S&F: 1 lb (454 g) tôm 21/25 — cùng định lượng, khác cỡ tôm (ghi rõ). Mâu thuẫn cách nấu: S&L cho tôm vào sốt nấu chín trong sốt ~5 phút; S&F xào tôm riêng 3 phút, vớt ra rồi trộn sau — ưu tiên theo S&L (nguồn chính).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "API không trả fiber và sugar cho mục này → để null, không tự điền 0."
+    },
+    {
+      "position": 2,
+      "sourceName": "Kem tươi (heavy/whipping cream)",
+      "canonicalIngredientId": "ING_ENR_102D593551626326",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 180,
+        "unit": "ml",
+        "text": "180 ml",
+        "gramEquivalent": 184,
+        "basis": "180 ml × tỉ trọng kem whipping ~1,02 g/ml ≈ 184 g (USDA FoodData Central: 1 cup heavy cream = 238 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 180,
+          "unit": "ml"
+        }
+      },
+      "note": "S&L: 1 cup (240 ml) cho ~4 phần → 180 ml cho 3 phần. LƯU Ý QUAN TRỌNG: gợi ý món ghi 'sữa tươi', nhưng S&L cảnh báo rõ không thay kem tươi bằng sữa ít béo — sốt sẽ không sánh và dễ bị tách/vón do acid chanh. Công thức này dùng kem tươi theo nguồn, không dùng sữa tươi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 340,
+        "proteinG": 2.84,
+        "carbohydrateG": 2.84,
+        "fatG": 36.08,
+        "fiberG": 0,
+        "sugarG": 2.92,
+        "sodiumMg": 27
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170859",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 58,
+        "basis": "1 quả chanh tươi trung bình ~58 g cả vỏ; chỉ dùng vỏ bào + nước cốt",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "S&L: vỏ bào + nước cốt của 1 quả chanh (~2 tbsp nước cốt ≈ 30 g) cho ~4 phần; quy đổi 0,75 quả cho 3 phần nhưng thực tế làm tròn 1 quả cho dễ (ghi rõ). Dinh dưỡng tra cho cả quả chanh không vỏ (167746).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 29,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.32,
+        "fatG": 0.3,
+        "fiberG": 2.8,
+        "sugarG": 2.5,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167746",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Bơ lạt",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 34,
+        "unit": "g",
+        "text": "34 g",
+        "gramEquivalent": 34,
+        "basis": "đơn vị gốc đã là gram (S&L: 3 tbsp bơ ≈ 45 g cho ~4 phần → 34 g cho 3 phần)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 34,
+          "unit": "g"
+        }
+      },
+      "note": "S&L dùng 3 tbsp bơ làm nền sốt. S&F dùng 56 g bơ + 60 g dầu olive cho 454 g tôm/227 g mì — tỉ lệ bơ cao hơn S&L; công thức này theo S&L vì có kem (ghi rõ).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "tép",
+        "text": "4 tép",
+        "gramEquivalent": 14,
+        "basis": "USDA FoodData Central: 1 tép tỏi (clove) = 3 g → 4-5 tép ≈ 12-15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "S&L: 6 tép băm nhỏ cho ~4 phần → 4-5 tép cho 3 phần. S&F: 6 tép thái lát cho cùng khối lượng tôm/mì — tương đương, không mâu thuẫn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Rượu vang trắng khô",
+      "canonicalIngredientId": "ING_ENR_F568CF3B013695D9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 90,
+        "unit": "ml",
+        "text": "90 ml",
+        "gramEquivalent": 89,
+        "basis": "90 ml × tỉ trọng rượu vang trắng ~0,99 g/ml ≈ 89 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 90,
+          "unit": "ml"
+        }
+      },
+      "note": "S&L: 1/2 cup (120 ml) rượu vang trắng khô (sauvignon blanc/pinot grigio) cho ~4 phần → 90 ml cho 3 phần. S&L dặn không dùng cooking wine. Có thể thay bằng nước dùng gà với lượng tương đương nếu không dùng rượu (ghi rõ là phương án thay thế, S&L không đề cập).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 82,
+        "proteinG": 0.07,
+        "carbohydrateG": 2.6,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.96,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174837",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Bột mì đa dụng",
+      "canonicalIngredientId": "ING_ENR_A9194AD78D914D6C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 tsp bột mì đa dụng ≈ 2,6 g → 1,5 tsp ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "S&L: 2 tsp để làm sánh sốt cho ~4 phần → 1,5 tsp cho 3 phần. S&L dặn cho từng ít một, khuấy liên tục; nếu sốt chưa sánh thì đun thêm chứ không vội thêm bột (tối đa thêm 1 tsp/lần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 364,
+        "proteinG": 10.33,
+        "carbohydrateG": 76.31,
+        "fatG": 0.98,
+        "fiberG": 2.7,
+        "sugarG": 0.27,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168894",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Phô mai Parmesan bào",
+      "canonicalIngredientId": "ING_ENR_F6C4C13C28CEABC4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 75,
+        "unit": "g",
+        "text": "75 g",
+        "gramEquivalent": 75,
+        "basis": "đơn vị gốc đã là gram (S&L: 1 cup phô mai bào ≈ 100 g cho ~4 phần → 75 g cho 3 phần)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 75,
+          "unit": "g"
+        }
+      },
+      "note": "S&L yêu cầu tự bào từ miếng để tan đều và ngon hơn. Cho vào khi sốt đang sôi liu riu, khuấy tan rồi mới cho tôm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 420,
+        "proteinG": 28.42,
+        "carbohydrateG": 13.91,
+        "fatG": 27.84,
+        "fiberG": 0,
+        "sugarG": 0.07,
+        "sodiumMg": 1804
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171247",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Ngò tây tươi (parsley)",
+      "canonicalIngredientId": "ING_ENR_F2977FE6785CC19F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 5,
+        "basis": "1 nắm nhỏ ngò tây tươi ≈ 5 g (ước lượng thực tế)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều dùng để rắc trang trí, 'to taste'/optional. S&L: chopped parsley optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 2.97,
+        "carbohydrateG": 6.33,
+        "fatG": 0.79,
+        "fiberG": 3.3,
+        "sugarG": 0.85,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170416",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "USDA FoodData Central: 1 tsp muối ăn = 6 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 6,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn đều 'to taste': muối cho nước luộc mì + nêm sốt. S&F dặn nêm ít muối lúc đầu rồi điều chỉnh cuối vì parmesan đã mặn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.2,
+        "basis": "1/2 tsp tiêu đen xay ≈ 1,2 g (ước lượng: 1 tsp ≈ 2,3 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn 'to taste'. S&F: nêm cuối cùng sau khi nếm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Gia vị Ý tổng hợp (Italian seasoning)",
+      "canonicalIngredientId": "ING_ENR_7ED15A50A562691F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm nhỏ",
+        "text": "1 nhúm nhỏ",
+        "gramEquivalent": 0.3,
+        "basis": "1/4 tsp hỗn hợp gia vị khô ≈ 0,3 g (ước lượng, lượng rất nhỏ)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "S&L: 1/4 tsp cho ~4 phần → một nhúm nhỏ cho 3 phần. Không tìm được mục SR Legacy/Foundation khớp ('Italian seasoning' trên USDA trả về poultry seasoning — sai loại) → dinh dưỡng để null, không bịa số.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có mục USDA phù hợp → null toàn bộ."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Đun một nồi lớn nước, nêm muối đậm (khoảng 1 muỗng canh) rồi đun sôi. Trong lúc chờ, bóc vỏ tôm, bỏ chỉ đen, rửa sạch và thấm thật ráo bằng khăn giấy.",
+      "tip": "S&L dùng tôm đông lạnh đã bóc vỏ rã đông; S&F nhấn mạnh thấm ráo để tôm xém vàng thay vì bị luộc. Tôm ráo cũng giúp sốt không bị loãng."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Bào vỏ 1 quả chanh (chỉ lấy phần vỏ vàng, tránh phần trắng đắng), vắt lấy nước cốt (~2 muỗng canh). Băm nhỏ tỏi, bào phô mai Parmesan, thái nhỏ ngò tây.",
+      "tip": "S&L: dùng cả vỏ bào và nước cốt để món thơm chanh rõ nhất; có thể giảm còn 1 tbsp nước cốt nếu không thích quá chua."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho mì spaghetti vào nước sôi, luộc đến al dente theo thời gian trên bao bì (thường 8-10 phút). Trước khi vớt, múc giữ lại khoảng 60 ml nước luộc mì.",
+      "tip": "S&L: giữ lại 1 tbsp nước luộc để cho vào sốt; S&F khuyên giữ dư nước luộc phòng khi mì bị khô.",
+      "timerMinutes": 9
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Trong lúc luộc mì: cho bơ vào chảo lớn, đun lửa vừa-cao cho tan. Thêm vỏ chanh bào, nước cốt chanh, tỏi băm, rượu vang trắng, kem tươi và một nhúm gia vị Ý vào chảo.",
+      "tip": "S&L cho tất cả nguyên liệu sốt vào chảo cùng lúc rồi đun sôi liu riu — không cần xào tỏi riêng trước."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Để sốt sôi lăn tăn khoảng 5 phút cho hơi sánh và rượu bay bớt mùi cồn. Rắc bột mì vào từng ít một, vừa rắc vừa khuấy đều tay đến khi sốt mịn, không vón.",
+      "tip": "S&L: khuấy liên tục khi cho bột; nếu sốt chưa đủ sánh thì đun thêm vài phút trước khi thêm bột (mỗi lần không quá 1 tsp).",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho phô mai Parmesan bào vào, khuấy đến khi tan hoàn toàn và sốt sánh mịn. Nêm muối và tiêu đen, nếm thử và điều chỉnh.",
+      "tip": "S&L: cho parmesan vào trước khi cho tôm; parmesan đã mặn nên nêm muối dè chừng.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho tôm vào chảo sốt, đảo đều, nấu thêm khoảng 5 phút đến khi tôm chuyển hồng, cong lại và sốt sánh như ý. Không nấu quá lâu kẻo tôm dai.",
+      "tip": "Mâu thuẫn nguồn (ghi rõ): S&L nấu tôm trực tiếp trong sốt 5 phút; S&F xào tôm riêng 3 phút rồi vớt ra, trộn vào cuối để tôm không bị nấu quá. Công thức theo S&L; nếu tôm to, nên theo cách S&F.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Vớt mì đã ráo cho vào chảo sốt, thêm 1-2 muỗng canh nước luộc mì đã giữ lại, dùng kẹp đảo đều cho sốt bám đều từng sợi mì.",
+      "tip": "S&L: chỉ thêm 1 tbsp nước luộc; S&F: thêm vài oz nếu mì bị khô khi để. Đảo nhanh tay trên lửa vừa.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nếm lại lần cuối, điều chỉnh muối/tiêu/nước cốt chanh. Tắt bếp, dọn ngay ra đĩa sâu lòng.",
+      "tip": "S&F: tắt bếp rồi mới nếm và chỉnh lần cuối — sốt nguội bớt sẽ đặc lại một chút."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Rắc ngò tây thái nhỏ và thêm một ít Parmesan bào lên trên. Ăn ngay khi còn nóng.",
+      "tip": "S&L: món có hải sản nên ăn ngay; thừa có thể để tủ lạnh 2-3 ngày, hâm lại lửa nhỏ với một ít kem, không nên đông lạnh."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 210.23,
+      "proteinG": 7.39,
+      "carbohydrateG": 42.31,
+      "fatG": 0.86,
+      "fiberG": 1.81,
+      "sugarG": 1.51,
+      "sodiumMg": 3.4
+    },
+    "originalPerServing": {
+      "energyKcal": 744.7,
+      "proteinG": 39.87,
+      "carbohydrateG": 53.03,
+      "fatG": 39.84,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1385.94
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Tôm tươi (bóc vỏ, bỏ chỉ đen): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Kem tươi (heavy/whipping cream): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Chanh tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Bơ lạt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Rượu vang trắng khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Bột mì đa dụng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Phô mai Parmesan bào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 10,
+        "detail": "Muối: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      7,
+      9,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

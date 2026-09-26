@@ -1,0 +1,676 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-c78c4d4ca35484d3",
+    "slug": "com-nam-han",
+    "title": "Cơm nấm Hàn"
+  },
+  "content": {
+    "description": "Cơm nấu nấm thấm màu nâu thơm ngọt, hạt cơm đậm vị món cơm Hàn nhà ấm áp.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 40,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Cơm nấm",
+      "Hàn Quốc",
+      "Cơm",
+      "Ấm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-c78c4d4ca35484d3.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://kimchimari.com/wprm_print/korean-four-mushroom-rice-in-stone-pot-beoseot-bap/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.youtube.com/shorts/4j1W7sPjzBY",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Gạo tẻ hạt ngắn",
+      "canonicalIngredientId": "ING_ENR_7D6B5406AE317A0D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cup",
+        "text": "2 cup",
+        "gramEquivalent": 400,
+        "basis": "1 cup gạo hạt ngắn ≈ 200 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kimchimari: 1.5 cup (gồm 3/4 cup gạo trắng + 1/2 cup gạo nếp + 1/4 cup gạo lứt) cho ~2–3 phần. Lấy 2 cups gạo tẻ hạt ngắn cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 365,
+        "proteinG": 7.13,
+        "carbohydrateG": 79.95,
+        "fatG": 0.66,
+        "fiberG": 1.3,
+        "sugarG": 0.12,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169756",
+      "sourceNutritionNote": "Số liệu theo gạo khô; khi nấu chín, giá trị trên 100 g cơm chín thấp hơn do hút nước."
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 300,
+        "basis": "1 cây nấm đùi gà vừa ≈ 100 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Kimchimari: 2 cây cho ~2–3 phần kèm các loại nấm khác. Hint nhấn mạnh nấm đùi gà nên lấy 3 cây (~300 g) cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 46.3951,
+        "proteinG": 2.40625,
+        "carbohydrateG": 8.50065,
+        "fatG": 0.3075,
+        "fiberG": 3.009,
+        "sugarG": null,
+        "sodiumMg": 0.7713
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003599",
+      "sourceNutritionNote": "Dùng số liệu đúng loài nấm đùi gà (king oyster, Pleurotus eryngii), bản Foundation."
+    },
+    {
+      "position": 2,
+      "sourceName": "Nấm sò tươi",
+      "canonicalIngredientId": "ING_ENR_CC775FF84642E02D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "Kimchimari: 3–4 oz nấm sò tươi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": 1.11,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "Số liệu nấm sò tươi (Pleurotus ostreatus) đúng loài."
+    },
+    {
+      "position": 3,
+      "sourceName": "Nấm enoki",
+      "canonicalIngredientId": "ING_ENR_F1CC43DEFB2E6E01",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "Kimchimari: 3–4 oz nấm enoki (khoảng nửa gói 7 oz).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 37,
+        "proteinG": 2.66,
+        "carbohydrateG": 7.81,
+        "fatG": 0.29,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": 3
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169382",
+      "sourceNutritionNote": "Tra trực tiếp USDA FoodData Central API (SR Legacy 'Mushrooms, enoki, raw'); mục này không báo cáo đường tổng — để null, không bịa số."
+    },
+    {
+      "position": 4,
+      "sourceName": "Nước dùng nấm",
+      "canonicalIngredientId": "ING_ENR_4873DBD329C75F5C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.7,
+        "unit": "cup",
+        "text": "2.7 cup",
+        "gramEquivalent": 650,
+        "basis": "1 cup nước dùng ≈ 240 ml ≈ 240 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kimchimari: nấu 3 cups nước với tảo bẹ + cuống nấm 15 phút, dùng 2 cups nấu 1.5 cup gạo. Scale lên 2.7 cups cho 2 cups gạo (4 phần). Vớt bỏ cái sau khi nấu — để null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước dùng nấu từ cuống nấm và tảo bẹ rồi vớt bỏ cái; dinh dưỡng thôi ra không đáng kể — để null."
+    },
+    {
+      "position": 5,
+      "sourceName": "Tảo bẹ khô (dashima, nấu nước dùng)",
+      "canonicalIngredientId": "ING_ENR_A86AB354F674B422",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "miếng",
+        "text": "1 miếng",
+        "gramEquivalent": 8,
+        "basis": "1 miếng tảo bẹ khô ≈ 8 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Kimchimari: 1 miếng tảo bẹ nấu cùng nước dùng rồi vớt bỏ — để null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Vớt bỏ sau khi nấu nước dùng; dinh dưỡng thôi ra không đáng kể — để null."
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ăn thực vật",
+      "canonicalIngredientId": "ING_ENR_57DC624F79E53EB4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "1 muỗng canh dầu ăn = 15 ml ≈ 13.6 g (tỉ trọng dầu ~0.91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kimchimari: 1 tsp dầu perilla + 1 tsp dầu thực vật để rang gạo cho ~3 phần. Lấy 1 Tbsp dầu thực vật cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": "FDC không có 'dầu ăn thực vật chung'; dùng số liệu dầu đậu nành (fdcId 172370) làm tương đương."
+    },
+    {
+      "position": 7,
+      "sourceName": "Xì dầu (làm sốt yangnyeomjang)",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 32,
+        "basis": "1 muỗng canh xì dầu ≈ 16 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kimchimari: 1 Tbsp xì dầu (jin ganjang) trong sốt yangnyeomjang cho ~3 phần; lấy 2 Tbsp cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Hành lá thái nhỏ",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "cup",
+        "text": "0.5 cup",
+        "gramEquivalent": 50,
+        "basis": "1 cup hành lá thái nhỏ ≈ 100 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kimchimari: 1/4 cup hành lá thái nhỏ trong sốt cho ~3 phần; lấy 1/2 cup cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho hành lá nên để null."
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 9.2,
+        "basis": "1 muỗng cà phê dầu mè = 5 ml ≈ 4.6 g (tỉ trọng ~0.92)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kimchimari: 1 tsp dầu perilla trong sốt + 1 tsp rang gạo cho ~3 phần. Thay dầu perilla bằng dầu mè (dễ mua), lấy 2 tsp cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho dầu mè nên để null."
+    },
+    {
+      "position": 10,
+      "sourceName": "Vừng rang",
+      "canonicalIngredientId": "ING_ENR_DAB9547F85EF53B1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê vừng ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kimchimari: 1/2 tsp vừng trong sốt cho ~3 phần; lấy 1 tsp cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 573,
+        "proteinG": 17.7,
+        "carbohydrateG": 23.4,
+        "fatG": 49.7,
+        "fiberG": 11.8,
+        "sugarG": 0.3,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170150",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước (pha sốt)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 muỗng canh nước = 15 ml ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kimchimari: 1 Tbsp nước pha sốt yangnyeomjang cho ~3 phần; lấy 2 Tbsp cho 4 phần.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước lọc không có dinh dưỡng đáng kể; không tra USDA."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Vo gạo sạch, ngâm nước 30 phút đến 1 giờ. Vớt ra để ráo hoàn toàn.",
+      "tip": "Kimchimari: ngâm gạo là bước bắt buộc để hạt cơm chín đều trong nồi đá.",
+      "timerMinutes": 45
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Nấu nước dùng nấm: cho khoảng 3.5 cups nước cùng tảo bẹ, cuống nấm và 2 lát nấm vào nồi, đun sôi rồi hạ lửa liu riu 15 phút. Vớt bỏ tảo bẹ và cuống nấm, giữ lại khoảng 2.7 cups nước dùng.",
+      "tip": "Kimchimari: KHÔNG đổ bỏ nước ngâm nếu dùng nấm khô — đó chính là nước dùng; nấm tươi thì nấu nước dùng riêng như trên.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế nấm: nấm đùi gà thái lát dày vừa ăn (nấm sẽ teo khi nấu nên cắt to hơn miếng vừa ăn một chút — Kimchimari); nấm sò xé sợi bằng tay; nấm enoki cắt bỏ gốc, tách thành sợi.",
+      "tip": "Kimchimari: nấm sò nên xé tay vì rất dễ nát khi cắt dao."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun nóng nồi đá hoặc nồi gang đáy dày trên lửa vừa-cao, cho dầu ăn vào. Cho gạo đã ráo vào, đảo đều khoảng 3 phút đến khi hạt gạo hơi trong và bắt đầu dính đáy nồi.",
+      "tip": "Kimchimari: cẩn thận không để gạo cháy — chỉ rang đến khi gạo hơi trong là được.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Hạ lửa vừa, chế nước dùng nấm vào vừa ngập mặt gạo (khoảng 2.7 cups)."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Xếp nấm đùi gà và nấm sò lên trên mặt gạo (chừa nấm enoki lại sau). Đậy nắp, nấu lửa vừa 5 phút.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Hạ lửa vừa-nhỏ, đậy nắp nấu thêm 15 phút.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Trong lúc chờ cơm chín, làm sốt yangnyeomjang: hành lá thái nhỏ trộn đều với dầu mè trước (để hành giữ được độ tươi — Kimchimari), sau đó thêm xì dầu, nước và vừng rang, trộn đều. Để riêng.",
+      "tip": "Kimchimari: áo hành lá bằng dầu mè trước khi trộn sốt giúp hành không bị héo, giữ màu xanh tươi."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Hạ lửa nhỏ, nấu thêm khoảng 10 phút đến khi không còn hơi nước bốc lên từ nồi.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Tắt bếp, đậy nắp ủ thêm 3 phút — TUYỆT ĐỐI không mở nắp trong lúc ủ.",
+      "tip": "Kimchimari: bước ủ kín giúp cơm chín hơi hoàn toàn và tạo lớp cháy giòn dưới đáy nồi.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Mở nắp, xếp nấm enoki lên mặt cơm nóng.",
+      "tip": "Nấm enoki chín bằng hơi nóng của cơm — Kimchimari."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Xới trộn đều nấm với cơm, múc ra từng bát. Dọn kèm sốt yangnyeomjang để bên cạnh, mỗi người tự rưới theo khẩu vị.",
+      "tip": "Kimchimari: trộn đều trước khi ăn để vị nấm quyện vào từng hạt cơm."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 8.25,
+      "proteinG": 0.83,
+      "carbohydrateG": 1.52,
+      "fatG": 0.1,
+      "fiberG": 0.58,
+      "sugarG": 0.28,
+      "sodiumMg": 4.5
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Gạo tẻ hạt ngắn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Nấm đùi gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 3,
+        "detail": "Nấm enoki: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 4,
+        "detail": "Nước dùng nấm: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 5,
+        "detail": "Tảo bẹ khô (dashima, nấu nước dùng): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu ăn thực vật: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Xì dầu (làm sốt yangnyeomjang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Hành lá thái nhỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Vừng rang: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước (pha sốt): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      0,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 0,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 5,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,419 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-14c8ef999fe47b8f",
+    "slug": "trung-cuon-tamagoyaki",
+    "title": "Trứng cuộn tamagoyaki"
+  },
+  "content": {
+    "description": "Từng lớp trứng mỏng cuộn chặt thành khối tamagoyaki vàng, ruột mềm ẩm sữa, món hộp cơm Nhật kinh điển.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 15,
+    "servings": 2,
+    "difficulty": "medium",
+    "tags": [
+      "Tamagoyaki",
+      "Nhật Bản",
+      "Hộp cơm",
+      "Trứng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-14c8ef999fe47b8f.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.justonecookbook.com/tamagoyaki/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.japanesecooking101.com/tamagoyaki-with-green-onions-recipe/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.hwcmagazine.com/recipe/japanese-egg-roll-tomagoyaki/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 150,
+        "basis": "USDA FoodData Central: 1 trứng gà lớn = 50 g.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả ba nguồn đều dùng 3 quả trứng cho 2 phần (JOC: 3 trứng lớn, mỗi quả 50 g không vỏ; JC101: 4 trứng cho công thức lớn hơn; HWC: 3 trứng).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Sữa tươi nguyên kem",
+      "canonicalIngredientId": "ING_ENR_3D34F4B09B331BD5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "USDA FoodData Central: 1 Tbsp sữa tươi nguyên kem = 15 g.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Mâu thuẫn giữa các nguồn: HWC dùng 1 Tbsp sữa cho 3 trứng và chính nguồn này nói rõ sữa là bổ sung KHÔNG truyền thống, giúp trứng mềm nhẹ nhưng vẫn dễ cuộn; JOC (bản truyền thống) và JC101 đều KHÔNG dùng sữa. Món này giữ sữa theo gợi ý nguyên liệu của assignment.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 61,
+        "proteinG": 3.15,
+        "carbohydrateG": 4.8,
+        "fatG": 3.25,
+        "fiberG": 0,
+        "sugarG": 5.05,
+        "sodiumMg": 43
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171265",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cọng",
+        "text": "2 cọng",
+        "gramEquivalent": 30,
+        "basis": "USDA FoodData Central: 1 cọng hành lá vừa (dài 4-1/8 inch) = 15 g; 2 cọng = 30 g.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Mâu thuẫn giữa các nguồn: JC101 coi hành lá là thành phần chính (3 cọng cho 4 trứng); JOC chỉ nhắc hành lá như một biến thể được xác nhận; HWC cho phép thêm hành lá vào lớp trứng. Món này dùng 2 cọng cho 3 trứng, theo tỉ lệ của JC101.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Xì dầu (shoyu)",
+      "canonicalIngredientId": "ING_ENR_4B3D4B69D5D57916",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5.3,
+        "basis": "USDA FoodData Central: 1 tsp xì dầu = 5,3 g.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 5.3,
+          "unit": "g"
+        }
+      },
+      "note": "Mâu thuẫn giữa các nguồn: JOC dùng 1 tsp xì dầu cho 3 trứng (2 phần); JC101 chỉ dùng 1/4 tsp xì dầu cho 4 trứng; HWC KHÔNG dùng xì dầu trong công thức chính. Món này theo JOC (1 tsp) vì cùng quy mô 3 trứng / 2 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.2,
+        "basis": "USDA FoodData Central: 1 tsp đường cát = 4,2 g.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 4.2,
+          "unit": "g"
+        }
+      },
+      "note": "Mâu thuẫn giữa các nguồn: JOC dùng 1/2 Tbsp đường cho 3 trứng; HWC dùng 1 tsp đường + 1 tsp mirin; JC101 dùng 1 Tbsp mirin HOẶC 1/4 tsp đường (tự cho phép thay mirin bằng đường). Món này dùng 1 tsp đường, bỏ mirin theo gợi ý thay thế của JC101 — ngọt nhẹ hơn bản HWC một chút.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 0.4,
+        "basis": "USDA FoodData Central: 1 dash muối ăn = 0,4 g.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 0.4,
+          "unit": "g"
+        }
+      },
+      "note": "JOC: một nhúm muối cho 3 trứng. JC101 dùng 1/4 tsp muối cho 4 trứng — tương đương khoảng một nhúm cho 3 trứng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ăn trung tính",
+      "canonicalIngredientId": "ING_ENR_9BC1323860D7C813",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "USDA FoodData Central: 1 tsp dầu đậu nành tinh luyện = 4,5 g.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 4.5,
+          "unit": "g"
+        }
+      },
+      "note": "JOC dùng dầu trung tính, HWC ghi 'oil'; cả hai đều chỉ dùng để thoa mỏng chảo giữa các lớp trứng, không cho vào hỗn hợp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Hành lá rửa sạch, để ráo, thái nhỏ. Đập 3 quả trứng vào bát lớn, nhặt bỏ mảnh vỏ nếu có.",
+      "tip": "Dùng trứng ở nhiệt độ phòng — lòng đỏ và lòng trắng quyện đều hơn, mặt trứng mịn hơn khi tráng."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cho sữa tươi, đường, xì dầu và nhúm muối vào bát trứng. Dùng đũa khuấy nhẹ theo đường zigzag cho các nguyên liệu tan đều.",
+      "tip": "JOC nhấn mạnh: khuấy zigzag nhẹ tay, tuyệt đối không đánh mạnh tạo bọt — bọt khí làm mặt trứng rỗ, khó cuộn mịn."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho hành lá thái nhỏ vào hỗn hợp trứng, trộn đều lần cuối. Có thể lọc qua rây nếu muốn mặt trứng thật mịn.",
+      "tip": "JC101 trộn hành lá trực tiếp vào trứng trước khi tráng — hành chín đều cùng từng lớp trứng."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đặt chảo tamagoyaki (hoặc chảo chống dính hình chữ nhật nhỏ) lên bếp ở lửa vừa-nhỏ, làm nóng đều. Gấp khăn giấy thấm dầu ăn, thoa một lớp dầu thật mỏng khắp mặt chảo.",
+      "tip": "Chảo quá nóng làm trứng cháy xém trước khi kịp cuộn; lửa vừa-nhỏ là mức an toàn cho cả 3 lớp."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đổ khoảng 1/3 hỗn hợp trứng vào chảo, nghiêng chảo cho trứng tráng mỏng đều khắp mặt. Chiên đến khi mặt trên vừa se lại nhưng còn hơi ướt, mép trứng hơi bong khỏi chảo.",
+      "tip": "Cả JOC và HWC đều chia 3 quả trứng thành 3 lớp mỏng — lớp mỏng vừa đủ dai để cuộn mà không rách. Cuộn khi mặt trứng còn mềm (JOC, JC101) thì các lớp dính chặt vào nhau.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Dùng đũa hoặc xẻng nhẹ nhàng cuộn trứng từ mép xa về phía mình thành một cuộn tròn, rồi gạt cuộn trứng sát về mép xa của chảo.",
+      "tip": "Nếu dùng chảo tròn (JC101 xác nhận dùng được), cuộn trứng sẽ ngắn hơn nhưng kỹ thuật cuộn y hệt."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Thoa thêm một lớp dầu mỏng vào khoảng chảo trống. Đổ tiếp 1/3 hỗn hợp trứng, dùng đũa nâng nhẹ cuộn trứng để trứng mới chảy xuống bên dưới. Khi mặt trứng se lại thì cuộn tiếp chồng lên cuộn cũ, gạt về mép xa.",
+      "tip": "Thoa dầu giữa các lớp (JOC, HWC) giúp lớp trứng mới không dính chảo và bề mặt cuộn luôn bóng mượt.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Lặp lại với 1/3 hỗn hợp cuối cùng. Cuộn chặt tay, dùng xẻng nắn nhẹ hai đầu cho cuộn trứng vuông vức.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tắt bếp, gắp cuộn trứng ra thớt (hoặc đặt lên mành tre makisu để nắn hình chữ nhật đẹp mắt). Để nghỉ 4 phút cho cuộn trứng định hình và ráo bớt hơi nóng.",
+      "tip": "Mâu thuẫn nhỏ giữa các nguồn về thời gian nghỉ: JOC để 5 phút, JC101 và HWC để 3–4 phút — 4 phút là điểm giữa, cuộn trứng đủ đứng form khi thái.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Thái cuộn trứng thành 6–8 miếng dày vừa ăn, xếp ra đĩa và dọn ăn ngay khi còn ấm.",
+      "tip": "Tamagoyaki ngon nhất khi ăn trong ngày; bảo quản tủ lạnh trong hộp kín, khi ăn có thể hâm nhẹ hoặc ăn nguội kiểu bento."
+    }
+  ],
+  "nutrition": {
+    "certification": "publishable",
+    "profileId": "imp-14c8ef999fe47b8f_nutrition_v2",
+    "basis": "per_serving",
+    "servings": 2,
+    "perServing": {
+      "energyKcal": 146.05,
+      "proteinG": 10.15,
+      "carbohydrateG": 4.23,
+      "fatG": 9.67,
+      "fiberG": 0.41,
+      "sugarG": 3.11,
+      "sodiumMg": 335.23
+    },
+    "candidatePerServing": {
+      "energyKcal": 146.05,
+      "proteinG": 10.15,
+      "carbohydrateG": 4.23,
+      "fatG": 9.67,
+      "fiberG": 0.41,
+      "sugarG": 3.11,
+      "sodiumMg": 335.23
+    },
+    "originalPerServing": {
+      "energyKcal": 146.05,
+      "proteinG": 10.15,
+      "carbohydrateG": 4.23,
+      "fatG": 9.67,
+      "fiberG": 0.41,
+      "sugarG": 3.11,
+      "sodiumMg": 335.23
+    },
+    "blockers": [],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [],
+    "runtimeExclusions": []
+  }
+}

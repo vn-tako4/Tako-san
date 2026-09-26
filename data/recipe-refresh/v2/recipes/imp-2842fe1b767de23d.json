@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-2842fe1b767de23d",
+    "slug": "trung-cuon-gyeran-mari",
+    "title": "Trứng cuộn gyeran mari"
+  },
+  "content": {
+    "description": "Trứng cuộn bầu dục vàng óng nhân cà rốt-hành lá, món gyeran mari ngọt nhẹ trong hộp cơm Hàn.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "difficulty": "medium",
+    "tags": [
+      "Gyeran mari",
+      "Hàn Quốc",
+      "Hộp cơm",
+      "Trứng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-2842fe1b767de23d.json",
+    "rawSchemaSignature": "ingredients,notes,nutrition_computed,recipe_id,servings,sources,steps,title",
+    "sources": [
+      {
+        "url": "https://www.koreanbapsang.com/gyeran-mari-korean-rolled-omelette/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.foodnetwork.com/recipes/gyeran-mari-korean-rolled-omelet-18572638",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "notes: Nguồn mâu thuẫn về số trứng: Korean Bapsang (nguồn chính, đúng 2 phần ăn) dùng 3 quả trứng; Food Network dùng 4 quả trứng cho 2 phần. File này theo Korean Bapsang.",
+      "notes: Nguồn mâu thuẫn về cách xử lý rau: Korean Bapsang trộn rau sống trực tiếp vào hỗn hợp trứng; Food Network xào sơ rau (cà rốt, hành tây, hành lá) khoảng 2 phút với 1/4 tsp muối trước khi cho trứng. Food Network còn thêm hành tây — nguyên liệu này không có trong Korean Bapsang nên không đưa vào công thức.",
+      "notes: Xì dầu chỉ là gợi ý trong assignment, không có trong cả hai nguồn công thức thật → để tùy chọn chấm kèm, không trộn vào trứng."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 150,
+        "basis": "Korean Bapsang: 3 large eggs cho đúng 2 phần ăn; USDA FDC 171287: 1 quả trứng gà lớn = 50 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Mâu thuẫn: Food Network (công thức của Irene Yoo) dùng 4 quả trứng lớn cho 2 phần ăn. Lấy theo Korean Bapsang vì khớp đúng 2 phần ăn của assignment.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 1,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 11,
+        "unit": "g",
+        "text": "11 g",
+        "gramEquivalent": 11,
+        "basis": "Korean Bapsang: 1–1,5 tbsp cà rốt thái nhỏ, lấy 1,5 tbsp; USDA FDC 170393: 1 tbsp cà rốt thái nhỏ = 7 g → 10,5 g, làm tròn 11 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 11,
+          "unit": "g"
+        }
+      },
+      "note": "Mâu thuẫn cách làm: Korean Bapsang trộn rau sống trực tiếp vào trứng; Food Network xào sơ cà rốt, hành tây và hành lá khoảng 2 phút trước khi cho trứng vào. Công thức này theo Korean Bapsang (trộn sống). Food Network dùng 2 tbsp cà rốt cho 2 phần (nhiều hơn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": null,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 9,
+        "unit": "g",
+        "text": "9 g",
+        "gramEquivalent": 9,
+        "basis": "Korean Bapsang: 1–1,5 tbsp hành lá thái nhỏ, lấy 1,5 tbsp; USDA FDC 170005: 1 tbsp hành lá thái nhỏ = 6 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 9,
+          "unit": "g"
+        }
+      },
+      "note": "Food Network dùng 2 tbsp hành lá cho 2 phần (nhiều hơn 1,5 tbsp của Korean Bapsang).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 3,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.8,
+        "unit": "g",
+        "text": "0.8 g",
+        "gramEquivalent": 0.8,
+        "basis": "Korean Bapsang: salt to taste about 1⁄8 (teaspoon); USDA FDC 173468: 1 tsp muối = 6 g → 1/8 tsp ≈ 0,75 g, làm tròn 0,8 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.8,
+          "unit": "g"
+        }
+      },
+      "note": "Food Network nêm tổng 3/4 tsp muối (1/2 tsp vào trứng + 1/4 tsp khi xào rau) — mặn hơn công thức này.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.2,
+        "unit": "g",
+        "text": "0.2 g",
+        "gramEquivalent": 0.2,
+        "basis": "Korean Bapsang: pinch black pepper; USDA FDC 170931: 1 tsp tiêu đen = 2,3 g; 1 nhúm ≈ 1/16 tsp ≈ 0,15 g → làm tròn 0,2 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.2,
+          "unit": "g"
+        }
+      },
+      "note": "Korean Bapsang: một nhúm tiêu đen; Food Network: freshly ground black pepper to taste.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": null,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu thực vật",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "Korean Bapsang: a teaspoon of vegetable oil, lau đều mặt chảo; USDA FDC 171411: 1 tsp dầu thực vật = 4,5 g → làm tròn 5 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "Mâu thuẫn: Food Network dùng 1/2 tbsp (khoảng 7 g) dầu trung tính (canola/vegetable). Korean Bapsang chỉ dùng 1 tsp rồi dùng khăn giấy lau đều khắp chảo.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu (chấm kèm)",
+      "canonicalIngredientId": "ING_ENR_002CF745A3FE8E12",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 16,
+        "unit": "g",
+        "text": "16 g",
+        "gramEquivalent": 16,
+        "basis": "USDA FDC 174277: 1 tbsp xì dầu = 16 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 16,
+          "unit": "g"
+        }
+      },
+      "note": "Gợi ý trong assignment nhưng cả Korean Bapsang và Food Network đều KHÔNG dùng xì dầu trong công thức; để tùy chọn làm nước chấm khi ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": null,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Hành lá và cà rốt thái thật nhỏ (hạt lựu nhỏ).",
+      "tip": "Thái càng nhỏ rau càng dễ cuộn, trứng cuộn không bị rách — Korean Bapsang nhấn mạnh không cho quá nhiều rau vào trứng."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đập 3 quả trứng vào tô, dùng đũa hoặc nĩa đánh tan đến khi lòng đỏ và lòng trắng hòa đều, không còn vệt trắng. Nêm muối và tiêu, khuấy đều rồi trộn rau thái nhỏ vào."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho 1 tsp dầu thực vật vào chảo chống dính cỡ vừa (20–25 cm), dùng khăn giấy lau đều khắp mặt chảo. Đun lửa vừa–nhỏ đến khi hơ tay cách mặt chảo 5–7 cm thấy nóng.",
+      "tip": "Chảo quá nóng sẽ làm trứng dai và dễ rách khi cuộn; lửa nhỏ, kiên nhẫn là bí quyết của Korean Bapsang."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đổ 1/2 hỗn hợp trứng vào chảo, láng đều khắp mặt chảo. Chiên đến khi mặt trên bắt đầu se lại nhưng vẫn còn ướt, khoảng 1 phút.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Dùng xẻng nhẹ nhàng gập một đầu trứng (khoảng 3–4 cm) rồi cuộn tròn về phía còn lại.",
+      "tip": "Nếu mặt dưới hơi xém, nhấc chảo khỏi bếp một lúc hoặc hạ nhỏ lửa; có thể dùng hai tay, mỗi tay một xẻng/đũa để cuộn dễ hơn."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Kéo cuộn trứng sang một bên chảo, đổ nốt 1/2 hỗn hợp trứng còn lại vào khoảng trống, láng đều."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Khi lớp trứng mới se mặt, tiếp tục gập và cuộn cho hết, tạo thành một khúc trứng dài khoảng 5 cm."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Lấy cuộn trứng ra thớt, để nguội khoảng 5 phút cho định hình.",
+      "tip": "Để nguội bớt mới thái thì lát cắt mới đẹp, không bị vỡ.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Thái cuộn trứng thành khoanh dày đều nhau khoảng 2–2,5 cm."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Xếp các khoanh trứng ra đĩa, dọn kèm xì dầu chấm nếu thích. Ăn nóng hoặc nguội đều ngon.",
+      "tip": "Trứng cuộn để tủ lạnh được 2–3 ngày; hâm lại bằng lò vi sóng hoặc ăn lạnh đều được — rất hợp mang cơm hộp."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 2,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 137.54,
+      "proteinG": 10.22,
+      "carbohydrateG": 1.86,
+      "fatG": 9.7,
+      "fiberG": 0.36,
+      "sugarG": null,
+      "sodiumMg": 705.51
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Trứng gà: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Cà rốt: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 2,
+        "detail": "Hành lá: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 5,
+        "detail": "Dầu thực vật: all seven nutrients are not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [],
+    "runtimeExclusions": []
+  }
+}

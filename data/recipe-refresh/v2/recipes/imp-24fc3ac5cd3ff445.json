@@ -1,0 +1,660 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-24fc3ac5cd3ff445",
+    "slug": "com-chien-kim-chi-han",
+    "title": "Cơm chiên kim chi Hàn"
+  },
+  "content": {
+    "description": "Cơm nguội rang với kim chi chua cay và trứng lòng đào, món kimchi bokkeumbap Hàn Quốc mười lăm phút quốc dân.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Cơm chiên",
+      "Kim chi",
+      "Hàn Quốc",
+      "Nhanh"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-24fc3ac5cd3ff445.json",
+    "rawSchemaSignature": "ingredients,notes,nutrition_computed,recipe_id,servings,sources,steps,title",
+    "sources": [
+      {
+        "url": "https://www.maangchi.com/recipe/kimchi-bokkeumbap",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://tarasmulticulturaltable.com/kimchi-bokkeumbap-korean-kimchi-fried-rice/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "notes: Nguồn mâu thuẫn về công thức sốt: Maangchi (nguồn chính, đúng 3 phần ăn) chỉ dùng gochujang + nước kim chi + nước lọc, không có xì dầu, thịt hay trứng trộn; Tara (trích sách Effortless Asian Cooking, 4 phần) dùng thêm thịt ba chỉ, hành tây, tỏi, trứng đánh tan trộn vào cơm, gochugaru, đường và xì dầu. File này theo Maangchi; các biến thể của Tara được ghi là tùy chọn hoặc trong note nguyên liệu.",
+      "notes: Nguồn mâu thuẫn về quy đổi cup: USDA FDC 168878 quy 1 cup cơm trắng nấu chín = 158 g; Tara quy 4 cups = 800 g (200 g/cup, đơm đầy và nén chặt hơn). File này dùng 158 g/cup theo USDA và ghi rõ.",
+      "notes: Gim (rong biển khô): USDA không có bản ghi phù hợp → nutrition để null, ghi rõ trong nutrition_note.",
+      "notes: Trứng chiên và xì dầu là tùy chọn theo cả hai nguồn; không bắt buộc để giữ đúng bản đơn giản của Maangchi."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cơm trắng nấu chín (cơm nguội)",
+      "canonicalIngredientId": "ING_ENR_737318E5134AAA44",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 474,
+        "unit": "g",
+        "text": "474 g",
+        "gramEquivalent": 474,
+        "basis": "3 cups cơm chín; USDA FDC 168878 (Rice, white, long-grain, regular, enriched, cooked): 1 cup cơm trắng nấu chín = 158 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 474,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 3 bowls (3 cups) cơm; Tara: 4 cups cơm cho 4 phần. Cơm nguội để tủ lạnh được nhiều người khuyên dùng, nhưng Maangchi cho biết bà không thấy khác biệt so với cơm mới nấu để nguội bớt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 130,
+        "proteinG": 2.69,
+        "carbohydrateG": 28.17,
+        "fatG": 0.28,
+        "fiberG": 0.4,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168878",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 1,
+      "sourceName": "Kim chi cải thảo (ủ chua)",
+      "canonicalIngredientId": "ING_ENR_EA2B9251EC7A322A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "1 cup kim chi thái nhỏ; Tara's Multicultural Table (trích sách Effortless Asian Cooking): 1 cup kim chi thái nhỏ = 150 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi yêu cầu kim chi ủ chua, lên men kỹ (aged, well-fermented and sour); Tara cũng khuyên dùng kim chi lên men kỹ để ngon nhất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": null,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước kim chi",
+      "canonicalIngredientId": "ING_ENR_27FD2253A7768761",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "g",
+        "text": "60 g",
+        "gramEquivalent": 60,
+        "basis": "Maangchi: 1/4 cup nước kim chi ≈ 59 ml; tỉ trọng nước kim chi ≈ 1,0 g/ml → ~60 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 60,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 1/4 cup kimchi juice (nước kim chi đỏ cay trong hũ).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": null,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": "Dùng số liệu kim chi (fdcId 170392) làm đại diện; nước kim chi thực tế có hàm lượng natri cao hơn phần cái → số natri có thể bị đánh giá thấp."
+    },
+    {
+      "position": 3,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "g",
+        "text": "60 g",
+        "gramEquivalent": 60,
+        "basis": "Maangchi: 1/4 cup nước = 59 ml ≈ 60 g (tỉ trọng nước = 1,0)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 60,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 1/4 cup nước, dùng để pha loãng sốt gochujang.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 4,
+      "sourceName": "Tương ớt Hàn (gochujang)",
+      "canonicalIngredientId": "ING_ENR_7B2DCEA4C5B68A51",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 43,
+        "unit": "g",
+        "text": "43 g",
+        "gramEquivalent": 43,
+        "basis": "Maangchi: 2–3 tbsp, lấy điểm giữa 2,5 tbsp; nhãn dinh dưỡng MILKimchi Inc (nutritionvalue.org): 1 tbsp tương ớt Hàn ≈ 17 g → 2,5 tbsp ≈ 43 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 43,
+          "unit": "g"
+        }
+      },
+      "note": "Mâu thuẫn: Tara chỉ dùng 2 tbsp gochujang cho 4 phần, kết hợp thêm 2 tsp gochugaru (ớt bột Hàn) và 1 tsp đường — bản Maangchi đơn giản hơn, không có gochugaru và đường. Công thức này theo Maangchi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 225,
+        "proteinG": 5,
+        "carbohydrateG": 50,
+        "fatG": 0,
+        "fiberG": 5,
+        "sugarG": 30,
+        "sodiumMg": 2000
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Gochujang_fermented_chile_paste_concentrated_by_milkimchi_inc_by_MILKimchi_Inc_2025088_nutritional_value.html?size=100+g",
+      "sourceNutritionNote": "USDA FDC không có bản ghi SR/Foundation cho gochujang; dùng nhãn dinh dưỡng sản phẩm tương ớt Hàn lên men của MILKimchi Inc (dữ liệu USDA Branded Foods, qua nutritionvalue.org)."
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu mè rang",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 14,
+        "unit": "g",
+        "text": "14 g",
+        "gramEquivalent": 14,
+        "basis": "Maangchi: 3 tsp dầu mè rang (toasted sesame oil); USDA FDC 171016: 1 tsp dầu mè = 4,5 g → 13,5 g, làm tròn 14 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 14,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi dùng dầu mè rang (toasted) để rưới hoàn thiện món ăn, cho vào cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu thực vật",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "Maangchi: 1 tsp; USDA FDC 171411 (dầu đậu nành dùng chiên xào): 1 tsp = 4,5 g → làm tròn 5 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi dùng 1 tsp dầu thực vật để xào kim chi lúc đầu; Tara dùng 1 tbsp dầu thực vật cho 4 phần (bao gồm cả xào thịt ba chỉ).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 15,
+        "basis": "Maangchi: 1 green onion, chopped; America's Test Kitchen (công thức mat kimchi): 5 cây hành lá = 75 g → 1 cây ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi: 1 cây hành lá thái nhỏ, rắc lên mặt khi dọn; Tara dùng 2 cây hành lá cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 8,
+      "sourceName": "Vừng rang",
+      "canonicalIngredientId": "ING_ENR_DAB9547F85EF53B1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 9,
+        "unit": "g",
+        "text": "9 g",
+        "gramEquivalent": 9,
+        "basis": "Maangchi: 1 tbsp vừng rang; USDA FDC 170150: 1 tbsp vừng = 9 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 9,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 1 tbsp roasted sesame seeds, rắc lên mặt khi dọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 573,
+        "proteinG": 17.73,
+        "carbohydrateG": 23.45,
+        "fatG": 49.67,
+        "fiberG": 11.8,
+        "sugarG": null,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170150",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 9,
+      "sourceName": "Rong biển khô (gim)",
+      "canonicalIngredientId": "ING_ENR_D66B4B19860BCE1C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "lá",
+        "text": "1 lá",
+        "gramEquivalent": 3,
+        "basis": "Maangchi: 1 sheet of gim; nutritionvalue.org (Dried seaweed): 1 sheet = 2,8 g → làm tròn 3 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi: 1 lá gim nướng rồi xé thành sợi, rắc lên mặt khi dọn.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FDC không có bản ghi SR/Foundation cho gim/nori; lượng dùng ~3 g nên ảnh hưởng dinh dưỡng không đáng kể → nutrition để null theo quy tắc."
+    },
+    {
+      "position": 10,
+      "sourceName": "Trứng gà (chiên ốp la, ăn kèm)",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 50,
+        "basis": "USDA FDC 171287: 1 quả trứng gà lớn = 50 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi: nhiều người Hàn thích đặt trứng chiên lên trên cơm chiên kim chi (gia đình bà thích bản đơn giản không trứng); Tara cũng ghi fried eggs là tùy chọn khi dọn. Chiên ốp la với một ít dầu ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 11,
+      "sourceName": "Xì dầu nhạt",
+      "canonicalIngredientId": "ING_ENR_19A3C60192F07ED5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 8,
+        "unit": "g",
+        "text": "8 g",
+        "gramEquivalent": 8,
+        "basis": "Tara: 2 tsp cho 4 phần → 1,5 tsp cho 3 phần; USDA FDC 174277: 1 tsp xì dầu = 5,3 g → ~8 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 8,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi KHÔNG dùng xì dầu; Tara pha 2 tsp light soy sauce vào hỗn hợp sốt gochujang. Để tùy chọn cho ai thích vị đậm đà hơn — nếu dùng thì trộn chung với sốt ở bước 2.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": null,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Nếu miếng kim chi còn to, thái nhỏ vừa ăn. Hành lá thái nhỏ. Lá gim nướng sơ rồi xé thành sợi mỏng.",
+      "tip": "Kim chi nên là loại ủ chua, lên men kỹ — đó là linh hồn của món này theo Maangchi."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Trong một bát nhỏ, trộn đều tương ớt gochujang với nước kim chi và nước lọc thành hỗn hợp sệt. (Nếu dùng xì dầu tùy chọn, trộn chung vào bát sốt lúc này.)",
+      "tip": "Pha sốt trước giúp gochujang tan đều, cơm thấm màu đỏ đồng nhất; Maangchi cho trực tiếp vào chảo, cách pha trước của Tara tiện hơn cho người mới làm."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đặt chảo lớn hoặc wok lên bếp lửa vừa–cao, cho 1 tsp dầu thực vật vào tráng đều mặt chảo.",
+      "tip": "Chảo thật nóng trước khi cho kim chi vào thì kim chi mới thơm, không ra nước."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho kim chi thái nhỏ vào chảo, đảo nhanh tay khoảng 1 phút cho dậy mùi thơm.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho cơm vào chảo, rưới đều hỗn hợp sốt gochujang lên trên, dùng xẻng đảo tơi để từng hạt cơm thấm đều sốt.",
+      "tip": "Nếu dùng cơm nguội từ tủ lạnh, bóp tơi các cục cơm vón trước khi cho vào chảo."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Chiên đảo liên tục khoảng 7 phút cho đến khi hạt cơm săn lại, thấm đều màu đỏ và hơi xém cạnh.",
+      "tip": "Đừng đảo quá mạnh tay làm nát hạt cơm; để yên vài chục giây mỗi lần đảo sẽ tạo được lớp cơm cháy xém thơm ngon.",
+      "timerMinutes": 7
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Rưới đều dầu mè rang vào, đảo nhanh một lượt rồi tắt bếp.",
+      "tip": "Dầu mè cho vào cuối, sau khi tắt bếp hoặc vừa tắt bếp, để giữ mùi thơm — đun lâu sẽ mất mùi."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "(Tùy chọn) Chiên trứng ốp la với một ít dầu ăn đến độ chín tùy thích."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Múc cơm chiên ra đĩa hoặc bát, đặt trứng chiên lên trên nếu dùng."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Rắc hành lá thái nhỏ, vừng rang và sợi gim lên mặt. Ăn ngay khi còn nóng.",
+      "tip": "Món này ngon nhất khi ăn nóng hổi, vừa rời chảo."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 348.17,
+      "proteinG": 8.67,
+      "carbohydrateG": 54.68,
+      "fatG": 10.23,
+      "fiberG": 2.97,
+      "sugarG": null,
+      "sodiumMg": 808.12
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Cơm trắng nấu chín (cơm nguội): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Kim chi cải thảo (ủ chua): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nước kim chi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tương ớt Hàn (gochujang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 5,
+        "detail": "Dầu mè rang: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 6,
+        "detail": "Dầu thực vật: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 8,
+        "detail": "Vừng rang: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 9,
+        "detail": "Rong biển khô (gim): all seven nutrients are not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      3
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,860 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "vn-cuon-02",
+    "slug": "pho-cuon-bo-ha-noi",
+    "title": "Phở cuốn bò xào rau thơm Hà Nội"
+  },
+  "content": {
+    "description": "Bánh phở vuông mềm mượt cuốn gọn thịt bò xào tỏi thơm nức mũi và rau xà lách kinh giới, chấm nước mắm chua ngọt thanh tao.",
+    "cuisine": "vietnamese",
+    "category": "mon_cuon_nom",
+    "region": "bac",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Món cuốn",
+      "Hà Nội",
+      "Phố Trúc Bạch",
+      "Dưới 20 phút"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/vn-cuon-02.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://vnexpress.net/doi-song-cooking-pho-cuon-ha-noi-4591050.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.cet.edu.vn/cach-lam-pho-cuon",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Bánh phở tươi (vuông, chưa thái)",
+      "canonicalIngredientId": "ING_ENR_8AED14F4957EAB7F",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Bánh phở tươi via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 350,
+        "unit": "g",
+        "text": "350 g",
+        "gramEquivalent": 350,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 350,
+          "unit": "g"
+        }
+      },
+      "note": "vnexpress: 500 g cho 4–5 người (trung bình 4.5) → quy đổi cho 3 người ≈ 333 g, làm tròn 350 g cho dễ mua. Dùng số liệu 'Rice noodles, cooked' tương đương bánh phở tươi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 108,
+        "proteinG": 1.79,
+        "carbohydrateG": 24.01,
+        "fatG": 0.2,
+        "fiberG": 1,
+        "sugarG": 0.03,
+        "sodiumMg": 19
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168914",
+      "sourceNutritionNote": "Dùng 'Rice noodles, cooked' (fdcId 168914) tương đương bánh phở tươi."
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt bò thăn",
+      "canonicalIngredientId": "ING_ENR_745FC31DDEB3506D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "vnexpress: 400 g cho 4–5 người (≈ 267 g cho 3 người); cet.edu.vn: 200 g bò cho 500 g bánh phở — các nguồn chênh nhau; lấy 300 g để nhân bò đầy đặn, ghi rõ cơ sở.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 201,
+        "proteinG": 20.3,
+        "carbohydrateG": 0,
+        "fatG": 12.71,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 52
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168726",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "1 củ tỏi ≈ 20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "vnexpress: 1 củ tỏi cho 4–5 người; giữ 1 củ cho 3 người vì tỏi vừa ướp vừa phi thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "USDA không có số liệu sugar_g và sodium_mg cho mục này."
+    },
+    {
+      "position": 3,
+      "sourceName": "Xà lách xoăn",
+      "canonicalIngredientId": "ING_ENR_53ED9DBEF25AAA0D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.36,
+        "carbohydrateG": 2.87,
+        "fatG": 0.15,
+        "fiberG": 1.3,
+        "sugarG": 0.78,
+        "sodiumMg": 28
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169249",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Húng Láng",
+      "canonicalIngredientId": "ING_ENR_AC34190A7E6FCF71",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "vnexpress/cet.edu.vn đều dùng húng Láng; cet.edu.vn cho phép thay bằng rau quế/rau thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 3.15,
+        "carbohydrateG": 2.65,
+        "fatG": 0.64,
+        "fiberG": 1.6,
+        "sugarG": 0.3,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172232",
+      "sourceNutritionNote": "Dùng số liệu húng quế tây (sweet basil, fdcId 172232) tương đương húng Láng."
+    },
+    {
+      "position": 5,
+      "sourceName": "Rau mùi ta (ngò rí)",
+      "canonicalIngredientId": "ING_ENR_C343158886407156",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 48,
+        "unit": "ml",
+        "text": "48 ml",
+        "gramEquivalent": 58,
+        "basis": "tỉ trọng nước mắm ≈ 1.2 g/ml; gồm 1 muỗng canh ướp bò (≈ 18 g) + 33 ml pha nước chấm (≈ 40 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 48,
+          "unit": "ml"
+        }
+      },
+      "note": "Ướp bò: 1 muỗng canh (vnexpress). Nước chấm: tỉ lệ vnexpress 1:1:1:5 với 50 ml mắm cho 4–5 người → 33 ml cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê hạt nêm ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "vnexpress: 1 muỗng cà phê hạt nêm ướp bò.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Hạt nêm kiểu Knorr không có trong USDA FoodData Central; không thay bằng bouillon vì thành phần khác — để null toàn bộ."
+    },
+    {
+      "position": 8,
+      "sourceName": "Bột ngọt",
+      "canonicalIngredientId": "ING_ENR_0A4564D231578559",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "g",
+        "text": "4 g",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê bột ngọt ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "g"
+        }
+      },
+      "note": "cet.edu.vn: 1 muỗng cà phê bột ngọt ướp bò; vnexpress không dùng — mâu thuẫn; giữ lại theo cet.edu.vn (nguồn dạy nấu ăn), có thể bỏ qua tùy khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có mục monosodium glutamate phù hợp trong USDA cho món này — để null toàn bộ."
+    },
+    {
+      "position": 9,
+      "sourceName": "Hạt tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_D4DB8FAE38B1F3E5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "g",
+        "text": "2 g",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "g"
+        }
+      },
+      "note": "vnexpress: 1 muỗng cà phê hạt tiêu ướp bò.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 45,
+        "unit": "ml",
+        "text": "45 ml",
+        "gramEquivalent": 41,
+        "basis": "tỉ trọng dầu ăn ≈ 0.91 g/ml; gồm 1 muỗng canh ướp bò + 2 muỗng canh phi tỏi xào bò",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 45,
+          "unit": "ml"
+        }
+      },
+      "note": "vnexpress: 1 muỗng canh dầu ướp bò + phi thơm tỏi xào (không định lượng); cet.edu.vn: 4 muỗng canh dầu phi tỏi cho 500 g bánh phở — mâu thuẫn; lấy 2 muỗng canh phi/xào cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 33,
+        "unit": "g",
+        "text": "33 g",
+        "gramEquivalent": 33,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 33,
+          "unit": "g"
+        }
+      },
+      "note": "Nước chấm theo tỉ lệ vnexpress: 50 g đường cho 4–5 người → 33 g cho 3 người. cet.edu.vn dùng 90 g đường cho tô nước chấm lớn hơn nhiều — mâu thuẫn, ưu tiên tỉ lệ vnexpress vì ghi rõ số người ăn 4–5.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "USDA không trả sugar_g/fiber_g cho 'Sugars, granulated'; để null theo quy tắc."
+    },
+    {
+      "position": 12,
+      "sourceName": "Giấm gạo",
+      "canonicalIngredientId": "ING_ENR_422700EA71994D6A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 33,
+        "unit": "ml",
+        "text": "33 ml",
+        "gramEquivalent": 33,
+        "basis": "tỉ trọng giấm ≈ 1 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 33,
+          "unit": "ml"
+        }
+      },
+      "note": "Nước chấm theo tỉ lệ vnexpress: 50 ml giấm cho 4–5 người → 33 ml cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0,
+        "carbohydrateG": 0.04,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.04,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172237",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 165,
+        "unit": "ml",
+        "text": "165 ml",
+        "gramEquivalent": 165,
+        "basis": "tỉ trọng nước = 1 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 165,
+          "unit": "ml"
+        }
+      },
+      "note": "Nước chấm theo tỉ lệ vnexpress: 250 ml nước cho 4–5 người → 165 ml cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 14,
+      "sourceName": "Tương ớt",
+      "canonicalIngredientId": "ING_ENR_3DA6FC9D8ECE414B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê tương ớt ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "vnexpress: thêm chút tương ớt vào nước chấm cho lên màu đẹp và vị the cay (nước chấm phở cuốn Hà Nội chuẩn không có tỏi ớt băm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA chỉ có 'tomato chili sauce' kiểu Mỹ, không tương đương tương ớt Việt Nam — để null toàn bộ."
+    },
+    {
+      "position": 15,
+      "sourceName": "Đu đủ xanh (làm dưa góp)",
+      "canonicalIngredientId": "ING_ENR_85865E89580E4A30",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đu đủ xanh via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "vnexpress: dưa góp làm từ đu đủ hoặc su hào + cà rốt, ăn kèm trong bát nước chấm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 43,
+        "proteinG": 0.47,
+        "carbohydrateG": 10.82,
+        "fatG": 0.26,
+        "fiberG": 1.7,
+        "sugarG": 7.82,
+        "sodiumMg": 8
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169926",
+      "sourceNutritionNote": "USDA chỉ có đu đủ chín; đu đủ xanh ít đường hơn — số liệu chỉ tham chiếu gần đúng."
+    },
+    {
+      "position": 16,
+      "sourceName": "Cà rốt (làm dưa góp)",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "vnexpress: dưa góp đu đủ/cà rốt; cet.edu.vn: 1/2 củ cà rốt làm dưa góp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế rau: xà lách xoăn, húng Láng, rau mùi nhặt sạch, rửa nhiều lần rồi vẩy thật ráo nước.",
+      "tip": "Rau phải ráo thì cuốn mới chắc, bánh phở không bị ướt nhão (vnexpress)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Chuẩn bị bánh phở: bóc từng miếng bánh phở tươi, cắt lại thành miếng chữ nhật khoảng 25×12 cm (vừa với chiều dài lá xà lách) để cuốn gọn, đẹp.",
+      "tip": "cet.edu.vn: cắt bánh phở 25×12 cm; vnexpress: cắt lại cho vừa chiều dài rau xà lách."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế bò và tỏi: thịt bò thăn dùng dao sắc lọc sạch gân, thái lát mỏng ngang thớ, to bản. Tỏi bóc vỏ, băm hoặc giã nhuyễn.",
+      "tip": "vnexpress: giã tỏi rồi vắt lấy nước cốt để ướp bò cho thấm, giữ phần xác tỏi lại để phi thơm xào bò — thịt thơm hơn hẳn."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Ướp bò: cho thịt bò vào âu, ướp với nước cốt tỏi (hoặc 1/2 lượng tỏi băm), 1 muỗng canh nước mắm, 1 muỗng cà phê hạt nêm, 1 muỗng cà phê tiêu, 1 muỗng canh dầu ăn (và 1 muỗng cà phê bột ngọt nếu dùng). Trộn đều, ướp 30 phút cho thấm.",
+      "tip": "Dầu ăn giúp miếng bò bóng mướt; có bột năng thì thêm 1/2 muỗng cà phê để giữ nước, bò mềm mọng hơn (vnexpress).",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Pha nước chấm: khuấy tan 33 g đường với 165 ml nước lọc (có thể đun sôi nhẹ cho nhanh tan rồi để nguội), thêm 33 ml nước mắm, 33 ml giấm và 1 muỗng cà phê tương ớt; nêm lại cho vừa miệng.",
+      "tip": "Tỉ lệ chuẩn vnexpress: mắm : đường : giấm : nước = 1:1:1:5. Nước chấm phở cuốn Hà Nội chuẩn không có tỏi ớt băm."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Làm dưa góp: đu đủ xanh gọt vỏ, cà rốt gọt vỏ; thái sợi hoặc lát mỏng vừa ăn. Ngâm qua nước muối loãng 3–5 phút, rửa sạch nhiều lần, vắt nhẹ cho ráo.",
+      "tip": "cet.edu.vn: ướp dưa góp với muối 3–5 phút rồi rửa sạch 4–5 lần cho giòn, bớt hăng.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Xào bò: bắc chảo lên bếp lửa lớn, cho 2 muỗng canh dầu ăn; dầu nóng thì cho xác tỏi vào phi thơm vàng, trút thịt bò đã ướp vào xào nhanh tay đến khi vừa chín tới thì múc ra để riêng.",
+      "tip": "Xào lửa lớn, đảo nhanh để bò không ra nước; bò chín tới mới mềm ngọt, xào kỹ sẽ dai (vnexpress, cet.edu.vn).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cuốn phở: đeo găng tay, trải miếng bánh phở lên mặt phẳng sạch; đặt 1 lá xà lách, vài cọng húng Láng, rau mùi rồi gắp thịt bò xào dàn đều; cuộn tròn chặt tay. Làm lần lượt đến hết nguyên liệu.",
+      "tip": "Cho lượng nhân vừa phải và dàn đều để hai đầu cuốn không bị tóp; cuốn quá đầy sẽ bung, rách bánh (vnexpress, cet.edu.vn)."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Thưởng thức: bày phở cuốn ra đĩa (cắt đôi tùy thích); cho dưa góp vào bát, chan nước mắm chua ngọt lên và chấm ăn.",
+      "tip": "Ăn ngay khi bò còn ấm, rau còn tươi giòn là ngon nhất (vnexpress)."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 359.3,
+      "proteinG": 23.89,
+      "carbohydrateG": 34.98,
+      "fatG": 13.28,
+      "fiberG": 3.18,
+      "sugarG": 3.83,
+      "sodiumMg": 102.93
+    },
+    "originalPerServing": {
+      "energyKcal": 542.42,
+      "proteinG": 25.38,
+      "carbohydrateG": 48.95,
+      "fatG": 27.03,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 8,
+        "detail": "Bột ngọt: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Hạt tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 11,
+        "detail": "Đường: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Giấm gạo: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Tương ớt: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      8,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

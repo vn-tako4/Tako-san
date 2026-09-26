@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-8f6eeb8b34b7cd65",
+    "slug": "com-muc-nuong",
+    "title": "Cơm mực nướng"
+  },
+  "content": {
+    "description": "Mực nguyên nhồi cơm nướng thấm xì dầu, món ika meshi Hokkaido vừa lạ vừa ngon.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 40,
+    "servings": 3,
+    "difficulty": "medium",
+    "tags": [
+      "Ika meshi",
+      "Nhật Bản",
+      "Mực",
+      "Nhồi cơm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-8f6eeb8b34b7cd65.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://cookpad.com/jp/recipes/20861764",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.asahibeer.co.jp/enjoy/recipe/search/recipe.psp.html?CODE=0000002156",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mực tươi (mực ống, nguyên con)",
+      "canonicalIngredientId": "ING_ENR_FCBE7860C4416026",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "con",
+        "text": "3 con",
+        "gramEquivalent": 450,
+        "basis": "masayukiz: スルメイカ 3杯 cho 3 phần; 1 con mực ống sau khi làm sạch ~150 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Dùng mực tươi nguyên con gồm cả thân và xúc tu; masayukiz dùng スルメイカ (mực ống Nhật). Asahi cũng dùng するめいか 2杯/4 phần — hai nguồn đồng thuận về loại mực.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 79,
+        "proteinG": 16.24,
+        "carbohydrateG": 0.82,
+        "fatG": 0.7,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 372
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174215",
+      "sourceNutritionNote": "USDA không công bố hàm lượng đường (total sugars) cho mục này nên để null."
+    },
+    {
+      "position": 1,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 35,
+        "basis": "masayukiz: 醤油 大さじ2 cho 3 phần = 30 ml; tỉ trọng xì dầu ~1.18 → 30 × 1.18 ≈ 35 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN NHẸ: masayukiz cho gia vị vào chảo SAU khi đã nướng mực hai mặt; Asahi ƯỚP mực 20 phút trong hỗn hợp gia vị rồi mới nướng vỉ, vừa nướng vừa phết nước ướp. Hai cách đều cho vị tương đương — làm theo masayukiz (đúng 3 phần, làm bằng chảo gia đình).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Rượu sake nấu ăn (日本酒)",
+      "canonicalIngredientId": "ING_ENR_C98271C014B829A4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "masayukiz: 日本酒 大さじ2 cho 3 phần = 30 ml; tỉ trọng sake ~1.0",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 134,
+        "proteinG": 0.5,
+        "carbohydrateG": 5,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167723",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Mirin",
+      "canonicalIngredientId": "ING_ENR_ADD0B636AF255631",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "masayukiz: みりん 大さじ1 cho 3 phần = 15 ml; tỉ trọng mirin ~1.0",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có mục mirin phù hợp nên để null."
+    },
+    {
+      "position": 4,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 24,
+        "basis": "masayukiz: 砂糖 大さじ2 cho 3 phần; 1 muỗng canh đường cát ≈ 12 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tạo vị ngọt hài hòa kiểu sốt teriyaki và giúp sốt sánh bóng khi cạn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 20,
+        "basis": "1 cây hành lá ~10 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Gợi ý món có hành lá để rắc lên cơm mực; Asahi dùng lá tía tô (青ジソ) ăn kèm thay thế — có thể thay bằng tía tô hoặc thêm mayonnaise + ớt 7 vị kiểu屋台.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 27,
+        "proteinG": 0.97,
+        "carbohydrateG": 5.74,
+        "fatG": 0.47,
+        "fiberG": 1.8,
+        "sugarG": 3.91,
+        "sodiumMg": 15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170006",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Vo gạo thật sạch, cho vào nồi với lượng nước vừa đủ (2合), nấu cơm như bình thường. Trong lúc chờ cơm chín thì sơ chế mực.",
+      "tip": "Nấu cơm trước vì cơm cần 30-40 phút (nấu + ủ), trong khi mực chỉ mất khoảng 15 phút.",
+      "timerMinutes": 35
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế mực: một tay giữ thân, một tay rút phần đầu-xúc tu kèm nội tạng ra khỏi thân; rút bỏ xương sống trong suốt (軟甲), bỏ túi mực nếu còn sót; rửa sạch bên trong thân mực dưới vòi nước.",
+      "tip": "masayukiz: chỗ thân và nội tạng dính nhau có một đường viền đỏ — luồn ngón tay vào đó là rút ra dễ dàng."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cắt rời xúc tu khỏi phần đầu ở ngay dưới mắt, bỏ mắt và mỏ cứng (phần như hạt nhựa ở giữa xúc tu). Thấm khô toàn bộ mực bằng khăn giấy.",
+      "tip": "Thấm thật khô để khi áp chảo mực không bị bắn dầu/nước và dễ cháy xém đẹp (Asahi)."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Dùng dao khía nhẹ mặt ngoài thân mực thành các đường caro hoặc đường song song cách nhau khoảng 1 cm, KHÔNG khía đứt hẳn.",
+      "tip": "Mẹo chung của cả hai nguồn: khía giúp mực không bị cong vênh khi gặp nóng, gia vị ngấm sâu và trình bày đẹp như mực nướng屋台."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Trộn đều hỗn hợp sốt: xì dầu, rượu sake, mirin, đường và gừng mài trong một bát nhỏ, khuấy cho đường tan bớt."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Bắc chảo lớn lên bếp lửa vừa-lớn cho thật nóng (không cần cho dầu, hoặc láng một lớp dầu thật mỏng). Xếp 3 thân mực vào chảo, áp mỗi mặt khoảng 2 phút đến khi thân mực săn lại và hơi cháy xém.",
+      "tip": "CẢNH BÁO của cả hai nguồn: mực rất nhanh dai — chỉ nướng vừa chín tới, thấy thân mực phồng và chuyển màu đục là được, đừng nướng quá lâu.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Lật mặt mực, đổ toàn bộ hỗn hợp sốt vào chảo, đảo và lật mực liên tục cho sốt áo đều, đun đến khi sốt sánh lại và bám bóng quanh thân mực thì tắt bếp.",
+      "tip": "masayukiz cho sốt vào SAU khi nướng hai mặt (khác với Asahi ướp trước 20 phút rồi nướng vỉ) — cách này nhanh, hợp bếp gia đình không có vỉ nướng.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Gắp mực ra thớt, thái thân mực thành khoanh vừa ăn. Cho xúc tu vào chảo với phần sốt còn lại, đảo nhanh 1-2 phút cho chín rồi gắp ra.",
+      "tip": "masayukiz nướng riêng xúc tu bằng sốt còn dư trong chảo — xúc tu nhỏ nên rất nhanh chín, đừng để lâu.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Xới cơm nóng ra 3 bát, xếp khoanh mực và xúc tu nướng lên trên, rưới đều phần sốt còn lại trong chảo lên mặt. Rắc hành lá thái nhỏ rồi dọn ngay khi còn nóng.",
+      "tip": "Ăn ngay khi nóng là ngon nhất; có thể dọn kèm mayonnaise và ớt bột 7 vị (shichimi) kiểu屋台 như gợi ý của Asahi."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Mực tươi (mực ống, nguyên con): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Rượu sake nấu ăn (日本酒): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Mirin: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

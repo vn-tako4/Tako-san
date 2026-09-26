@@ -1,0 +1,937 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-9236740e2b55e8a1",
+    "slug": "com-chien-ga-thai",
+    "title": "Cơm chiên gà Thái"
+  },
+  "content": {
+    "description": "Cơm chiên gà-ớt khao pad gai cay nhẹ Thái Lan, bữa tối nhanh gọn đậm đường phố.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Khao pad",
+      "Thái Lan",
+      "Cơm chiên",
+      "Nhanh"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-9236740e2b55e8a1.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://rachelcooksthai.com/khao-pad-gai/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://hungryinthailand.com/chicken-thai-fried-rice/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cơm trắng nấu chín, để nguội (gạo jasmine)",
+      "canonicalIngredientId": "ING_ENR_0E7637F396A027E3",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": "cân trực tiếp 450 g cơm chín (tương đương 3 chén cơm; 1 chén cơm chín ≈ 150 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn đều nhấn mạnh dùng cơm nguội/để tủ lạnh qua đêm để hạt cơm tơi, không nhão (Rachel Cooks Thai; Hungry in Thailand). Rachel dùng 3 chén cơm chín cho công thức.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 130,
+        "proteinG": 2.69,
+        "carbohydrateG": 28.17,
+        "fatG": 0.28,
+        "fiberG": 0.4,
+        "sugarG": 0.05,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168878",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt đùi gà (không xương, không da)",
+      "canonicalIngredientId": "ING_ENR_3D6534CBC8127775",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "g",
+        "text": "250 g",
+        "gramEquivalent": 250,
+        "basis": "cân trực tiếp thịt đùi gà không xương, cắt miếng vừa ăn",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 250,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn về tỷ lệ: Rachel dùng 1/2 chén thịt gà (~75 g) cho 3 chén cơm; Hungry in Thailand dùng 100 g gà cho 190 g cơm (~1-2 phần). Định lượng 250 g cho 3 phần (450 g cơm) lấy theo tỷ lệ của Hungry in Thailand, vì Rachel thiên về cơm chiên ít đạm hơn. Cả hai nguồn đều đồng ý đùi gà mềm ngon hơn ức gà.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 121,
+        "proteinG": 19.66,
+        "carbohydrateG": 0,
+        "fatG": 4.12,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 95
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173627",
+      "sourceNutritionNote": "Số liệu cho thịt đùi gà sống, chưa xương da."
+    },
+    {
+      "position": 2,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 100,
+        "basis": "1 quả trứng gà lớn ≈ 50 g (USDA FoodData Central: 1 large egg = 50 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Rachel dùng 2 quả cho 3 chén cơm; Hungry dùng 1 quả cho 190 g cơm (~2,4 quả cho 450 g cơm) — hai nguồn tương đồng, lấy 2 quả.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành tím băm nhỏ",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Hành tím via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 45,
+        "basis": "1 muỗng canh hành tím băm ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rachel: 3 muỗng canh hành tím cho công thức 3 chén cơm; Hungry dùng 30 g hành tây thái hạt lựu cho 1-2 phần (có thể thay hành tím bằng hành tây theo Rachel).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi băm nhỏ",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 10,
+        "basis": "1 tép tỏi ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng 2 tép cho khẩu phần nhỏ hơn (Rachel cho 3 chén cơm/2 phần; Hungry cho 1-2 phần); tăng lên 3 tép cho 3 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 6,
+        "basis": "1 quả ớt hiểm ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Rachel không cho ớt vào chảo mà dọn kèm Prik Nam Pla (nước mắm ớt) để thực khách tự nêm độ cay. 3 quả ớt hiểm thái lát pha cùng nước mắm làm nước chấm ăn kèm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu loãng (light soy sauce)",
+      "canonicalIngredientId": "ING_ENR_E5B484FA2147FE0A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh xì dầu ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rachel: 1 muỗng canh cho 3 chén cơm; Hungry: 0,5 muỗng canh cho 190 g cơm (~1,2 muỗng cho 450 g cơm) — hai nguồn tương đồng, lấy 1,5 muỗng canh cho 3 phần. Cả hai đều khuyên dùng xì dầu loãng nhãn hiệu Thái.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước mắm (để nêm cơm chiên)",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 22.5,
+        "basis": "1 muỗng canh nước mắm ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rachel: 1 muỗng canh nước mắm cho 3 chén cơm; Hungry dùng bột nêm Rosdee + muối thay cho nước mắm — mâu thuẫn về cách nêm. Lấy theo Rachel (nước mắm là gia vị đặc trưng của khao pad theo cả hai nguồn ở phần giới thiệu), tăng lên 1,5 muỗng canh cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước mắm (pha Prik Nam Pla ăn kèm)",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 muỗng canh nước mắm ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Prik Nam Pla là nước chấm ăn kèm bắt buộc theo Rachel: nước mắm + ớt thái lát. Pha riêng 2 muỗng canh nước mắm với ớt hiểm thái lát ở trên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 8,
+        "basis": "1 muỗng cà phê đường = 4 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 8,
+          "unit": "g"
+        }
+      },
+      "note": "Hungry dùng 1 muỗng cà phê đường cho 190 g cơm; Rachel không dùng đường trong cơm chiên (chỉ nêm mặn). Lấy 2 muỗng cà phê cho 3 phần theo tỷ lệ Hungry, giúp cân bằng vị mặn của nước mắm/xì dầu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Tiêu trắng xay",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "1/2 muỗng cà phê tiêu trắng xay ≈ 1,5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều dùng tiêu trắng (Prik Thai) rắc cuối, chỉ 'một nhúm'/'dash' không định lượng cụ thể; lấy 1/2 muỗng cà phê cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.61,
+        "fatG": 2.12,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": "USDA không công bố hàm lượng đường cho tiêu trắng nên để null."
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh dầu ăn = 15 ml ≈ 13,6 g (tỉ trọng dầu ~0,91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rachel: 'một muỗng canh hoặc hơn' để phi thơm + thêm dầu khi chiên trứng; Hungry: 2 muỗng canh cho toàn bộ quá trình. Lấy 2 muỗng canh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 24,
+        "basis": "1 muỗng canh hành lá thái khoanh ≈ 8 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rachel: 3 muỗng canh hành lá thái khoanh, cho vào cuối cùng rồi tắt bếp ngay để không bị héo nâu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Ngò rí",
+      "canonicalIngredientId": "ING_ENR_0F9D040BCEE6A9AF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 10,
+        "basis": "1 muỗng canh ngò rí thái nhỏ ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rachel dùng 3 muỗng canh ngò rí thái nhỏ cho vào cùng hành lá ở cuối; Hungry không dùng ngò rí. Lấy 2 muỗng canh cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "cân trực tiếp",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Tùy chọn theo Hungry in Thailand (30 g cà rốt thái hạt lựu cho 1-2 phần); Rachel không dùng rau củ. Giữ nguyên 30 g cho 3 phần vì chỉ là rau điểm xuyết.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Cải ngọt (cải thìa)",
+      "canonicalIngredientId": "ING_ENR_63A41E3F259EAAAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "cân trực tiếp",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "Tùy chọn theo Hungry in Thailand: 50 g cải ngọt (Chinese broccoli), thân thái lát, lá thái nhỏ, cho vào xào cùng cơm 1-2 phút cho vừa chín tới còn giòn. Rachel không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 26,
+        "proteinG": 1.2,
+        "carbohydrateG": 4.67,
+        "fatG": 0.76,
+        "fiberG": 2.6,
+        "sugarG": 0.88,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169404",
+      "sourceNutritionNote": "Dùng số liệu USDA của Chinese broccoli sống."
+    },
+    {
+      "position": 16,
+      "sourceName": "Bột nêm (hoặc bột ngọt)",
+      "canonicalIngredientId": "ING_ENR_4A1D939791A6D28A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê bột nêm ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tùy chọn: Hungry dùng 1 muỗng cà phê bột nêm Rosdee (gia vị nêm kiểu Thái) cho 1-2 phần; Rachel không dùng. Nếu không có Rosdee có thể thay bằng một nhúm bột ngọt hoặc bỏ qua.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có số liệu dinh dưỡng generic cho bột nêm Rosdee trên USDA nên để null."
+    },
+    {
+      "position": 17,
+      "sourceName": "Dưa leo (ăn kèm)",
+      "canonicalIngredientId": "CUCUMBER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "quả",
+        "text": "0.5 quả",
+        "gramEquivalent": 100,
+        "basis": "1/2 quả dưa leo ≈ 100 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Tùy chọn ăn kèm theo cả hai nguồn: thái lát, ăn xen giữa các miếng cơm chiên để thêm độ giòn mát.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 10,
+        "proteinG": 0.59,
+        "carbohydrateG": 2.16,
+        "fatG": 0.16,
+        "fiberG": 0.7,
+        "sugarG": 1.38,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169225",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 18,
+      "sourceName": "Chanh tươi (cắt múi ăn kèm)",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 50,
+        "basis": "1 quả chanh ≈ 50 g; chỉ dùng để cắt múi ăn kèm, lượng vắt thực tế rất ít",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều dọn cơm chiên kèm múi chanh để thực khách tự vắt thêm vị chua. Lượng dùng thực tế chỉ vài giọt nên không tính dinh dưỡng.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Gia vị ăn kèm, vắt theo khẩu vị nên để null."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Chuẩn bị cơm: dùng cơm jasmine đã nấu chín và để nguội (tốt nhất là cơm để tủ lạnh qua đêm cho hạt cơm khô tơi). Nếu chỉ có cơm mới nấu, trải mỏng cơm ra khay cho bay hơi bớt trong lúc sơ chế nguyên liệu.",
+      "tip": "Cơm nguội khô hạt khi xào sẽ tơi, không bị nhão dính (Rachel Cooks Thai)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế nguyên liệu: hành tím và tỏi băm nhỏ; hành lá thái khoanh; ngò rí thái nhỏ; thịt gà cắt miếng vừa ăn; cà rốt thái hạt lựu; cải ngọt cắt khúc ngắn. Pha sẵn chén Prik Nam Pla: 2 muỗng canh nước mắm + ớt hiểm thái lát.",
+      "tip": "Món xào Thái chín rất nhanh nên phải sơ chế và đong hết gia vị trước khi bật bếp."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun nóng 1 muỗng canh dầu ăn trong chảo/wok với lửa vừa-cao. Cho tỏi và hành tím vào phi thơm đến khi tỏi hơi vàng, hành tím trong (khoảng 1-2 phút), đảo liên tục để tỏi không cháy.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho thịt gà vào xào cùng tỏi hành đến khi gà gần chín, mặt thịt hơi vàng (khoảng 3-4 phút). Không xào quá kỹ vì gà còn chín tiếp khi xào chung với cơm.",
+      "tip": "Rachel lưu ý: đùi gà mềm hơn ức gà; nếu dùng ức gà thì xào nhanh tay tránh bị khô.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho cơm nguội vào chảo, dùng muôi dầm tơi các cục cơm vón. Đảo đều cho cơm trộn lẫn với gà và tỏi hành, sau đó rưới xì dầu và nước mắm (nêm cơm chiên) quanh thành chảo, đảo nhanh tay cho hạt cơm thấm đều gia vị và lên màu.",
+      "tip": "Để yên cơm vài giây mỗi lần đảo cho hạt cơm hơi cháy xém sẽ thơm hơn (Rachel).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Gạt cơm sang một bên chảo, cho 1 muỗng canh dầu còn lại vào khoảng trống giữa chảo cho nóng, đập trứng vào. Để trứng hơi se mặt rồi dùng muôi đánh tơi, sau đó trộn đều trứng vào cơm.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nêm đường, tiêu trắng và một nhúm muối (nếu dùng bột nêm thì cho vào lúc này). Cho cà rốt và cải ngọt vào (nếu dùng), xào thêm 1-2 phút cho rau vừa chín tới nhưng vẫn giữ độ giòn.",
+      "tip": "Hungry in Thailand: rau chỉ xào 1-2 phút cho hơi mềm nhưng còn giòn.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Tắt bếp, cho hành lá và ngò rí vào đảo nhanh tay rồi dọn ra ngay.",
+      "tip": "Rachel nhấn mạnh: cho rau thơm vào rồi tắt bếp ngay, để trên bếp lâu hành ngò sẽ héo nâu mất ngon."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Dọn cơm chiên ra đĩa, rắc thêm một ít tiêu trắng xay lên trên. Ăn kèm dưa leo thái lát, múi chanh và chén Prik Nam Pla để chấm thêm.",
+      "tip": "Vắt chanh và rưới Prik Nam Pla vào cơm theo khẩu vị — vị chua cay mặn hài hòa là đặc trưng của khao pad (Rachel)."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 111.15,
+      "proteinG": 16.38,
+      "carbohydrateG": 2.67,
+      "fatG": 3.43,
+      "fiberG": 0,
+      "sugarG": 2.66,
+      "sodiumMg": 79.19
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cơm trắng nấu chín, để nguội (gạo jasmine): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Trứng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành tím băm nhỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi băm nhỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Ớt hiểm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Xì dầu loãng (light soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước mắm (để nêm cơm chiên): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước mắm (pha Prik Nam Pla ăn kèm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Tiêu trắng xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Ngò rí: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      16
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 16,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

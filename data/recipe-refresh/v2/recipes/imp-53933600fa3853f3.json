@@ -1,0 +1,634 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-53933600fa3853f3",
+    "slug": "bo-xao-nam-han",
+    "title": "Bò xào nấm Hàn"
+  },
+  "content": {
+    "description": "Bò mềm xào nấm-hành tây tương mè mặn ngọt, món xào Hàn đậm đà chan cơm nóng.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Xào",
+      "Bò",
+      "Nấm",
+      "Hàn Quốc"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-53933600fa3853f3.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.maangchi.com/recipe/bulgogi",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.maangchi.com/recipe/spicy-bulgogi",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt bò thăn (thái lát mỏng)",
+      "canonicalIngredientId": "ING_ENR_745FC31DDEB3506D",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Thịt bò thăn via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi (cả 2 công thức bulgogi) dùng 1 lb ≈ 454 g thịt bò thái mỏng cho 2-4 phần; lấy 450 g cho 3 phần. Maangchi khuyên chọn thịt có vân mỡ (thăn, diềm thăn), thái mỏng ngang thớ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 140.1,
+        "proteinG": 21.98,
+        "carbohydrateG": 0.22,
+        "fatG": 5.71,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 42.9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2727574",
+      "sourceNutritionNote": "Mục Foundation 'Beef, top sirloin steak, raw' không báo cáo chất xơ và đường tổng (không đáng kể trong thịt bò tươi). Năng lượng theo 'Energy (Atwater General Factors)'."
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 200,
+        "basis": "1 cây nấm đùi gà lớn ≈ 90-110 g (thay đổi theo kích cỡ); lấy tròn 100 g/cây",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi (spicy bulgogi) dùng 1 cây nấm đùi gà thái lát dọc mỏng cho 2-4 phần. Món này nấm là nguyên liệu chính ('bò xào nấm') nên tăng lên 2 cây để nấm hiện diện rõ; cách thái lát dọc theo Maangchi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 46.4,
+        "proteinG": 2.41,
+        "carbohydrateG": 8.5,
+        "fatG": 0.31,
+        "fiberG": 3.01,
+        "sugarG": null,
+        "sodiumMg": 0.77
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003599",
+      "sourceNutritionNote": "Mục Foundation 'Mushroom, king oyster'. Năng lượng theo 'Energy (Atwater General Factors)'; mục này không báo cáo đường tổng."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ nhỏ",
+        "text": "1 củ nhỏ",
+        "gramEquivalent": 80,
+        "basis": "1 củ hành tây nhỏ ≈ 80 g (USDA: 1 củ vừa = 110 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn về hành tây: công thức bulgogi classic của Maangchi chỉ dùng hành tây xay nhuyễn trong sốt ướp (không xào cùng); nguồn YouTube Hàn (golden recipe) dùng 1/2 củ thái lát cho 600 g thịt. Lấy 1 củ nhỏ thái múi cau xào cùng cho đúng mô tả món 'bò xào nấm-hành tây'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": null,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": "Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 45,
+        "basis": "USDA FoodData: 1 cây hành lá cỡ vừa ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi (spicy bulgogi): 4 cây cắt khúc dài ~6 cm cho 2-4 phần; bản classic: 1 cây băm nhỏ trong sốt ướp. Lấy 3 cây cắt khúc xào cùng nấm theo bản spicy.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "Dùng mục SR Legacy 'Onions, spring or scallions (includes tops and bulb), raw' (đủ bộ chỉ số). Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "tép",
+        "text": "4 tép",
+        "gramEquivalent": 12,
+        "basis": "USDA FoodData: 1 tép tỏi ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả 2 công thức Maangchi đều dùng 4-6 tép tỏi băm cho 1 lb thịt; bản classic: 4 tép.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "1 mc = 15 ml; tỉ trọng xì dầu ≈ 1,2 → ≈ 18 g/mc",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Theo đúng Maangchi bulgogi classic: 2 mc xì dầu cho 1 lb thịt. Dùng xì dầu thường (shoyu).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": null,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "Mục SR Legacy 'Soy sauce made from soy and wheat (shoyu)'. Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 6,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 25,
+        "basis": "USDA: 1 mc đường cát ≈ 12,5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi classic: 2 mc đường nâu cho 1 lb thịt (có thể thay bằng đường cát + mạch nha gạo). Nguồn YouTube Hàn: 1 mc đường + 1 mc oligosaccharide. Lấy 2 mc đường theo Maangchi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.98,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": "Đường cát: carbohydrate gần như hoàn toàn là đường nên sugar_g lấy bằng carbohydrate_g."
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "1 mc = 15 ml; tỉ trọng dầu ≈ 0,91 → ≈ 13,6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Theo đúng Maangchi classic: 1 mc dầu mè rang trong sốt ướp — tạo vị 'tương mè' đặc trưng của món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": "Dầu mè nguyên chất. Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 8,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.2,
+        "basis": "USDA FoodData: 1 mcf tiêu đen xay ≈ 2,3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi classic ghi 'a pinch'; bản spicy: 1/2 mcf. Lấy 1/2 mcf.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": null,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu ăn (để xào)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27.2,
+        "basis": "1 mc = 15 ml; tỉ trọng dầu ≈ 0,91 → ≈ 13,6 g/mc",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi (spicy bulgogi): 2 mc dầu ăn để xào nấm-hành trước khi cho thịt. Bản classic nướng nên không dùng dầu — nhưng món này là bản xào nên lấy theo bản spicy.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": "Dầu thực vật (đậu nành) tinh luyện. Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    },
+    {
+      "position": 10,
+      "sourceName": "Vừng rang (rắc mặt)",
+      "canonicalIngredientId": "ING_ENR_DAB9547F85EF53B1",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Vừng rang via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "USDA: 1 mc vừng ≈ 9 g → 1 mcf ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn YouTube Hàn: 'sprinkle with whole sesame seeds'. Maangchi không ghi trong công thức nhưng rắc vừng là cách trình bày bulgogi chuẩn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 573,
+        "proteinG": 17.73,
+        "carbohydrateG": 23.45,
+        "fatG": 49.67,
+        "fiberG": 11.8,
+        "sugarG": null,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170150",
+      "sourceNutritionNote": "Mục USDA của nguyên liệu này không báo cáo chỉ số đường tổng."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế thịt bò: thái lát mỏng khoảng 3 mm, thái ngang thớ thịt. Thấm khô bề mặt thịt bằng khăn giấy.",
+      "tip": "Maangchi nhấn mạnh: thịt thái mỏng ngang thớ thì mềm, dễ nhai; thịt để hơi đông lạnh sẽ thái mỏng dễ hơn. Chọn thịt có vân mỡ (thăn, diềm thăn) — thịt quá nạc xào sẽ dai."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Pha sốt ướp kiểu bulgogi: trong tô lớn cho 2 mc xì dầu, 2 mc đường, tỏi băm, 1 mc dầu mè và 1/2 mcf tiêu đen; khuấy đều đến khi đường tan.",
+      "tip": "Đây là sốt ướp của Maangchi (bulgogi classic). Bản gốc còn có lê Hàn xay và gừng băm — bỏ qua theo mô tả món 'tương mè mặn ngọt' và danh sách nguyên liệu gợi ý."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho thịt bò vào tô sốt, dùng tay trộn đều cho từng lát thịt thấm sốt. Bọc lại, ướp trong tủ lạnh ít nhất 15-30 phút.",
+      "tip": "Maangchi khuyên ướp ít nhất 30 phút, để qua đêm càng ngon với miếng thịt dày; thịt thái mỏng thì 15-30 phút là đủ thấm.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Trong lúc ướp thịt, sơ chế rau củ: nấm đùi gà thái lát dọc mỏng 3-4 mm; hành tây thái múi cau mỏng; hành lá cắt khúc dài khoảng 6 cm.",
+      "tip": "Thái nấm dọc theo thớ (lengthwise) như Maangchi để lát nấm giữ được độ dai ngon khi xào."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đặt chảo lớn (hoặc chảo sâu lòng) lên bếp lửa vừa-cao, cho 2 mc dầu ăn vào tráng đều khắp mặt chảo.",
+      "tip": "Chảo phải đủ nóng trước khi cho nguyên liệu vào — bí quyết xào của Cook with Dana cũng áp dụng ở đây: chảo nóng giúp thịt xém cạnh thay vì ra nước."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho nấm, hành tây và hành lá vào chảo, đảo nhanh tay khoảng 1-2 phút đến khi hành lá hơi xém vàng và nấm bắt đầu mềm, dậy mùi thơm.",
+      "tip": "Theo đúng trình tự của Maangchi (spicy bulgogi): xào hành lá và nấm trước 1 phút cho thơm rồi mới cho thịt vào.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Hạ lửa xuống mức vừa, cho toàn bộ thịt bò đã ướp (kể cả nước sốt ướp) vào chảo, dàn đều."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Xào thịt 3-5 phút, đảo đều tay đến khi thịt chín tới, chuyển màu nâu đều và nước sốt sánh lại bám quanh thịt, nấm và hành.",
+      "tip": "Maangchi: xào 3-5 phút là đủ vì thịt thái mỏng chín rất nhanh; xào lâu thịt sẽ dai và khô.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nếm và điều chỉnh vị: nhạt thì thêm chút xì dầu, muốn ngọt đậm hơn thì thêm chút đường, đảo đều rồi tắt bếp.",
+      "tip": "Maangchi khuyến khích tự điều chỉnh tỉ lệ sốt theo khẩu vị gia đình — công thức gốc chỉ là điểm khởi đầu."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Trút ra đĩa, rắc 1 mcf vừng rang lên trên. Dọn ngay với cơm nóng.",
+      "tip": "Bulgogi ngon nhất khi ăn nóng vừa xào xong. Có thể dọn kèm rau sống, kim chi và cuốn kiểu ssam như Maangchi gợi ý."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 428.08,
+      "proteinG": 36.59,
+      "carbohydrateG": 20.32,
+      "fatG": 23.02,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 728.44
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Thịt bò thăn (thái lát mỏng): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Nấm đùi gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu ăn (để xào): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

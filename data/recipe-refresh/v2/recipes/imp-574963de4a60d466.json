@@ -1,0 +1,578 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-574963de4a60d466",
+    "slug": "ca-hap-chanh-ot-thai",
+    "title": "Cá hấp chanh ớt Thái"
+  },
+  "content": {
+    "description": "Cá nguyên hấp chín trong nước chanh-ớt-tỏi chua tê, rưới nước sốt nóng, món pla neung manao thanh mát Thái Lan.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "medium",
+    "tags": [
+      "Pla neung",
+      "Thái Lan",
+      "Hấp",
+      "Chua tê"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-574963de4a60d466.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://hot-thai-kitchen.com/mark-wiens-pla-gapong-neung-manao",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.guaishushu1.com/thai-steamed-fish-with-lime-pla-neung-manao-or-%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%B0%E0%B8%9E%E0%B8%87%E0%B8%99%E0%B8%B6%E0%B9%88%E0%B8%87%E0%B8%A1%E0%B8%B0%E0%B8%99%E0%B8%B2%E0%B8%A7/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cá chẽm (barramundi) nguyên con, làm sạch",
+      "canonicalIngredientId": "ING_ENR_75ACD82C86B63F5A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "con",
+        "text": "1 con",
+        "gramEquivalent": 500,
+        "basis": "cân thực tế: 1 con ~500 g. Hot Thai Kitchen dùng cá barramundi (cá chẽm châu Á) nguyên con 1,5 lb (~680 g) cho 4 khẩu phần → 3 khẩu phần ≈ 510 g, làm tròn 1 con ~500 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Hot Thai Kitchen: barramundi là cá phổ biến nhất cho món này; có thể thay bằng cá rô phi, cá tráp (branzino) hoặc sea bass — cá trắng thịt chắc đều được. Công thức gốc dùng cá nguyên con nhưng cũng có thể dùng phi lê (giảm thời gian hấp).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 97,
+        "proteinG": 18.4,
+        "carbohydrateG": 0,
+        "fatG": 2,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 68
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175142",
+      "sourceNutritionNote": "USDA không có mục cá chẽm châu Á/barramundi nên dùng số liệu cá chẽm generic (Fish, sea bass, mixed species, raw) làm tương đương."
+    },
+    {
+      "position": 1,
+      "sourceName": "Sả tươi",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 25,
+        "basis": "1 cây sả phần dùng được (gốc trắng) ≈ 25 g — ước tính.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Hot Thai Kitchen: 1 cây sả (chỉ lấy nửa gốc), đập dập, cắt khúc, nhồi vào bụng cá cho 4 khẩu phần → 3 khẩu phần vẫn dùng 1 cây (làm tròn). Guai Shu Shu dùng 2 cây cho 4-6 khẩu phần — mâu thuẫn nhẹ, lấy theo Hot Thai Kitchen vì sả chỉ để nhồi thơm, 1 cây đủ cho cá 500 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.3,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "API USDA không trả số liệu fiber/sugar cho mục này nên để null, không tự điền."
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước dùng gà ngon (chicken stock)",
+      "canonicalIngredientId": "ING_ENR_D740739F1AE436CA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 90,
+        "unit": "ml",
+        "text": "90 ml",
+        "gramEquivalent": 90,
+        "basis": "1 ml nước dùng ≈ 1 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 90,
+          "unit": "ml"
+        }
+      },
+      "note": "Hot Thai Kitchen: 1⁄2 cup (120 ml) nước dùng gà hoặc nước dùng cá ngon cho 4 khẩu phần → 90 ml cho 3 khẩu phần. Guai Shu Shu: 1⁄2 cup nước dùng gà cho 4-6 khẩu phần — hai nguồn khớp. Nước dùng được đun sôi với đường trước rồi mới pha sốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 2.52,
+        "carbohydrateG": 3.53,
+        "fatG": 1.2,
+        "fiberG": 0,
+        "sugarG": 1.58,
+        "sodiumMg": 143
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172884",
+      "sourceNutritionNote": "Dùng mục nước dùng gà nấu tại nhà (Soup, stock, chicken, home-prepared) làm số liệu tham chiếu."
+    },
+    {
+      "position": 3,
+      "sourceName": "Đường thốt nốt băm nhỏ",
+      "canonicalIngredientId": "ING_ENR_A21CCD219EA432B0",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường thốt nốt via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 8,
+        "basis": "1 muỗng cà phê đường thốt nốt băm ≈ 4 g — ước tính (đường thốt nốt băm nhỏ, nén nhẹ).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen: 1 tbsp đường thốt nốt băm cho 4 khẩu phần → 3 khẩu phần ≈ 2 tsp. Guai Shu Shu dùng 1 tbsp ĐƯỜNG TRẮNG cho 4-6 khẩu phần — mâu thuẫn về loại đường, lấy đường thốt nốt theo Hot Thai Kitchen (chuẩn vị Thái hơn). Đường được đun tan trong nước dùng nóng trước khi pha sốt.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Nước cốt chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 45,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng nước cốt chanh ≈ 1,0.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen: 4 tbsp cho 4 khẩu phần → 3 tbsp cho 3 khẩu phần. Guai Shu Shu: 1⁄4 cup (= 4 tbsp, vắt từ 3-4 quả chanh Thái) cho 4-6 khẩu phần — hai nguồn khớp tỉ lệ. Chanh cho vào sốt SAU khi nước dùng đã nguội bớt (không đun sôi cùng) để giữ mùi thơm tươi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.42,
+        "carbohydrateG": 8.42,
+        "fatG": 0.07,
+        "fiberG": 0.4,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168156",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Nước mắm ngon",
+      "canonicalIngredientId": "ING_ENR_352C1AA29FB15A32",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 34,
+        "unit": "ml",
+        "text": "34 ml",
+        "gramEquivalent": 40,
+        "basis": "1 muỗng canh nước mắm ≈ 18 g (tỉ trọng ~1,2 g/ml); 21⁄4 muỗng canh ≈ 34 ml ≈ 40 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 34,
+          "unit": "ml"
+        }
+      },
+      "note": "Hot Thai Kitchen: 3 tbsp cho 4 khẩu phần → 21⁄4 tbsp (≈ 34 ml) cho 3 khẩu phần. Guai Shu Shu: 3 tbsp cho 4-6 khẩu phần — khớp tỉ lệ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7850
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Tỏi băm nhỏ",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 8,
+        "unit": "tép",
+        "text": "8 tép",
+        "gramEquivalent": 24,
+        "basis": "1 tép tỏi ≈ 3 g (USDA).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 8,
+          "unit": "piece"
+        }
+      },
+      "note": "Hot Thai Kitchen: 1 ĐẦU tỏi băm cho 4 khẩu phần (1 đầu ≈ 8-10 tép) → 3 khẩu phần ≈ 7-8 tép. Guai Shu Shu: 10 tép cho 4-6 khẩu phần — hai nguồn tương đương, lấy 8 tép.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Ớt hiểm Thái",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "quả",
+        "text": "5 quả",
+        "gramEquivalent": 5,
+        "basis": "1 quả ớt hiểm ≈ 1 g — ước tính.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "MÂU THUẪN: Hot Thai Kitchen ghi 'to taste' (tùy khẩu vị, không định lượng); Guai Shu Shu dùng 10 quả ớt hiểm + 2 quả ớt sừng cho 4-6 khẩu phần. Lấy 5 quả cho 3 khẩu phần (cay vừa), người ăn cay ít/cay nhiều tự điều chỉnh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Ngò rí (rau mùi)",
+      "canonicalIngredientId": "ING_ENR_A4DBF30834E778C1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 7,
+        "unit": "cọng",
+        "text": "7 cọng",
+        "gramEquivalent": 14,
+        "basis": "1 cọng ngò rí ≈ 2 g — ước tính.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 7,
+          "unit": "piece"
+        }
+      },
+      "note": "Hot Thai Kitchen: 8-10 cọng ngò rí thái nhỏ cho 4 khẩu phần → ~7 cọng cho 3 khẩu phần. Ngò cho vào sốt ngay trước khi rưới lên cá. Guai Shu Shu cũng dùng ngò/rễ ngò trong sốt — khớp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Cần tàu (rau cần Thái/Chinese celery)",
+      "canonicalIngredientId": "ING_ENR_00A4638B9E571FAF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 25,
+        "basis": "1 cây cần tàu nhỏ ≈ 25 g — ước tính.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Hot Thai Kitchen: 1 cây cần tàu cắt khúc 2-3 cm, phần lớn lá nhồi/xếp quanh mình cá khi dọn, cho 4 khẩu phần → 3 khẩu phần vẫn dùng 1 cây nhỏ (làm tròn). Đây là rau trang trí + ăn kèm đặc trưng của món, không thể thiếu theo Hot Thai Kitchen.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 14,
+        "proteinG": 0.69,
+        "carbohydrateG": 2.97,
+        "fatG": 0.17,
+        "fiberG": 1.6,
+        "sugarG": 1.34,
+        "sodiumMg": 80
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169988",
+      "sourceNutritionNote": "USDA không có mục cần tàu (Chinese celery) nên dùng số liệu cần tây thường (Celery, raw) làm tương đương."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Rửa sạch cá, thấm khô. Dùng dao khứa 3 đường chéo sâu trên mỗi mặt mình cá, đảm bảo các đường khứa hai bên vuông góc nhau để cá chín đều và thấm sốt.",
+      "tip": "Khứa cá giúp hơi nóng thấm vào phần thịt dày nhất, cá chín đều không bị sống trong."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đập dập cây sả, cắt thành khúc ngắn. Nhồi sả vào bụng cá, đặt cá lên đĩa sâu lòng chịu nhiệt vừa với xửng hấp.",
+      "tip": "Hot Thai Kitchen chỉ dùng nửa gốc cây sả — phần ngọn già xơ, ít thơm."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun sôi mạnh nồi nước hấp. Cho đĩa cá vào xửng, đậy kín nắp, hấp 8-12 phút tùy cỡ cá (cá ~500 g khoảng 10 phút) đến khi thịt cá đục, dùng nĩa tách nhẹ thấy róc.",
+      "tip": "Nước phải sôi thật mạnh mới cho cá vào; hấp lửa lớn để cá chín nhanh, thịt không bị bở.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Trong lúc chờ cá hấp, cho nước dùng gà và đường thốt nốt băm vào nồi nhỏ, đun lửa vừa-cao đến khi sôi, khuấy cho đường tan hoàn toàn rồi tắt bếp, đổ ra tô.",
+      "tip": "Đun đường tan trong nước dùng nóng giúp sốt sánh mượt, không lợn cợn.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho tỏi băm, ớt hiểm thái nhỏ, nước mắm và nước cốt chanh vào tô nước dùng còn nóng, khuấy đều. Nếm và chỉnh vị: sốt phải chua thanh nổi bật, mặn vừa, ngọt hậu và cay nồng mùi tỏi.",
+      "tip": "Chanh cho vào sau cùng, không đun sôi cùng sốt để giữ mùi thơm tươi — chanh đun lâu sẽ đắng."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cá chín thì cẩn thận chuyển cá sang đĩa phục vụ sâu lòng (đĩa có thành cao để chứa sốt).",
+      "tip": "Guai Shu Shu khuyên chắt bỏ phần nước cá đọng trong đĩa hấp trước khi rưới sốt để sốt không bị loãng — tùy chọn."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Xếp phần lớn lá cần tàu cắt khúc quanh mình cá. Cho ngò rí thái nhỏ vào tô sốt, khuấy đều rồi rưới toàn bộ sốt chanh tỏi ớt lên mình cá.",
+      "tip": "Rưới sốt khi cá còn thật nóng để cá thấm vị."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Trang trí thêm vài lá cần tàu lên trên. Dọn ngay khi còn nóng hổi, ăn kèm cơm trắng.",
+      "tip": "Món này ngon nhất khi ăn ngay — để nguội cá sẽ tanh và sốt mất thơm. GHI CHÚ CÁCH LÀM: Guai Shu Shu hấp cá mới 75% chín thì rưới sốt lên rồi hấp tiếp 5 phút; Hot Thai Kitchen hấp cá chín hoàn toàn rồi mới rưới sốt nóng lên trên — công thức này lấy theo Hot Thai Kitchen (đơn giản, sốt giữ được vị chanh tươi)."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cá chẽm (barramundi) nguyên con, làm sạch: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Sả tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nước dùng gà ngon (chicken stock): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Đường thốt nốt băm nhỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Nước cốt chanh tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Nước mắm ngon: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Tỏi băm nhỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Ớt hiểm Thái: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Ngò rí (rau mùi): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Cần tàu (rau cần Thái/Chinese celery): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

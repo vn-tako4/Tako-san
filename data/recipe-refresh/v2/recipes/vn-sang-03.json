@@ -1,0 +1,693 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "vn-sang-03",
+    "slug": "chao-thit-bam-gung-tia-to",
+    "title": "Cháo thịt bằm gừng tía tô giải cảm"
+  },
+  "content": {
+    "description": "Bát cháo hoa sánh mịn nấu từ hạt gạo rang thơm, thịt nạc heo băm ngọt lịm cùng lá tía tô và gừng già giải cảm hiệu quả.",
+    "cuisine": "vietnamese",
+    "category": "mon_nhanh_sang",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Cháo",
+      "Giải cảm",
+      "Ăn sáng",
+      "Ấm bụng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/vn-sang-03.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://cachnaungon.com/cach-nau-chao-thit-bam-tia-to-bo-duong-an-nong-giai-cam-10682/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.marrybaby.vn/mang-thai/cham-soc-me-bau/cach-nau-chao-giai-cam-cho-ba-bau/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Gạo tẻ",
+      "canonicalIngredientId": "ING_ENR_E917189F6ABE168C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 75,
+        "unit": "g",
+        "text": "75 g",
+        "gramEquivalent": 75,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 75,
+          "unit": "g"
+        }
+      },
+      "note": "Mâu thuẫn giữa hai nguồn: cachnaungon dùng 100 g gạo tẻ + 20 g gạo nếp cho 4 người (→ 75 g + 15 g cho 3 người); marrybaby ghi '1 bát gạo tẻ, 1 ít gạo nếp' cho nồi cháo thịt bằm mà không ghi số người. Lấy theo cachnaungon vì có số khẩu phần rõ ràng để nhân tỷ lệ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 365,
+        "proteinG": 7.13,
+        "carbohydrateG": 79.95,
+        "fatG": 0.66,
+        "fiberG": 1.3,
+        "sugarG": 0.12,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168877",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Gạo nếp",
+      "canonicalIngredientId": "ING_ENR_69108A70D9FE131A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Cachnaungon: 20 g gạo nếp trộn cùng gạo tẻ cho 4 người để cháo sánh; marrybaby: '1 ít gạo nếp cho cháo sánh'. Nhân tỷ lệ cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 370,
+        "proteinG": 6.81,
+        "carbohydrateG": 81.68,
+        "fatG": 0.55,
+        "fiberG": 2.8,
+        "sugarG": null,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168883",
+      "sourceNutritionNote": "Số liệu là gạo nếp trắng khô chưa nấu; key sugar_g là null vì mục USDA không có nutrientNumber 269."
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.1,
+        "unit": "lít",
+        "text": "1.1 lít",
+        "gramEquivalent": 1100,
+        "basis": "1 lít nước = 1000 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.1,
+          "unit": "l"
+        }
+      },
+      "note": "Cachnaungon: 1.5 lít nước cho 4 người; marrybaby: 1.5 lít nước. Nhân tỷ lệ → 1.1 lít cho 3 người. Thêm nước sôi nếu cháo đặc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 3,
+      "sourceName": "Thịt heo nạc xay",
+      "canonicalIngredientId": "ING_ENR_F835DD28A469E77B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn đồng thuận: cachnaungon và marrybaby đều dùng 200 g thịt xay cho 4 người → 150 g cho 3 người. Marrybaby ghi rõ 'thịt lợn băm nhuyễn'. Hint ghi 'thịt heo nạc băm nhỏ'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": 17.81,
+        "carbohydrateG": 0,
+        "fatG": 17.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 53.63
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2514745",
+      "sourceNutritionNote": "Mục Foundation 'Pork, ground, raw' không có nutrientNumber 208 (Energy, kcal) nên energy_kcal để null; các key khác lấy đúng theo brief."
+    },
+    {
+      "position": 4,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "củ",
+        "text": "0.5 củ",
+        "gramEquivalent": 75,
+        "basis": "cachnaungon: 1 củ cà rốt cho 4 người; marrybaby: 1 củ. Củ cà rốt vừa ~150 g → 1/2 củ ≈ 75 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Cà rốt và khoai tây không có trong hint assignment nhưng cả hai nguồn công thức cháo thịt bằm tía tô giải cảm đều dùng (cachnaungon, marrybaby). Giữ lại vì là công thức chuẩn của các nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Khoai tây",
+      "canonicalIngredientId": "ING_ENR_3A8C12C2984F3703",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "củ",
+        "text": "0.5 củ",
+        "gramEquivalent": 75,
+        "basis": "cachnaungon: 1 củ khoai tây cho 4 người; marrybaby: 1 củ. Củ khoai tây vừa ~150 g → 1/2 củ ≈ 75 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Xem note cà rốt: khoai tây có trong cả hai nguồn, không có trong hint.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 77,
+        "proteinG": 2.05,
+        "carbohydrateG": 17.49,
+        "fatG": 0.09,
+        "fiberG": 2.1,
+        "sugarG": 0.82,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170026",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Gừng già",
+      "canonicalIngredientId": "ING_ENR_9C7AA78BB65C769B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Cachnaungon: 1/2 củ gừng cho 4 người → ~15 g cho 3 người; marrybaby: thêm gừng khi múc cháo. Hint ghi 'gừng già thái chỉ'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Lá tía tô",
+      "canonicalIngredientId": "ING_ENR_F23B72762DAA75B9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 40,
+        "unit": "g",
+        "text": "40 g",
+        "gramEquivalent": 40,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 40,
+          "unit": "g"
+        }
+      },
+      "note": "Cachnaungon: 50 g tía tô cho 4 người → 40 g cho 3 người; marrybaby: '1 nắm lá tía tô' / '1 nhúm'. Thái sợi nhỏ, cho vào cuối rồi tắt bếp.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Tía tô (Perilla frutescens) không có mục generic SR Legacy/Foundation trong USDA FoodData Central (tìm 'perilla' không trả kết quả); USDA chỉ có 'Drumstick leaves' (lá chùm ngây) là món khác nên không dùng."
+    },
+    {
+      "position": 8,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "nhánh",
+        "text": "3 nhánh",
+        "gramEquivalent": 15,
+        "basis": "cachnaungon: 4 nhánh hành lá cho 4 người → 3 nhánh cho 3 người; USDA (fdcId 170005) có portion 1 nhánh hành lá ~5-6 g → 3 nhánh ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 12,
+        "basis": "cachnaungon: 1 muỗng canh nước mắm cho 4 người; USDA (fdcId 174531): 1 tbsp nước mắm = 18 g → nhân tỷ lệ 3/4: ~13.5 g ≈ 2 muỗng cà phê, làm tròn 12 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "cachnaungon: ướp thịt 1/2 muỗng canh + nêm 1/2 muỗng canh cho 4 người → nhân 3/4: ướp ~1 tsp + nêm ~1 tsp. Hạt nêm nhẹ hơn muối: 1 tsp ≈ 3 g (ước lượng theo tỉ trọng ~0.6 g/ml)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Marrybaby ướp thịt với '1/2 thìa súp hạt nêm' — đồng thuận với cachnaungon.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.66,
+        "carbohydrateG": 18.01,
+        "fatG": 13.88,
+        "fiberG": null,
+        "sugarG": 17.36,
+        "sodiumMg": 23875
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "Hạt nêm Việt không có trong USDA; dùng số liệu 'Soup, chicken broth or bouillon, dry' (bột nêm gà khô) làm tương đương gần nhất."
+    },
+    {
+      "position": 11,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 8,
+        "unit": "g",
+        "text": "8 g",
+        "gramEquivalent": 8,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 8,
+          "unit": "g"
+        }
+      },
+      "note": "Cachnaungon: ướp thịt 1/4 muỗng canh + nêm 1/3 muỗng canh cho 4 người → nhân 3/4 ≈ 3.5 g + 4.5 g = 8 g cho 3 người. (USDA fdcId 173468: 1 tsp muối = 6 g)",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "g",
+        "text": "2 g",
+        "gramEquivalent": 2,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "g"
+        }
+      },
+      "note": "Cachnaungon: ướp thịt 1/4 muỗng canh tiêu + rắc thêm lúc múc cho 4 người → ~2 g cho 3 người (1 tsp tiêu xay = 2.9 g theo USDA fdcId 170931). Hint ghi 'nước mắm ngon & tiêu'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Vo gạo tẻ và gạo nếp 1-2 lần cho sạch, chắt ráo nước."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Rang gạo: đặt nồi lên bếp, đợi nồi nóng thì cho gạo vào rang KHÔNG dầu trên lửa nhỏ khoảng 7 phút, đảo đều đến khi gạo chuyển màu trắng ngà.",
+      "tip": "Cả hai nguồn đều nhấn mạnh rang gạo không dầu giúp cháo thơm và hạt gạo không bị nát.",
+      "timerMinutes": 7
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đổ 1.1 lít nước lọc đã đun sôi vào nồi gạo rang, đun sôi rồi hạ lửa vừa, ninh cháo khoảng 25-30 phút đến khi hạt gạo nở mềm.",
+      "tip": "Marrybaby: thỉnh thoảng dùng thìa đảo, đưa vá sát đáy nồi để cháo không bám đáy và bị khét.",
+      "timerMinutes": 28
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Trong lúc ninh cháo, ướp thịt: cho 150 g thịt heo xay vào tô, ướp với 1 muỗng cà phê hạt nêm, 3.5 g muối (khoảng 1/2 muỗng cà phê) và 1 g tiêu xay. Trộn đều, để yên 15 phút cho thịt ngấm.",
+      "tip": "Cachnaungon: ướp 15 phút để thịt ngấm gia vị, cháo đậm đà hơn.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Sơ chế rau củ: cà rốt và khoai tây gọt vỏ, rửa sạch, cắt hạt lựu nhỏ vừa ăn. Gừng cạo vỏ, thái chỉ nhỏ. Lá tía tô rửa sạch, thái sợi. Hành lá cắt gốc, rửa sạch, cắt nhuyễn.",
+      "tip": "Cắt hạt lựu nhỏ giúp rau củ nhanh chín đều trong cháo."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Khi cháo đã mềm, cho cà rốt và khoai tây cắt hạt lựu vào, nấu thêm 10 phút với lửa vừa cho rau củ chín.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho thịt xay đã ướp vào nồi cháo, dùng vá khuấy đều tay để thịt tơi ra, không bị vón cục.",
+      "tip": "Cả hai nguồn đều dặn khuấy tơi thịt ngay khi cho vào để thịt không vón cục."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nêm thêm 4.5 g muối (khoảng 3/4 muỗng cà phê), 1 muỗng cà phê hạt nêm và 2 muỗng cà phê nước mắm. Khuấy đều, nếm lại cho vừa miệng, nấu thêm 3-5 phút cho thịt chín hẳn.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho lá tía tô thái sợi vào nồi, đảo đều một lượt rồi tắt bếp ngay.",
+      "tip": "Tía tô cho vào cuối để giữ hương thơm và không bị nồng đắng khi nấu lâu."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Múc cháo ra tô, rắc hành lá cắt nhuyễn, vài lát gừng thái chỉ và một ít tiêu xay lên trên. Ăn ngay khi còn nóng hổi để giải cảm.",
+      "tip": "Cachnaungon: món này hợp nhất khi ăn nóng lúc cơ thể yếu, bị cảm cúm. Mẹo chung của các nguồn: vì là cháo giải cảm, không nên xào thịt trước với dầu ăn vì sẽ nhiều dầu mỡ, khó tiêu."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 96.92,
+      "proteinG": 1.94,
+      "carbohydrateG": 21.3,
+      "fatG": 0.22,
+      "fiberG": 0.59,
+      "sugarG": 0.12,
+      "sodiumMg": 1035.58
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Gạo nếp: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 3,
+        "detail": "Thịt heo nạc xay: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Khoai tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 7,
+        "detail": "Lá tía tô: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      9,
+      10
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

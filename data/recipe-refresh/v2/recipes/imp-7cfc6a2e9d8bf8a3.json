@@ -1,0 +1,705 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-7cfc6a2e9d8bf8a3",
+    "slug": "canh-rau-muong-tom-dong",
+    "title": "Canh rau muống tôm đồng"
+  },
+  "content": {
+    "description": "Ngọn rau muống non nấu cùng tôm xay viên tròn mượt, món canh đồng quê giản dị mà ngọt nước cho bữa cơm mùa mưa.",
+    "cuisine": "vietnamese",
+    "category": "mon_canh",
+    "region": "nam",
+    "cookTimeMinutes": 20,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Món canh",
+      "Đồng quê",
+      "Nam Bộ",
+      "Cơm nhà"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-7cfc6a2e9d8bf8a3.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://saigonesebaguette.vn/cach-nau-canh-rau-muong/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "http://naungon.com/index.php?id=-cach-lam-canh-rau-muong-nau-tom-~-mon-viet-nam-canh-rau-muong-canh-tom-rau-muong-canh-tom-rau-muong-canh-tom-tuoi-nau-rau-muong-cach-nau-canh-ngon-",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Rau muống",
+      "canonicalIngredientId": "WATER_SPINACH",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "naungon.com: rau muống nhặt lấy cọng non và lá, bỏ cọng già; Saigonese Baguette: ngâm nước muối loãng 5 phút rồi rửa sạch, để ráo.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 19,
+        "proteinG": 2.6,
+        "carbohydrateG": 3.13,
+        "fatG": 0.2,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": 113
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169301",
+      "sourceNutritionNote": "Dùng 'Water convolvulus, raw' = rau muống (Ipomoea aquatica). USDA không công bố sugar_g → null."
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm đồng tươi",
+      "canonicalIngredientId": "ING_ENR_579781469430B337",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "Tên món ghi 'tôm đồng' (tôm nhỏ sống ở ruộng/đồng) — nguồn Saigonese Baguette dùng 100 g tôm thẻ, naungon dùng 5 con tôm tươi (tôm sú) cho lượng nước ít hơn; ở đây dùng 150 g tôm đồng bóc vỏ cho 4 phần (khoảng 12–15 con tùy cỡ). Tôm được giã/xay thô theo cách của naungon.com.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "USDA 175179 không công bố fiber_g và sugar_g → để null, không suy ra."
+    },
+    {
+      "position": 2,
+      "sourceName": "Cà chua chín",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 300,
+        "basis": "1 quả cà chua cỡ vừa ~100 g; 3 quả ≈ 300 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "MÂU THUẪN cách tạo vị chua: Saigonese Baguette dùng cả cà chua (3 trái) và me (1 vắt) — bản 'canh chua rau muống tôm' vị Nam; naungon.com KHÔNG dùng cà chua lẫn me. Hint của assignment ghi 'cà chua chín' (không có me) → dùng cà chua làm chất chua nhẹ, không cho me.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "củ",
+        "text": "2 củ",
+        "gramEquivalent": 20,
+        "basis": "1 củ hành tím ~10 g; 2 củ ≈ 20 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhánh",
+        "text": "2 nhánh",
+        "gramEquivalent": 10,
+        "basis": "1 nhánh hành lá ~5 g; 2 nhánh ≈ 10 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Có trong hint của assignment; Saigonese Baguette gợi ý có thể thêm hành lá cho thơm — để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 34,
+        "proteinG": 1.9,
+        "carbohydrateG": 6.5,
+        "fatG": 0.4,
+        "fiberG": 2.4,
+        "sugarG": 2.18,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170007",
+      "sourceNutritionNote": "Dùng entry 'Onions, welsh, raw' (hành lá) fdcId 170007 vì entry hành lá 2727585 thiếu energy."
+    },
+    {
+      "position": 5,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng nước mắm ~1,2 g/ml → ≈ 18 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Có trong hint và công thức naungon.com (1 muỗng cà phê cho ~2 chén nước); Saigonese Baguette không dùng nước mắm. Với 1,5 lít nước, dùng 1 muỗng canh và nêm lại cho vừa.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7850
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê muối ~6 g; 1⁄2 muỗng ≈ 3 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Saigonese Baguette: 1⁄2 muỗng cà phê muối tinh nêm nồi canh; naungon: 1 muỗng cà phê muối (cho lượng nước ít hơn) — lấy theo tỉ lệ nước 1,5 lít của Saigonese Baguette.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38800
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 7,
+        "basis": "1 muỗng cà phê hạt nêm ~5 g; 1,5 muỗng ≈ 7 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tổng 1,5 muỗng = 1⁄2 muỗng ướp tôm + 1 muỗng nêm nồi (theo tỉ lệ Saigonese Baguette).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.7,
+        "carbohydrateG": 18,
+        "fatG": 13.9,
+        "fiberG": 0,
+        "sugarG": 17.4,
+        "sodiumMg": 23900
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "Dùng số liệu hạt nêm khô dạng bột 'Soup, chicken broth or bouillon, dry' (hạt nêm dùng là dạng khô)."
+    },
+    {
+      "position": 8,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê đường ~4 g; 1⁄2 muỗng ≈ 2 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Saigonese Baguette: 1⁄2 muỗng cà phê đường cát ướp tôm; naungon không dùng đường — giữ theo Saigonese Baguette.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "USDA 746784 không công bố fiber_g và sugar_g → để null, không suy ra."
+    },
+    {
+      "position": 9,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.33,
+        "unit": "muỗng cà phê",
+        "text": "0.33 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1 muỗng cà phê tiêu ~3 g; 1⁄3 muỗng ≈ 1 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Saigonese Baguette: 1⁄3 muỗng cà phê tiêu ướp tôm + 1⁄3 muỗng nêm nồi; ở đây gộp 1⁄3 muỗng ướp tôm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Bột ngọt",
+      "canonicalIngredientId": "ING_ENR_0A4564D231578559",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê bột ngọt ~4 g; 1⁄2 muỗng ≈ 2 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ naungon.com có bột ngọt (1⁄2 muỗng cà phê); Saigonese Baguette không dùng — để optional.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tìm được bột ngọt (MSG) trong USDA FoodData Central → để null toàn bộ, không bịa số."
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh dầu = 15 ml ≈ 13,6 g (tỉ trọng dầu ~0,91); 2 muỗng ≈ 27 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Saigonese Baguette: 2 muỗng canh dầu ăn phi hành; naungon: 2 muỗng cà phê (cho lượng nước ít) — lấy theo Saigonese Baguette cho 1,5 lít nước.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "lít",
+        "text": "1.5 lít",
+        "gramEquivalent": 1500,
+        "basis": "1 lít nước = 1000 g; 1,5 lít = 1500 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "l"
+        }
+      },
+      "note": "Saigonese Baguette: 1,5 lít nước; naungon: ~2 chén nước (cho lượng nhỏ hơn) — lấy 1,5 lít cho 4 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước lọc không có giá trị dinh dưỡng."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Rau muống nhặt lấy phần cọng non và lá, bỏ cọng già và lá úa, ngắt khúc vừa ăn. Ngâm rau trong nước muối loãng khoảng 5 phút, rửa sạch nhiều lần với nước rồi để rổ cho ráo.",
+      "tip": "Saigonese Baguette: ngâm nước muối vừa làm sạch vừa giúp rau xanh hơn khi nấu."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cà chua rửa sạch, cắt bỏ cuống, thái múi cau. Hành tím lột vỏ, thái lát mỏng (hoặc băm nhỏ). Hành lá rửa sạch, cắt nhỏ."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Tôm đồng rửa sạch, bóc vỏ, rút chỉ đen, giữ lại gạch tôm nếu có. Cho tôm vào cối giã thô (có thể dùng máy xay xay thô). Ướp tôm với 1⁄3 muỗng cà phê muối, 1⁄2 muỗng cà phê hạt nêm, 1⁄2 muỗng cà phê đường và 1⁄3 muỗng cà phê tiêu, trộn đều để thấm.",
+      "tip": "naungon.com: giã thô tôm (kèm gạch tôm nếu có) giúp nước canh ngọt và có màu đẹp hơn."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Bắc nồi lên bếp, đun nóng 2 muỗng canh dầu ăn trên lửa vừa, cho hành tím vào phi đến khi vàng thơm."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho tôm đã ướp vào nồi, đảo đều đến khi tôm chuyển màu hồng và săn lại."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Thêm cà chua vào xào chung với tôm khoảng 3 phút để cà chua mềm và ra màu đẹp."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đổ 1,5 lít nước lọc vào nồi, mở lửa lớn đun sôi mạnh. Nêm 1⁄2 muỗng cà phê muối, 1 muỗng cà phê hạt nêm, 1 muỗng canh nước mắm và 1⁄2 muỗng cà phê bột ngọt (nếu dùng), khuấy tan."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Khi nước sôi thật mạnh, cho toàn bộ rau muống vào nồi. Đợi nước sôi trở lại thì nêm nếm lại gia vị cho vừa miệng."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Khi rau vừa chín tới (xanh mướt, còn giòn), cho hành lá vào, tắt bếp ngay. Múc canh ra tô, ăn nóng với cơm.",
+      "tip": "naungon.com: không nên đun lâu — rau mất độ giòn và màu xanh; không đậy nắp khi đang nấu để rau giữ màu xanh."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 137.29,
+      "proteinG": 11.52,
+      "carbohydrateG": 8.19,
+      "fatG": 7.56,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1224.96
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Rau muống: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Tôm đồng tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Cà chua chín: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành tím: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

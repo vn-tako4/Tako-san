@@ -1,4 +1,99 @@
-# Handoff — T20 release gate
+# Handoff — Recipe Content Refresh V2 PR #11 remediation
+
+**Current (2026-09-27): `RECIPE_REFRESH_V2_RESEARCH_CANONICALIZED`; release projection blocked.**
+Implementation commit `1f77902` contains the remediated source, compiler,
+validators, generated artifacts and tests. Starting PR head was
+`fbec18f1e2554068ec550c7a9b5c9afcd4da0b79`; starting main was
+`c81d6da2b3a9c051270b97953bfbb2c5aa34d057`.
+The source package is rebuilt from the original ZIP. It contains 500 IDs,
+4,938 steps and 6,766 ingredients. The provisional runtime fingerprint remains
+`6d0e3eb85696bb7c31bc54ac62783bc94432aaf008028eca79b17041f3eaed87`;
+the canonical source SHA-256 is
+`da87da20475fa8d7ec92c716e899ee572339573258ae6d9cc7f3f8f554f2d695`
+(previously `fc7eefe6573ee9de1083728db1f34b058954fa60ff478f7c5e41dce9e4570dbe`).
+No final release fingerprint exists. The manifest explicitly blocks release
+for runtime projection loss, provisional ingredient authority, incomplete
+source content verification, and nutrition evidence.
+`pnpm recipe:refresh:release-check` must fail with
+`RECIPE_REFRESH_RELEASE_BLOCKED`; `pnpm recipe:refresh:check` must pass.
+Of 2,996 excluded ingredient rows, 2,860 require reviewed transformation;
+136 are currently semantic exclusions. Reconciliation rows: 505 existing,
+0 reviewed new, 1,642 provisional new, 368 aliases. Declared URLs: 1,101;
+structurally valid URLs including one supporting source: 1,102;
+URL-specific content verification: 0. Nutrition: 1 publishable, 288 blocked,
+211 truthful null. Production rollout, 0040, recipe authority and T20 remain
+out of scope.
+
+Local verification: `git diff --check`, `pnpm recipe:refresh:check`,
+`pnpm recipe:import:check`, focused refresh tests (17/17), `pnpm typecheck`,
+`pnpm lint` and `pnpm check` passed (204 files / 4,597 tests, migration smoke,
+build). The release check intentionally exited 1 with all four typed blockers.
+Two fresh builds from the original ZIP reproduced the source artifact hash and
+provisional fingerprint; sampled generated files matched byte for byte.
+PR #11 was pushed at `dea13cddb0c153d325baa593700545d801c9e851` and
+remains OPEN/MERGEABLE. Hosted CI run `36268138066` on that exact head passed
+ESLint, typecheck, 204 files / 4,597 tests, migration smoke and web/worker
+build. The PR description has the same blocker/remote-boundary receipt.
+
+Next: verify hosted CI on this final documentation receipt, then hand PR #11
+to independent review without merging. Hoplite next reconciles the runtime/
+content model and evidence before any release artifact generation.
+
+## Historical pre-remediation handoff (superseded)
+
+**Previously reported (2026-09-27): `RECIPE_REFRESH_V2_CANONICAL_SOURCE_READY`.** Canonical
+repository `tako-vn/Tako-san`, base `origin/main`
+`c81d6da2b3a9c051270b97953bfbb2c5aa34d057`, branch
+`codex/recipe-content-refresh-v2-canonical`, pushed implementation checkpoint
+`fc5e713e10e0b63c890ba31fc29d9678be896ed7`.
+
+## Resume point
+
+The 500-file canonical source is complete at `data/recipe-refresh/v2`; audit
+artifacts are at `artifacts/recipe-refresh-v2`; schema/runtime decisions and
+known evidence gaps are in `AUDIT_REPORT.md` and ADR-032. Input ZIP SHA-256:
+`ebc18f06ee7fb4498f8cd2a7886f333a85b385f32af4407ae1b44b4ec3cc06fe`.
+Canonical artifact SHA-256:
+`fc7eefe6573ee9de1083728db1f34b058954fa60ff478f7c5e41dce9e4570dbe`.
+Runtime fingerprint:
+`6d0e3eb85696bb7c31bc54ac62783bc94432aaf008028eca79b17041f3eaed87`.
+
+Audit truth: 500 recipes / IDs, 4,938 steps, 6,766 ingredient lines, 15 raw
+root variants, 6,743 quantified and 23 qualitative canonical rows, 166
+process-only and 7 mixed-process rows, 3,770 projected and 2,996 excluded
+runtime ingredient rows. Source coverage is 499 recipes with at least two
+relevant URLs plus the explicit `imp-0d6c454ae1073ef6` exception. Ingredient
+reconciliation has 505 existing IDs, 1,642 new reviewed IDs, 368 duplicate
+aliases, and no ambiguous/invalid rows.
+
+Nutrition outcome: 289 source numeric profiles, 353 recomputed candidates, 1
+certified publishable profile, 288 blocked, 211 truthful null. Blocked/null
+nutrition never projects runtime macros. Salt-bed and deep-frying outliers are
+quarantined by evidence policy, not clipped. Runtime still uses positive
+`StandardUnit` quantities and canonical IDs; richer qualitative/process data
+stays in source instead of weakening planner/inventory/shopping contracts.
+
+Verification on the final documentation tree: `pnpm recipe:refresh:check`,
+`pnpm recipe:import:check`, `pnpm typecheck`, `pnpm lint`, `git diff --check`,
+focused refresh 11/11, and `pnpm check` PASS; full Vitest is 204 files / 4,591
+tests. The first full run failed only because managed sparse-checkout omitted
+tracked `public/`; adding it back restored all assets, after which the 24
+CSP/PWA brand tests and complete gate passed. No repository file was repaired
+or fabricated for that checkout issue.
+
+## Next exact action
+
+Open/review the PR and require hosted exact-head CI. Do not merge or perform a
+remote rollout in this task. A later authorized release task may generate the
+Content Refresh V2 manifest and `0040_recipe_content_refresh_v2.sql` from the
+pinned source, then certify staging before production.
+
+`staging_mutation=NO` · `production_mutation=NO` · `deploy=NO` ·
+`T20_enablement=NO`
+
+---
+
+# Historical handoff — T20 release gate
 
 **Latest (2026-09-26):** PR #9 MERGED at `cb22cfb`, exact-main CI green;
 local OAuth and read-only live staging D1 identity now match reviewed config,

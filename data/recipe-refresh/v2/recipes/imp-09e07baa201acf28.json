@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-09e07baa201acf28",
+    "slug": "chao-tom-han",
+    "title": "Cháo tôm Hàn"
+  },
+  "content": {
+    "description": "Cháo tôm saewoo juk mịn ngọt với hành lá-tỏi ấm, tô cháo Hàn trưa lạnh trọn vị.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 40,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Cháo",
+      "Tôm",
+      "Hàn Quốc",
+      "Ấm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-09e07baa201acf28.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.maangchi.com/recipe/saeu-juk",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://explorecookeat.com/korean-rice-porridge-juk-with-chicken-and-mushrooms-recipe/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Gạo tẻ hạt ngắn",
+      "canonicalIngredientId": "ING_ENR_7D6B5406AE317A0D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "1 cup = 200 g theo USDA FDC 168931 (Rice, white, short-grain, raw, unenriched)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi dùng 1 cup cho 3-4 phần; file này giữ nguyên cho 4 phần. Ngâm nước lạnh ít nhất 30 phút rồi chắt ráo (Maangchi); Explore Cook Eat ngâm 1 giờ — hai nguồn chênh nhau, theo Maangchi vì là công thức cháo tôm gốc. FDC không công bố fiber/sugar cho mục gạo sống này → null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 358,
+        "proteinG": 6.5,
+        "carbohydrateG": 79.15,
+        "fatG": 0.52,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Rice, white, short-grain, raw, unenriched' (FDC ID 168931, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm tươi (bóc vỏ, bỏ chỉ, cắt nhỏ)",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 227,
+        "unit": "g",
+        "text": "227 g",
+        "gramEquivalent": 227,
+        "basis": "8 oz × 28.35 g/oz = 226.8 g ≈ 227 g (quy đổi khối lượng chuẩn)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 227,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: '8 ounces shelled, deveined, and washed shrimp, chopped' cho 3-4 phần. FDC không công bố fiber/sugar cho tôm sống → null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Crustaceans, shrimp, raw' (FDC ID 175179, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Dầu mè (đã rang/toasted)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "USDA FDC 171016 (Oil, sesame, salad or cooking): 1 tbsp = 13.6 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 13.6,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi dùng 1 tbsp để phi thơm đầu món. Explore Cook Eat dùng tới 2.5 tbsp cho 4 phần cháo gà — chênh lệch đáng kể; file này theo Maangchi vì là công thức cháo tôm gốc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Oil, sesame, salad or cooking' (FDC ID 171016, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "USDA FDC 169230 (Garlic, raw): 1 clove (1 tép) = 3 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi: 2 tép cho 3-4 phần. Explore Cook Eat dùng 5 tép cho 4 phần cháo gà — nhiều hơn hẳn; theo Maangchi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Garlic, raw' (FDC ID 169230, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành tây (củ nhỏ, xắt nhỏ)",
+      "canonicalIngredientId": "ING_ENR_BA1B0A9AA0A0A9BF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ (nhỏ)",
+        "text": "1 củ (nhỏ)",
+        "gramEquivalent": 70,
+        "basis": "USDA FDC 170000 (Onions, raw): 1 small onion (1 củ nhỏ) = 70 g; 1 cup xắt nhỏ = 160 g nên 1/2 cup ≈ 80 g — hai cách quy đổi chênh ~10 g, file này lấy theo '1 củ nhỏ' = 70 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi: '1 small onion (about 1/2 cup), peeled and chopped'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Onions, raw' (FDC ID 170000, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Cà rốt (củ vừa, xắt nhỏ)",
+      "canonicalIngredientId": "ING_ENR_152FB2F8D6400611",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ (vừa)",
+        "text": "1 củ (vừa)",
+        "gramEquivalent": 61,
+        "basis": "USDA FDC 170393 (Carrots, raw): 1 medium carrot (1 củ vừa) = 61 g; 1/2 cup xắt nhỏ ≈ 64 g — tương đương nhau",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi: '1 medium carrot (about 1/2 cup), peeled and chopped'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Carrots, raw' (FDC ID 170393, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Trứng gà (đánh tan)",
+      "canonicalIngredientId": "ING_ENR_5E117B178362FD52",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả (lớn)",
+        "text": "2 quả (lớn)",
+        "gramEquivalent": 100,
+        "basis": "USDA FDC 171287 (Egg, whole, raw, fresh): 1 large egg (1 quả lớn) = 50 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi: 2 quả đánh tan, rưới vào cháo cuối món để tạo vân trứng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.6,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Egg, whole, raw, fresh' (FDC ID 171287, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành lá (cắt khúc)",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "cây",
+        "text": "4 cây",
+        "gramEquivalent": 60,
+        "basis": "USDA FDC 170005 (Onions, spring or scallions, raw): 1 cây hành lá cỡ vừa = 15 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi: 4 cây cho vào cùng lúc với trứng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Onions, spring or scallions (includes tops and bulb), raw' (FDC ID 170005, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 32,
+        "basis": "USDA FDC 174277 (Soy sauce made from soy and wheat, shoyu): 1 tbsp = 16 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 32,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi ghi '2 tablespoons fish sauce (or soup soy sauce, or salt to your taste)' — công thức gốc liệt kê nước mắm trước, xì dầu/nước tương nấu (soup soy sauce) hoặc muối là các lựa chọn thay thế. File này dùng xì dầu theo hint của assignment; có thể thay bằng nước mắm hoặc muối tùy khẩu vị, nêm từ từ. [audit: đổi từ xì dầu sang nước mắm theo Maangchi]",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": "USDA Sauce, fish, ready-to-serve (FDC 174531) — Maangchi liệt kê fish sauce trước (soy sauce chỉ là thay thế); theo nguồn bỏ hint"
+    },
+    {
+      "position": 9,
+      "sourceName": "Rong biển gim (nướng giòn, bóp vụn)",
+      "canonicalIngredientId": "ING_ENR_6E85FCDBC9E8CE04",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Rong biển gim (cắt sợi, rắc mặt) via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tờ",
+        "text": "2 tờ",
+        "gramEquivalent": 5,
+        "basis": "Ước tính: 1 tờ rong biển gim khô cỡ chuẩn ≈ 2.5 g (không có số liệu USDA; trọng lượng thực tế tùy hãng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "USDA FDC không có mục generic cho rong biển gim khô/nướng (chỉ có laver tươi và các sản phẩm snack tẩm dầu) → để null, không dùng số liệu snack để tránh sai lệch. Maangchi: 2 tờ, nướng trên lửa rồi bóp vụn rắc lên mặt.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Vừng rang (giã nhỏ)",
+      "canonicalIngredientId": "ING_ENR_574B32B1204E539A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "Quy đổi phổ biến: 1 tbsp hạt vừng ≈ 9 g; USDA FDC 170151 chỉ liệt kê khẩu phần 1 oz = 28.35 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi: 2 tbsp vừng rang giã nhỏ rắc lên mặt. FDC không công bố sugar cho mục này → null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 565,
+        "proteinG": 16.96,
+        "carbohydrateG": 25.74,
+        "fatG": 48,
+        "fiberG": 14,
+        "sugarG": null,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/ — USDA FoodData Central, tra cứu: 'Seeds, sesame seeds, whole, roasted and toasted' (FDC ID 170151, SR Legacy)",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 8,
+        "unit": "cup",
+        "text": "8 cup",
+        "gramEquivalent": 1920,
+        "basis": "1 cup = 240 ml ≈ 240 g (nước)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Không phải nguyên liệu mua riêng. Maangchi dùng 8 cups nước cho 1 cup gạo (3-4 phần); Explore Cook Eat dùng 6 cups chất lỏng cho 1 cup gạo (4 phần) — cháo theo Maangchi loãng hơn, theo ECE đặc sánh hơn; file này theo Maangchi. Nước không có giá trị dinh dưỡng đáng kể → null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Vo gạo 2-3 lần đến khi nước trong, ngâm trong nước lạnh ít nhất 30 phút rồi chắt ráo nước.",
+      "tip": "Maangchi: ngâm gạo giúp hạt nở đều, cháo sánh mịn. Explore Cook Eat ngâm 1 giờ — đều được, nhưng đừng bỏ qua bước ngâm."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Nướng gim: cầm mép từng tờ rong biển hơ trên lửa nhỏ, trở đều tay đến khi giòn và đổi màu; cho vào túi nilon bóp vụn, để riêng.",
+      "tip": "Maangchi: nếu rong biển bén lửa thì thổi tắt rồi hơ tiếp; để cháy sẽ bị đắng."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun nóng nồi lớn trên lửa vừa-cao, cho dầu mè, tỏi băm và hành tây vào, đảo bằng muỗng gỗ khoảng 2 phút đến khi hành hơi trong.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho gạo đã ráo nước vào nồi, đảo 2-3 phút đến khi hạt gạo hơi trong.",
+      "tip": "Bước rang gạo với dầu mè tạo mùi thơm đặc trưng của juk Hàn (Maangchi).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho tôm đã cắt nhỏ vào, đảo khoảng 1 phút đến khi tôm hơi chuyển hồng.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho cà rốt và 8 cups nước vào, khuấy đều, đậy nắp nấu 20 phút trên lửa vừa-cao. Nếu cháo trào, khuấy nhẹ và hé nắp.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Hạ lửa vừa-nhỏ, đậy nắp nấu thêm 10 phút cho gạo nở bung thành cháo.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Mở nắp, khuấy cháo, cho hành lá vào rồi rưới từ từ trứng đã đánh tan theo dòng mỏng; KHÔNG khuấy, đậy nắp nấu 1 phút cho trứng đông lại.",
+      "tip": "Rưới trứng đều tay để tạo vân trứng đẹp; khuấy ngay sẽ làm trứng vụn li ti (Maangchi).",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nêm xì dầu (hoặc nước mắm/muối tùy khẩu vị), khuấy đều rồi tắt bếp.",
+      "tip": "Nêm từ từ và nếm lại vì tôm và xì dầu/nước mắm đều có vị mặn sẵn (Maangchi: 'salt to your taste')."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Múc cháo ra từng bát, rắc gim vụn và vừng giã lên trên. Ăn ngay khi còn nóng.",
+      "tip": "Explore Cook Eat: cháo thừa để tủ lạnh được 3-4 ngày; khi hâm thêm chút nước và nêm lại cho vừa."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 75.64,
+      "proteinG": 3.92,
+      "carbohydrateG": 2.07,
+      "fatG": 5.81,
+      "fiberG": 0.42,
+      "sugarG": 0.75,
+      "sodiumMg": 666.24
+    },
+    "originalPerServing": {
+      "energyKcal": 341.56,
+      "proteinG": 19.68,
+      "carbohydrateG": 45.9,
+      "fatG": 8.58,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 745.99
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Gạo tẻ hạt ngắn: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Tôm tươi (bóc vỏ, bỏ chỉ, cắt nhỏ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành tây (củ nhỏ, xắt nhỏ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Cà rốt (củ vừa, xắt nhỏ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Rong biển gim (nướng giòn, bóp vụn): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Vừng rang (giã nhỏ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      8,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

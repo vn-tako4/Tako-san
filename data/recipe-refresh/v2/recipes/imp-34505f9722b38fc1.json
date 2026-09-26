@@ -1,0 +1,829 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-34505f9722b38fc1",
+    "slug": "mi-y-bo-bam-bologna",
+    "title": "Mì Ý bò bằm Bologna"
+  },
+  "content": {
+    "description": "Ragù Bologna hầm lâu với bò-heo bằm và cà chua đậm sánh, phủ mì Ý nóng, món Ý nhà trứ danh chủ nhật.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 75,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Ragù",
+      "Bologna",
+      "Ý",
+      "Chủ nhật"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-34505f9722b38fc1.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.ricettedellanonna.net/ragu-alla-bolognese-ricetta-ingredienti-e-uso-del-dado/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.agrodolce.it/ricette/ragu-alla-bolognese",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì spaghetti khô",
+      "canonicalIngredientId": "ING_ENR_6D3475084F90DC20",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 320,
+        "unit": "g",
+        "text": "320 g",
+        "gramEquivalent": 320,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 320,
+          "unit": "g"
+        }
+      },
+      "note": "GZ dùng 320 g mì cho 4 khẩu phần trong các công thức video chính thức; một số nguồn khác dùng 350–400 g — lấy 320 g theo chuẩn GZ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 371,
+        "proteinG": 13,
+        "carbohydrateG": 74.7,
+        "fatG": 1.51,
+        "fiberG": 3.2,
+        "sugarG": 2.67,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169736",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt bò xay",
+      "canonicalIngredientId": "ING_ENR_78AA16A4FB89BDE5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "GZ (mô tả video chính thức) và Agrodolce đồng ý: 300 g thịt bò xay cho 4 người. Ricette della Nonna dùng hỗn hợp 150 g bò + 150 g bê + 80 g heo + 80 g salsiccia + 80 g pancetta. Lấy 300 g bò theo GZ/Agrodolce là nguồn Ý chuẩn được ưu tiên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 254,
+        "proteinG": 17.2,
+        "carbohydrateG": 0,
+        "fatG": 20,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 66
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174036",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Thịt heo xay",
+      "canonicalIngredientId": "GROUND_PORK",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "GZ và Agrodolce KHÔNG dùng heo xay (chỉ bò + pancetta). Ricette della Nonna dùng 80 g heo xay (+ 80 g salsiccia) trong hỗn hợp thịt. Gợi ý assignment có heo xay nên thêm 150 g, đồng thời giảm pancetta còn 100 g để tổng thịt ~550 g nằm trong khoảng 450–540 g của các nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 263,
+        "proteinG": 16.88,
+        "carbohydrateG": 0,
+        "fatG": 21.19,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167902",
+      "sourceNutritionNote": "Số liệu SR Legacy của 'Pork, fresh, ground, raw' (167902) không có mục Total Sugars (269) nên để sugar_g là null."
+    },
+    {
+      "position": 3,
+      "sourceName": "Pancetta",
+      "canonicalIngredientId": "ING_ENR_340B20FA629138ED",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "GZ và Agrodolce dùng 150 g pancetta cho 4 người; Ricette della Nonna dùng 80 g. Bài này giảm còn 100 g để cân đối với phần heo xay thêm vào (tổng thịt ~550 g).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central (SR Legacy) không có mục nào cho pancetta (tìm kiếm 'pancetta' trả về 0 kết quả) nên để toàn bộ object dinh dưỡng là null."
+    },
+    {
+      "position": 4,
+      "sourceName": "Cà chua nghiền (passata)",
+      "canonicalIngredientId": "ING_ENR_07F17F188B2C0D73",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "GZ và Agrodolce: 300 g passata; Ricette della Nonna: 200 g pomodori pelati. Lấy 300 g theo hai nguồn chuẩn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.64,
+        "carbohydrateG": 7.29,
+        "fatG": 0.28,
+        "fiberG": 1.9,
+        "sugarG": 4.4,
+        "sodiumMg": 186
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170501",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Cà chua đặc (concentrato)",
+      "canonicalIngredientId": "ING_ENR_47EC664A6D812BB7",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Agrodolce dùng 60 g; GZ và Ricette della Nonna không dùng. Đánh dấu tùy chọn, lấy 30 g (một nửa của Agrodolce) để sốt có màu đẹp mà không át vị thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 82,
+        "proteinG": 4.32,
+        "carbohydrateG": 18.91,
+        "fatG": 0.47,
+        "fiberG": 4.1,
+        "sugarG": 12.18,
+        "sodiumMg": 59
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170459",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "đơn vị gốc đã là gram (cân thực tế)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "GZ và Agrodolce: 50 g; Ricette della Nonna: 1 củ. Lấy 50 g theo hai nguồn chuẩn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Cần tây",
+      "canonicalIngredientId": "ING_ENR_29B7EDD21E6B7106",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "đơn vị gốc đã là gram (cân thực tế)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "GZ và Agrodolce: 50 g; Ricette della Nonna: 1 cọng (gambo). Lấy 50 g theo hai nguồn chuẩn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 14,
+        "proteinG": 0.69,
+        "carbohydrateG": 2.97,
+        "fatG": 0.17,
+        "fiberG": 1.6,
+        "sugarG": 1.34,
+        "sodiumMg": 80
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169988",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "đơn vị gốc đã là gram (cân thực tế)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "GZ và Agrodolce: 50 g (cipolle dorate). Ricette della Nonna dùng 1 củ không định lượng. Lấy 50 g theo hai nguồn chuẩn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi trung bình ~3 g; 2 tép ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "KHÔNG nguồn Ý nào trong bài dùng tỏi (ragù truyền thống không có tỏi). Đánh dấu tùy chọn theo gợi ý trong assignment.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu ô liu extra virgin",
+      "canonicalIngredientId": "ING_ENR_DE4B6B013D75B239",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh = 15 ml ≈ 13,6 g (tỉ trọng dầu ô liu ~0,91); 2 muỗng canh ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "GZ: 1 muỗng canh; Agrodolce: q.b.; Ricette della Nonna: dùng 30 g bơ + 1 muỗng canh mỡ lợn thay dầu. Lấy 2 muỗng canh dầu + 20 g bơ để vừa đủ xào soffritto và áp thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Bơ lạt",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Ricette della Nonna dùng 30 g bơ (+ mỡ lợn); GZ và Agrodolce không dùng bơ. Lấy 20 g kết hợp với dầu ô liu theo hướng dung hòa các nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.1,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 643
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173410",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Rượu vang đỏ",
+      "canonicalIngredientId": "ING_ENR_80311443A991AAE8",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "ml",
+        "text": "100 ml",
+        "gramEquivalent": 100,
+        "basis": "rượu vang đỏ có tỉ trọng ≈ 1 nên 100 ml ≈ 100 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 100,
+          "unit": "ml"
+        }
+      },
+      "note": "GZ: 100 (ml); Agrodolce: 5 cl = 50 ml; Ricette della Nonna: 120 ml (Lambrusco). Ba nguồn mâu thuẫn, lấy 100 ml theo GZ là nguồn Ý chuẩn được ưu tiên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 0.07,
+        "carbohydrateG": 2.61,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.62,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173190",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước dùng bò (hoặc rau củ)",
+      "canonicalIngredientId": "ING_ENR_53412C72F1158698",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "ml",
+        "text": "200 ml",
+        "gramEquivalent": 200,
+        "basis": "nước dùng có tỉ trọng ≈ 1 nên 200 ml ≈ 200 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 200,
+          "unit": "ml"
+        }
+      },
+      "note": "GZ: brodo vegetale q.b.; Agrodolce: châm thêm nước hoặc nước dùng rau củ khi sốt khô; Ricette della Nonna: không dùng. Đánh dấu tùy chọn, chỉ dùng để điều chỉnh độ sánh khi hầm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 7,
+        "proteinG": 1.14,
+        "carbohydrateG": 0.04,
+        "fatG": 0.22,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 372
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171538",
+      "sourceNutritionNote": "Dùng entry 'Soup, beef broth or bouillon canned, ready-to-serve' (171538) làm đại diện gần nhất trong SR Legacy."
+    },
+    {
+      "position": 14,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê muối tinh ~5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "Cả ba nguồn đều ghi 'q.b.' (vừa đủ). Định lượng 5 g (~1 muỗng cà phê) cho cả nồi sốt; nêm thêm khi luộc mì.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "g",
+        "text": "2 g",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê tiêu đen xay ~2 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "g"
+        }
+      },
+      "note": "Cả ba nguồn đều ghi 'q.b.'. Định lượng 2 g (~1 muỗng cà phê) cho cả nồi sốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 16,
+      "sourceName": "Phô mai Parmesan bào",
+      "canonicalIngredientId": "ING_ENR_F6C4C13C28CEABC4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 40,
+        "unit": "g",
+        "text": "40 g",
+        "gramEquivalent": 40,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 40,
+          "unit": "g"
+        }
+      },
+      "note": "Không nguồn nào cho phô mai vào sốt ragù; Parmesan chỉ rắc lên trên khi dọn theo thói quen. Đánh dấu tùy chọn, định lượng 40 g cho 4 đĩa.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 392,
+        "proteinG": 35.8,
+        "carbohydrateG": 3.22,
+        "fatG": 25,
+        "fiberG": 0,
+        "sugarG": 0.11,
+        "sodiumMg": 1180
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170848",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Băm thật nhỏ cà rốt, cần tây và hành tây để làm phần rau nền soffritto.",
+      "tip": "Băm càng nhuyễn, rau càng tan vào thịt khi hầm lâu, sốt sánh mịn mà không cần xay.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Thái pancetta thành hạt lựu nhỏ khoảng 5 mm."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun nóng dầu ô liu và bơ trong nồi đáy dày ở lửa vừa; cho pancetta vào đảo 3–4 phút cho ra mỡ và hơi xém cạnh.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho thịt bò xay và thịt heo xay vào nồi, dàn mỏng; để yên 2–3 phút cho một mặt vàng rồi mới đảo tơi. Nêm muối và tiêu.",
+      "tip": "Đừng đảo thịt ngay — để thịt áp chảo vàng một mặt trước sẽ thơm hơn hẳn nhờ phản ứng Maillard.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho phần rau soffritto đã băm (và tỏi băm nếu dùng) vào, xào 5–6 phút đến khi rau mềm và trong.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ rượu vang đỏ vào, mở lửa to, khuấy 2–3 phút cho cồn bay hơi hết và thịt ngấm vị vang.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho cà chua nghiền và cà chua đặc (nếu dùng) vào, nêm thêm chút muối tiêu, đun cho sôi lăn tăn.",
+      "tip": "Cà chua đặc giúp sốt có màu đỏ đẹp và vị đậm; nếu không có thì tăng cà chua nghiền thêm 50 g."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Hạ nhỏ lửa, đậy vung hờ, hầm ít nhất 90 phút; 15–20 phút khuấy một lần. Nếu sốt khô quá thì châm thêm nước dùng từng ít một.",
+      "tip": "Ragù càng hầm lâu càng ngon — Ricette della Nonna hầm 1,5 giờ sau khi cho cà chua; GZ/Agrodolce hầm tổng cộng khoảng 2 giờ. Sốt đạt là khi mỡ nổi lên mặt và thịt mềm nhừ.",
+      "timerMinutes": 90
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Khi sốt gần xong, luộc spaghetti trong nồi lớn nước sôi già có muối, thời gian theo bao bì trừ đi 1 phút để mì còn hơi cứng (al dente).",
+      "tip": "Nước luộc mì phải mặn như nước biển — đây là lần nêm muối chính cho sợi mì.",
+      "timerMinutes": 9
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Vớt mì cho thẳng vào nồi sốt cùng khoảng 1 muôi nước luộc mì; đảo nhanh 1–2 phút trên lửa vừa cho sốt bám đều từng sợi mì.",
+      "tip": "Tinh bột trong nước luộc mì giúp sốt nhũ hóa, bóng mượt và bám chặt vào mì.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Nếm lại và chỉnh muối, tiêu cho vừa miệng."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Dọn mì ra đĩa sâu lòng khi còn nóng hổi, rắc Parmesan bào lên trên nếu thích và dùng ngay."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 559.03,
+      "proteinG": 24.91,
+      "carbohydrateG": 67.97,
+      "fatG": 20.54,
+      "fiberG": 4.75,
+      "sugarG": 6.73,
+      "sodiumMg": 245.08
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 2,
+        "detail": "Thịt heo xay: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 3,
+        "detail": "Pancetta: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dầu ô liu extra virgin: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Rượu vang đỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 15,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      10
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

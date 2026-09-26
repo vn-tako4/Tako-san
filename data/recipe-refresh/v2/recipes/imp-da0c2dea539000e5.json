@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-da0c2dea539000e5",
+    "slug": "frittata-nam-pho-mai",
+    "title": "Frittata nấm phô mai"
+  },
+  "content": {
+    "description": "Frittata dày trứng-nấm-phô mai áp chảo, cắt múi tam giác vàng ruột mềm món Ý sáng muộn.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Frittata",
+      "Ý",
+      "Nấm",
+      "Bữa sáng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-da0c2dea539000e5.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://oneforthetable.com/egg-dish/italian-asparagus-mushroom-and-parmesan-frittata",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.primo-prezzo.it/ricette/frittata-ai-funghi.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.typigo.com/ricetta/la-frittata-ai-funghi-e-parmigiano/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "quả",
+        "text": "6 quả",
+        "gramEquivalent": 300,
+        "basis": "1 quả trứng gà lớn ~50 g (USDA FoodData Central: 1 large egg = 50 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6,
+          "unit": "piece"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn: oneforthetable dùng 6 quả cho 2 phần; primo-prezzo dùng 6 quả cho 4 phần. Lấy 6 quả cho 3 phần (mức giữa).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 350,
+        "unit": "g",
+        "text": "350 g",
+        "gramEquivalent": 350,
+        "basis": "Định lượng trực tiếp bằng gram theo công thức đã quy về 3 phần",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 350,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn Ý gốc dùng nấm champignon (nấm mỡ trắng). primo-prezzo: 500-600 g/4 phần; typigo: 200 g/4 phần; oneforthetable: 1 cup thái lát (~70 g)/2 phần — ba nguồn mâu thuẫn, lấy 350 g theo primo-prezzo là nguồn chuyên về frittata nấm. Dinh dưỡng dùng số liệu nấm sò (oyster mushroom) SR Legacy thay thế (xem nutrition_note).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": 1.11,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "Số liệu của nấm sò (Mushrooms, oyster, raw — fdcId 168580, SR Legacy) dùng thay cho nấm đùi gà (king oyster, Pleurotus eryngii) vì entry Foundation của king oyster (fdcId 2003599) không có Energy và Sugars."
+    },
+    {
+      "position": 2,
+      "sourceName": "Phô mai Parmesan bào mịn",
+      "canonicalIngredientId": "ING_ENR_F6C4C13C28CEABC4",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Phô mai Parmesan bào via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 40,
+        "unit": "g",
+        "text": "40 g",
+        "gramEquivalent": 40,
+        "basis": "Định lượng trực tiếp bằng gram theo công thức đã quy về 3 phần",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 40,
+          "unit": "g"
+        }
+      },
+      "note": "Ba nguồn mâu thuẫn: oneforthetable 1/3 cup (~33 g)/2 phần; primo-prezzo 6 tbsp (~30 g)/4 phần; typigo 50 g/4 phần. Lấy 40 g (mức giữa, ưu tiên oneforthetable là công thức nấm + Parmesan đúng chủ đề món).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 420,
+        "proteinG": 28.42,
+        "carbohydrateG": 13.91,
+        "fatG": 27.84,
+        "fiberG": 0,
+        "sugarG": 0.07,
+        "sodiumMg": 1804
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171247",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Dầu olive",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng dầu olive ~0.91 g/ml → 1 tbsp ≈ 13.6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "oneforthetable: 1-2 tsp/2 phần; primo-prezzo: 'một vòng dầu hào phóng' không định lượng — mâu thuẫn, lấy 2 tbsp cho 3 phần (đủ xào nấm và tráng chảo).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "USDA: 1 cây hành lá vừa (dài ~10 cm) ~15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn Ý không dùng hành lá: oneforthetable dùng 1.5 tbsp mùi tây thái nhỏ; primo-prezzo dùng mùi tây + 1 củ hẹ tây (hoặc nửa hành trắng). Món này dùng hành lá theo gợi ý món Việt, vai trò tạo thơm tương đương — ghi rõ là thay thế, không phải nguyên bản Ý.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi vừa ~3 g (USDA: 1 clove garlic ≈ 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "primo-prezzo dùng 2 tép/4 phần; oneforthetable không dùng tỏi. Lấy 2 tép cho 3 phần theo primo-prezzo.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "API không trả về Sugars và Sodium cho entry Garlic, raw (fdcId 1104647); các trường còn lại đầy đủ."
+    },
+    {
+      "position": 6,
+      "sourceName": "Ớt bột khô (ớt sừng khô nghiền)",
+      "canonicalIngredientId": "ING_ENR_628783A8C217F02F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.5,
+        "basis": "USDA: 1 tsp ớt đỏ nghiền (crushed red pepper) ≈ 1.8 g → 1/4 tsp ≈ 0.5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "oneforthetable: 1/4 tsp red pepper flakes/2 phần; primo-prezzo dùng 1 miếng peperoncino tươi không định lượng — chọn dạng khô theo oneforthetable vì định lượng rõ ràng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 318,
+        "proteinG": 12.01,
+        "carbohydrateG": 56.63,
+        "fatG": 17.27,
+        "fiberG": 27.2,
+        "sugarG": 10.34,
+        "sodiumMg": 30
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170932",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê muối ăn ~6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều ghi 'vừa đủ' không định lượng; lấy 1/2 tsp cho 3 phần (Parmesan đã mặn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "USDA: 1 tsp tiêu đen xay ~2.3 g → 1/4 tsp ≈ 0.6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "primo-prezzo ghi 'sale e pepe' vừa đủ không định lượng; lấy 1/4 tsp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế nấm đùi gà: lau sạch bằng khăn ẩm (không rửa ngập nước để nấm không ngậm nước), cắt bỏ gốc già, thái lát dày khoảng 0.5 cm.",
+      "tip": "primo-prezzo: giữ lại cả phần thân nấm nếu còn chắc, thái lát đều để chín cùng lúc."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Hành lá rửa sạch, thái riêng phần đầu trắng (thái mỏng) và phần lá xanh (thái khúc 1 cm). Tỏi bóc vỏ, băm nhỏ."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun nóng 1 muỗng canh dầu olive trong chảo chống dính (đường kính ~24 cm) ở lửa vừa. Cho phần đầu hành trắng, tỏi băm và ớt bột vào, đảo nhanh khoảng 1 phút cho thơm.",
+      "tip": "oneforthetable: xào nấm ở lửa vừa-thấp; tỏi chỉ cần vàng nhẹ, cháy sẽ đắng.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Tăng lửa lớn, cho nấm vào xào 5-7 phút, đảo ít lần để nấm áp chảo vàng cạnh và ra bớt nước. Nêm một nhúm muối nhỏ, đảo đều rồi trút nấm ra đĩa, để nguội bớt 3-5 phút.",
+      "tip": "primo-prezzo: xào nấm với tỏi và hẹ tây đến khi nấm mềm (appassiti). Không đậy nắp khi xào để nấm không bị hấp.",
+      "timerMinutes": 7
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đập 6 quả trứng ra tô lớn, thêm Parmesan bào, 1/2 muỗng cà phê muối, tiêu đen. Đánh tan bằng phới tay đến khi hòa quyện.",
+      "tip": "Đánh kỹ nhưng không cần bông; Parmesan mặn sẵn nên nêm muối vừa tay."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Trút nấm đã nguội bớt vào tô trứng, trộn đều. (Nếu nấm còn quá nóng, trứng sẽ vón cục quanh nấm.)",
+      "tip": "Mẹo từ italiankiwi (áp dụng chung cho frittata): không trộn nhân nóng vào trứng."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Lau sạch chảo, cho 1 muỗng canh dầu olive còn lại vào, đun lửa nhỏ-vừa. Đổ hỗn hợp trứng-nấm vào, dàn đều, rắc 2/3 phần lá hành lên trên."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Để yên 1-2 phút cho mép frittata se lại, sau đó dùng nĩa hoặc phới nhẹ nhàng kéo trứng từ mép vào giữa để phần trứng lỏng chảy xuống đáy chảo. Lặp lại 5-7 phút đến khi trứng bắt đầu đặc và mép tạo lớp vỏ.",
+      "tip": "oneforthetable: thao tác này giúp trứng chín đều từ dưới lên; lắc nhẹ tay cầm chảo để kiểm tra độ tróc.",
+      "timerMinutes": 7
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Đậy nắp chảo, hạ lửa nhỏ, nấu thêm 8-10 phút đến khi mặt trên se lại gần như hoàn toàn, chỉ còn hơi ướt ở giữa.",
+      "tip": "primo-prezzo: có thể lật mặt bằng nắp/đĩa theo cách truyền thống; đậy nắp là cách đơn giản hơn cho người mới.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Đặt một chiếc đĩa lớn hoặc nắp phẳng lên miệng chảo, dứt khoát lật ngược frittata ra đĩa, rồi trượt trở lại chảo để áp mặt còn lại 2-3 phút cho vàng nhẹ. Trượt ra đĩa, rắc nốt hành lá, để nguội 2 phút rồi cắt miếng. Dọn nóng hoặc ở nhiệt độ phòng.",
+      "tip": "oneforthetable: frittata ngon cả khi nóng và khi nguội ở nhiệt độ phòng.",
+      "timerMinutes": 3
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 94.5,
+      "proteinG": 7.65,
+      "carbohydrateG": 8.96,
+      "fatG": 4.19,
+      "fiberG": 2.68,
+      "sugarG": 1.3,
+      "sodiumMg": 261.53
+    },
+    "originalPerServing": {
+      "energyKcal": 324.15,
+      "proteinG": 20.57,
+      "carbohydrateG": 11.2,
+      "fatG": 22.76,
+      "fiberG": 3.09,
+      "sugarG": 1.93,
+      "sodiumMg": 792.98
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Trứng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Dầu olive: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      6,
+      7,
+      8
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

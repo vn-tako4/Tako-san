@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "vn-xao-01",
+    "slug": "rau-muong-xao-toi",
+    "title": "Rau muống xào tỏi xanh giòn"
+  },
+  "content": {
+    "description": "Rau muống ngọn non xanh mướt giòn sần sật dậy mùi thơm lừng của tỏi ta phi vàng xém cạnh, linh hồn bữa cơm gia đình.",
+    "cuisine": "vietnamese",
+    "category": "mon_xao",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 10,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Món xào",
+      "Rau củ",
+      "Dưới 20 phút",
+      "Nhanh gọn"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/vn-xao-01.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://phunutoday.vn/rau-muong-xao-toi-xanh-gion-dau-bep-mach-1-meo-lam-don-gian-d463579.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://memart.vn/tin-tuc/how-blog/huong-dan-cach-lam-rau-muong-xao-toi-xanh-gion-ngon-va-dam-da-vi-cb.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Rau muống",
+      "canonicalIngredientId": "WATER_SPINACH",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "bó",
+        "text": "1 bó",
+        "gramEquivalent": 300,
+        "basis": "1 bó rau muống ≈ 300 g (theo memart: '1 bó (khoảng 300g)')",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "bunch"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng 1 bó rau muống; memart ghi rõ ≈ 300 g. Chọn rau non, ngọn nhỏ, lá xanh mướt; tránh cây thân to, dày (già, ăn không ngon) theo kienthuconline/phunutoday.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 19,
+        "proteinG": 2.6,
+        "carbohydrateG": 3.13,
+        "fatG": 0.2,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": 113
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169301",
+      "sourceNutritionNote": "USDA FoodData Central không có mục rau muống (water spinach / Ipomoea aquatica); tuyệt đối không dùng số liệu rau khác thay thế. [BACKFILL 2026-09-26] USDA có bản ghi rau muống (Water convolvulus, raw — SR Legacy 169301), số liệu lấy trực tiếp từ FDC API (nutrient 208/203/205/204/291/269/307); sugar_g null vì bản ghi không công bố chỉ số 269."
+    },
+    {
+      "position": 1,
+      "sourceName": "Tỏi ta",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 15,
+        "basis": "ước lượng 1 củ tỏi ta ≈ 15 g, tương đương 4–5 tép (USDA: 1 tép tỏi ≈ 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "phunutoday: 1 củ tỏi bóc vỏ, đập dập, băm nhỏ; memart: 4–5 tép tỏi — hai cách nói tương đương nhau, lấy 1 củ (~15 g).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh dầu = 15 ml, tỉ trọng ≈ 0,91 → 2 muỗng canh ≈ 27,3 g (làm tròn 27 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "memart: 2 muỗng canh dầu ăn; phunutoday: 'một ít dầu ăn' — lấy 2 muỗng canh theo memart.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "USDA 'Oil, soybean, salad or cooking' — tương đương gần nhất với dầu ăn VN."
+    },
+    {
+      "position": 3,
+      "sourceName": "Muối ăn",
+      "canonicalIngredientId": "ING_ENR_361639D21BDA1726",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê muối ăn = 6 g (USDA: 1 tsp table salt = 6,0 g) → 1/2 muỗng cà phê ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "phunutoday: 1/2 thìa muối cho vào nước chần rau, khi xào nêm 'ít muối vừa ăn'; memart: 1/2 thìa cà phê muối trong gia vị — lấy tổng 1/2 muỗng cà phê, chia cho cả nước chần và lúc xào.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "ước lượng 1 muỗng cà phê hạt nêm ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "memart: 1 thìa cà phê hạt nêm; phunutoday: nêm 'hạt nêm vừa ăn' — hai nguồn thống nhất, lấy 1 muỗng cà phê.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.66,
+        "carbohydrateG": 18.01,
+        "fatG": 13.88,
+        "fiberG": 0,
+        "sugarG": 17.36,
+        "sodiumMg": 23875
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "USDA 'Soup, chicken broth or bouillon, dry' — tương đương gần nhất với hạt nêm VN; số liệu chỉ mang tính tham chiếu."
+    },
+    {
+      "position": 5,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê đường ≈ 4 g (USDA: 1 tsp granulated sugar = 4,0 g) → 1/2 muỗng cà phê ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "memart: 1/2 thìa cà phê đường (tùy khẩu vị); phunutoday không dùng đường — mâu thuẫn; lấy theo memart, lượng nhỏ để làm dịu vị mặn, có thể bỏ qua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước mắm ngon",
+      "canonicalIngredientId": "ING_ENR_352C1AA29FB15A32",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê ≈ 5 ml; tỉ trọng nước mắm ≈ 1,2 → ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "memart: 1 thìa cà phê nước mắm 'giúp tăng vị đậm đà'; phunutoday chỉ dùng muối + hạt nêm, không dùng nước mắm — mâu thuẫn; hint của assignment ghi rõ 'nước mắm ngon' nên giữ 1 muỗng cà phê theo memart.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": "USDA 'Sauce, fish, ready-to-serve' — nước mắm nguyên chất VN, tương đương gần nhất."
+    },
+    {
+      "position": 7,
+      "sourceName": "Giấm ăn",
+      "canonicalIngredientId": "ING_ENR_D62FB82798CEBB76",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê ≈ 5 ml ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "phunutoday (mẹo vàng của đầu bếp): cho 1 thìa cà phê giấm (hoặc vài giọt nước cốt chanh) cùng 1/2 thìa muối vào nước sôi để chần rau — giấm chỉ dùng cho nước chần, KHÔNG nêm vào món xào.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0,
+        "carbohydrateG": 0.04,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.04,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172237",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Ớt tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 5,
+        "basis": "ước lượng 1 quả ớt hiểm VN ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "phunutoday gợi ý 'có thể cho thêm ớt' để món thơm nồng; kienthuconline dùng 2 quả ớt khô (tùy chọn) — để tùy chọn, thái lát cho vào khi phi tỏi hoặc rắc lên trên.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nguyên liệu tùy chọn, lượng rất nhỏ; không tra USDA."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Nhặt rau muống: bỏ cuống già, lá vàng, cọng quá cứng; ngắt thành khúc dài 5–8 cm. Rửa sạch, ngâm trong nước muối pha loãng khoảng 10 phút rồi xả lại nhiều lần với nước sạch, vớt ra để ráo.",
+      "tip": "Chọn mớ rau tươi, non, thân nhỏ mỏng thì xào mới giòn ngon (kienthuconline, phunutoday).",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Tỏi bóc vỏ, đập dập rồi băm nhỏ; chia làm hai phần: một phần để phi thơm, một phần cho vào cuối khi xào."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun một nồi nước to (phải ngập rau), khi nước sôi cho vào 1/2 muỗng cà phê muối và 1 muỗng cà phê giấm (hoặc vài giọt nước cốt chanh).",
+      "tip": "Đây là 'mẹo vàng' của đầu bếp trên phunutoday: nước muối + chua giúp rau giữ màu xanh tươi khi chần."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho rau muống vào chần nhanh 30 giây đến 1 phút, đến khi rau vừa chuyển màu xanh tươi thì vớt ra ngay.",
+      "tip": "Không đậy vung và không chần quá lâu, rau sẽ mềm nhũn và thâm (phunutoday).",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Thả rau vừa chần ngay vào thau nước đá lạnh để 'sốc nhiệt', ngâm đến khi rau nguội hẳn rồi vớt ra, để thật ráo nước.",
+      "tip": "Sốc nhiệt bằng nước đá là bí quyết giữ rau giòn sần sật và xanh lâu sau khi xào (phunutoday)."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Bắc chảo lên bếp, cho 2 muỗng canh dầu ăn vào đun nóng; cho một nửa phần tỏi băm vào phi thơm trên lửa vừa.",
+      "tip": "Không để tỏi cháy vàng sẫm — tỏi cháy sẽ đắng, làm hỏng cả món (phunutoday)."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Vặn lửa lớn, cho rau muống đã chần và để ráo vào chảo, đảo nhanh và đều tay. Nêm nốt 1/2 muỗng cà phê muối (phần còn lại sau khi chần), 1 muỗng cà phê hạt nêm, 1/2 muỗng cà phê đường và 1 muỗng cà phê nước mắm; đảo đều cho rau ngấm gia vị.",
+      "tip": "Xào lửa lớn và đảo nhanh tay thì rau không bị ra nước, giữ được độ giòn và màu xanh (cả hai nguồn).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho nốt phần tỏi băm còn lại vào, đảo thêm khoảng 30 giây cho tỏi dậy mùi thơm rồi tắt bếp. Tránh xào quá 2 phút kể từ khi cho rau vào.",
+      "tip": "Cho tỏi làm hai lần: một lần phi thơm đầu, một lần cuối để tỏi thơm nồng mà không cháy (memart).",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Gắp rau ra đĩa, có thể rắc thêm ớt tươi thái lát nếu thích. Dọn ăn ngay khi còn nóng với cơm trắng.",
+      "tip": "Rau muống xào tỏi ngon nhất khi vừa xào xong: xanh mướt, giòn sần sật, thơm lừng mùi tỏi (phunutoday)."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Rau muống: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Tỏi ta: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 3,
+        "detail": "Muối ăn: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước mắm ngon: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 7,
+        "detail": "Giấm ăn: consumed/absorbed amount is not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      }
+    ]
+  }
+}

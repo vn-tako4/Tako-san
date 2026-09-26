@@ -1,0 +1,981 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-8608afb7fee8ebc3",
+    "slug": "ba-chi-nuong-samgyeopsal",
+    "title": "Ba chỉ nướng samgyeopsal"
+  },
+  "content": {
+    "description": "Lát ba chỉ dày nướng chảo cháy cạnh vàng ruộm, cuốn kim chi-tỏi chấm dầu mè, món samgyeopsal tiệc nướng Hàn.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Samgyeopsal",
+      "Hàn Quốc",
+      "Nướng",
+      "Tiệc"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-8608afb7fee8ebc3.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://kimchimari.com/samgyeopsal-gui-korean-pork-belly/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://Tasty.co/recipe/korean-grilled-pork-belly-samgyeopsal",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt ba chỉ heo (samgyeopsal)",
+      "canonicalIngredientId": "ING_ENR_5CBA80C69AE7520C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 680,
+        "unit": "g",
+        "text": "680 g",
+        "gramEquivalent": 680,
+        "basis": "FDC 167812: 1 lb = 453,6 g; 1,5 lb = 680 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 680,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN ĐỊNH LƯỢNG GIỮA HAI NGUỒN: kimchimari dùng 1,5 lb (~680 g) cho 4 phần; Tasty dùng 1 lb (~455 g) cho 4 phần. Lấy theo kimchimari (blog chuyên món Hàn, công thức gốc Hàn). Thịt cắt lát dày vừa, còn da hoặc không đều được.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 518,
+        "proteinG": 9.34,
+        "carbohydrateG": 0,
+        "fatG": 53.01,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 32
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167812",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Kim chi cải thảo (nướng kèm)",
+      "canonicalIngredientId": "ING_ENR_EC9C3FE3D678828E",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Kim chi cải thảo via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "FDC 170392: 1 cup kim chi = 150 g; lượng theo nhu cầu nướng kèm",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "kimchimari: 'prepare some ripe cabbage kimchi and grill them with the pork belly — it's sooo good!' nhưng không định lượng; cookerru liệt kê 1/2 cup (~75 g) cho 4 phần. Chọn 150 g để nướng kèm đủ ăn, ghi rõ đây là ước lượng của người biên soạn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": 1.06,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi (thái lát, nướng kèm)",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "tép",
+        "text": "10 tép",
+        "gramEquivalent": 50,
+        "basis": "ước tính: 1 tép tỏi lớn ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "piece"
+        }
+      },
+      "note": "Tasty: 10 cloves garlic, thinly sliced (4 phần) — nướng kèm trên vỉ. Lượng tỏi băm cho ssamjang tính riêng ở mục khác.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "cây",
+        "text": "4 cây",
+        "gramEquivalent": 60,
+        "basis": "FDC 170005: 1 cây hành lá trung bình = 15 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "kimchimari gợi ý nướng hành lá kèm thịt trên vỉ và làm salad hành lá ăn kèm, nhưng không định lượng; ước lượng 4 cây cho 4 phần. Tasty không dùng hành lá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Xà lách lá đỏ (rau cuốn ssam)",
+      "canonicalIngredientId": "ING_ENR_3B11C8B691BDAF62",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "bó",
+        "text": "1 bó",
+        "gramEquivalent": 200,
+        "basis": "ước tính: 1 bó xà lách lá đỏ ≈ 200 g (Tasty không định lượng, chỉ ghi 'red leaf lettuce')",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "bunch"
+        }
+      },
+      "note": "Tasty: red leaf lettuce để cuốn (không định lượng). kimchimari: 'Serve with Ssam vegetables'. Rau cuốn là thành phần cấu trúc của món — không thể thiếu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 13,
+        "proteinG": 1.33,
+        "carbohydrateG": 2.26,
+        "fatG": 0.22,
+        "fiberG": 0.9,
+        "sugarG": 0.48,
+        "sodiumMg": 25
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168431",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Lá vừng Hàn (kkaennip, lá tía tô Hàn)",
+      "canonicalIngredientId": "ING_ENR_A20320D5E7CADA2A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "bó nhỏ",
+        "text": "1 bó nhỏ",
+        "gramEquivalent": 50,
+        "basis": "ước tính: 1 bó nhỏ lá vừng ≈ 50 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "bunch"
+        }
+      },
+      "note": "Tasty liệt kê perilla leaf nhưng không định lượng; kimchimari chỉ nói chung 'ssam vegetables'. Ở Hàn thường cuốn kèm lá vừng, nhưng đây là thành phần tùy chọn theo vùng/khẩu vị.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có mục FDC cho lá vừng/tía tô Hàn — để null toàn bộ, không ước tính."
+    },
+    {
+      "position": 6,
+      "sourceName": "Ớt xanh Hàn (hoặc ớt jalapeño)",
+      "canonicalIngredientId": "ING_ENR_C0FFF7E0E88B5C37",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 45,
+        "basis": "ước tính: 1 quả ớt jalapeño/ớt xanh trung bình ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Tasty: 3 jalapeños, sliced into rounds (4 phần). Ở Hàn thường dùng ớt xanh (cheongyang gochu); jalapeño là phương án thay thế của Tasty. Dùng số liệu jalapeño làm đại diện.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 29,
+        "proteinG": 0.91,
+        "carbohydrateG": 6.5,
+        "fatG": 0.37,
+        "fiberG": 2.8,
+        "sugarG": 4.12,
+        "sodiumMg": 3
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168576",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Tương đậu Hàn (doenjang)",
+      "canonicalIngredientId": "ING_ENR_1D58A56322089A4E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 51,
+        "basis": "1 tbsp tương đặc ≈ 17 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tasty (ssamjang, 4 phần): 3 tablespoons soybean paste, doenjang. Không có mục FDC cho doenjang nên dùng miso (tương đậu Nhật, cùng họ tương đậu nành lên men) làm xấp xỉ gần nhất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 198,
+        "proteinG": 12.79,
+        "carbohydrateG": 25.37,
+        "fatG": 6.01,
+        "fiberG": 5.4,
+        "sugarG": 6.2,
+        "sodiumMg": 3728
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172442",
+      "sourceNutritionNote": "Doenjang (Hàn) và miso (Nhật) đều là tương đậu nành lên men nhưng công thức và độ mặn khác nhau — số liệu chỉ mang tính xấp xỉ."
+    },
+    {
+      "position": 8,
+      "sourceName": "Tương ớt Hàn (gochujang)",
+      "canonicalIngredientId": "ING_ENR_7B2DCEA4C5B68A51",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 tbsp tương ớt đặc ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tasty (ssamjang, 4 phần): 1 tablespoon korean chili paste, gochujang. Không có mục SR Legacy/Foundation cho gochujang.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 3.33,
+        "carbohydrateG": 53.33,
+        "fatG": 5,
+        "fiberG": 0,
+        "sugarG": 43.33,
+        "sodiumMg": 967
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2244609",
+      "sourceNutritionNote": "Dùng số liệu sản phẩm thương mại 'GOCHUJANG SAUCE' (FDC Branded 2244609) — giá trị nhãn hàng có thể khác nhau giữa các hãng; brief cho phép dùng Branded khi không có lựa chọn generic."
+    },
+    {
+      "position": 9,
+      "sourceName": "Mirin (rượu nấu ăn ngọt Nhật)",
+      "canonicalIngredientId": "ING_ENR_0F4C21DC96A12F43",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 16,
+        "basis": "1 tbsp = 15 ml; tỉ trọng mirin ≈ 1,1 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tasty (ssamjang, 4 phần): 1 tablespoon mirin. Không có mục SR Legacy/Foundation cho mirin.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 233,
+        "proteinG": 0,
+        "carbohydrateG": 46.67,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 43.33,
+        "sodiumMg": 600
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2039206",
+      "sourceNutritionNote": "Dùng số liệu Kikkoman Aji-Mirin (FDC Branded 2039206) — đây là 'mirin-style seasoning' phổ biến ở Mỹ, không phải hon-mirin truyền thống; brief cho phép dùng Branded khi không có lựa chọn generic."
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "1 tbsp = 15 ml; tỉ trọng dầu mè ≈ 0,91 g/ml → 3 tbsp ≈ 41 g (1 tbsp cho ssamjang + 2 tbsp cho dầu chấm muối tiêu)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tasty: 1 tablespoon sesame oil cho ssamjang + 2 tablespoons sesame oil cho chén dầu chấm muối tiêu (4 phần). Gộp chung một mục, chia dùng ở hai bước.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tỏi băm (cho ssamjang)",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "ước tính: 1 tsp tỏi băm ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tasty (ssamjang, 4 phần): 2 teaspoons garlic, minced.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Đường (cho ssamjang)",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 tsp đường cát ≈ 4 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tasty (ssamjang, 4 phần): 1 teaspoon sugar.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Muối biển (cho dầu chấm)",
+      "canonicalIngredientId": "ING_ENR_881CFF1F982AA4BB",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Muối biển via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 tsp muối ≈ 6 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tasty: 1 teaspoon sea salt trộn với dầu mè + tiêu làm chén chấm. kimchimari khuyên dùng muối biển Hàn (gulgeun soguem) hoặc muối Guérande, KHÔNG dùng muối hồng Himalaya hay muối tinh vì quá mặn gắt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.5,
+        "basis": "ước tính: 1/4 tsp tiêu xay ≈ 0,5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tasty: 'freshly ground black pepper, to taste' cho chén dầu chấm — không định lượng, lấy 1/4 tsp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Rượu vang đỏ hoặc trắng (ướp thịt, tùy chọn)",
+      "canonicalIngredientId": "ING_ENR_5D39FFC5860FF1A1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "cup",
+        "text": "1.5 cup",
+        "gramEquivalent": 355,
+        "basis": "1 cup = 240 ml; tỉ trọng rượu vang ≈ 0,99 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "kimchimari: marinade TÙY CHỌN — 1,5 cup wine (red or white). Vang đỏ cho vị đậm hơn, vang trắng (VD: dry chardonnay) cho vị mượt và khử mùi heo tốt hơn. Vang đỏ không ướp quá 24 giờ. Bản cổ điển (classic) KHÔNG ướp gì — nướng thịt nguyên bản.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 0.07,
+        "carbohydrateG": 2.61,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.62,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173190",
+      "sourceNutritionNote": "Dùng số liệu vang đỏ bàn (FDC 173190); vang trắng bàn ~82 kcal/100 g (FDC 174837), chênh lệch không đáng kể."
+    },
+    {
+      "position": 16,
+      "sourceName": "Tiêu hạt (ướp thịt, tùy chọn)",
+      "canonicalIngredientId": "ING_ENR_2B047ED067CB07C5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2.5,
+        "basis": "ước tính: 1 tsp tiêu hạt nguyên ≈ 2,5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "kimchimari: 1 tsp whole peppercorns cho marinade (tùy chọn, đi kèm rượu vang).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "Dùng số liệu tiêu đen xay (FDC 170931) làm đại diện cho tiêu hạt — thành phần dinh dưỡng tương đương."
+    },
+    {
+      "position": 17,
+      "sourceName": "Dầu olive (ướp thịt, tùy chọn)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "1 tbsp = 15 ml; tỉ trọng dầu olive ≈ 0,91 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "kimchimari: 1 Tbsp olive oil cho marinade (tùy chọn, đi kèm rượu vang).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 18,
+      "sourceName": "Lá nguyệt quế khô (ướp thịt, tùy chọn)",
+      "canonicalIngredientId": "ING_ENR_32C779E4F254DBE5",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Lá nguyệt quế khô via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "lá",
+        "text": "5 lá",
+        "gramEquivalent": 2.5,
+        "basis": "ước tính: 1 lá nguyệt quế khô ≈ 0,5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "kimchimari: 5 bay leaf cho marinade (tùy chọn; có thể cuộn 1 lá vào giữa mỗi lát thịt cho đẹp mắt).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 313,
+        "proteinG": 7.61,
+        "carbohydrateG": 74.97,
+        "fatG": 8.36,
+        "fiberG": 26.3,
+        "sugarG": null,
+        "sodiumMg": 23
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170917",
+      "sourceNutritionNote": "Mục FDC không công bố sugar — để null."
+    },
+    {
+      "position": 19,
+      "sourceName": "Hương thảo tươi (ướp thịt, tùy chọn)",
+      "canonicalIngredientId": "ING_ENR_AAC9FD6D97989003",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Hương thảo tươi via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "cành",
+        "text": "5 cành",
+        "gramEquivalent": 5,
+        "basis": "ước tính: 1 cành hương thảo tươi ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "kimchimari: 5 rosemary sprigs cho marinade (tùy chọn, đi kèm rượu vang).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 131,
+        "proteinG": 3.31,
+        "carbohydrateG": 20.7,
+        "fatG": 5.86,
+        "fiberG": 14.1,
+        "sugarG": null,
+        "sodiumMg": 26
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173473",
+      "sourceNutritionNote": "Mục FDC không công bố sugar — để null."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "(Tùy chọn) Nếu ướp rượu kiểu kimchimari: cho thịt ba chỉ vào tô cùng rượu vang, lá nguyệt quế, hương thảo, tiêu hạt và dầu olive, trộn đều. Ướp 2–3 giờ trong tủ lạnh (có thể để qua đêm), trở mặt thịt 1 lần giữa chừng. Vang đỏ không ướp quá 24 giờ.",
+      "tip": "kimchimari: ướp rượu là biến tấu hiện đại, KHÔNG phải bản cổ điển — bản cổ điển nướng thịt nguyên bản không ướp gì. Vang trắng cho vị mượt và khử mùi heo; vang đỏ cho vị đậm đà hơn."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Nếu miếng thịt dày và chưa được khía: dùng dao khía nhẹ một mặt theo chiều ngang thớ mỡ (kiểu tổ ong/beehive) để mỡ dễ chảy ra khi nướng và thịt ngấm marinade (nếu có). Thịt cắt mỏng thì bỏ qua bước này.",
+      "tip": "kimchimari: chỉ khía khi thịt dày; khía giúp mỡ render tốt hơn và thịt ngon hơn."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Làm ssamjang: cho tương đậu doenjang, tương ớt gochujang, mirin, 1 muỗng canh dầu mè, tỏi băm và đường vào bát, trộn đều. Chia ra các chén chấm nhỏ.",
+      "tip": "Theo công thức ssamjang của Tasty (4 phần). Có thể gia giảm gochujang nếu muốn cay hơn."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Làm chén dầu chấm muối tiêu: trộn muối biển, 2 muỗng canh dầu mè và một nhúm tiêu đen xay trong chén nhỏ.",
+      "tip": "Tasty: chén dầu chấm này là cách ăn cổ điển nhất — chấm miếng thịt nướng nóng vào, đơn giản mà tôn vị thịt."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Chuẩn bị bàn nướng: rửa sạch xà lách và lá vừng, để ráo; tỏi thái lát mỏng; ớt thái khoanh; kim chi cắt miếng vừa để nướng kèm; hành lá cắt khúc. Bày tất cả ra bàn cùng ssamjang và chén dầu chấm.",
+      "tip": "Chuẩn bị xong hết trước khi nướng — thịt chín rất nhanh, không có thời gian sơ chế giữa chừng."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Làm nóng vỉ/chảo nướng (kiểu Hàn có rãnh thoát mỡ càng tốt) trên lửa vừa-cao. Khi chảo thật nóng, đặt các lát thịt ba chỉ lên thành một lớp, không xếp chồng. Nướng 2–3 phút mỗi mặt đến khi vàng giòn, nhiệt độ trong thịt đạt ít nhất 63°C.",
+      "tip": "Tasty: khi chảo nóng, có thể dùng một miếng thịt chà quanh mặt chảo để tráng mỡ tự nhiên trước khi xếp thịt. Nướng theo mẻ nếu chảo nhỏ — không nhồi nhét.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Dùng kéo bếp cắt thịt ngay trên vỉ thành miếng vừa ăn. Cho kim chi, tỏi thái lát và hành lá vào phần mỡ thịt đang sôi trên vỉ, nướng kèm 2–3 phút cho xém thơm.",
+      "tip": "kimchimari: kim chi nướng trên mỡ thịt ba chỉ 'ngon tuyệt' — đây là điểm nhấn của món. Tỏi nướng kèm cũng rất hợp.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Bày thịt đã cắt ra đĩa cùng kim chi nướng, tỏi nướng, ớt thái khoanh. Mỗi người lấy một lá xà lách (hoặc lá vừng), thêm thịt, kim chi, tỏi, một ít ssamjang, cuộn chặt lại và ăn một miếng. Chấm thêm dầu mè muối tiêu tùy thích.",
+      "tip": "Cách ăn đúng kiểu Hàn là cuộn ssam một miếng vừa miệng (kimchimari: cơm + thịt + ssamjang + đồ chua trong một lá). MÂU THUẪN NHỎ: cookerru gợi ý rắc muối tiêu trực tiếp lên thịt trước khi nướng; Tasty và kimchimari (bản cổ điển) KHÔNG nêm thịt mà chấm sau — công thức này theo Tasty/kimchimari vì đó là cách ăn samgyeopsal truyền thống."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 891.03,
+      "proteinG": 16.57,
+      "carbohydrateG": 2,
+      "fatG": 90.33,
+      "fiberG": 0.99,
+      "sugarG": 0.75,
+      "sodiumMg": 243.55
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi (thái lát, nướng kèm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Xà lách lá đỏ (rau cuốn ssam): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Ớt xanh Hàn (hoặc ớt jalapeño): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tương đậu Hàn (doenjang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tương ớt Hàn (gochujang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Mirin (rượu nấu ăn ngọt Nhật): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tỏi băm (cho ssamjang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Đường (cho ssamjang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Muối biển (cho dầu chấm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 15,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 16,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 17,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 19,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,894 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-a4d02f2246e0e115",
+    "slug": "ga-cacciatore-nam",
+    "title": "Gà cacciatore nấm"
+  },
+  "content": {
+    "description": "Đùi gà om cà chua-nấm-hành kiểu thợ săn Ý, hương thảo thơm trong nước sốt đỏ đậm, món cacciatore ấm cả nhà.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 50,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Cacciatore",
+      "Ý",
+      "Om",
+      "Cà chua"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-a4d02f2246e0e115.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.italyabroad.com/recipes/pollo-alla-cacciatora",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.simpleitaly.com/polloallacacciatora/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Đùi gà (có da, có xương)",
+      "canonicalIngredientId": "ING_ENR_C476724F01FC0031",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 800,
+        "unit": "g",
+        "text": "800 g",
+        "gramEquivalent": 800,
+        "basis": "đơn vị gốc đã là gram; 8 cái đùi gà ≈ 100 g/cái (ước lượng phổ biến). Cả hai nguồn đều dùng nguyên con gà chặt miếng cho 4 phần; theo hint món dùng đùi gà nên thay bằng đùi.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 800,
+          "unit": "g"
+        }
+      },
+      "note": "Italy Abroad: nguyên con gà chặt 8 miếng; Simple Italy: 1 con gà thịt (broiler-fryer) chặt miếng — hai nguồn đồng thuận về lượng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 221,
+        "proteinG": 16.5,
+        "carbohydrateG": 0.2,
+        "fatG": 16.6,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 81
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172385",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm đùi gà (king oyster)",
+      "canonicalIngredientId": "ING_ENR_EB2B705B6866EF2E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Italy Abroad: 150 g nấm cho 4 phần; Simple Italy: 8 oz (~227 g) baby bella cho 4 phần — MÂU THUẪN, lấy 200 g ở giữa vì món nhấn mạnh nấm. Nấm đùi gà (Pleurotus eryngii) là loại dễ mua ở VN.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 46.4,
+        "proteinG": 2.4,
+        "carbohydrateG": 8.5,
+        "fatG": 0.3,
+        "fiberG": 3,
+        "sugarG": null,
+        "sodiumMg": 0.8
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003599",
+      "sourceNutritionNote": "Số liệu của 'Mushroom, king oyster' (USDA Foundation) đúng loài nấm đùi gà. USDA không công bố đường (sugar) cho loại này → sugar_g null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Cà chua chín",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram; dùng cà chua tươi chín, bỏ hạt, thái hạt lựu.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Italy Abroad: 1 lon cà chua xắt (~400 g); Simple Italy: 1 lon 28 oz (~800 g) cà chua San-Marzano — MÂU THUẪN, lấy 500 g theo tỉ lệ trung bình cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.9,
+        "carbohydrateG": 3.9,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.6,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 110,
+        "basis": "1 củ hành tây vừa (đường kính ~6.4 cm) ≈ 110 g (USDA FoodData Central).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng 1 củ hành tây cho 4 phần (IA: băm nhỏ; SI: bổ đôi, thái lát dày).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.3,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.2,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi ≈ 3 g (USDA FoodData Central).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng 2 tép tỏi băm cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.4,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Cần tây",
+      "canonicalIngredientId": "ING_ENR_29B7EDD21E6B7106",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cọng",
+        "text": "1 cọng",
+        "gramEquivalent": 40,
+        "basis": "1 cọng cần tây vừa ≈ 40 g (USDA).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ Italy Abroad dùng (1 stalk, thái nhỏ); Simple Italy không dùng — vẫn ghi vì thêm thơm cho sốt, không ảnh hưởng cách làm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 14,
+        "proteinG": 0.7,
+        "carbohydrateG": 3,
+        "fatG": 0.2,
+        "fiberG": 1.6,
+        "sugarG": 1.3,
+        "sodiumMg": 80
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169988",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Rượu vang trắng khô",
+      "canonicalIngredientId": "ING_ENR_F568CF3B013695D9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 120,
+        "unit": "ml",
+        "text": "120 ml",
+        "gramEquivalent": 119,
+        "basis": "120 ml × tỉ trọng rượu vang ~0.99 ≈ 119 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 120,
+          "unit": "ml"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng 1/2 cup (~120 ml) rượu vang trắng khô, đổ vào chảo đun cho bay gần hết mùi cồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 82,
+        "proteinG": 0.1,
+        "carbohydrateG": 2.6,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 1,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174837",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu ô liu",
+      "canonicalIngredientId": "ING_ENR_F3F7B0E29159178B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh dầu ô liu = 15 ml ≈ 13.6 g (tỉ trọng dầu ~0.91) → 2 tbsp ≈ 27 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Italy Abroad: 2 tbsp; Simple Italy: 'olive oil' vừa đủ để áp chảo — lấy 2 tbsp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Bột mì đa dụng",
+      "canonicalIngredientId": "ING_ENR_A9194AD78D914D6C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 16,
+        "basis": "USDA: 1 tbsp bột mì ≈ 7.9 g → 2 tbsp ≈ 16 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ Simple Italy dùng để áo một lớp mỏng lên gà trước khi áp chảo; Italy Abroad không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 364,
+        "proteinG": 10.3,
+        "carbohydrateG": 76.3,
+        "fatG": 1,
+        "fiberG": 2.7,
+        "sugarG": 0.3,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169761",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Hương thảo tươi băm",
+      "canonicalIngredientId": "ING_ENR_AAC9FD6D97989003",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Hương thảo tươi via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 3,
+        "basis": "ước lượng: 1 muỗng canh lá hương thảo tươi băm ≈ 3 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ Simple Italy dùng (1 tbsp băm nhuyễn); Italy Abroad không dùng — vẫn ghi vì là hương đặc trưng của cacciatora vùng Lombardy.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 131,
+        "proteinG": 3.3,
+        "carbohydrateG": 20.7,
+        "fatG": 5.9,
+        "fiberG": 14.1,
+        "sugarG": null,
+        "sodiumMg": 26
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173473",
+      "sourceNutritionNote": "USDA không công bố đường cho hương thảo tươi → sugar_g null."
+    },
+    {
+      "position": 10,
+      "sourceName": "Lá nguyệt quế khô",
+      "canonicalIngredientId": "ING_ENR_32C779E4F254DBE5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "lá",
+        "text": "2 lá",
+        "gramEquivalent": 1,
+        "basis": "ước lượng: 1 lá nguyệt quế khô ≈ 0.5 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ Simple Italy dùng (2 lá, vớt bỏ trước khi dọn); Italy Abroad không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 313,
+        "proteinG": 7.6,
+        "carbohydrateG": 75,
+        "fatG": 8.4,
+        "fiberG": 26.3,
+        "sugarG": null,
+        "sodiumMg": 23
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170917",
+      "sourceNutritionNote": "USDA không công bố đường cho lá nguyệt quế → sugar_g null."
+    },
+    {
+      "position": 11,
+      "sourceName": "Oregano khô",
+      "canonicalIngredientId": "ING_ENR_0511D9DE2779CB2B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "USDA: 1 tsp oregano khô ≈ 1 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ Italy Abroad dùng (1 tsp); Simple Italy không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 265,
+        "proteinG": 9,
+        "carbohydrateG": 68.9,
+        "fatG": 4.3,
+        "fiberG": 42.5,
+        "sugarG": 4.1,
+        "sodiumMg": 25
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171328",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Nước dùng gà",
+      "canonicalIngredientId": "ING_ENR_11FB997D0B872A56",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 120,
+        "unit": "ml",
+        "text": "120 ml",
+        "gramEquivalent": 120,
+        "basis": "120 ml ≈ 120 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 120,
+          "unit": "ml"
+        }
+      },
+      "note": "Chỉ Italy Abroad dùng (1/2 cup); Simple Italy không dùng. Đánh dấu optional — dùng khi sốt quá đặc hoặc cần thêm nước khi rim.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 16,
+        "proteinG": 2,
+        "carbohydrateG": 0.4,
+        "fatG": 0.6,
+        "fiberG": 0,
+        "sugarG": 0.3,
+        "sodiumMg": 306
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174551",
+      "sourceNutritionNote": "Số liệu của 'Soup, chicken broth, canned, prepared with equal volume water' (pha loãng như hướng dẫn)."
+    },
+    {
+      "position": 13,
+      "sourceName": "Mùi tây tươi băm",
+      "canonicalIngredientId": "ING_ENR_D6EDD5F0078ABE8C",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Mùi tây tươi via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "USDA: 1 cup mùi tây tươi băm = 60 g → 1/4 cup ≈ 15 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Italy Abroad: 1/4 cup mùi tây tươi băm rắc cuối; Simple Italy: rắc mùi tây khi dọn (không định lượng).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 3,
+        "carbohydrateG": 6.3,
+        "fatG": 0.8,
+        "fiberG": 3.3,
+        "sugarG": 0.8,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170416",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Muối ăn",
+      "canonicalIngredientId": "ING_ENR_361639D21BDA1726",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "USDA: 1 tsp muối ăn ≈ 6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều ghi 'to taste' (vừa miệng); lấy 1 tsp cho 4 phần làm mốc, điều chỉnh khi nêm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.1,
+        "basis": "USDA: 1 tsp tiêu đen xay ≈ 2.3 g → 1/2 tsp ≈ 1.1 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều 'to taste'; lấy 1/2 tsp làm mốc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.3,
+        "fiberG": 25.3,
+        "sugarG": null,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "USDA không công bố đường cho tiêu đen → sugar_g null."
+    },
+    {
+      "position": 16,
+      "sourceName": "Ớt khô (chili flakes)",
+      "canonicalIngredientId": "ING_ENR_0F4F52DC17C3E74E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 0.5,
+        "basis": "ước lượng: 1 nhúm ớt khô ≈ 0.5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ Italy Abroad dùng ('pinch of red chili pepper flakes'); Simple Italy không dùng — optional cho ai thích cay nhẹ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 318,
+        "proteinG": 12,
+        "carbohydrateG": 56.6,
+        "fatG": 17.3,
+        "fiberG": 27.2,
+        "sugarG": 10.3,
+        "sodiumMg": 30
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170932",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế gà: rửa sạch đùi gà, thấm thật khô bằng khăn giấy; đùi lớn thì chặt đôi. Nêm đều muối và tiêu đen lên cả hai mặt.",
+      "tip": "Simple Italy: thấm khô kỹ để khi áp chảo gà vàng giòn và không bị bắn dầu."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Áo bột: rắc 2 muỗng canh bột mì lên gà, xoa đều rồi giũ bỏ phần bột thừa, chỉ giữ một lớp áo thật mỏng.",
+      "tip": "Simple Italy: lớp bột mỏng giúp gà vàng đẹp và làm sốt sánh nhẹ."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Áp chảo gà: đun chảo to lửa vừa-cao, cho dầu ô liu đến khi dầu hơi bốc khói; xếp gà mặt da xuống, áp khoảng 10 phút, trở đều các mặt đến khi vàng nâu; gắp gà ra đĩa, chắt bớt mỡ thừa trong chảo.",
+      "tip": "Simple Italy: áp chảo tổng ~10 phút; giữ lại một ít mỡ trong chảo để xào rau củ cho thơm.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Xào rau củ: cho hành tây vào chảo, đậy nắp xào khoảng 2 phút cho bắt đầu mềm; thêm nấm đùi gà thái lát, cần tây, hương thảo, tỏi băm và lá nguyệt quế; xào khoảng 5 phút đến khi nấm ra hết nước và hành mềm trong.",
+      "tip": "Simple Italy: đậy nắp giúp hành mau mềm và nấm ra nước nhanh hơn.",
+      "timerMinutes": 7
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đổ rượu vang trắng vào chảo, đun sôi khoảng 2 phút, vừa đun vừa vét hết phần cháy dính đáy chảo, đến khi không còn mùi cồn nồng.",
+      "tip": "Simple Italy: đun đến khi hỗn hợp không còn mùi rượu mới cho cà chua vào.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Thêm cà chua chín, nước dùng gà (nếu dùng), oregano và ớt khô; nêm thêm muối, tiêu; đun sôi rồi hạ lửa nhỏ.",
+      "tip": "Italy Abroad: dầm nhẹ cà chua bằng muỗng gỗ cho ra nước và hòa vào sốt."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho gà trở lại chảo, múc sốt rưới phủ lên trên từng miếng gà; đậy nắp hờ, rim lửa nhỏ 25-30 phút đến khi gà chín mềm, xiên vào không còn nước hồng.",
+      "tip": "Simple Italy rim ~20 phút đậy nắp một phần; Italy Abroad đậy nắp rim ~30 phút — hai nguồn chênh nhau, lấy 25-30 phút và kiểm tra gà chín là chuẩn.",
+      "timerMinutes": 28
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nếu sốt còn loãng: gắp gà ra đĩa, đun sôi sốt vài phút cho sánh lại rồi cho gà trở vào chảo.",
+      "tip": "Italy Abroad: cách làm sốt sánh nhanh mà không làm gà bị khô."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Vớt bỏ lá nguyệt quế; rắc mùi tây tươi băm lên trên. Để món nghỉ 15-30 phút (hoặc đến 1 giờ) rồi hâm lại nhẹ trước khi dọn.",
+      "tip": "Simple Italy: cacciatora để nghỉ rồi hâm lại thì hương vị hòa quyện, ngon hơn hẳn lúc mới nấu xong.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn nóng, kèm bánh mì giòn để chấm sốt, hoặc ăn với mì luộc hay polenta.",
+      "tip": "Simple Italy gợi ý ăn kèm: rustic bread, cooked pasta hoặc polenta."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 22.5,
+      "proteinG": 1.13,
+      "carbohydrateG": 4.88,
+      "fatG": 0.25,
+      "fiberG": 1.5,
+      "sugarG": 3.25,
+      "sodiumMg": 6.25
+    },
+    "originalPerServing": {
+      "energyKcal": 610.63,
+      "proteinG": 37.06,
+      "carbohydrateG": 17.82,
+      "fatG": 40.76,
+      "fiberG": 4.27,
+      "sugarG": null,
+      "sodiumMg": 855.38
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Đùi gà (có da, có xương): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Nấm đùi gà (king oyster): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Cần tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Rượu vang trắng khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu ô liu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Bột mì đa dụng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Hương thảo tươi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 10,
+        "detail": "Lá nguyệt quế khô: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Oregano khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Mùi tây tươi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Muối ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 15,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      14,
+      15,
+      16
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 15,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 16,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,831 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-71cac2085659d819",
+    "slug": "ga-xao-dua-thai",
+    "title": "Gà xào dứa Thái"
+  },
+  "content": {
+    "description": "Đùi gà xào dứa chua ngọt nhiệt đới cay nhẹ, món Thái lạ miệng dễ nấu.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Xào",
+      "Gà",
+      "Dứa",
+      "Thái Lan"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-71cac2085659d819.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://atasteofthai.com/thai-recipes/pineapple-chicken/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://snapedny.org/wp-content/uploads/2022/12/Thai-Pineapple-Chicken.pdf",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Đùi gà (lọc xương, không da)",
+      "canonicalIngredientId": "ING_ENR_D04F644E90DBE986",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram (đùi gà lọc xương, cắt miếng vuông)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "A Taste of Thai: 1.5 lb (680 g) cho 4 phần (→ 510 g cho 3 phần, làm tròn 500 g); công thức MyPlate/SNAP-Ed: 1 lb (454 g) cho 8 phần (~57 g/phần) vì món đó có thêm cơm và bông cải — mâu thuẫn lớn, lấy theo A Taste of Thai vì đây là món xào gà chính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 121,
+        "proteinG": 19.66,
+        "carbohydrateG": 0,
+        "fatG": 4.12,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 95
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173627",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Dứa chín",
+      "canonicalIngredientId": "PINEAPPLE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 425,
+        "unit": "g",
+        "text": "425 g",
+        "gramEquivalent": 425,
+        "basis": "đơn vị gốc đã là gram (dứa tươi đã gọt vỏ, bỏ mắt, cắt miếng)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 425,
+          "unit": "g"
+        }
+      },
+      "note": "A Taste of Thai: 1 hộp 20 oz (567 g) dứa miếng trong syrup nặng cho 4 phần (→ 425 g cho 3 phần), giữ lại syrup làm sốt; MyPlate: 2 cups dứa tươi hoặc hộp cho 8 phần. Vì assignment là 'dứa chín' — dùng dứa tươi 425 g, không dùng syrup hộp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.54,
+        "carbohydrateG": 13.12,
+        "fatG": 0.12,
+        "fiberG": 1.4,
+        "sugarG": 9.85,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169124",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Ớt chuông đỏ",
+      "canonicalIngredientId": "ING_ENR_3908D9685441601A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả nhỏ",
+        "text": "1 quả nhỏ",
+        "gramEquivalent": 110,
+        "basis": "1 quả ớt chuông đỏ nhỏ ≈ 110 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "A Taste of Thai: 1 quả vừa (khoảng 150 g) cắt miếng vuông cho 4 phần (→ ~112 g cho 3 phần); MyPlate: 1 quả cắt miếng cho 8 phần — lấy theo A Taste of Thai.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 26,
+        "proteinG": 0.99,
+        "carbohydrateG": 6.03,
+        "fatG": 0.3,
+        "fiberG": 2.1,
+        "sugarG": 4.2,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170108",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ (dùng 3/4 củ)",
+        "text": "1 củ (dùng 3/4 củ)",
+        "gramEquivalent": 110,
+        "basis": "1 củ hành tây vừa ≈ 150 g, dùng 3/4 củ",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "A Taste of Thai: 1 củ vừa cắt miếng vuông cho 4 phần (→ ~112 g cho 3 phần); MyPlate: 1 củ vừa cắt miếng cho 8 phần — lấy theo A Taste of Thai.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Đậu Hà Lan đường (sugar snap peas)",
+      "canonicalIngredientId": "ING_ENR_8D7BAD5FF538CE7E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 170,
+        "unit": "g",
+        "text": "170 g",
+        "gramEquivalent": 170,
+        "basis": "đơn vị gốc đã là gram (tước xơ, cắt đôi nếu quả to)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 170,
+          "unit": "g"
+        }
+      },
+      "note": "A Taste of Thai: 1/2 lb (227 g) cho 4 phần (→ 170 g cho 3 phần); MyPlate dùng 2 cups bông cải xanh cho 8 phần thay cho đậu Hà Lan — mâu thuẫn về loại rau, lấy theo A Taste of Thai.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 42,
+        "proteinG": 2.8,
+        "carbohydrateG": 7.55,
+        "fatG": 0.2,
+        "fiberG": 2.6,
+        "sugarG": 4,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170010",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi trung bình ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Hint gốc có tỏi; A Taste of Thai KHÔNG dùng tỏi; MyPlate dùng 2 tép băm cho 8 phần. Thêm 2 tép băm theo hint — định lượng tối thiểu, không ảnh hưởng cấu trúc món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Giấm gạo (rice wine vinegar)",
+      "canonicalIngredientId": "ING_ENR_E86DD9DE99FF6A31",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "muỗng canh",
+        "text": "4 muỗng canh",
+        "gramEquivalent": 60,
+        "basis": "1 muỗng canh giấm ≈ 15 ml ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "A Taste of Thai: 1/3 cup (80 ml) cho 4 phần (→ 60 ml cho 3 phần); MyPlate không dùng giấm mà dùng nước cốt 1/2 quả chanh cho 8 phần — lấy theo A Taste of Thai.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0,
+        "carbohydrateG": 0.04,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.04,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172237",
+      "sourceNutritionNote": "USDA SR Legacy/Foundation không có mục giấm gạo — dùng số liệu giấm trắng chưng cất (Vinegar, distilled, fdc 172237) làm tương đương."
+    },
+    {
+      "position": 7,
+      "sourceName": "Đường nâu",
+      "canonicalIngredientId": "ING_ENR_BCD3DFAFE3C19745",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 18.8,
+        "basis": "1 muỗng canh đường nâu ≈ 12.5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "A Taste of Thai: 2 tbsp cho 4 phần (→ 1.5 tbsp cho 3 phần); MyPlate không dùng đường — lấy theo A Taste of Thai.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 380,
+        "proteinG": 0.12,
+        "carbohydrateG": 98.09,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 97.02,
+        "sodiumMg": 28
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168833",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Tương ớt ngọt Thái (sweet chili sauce)",
+      "canonicalIngredientId": "ING_ENR_22FF1EB2733630CA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.25,
+        "unit": "muỗng cà phê",
+        "text": "2.25 muỗng cà phê",
+        "gramEquivalent": 11.3,
+        "basis": "1 muỗng cà phê tương ớt ngọt ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "A Taste of Thai: 1 tbsp cho 4 phần (→ 0.75 tbsp = 2.25 tsp cho 3 phần); MyPlate: 2 tbsp Thai chili sauce cho 8 phần (tỉ lệ tương đương). Dùng loại tương ớt ngọt kiểu Thái (nam chim kai).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA SR Legacy/Foundation không có mục tương ớt ngọt Thái phù hợp (chỉ có sweet-and-sour sauce kiểu Hoa, khác sản phẩm) — để null toàn bộ, không bịa số."
+    },
+    {
+      "position": 9,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.25,
+        "unit": "muỗng cà phê",
+        "text": "2.25 muỗng cà phê",
+        "gramEquivalent": 13.5,
+        "basis": "1 muỗng cà phê nước mắm ≈ 5 ml ≈ 6 g (tỉ trọng ~1.2)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "A Taste of Thai: 1 tbsp cho 4 phần (→ 0.75 tbsp cho 3 phần); MyPlate: 1 tbsp cho 8 phần (ít hơn nhiều) — lấy theo A Taste of Thai.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Bột bắp (bột ngô)",
+      "canonicalIngredientId": "ING_ENR_D2EAF583347FED22",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Bột bắp via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "1 muỗng cà phê bột bắp ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "A Taste of Thai: 2 tsp hòa với syrup dứa để làm sánh sốt, cho 4 phần (→ 1.5 tsp cho 3 phần); MyPlate không dùng — lấy theo A Taste of Thai, hòa với nước lọc thay vì syrup hộp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 381,
+        "proteinG": 0.26,
+        "carbohydrateG": 91.27,
+        "fatG": 0.05,
+        "fiberG": 0.9,
+        "sugarG": 0,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169698",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 20.4,
+        "basis": "1 muỗng canh dầu ăn = 15 ml ≈ 13.6 g (tỉ trọng dầu ~0.91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "A Taste of Thai: 2 tbsp dầu olive chia 2 lần cho 4 phần (→ 1.5 tbsp cho 3 phần); MyPlate: 2 tbsp dầu đậu phộng/canola cho 8 phần — lấy theo A Taste of Thai; dùng dầu ăn thường thay dầu olive cũng được.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": "Dùng số liệu dầu đậu nành tinh luyện (Oil, vegetable, soybean, refined) làm đại diện dầu ăn."
+    },
+    {
+      "position": 12,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "1/4 muỗng cà phê muối ≈ 1.5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "A Taste of Thai chỉ ghi 'salt and pepper' để ướp gà mà không định lượng — ước lượng 1/4 tsp muối cho 500 g gà.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Tiêu đen",
+      "canonicalIngredientId": "ING_ENR_C931006D3F0ABC9D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "1/4 muỗng cà phê tiêu đen xay ≈ 0.6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "A Taste of Thai chỉ ghi 'salt and pepper' để ướp gà mà không định lượng — ước lượng 1/4 tsp tiêu cho 500 g gà.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 20,
+        "basis": "1 cây hành lá ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Hint gốc có hành lá nhưng CẢ HAI nguồn đều không dùng hành lá (MyPlate dùng 1/4 cup ngò rí cắt nhỏ cho 8 phần để trang trí) — thêm 2 cây cắt khúc làm garnish cho phù hợp hint, không bắt buộc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Ớt hiểm tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 4,
+        "basis": "1 quả ớt hiểm tươi ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Hint gốc có ớt hiểm nhưng KHÔNG nguồn nào dùng ớt tươi (món này chỉ cay nhẹ từ sweet chili sauce). Thêm 2 quả băm cho ai thích cay kiểu Thái — optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế gà: rửa sạch đùi gà, thấm khô, cắt miếng vuông khoảng 2.5 cm. Ướp gà với muối và tiêu đen, để 10 phút cho thấm.",
+      "tip": "Thấm khô gà trước khi ướp giúp gà áp chảo vàng đẹp, không bị ra nước.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Dứa gọt vỏ, bỏ mắt, cắt miếng vừa ăn (cỡ miếng gà). Hành tây và ớt chuông cắt miếng vuông. Đậu Hà Lan tước xơ hai bên, cắt đôi nếu quả to. Tỏi băm nhỏ, hành lá cắt khúc.",
+      "tip": "Cắt rau củ cỡ tương đương miếng gà để chín đều cùng lúc."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Pha nước sốt trong bát: giấm gạo, đường nâu, tương ớt ngọt Thái, nước mắm — khuấy đều cho đường tan. Trong chén riêng, hòa bột bắp với 1 muỗng canh nước lọc cho tan hoàn toàn.",
+      "tip": "Hòa bột bắp riêng trước để khi cho vào chảo không bị vón cục."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun chảo lớn lửa vừa–cao với một nửa lượng dầu. Cho hành tây, ớt chuông và tỏi vào xào 2–3 phút đến khi rau củ hơi xém cạnh, trút ra bát, đậy lại giữ ấm.",
+      "tip": "A Taste of Thai: xào rau củ trước, trút ra riêng — rau củ giữ được độ giòn, không bị nhũn khi rim sốt cùng gà.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho nốt phần dầu còn lại vào chảo, cho gà vào áp chảo, dàn đều một lớp. Áp 4–5 phút, trở mặt, đến khi gà vàng đều các mặt.",
+      "tip": "Không đảo gà liên tục — để yên mỗi mặt 1–2 phút mới có lớp vàng nâu đẹp (phản ứng Maillard).",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ hỗn hợp sốt giấm-đường vào chảo gà, đảo đều. Đun sôi rồi hạ lửa vừa, rim 3–4 phút cho gà chín hẳn và thấm vị chua ngọt.",
+      "tip": "Nếm sốt ở bước này: món Thái chuẩn là cân bằng chua (giấm/dứa) – ngọt (đường) – mặn (nước mắm).",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Trút rau củ đã xào, dứa miếng và đậu Hà Lan trở lại chảo, đảo đều, đun thêm 1–2 phút cho tất cả nóng đều và đậu vừa chín tới (vẫn giòn).",
+      "tip": "Cho dứa vào sau cùng để dứa không bị nát và giữ được vị tươi — A Taste of Thai xào dứa riêng 1–2 phút trước khi trộn.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rưới từ từ bột bắp đã hòa vào chảo, vừa rưới vừa đảo, đun thêm 1 phút đến khi sốt sánh lại và trong.",
+      "tip": "A Taste of Thai: sốt đạt là 'translucent' — sánh trong, bám đều lên gà và rau củ. Nếu đặc quá, thêm 1–2 muỗng canh nước.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nêm nếm lần cuối: thêm nước mắm nếu nhạt, thêm đường nếu thiếu ngọt. Rắc hành lá và ớt hiểm (nếu dùng), dọn nóng ngay với cơm trắng hoặc cơm gạo lứt.",
+      "tip": "MyPlate gợi ý ăn kèm cơm gạo lứt và vắt thêm chanh — hợp với người ăn healthy."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 272.5,
+      "proteinG": 33.53,
+      "carbohydrateG": 18.59,
+      "fatG": 7.04,
+      "fiberG": 1.98,
+      "sugarG": 13.95,
+      "sodiumMg": 159.75
+    },
+    "originalPerServing": {
+      "energyKcal": 421.46,
+      "proteinG": 36.42,
+      "carbohydrateG": 37.58,
+      "fatG": 14.13,
+      "fiberG": 5.15,
+      "sugarG": 25.81,
+      "sodiumMg": 715.89
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Ớt chuông đỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Đậu Hà Lan đường (sugar snap peas): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Giấm gạo (rice wine vinegar): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Đường nâu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tương ớt ngọt Thái (sweet chili sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Bột bắp (bột ngô): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Tiêu đen: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

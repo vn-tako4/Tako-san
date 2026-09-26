@@ -1,0 +1,556 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-6d7fc503ade5df6e",
+    "slug": "thit-ba-chi-xao-sa-ot-kieu-mien-trung",
+    "title": "Thịt ba chỉ xào sả ớt kiểu miền Trung"
+  },
+  "content": {
+    "description": "Thịt ba chỉ thái mỏng xào săn với sả ớt băm thơm nồng, nêm nước mắm đậm đà theo khẩu vị miền Trung, món mặn cực đưa cơm.",
+    "cuisine": "vietnamese",
+    "category": "mon_xao",
+    "region": "trung",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Món xào",
+      "Miền Trung",
+      "Cay nồng",
+      "Đưa cơm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-6d7fc503ade5df6e.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://afamily.vn/thit-ba-chi-lam-the-nay-thi-an-4-5-bat-com-khong-chan-thao-tac-chua-toi-15-phut-la-xong-20220704151252277.chn",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://nauankhongkho.vn/blog/cach-lam-thit-ba-chi-xao-sa-ot-don-gian-de-nau-cho-thu-2-ban-biu-NRdVlJJ8YDjQ",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt ba chỉ",
+      "canonicalIngredientId": "PORK_BELLY",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "afamily: 300-400 g cho công thức (không ghi số phần, thao tác <15 phút); dùng 400 g cho 3 phần. Nguồn thứ hai (nauankhongkho): 250 g. Thịt rửa sạch, chà muối khử mùi tanh, thái miếng mỏng vừa ăn (nauankhongkho).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 518,
+        "proteinG": 9.34,
+        "carbohydrateG": 0,
+        "fatG": 53.01,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 32
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167812",
+      "sourceNutritionNote": "USDA SR Legacy 'Pork, fresh, belly, raw' (fdcId 167812)."
+    },
+    {
+      "position": 1,
+      "sourceName": "Sả",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "nhánh",
+        "text": "5 nhánh",
+        "gramEquivalent": 90,
+        "basis": "1 nhánh sả phần non ăn được ≈ 18 g (ước tính; cây sả Việt nhỏ vừa).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn: afamily dùng 2-3 nhánh cho 300-400 g thịt; nauankhongkho dùng 7 nhánh cho 250 g thịt. Chọn 5 nhánh cho 400 g thịt / 3 phần theo tỷ lệ trung gian. Sả đập dập trước cho dễ băm (afamily).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.31,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "USDA SR Legacy 'Lemon grass (citronella), raw' (fdcId 168573) không công bố fiber và total sugars → để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Ớt tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "quả",
+        "text": "4 quả",
+        "gramEquivalent": 20,
+        "basis": "1 quả ớt hiểm nhỏ ≈ 5 g; nếu dùng ớt sừng thì 1 quả ≈ 15 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "afamily: 4-5 quả ớt; nauankhongkho: 4 trái cho 250 g thịt. Chọn 4 quả ớt hiểm cho 400 g thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 2,
+        "carbohydrateG": 9.46,
+        "fatG": 0.2,
+        "fiberG": 1.5,
+        "sugarG": 5.1,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170497",
+      "sourceNutritionNote": "USDA SR Legacy 'Peppers, hot chili, green, raw' (fdcId 170497) — mục ớt cay tương đương gần nhất."
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "tép",
+        "text": "4 tép",
+        "gramEquivalent": 12,
+        "basis": "USDA: 1 tép tỏi ≈ 3 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "afamily: bóc vỏ, băm nhỏ; nauankhongkho: 3 tép cho 250 g thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "USDA (fdcId 1104647) không công bố total sugars và sodium → để null."
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhánh",
+        "text": "2 nhánh",
+        "gramEquivalent": 30,
+        "basis": "USDA: 1 nhánh hành lá cỡ vừa ≈ 15 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "afamily: 2-3 nhánh, bỏ gốc, rửa sạch, cắt nhỏ hoặc cắt khúc; cho vào cuối cùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Đường kính",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 8.4,
+        "basis": "USDA: 1 muỗng cà phê đường ≈ 4,2 g → 2 muỗng ≈ 8,4 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "afamily: 2 thìa cà phê đường kính cho vào chảo cùng thịt. nauankhongkho: 1/2 muỗng cà phê đường + dầu hào để ướp — hai cách nêm khác nhau, chọn theo afamily (kiểu miền Trung mặn-ngọt, không dầu hào).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh = 15 ml; nước mắm có khối lượng riêng ≈ 1,2 g/ml → ≈ 18 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "afamily: 1 thìa canh mắm cho vào chảo cùng thịt; công thức không dùng muối riêng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2.3,
+        "basis": "USDA: 1 muỗng cà phê tiêu đen xay ≈ 2,3 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "nauankhongkho dùng 1 muỗng cà phê tiêu; afamily không ghi tiêu — giữ lại lượng nhỏ cho thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê hạt nêm ≈ 5 g (ước tính theo quy đổi thông dụng).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "nauankhongkho dùng 1 muỗng cà phê hạt nêm; afamily không dùng. Hạt nêm là hỗn hợp gia vị tổng hợp, không có số liệu USDA phù hợp.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có số liệu chuẩn phù hợp; để null theo quy tắc."
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "USDA: 1 muỗng cà phê dầu đậu nành ≈ 4,5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "afamily KHÔNG dùng dầu ăn — thịt ba chỉ tự tiết mỡ khi đảo khô; nauankhongkho dùng 1 muỗng canh dầu ăn. Giữ 1 muỗng cà phê dự phòng nếu chảo quá khô (optional).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế thịt: rửa sạch thịt ba chỉ, dùng muối chà xát để khử mùi tanh, xả lại nước lạnh cho sạch, thái thành miếng mỏng vừa ăn rồi để ráo.",
+      "tip": "Lau khô miếng thịt bằng khăn giấy trước khi thái để khi xào thịt không ra nước (afamily)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế rau thơm: hành lá bỏ gốc, rửa sạch, cắt nhỏ hoặc cắt khúc. Bóc vỏ tỏi rồi băm nhỏ. Sả và ớt rửa sạch, băm nhỏ.",
+      "tip": "Đập dập sả trước cho dễ băm (afamily)."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho phần thịt đã thái, ráo nước vào chảo khô (không dầu). Đảo khoảng 2 phút trên lửa vừa cho thịt tiết mỡ ra. Khi thịt săn lại thì vớt thịt ra đĩa.",
+      "tip": "Thịt ba chỉ nhiều mỡ nên không cần dầu — đảo khô giúp thịt ra mỡ và sau này xém cạnh ngon hơn (afamily).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Chắt bớt phần mỡ do thịt tiết ra nếu quá nhiều (giữ lại một ít để xào). Cho tỏi, sả và ớt đã băm nhỏ vào chảo, phi thơm.",
+      "tip": "Phi đến khi sả, ớt, tỏi dậy mùi thơm mới cho thịt vào (afamily).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho thịt ba chỉ trở lại chảo cùng 2 muỗng cà phê đường kính và 1 muỗng canh nước mắm. Giảm lửa, đảo thịt 3-4 phút cho gia vị thấm và thịt vàng xém cạnh.",
+      "tip": "Nguồn nauankhongkho ướp thịt trước 15-20 phút với dầu hào + gia vị; afamily (chọn làm chính vì hợp kiểu miền Trung mặn-ngọt khô) nêm trực tiếp khi xào, không ướp trước.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Nêm nếm lại cho vừa miệng (thêm chút hạt nêm hoặc tiêu nếu muốn)."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho hành lá vào chảo, đảo nhanh cho hành vừa chín tới rồi tắt bếp."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho thịt ba chỉ xào sả ớt ra đĩa, rắc thêm tiêu xay lên trên, ăn nóng cùng cơm trắng.",
+      "tip": "afamily: với cách chế biến này có thể thay thịt ba chỉ bằng phần thịt khác tùy thích."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 690.67,
+      "proteinG": 12.45,
+      "carbohydrateG": 0,
+      "fatG": 70.68,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 42.67
+    },
+    "originalPerServing": {
+      "energyKcal": 760.07,
+      "proteinG": 13.96,
+      "carbohydrateG": 13.59,
+      "fatG": 72.4,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Sả: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Ớt tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Đường kính: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

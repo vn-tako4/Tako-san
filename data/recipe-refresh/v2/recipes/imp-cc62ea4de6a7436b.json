@@ -1,0 +1,567 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-cc62ea4de6a7436b",
+    "slug": "goi-dua-tom-thai",
+    "title": "Gỏi dứa tôm Thái"
+  },
+  "content": {
+    "description": "Dứa vàng mọng trộn tôm chua cay chanh-ớt, gỏi nhiệt đới Thái Lan khai vị mát rượi.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Gỏi",
+      "Dứa",
+      "Thái Lan",
+      "Mát lành"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-cc62ea4de6a7436b.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.infusioncookingclassessamui.com/post/phuket-style-pineapple-salad",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://gastrofun.net/recipe/thai-pineapple-salad-yam-saparot-sweet-tangy-and-spicy/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Dứa chín (gọt vỏ, bỏ mắt, cắt miếng vuông)",
+      "canonicalIngredientId": "PINEAPPLE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": "đơn vị gốc đã là gram; Yam Saparot Phuket: 150 g/2 phần → 225 g/3 phần; Gastrofun: 300 g (không ghi số phần); lấy 450 g (~1⁄2 quả dứa lớn) vì dứa là nguyên liệu chính",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn về tỉ lệ dứa: Phuket 150 g cho 2 phần, Gastrofun 300 g (không ghi số phần). Công thức này lấy 450 g cho 3 phần vì dứa là thành phần chính của món gỏi dứa.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.54,
+        "carbohydrateG": 13.12,
+        "fatG": 0.12,
+        "fiberG": 1.4,
+        "sugarG": 9.85,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169124",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm tươi (bóc vỏ, bỏ chỉ đen)",
+      "canonicalIngredientId": "ING_ENR_7B8E16FCD96F052B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram; Yam Saparot Phuket: 200 g tôm đã bóc vỏ/2 phần → 300 g/3 phần (khối lượng sau bóc vỏ)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Chanh tươi (vắt lấy nước cốt)",
+      "canonicalIngredientId": "ING_ENR_AE8F7395B4BFD54D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "Yam Saparot Phuket: 1 tbsp/2 phần → 1,5 tbsp/3 phần; Gastrofun: 15 g; lấy 2 tbsp ≈ 30 ml (≈ 2 quả chanh)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.42,
+        "carbohydrateG": 8.42,
+        "fatG": 0.07,
+        "fiberG": 0.4,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168156",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 34,
+        "basis": "Yam Saparot Phuket: 1 tbsp/2 phần → 1,5 tbsp/3 phần; Gastrofun: 30 g; lấy 2 tbsp = 30 ml; tỉ trọng nước mắm ~1,15",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 12.5,
+        "basis": "Gastrofun: 15 g đường trong nước trộn; 1 tbsp đường cát ≈ 12,5 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Bản gốc Phuket dùng nước me (3 tbsp tamarind) thay đường; món này theo hint dùng đường + chanh tươi nên lấy theo công thức Gastrofun.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Ớt hiểm tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "quả",
+        "text": "4 quả",
+        "gramEquivalent": 8,
+        "basis": "Gastrofun khuyên dùng ớt hiểm tươi tùy độ cay; 1 quả ớt hiểm ~2 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Yam Saparot Phuket dùng 2 tbsp tương ớt (chilli paste); món này dùng ớt hiểm tươi xắt lát theo hint — 4 quả cho vị cay vừa, gia giảm theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 20,
+        "basis": "Gastrofun: 2 cây hành lá xắt mỏng; 1 cây hành lá ~10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành tím (thái lát mỏng)",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Hành tím via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "củ",
+        "text": "2 củ",
+        "gramEquivalent": 40,
+        "basis": "Yam Saparot Phuket: 20 g hành tím/2 phần → 30 g/3 phần; lấy 40 g (2 củ vừa)",
+        "evidence": "missing",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Đậu phộng rang (giã dập)",
+      "canonicalIngredientId": "ING_ENR_D269E3A6AD24D268",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 40,
+        "unit": "g",
+        "text": "40 g",
+        "gramEquivalent": 40,
+        "basis": "đơn vị gốc đã là gram; Yam Saparot Phuket: 20 g/2 phần → 30 g/3 phần; Gastrofun: 35 g; lấy 40 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 40,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 587,
+        "proteinG": 24.35,
+        "carbohydrateG": 21.26,
+        "fatG": 49.66,
+        "fiberG": 8.4,
+        "sugarG": 4.9,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173806",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Bạc hà tươi (xắt rối)",
+      "canonicalIngredientId": "ING_ENR_4DF2138FF0905416",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "đơn vị gốc đã là gram; Gastrofun: 10 g lá bạc hà",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Gastrofun dùng bạc hà làm rau thơm; bản Phuket không có. Để tùy chọn theo hint món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 44,
+        "proteinG": 3.29,
+        "carbohydrateG": 8.41,
+        "fatG": 0.73,
+        "fiberG": 6.8,
+        "sugarG": null,
+        "sodiumMg": 30
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173475",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Tôm bóc vỏ, bỏ đầu, dùng tăm hoặc dao khía dọc sống lưng lấy bỏ chỉ đen, rửa sạch, để ráo."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đun một nồi nước cho sôi già, thả tôm vào luộc 30–60 giây đến khi tôm cong lại, chuyển màu đỏ cam thì vớt ra ngay, để ráo và để nguội.",
+      "tip": "Yam Saparot Phuket: luộc tôm chỉ 30 giây–1 phút tùy cỡ tôm; luộc lâu tôm bị dai.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Dứa gọt vỏ, bỏ mắt, cắt thành miếng vuông cạnh 1–1,5 cm.",
+      "tip": "Gastrofun: cắt các nguyên liệu cùng cỡ để mỗi miếng gỏi đều có đủ vị."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Hành tím bóc vỏ thái lát mỏng; hành lá xắt nhỏ; ớt hiểm xắt lát mỏng; bạc hà xắt rối."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Pha nước trộn gỏi: cho 2 muỗng canh nước cốt chanh, 2 muỗng canh nước mắm và 1 muỗng canh đường vào chén, khuấy đều đến khi đường tan hết."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho dứa, tôm luộc, hành tím, hành lá và ớt hiểm vào tô lớn."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Rưới đều nước trộn lên, trộn nhẹ tay cho các nguyên liệu thấm đều gia vị."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Để gỏi nghỉ 10 phút cho ngấm vị, sau đó nếm lại và điều chỉnh chua–mặn–ngọt–cay cho vừa miệng.",
+      "tip": "Gastrofun: để gỏi nghỉ 10 phút cho các vị hòa quyện; dứa ngọt quá thì thêm chút nước cốt chanh (mẹo của Yam Saparot Phuket).",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Rắc đậu phộng rang giã dập và lá bạc hà xắt rối lên trên.",
+      "tip": "Trộn đậu phộng vào sát lúc ăn để giữ độ giòn (Gastrofun)."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn ngay khi còn tươi mát, dùng làm món khai vị hoặc ăn kèm cơm.",
+      "tip": "Gỏi dứa ra nước nếu để lâu — nên trộn và ăn trong ngày (Gastrofun)."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 87.87,
+      "proteinG": 3.58,
+      "carbohydrateG": 5.07,
+      "fatG": 6.63,
+      "fiberG": 1.55,
+      "sugarG": 1.7,
+      "sodiumMg": 2.4
+    },
+    "originalPerServing": {
+      "energyKcal": 275.12,
+      "proteinG": 25.39,
+      "carbohydrateG": 31.18,
+      "fatG": 7.38,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1015.23
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Dứa chín (gọt vỏ, bỏ mắt, cắt miếng vuông): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Tôm tươi (bóc vỏ, bỏ chỉ đen): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Chanh tươi (vắt lấy nước cốt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Ớt hiểm tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      3,
+      4
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

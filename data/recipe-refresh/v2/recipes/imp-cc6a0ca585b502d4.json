@@ -1,0 +1,747 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-cc6a0ca585b502d4",
+    "slug": "larb-ga",
+    "title": "Larb gà"
+  },
+  "content": {
+    "description": "Gà bằm xào khô trộn chanh-ớt-gạo rang chua cay, larb gà Isaan Thái dùng cơm nếp.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Larb gà",
+      "Isaan",
+      "Thái Lan",
+      "Chua cay"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-cc6a0ca585b502d4.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://hot-thai-kitchen.com/laab-gai/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.simplysuwanee.com/laab-gai-thai-chicken-salad/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt ức gà xay",
+      "canonicalIngredientId": "ING_ENR_A2041CB64EE80F56",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": "đơn vị gốc đã là gram; Simply Suwanee: 454 g/2 phần; Hot Thai Kitchen: 300 g (không ghi số phần) — hai nguồn mâu thuẫn, lấy 450 g cho 3 phần (~150 g/người)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "Hot Thai Kitchen khuyên dùng thịt gà xay không quá nạc (bà tự xay 50/50 ức–đùi) để larb không bị khô; món này dùng ức gà theo tên món nên cần nấu vừa chín tới và ăn ngay khi còn nóng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 17.44,
+        "carbohydrateG": 0.04,
+        "fatG": 8.1,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 60
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171116",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Nước lọc (để nấu gà)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 45,
+        "basis": "Hot Thai Kitchen: 2 tbsp/300 g gà → 3 tbsp/450 g gà",
+        "evidence": "missing",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174158",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.5,
+        "unit": "muỗng canh",
+        "text": "2.5 muỗng canh",
+        "gramEquivalent": 43,
+        "basis": "Hot Thai Kitchen: 25 ml/300 g gà → ~38 ml/450 g gà, lấy 2,5 tbsp = 37,5 ml; tỉ trọng nước mắm ~1,15",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Simply Suwanee chỉ dùng 1,5–2 tbsp cho 454 g gà — mâu thuẫn với Hot Thai Kitchen; lấy theo tỉ lệ của Hot Thai Kitchen (nguồn Thái được ưu tiên).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Chanh tươi (vắt lấy nước cốt)",
+      "canonicalIngredientId": "ING_ENR_AE8F7395B4BFD54D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 45,
+        "basis": "Hot Thai Kitchen: 30 ml/300 g gà → 45 ml/450 g gà (≈ 1,5–2 quả chanh)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.42,
+        "carbohydrateG": 8.42,
+        "fatG": 0.07,
+        "fiberG": 0.4,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168156",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Ớt hiểm tươi (băm nhỏ)",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 6,
+        "basis": "1 quả ớt hiểm ~2 g; gia giảm theo độ cay",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng ớt bột rang (1–2 tsp), không dùng ớt tươi; món này dùng ớt hiểm tươi băm theo hint — điều chỉnh số quả theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Gạo tẻ sống (để rang làm bột gạo rang)",
+      "canonicalIngredientId": "ING_ENR_D43947E7F2B8BD85",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "Hot Thai Kitchen: 3 tbsp gạo sống làm được 2–3 tbsp bột gạo rang; 1 tbsp gạo ≈ 12 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 365,
+        "proteinG": 7.13,
+        "carbohydrateG": 79.95,
+        "fatG": 0.66,
+        "fiberG": 1.3,
+        "sugarG": 0.12,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169756",
+      "sourceNutritionNote": "Số liệu cho gạo sống; gạo chỉ được rang khô chứ không nấu chín, thành phần dinh dưỡng của bột gạo rang tương đương gạo sống."
+    },
+    {
+      "position": 6,
+      "sourceName": "Lá chanh kaffir (rang cùng gạo, tùy chọn)",
+      "canonicalIngredientId": "ING_ENR_2A320C3B923A2437",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Lá chanh kaffir (lá chanh Thái) via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "lá",
+        "text": "1 lá",
+        "gramEquivalent": 2,
+        "basis": "1 lá chanh kaffir ~2 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Hot Thai Kitchen rang 1 lá chanh kaffir cùng gạo để tăng mùi thơm (tùy chọn, giã chung với gạo).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có mục SR Legacy/Foundation phù hợp cho lá chanh kaffir; lượng dùng không đáng kể nên để null."
+    },
+    {
+      "position": 7,
+      "sourceName": "Bột gạo rang (khao khua, tự làm từ gạo trên)",
+      "canonicalIngredientId": "ING_ENR_31ACD6831E8A23FC",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Bột gạo via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 24,
+        "basis": "Hot Thai Kitchen: 2–3 tbsp/300 g gà → 3 tbsp/450 g gà; 1 tbsp bột gạo ≈ 8 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Bột gạo rang là 'linh hồn' của larb theo Hot Thai Kitchen — không thể thiếu, giúp vị béo bùi và làm dịu vị chua gắt của chanh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 365,
+        "proteinG": 7.13,
+        "carbohydrateG": 79.95,
+        "fatG": 0.66,
+        "fiberG": 1.3,
+        "sugarG": 0.12,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169756",
+      "sourceNutritionNote": "Số liệu dùng của gạo sống (USDA 169756); gạo chỉ rang khô, không nấu chín."
+    },
+    {
+      "position": 8,
+      "sourceName": "Hành tím (thái lát mỏng)",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Hành tím via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "củ",
+        "text": "2 củ",
+        "gramEquivalent": 60,
+        "basis": "Hot Thai Kitchen: 1 củ nhỏ (~1⁄4 cup ≈ 40 g)/300 g gà → ~60 g/450 g gà (2 củ vừa)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Hành lá (xắt nhỏ)",
+      "canonicalIngredientId": "ING_ENR_CED6C37835B55B25",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 20,
+        "basis": "Hot Thai Kitchen: 1 cây/300 g gà; Simply Suwanee: 2 cây/454 g gà; lấy 2 cây (~20 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Rau mùi (ngò rí)",
+      "canonicalIngredientId": "ING_ENR_D6CB7B7A9989F08F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "cọng",
+        "text": "10 cọng",
+        "gramEquivalent": 20,
+        "basis": "Hot Thai Kitchen: 6–8 cọng/300 g gà → ~10 cọng/450 g gà; 1 cọng rau mùi ~2 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Bạc hà tươi",
+      "canonicalIngredientId": "ING_ENR_0A7F171632EBC2D7",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "đơn vị gốc đã là gram; Hot Thai Kitchen: 1⁄3 cup/300 g gà → 1⁄2 cup/450 g gà ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Hot Thai Kitchen nhấn mạnh bạc hà là nguyên liệu then chốt của larb, không được bỏ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 44,
+        "proteinG": 3.29,
+        "carbohydrateG": 8.41,
+        "fatG": 0.73,
+        "fiberG": 6.8,
+        "sugarG": null,
+        "sodiumMg": 30
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173475",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Tỏi (băm nhỏ)",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi ~3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Hint món yêu cầu tỏi; công thức larb chuẩn của cả Hot Thai Kitchen và Simply Suwanee đều KHÔNG dùng tỏi (bản Allrecipes dùng 1 tép). Thêm 2 tép băm nấu cùng gà theo hint.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1⁄2 tsp đường ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hot Thai Kitchen: larb truyền thống không cho đường; chỉ thêm 1⁄2 tsp nếu thấy vị chua quá gắt để cân bằng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Làm bột gạo rang: cho 3 muỗng canh gạo tẻ và 1 lá chanh kaffir (nếu có) vào chảo khô, rang trên lửa lớn, đảo liên tục đến khi hạt gạo chuyển màu nâu sậm và thơm nức.",
+      "tip": "Hot Thai Kitchen: rang đến nâu SẬM chứ không phải vàng nhạt; đảo liên tục kẻo cháy.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Trút gạo rang ra cối, giã (hoặc xay bằng máy xay gia vị) thành bột thô, còn lợn cợn — không xay mịn như bột mì.",
+      "tip": "Hot Thai Kitchen: giã cả lá chanh chung; đừng xay quá mịn, cần độ sần sật của bột."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Tỏi bóc vỏ, băm nhỏ. Hành tím thái lát mỏng. Hành lá, rau mùi xắt nhỏ. Bạc hà nhặt lá, lá to xé đôi."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho 3 muỗng canh nước vào chảo rộng hoặc nồi vừa, đun sôi liu riu trên lửa lớn. Cho thịt gà xay và 1 muỗng cà phê nước mắm (lấy từ phần đã đong) vào, đảo liên tục, bóp tơi các cục thịt đến khi gà vừa chín tới.",
+      "tip": "Hot Thai Kitchen: đảo liên tục để thịt tơi, nấu vừa chín tới là dừng — nấu kỹ thịt bị khô.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Nhấc chảo khỏi bếp; cho ngay hành tím thái lát vào, đảo đều cho hành hơi mềm và các lớp hành tách rời.",
+      "tip": "Dùng chính chiếc chảo làm tô trộn (mẹo của Hot Thai Kitchen)."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Nêm phần nước mắm còn lại, nước cốt chanh, ớt hiểm băm và 3 muỗng canh bột gạo rang vào; trộn thật đều."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho hành lá và rau mùi xắt nhỏ vào, trộn nhẹ. Nếm và điều chỉnh: thêm nước mắm cho mặn, chanh cho chua, ớt cho cay.",
+      "tip": "Larb chuẩn phải cân bằng mặn–chua–cay; nếu chua gắt quá, thêm 1⁄2 muỗng cà phê đường theo gợi ý của Hot Thai Kitchen."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nếu chưa ăn ngay: giữ bột gạo rang riêng, chỉ trộn vào trước khi dọn.",
+      "tip": "Hot Thai Kitchen: bột gạo để lâu sẽ hút hết nước sốt làm larb bị khô."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Bày larb ra đĩa, rắc lá bạc hà lên trên mặt.",
+      "tip": "Hot Thai Kitchen: rắc bạc hà lên trên chứ không trộn vào lúc nóng vì lá sẽ bị thâm đen."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Trang trí thêm vài quả ớt khô nếu thích."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Dọn khi còn ấm hoặc ở nhiệt độ phòng, ăn kèm xôi nếp hoặc cơm trắng và rau sống giòn (bắp cải, dưa leo, đậu que, xà lách).",
+      "tip": "Hot Thai Kitchen gợi ý các loại rau ăn kèm: xà lách, dưa leo, đậu que, bắp cải."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 0,
+      "proteinG": 0,
+      "carbohydrateG": 0,
+      "fatG": 0,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 0.3
+    },
+    "originalPerServing": {
+      "energyKcal": 322.89,
+      "proteinG": 29.47,
+      "carbohydrateG": 23.85,
+      "fatG": 12.42,
+      "fiberG": 1.73,
+      "sugarG": null,
+      "sodiumMg": 1225.47
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Thịt ức gà xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Chanh tươi (vắt lấy nước cốt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Ớt hiểm tươi (băm nhỏ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Gạo tẻ sống (để rang làm bột gạo rang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Bột gạo rang (khao khua, tự làm từ gạo trên): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Hành tím (thái lát mỏng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Hành lá (xắt nhỏ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Rau mùi (ngò rí): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Bạc hà tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Tỏi (băm nhỏ): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

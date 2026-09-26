@@ -1,0 +1,864 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-e47b2f01ee81031a",
+    "slug": "mi-xao-dua-tom-thai",
+    "title": "Mì xào dứa tôm Thái"
+  },
+  "content": {
+    "description": "Sợi mì xào dứa-tôm chua ngọt nhiệt đới với hành lá-tỏi, món Thái mì sáng tạo dễ làm.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Mì xào",
+      "Dứa",
+      "Thái Lan",
+      "Chua ngọt"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-e47b2f01ee81031a.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://m.10000recipe.com/en/6839352/-_Stir-fried_rice_noodles__-_It_is_called_Pad_ThaiIced_noodles",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://thequirinokitchen.com/how-to-make-pad-thai-rice-noodles-with-shrimps-in-tamarind-sauce/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì gạo dẹt khô (rice stick)",
+      "canonicalIngredientId": "ING_ENR_29B1BBE01023FD81",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 170,
+        "unit": "g",
+        "text": "170 g",
+        "gramEquivalent": 170,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 170,
+          "unit": "g"
+        }
+      },
+      "note": "Quirino Kitchen dùng 4 oz (113 g) mì gạo khô cho 2 phần → ~170 g cho 3 phần; blog 10000recipe chỉ ghi 'ngâm mì gạo' mà không định lượng — lấy 170 g cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 364,
+        "proteinG": 5.95,
+        "carbohydrateG": 80.2,
+        "fatG": 0.56,
+        "fiberG": 1.6,
+        "sugarG": 0.12,
+        "sodiumMg": 182
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169742",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm tươi (bóc vỏ, bỏ chỉ đen)",
+      "canonicalIngredientId": "ING_ENR_7B8E16FCD96F052B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Quirino Kitchen: 1⁄2 lb (227 g) tôm cho 2 phần → ~340 g cho 3 phần; 10000recipe chỉ ghi 'xào thịt tôm' không định lượng — lấy 300 g cho 3 phần, ở giữa và hợp khẩu phần pad thai tôm thông thường.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Dứa chín cắt miếng vừa ăn",
+      "canonicalIngredientId": "ING_ENR_2D0E250700FE4D72",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram (≈ 0.9 cup; USDA: 1 cup dứa miếng ≈ 165 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "Quirino Kitchen: 1⁄2 cup dứa miếng cho 2 phần → 3⁄4 cup cho 3 phần; 10000recipe: 'trước khi tắt bếp cho thật nhiều dứa vào' không định lượng — lấy 150 g cho 3 phần, cho vào cuối để dứa không bị nát.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.54,
+        "carbohydrateG": 13.1,
+        "fatG": 0.12,
+        "fiberG": 1.4,
+        "sugarG": 9.85,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169124",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 100,
+        "basis": "USDA FoodData Central: 1 quả trứng gà lớn = 50 g; 2 quả ≈ 100 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Quirino Kitchen: 2 quả trứng đánh tan cho 2 phần; 10000recipe: 1 quả trứng đánh tan có nêm gia vị — mâu thuẫn; lấy 2 quả cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.6,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Giá đỗ",
+      "canonicalIngredientId": "BEAN_SPROUTS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "10000recipe: 'cho thật nhiều giá đỗ vào cùng dứa ngay trước khi tắt bếp'; Quirino Kitchen bỏ qua giá đỗ nhưng ghi chú công thức pad thai gốc có giá đỗ — lấy 100 g cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 30,
+        "proteinG": 3.04,
+        "carbohydrateG": 5.94,
+        "fatG": 0.18,
+        "fiberG": 1.8,
+        "sugarG": 4.13,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169957",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 45,
+        "basis": "USDA FoodData Central (mục Onions, spring or scallions): 1 cây hành lá cỡ vừa ≈ 15 g; 3 cây ≈ 45 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "10000recipe: thái nhỏ hành lá để phi thơm làm 'dầu hành'; Quirino Kitchen: 2 cây thái mỏng để trang trí — lấy 3 cây cho 3 phần, một phần phi thơm đầu món, một phần rắc cuối món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "tép",
+        "text": "4 tép",
+        "gramEquivalent": 12,
+        "basis": "USDA FoodData Central: 1 tép tỏi ≈ 3 g; 4 tép ≈ 12 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Quirino Kitchen: 4 tép tỏi cho 2 phần → 6 tép cho 3 phần; 10000recipe: 1⁄2 Tbsp tỏi băm (~7 g) — mâu thuẫn; lấy 4 tép (~12 g) ở giữa hai nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Me chua (dạng cô đặc hoặc me vắt)",
+      "canonicalIngredientId": "ING_ENR_222E91F963C91763",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 50,
+        "basis": "3 muỗng canh ≈ 45 ml; me cô đặc tỉ trọng ~1.1 g/ml nên ≈ 50 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Quirino Kitchen: 2 Tbsp me cô đặc cho 2 phần → 3 Tbsp cho 3 phần; đây là nền tạo vị chua đặc trưng của pad thai theo công thức gốc trong sách Simply Vegetarian Thai Cooking của Nancie McDermott. 10000recipe không dùng me (sốt của họ chỉ có xì dầu/nước mắm/đường) — giữ me chua vì đây là linh hồn vị chua-ngọt của pad thai Thái.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 239,
+        "proteinG": 2.8,
+        "carbohydrateG": 62.5,
+        "fatG": 0.6,
+        "fiberG": 5.1,
+        "sugarG": 38.8,
+        "sodiumMg": 28
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167763",
+      "sourceNutritionNote": "Dùng số liệu me tươi (pulp) của USDA; me cô đặc thực tế đặc hơn nên số liệu chỉ mang tính tham chiếu."
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh ≈ 15 ml; nước mắm tỉ trọng ~1.2 g/ml nên 1 muỗng ≈ 18 g; 1.5 muỗng ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Quirino Kitchen: 1 Tbsp cho 2 phần → 1.5 Tbsp cho 3 phần; 10000recipe: 1 Tbsp nước mắm trong sốt (không ghi số phần) — hai nguồn khớp ở mức 1.5 Tbsp cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7850
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh ≈ 15 ml; xì dầu tỉ trọng ~1.2 g/ml nên 1 muỗng ≈ 18 g; 1.5 muỗng ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Quirino Kitchen: 1 Tbsp cho 2 phần → 1.5 Tbsp cho 3 phần. Lưu ý: phần sốt của 10000recipe ghi '2 tablespoons of green beans' — đây là lỗi dịch máy từ tiếng Hàn (간장/soy sauce bị dịch nhầm thành 'green beans'), không thể xác minh nên bỏ qua số liệu này.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5490
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 19,
+        "basis": "USDA: 1 tsp đường cát = 4.2 g nên 1 Tbsp ≈ 12.5 g; 1.5 Tbsp ≈ 19 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Quirino Kitchen: 1 Tbsp cho 2 phần → 1.5 Tbsp cho 3 phần; 10000recipe: 1 Tbsp đường (không ghi số phần) — lấy 1.5 Tbsp cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 100,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 tsp muối ăn ≈ 6 g (quy đổi phổ biến)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Quirino Kitchen: 1 tsp muối cho 2 phần → 1.5 tsp cho 3 phần; 10000recipe không dùng muối riêng (vị mặn đã có từ nước mắm/xì dầu) — lấy 1 tsp cho 3 phần, nêm nếm lại theo khẩu vị. USDA có mục Salt, table nhưng nằm ngoài phạm vi tra cứu đợt này nên nutrition để null, không bịa số.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Đậu phộng rang giã dập",
+      "canonicalIngredientId": "ING_ENR_6FFF4AF5579590C2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "g",
+        "text": "60 g",
+        "gramEquivalent": 60,
+        "basis": "đơn vị gốc đã là gram (≈ 1⁄2 cup đậu phộng giã dập; ước tính từ USDA: 1 cup đậu phộng nguyên hạt ≈ 146 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 60,
+          "unit": "g"
+        }
+      },
+      "note": "Quirino Kitchen: 1⁄2 cup đậu phộng rang giã dập cho 2 phần → 3⁄4 cup (~90 g) cho 3 phần; 10000recipe không dùng đậu phộng — lấy 60 g vừa ăn, rắc lên trên khi dọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 587,
+        "proteinG": 24.4,
+        "carbohydrateG": 21.3,
+        "fatG": 49.7,
+        "fiberG": 8.4,
+        "sugarG": 4.9,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173806",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Dầu ăn (dầu thực vật)",
+      "canonicalIngredientId": "ING_ENR_DBE4377CA2A0A47E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "USDA FoodData Central: 1 Tbsp dầu đậu nành = 13.6 g; 3 Tbsp ≈ 41 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Quirino Kitchen: 2 Tbsp cho 2 phần → 3 Tbsp cho 3 phần; 10000recipe: 'cho nhiều dầu' không định lượng — lấy 3 Tbsp cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Nước lọc (hoặc nước dùng rau củ)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 180,
+        "unit": "ml",
+        "text": "180 ml",
+        "gramEquivalent": 180,
+        "basis": "1 ml nước = 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 180,
+          "unit": "ml"
+        }
+      },
+      "note": "Quirino Kitchen: 1⁄4–1⁄2 cup nước dùng rau củ cho 2 phần, thêm nếu mì bị khô → 3⁄4 cup (180 ml) cho 3 phần; 10000recipe dùng 3 Tbsp nước trong sốt — lấy 180 ml, châm thêm nếu mì khô. Nước không có giá trị dinh dưỡng đáng kể nên nutrition để null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 60,
+        "basis": "USDA FoodData Central (mục Limes, raw): 1 quả ≈ 67 g; lấy tròn 60 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Quirino Kitchen: 2 Tbsp nước cốt chanh chia 2 (1 Tbsp ướp tôm 10 phút, còn lại rưới lên mì khi dọn); 10000recipe không dùng chanh — lấy 1 quả cho 3 phần, một phần vắt lấy nước ướp tôm, phần còn lại cắt múi cau ăn kèm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 30,
+        "proteinG": 0.7,
+        "carbohydrateG": 10.5,
+        "fatG": 0.2,
+        "fiberG": 2.8,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168155",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 16,
+      "sourceName": "Ớt bột khô",
+      "canonicalIngredientId": "ING_ENR_F150B9E2B003BC59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 tsp ớt bột khô ≈ 2 g (ước tính; USDA không công bố quy đổi household cho mục này)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Quirino Kitchen ghi chú công thức pad thai gốc có ớt bột khô nhưng cô bỏ qua trong lần nấu này; 10000recipe không dùng ớt — để optional cho người ăn cay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 318,
+        "proteinG": 12,
+        "carbohydrateG": 56.6,
+        "fatG": 17.3,
+        "fiberG": 27.2,
+        "sugarG": 10.3,
+        "sodiumMg": 30
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170932",
+      "sourceNutritionNote": "Dùng số liệu ớt đỏ/cayenne khô xay của USDA làm tương đương."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Ngâm mì gạo khô trong nước lạnh khoảng 30 phút đến khi sợi mì mềm dẻo nhưng vẫn còn hơi cứng; vớt ra để ráo nước.",
+      "tip": "10000recipe: ngâm nước lạnh trên 30 phút cho sợi mì dai; ngâm nước ấm nhanh hơn nhưng mì kém dai. Mì còn nấu tiếp trong chảo nên đừng ngâm quá mềm.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Ướp tôm: vắt khoảng 1 muỗng canh nước cốt chanh ướp tôm 10 phút cho tôm thơm và săn lại.",
+      "tip": "Mẹo của Quirino Kitchen; phần chanh còn lại cắt múi cau để ăn kèm.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Pha sốt: hòa tan me chua với nước (hoặc nước dùng), thêm nước mắm, xì dầu, đường và muối; khuấy cho đường tan, nếm sao cho vừa mặn-ngọt-chua hài hòa."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun nóng dầu ăn trong wok/chảo lớn trên lửa vừa-lớn; cho tỏi băm và phần gốc trắng hành lá vào phi vàng thơm khoảng 30 giây."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho tôm vào xào nhanh 1–2 phút đến khi tôm chuyển hồng, gần chín thì gắp ra đĩa riêng.",
+      "tip": "Xào tôm riêng để tôm không bị dai khi xào mì lâu.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Vẫn chảo đó: cho trứng vào đảo tơi thành miếng nhỏ; cho mì đã ráo vào cùng hỗn hợp sốt me, đảo đều cho mì thấm sốt và mềm hẳn (nếu mì khô thì châm thêm chút nước).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho tôm trở lại chảo cùng dứa miếng và giá đỗ; đảo nhanh tay 1–2 phút cho mọi thứ nóng đều, dứa vừa ấm tới.",
+      "tip": "10000recipe: cho dứa và giá vào ngay trước khi tắt bếp, đảo đến khi hết hơi nóng bốc lên là được — xào lâu dứa sẽ nát và ra nhiều nước.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Tắt bếp, rắc hành lá thái nhỏ và đậu phộng giã dập lên trên; dọn ngay khi còn nóng, ăn kèm múi chanh và ớt bột (nếu thích cay)."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 216.27,
+      "proteinG": 4.39,
+      "carbohydrateG": 47.43,
+      "fatG": 0.38,
+      "fiberG": 1.51,
+      "sugarG": 1.44,
+      "sodiumMg": 105.13
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Tôm tươi (bóc vỏ, bỏ chỉ đen): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Dứa chín cắt miếng vừa ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Trứng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Me chua (dạng cô đặc hoặc me vắt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Đậu phộng rang giã dập: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Dầu ăn (dầu thực vật): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Nước lọc (hoặc nước dùng rau củ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 15,
+        "detail": "Chanh tươi: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      16
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 16,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-d3972d88e860aba9",
+    "slug": "goi-muc-chanh",
+    "title": "Gỏi mực chanh"
+  },
+  "content": {
+    "description": "Khoanh mực chần giòn trộn chanh-ớt-tỏi cay mát, gỏi mực khai vị biển nhanh gọn.",
+    "cuisine": "vietnamese",
+    "category": "mon_cuon_nom",
+    "region": "trung",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Gỏi",
+      "Mực",
+      "Chanh",
+      "Khai vị"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-d3972d88e860aba9.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://ngoisao.vn/an-ngon/dia-chi-an-ngon/dau-tuan-danh-thuc-vi-giac-voi-mon-goi-muc-ngon-mien-che-208710.htm",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://cookpad.com/vn/cong-thuc/1203554",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mực ống tươi",
+      "canonicalIngredientId": "SQUID",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Cookpad (MinhLiên Lê): 1/2 kg mực ống cho khẩu phần gia đình (~2-3 người); ngóisao không ghi định lượng cụ thể. Lấy 500 g cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 92,
+        "proteinG": 15.58,
+        "carbohydrateG": 3.08,
+        "fatG": 1.38,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 44
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174223",
+      "sourceNutritionNote": "Tra trực tiếp USDA FoodData Central API (query 'squid raw', SR Legacy 'Mollusks, squid, mixed species, raw', fdcId 174223); energy_kcal lấy đúng nutrient number 208."
+    },
+    {
+      "position": 1,
+      "sourceName": "Chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 70,
+        "basis": "1 quả chanh ta ~35 g; chỉ dùng phần nước cốt (~25-30 ml/quả)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Mâu thuẫn lớn: ngóisao dùng 4 thìa nước cốt chanh trong nước trộn gỏi; Cookpad chỉ dùng 1/2 quả chanh cho 500 g mực — quá ít cho gỏi 3 phần. Lấy 2 quả (~50-60 ml nước cốt) theo tỉ lệ ngóisao.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 30,
+        "proteinG": 0.7,
+        "carbohydrateG": 10.54,
+        "fatG": 0.2,
+        "fiberG": 2.8,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168155",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 54,
+        "basis": "1 muỗng canh nước mắm = 15 ml ≈ 18 g (USDA FoodData Central: 1 tbsp fish sauce = 18 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Mâu thuẫn: ngóisao pha 4 thìa nước mắm; Cookpad chỉ 1 thìa nước mắm cho 500 g mực — quá nhạt cho gỏi. Lấy 3 muỗng canh (~45 ml) làm mức giữa cho 3 phần, điều chỉnh khi nếm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 24,
+        "basis": "1 muỗng cà phê đường ~4 g (USDA: 1 tsp granulated sugar = 4 g) → 1 muỗng canh ~12 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Mâu thuẫn: ngóisao dùng 4 thìa đường (tỉ lệ 1:1:1 với mắm và chanh); Cookpad chỉ 1/2 thìa đường thốt nốt. Lấy 2 muỗng canh, gia giảm theo độ chua của chanh và khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "tép",
+        "text": "4 tép",
+        "gramEquivalent": 20,
+        "basis": "1 tép tỏi vừa ~5 g (ước lượng phổ biến)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Cookpad: 4 tép tỏi cắt lát mỏng cho vào nước sốt; ngóisao: 2 nhánh tỏi băm. Lấy 4 tép băm nhuyễn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 6,
+        "basis": "1 quả ớt hiểm ~3 g (ước lượng phổ biến)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "ngóisao: 1 quả ớt tươi băm vào nước trộn; Cookpad: ớt đỏ + ớt xanh cắt khoanh (không định lượng). Lấy 2 quả ớt hiểm, tăng giảm theo khẩu vị cay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 2,
+        "carbohydrateG": 9.46,
+        "fatG": 0.2,
+        "fiberG": 1.5,
+        "sugarG": 5.1,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170497",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá ~10 g (ước lượng phổ biến)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "ngóisao: hành lá rửa sạch, chần cho chín tới rồi cắt khúc trộn vào gỏi để giảm vị hăng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhánh nhỏ",
+        "text": "1 nhánh nhỏ",
+        "gramEquivalent": 15,
+        "basis": "1 nhánh gừng nhỏ ~15 g (ước lượng); chỉ dùng vài lát khi luộc mực",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "ngóisao: luộc mực trong nước có vài lát gừng đập dập để khử mùi tanh; một ít gừng băm cho vào nước trộn. Lượng thực tế ăn vào không đáng kể.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối (nước luộc mực)",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Muối via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ~6 g (USDA FoodData Central: 1 tsp table salt = 6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tùy chọn: cho vào nước luộc mực để mực đậm vị hơn; ngóisao chỉ dùng gừng khi luộc, không nêm muối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Rau răm",
+      "canonicalIngredientId": "ING_ENR_1141DD73C17541C7",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "ngóisao dùng 'rau thơm' thái nhỏ trộn gỏi; Cookpad dùng ngò rí + húng quế. Rau răm rất hợp với gỏi mực kiểu Việt — tùy chọn, có thể thay bằng rau thơm sẵn có.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": "USDA không có mục rau răm (Vietnamese coriander); dùng số liệu ngò rí (Coriander leaves, fdcId 169997) làm tương đương gần nhất."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế mực: lột bỏ lớp da ngoài, cắt bỏ mắt, rút bỏ túi mực và mai (nếu có), rửa thật sạch với nước muối loãng rồi rửa lại bằng nước sạch, để ráo (theo ngóisao).",
+      "tip": "Mực tươi ngon có thân trắng bóng, ấn vào thấy săn chắc và đàn hồi."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đun sôi một nồi nước với vài lát gừng đập dập (và 1 muỗng cà phê muối nếu dùng). Cho mực vào luộc vừa chín tới rồi vớt ra để ráo.",
+      "tip": "ngóisao luộc mực với gừng để khử tanh; Cookpad hấp 5-8 phút hoặc chần nhanh trong nước sôi có chút đường + 1 muỗng cà phê dấm — hai nguồn khác nhau về cách làm chín, đều thống nhất KHÔNG nấu lâu. Luộc/hấp lâu làm mực dai và teo.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Mực đã ráo nước thì thái khoanh dày khoảng 1 cm (hoặc cắt sợi) cho vừa ăn (theo ngóisao)."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Hành lá rửa sạch, chần sơ qua nước sôi cho chín tới rồi cắt khúc khoảng 3-4 cm (theo ngóisao).",
+      "tip": "Chần hành giúp giảm vị hăng mà hành vẫn giữ được độ giòn."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Tỏi và ớt hiểm băm nhuyễn. Chanh vắt lấy nước cốt, bỏ hạt."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Pha nước trộn gỏi: cho 3 muỗng canh nước mắm, 2 muỗng canh đường và nước cốt 2 quả chanh vào bát, khuấy đều cho đường tan hết; sau đó cho tỏi và ớt băm vào khuấy đều (tỉ lệ tham khảo ngóisao 4:4:4 mắm-đường-chanh).",
+      "tip": "Nêm nếm thử: vị chuẩn của gỏi là chua — cay — mặn — ngọt hài hòa; chanh mỗi quả chua khác nhau nên gia giảm đường/mắm cho vừa miệng."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho mực đã thái vào tô lớn, rưới 1/2 lượng nước trộn gỏi lên trên, đảo đều và để khoảng 5 phút cho mực thấm gia vị (theo ngóisao)."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho hành lá đã chần và rau răm (nếu dùng) vào tô, rưới nốt phần nước trộn còn lại, trộn đều nhẹ tay.",
+      "tip": "Trộn nhẹ tay để khoanh mực không bị nát."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nêm nếm lại lần cuối cho vừa khẩu vị gia đình (thêm chanh nếu thích chua hơn, thêm đường nếu chua gắt)."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Bày gỏi ra đĩa, dùng ngay kèm bánh phồng tôm hoặc bánh đa nướng (gợi ý của ngóisao và Cookpad).",
+      "tip": "Gỏi mực ngon nhất khi ăn ngay sau khi trộn; để lâu mực ra nước và rau bị mềm."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 153.33,
+      "proteinG": 25.97,
+      "carbohydrateG": 5.13,
+      "fatG": 2.3,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 73.33
+    },
+    "originalPerServing": {
+      "energyKcal": 216.5,
+      "proteinG": 27.94,
+      "carbohydrateG": 20.15,
+      "fatG": 2.49,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Chanh tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Ớt hiểm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Gừng tươi: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      3,
+      8
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,713 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-45274582db71eb9f",
+    "slug": "mi-xao-tom-quang-dong",
+    "title": "Mì xào tôm Quảng Đông"
+  },
+  "content": {
+    "description": "Sợi mì mềm xào tôm-cải bóng xì dầu, món lo mein tôm Quảng Đông nhanh gọn đậm vị.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Lo mein",
+      "Quảng Đông",
+      "Tôm",
+      "Xào"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-45274582db71eb9f.json",
+    "rawSchemaSignature": "cuisine,ingredients,nutrition_computed,recipe_id,servings,sources,steps,title",
+    "sources": [
+      {
+        "url": "https://rasamalaysia.com/shrimp-chow-mein/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://thewoksoflife.com/shrimp-chow-mein-noodles/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì trứng tươi",
+      "canonicalIngredientId": "ING_ENR_4A2C12F1F387F6E5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 340,
+        "unit": "g",
+        "text": "340 g",
+        "gramEquivalent": 340,
+        "basis": "Đơn vị gốc đã là gram; 12 oz cho 3 phần theo Rasa Malaysia (8 oz cho 2 phần, ×1.5). Nếu dùng mì trứng khô thì ~170 g khô (nở gấp đôi khi trụng).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 340,
+          "unit": "g"
+        }
+      },
+      "note": "Rasa Malaysia dùng mì trứng tươi/hấp mềm rồi xào (khớp mô tả dataset 'sợi mì mềm'); Woks of Life dùng mì trứng mỏng Hong Kong áp chảo cho xém giòn trước khi xào — hai kỹ thuật khác nhau, công thức này theo Rasa Malaysia.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 384,
+        "proteinG": 14.16,
+        "carbohydrateG": 71.27,
+        "fatG": 4.44,
+        "fiberG": 3.3,
+        "sugarG": 1.88,
+        "sodiumMg": 21
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169731",
+      "sourceNutritionNote": "Số liệu của mì trứng khô; mì tươi đã trụng có độ ẩm cao hơn nên năng lượng/100 g thực tế thấp hơn đôi chút."
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm tươi bóc vỏ",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 255,
+        "unit": "g",
+        "text": "255 g",
+        "gramEquivalent": 255,
+        "basis": "Đơn vị gốc đã là gram; 9 oz cho 3 phần theo Rasa Malaysia (6 oz cho 2 phần, ×1.5), tương đương 15-20 con cỡ 21/25.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 255,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "USDA không báo cáo fiber và sugar cho tôm sống; để 0 (thực tế không đáng kể)."
+    },
+    {
+      "position": 2,
+      "sourceName": "Bắp cải",
+      "canonicalIngredientId": "CABBAGE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 85,
+        "unit": "g",
+        "text": "85 g",
+        "gramEquivalent": 85,
+        "basis": "Đơn vị gốc đã là gram; 3 oz cho 3 phần theo Rasa Malaysia (2 oz cho 2 phần, ×1.5), thái sợi mỏng.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 85,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 1.28,
+        "carbohydrateG": 5.8,
+        "fatG": 0.1,
+        "fiberG": 2.5,
+        "sugarG": 3.2,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169975",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Giá đỗ",
+      "canonicalIngredientId": "BEAN_SPROUTS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 170,
+        "unit": "g",
+        "text": "170 g",
+        "gramEquivalent": 170,
+        "basis": "Đơn vị gốc đã là gram; 6 oz cho 3 phần theo Rasa Malaysia (4 oz cho 2 phần, ×1.5).",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 170,
+          "unit": "g"
+        }
+      },
+      "note": "Rasa Malaysia và Woks of Life đều dùng giá đỗ; hint của assignment chỉ liệt kê bắp cải nhưng giá đỗ là thành phần chuẩn của cả hai nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 30,
+        "proteinG": 3.04,
+        "carbohydrateG": 5.94,
+        "fatG": 0.18,
+        "fiberG": 1.8,
+        "sugarG": 4.13,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169957",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá cỡ vừa ≈ 15 g (USDA: 1 medium green onion ≈ 15 g); Rasa Malaysia dùng 1 cây cho 2 phần → 1.5 cây cho 3 phần, làm tròn 2 cây. Cắt khúc dài 5 cm.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 12,
+        "basis": "1 tép tỏi cỡ vừa ≈ 4 g; Rasa Malaysia dùng 2 tép cho 2 phần → 3 tép cho 3 phần.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "USDA không báo cáo sugar và sodium cho mặt hàng tỏi này; để 0."
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "3 muỗng canh = 45 ml; tỉ trọng dầu ăn ≈ 0.91 → ≈ 41 g. Rasa Malaysia dùng 2 muỗng canh cho 2 phần (×1.5). Woks of Life dùng tổng ~4.5 muỗng canh cho công thức của họ — mâu thuẫn nhẹ, giữ theo Rasa Malaysia là nguồn chính.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh dầu hào ≈ 18 g (USDA); 1.5 muỗng canh ≈ 27 g. Rasa Malaysia: 1 muỗng canh cho 2 phần (×1.5).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.92,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": 0,
+        "sodiumMg": 2733
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174529",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1.5 muỗng canh = 22.5 ml; tỉ trọng xì dầu ≈ 1.2 → ≈ 27 g. Rasa Malaysia: 1 muỗng canh cho 2 phần (×1.5).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 19,
+        "basis": "1 muỗng canh đường cát ≈ 12.5 g (USDA); 1.5 muỗng canh ≈ 19 g. Rasa Malaysia: 1 muỗng canh cho 2 phần (×1.5).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN ĐÁNG CHÚ Ý: Woks of Life chỉ dùng 1⁄4 muỗng cà phê đường cho cả công thức — chênh lệch rất lớn với Rasa Malaysia. Giữ theo Rasa Malaysia vì là nguồn chính khớp hint assignment; ai ăn nhạt có thể giảm một nửa.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "USDA không tách riêng fiber và sugar cho đường cát; fiber = 0, sugar ≈ toàn bộ carbohydrate (đường tinh luyện)."
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "muỗng cà phê",
+        "text": "0.75 muỗng cà phê",
+        "gramEquivalent": 3.5,
+        "basis": "3⁄4 muỗng cà phê = 3.75 ml; tỉ trọng dầu mè ≈ 0.92 → ≈ 3.5 g. Rasa Malaysia: 1⁄2 muỗng cà phê cho 2 phần (×1.5).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4.5,
+        "unit": "muỗng canh",
+        "text": "4.5 muỗng canh",
+        "gramEquivalent": 68,
+        "basis": "4.5 muỗng canh = 67.5 ml ≈ 68 g; dùng để pha loãng sốt theo Rasa Malaysia (3 muỗng canh cho 2 phần, ×1.5).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ dùng làm nền pha sốt; dinh dưỡng để 0.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 12,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 0.5,
+        "basis": "1 nhúm muối ≈ 0.5 g; Rasa Malaysia ghi '1 pinch salt' cho 2 phần, giữ nguyên cho 3 phần vì lượng không đáng kể.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế tôm: bóc vỏ, bỏ đầu (giữ lại đuôi tùy thích), rạch dọc sống lưng lấy bỏ chỉ đen, rửa sạch rồi thấm thật khô bằng khăn giấy.",
+      "tip": "Tôm thấm khô khi xào mới săn và không ra nước. Woks of Life còn rạch bướm (butterfly) thân tôm cho đẹp và chín đều."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế rau củ: bắp cải thái sợi mỏng; giá đỗ rửa sạch, để ráo; hành lá cắt khúc dài khoảng 5 cm; tỏi băm nhỏ."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Pha sốt: cho dầu hào, xì dầu, đường, dầu mè, nước lọc và nhúm muối vào bát nhỏ, khuấy đều đến khi đường tan hết.",
+      "tip": "Pha sẵn sốt trước khi bật bếp vì các bước xào diễn ra rất nhanh."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Trụng mì: đun sôi một nồi nước lớn, cho mì trứng vào trụng theo thời gian trên bao bì (mì tươi khoảng 1-2 phút). Vớt ra xả ngay nước lạnh, để ráo rồi trộn với 1 muỗng cà phê dầu ăn cho sợi mì không dính.",
+      "tip": "Woks of Life: xả nước lạnh giúp mì săn lại, khi xào không bị nát.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Xào tôm: đun wok hoặc chảo lớn trên lửa thật lớn, cho 1 muỗng canh dầu ăn vào tráng đều. Phi tỏi băm thơm khoảng 10-15 giây rồi cho tôm vào, xào nhanh đến khi mặt ngoài tôm vừa chuyển đục (tôm mới chín khoảng một nửa) thì vớt ra đĩa.",
+      "tip": "Rasa Malaysia: chỉ xào tôm đến nửa chín vì tôm sẽ chín tiếp ở bước sau; xào kỹ từ đầu tôm sẽ dai.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Vẫn chảo đó, thêm 1 muỗng canh dầu ăn, cho bắp cải thái sợi vào xào 1-2 phút cho vừa mềm.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho mì đã trụng vào chảo cùng 1 muỗng canh dầu ăn còn lại, rưới đều bát sốt lên trên, đảo nhanh tay khoảng 1 phút cho từng sợi mì thấm đều sốt.",
+      "tip": "Woks of Life: lúc này để lửa ở mức lớn nhất để tạo mùi wok hay (wok hei) đặc trưng.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho tôm đã xào trở lại chảo cùng giá đỗ, đảo đều đến khi giá vừa chín tới.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho hành lá cắt khúc vào, đảo thêm vài lần rồi tắt bếp. Dọn ra đĩa và ăn ngay khi còn nóng.",
+      "tip": "Woks of Life: hành lá và giá đỗ nên giữ độ giòn, vớt ra đĩa trước khi chúng mềm nhũn."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 24.08,
+      "proteinG": 2.09,
+      "carbohydrateG": 5.01,
+      "fatG": 0.13,
+      "fiberG": 1.73,
+      "sugarG": 3.25,
+      "sodiumMg": 8.5
+    },
+    "originalPerServing": {
+      "energyKcal": 705.32,
+      "proteinG": 36.52,
+      "carbohydrateG": 95.38,
+      "fatG": 20.56,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 940.05
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Mì trứng tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Tôm tươi bóc vỏ: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu hào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

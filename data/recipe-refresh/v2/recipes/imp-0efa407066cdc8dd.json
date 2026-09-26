@@ -1,0 +1,706 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-0efa407066cdc8dd",
+    "slug": "bun-ca-tom-ca-chua",
+    "title": "Bún cá tom cà chua"
+  },
+  "content": {
+    "description": "Miếng cá chiên sơ thấm sốt cà chua chua ngọt chan cùng bún tươi, tô bún cá ấm bụng ngày mưa.",
+    "cuisine": "vietnamese",
+    "category": "mon_bun_pho",
+    "region": "bac",
+    "cookTimeMinutes": 50,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Bún cá",
+      "Cà chua",
+      "Bữa trưa",
+      "Ấm bụng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-0efa407066cdc8dd.json",
+    "rawSchemaSignature": "cuisine,ingredients,notes,nutrition_computed,recipe_id,servings,sources,steps,title",
+    "sources": [
+      {
+        "url": "https://kingfoodmart.com/bai-viet/cach-nau-bun-ca-thom-ngon-dam-da-tai-nha",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://eva.vn/bep-eva/cach-nau-bun-ca-don-gian-nhung-ngon-mieng-cho-bua-sang-c162a353045.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "notes: 'tom' trong tên món chưa rõ nghĩa và không xuất hiện trong gợi ý nguyên liệu (đề bài ghi rõ 'Cá tươi'), nên công thức giữ nguyên cá, không thêm tôm. Nguồn thứ hai (Eva) là biến thể khác: dùng cá rô phi/cá trắm chiên giòn kèm chả cá, không phải kiểu nấu canh cà chua với cá lóc — chỉ dùng để đối chiếu, định lượng chính theo Kingfoodmart (ghi rõ cho 4 người). Nutrition/khẩu phần KHÔNG tự tính ở đây (theo quyết định chuẩn: tính ở phase tổng hợp từ bảng/100g)."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cá lóc (cá quả) tươi",
+      "canonicalIngredientId": "ING_ENR_302AC7E0368ECD3C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "Trực tiếp theo gam; theo Kingfoodmart (cho 4 người), cắt khúc",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Đề bài ghi cá tươi, 'tom' trong tên món chưa rõ nghĩa (nghi là lỗi đánh máy) nên KHÔNG thêm tôm vào công thức. Không tìm được bảng dinh dưỡng đáng tin cậy cho cá lóc (không có trong USDA); một bài phân tích phòng lab (lautnusantara.com) ghi 100g cá lóc: 69 kcal, đạm 25.2g, béo 1.7g nhưng thiếu chất xơ/đường/natri nên không dùng — để null theo quy tắc",
+      "sourceNutritionPer100g": {
+        "energyKcal": 96,
+        "proteinG": 20.08,
+        "carbohydrateG": 0,
+        "fatG": 1.7,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 52
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175176",
+      "sourceNutritionNote": "USDA Fish, tilapia, raw (FDC 175176) — proxy cho cá lóc (snakehead): cùng cá nước ngọt thịt trắng nạc"
+    },
+    {
+      "position": 1,
+      "sourceName": "Bún tươi",
+      "canonicalIngredientId": "NOODLE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "Trực tiếp theo gam; theo Kingfoodmart (cho 4 người)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Bảng cho bún gạo đã nấu chín (USDA)",
+      "sourceNutritionPer100g": {
+        "energyKcal": 108,
+        "proteinG": 1.79,
+        "carbohydrateG": 24.01,
+        "fatG": 0.2,
+        "fiberG": 1,
+        "sugarG": 0,
+        "sodiumMg": 19
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Rice_noodles%2C_cooked_nutritional_value.html?size=100+g",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Cà chua chín",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 200,
+        "basis": "2 quả cà chua cỡ vừa ≈ 100g/quả (ước tính); theo Kingfoodmart (nguồn Eva dùng 4 quả cho kiểu chiên giòn — ghi chú khác biệt)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Cà chua đỏ chín sống (USDA), bổ múi cau",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://www.caloriesta.com/en/calories-in-food/tomatoes-red-ripe-raw-year-round-average?i=11529",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Dứa (thơm)",
+      "canonicalIngredientId": "PINEAPPLE",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "same conservative ingredient-name key as an exact existing canonical alias",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "quả",
+        "text": "0.25 quả",
+        "gramEquivalent": 150,
+        "basis": "1/4 quả dứa cỡ vừa (≈ 600g/quả) ≈ 150g (ước tính); theo Kingfoodmart",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.25,
+          "unit": "piece"
+        }
+      },
+      "note": "Không tra được bảng dinh dưỡng đáng tin cậy cho dứa trong đợt này; để null theo quy tắc",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành khô (hành tím)",
+      "canonicalIngredientId": "ING_ENR_3B1B1AC60D28CEB2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "củ",
+        "text": "3 củ",
+        "gramEquivalent": 30,
+        "basis": "3 củ hành khô ≈ 10g/củ (ước tính); theo Kingfoodmart",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Không tra được bảng dinh dưỡng đáng tin cậy trong đợt này; để null theo quy tắc",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 15,
+        "basis": "3 tép tỏi ≈ 5g/tép (ước tính); theo Kingfoodmart",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Gia vị lượng nhỏ, không tra được bảng đáng tin cậy; để null theo quy tắc",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 10,
+        "basis": "1 quả ớt hiểm ≈ 5–10g (ước tính); theo Kingfoodmart, thái lát ăn kèm",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Gia vị lượng nhỏ, không tra được bảng đáng tin cậy; để null theo quy tắc",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành lá và ngò rí",
+      "canonicalIngredientId": "ING_ENR_B0A60F22ABA23F8E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "Trực tiếp theo gam; theo Kingfoodmart",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Rau thơm lượng nhỏ, không tra được bảng đáng tin cậy; để null theo quy tắc",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Bột nghệ",
+      "canonicalIngredientId": "ING_ENR_7C1A16B2BAB19AAB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê bột nghệ ≈ 3g (ước tính); theo Kingfoodmart, để ướp cá",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Gia vị lượng nhỏ, không tra được bảng đáng tin cậy; để null theo quy tắc",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "2 muỗng canh × 15ml × 1.2 g/ml ≈ 36g; theo Kingfoodmart (1 muỗng ướp cá, 1 muỗng nêm nước dùng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nước mắm pha sẵn (USDA 'Sauce, fish, ready-to-serve')",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://www.foodintake.space/calories/soups-sauces-and-gravies/sauce-fish/sauce-fish-ready-to-serve/",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ≈ 6g (ước tính); theo Kingfoodmart",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Gia vị, không có bảng chuẩn áp dụng; để null theo quy tắc",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê đường ≈ 4g (ước tính); theo Kingfoodmart",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Đường cát trắng (USDA)",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://www.caloriesta.com/en/calories-in-food/sugars-granulated?i=19335",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 28,
+        "basis": "2 muỗng canh × 15ml × 0.92 g/ml ≈ 28g; theo Kingfoodmart, để phi thơm hành tỏi và xào cà chua",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Dầu đậu nành (USDA)",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://vitahoy.ch/en/ndb/pml/us-04044",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước (nấu nước dùng)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "lít",
+        "text": "1.5 lít",
+        "gramEquivalent": 1500,
+        "basis": "1.5 lít nước ≈ 1500g; theo Kingfoodmart",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "l"
+        }
+      },
+      "note": "Nước lọc: 0 năng lượng, không cần bảng dinh dưỡng",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Cá lóc đánh vảy, bỏ mang và nội tạng, rửa sạch với nước muối loãng rồi rửa lại bằng nước sạch, để ráo. Cắt cá thành khúc dày khoảng 3–4cm.",
+      "tip": "Rửa cá với nước muối loãng và một lát gừng đập dập sẽ bớt mùi tanh.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Ướp cá với bột nghệ, 1 muỗng canh nước mắm và 1/2 muỗng cà phê muối. Trộn nhẹ cho gia vị bám đều các khúc cá, để ướp 15 phút cho thấm.",
+      "tip": "Bột nghệ giúp khử tanh và tạo màu vàng đẹp cho nước dùng.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cà chua rửa sạch, bổ múi cau. Dứa gọt vỏ, bỏ mắt, thái lát vừa ăn. Hành khô và tỏi bóc vỏ, băm nhỏ. Hành lá, ngò rí rửa sạch, thái khúc. Ớt thái lát mỏng.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun nóng 2 muỗng canh dầu ăn trong nồi, cho hành khô và tỏi băm vào phi thơm vàng.",
+      "tip": "Phi hành tỏi vừa vàng tới, không để cháy sẽ làm nước dùng bị đắng.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho cà chua và dứa vào nồi, đảo đều trên lửa vừa khoảng 3–4 phút cho cà chua mềm, ra màu và dứa thấm dầu.",
+      "tip": "Xào cà chua kỹ một chút, nước dùng sẽ có màu đỏ đẹp tự nhiên, không cần màu điều.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ 1.5 lít nước vào nồi, đun sôi trên lửa lớn rồi hạ lửa vừa. Khi nước sôi lại, nhẹ nhàng cho từng khúc cá đã ướp vào, không đảo mạnh. Nấu khoảng 10–12 phút cho cá chín.",
+      "tip": "Thường xuyên hớt bọt để nước dùng trong. Không đảo cá nhiều để khúc cá không bị nát.",
+      "timerMinutes": 12
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Khi cá chín, nhẹ nhàng vớt các khúc cá ra đĩa riêng để giữ cá nguyên miếng, không bị nát trong nồi nước dùng.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nêm vào nồi nước dùng 1 muỗng canh nước mắm còn lại, 1/2 muỗng cà phê muối còn lại và 1 muỗng cà phê đường. Khuấy nhẹ, nếm lại và điều chỉnh cho vừa miệng (vị chua thanh của cà chua – dứa, mặn ngọt hài hòa). Đun sôi lại rồi tắt bếp.",
+      "tip": "Nêm nhạt hơn khẩu vị một chút vì khi chan vào bún, vị sẽ đậm dần.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Đun sôi một nồi nước khác, cho bún tươi vào chần nhanh 1–2 phút cho bún tơi và nóng, vớt ra để ráo rồi chia đều ra 4 tô lớn.",
+      "tip": "Bún phải để thật ráo nước để nước dùng không bị loãng.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Xếp các khúc cá đã vớt lên trên mỗi tô bún. Chan nước dùng đang sôi vào tô, rắc hành lá, ngò rí thái khúc và vài lát ớt lên trên. Dọn ăn nóng, có thể ăn kèm rau sống và chanh ớt tùy thích.",
+      "tip": "Chan nước dùng thật sôi vào tô để món ăn giữ nóng lâu, cá thơm ngon hơn."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 255,
+      "proteinG": 27.34,
+      "carbohydrateG": 30.01,
+      "fatG": 2.38,
+      "fiberG": 1.25,
+      "sugarG": 0,
+      "sodiumMg": 88.75
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Cà chua chín: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Dứa (thơm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành khô (hành tím): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Ớt hiểm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 7,
+        "detail": "Hành lá và ngò rí: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Bột nghệ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước (nấu nước dùng): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

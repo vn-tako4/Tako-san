@@ -1,0 +1,662 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-03c5e6e31e01088d",
+    "slug": "dau-phu-xao-sa-ot",
+    "title": "Đậu phụ xào sả ớt"
+  },
+  "content": {
+    "description": "Đậu phụ vàng cạnh xào sả bầm-ớt thơm nồng nước tương, món mặn chay chay? món chay đậm vị đưa cơm.",
+    "cuisine": "vietnamese",
+    "category": "mon_xao",
+    "region": "nam",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Xào",
+      "Chay",
+      "Sả",
+      "Đậu phụ"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-03c5e6e31e01088d.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://vnexpress.net/doi-song-cooking-dau-phu-chien-sa-ot-4867165.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://eva.vn/bep-eva/dau-chien-sa-ot-don-gian-ma-ngon-c162a276306.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Đậu phụ",
+      "canonicalIngredientId": "TOFU",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "bìa",
+        "text": "4 bìa",
+        "gramEquivalent": 400,
+        "basis": "1 bìa đậu phụ ≈ 100 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "VnExpress: 6 bìa cho 4–5 người → 4 bìa cho 3 phần. Eva: 3 bìa (không ghi khẩu phần) — chọn tỉ lệ VnExpress vì có khẩu phần rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 76,
+        "proteinG": 8.08,
+        "carbohydrateG": 1.87,
+        "fatG": 4.78,
+        "fiberG": 0.3,
+        "sugarG": 0.62,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172476",
+      "sourceNutritionNote": "Đường không được báo cáo trong nguồn FDC nên để null, không ước tính. [AUTO-FIX 2026-09-26] FDC ID cũ 16426 (mã NDB legacy) trả 404 trên FDC API mới; đã thay bằng bản ghi SR Legacy tương đương 172476, số liệu lấy trực tiếp từ API (nutrient 208/203/205/204/291/269/307). Số liệu cũ (144 kcal...) là của đậu phụ firm 172475, sai loại; đã thay bằng đậu phụ regular 172476 đúng món."
+    },
+    {
+      "position": 1,
+      "sourceName": "Sả",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "cây",
+        "text": "4 cây",
+        "gramEquivalent": 100,
+        "basis": "1 cây sả (phần non dùng được) ≈ 25 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "VnExpress: 6 cây cho 4–5 người → 4 cây cho 3 phần. Eva dùng 8–10 cây sả cho 3 bìa đậu — nhiều sả hơn, chọn tỉ lệ VnExpress. Chất xơ và đường không được báo cáo trong USDA nên để null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.31,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "[AUTO-FIX 2026-09-26] FDC ID cũ 02045 (mã NDB legacy) trả 404 trên FDC API mới; đã thay bằng bản ghi SR Legacy tương đương 168573, số liệu lấy trực tiếp từ API (nutrient 208/203/205/204/291/269/307). Bản ghi mới không công bố fiber/sugar nên giữ null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi ≈ 3 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "VnExpress: 3 tép cho 4–5 người → 2 tép cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "Natri và đường không được báo cáo trong nguồn FDC nên để null, không ước tính."
+    },
+    {
+      "position": 3,
+      "sourceName": "Ớt sừng",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 15,
+        "basis": "1 quả ớt sừng ≈ 15 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "VnExpress: 2 quả ớt sừng cho 4–5 người → 1 quả cho 3 phần. Nguồn FDC là ớt ngọt đỏ, dùng đại diện cho ớt sừng tươi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.9,
+        "carbohydrateG": 8.8,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Ớt cay",
+      "canonicalIngredientId": "ING_ENR_810B3291FC9312E8",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "trái",
+        "text": "1 trái",
+        "gramEquivalent": 5,
+        "basis": "1 trái ớt hiểm ≈ 5 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "VnExpress: 1–2 ớt cay 'tùy khẩu vị' — để optional cho người không ăn cay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 2,
+        "carbohydrateG": 9.46,
+        "fatG": 0.2,
+        "fiberG": 1.5,
+        "sugarG": 5.1,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170497",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "USDA: 1 muỗng canh nước mắm = 18 g; 1 muỗng cà phê ≈ 6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "VnExpress: 2 muỗng cà phê cho 4–5 người → 1.5 muỗng cà phê cho 3 phần (trong hỗn hợp sốt).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 10,
+        "basis": "1 muỗng cà phê dầu hào ≈ 5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "VnExpress: 1 muỗng canh cho 4–5 người → 2 muỗng cà phê cho 3 phần. Đường không được báo cáo trong nguồn generic nên để null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.92,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": null,
+        "sodiumMg": 2733
+      },
+      "sourceNutritionReference": "https://mobile.fatsecret.co.nz/calories-nutrition/generic/oyster-sauce?portionid=57598&portionamount=100.000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "USDA: 1 muỗng canh xì dầu = 18 g; 1 muỗng cà phê ≈ 6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN NGUỒN: assignment gợi ý dùng xì dầu nhưng VnExpress và Eva đều nêm bằng nước mắm + dầu hào. Thêm 1 muỗng cà phê xì dầu vào sốt để giữ gợi ý, không thay thế nước mắm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 10.51,
+        "carbohydrateG": 5.57,
+        "fatG": 0.1,
+        "fiberG": 0.8,
+        "sugarG": 1.7,
+        "sodiumMg": 5586
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174278",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Tương ớt",
+      "canonicalIngredientId": "ING_ENR_3DA6FC9D8ECE414B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 12,
+        "basis": "1 muỗng cà phê tương ớt ≈ 6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "VnExpress: 1 muỗng canh tương ớt cho 4–5 người → 2 muỗng cà phê cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Tương ớt phụ thuộc thương hiệu (Chinsu/Cholimex...) với công thức rất khác nhau, không có nguồn dinh dưỡng chuẩn nên để null, không ước tính."
+    },
+    {
+      "position": 9,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "USDA: 1 muỗng cà phê đường ≈ 4.2 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "VnExpress: 1/2 muỗng canh đường cho 4–5 người → 1 muỗng cà phê cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "Chất xơ và đường không được báo cáo riêng trong nguồn FDC nên để null, không ước tính."
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "USDA: 1 muỗng canh dầu ăn ≈ 13.6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Dùng chiên đậu vàng giòn theo cả hai nguồn VnExpress và Eva.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "1 muỗng cà phê tiêu đen xay ≈ 2.3 g; 1/4 muỗng ≈ 0.6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Không có trong nguồn gốc, thêm để rắc khi hoàn thiện cho thơm; để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Đậu phụ rửa nhẹ dưới vòi nước, để ráo, cắt miếng vuông vừa ăn dày khoảng 1.5 cm.",
+      "tip": "Để đậu thật ráo nước giúp chiên giòn, không bắn dầu."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sả bóc lớp vỏ già, rửa sạch, băm nhỏ phần non. Tỏi bóc vỏ băm nhuyễn; ớt sừng thái lát xéo, ớt cay thái nhỏ."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Pha sốt: cho nước mắm, dầu hào, xì dầu, tương ớt, đường và 2 muỗng canh nước vào chén, khuấy tan.",
+      "tip": "Pha sốt trước để khi xào chỉ việc đổ vào — tránh đảo lâu làm đậu nát."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun nóng dầu ăn trên lửa vừa, cho đậu vào chiên vàng giòn các mặt rồi vớt ra để ráo dầu.",
+      "tip": "Eva chiên đậu trước, xào sả ớt sau rồi mới cho đậu vào lại — giữ đậu giòn."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Chắt bớt dầu, chừa lại khoảng 1 muỗng canh trong chảo; cho sả, tỏi, ớt vào phi thơm đến khi sả vàng, dậy mùi.",
+      "tip": "VnExpress phi sả-tỏi-ớt riêng cho thơm vàng trước khi làm sốt — không phi cháy sẽ đắng."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ hỗn hợp sốt vào chảo, đảo đều đến khi sốt sánh lại."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho đậu đã chiên vào, đảo nhẹ tay trên lửa nhỏ khoảng 5 phút cho đậu thấm đều sốt.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nêm lại cho vừa miệng, rắc tiêu xay, bày ra đĩa, ăn nóng với cơm trắng."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Đậu phụ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Sả: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Ớt sừng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu hào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tương ớt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,787 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-9d575ec5c01896f0",
+    "slug": "mi-y-sot-kem-ca-hoi-rau-bina",
+    "title": "Mì Ý sốt kem cá hồi rau bina"
+  },
+  "content": {
+    "description": "Spaghetti hòa cùng sốt kem sữa béo nhẹ, cá hồi áp chảo tách miếng và rau bina xanh mềm, món pasta thanh lịch cho bữa tối cuối tuần.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 30,
+    "servings": 3,
+    "difficulty": "medium",
+    "tags": [
+      "Ý",
+      "Pasta",
+      "Cá hồi",
+      "Cuối tuần"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-9d575ec5c01896f0.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://goodyfoodies.com/salmon-spinach-pasta-dish-2/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.rominaslittlecorner.com/creamy-salmon-pasta-with-spinach/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì spaghetti khô",
+      "canonicalIngredientId": "ING_ENR_6D3475084F90DC20",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 340,
+        "unit": "g",
+        "text": "340 g",
+        "gramEquivalent": 340,
+        "basis": "đơn vị gốc đã là gram; định lượng từ goodyfoodies (8 oz = 227 g cho 2 phần, ×1,5 cho 3 phần)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 340,
+          "unit": "g"
+        }
+      },
+      "note": "rominaslittlecorner khuyên tránh mì sợi dài cho sốt kem (họ dùng penne/farfalle vì cho rằng sợi dài không giữ được độ kem), trong khi goodyfoodies dùng fettuccine/linguine — mâu thuẫn về loại mì; món này dùng spaghetti theo đúng tên món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 371,
+        "proteinG": 13.04,
+        "carbohydrateG": 74.67,
+        "fatG": 1.51,
+        "fiberG": 3.2,
+        "sugarG": 2.67,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169736",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Phi lê cá hồi tươi",
+      "canonicalIngredientId": "SALMON_FILLET",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "goodyfoodies: 2 phi lê cá hồi cho 2 phần → 3 phi lê cho 3 phần; 1 phi lê cá hồi cỡ vừa ~130–150 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "rominaslittlecorner dùng cá hồi hun khói (60 g cho 2 phần) — mâu thuẫn; lấy cá hồi tươi theo goodyfoodies và đúng hint (phi lê cá hồi).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 142,
+        "proteinG": 19.84,
+        "carbohydrateG": 0,
+        "fatG": 6.34,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 44
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173686",
+      "sourceNutritionNote": "số liệu đường (sugar) không được báo cáo trong bản ghi FDC của cá hồi tươi"
+    },
+    {
+      "position": 2,
+      "sourceName": "Rau bina tươi (baby spinach)",
+      "canonicalIngredientId": "ING_ENR_DD456ED10962B1C6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "goodyfoodies: 4 cups rau bina tươi cho 2 phần; 1 cup rau bina sống ≈ 30 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN LỚN: goodyfoodies dùng 4 cups (~120 g) cho 2 phần trong khi rominaslittlecorner chỉ dùng 1/2 cup (~15 g) cho 2 phần. Lấy 150 g cho 3 phần, ưu tiên goodyfoodies vì đây là công thức chuyên về cá hồi + rau bina và rau bina là nguyên liệu có trong tên món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.86,
+        "carbohydrateG": 3.63,
+        "fatG": 0.39,
+        "fiberG": 2.2,
+        "sugarG": 0.42,
+        "sodiumMg": 79
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168462",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Kem tươi (heavy whipping cream)",
+      "canonicalIngredientId": "ING_ENR_D4A77F30AC5C6465",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 360,
+        "unit": "ml",
+        "text": "360 ml",
+        "gramEquivalent": 357,
+        "basis": "goodyfoodies: 1 cup (240 ml) kem cho 2 phần → 1,5 cup (360 ml) cho 3 phần; USDA: 1 cup heavy cream = 238 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 360,
+          "unit": "ml"
+        }
+      },
+      "note": "MÂU THUẪN: rominaslittlecorner chỉ dùng 100 ml double cream cho 2 phần (→ 150 ml cho 3 phần), bằng chưa tới một nửa của goodyfoodies. Lấy theo goodyfoodies vì công thức này chuyên về sốt kem cá hồi + rau bina. LƯU Ý: hint ghi 'sữa tươi không đường' — nhưng CẢ HAI nguồn đều dùng kem tươi (heavy/double cream) cho sốt kem; dùng kem tươi theo nguồn. Có thể thay bằng sữa tươi nhưng sốt sẽ loãng và kém béo hơn (không có nguồn nào trong hai nguồn dùng sữa tươi cho món này).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 340,
+        "proteinG": 2.84,
+        "carbohydrateG": 2.84,
+        "fatG": 36.08,
+        "fiberG": 0,
+        "sugarG": 2.92,
+        "sodiumMg": 27
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170859",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Bơ lạt",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "hint của catalog (bơ); USDA: 1 muỗng canh bơ ≈ 14,2 g → 2 muỗng canh ≈ 28 g, làm tròn 30 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng dầu ô liu để áp chảo cá hồi và làm nền sốt, không ghi bơ. Thêm bơ lạt cho phần xào tỏi + hành tây theo đúng hint của catalog (bơ là nguyên liệu có tên trong danh sách hiện tại của món).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu ô liu",
+      "canonicalIngredientId": "ING_ENR_F3F7B0E29159178B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 20,
+        "basis": "goodyfoodies: 1 muỗng canh dầu ô liu cho 2 phần → 1,5 muỗng canh cho 3 phần; 1 tbsp dầu ô liu = 15 ml ≈ 13,6 g (tỉ trọng dầu ~0,91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Dùng để áp chảo cá hồi theo goodyfoodies.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "củ",
+        "text": "0.5 củ",
+        "gramEquivalent": 70,
+        "basis": "rominaslittlecorner: 1/3 củ hành tây cho 2 phần → 1/2 củ cho 3 phần; USDA: 1 củ hành tây vừa ≈ 110 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ rominaslittlecorner dùng hành tây (1/3 củ cho 2 phần); goodyfoodies không dùng hành tây. Giữ hành tây theo hint của catalog.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "tép",
+        "text": "4 tép",
+        "gramEquivalent": 12,
+        "basis": "goodyfoodies: 2–3 tép tỏi cho 2 phần → 3–4,5 tép cho 3 phần, lấy 4 tép; USDA: 1 tép tỏi ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Hai nguồn thống nhất ở mức 2–3 tép cho 2 phần (goodyfoodies) và 2 tép cho 2 phần (rominaslittlecorner).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Phô mai Parmesan bào",
+      "canonicalIngredientId": "ING_ENR_F6C4C13C28CEABC4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "g",
+        "text": "60 g",
+        "gramEquivalent": 60,
+        "basis": "cả hai nguồn: 1/2 cup phô mai bào cho 2 phần → 3/4 cup cho 3 phần; 1/2 cup parmesan bào ≈ 43 g (theo Little Sunny Kitchen)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 60,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn thống nhất tỉ lệ 1/2 cup cho 2 phần; rominaslittlecorner cho phép thay một phần bằng pecorino.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 392,
+        "proteinG": 35.75,
+        "carbohydrateG": 3.22,
+        "fatG": 25,
+        "fiberG": 0,
+        "sugarG": 0.11,
+        "sodiumMg": 1175
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170848",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Chanh vàng",
+      "canonicalIngredientId": "ING_ENR_65CF0EED63D1DE92",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 32,
+        "basis": "goodyfoodies: 1 muỗng canh vỏ chanh bào + 1 muỗng canh nước cốt chanh cho 2 phần → 1,5 muỗng canh mỗi loại cho 3 phần (≈ 1 quả chanh vàng); 1,5 tbsp nước cốt ≈ 23 g, 1,5 tbsp vỏ bào ≈ 9 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ goodyfoodies dùng chanh (vỏ bào + nước cốt) để cân bằng vị béo của kem và cá hồi; rominaslittlecorner không dùng chanh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 29,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.32,
+        "fatG": 0.3,
+        "fiberG": 2.8,
+        "sugarG": 2.5,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167746",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 21,
+        "unit": "g",
+        "text": "21 g",
+        "gramEquivalent": 21,
+        "basis": "1 muỗng canh muối ăn ≈ 18 g (USDA); 1/2 muỗng cà phê ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 21,
+          "unit": "g"
+        }
+      },
+      "note": "1 muỗng canh (~18 g) cho nước luộc mì + 1/2 muỗng cà phê (~3 g) nêm nếm sốt. goodyfoodies chỉ ghi 'muối cho nước luộc' và 'nêm vừa ăn' không định lượng; định lượng trên theo chuẩn luộc mì Ý.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "g",
+        "text": "2 g",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê tiêu đen xay ≈ 2,3 g (USDA), làm tròn 2 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "g"
+        }
+      },
+      "note": "goodyfoodies: nêm muối tiêu 'vừa ăn' ở từng bước.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Ngò tây tươi (parsley)",
+      "canonicalIngredientId": "ING_ENR_F2977FE6785CC19F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 11,
+        "unit": "g",
+        "text": "11 g",
+        "gramEquivalent": 11,
+        "basis": "goodyfoodies: 2 muỗng canh ngò tây thái nhỏ cho 2 phần → 3 muỗng canh cho 3 phần; USDA: 1 tbsp ngò tây thái nhỏ ≈ 3,8 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 11,
+          "unit": "g"
+        }
+      },
+      "note": "goodyfoodies dùng 2 muỗng canh cho 2 phần; rominaslittlecorner dùng 1 muỗng canh cho 2 phần — lấy theo goodyfoodies.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 2.97,
+        "carbohydrateG": 6.33,
+        "fatG": 0.79,
+        "fiberG": 3.3,
+        "sugarG": 0.85,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170416",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Ớt bột khô (red pepper flakes)",
+      "canonicalIngredientId": "ING_ENR_66075E7C56AB5D0A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "g",
+        "text": "0.5 g",
+        "gramEquivalent": 0.5,
+        "basis": "1/4 muỗng cà phê ớt khô ≈ 0,5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "g"
+        }
+      },
+      "note": "goodyfoodies ghi là nguyên liệu tùy chọn (optional pinch).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 318,
+        "proteinG": 12.01,
+        "carbohydrateG": 56.63,
+        "fatG": 17.27,
+        "fiberG": 27.2,
+        "sugarG": 10.34,
+        "sodiumMg": 30
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170932",
+      "sourceNutritionNote": "dùng số liệu 'Spices, pepper, red or cayenne' của USDA làm tương đương cho ớt khô xay mảnh"
+    },
+    {
+      "position": 14,
+      "sourceName": "Nước luộc mì (giữ lại)",
+      "canonicalIngredientId": "ING_ENR_4C9FDCDAC6D4EAE4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 120,
+        "unit": "ml",
+        "text": "120 ml",
+        "gramEquivalent": 120,
+        "basis": "không phải nguyên liệu mua riêng: múc lại từ nồi luộc mì; goodyfoodies giữ lại 1 cup (~240 ml) cho 2 phần → ~120–180 ml cho 3 phần, lấy 120 ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 120,
+          "unit": "ml"
+        }
+      },
+      "note": "Dùng để điều chỉnh độ sánh của sốt kem (goodyfoodies: nước luộc mì có tinh bột giúp sốt bám đều sợi mì).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước luộc mì, không tính số liệu dinh dưỡng"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Đun sôi một nồi lớn nước (khoảng 3–4 lít), cho 1 muỗng canh muối vào. Cho spaghetti vào luộc đến al dente theo thời gian ghi trên bao bì (thường 8–10 phút). Trước khi vớt mì, múc giữ lại khoảng 120 ml nước luộc mì.",
+      "tip": "goodyfoodies: luôn giữ lại nước luộc mì để điều chỉnh độ sánh của sốt; rominaslittlecorner: nấu mì đúng theo hướng dẫn trên bao bì.",
+      "timerMinutes": 9
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Trong lúc chờ mì chín, sơ chế nguyên liệu: phi lê cá hồi thấm thật khô bằng giấy bếp, cắt thành miếng vuông vừa ăn khoảng 3–4 cm; nêm đều các mặt với 1/2 muỗng cà phê muối, tiêu đen và một ít nước cốt chanh.",
+      "tip": "goodyfoodies: nêm cá với muối, tiêu và nước cốt chanh trước khi áp chảo; thấm khô cá thì mặt cá mới vàng giòn."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Hành tây thái hạt lựu nhỏ, tỏi băm nhuyễn. Rau bina nhặt rửa sạch, để ráo nước. Parmesan bào sẵn; chanh bào lấy vỏ và vắt lấy nước cốt."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun nóng 1,5 muỗng canh dầu ô liu trong chảo lớn ở lửa vừa-cao. Cho cá hồi vào áp chảo khoảng 4–5 phút mỗi mặt, đến khi mặt ngoài vàng và thịt cá dễ tách vảy (nhiệt độ lõi khoảng 63°C / 145°F). Gắp cá ra đĩa riêng.",
+      "tip": "goodyfoodies: áp chảo 4–5 phút/mặt; cá chín tới sẽ tách vảy dễ dàng bằng nĩa — đừng nấu quá kỹ kẻo cá khô.",
+      "timerMinutes": 9
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Giảm lửa xuống vừa, cho bơ vào chảo (dùng luôn chảo vừa áp chảo cá để tận dụng vị). Cho hành tây vào xào 2–3 phút đến khi trong và mềm, rồi cho tỏi băm vào phi khoảng 30 giây đến khi thơm.",
+      "tip": "goodyfoodies: phi tỏi vừa thơm là được — tỏi cháy sẽ làm sốt bị đắng.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho rau bina vào chảo, đảo 1–2 phút đến khi lá vừa héo xuống.",
+      "tip": "rominaslittlecorner: cho rau bina vào cùng lúc với kem, đảo đều tay cho rau ngấm sốt.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đổ kem tươi vào chảo, khuấy đều, đun liu riu 3–4 phút cho sốt hơi sánh lại (không để sôi bùng).",
+      "tip": "goodyfoodies: đun kem ở lửa nhỏ đến khi sốt sánh mịn; rominaslittlecorner: khuấy đều ngay sau khi cho kem vào.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho parmesan bào vào, khuấy đến khi phô mai tan hoàn toàn. Nêm vỏ chanh bào, nước cốt chanh và ớt bột (nếu dùng); nếm lại muối và tiêu cho vừa miệng.",
+      "tip": "goodyfoodies: chanh giúp cân bằng vị béo của kem và cá hồi; nêm nếm ở từng bước để món ăn đậm đà."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho mì đã ráo nước vào chảo sốt, đảo đều cho từng sợi mì thấm sốt. Nếu sốt quá đặc, thêm nước luộc mì đã giữ lại từng ít một đến khi đạt độ sánh mong muốn.",
+      "tip": "goodyfoodies: tinh bột trong nước luộc mì giúp sốt kem bám đều từng sợi mì."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Cho cá hồi trở lại chảo, đảo thật nhẹ tay để miếng cá không bị nát. Dọn ra đĩa ngay khi còn nóng, rắc ngò tây thái nhỏ và thêm một ít parmesan lên trên.",
+      "tip": "rominaslittlecorner: món sốt kem nên ăn ngay khi vừa nấu xong — hâm lại sẽ kém ngon."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 825.07,
+      "proteinG": 18.16,
+      "carbohydrateG": 88.01,
+      "fatG": 44.65,
+      "fiberG": 3.63,
+      "sugarG": 6.5,
+      "sodiumMg": 38.93
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Phi lê cá hồi tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Rau bina tươi (baby spinach): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Bơ lạt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Dầu ô liu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Phô mai Parmesan bào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Chanh vàng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 10,
+        "detail": "Muối: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Ngò tây tươi (parsley): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Nước luộc mì (giữ lại): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      10,
+      14
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 14,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,522 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-aba623dc468a9569",
+    "slug": "canh-ca-nam-nhat",
+    "title": "Canh cá nấm Nhật"
+  },
+  "content": {
+    "description": "Canh trong cá-nấm nước dùng ngọt thanh xì dầu, tô canh Nhật ấm nhẹ dễ tiêu.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Canh",
+      "Cá",
+      "Nhật Bản",
+      "Thanh ngọt"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-aba623dc468a9569.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://food-in-japan.com/2013/01/sea-bream-soup/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://forums.egullet.org/topic/19625-japanese-foods-shirumono/page/2/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://takas-kitchen-jp.com/ishikari-jiruhokkaidos-traditional-salmon-miso-soup/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cá hồi phi lê tươi",
+      "canonicalIngredientId": "ING_ENR_B0CD66596AC2FED4",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Cá hồi phi lê via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn gốc đều dùng 'ara' (đầu + xương cá) để lấy nước dùng ngọt; cá hồi phi lê là lựa chọn thay thế cho tiện chế biến gia đình — nước dùng sẽ thanh hơn, ít béo ngậy hơn bản dùng ara.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 208,
+        "proteinG": 20.42,
+        "carbohydrateG": 0,
+        "fatG": 13.42,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 59
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175167",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm đùi gà (eringi)",
+      "canonicalIngredientId": "ING_ENR_A3A6E50EBE3B4F57",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn canh cá đều không dùng nấm; lượng 200 g cho 4 phần theo cách dùng nấm trong súp cá Nhật (TAKA's Kitchen: 100 g nấm maitake cho 4 phần Ishikari Jiru) — nấm là thành phần đặc trưng của món này theo assignment.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": 1.11,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "USDA Foundation có entry 'Mushroom, king oyster' (fdcId 2003599) nhưng thiếu Energy và Sugars nên dùng entry generic 'Mushrooms, oyster, raw' (Pleurotus ostreatus, họ hàng gần của nấm đùi gà Pleurotus eryngii)."
+    },
+    {
+      "position": 2,
+      "sourceName": "Rong biển khô kombu",
+      "canonicalIngredientId": "ING_ENR_72EB6E3445553642",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "JOC (Kenchinjiru): 1 miếng kombu ngâm 5 cups nước; eGullet: 40 cm kombu cho 1600 ml nước. 10 g là 1 miếng kombu khô cỡ vừa, đủ cho 1200 ml.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 43,
+        "proteinG": 1.68,
+        "carbohydrateG": 9.57,
+        "fatG": 0.56,
+        "fiberG": 1.3,
+        "sugarG": 0.6,
+        "sodiumMg": 233
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168457",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Nước",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1200,
+        "unit": "ml",
+        "text": "1200 ml",
+        "gramEquivalent": 1200,
+        "basis": "1 ml nước ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1200,
+          "unit": "ml"
+        }
+      },
+      "note": "food-in-japan: 700 ml nước cho 2 bát canh; quy đổi 1200 ml cho 4 bát (~300 ml/bát).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 4,
+      "sourceName": "Rượu sake nấu ăn",
+      "canonicalIngredientId": "ING_ENR_684BD07DF56380DC",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "ml",
+        "text": "30 ml",
+        "gramEquivalent": 30,
+        "basis": "sake tỉ trọng ~1.0 → 30 ml ≈ 30 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "ml"
+        }
+      },
+      "note": "eGullet: 30 ml sake cho 1600 ml nước; giữ nguyên 30 ml cho 1200 ml để khử tanh cá (cá phi lê cần khử tanh nhiều hơn ara đã qua xử lý).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 134,
+        "proteinG": 0.5,
+        "carbohydrateG": 5,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167723",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "hakuraidou (arajiru): dùng gừng thái lát nấu cùng để khử tanh; 15 g ≈ 1 mẩu gừng nhỏ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Muối ăn",
+      "canonicalIngredientId": "ING_ENR_361639D21BDA1726",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "USDA: 1 tsp table salt = 6.08 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 6,
+          "unit": "g"
+        }
+      },
+      "note": "Chia 2 lần: 1/2 tsp ướp cá khử tanh (theo ushio-jiru), 1/2 tsp nêm canh. Nguồn mâu thuẫn về tỉ lệ: eGullet dùng 2 tsp muối + 30 ml shoyu cho 1600 ml; công thức này dùng 1 tsp muối + 30 ml shoyu cho 1200 ml — nêm mặn hơn một chút vì cá phi lê ít tiết vị ngọt như ara đầu cá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Xì dầu (shoyu)",
+      "canonicalIngredientId": "ING_ENR_4B3D4B69D5D57916",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 32,
+        "basis": "USDA: 1 Tbsp soy sauce = 16 g → 2 Tbsp ≈ 32 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ushio-jiru chỉ ghi 'một chút muối + shoyu tạo hương' không định lượng; eGullet định lượng 30 ml shoyu cho 1600 ml. Công thức này dùng 30 ml cho 1200 ml (xem note ở muối).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá ~15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 27,
+        "proteinG": 0.97,
+        "carbohydrateG": 5.74,
+        "fatG": 0.47,
+        "fiberG": 1.8,
+        "sugarG": 3.91,
+        "sodiumMg": 15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170006",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Lau miếng kombu bằng khăn ẩm (không rửa — lớp phấn trắng là vị umami), ngâm trong 1200 ml nước 30 phút.",
+      "tip": "TAKA's Kitchen: ngâm kombu 30 phút rồi đun lửa nhỏ 10 phút trước khi sôi để lấy vị; JOC: không bao giờ để kombu sôi bùng.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cá hồi cắt miếng vừa ăn, rắc 1/2 muỗng cà phê muối lên hai mặt, ướp 15-20 phút để khử tanh.",
+      "tip": "ushio-jiru: rắc muối lên cá, để 15-30 phút — muối rút bớt máu và chất gây tanh.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Nấm đùi gà cắt bỏ gốc, thái lát dày khoảng 5 mm. Gừng thái lát mỏng. Hành lá cắt xéo."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun một nồi nước khác cho sôi. Trụng nhanh miếng cá 30-60 giây cho se mặt (kỹ thuật 'shimofuri'), vớt ra xả ngay nước lạnh rồi rửa sạch váng và máu còn sót.",
+      "tip": "ushio-jiru trụng đầu cá 45-60 giây, xương 15-20 giây; phi lê mỏng nên trụng nhanh hơn. Dùng bàn chải/đầu ngón tay cọ sạch phần máu đọng.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho nồi nước ngâm kombu lên bếp, đun lửa vừa đến khi nước lăn tăn (sắp sôi) thì vớt kombu ra ngay.",
+      "tip": "Tuyệt đối không để kombu sôi bùng — kombu sôi sẽ tiết vị đắng và chát làm hỏng nước canh trong."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Thêm sake, gừng lát và nấm đùi gà vào nồi, đun sôi nhẹ 5 phút, hớt bọt thường xuyên.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho cá đã trụng vào nồi, hớt sạch bọt, đun lửa nhỏ thêm 5-8 phút cho cá chín và nấm mềm.",
+      "tip": "eGullet: cho cá vào sau rau củ, ninh thêm 5-10 phút — không ninh quá lâu, cá nát và nước đục.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nêm 1/2 muỗng cà phê muối còn lại và 2 muỗng canh xì dầu. Nếm lại và điều chỉnh cho vừa miệng.",
+      "tip": "eGullet nhấn mạnh với canh trong Nhật (sumashi): nêm nhạt là chính ('subtlety is the key') — nêm từ từ, thiếu thì thêm."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho hành lá cắt xéo vào nồi, tắt bếp ngay. Múc canh ra bát, ăn nóng.",
+      "tip": "ushio-jiru: có thể chan canh lên cơm nóng ăn kèm."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 228.58,
+      "proteinG": 22.19,
+      "carbohydrateG": 3.95,
+      "fatG": 13.67,
+      "fiberG": 1.26,
+      "sugarG": 0.63,
+      "sodiumMg": 655.68
+    },
+    "originalPerServing": {
+      "energyKcal": 244.89,
+      "proteinG": 22.95,
+      "carbohydrateG": 5.15,
+      "fatG": 13.75,
+      "fiberG": 1.46,
+      "sugarG": 0.96,
+      "sodiumMg": 1096.4
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Nước: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Rượu sake nấu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Xì dầu (shoyu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      7
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

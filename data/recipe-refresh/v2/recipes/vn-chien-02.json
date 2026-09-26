@@ -1,0 +1,745 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "vn-chien-02",
+    "slug": "trung-chien-thit-bam-nam-rom",
+    "title": "Trứng chiên thịt bằm nấm rơm"
+  },
+  "content": {
+    "description": "Món trứng chiên phồng xốp vàng rực, bên trong đầy đặn thịt heo băm đậm đà và nấm ngọt giòn sần sật.",
+    "cuisine": "vietnamese",
+    "category": "mon_chien",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 12,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Món chiên",
+      "Nhanh gọn",
+      "Dưới 20 phút",
+      "Được yêu thích"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/vn-chien-02.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://cookpad.com/vn/cong-thuc/5166650",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://kingfoodmart.com/bai-viet/cong-thuc-nau-an/trung-chien-nam-ngon-com",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Trứng gà tươi",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "quả",
+        "text": "5 quả",
+        "gramEquivalent": 250,
+        "basis": "1 quả trứng gà lớn ~50 g (USDA FoodData Central: 1 large egg = 50 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "Cookpad (Shan Wu): 3 quả trứng gà cho 2 người → 3 người cần 4,5 quả, làm tròn lên 5 quả.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt heo xay nạc",
+      "canonicalIngredientId": "ING_ENR_43377AE5E0344425",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 225,
+        "unit": "g",
+        "text": "225 g",
+        "gramEquivalent": 225,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 225,
+          "unit": "g"
+        }
+      },
+      "note": "Cookpad: 150 g thịt bằm cho 2 người → 225 g cho 3 người. Nên dùng thịt nạc vai xay để trứng không quá khô (mytour dùng thịt ba rọi thái nhỏ — mâu thuẫn nhẹ, lấy thịt nạc xay theo Cookpad vì đúng tên món).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 263,
+        "proteinG": 16.88,
+        "carbohydrateG": 0,
+        "fatG": 21.19,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167902",
+      "sourceNutritionNote": "USDA SR Legacy 167902 'Pork, fresh, ground, raw' không trả về số liệu đường (nutrient 269)."
+    },
+    {
+      "position": 2,
+      "sourceName": "Nấm rơm tươi",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 75,
+        "unit": "g",
+        "text": "75 g",
+        "gramEquivalent": 75,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 75,
+          "unit": "g"
+        }
+      },
+      "note": "Cookpad: 50 g nấm rơm cho 2 người → 75 g cho 3 người. Chọn nấm búp tròn, không dập nát; Kingfoodmart: nấm rơm cắt lát mỏng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 3.83,
+        "carbohydrateG": 4.64,
+        "fatG": 0.68,
+        "fiberG": 2.5,
+        "sugarG": null,
+        "sodiumMg": 384
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168582",
+      "sourceNutritionNote": "USDA chỉ có số liệu nấm rơm ĐÓNG HỘP (SR Legacy 168582 'Mushrooms, straw, canned, drained solids') — natri (384 mg/100 g) cao hơn nấm rơm tươi do nước muối đóng hộp; không có số liệu nấm rơm tươi."
+    },
+    {
+      "position": 3,
+      "sourceName": "Sữa tươi nguyên kem",
+      "canonicalIngredientId": "ING_ENR_3D34F4B09B331BD5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 23,
+        "basis": "1 muỗng canh = 15 ml; sữa tươi tỉ trọng ~1,03 → 22,5 ml ≈ 23 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cookpad: 1 muỗng canh sữa tươi nguyên kem cho 2 người → 1,5 muỗng cho 3 người; đánh cùng trứng giúp trứng béo mềm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 3.27,
+        "carbohydrateG": 4.63,
+        "fatG": 3.2,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 38
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746782",
+      "sourceNutritionNote": "USDA Foundation 746782 'Milk, whole, 3.25% milkfat' không trả về fiber (291) và đường (269)."
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "đơn vị gốc đã là gram; ~3 cây hành lá",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Cookpad: hành lá xắt nhỏ cho vào tô trứng; Kingfoodmart: hành lá cắt khúc ngắn. Ước lượng 30 g cho 3 người (cả hai nguồn đều không định lượng).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành phi",
+      "canonicalIngredientId": "ING_ENR_AB085C7498BA1E47",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Cookpad cho hành phi vào tô trứng cùng hành lá — không định lượng, ước lượng 10 g. Dùng hành phi làm sẵn hoặc tự phi hành tím.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "hành phi (chiên dầu) không có mục USDA tin cậy; hành khô sống (72 kcal) gây sai lệch vật chất → null"
+    },
+    {
+      "position": 6,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "1 tép tỏi ~4–5 g; 2 tép ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Cookpad: phi tỏi vàng thơm rồi cho thịt vào xào, phi tỏi xào sơ nấm — ước lượng 2 tép cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "USDA Foundation 1104647 'Garlic, raw' không trả về đường (269) và natri (307)."
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước mắm ngon",
+      "canonicalIngredientId": "ING_ENR_352C1AA29FB15A32",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 12,
+        "basis": "1 muỗng cà phê nước mắm ≈ 6 g (1 muỗng canh = 18 g theo USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cookpad: 'nêm thêm tí nước mắm' vào tô trứng — không định lượng, ước lượng 2 thìa cà phê; nêm theo khẩu vị. Kingfoodmart cũng nêm nước mắm vào hỗn hợp trứng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê hạt nêm ≈ 4 g (ước lượng theo bột nêm Knorr)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cookpad ướp thịt với 'gia vị' 10 phút và xào nấm 'cùng tí hạt nêm' — không định lượng, ước lượng 1 thìa cà phê; mytour dùng 1/2 thìa hạt nêm xào thịt-nấm — lấy 1 thìa cà phê cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.66,
+        "carbohydrateG": 18.01,
+        "fatG": 13.88,
+        "fiberG": 0,
+        "sugarG": 17.36,
+        "sodiumMg": 23875
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "USDA SR Legacy 171562 'Soup, chicken broth or bouillon, dry' — dùng làm số liệu gần đúng cho hạt nêm; không có số liệu generic của hạt nêm Knorr Việt Nam."
+    },
+    {
+      "position": 9,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1/2 muỗng cà phê tiêu xay ≈ 1 g (USDA: 1 tsp ≈ 2,3 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cookpad ướp thịt với 'gia vị' (gồm tiêu); mytour: 1 thìa cà phê tiêu cho phần xào — ước lượng 1/2 thìa cà phê ướp thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "1/4 muỗng cà phê muối ≈ 1,5 g (USDA: 1 tsp ≈ 6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kingfoodmart và mytour nêm muối vào hỗn hợp trứng/thịt — Cookpad không dùng muối (chỉ nước mắm); ước lượng 1/4 thìa cà phê, có thể bỏ nếu đã nêm nước mắm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê ≈ 5 ml; tỉ trọng dầu mè ~0,92 → ≈ 4,6 g, làm tròn 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cookpad: đánh trứng với 'chút dầu mè' cho thơm — ước lượng 1 thìa cà phê.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "2 muỗng canh × 15 ml × 0,91 ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cookpad chiên trứng trên chính chảo vừa xào thịt-nấm (tận dụng dầu); mytour dùng 2 thìa dầu xào nhân + 2 thìa dầu chiên trứng — ước lượng 2 thìa canh cho bước chiên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Cà chua",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 80,
+        "basis": "1 quả cà chua vừa ~100 g; bỏ hạt còn ~80 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "CHỈ Kingfoodmart thêm cà chua bỏ hạt cắt hạt lựu vào hỗn hợp trứng; Cookpad và mytour không dùng — đánh dấu tùy chọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Ướp thịt: cho thịt heo xay vào tô, trộn đều với hạt nêm, tiêu xay và muối, để ướp khoảng 10 phút cho thấm gia vị.",
+      "tip": "Cookpad: ướp 10 phút là đủ vì thịt bằm thấm nhanh; không ướp quá lâu với muối kẻo thịt ra nước.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế nấm rơm: rửa nấm qua nước muối loãng, đun sôi một nồi nước rồi thả nấm vào trụng nhanh, vớt ra ngay, xả nước lạnh, để ráo rồi chẻ đôi (nấm to) hoặc cắt lát mỏng.",
+      "tip": "Cookpad: trụng nhanh tay rồi xả lạnh giúp nấm giòn, không bị thâm; Kingfoodmart cắt nấm rơm thành lát mỏng."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Hành lá rửa sạch, xắt nhỏ; tỏi bóc vỏ băm nhuyễn; cà chua (nếu dùng) bỏ hạt, cắt hạt lựu nhỏ."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Xào nấm: phi một nửa tỏi băm cho vàng thơm, cho nấm rơm vào xào sơ nhanh tay với một tí hạt nêm rồi trút ra đĩa riêng.",
+      "tip": "Cookpad: xào sơ cho nấm ráo bớt nước để khi trộn vào trứng không bị chảy nước.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Xào thịt: giữ nguyên chảo, thêm chút dầu nếu cần, phi nốt tỏi băm cho vàng rồi cho thịt bằm vào xào tơi ra ở lửa lớn. Cho nấm đã xào sơ vào, đảo đều nhanh tay cho ráo nước rồi tắt bếp.",
+      "tip": "Cookpad: xào lửa lớn, đảo nhanh để thịt-nấm ráo nước — nhân khô thì miếng trứng chiên mới chắc và thơm.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đánh trứng: đập trứng gà ra tô lớn, cho sữa tươi nguyên kem, dầu mè, nước mắm vào, dùng đũa/phới đánh tan đều. Cho hành lá xắt nhỏ và hành phi vào trộn đều.",
+      "tip": "Cookpad: sữa tươi giúp trứng béo mềm; đánh đều tay nhưng không đánh bông."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Trút toàn bộ thịt bằm và nấm rơm đã xào vào tô trứng, trộn đều cho nhân phân bố khắp."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Chiên trứng: đặt lại chảo lên bếp (tận dụng chảo vừa xào), cho 2 thìa dầu ăn vào đun nóng vừa. Đổ hỗn hợp trứng vào, dàn đều, đậy nắp chiên lửa nhỏ-vừa cho trứng chín đều.",
+      "tip": "mytour: chiên lửa nhỏ và đậy nắp giúp trứng chín đều hai mặt mà không cần lật nhiều, mặt trứng vàng đẹp.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Khi mặt dưới vàng, khéo léo lật (hoặc dùng đĩa to úp ngược để lật) chiên tiếp mặt còn lại đến khi vàng đều hai mặt thì tắt bếp.",
+      "tip": "Cookpad: chiên vàng đều 2 mặt rồi gắp ra ngay — để lâu trứng khô cứng.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Gắp trứng ra đĩa, cắt miếng vừa ăn. Dùng nóng với cơm trắng."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Trứng gà tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Thịt heo xay nạc: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 2,
+        "detail": "Nấm rơm tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Sữa tươi nguyên kem: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước mắm ngon: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 12,
+        "detail": "Dầu ăn: consumed/absorbed amount is not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      }
+    ]
+  }
+}

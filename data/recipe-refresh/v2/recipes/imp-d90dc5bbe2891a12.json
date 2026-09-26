@@ -1,0 +1,762 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-d90dc5bbe2891a12",
+    "slug": "chao-thit-bam-gung",
+    "title": "Cháo thịt bằm gừng"
+  },
+  "content": {
+    "description": "Cháo đặc kiểu Quảng Đông với thịt bằm viên gừng ấm và trứng luộc cắt múi, bữa sáng đầy đặn.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 45,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Cháo",
+      "Quảng Đông",
+      "Bữa sáng",
+      "Ấm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-d90dc5bbe2891a12.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://toyenxin.com/blog-1/cach-nau-chao-gung-thit-bam-vi-cb.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://tiphay.vn/bai-viet/cach-nau-chao-thit-bam-voi-gung-tuoi-giai-cam-cuc-hieu-qua-p14.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://thegioiamthuc.com/mon-chao-thit-bam-gung-tuoi/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://afamily.vn/nau-chao-thit-bam-thom-ngon-bang-noi-com-dien-20140918060235142.chn",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Gạo tẻ",
+      "canonicalIngredientId": "ING_ENR_E917189F6ABE168C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "g",
+        "text": "250 g",
+        "gramEquivalent": 250,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 250,
+          "unit": "g"
+        }
+      },
+      "note": "toyenxin dùng 300 g cho nồi lớn; afamily và TopList dùng 100 g gạo cho ~2 tô cháo. Quy cho 3 tô lớn = 250 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 365,
+        "proteinG": 7.13,
+        "carbohydrateG": 79.95,
+        "fatG": 0.66,
+        "fiberG": 1.3,
+        "sugarG": 0.12,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169756",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt heo xay",
+      "canonicalIngredientId": "GROUND_PORK",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "toyenxin, tiphay và thegioiamthuc đều dùng 200 g thịt heo bằm cho nồi cháo này.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 263,
+        "proteinG": 16.88,
+        "carbohydrateG": 0,
+        "fatG": 21.19,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167902",
+      "sourceNutritionNote": "Bản ghi SR Legacy 167902 không công bố chỉ số đường (number 269) → để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "toyenxin và tiphay dùng 10 g gừng thái sợi cho nồi cháo; tăng lên 20 g cho 3 phần vì gừng là linh hồn của món (vị cay ấm giải cảm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 100,
+        "basis": "2 quả trứng gà lớn, USDA FoodData Central: 1 large egg = 50 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "MÂU THUẪN NGUỒN: afamily và TopList dùng trứng bắc thảo cho cháo thịt bằm; nhưng assignment quy định trứng gà nên dùng trứng gà theo assignment — đánh tan cho vào nồi lúc cháo sôi để tạo vân trứng. Trứng bắc thảo vẫn là biến tấu được công nhận nếu muốn đổi vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "toyenxin và tiphay dùng 20 g hành lá cắt nhỏ rắc lên tô cháo.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "USDA SR Legacy 170005 'Onions, spring or scallions (includes tops and bulb), raw' — bản ghi đầy đủ 7 chỉ số (thay 2727585 Foundation thiếu energy/carbs/fat; audit round 5)"
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 20,
+        "basis": "1 củ hành tím trung bình ~20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "toyenxin và tiphay dùng 2 củ hành tím thái lát mỏng cho nồi lớn; quy về 3 phần = 1 củ, cho vào nồi cháo lúc ninh để thơm và ngọt nước.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu (nước tương)",
+      "canonicalIngredientId": "ING_ENR_F68EF5C1E847770A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh xì dầu ≈ 15 ml, tỉ trọng ~1.2 → ≈18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Theo assignment (hint có xì dầu). Các nguồn Việt dùng nước mắm/hạt nêm làm gia vị nêm chính; giữ xì dầu để ướp thịt và nêm nhẹ theo đúng định hướng món của assignment.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh nước mắm ≈ 15 ml, tỉ trọng ~1.2 → ≈18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "toyenxin dùng nước mắm để ướp thịt và nêm cháo cho vừa ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê muối ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "TopList dùng 5 g muối cho nồi 100 g gạo; quy tương đương cho nồi 250 g gạo vì nêm theo độ mặn của nước cháo.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tất cả các nguồn đều rắc tiêu lên tô cháo lúc ăn nóng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "không có dữ liệu chuẩn trong USDA FoodData Central (SR Legacy/Foundation) cho hạt nêm công nghiệp Việt Nam",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "toyenxin dùng hạt nêm để ướp thịt và nêm cháo; USDA không có bản ghi generic cho hạt nêm công nghiệp nên để null toàn bộ, không ước lượng.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tìm được bản ghi SR Legacy/Foundation cho hạt nêm công nghiệp; để null toàn bộ theo quy tắc."
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "1 muỗng cà phê dầu ăn ≈ 5 ml ≈ 4.5 g (tỉ trọng ~0.91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "toyenxin ướp thịt băm với một ít dầu ăn cùng hạt nêm, nước mắm, tiêu để thịt không bị khô và rời.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "1 muỗng cà phê dầu mè ≈ 5 ml ≈ 4.5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "toyenxin rắc 'một chút dầu mè' lên tô cháo cho thơm; TopList định lượng 3 ml cho nồi nhỏ — lấy 1 muỗng cà phê cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "lít",
+        "text": "2 lít",
+        "gramEquivalent": 2000,
+        "basis": "2 lít nước lọc dùng để ninh cháo; nước không đóng góp năng lượng hay dinh dưỡng đáng kể",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "l"
+        }
+      },
+      "note": "TopList dùng 1 lít nước cho 100 g gạo (~2 tô); quy cho 250 g gạo 3 tô = 2 lít, có thể châm thêm nước sôi nếu cháo đặc quá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Gừng gọt vỏ, rửa sạch, thái sợi mỏng. Hành lá rửa sạch, cắt nhỏ. Hành tím bóc vỏ, thái lát mỏng. Để riêng từng thứ.",
+      "tip": "Thái gừng thành sợi mỏng (không băm) để khi ăn cảm nhận rõ vị cay ấm và mùi thơm — điểm đặc trưng của món giải cảm (toyenxin)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Gạo vo sạch, để ráo nước. Cho gạo vào chảo khô, rang trên lửa vừa đến khi hạt gạo săn lại và hơi vàng thơm.",
+      "tip": "Rang gạo giúp cháo thơm hơn và hạt gạo nhanh nở nhừ (toyenxin, afamily). TopList chỉ ngâm gạo 30-60 phút — rang là cách được đa số nguồn ưu tiên.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Thịt heo xay cho vào tô, ướp với 1 muỗng canh xì dầu, 1/2 muỗng cà phê hạt nêm, 1/2 muỗng cà phê tiêu, 1 muỗng cà phê dầu ăn. Trộn đều, để 15 phút cho thấm.",
+      "tip": "Ướp thịt trước giúp thịt đậm đà, không bị nhạt khi cho vào cháo (toyenxin).",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun sôi 2 lít nước trong nồi lớn. Cho gạo đã rang và hành tím thái lát vào, khuấy đều. Khi nước sôi lại thì hạ lửa nhỏ, đậy vung hé, ninh khoảng 30-40 phút cho gạo nở nhừ, thỉnh thoảng khuấy để cháo không dính đáy nồi.",
+      "tip": "Hành tím cho vào lúc ninh để nước cháo ngọt thơm (toyenxin). Nếu cháo đặc quá, châm thêm nước sôi từng ít một.",
+      "timerMinutes": 35
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Khi hạt gạo đã nở bung và cháo sánh, cho thịt băm đã ướp vào từng ít một, vừa cho vừa khuấy đều tay để thịt rã tơi, không vón cục.",
+      "tip": "Cho thịt từng ít một và khuấy liên tục là bí quyết để thịt rã đều, cháo không bị vón (toyenxin, tiphay)."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đun lửa nhỏ thêm khoảng 10 phút cho thịt chín kỹ và quyện vào cháo.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nêm 1 muỗng canh nước mắm, 1 muỗng cà phê muối, 1 muỗng cà phê hạt nêm còn lại. Nếm lại và điều chỉnh cho vừa miệng.",
+      "tip": "Nêm sau khi thịt đã chín để vị mặn chuẩn xác, vì thịt ướp sẵn đã có vị (toyenxin)."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Đánh tan 2 quả trứng gà trong chén. Khi nồi cháo đang sôi lăn tăn, rót trứng vào từ từ thành dòng mỏng, vừa rót vừa khuấy nhẹ theo một chiều để tạo vân trứng đẹp.",
+      "tip": "Rót trứng vào lúc cháo sôi và khuấy một chiều giúp trứng tạo thành sợi vân mịn thay vì vón cục.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tắt bếp. Cho gừng thái sợi vào từng tô trước, rồi múc cháo nóng lên trên.",
+      "tip": "MÂU THUẪN NGUỒN về gừng: toyenxin/tiphay/thegioiamthuc cho gừng tươi vào tô rồi múc cháo vào — gừng giữ được mùi cay nồng, đúng mục đích giải cảm; TopList nấu gừng trong nồi cháo. Chọn cách cho vào tô để giữ hương gừng tươi."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Rắc hành lá cắt nhỏ, tiêu xay lên trên mỗi tô, nhỏ vài giọt dầu mè. Trộn đều và ăn ngay lúc còn nóng.",
+      "tip": "Ăn nóng để gừng phát huy tác dụng làm ấm, ra mồ hôi giải cảm (tiphay)."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 359.3,
+      "proteinG": 10.37,
+      "carbohydrateG": 68.54,
+      "fatG": 3.78,
+      "fiberG": 1.39,
+      "sugarG": 0.49,
+      "sodiumMg": 53.43
+    },
+    "originalPerServing": {
+      "energyKcal": 572.91,
+      "proteinG": 22.65,
+      "carbohydrateG": 70.6,
+      "fatG": 20.97,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1538.31
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Thịt heo xay: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành tím: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Xì dầu (nước tương): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 10,
+        "detail": "Hạt nêm: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,812 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-59f5760d6349d284",
+    "slug": "nam-nhoi-thit-hap",
+    "title": "Nấm nhồi thịt hấp"
+  },
+  "content": {
+    "description": "Nấm đùi gà nhồi nhân thịt băm hấp chín rưới xì dầu, món hấp Trung Hoa khéo tay ấn tượng.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Hấp",
+      "Nấm",
+      "Nhồi thịt",
+      "Khéo tay"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-59f5760d6349d284.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "http://nibbledish.com/pdf/3488",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=uzu6ytQMevg",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://mytour.vn/en/blog/bai-viet/unveil-the-magic-of-crafting-irresistible-stuffed-shiitake-mushrooms.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 8,
+        "unit": "cây",
+        "text": "8 cây",
+        "gramEquivalent": 500,
+        "basis": "cân tươi; 8 cây vừa ≈ 500 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 8,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả ba nguồn đều dùng NẤM HƯƠNG (nibbledish và Mytour dùng nấm tươi/khô; video Anhui dùng 8 cây nấm hương khô + 180 g thịt). Assignment yêu cầu nấm đùi gà nên công thức này chuyển sang nấm đùi gà — thớ nấm chắc, dễ khía nhồi và ngọt nước khi hấp. Thời gian hấp điều chỉnh ngắn hơn vì nấm đùi gà cắt mỏng chín nhanh hơn nấm hương nguyên cây.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.3,
+        "carbohydrateG": 6.1,
+        "fatG": 0.4,
+        "fiberG": 2.3,
+        "sugarG": 1.1,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "USDA không có mục nấm đùi gà (Pleurotus eryngii) — dùng số liệu nấm sò (Mushrooms, oyster, raw), cùng họ nấm sò, làm gần đúng."
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt heo xay",
+      "canonicalIngredientId": "GROUND_PORK",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "cân tươi",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN VỀ TỈ LỆ: video Anhui dùng 180 g thịt cho 8 cây nấm hương khô (nấm khô nhỏ); nibbledish dùng ~450 g (1 lb) thịt cho một mẻ nấm không ghi số cây; video 香菇蒸肉饼 dùng 300 g thịt. Với 8 cây nấm đùi gà ~500 g (to hơn nấm hương), chọn 400 g thịt — đủ nhồi đầy mà nhân không bị rời.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 263,
+        "proteinG": 16.9,
+        "carbohydrateG": 0,
+        "fatG": 21.2,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167902",
+      "sourceNutritionNote": "USDA không có số liệu đường cho thịt heo xay — để null, không bịa số."
+    },
+    {
+      "position": 2,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 50,
+        "basis": "USDA FoodData Central: 1 quả trứng gà lớn ≈ 50 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "MÂU THUẪN: Mytour và video 香菇蒸肉饼 dùng 1 quả trứng cho nhân thịt (giúp nhân kết dính, mềm); video Anhui KHÔNG dùng trứng mà chỉ dùng 1 muỗng cà phê bột ngô. Công thức này theo Mytour/香菇蒸肉饼 (1 quả cho 300–400 g thịt) vì nhân nhồi lên nấm cần độ kết dính cao.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.6,
+        "carbohydrateG": 0.7,
+        "fatG": 9.5,
+        "fiberG": 0,
+        "sugarG": 0.4,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "cây",
+        "text": "4 cây",
+        "gramEquivalent": 40,
+        "basis": "1 cây hành lá ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Video Anhui dùng 3 cây hành lá cho 180 g thịt — tỉ lệ này cho 400 g thịt tương đương ~7 cây; Mytour chỉ ghi 'scallions' không định lượng. Chọn 4 cây (~40 g) thái nhỏ trộn nhân + rắc mặt — vừa thơm, không át mùi nấm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.8,
+        "carbohydrateG": 7.3,
+        "fatG": 0.2,
+        "fiberG": 2.6,
+        "sugarG": 2.3,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Gừng tươi băm nhuyễn",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "lát",
+        "text": "1 lát",
+        "gramEquivalent": 10,
+        "basis": "1 lát gừng mỏng ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "slice"
+        }
+      },
+      "note": "nibbledish dùng 1 muỗng cà phê gừng nạo (+ nước gừng) cho ~450 g thịt — lấy ~10 g cho 400 g thịt. Gừng khử mùi hôi thịt và làm nhân thơm kiểu Hoa.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.8,
+        "carbohydrateG": 17.8,
+        "fatG": 0.8,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu nhạt",
+      "canonicalIngredientId": "ING_ENR_19A3C60192F07ED5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 32,
+        "basis": "USDA: 1 muỗng canh xì dầu ≈ 16 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "nibbledish dùng 2 muỗng canh xì dầu cho ~450 g thịt; video Anhui dùng 3 muỗng cà phê (~1 muỗng canh) cho 180 g thịt — quy ra ~2,2 muỗng canh cho 400 g. Hai nguồn hội tụ ở ~2 muỗng canh cho 400 g thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.1,
+        "carbohydrateG": 4.9,
+        "fatG": 0.6,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "1 muỗng canh dầu hào ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "nibbledish pha nước sốt từ 2 muỗng cà phê dầu hào + 2–3 muỗng canh nước; video 香菇蒸肉饼 dùng 1 muỗng canh dầu hào ướp cho 300 g thịt. Công thức này: 1 muỗng canh ướp nhân + 1 muỗng canh pha sốt rưới.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.4,
+        "carbohydrateG": 10.9,
+        "fatG": 0.2,
+        "fiberG": 0.3,
+        "sugarG": 0,
+        "sodiumMg": 2733
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174529",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Rượu nấu ăn (rượu Thiệu Hưng hoặc mirin nhạt)",
+      "canonicalIngredientId": "ING_ENR_CC97D1A1E23589C1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng ≈ 1 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "nibbledish dùng 2 muỗng canh rượu nấu ăn cho ~450 g thịt; video 香菇蒸肉饼 dùng 1 muỗng canh cho 300 g thịt. Chọn 1 muỗng canh cho 400 g thịt — đủ khử mùi thịt mà không át vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.5,
+        "carbohydrateG": 6.3,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 1.6,
+        "sodiumMg": 626
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169070",
+      "sourceNutritionNote": "USDA không có mục rượu Thiệu Hưng — dùng số liệu 'Alcoholic beverage, wine, cooking' (rượu vang nấu ăn) làm gần đúng."
+    },
+    {
+      "position": 8,
+      "sourceName": "Bột ngô (bột bắp)",
+      "canonicalIngredientId": "ING_ENR_D2EAF583347FED22",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Bột bắp via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 11,
+        "unit": "g",
+        "text": "11 g",
+        "gramEquivalent": 11,
+        "basis": "1 muỗng canh bột ngô ≈ 8 g; 1 muỗng cà phê ≈ 2,7 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 11,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN: video Anhui dùng 1 muỗng cà phê bột ngô cho 180 g thịt (quy ra ~2 muỗng cà phê/400 g); nibbledish dùng 1/2 muỗng canh (~1,5 muỗng cà phê) cho ~450 g thịt; video 香菇蒸肉饼 dùng 1 muỗng canh cho 300 g thịt. Chọn 1 muỗng canh ướp nhân + 1 muỗng cà phê pha sốt — ưu tiên độ kết dính cho nhân nhồi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 381,
+        "proteinG": 0.3,
+        "carbohydrateG": 91.3,
+        "fatG": 0.1,
+        "fiberG": 0.9,
+        "sugarG": 0,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169698",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "1 muỗng cà phê dầu mè ≈ 4,5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN: nibbledish dùng 1 muỗng canh dầu mè cho ~450 g thịt; video 香菇蒸肉饼 dùng 1 muỗng canh cho 300 g thịt — cả hai đều khá nhiều. Chọn 1 muỗng cà phê cho 400 g thịt để lấy mùi thơm mà không gây ngấy; dầu mè cho vào cuối khi trộn nhân.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 8,
+        "basis": "1 muỗng cà phê đường ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "nibbledish cho đường vào nước sốt 'vừa miệng' không định lượng; video 香菇蒸肉饼 dùng 1/2 muỗng canh đường cho 300 g thịt. Chọn 1 muỗng cà phê ướp nhân + 1 muỗng cà phê pha sốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 100,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê muối ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN: video Anhui dùng 1 muỗng cà phê muối cho chỉ 180 g thịt (khá mặn, có thể do khẩu vị); nibbledish chỉ ghi 'muối vừa miệng'. Xì dầu và dầu hào đã mặn nên chọn 1/2 muỗng cà phê cho 400 g thịt — ghi rõ đã giảm so với video Anhui.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Tiêu trắng xay",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.2,
+        "basis": "1 muỗng cà phê tiêu trắng xay ≈ 2,4 g (ước theo gia vị xay thông dụng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Video Anhui dùng 1 muỗng cà phê tiêu trắng cho 180 g thịt; nibbledish 'tiêu vừa miệng'. Chọn 1/2 muỗng cà phê cho 400 g thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.6,
+        "fatG": 2.1,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": "USDA không có số liệu đường cho tiêu trắng — để null, không bịa số."
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước (làm sốt)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "ml",
+        "text": "100 ml",
+        "gramEquivalent": 100,
+        "basis": "1 ml nước = 1 g; gồm nước hấp chắt ra + nước lọc pha thêm",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 100,
+          "unit": "ml"
+        }
+      },
+      "note": "Tận dụng nước ngọt chắt ra từ đĩa nấm sau khi hấp, pha thêm nước lọc cho đủ 100 ml để nấu sốt — theo cách làm sốt của Mytour và nibbledish.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước không có giá trị dinh dưỡng đáng kể — để null, không tra USDA."
+    },
+    {
+      "position": 14,
+      "sourceName": "Giấm gạo",
+      "canonicalIngredientId": "ING_ENR_422700EA71994D6A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê ≈ 5 ml ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ Mytour dùng giấm trong nước sốt rưới (pha cùng xì dầu, đường, bột ngô). Hai nguồn còn lại không dùng — lượng nhỏ 1 muỗng cà phê để sốt có vị thanh, có thể bỏ nếu không thích chua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 21,
+        "proteinG": 0,
+        "carbohydrateG": 0.9,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.4,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173469",
+      "sourceNutritionNote": "USDA SR Legacy không có mục giấm gạo — dùng số liệu giấm táo (Vinegar, cider) làm gần đúng."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế nấm đùi gà: rửa sạch, cắt bỏ phần gốc già. Cắt đôi từng cây theo chiều dọc (hoặc cắt lát dày 2 cm rồi khía lõm mặt trong) để tạo chỗ nhồi nhân. Thấm khô mặt nấm bằng giấy bếp.",
+      "tip": "Mặt nấm khô giúp nhân bám chắc hơn — mẹo chung của các món nhồi nấm. Khía nhẹ hình caro lên mặt trong nếu cắt lát để tăng diện tích bám."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Trộn nhân: cho thịt heo xay vào tô lớn, thêm trứng gà, hành lá thái nhỏ (chừa lại ít để rắc mặt), gừng băm, xì dầu, 1 muỗng canh dầu hào, rượu nấu ăn, 1 muỗng canh bột ngô, dầu mè, 1 muỗng cà phê đường, muối và tiêu trắng. Trộn/quết một chiều đến khi nhân dẻo, quyện.",
+      "tip": "nibbledish: trộn kỹ đến khi nhân thành khối dẻo, dính — nhân dẻo mới bám được lên nấm khi hấp. Ướp 10–15 phút cho thấm (Mytour ướp 15 phút).",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Rắc một lớp bột ngô thật mỏng lên mặt trong của từng miếng nấm (lấy từ phần bột đã cân), rồi múc nhân nhồi lên, miết nhẹ cho nhân bám chặt vào nấm.",
+      "tip": "Mẹo của nibbledish: lớp bột ngô phủ mặt nấm giữ nhân không bị rời khi hấp/chiên — 'protective coating' cho nhân."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Xếp nấm nhồi vào đĩa sâu lòng, mặt nhân hướng lên trên. Đun sôi nước trong nồi hấp/xửng.",
+      "tip": "Xếp thưa để hơi nước lưu thông đều — nhân chín đều hơn."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho đĩa nấm vào hấp lửa lớn 12–15 phút, đến khi nhân thịt chín hẳn (xiên tăm vào nhân thấy nước trong, không còn hồng).",
+      "tip": "MÂU THUẪN THỜI GIAN: Mytour hấp 15–20 phút cho nấm hương nguyên cây; video Anhui không ghi thời gian. Nấm đùi gà cắt đôi mỏng hơn nên 12–15 phút là đủ — kiểm tra thịt chín bằng tăm thay vì tin tuyệt đối vào đồng hồ.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Lấy đĩa nấm ra, chắt phần nước ngọt tiết ra trong đĩa vào một chén nhỏ (giữ lại làm sốt). Đậy nắp giữ nóng đĩa nấm.",
+      "tip": "Nước hấp nấm rất ngọt — đừng đổ đi, đó là nền của nước sốt (cách làm của Mytour)."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Pha sốt: cho nước hấp nấm + nước lọc cho đủ 100 ml vào chảo nhỏ, thêm 1 muỗng canh dầu hào, 1 muỗng cà phê đường và giấm gạo (nếu dùng). Đun sôi nhẹ, vừa khuấy vừa cho 1 muỗng cà phê bột ngô đã hòa với 1 muỗng canh nước lạnh vào, khuấy đến khi sốt sánh mịn.",
+      "tip": "Theo cách pha sốt của Mytour (xì dầu + đường + giấm + bột ngô đun sánh) và nibbledish (dầu hào + nước đun sánh). Nêm nếm lại cho vừa miệng trước khi rưới.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rưới đều nước sốt nóng lên từng miếng nấm nhồi thịt."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Rắc phần hành lá chừa lại lên trên, dọn ngay khi còn nóng với cơm trắng.",
+      "tip": "Món hấp nên ăn nóng — để nguội nhân thịt dễ bị khô, tanh (lưu ý chung của các nguồn món hấp)."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Nấm đùi gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Thịt heo xay: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Trứng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Gừng tươi băm nhuyễn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Xì dầu nhạt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu hào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Rượu nấu ăn (rượu Thiệu Hưng hoặc mirin nhạt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Bột ngô (bột bắp): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Đường trắng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Tiêu trắng xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước (làm sốt): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

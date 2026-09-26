@@ -1,0 +1,810 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-ae6d3af49ade8384",
+    "slug": "cua-xao-gung-hanh",
+    "title": "Cua xào gừng hành"
+  },
+  "content": {
+    "description": "Cua xào gừng-hành lá nước sốt đậm, món xào cao cấp Quảng Đông đậm vị biển.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Xào",
+      "Cua",
+      "Quảng Đông",
+      "Đậm vị biển"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-ae6d3af49ade8384.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://rasamalaysia.com/ginger-and-scallion-crab",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://thewoksoflife.com/cantonese-style-scallion-ginger-crab/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cua biển sống nguyên con",
+      "canonicalIngredientId": "ING_ENR_8FEC0DE928DC6491",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 800,
+        "unit": "g",
+        "text": "800 g",
+        "gramEquivalent": 800,
+        "basis": "đơn vị gốc đã là gram (cân nguyên con còn sống)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 800,
+          "unit": "g"
+        }
+      },
+      "note": "\"Cua thịt\" ở đây hiểu là cua nguyên con chặt miếng (cả hai nguồn đều dùng cua sống nguyên con, không phải thịt cua gỡ sẵn). Rasa Malaysia dùng 1 con cua 1,5-2 lbs (0,6-1 kg) cho 4 phần; Woks of Life dùng 3 con cua xanh (tổng ~700-900 g). Công thức này lấy 800 g cho 4 phần. Cua sống cho vị ngọt và chắc thịt hơn cua đông lạnh (cả hai nguồn đều nhấn mạnh).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 87,
+        "proteinG": 18.06,
+        "carbohydrateG": 0.04,
+        "fatG": 1.08,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 293
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174204",
+      "sourceNutritionNote": "Chất xơ và đường tổng số không được báo cáo trong bản SR Legacy này."
+    },
+    {
+      "position": 1,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "cân trực tiếp; miếng gừng 2 inch ≈ 20-30 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Rasa dùng 1 miếng gừng 2 inch (≈ 30 g) thái 10-12 lát cho 4 phần; Woks of Life dùng 4-5 lát gừng. Công thức này dùng 30 g thái lát.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": null,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": "Đường tổng số không được báo cáo trong bản SR Legacy này."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "cây",
+        "text": "4 cây",
+        "gramEquivalent": 60,
+        "basis": "USDA FDC 170005: 1 cây hành lá cỡ vừa ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Rasa dùng 3 cây hành cắt khúc 5 cm; Woks of Life dùng 4 cây, chia làm hai: phần đầu trắng cho vào xào trước với gừng, phần lá xanh cho vào cuối. Công thức này dùng 4 cây cho 4 phần theo cách chia của Woks of Life.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "Đường tổng số không được báo cáo trong bản SR Legacy này."
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 10,
+        "basis": "1 tép tỏi ≈ 5 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Theo hint_ingredients của món. LƯU Ý LỆCH NGUỒN: cả Rasa Malaysia và Woks of Life đều KHÔNG dùng tỏi cho món cua xào gừng hành này (chỉ gừng + hành lá). Thêm 2 tép tỏi băm là tùy chọn để tạo mùi, không phải nguyên liệu gốc của hai nguồn tham khảo.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "Đường tổng số không được báo cáo trong bản SR Legacy này."
+    },
+    {
+      "position": 4,
+      "sourceName": "Bột bắp (để áo cua)",
+      "canonicalIngredientId": "ING_ENR_D2EAF583347FED22",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Bột bắp via the same name key",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 24,
+        "basis": "USDA FDC 169698: 1 cup bột bắp = 128 g → 1 muỗng canh ≈ 8 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rasa áo nhẹ miếng cua với 3 muỗng canh bột bắp trước khi chiên ngập dầu để khóa nước ngọt bên trong. Woks of Life dùng 2 muỗng canh bột mì (all-purpose flour) với mục đích tương tự — hai nguồn mâu thuẫn về loại bột; công thức này theo Rasa dùng bột bắp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 381,
+        "proteinG": 0.26,
+        "carbohydrateG": 91.27,
+        "fatG": 0.05,
+        "fiberG": 0.9,
+        "sugarG": null,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169698",
+      "sourceNutritionNote": "Đường tổng số không được báo cáo trong bản SR Legacy này."
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu ăn (để chiên ngập cua)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "ml",
+        "text": "500 ml",
+        "gramEquivalent": 455,
+        "basis": "500 ml dầu ăn, tỉ trọng dầu ≈ 0,91 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 500,
+          "unit": "ml"
+        }
+      },
+      "note": "Rasa chiên ngập miếng cua trong wok dầu nóng. Phần lớn dầu được chắt bỏ sau khi chiên, chỉ một phần rất nhỏ bám vào cua — con số 455 g là lượng dầu dùng để chiên, KHÔNG phải lượng dầu ngấm vào món ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "Đường tổng số không được báo cáo trong bản SR Legacy này. Dầu chiên chủ yếu được loại bỏ nên không tính vào dinh dưỡng khẩu phần."
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ăn (để xào)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "USDA FDC 171411: 1 muỗng canh dầu đậu nành = 13,6 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 13.6,
+          "unit": "g"
+        }
+      },
+      "note": "Rasa dùng 1 muỗng canh dầu để xào gừng sau khi đã vớt cua ra; Woks of Life dùng 2 muỗng canh cho bước này (tổng 6 muỗng canh cả món). Công thức này theo Rasa: 1 muỗng canh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "Đường tổng số không được báo cáo trong bản SR Legacy này."
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "USDA FDC 174529: 1 muỗng canh dầu hào = 18 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 18,
+          "unit": "g"
+        }
+      },
+      "note": "Thành phần sốt theo Rasa Malaysia: 1 muỗng canh dầu hào cho 4 phần. Woks of Life không dùng dầu hào mà nêm bằng xì dầu + rượu Thiệu Hưng — hai trường phái sốt khác nhau, xem ghi chú ở món xì dầu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.92,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": null,
+        "sodiumMg": 2733
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174529",
+      "sourceNutritionNote": "Đường tổng số không được báo cáo trong bản SR Legacy này."
+    },
+    {
+      "position": 8,
+      "sourceName": "Xì dầu nhạt (light soy sauce)",
+      "canonicalIngredientId": "ING_ENR_F4D1B45C3CF6671C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 10.6,
+        "basis": "USDA FDC 174277: 1 muỗng cà phê xì dầu = 5,3 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10.6,
+          "unit": "g"
+        }
+      },
+      "note": "Theo hint_ingredients của món. MÂU THUẪN NGUỒN: Woks of Life nêm 2 muỗng cà phê xì dầu (không dùng dầu hào/nước mắm); Rasa Malaysia nêm bằng dầu hào + nước mắm (không dùng xì dầu). Công thức này theo trường phái sốt của Rasa nên xì dầu là tùy chọn — nếu cho vào thì bớt nước mắm để không quá mặn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": null,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "Đường tổng số không được báo cáo trong bản SR Legacy này."
+    },
+    {
+      "position": 9,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.125,
+        "unit": "muỗng cà phê",
+        "text": "0.125 muỗng cà phê",
+        "gramEquivalent": 0.75,
+        "basis": "USDA FDC 174531: 1 muỗng canh nước mắm = 18 g → 1/8 muỗng cà phê ≈ 0,75 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Thành phần sốt theo Rasa Malaysia: 1/8 muỗng cà phê nước mắm. Woks of Life không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": "Đường tổng số không được báo cáo trong bản SR Legacy này."
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "quy đổi chuẩn nhà bếp: 1 muỗng cà phê đường cát ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Thành phần sốt theo Rasa: 1/2 muỗng cà phê đường. Woks of Life dùng 1/8 muỗng cà phê — chênh lệch nhỏ, lấy theo Rasa (nguồn chính của công thức này).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": "Đường tổng số (sugars NLEA) không được báo cáo trong bản SR Legacy này; carbohydrate 99,98 g/100 g chủ yếu là đường."
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu trắng xay",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhúm",
+        "text": "2 nhúm",
+        "gramEquivalent": 0.5,
+        "basis": "2 nhúm tiêu ≈ 0,5 g (gia vị lượng rất nhỏ, ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Thành phần sốt theo Rasa: 2 nhúm (dashes) tiêu trắng. Woks of Life dùng 1/8 muỗng cà phê — tương đương nhau.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.61,
+        "fatG": 2.12,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": "Đường tổng số không được báo cáo trong bản SR Legacy này."
+    },
+    {
+      "position": 12,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.125,
+        "unit": "muỗng cà phê",
+        "text": "0.125 muỗng cà phê",
+        "gramEquivalent": 0.55,
+        "basis": "1/8 muỗng cà phê ≈ 0,6 ml; tỉ trọng dầu mè ≈ 0,92 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Thành phần sốt theo Rasa: 1/8 muỗng cà phê dầu mè.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": "Đường tổng số không được báo cáo trong bản SR Legacy này."
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước lọc (pha sốt)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "muỗng canh",
+        "text": "6 muỗng canh",
+        "gramEquivalent": 90,
+        "basis": "1 ml nước = 1 g; 6 muỗng canh = 90 ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Thành phần sốt theo Rasa: 6 muỗng canh nước.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173647",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Bột bắp (làm sánh sốt)",
+      "canonicalIngredientId": "ING_ENR_D2EAF583347FED22",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Bột bắp via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "muỗng cà phê",
+        "text": "0.75 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "USDA FDC 169698: 1 cup bột bắp = 128 g → 3/4 muỗng cà phê ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Thành phần sốt theo Rasa: 3/4 muỗng cà phê bột bắp để sốt sánh, bám đều miếng cua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 381,
+        "proteinG": 0.26,
+        "carbohydrateG": 91.27,
+        "fatG": 0.05,
+        "fiberG": 0.9,
+        "sugarG": null,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169698",
+      "sourceNutritionNote": "Đường tổng số không được báo cáo trong bản SR Legacy này."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Cho cua sống vào ngăn mát tủ lạnh 5-10 phút cho cua chậm lại, dễ xử lý. Tháo dây buộc càng, cầm cua từ phía sau mai để tránh càng kẹp.",
+      "tip": "Mẹo của Woks of Life: làm lạnh cua trước khi sơ chế vừa an toàn vừa nhân đạo hơn; mọi cử động của cua sau khi tách mai chỉ là phản xạ thần kinh.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Lật ngửa cua, gỡ yếm dưới bụng; tách mai ra; bỏ mang (phần lông mềm hai bên), bỏ phần miệng và dạ dày ngay sau miệng. Giữ lại gạch cua (phần vàng) nếu thích — gạch làm món béo ngậy hơn.",
+      "tip": "Woks of Life khuyên giữ gạch cua và phần \"mustard\" (chất vàng xanh) vì làm món đậm đà; người mới làm có thể bỏ hết cho sạch."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Rửa sạch cua dưới vòi nước cho hết cát. Chặt mỗi con thành 4-6 miếng; mai cua chẻ đôi. Dùng sống dao đập dập nhẹ càng cua để khi ăn dễ gỡ thịt.",
+      "tip": "Chặt miếng vừa ăn để sốt bám đều và cua chín nhanh. Đập dập càng trước khi nấu — đừng đập nát."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Thấm khô từng miếng cua bằng khăn giấy, cho vào tô lớn, rắc 3 muỗng canh bột bắp vào áo đều một lớp mỏng.",
+      "tip": "Rasa nhấn mạnh: cua phải thật ráo nước thì khi chiên mới giòn và khóa được nước ngọt bên trong. Chỉ áo lớp mỏng, không phủ dày."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Pha sốt: trộn đều dầu hào, nước mắm, xì dầu (nếu dùng), đường, tiêu trắng, dầu mè, nước lọc và 3/4 muỗng cà phê bột bắp trong một chén, để sẵn bên bếp.",
+      "tip": "Pha sẵn sốt vì các bước xào diễn ra rất nhanh — Woks of Life nhắc phải chuẩn bị xong mọi thứ trước khi bật bếp."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đun nóng dầu chiên ngập trong wok/chảo sâu. Cho từng miếng cua vào chiên; vừa thấy cua chuyển đỏ cam thì vớt ra ngay, để ráo dầu.",
+      "tip": "Rasa: chỉ chiên đến khi cua vừa đỏ là vớt — chiên lâu thịt cua sẽ khô. Chiên thành nhiều mẻ, không nhồi nhét một lúc.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đổ bớt dầu chiên ra, chừa lại 1 muỗng canh trong wok. Đun nóng lại, cho gừng thái lát (và tỏi băm nếu dùng) vào phi thơm 15-30 giây, rồi cho phần đầu trắng của hành lá vào đảo cùng.",
+      "tip": "Gừng cho vào trước vì khó cháy hơn hành — mẹo chung của cả hai nguồn. Phần lá xanh của hành để dành cho bước cuối."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho cua đã chiên trở lại wok, đảo nhanh vài lượt cho thấm dầu gừng, rồi rưới đều chén sốt vào."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho nốt phần lá xanh của hành lá vào, đảo đều 30 giây - 1 phút đến khi sốt sánh lại, bám đều từng miếng cua thì tắt bếp.",
+      "tip": "LƯU Ý CÁCH KHÁC (Woks of Life): thay vì sốt sánh kiểu Rasa, họ cho 3 muỗng canh rượu Thiệu Hưng vào rồi đậy nắp om 2-3 phút cho cua chín bằng hơi, cuối cùng mới nêm xì dầu + đường + tiêu. Hai cách đều chuẩn Quảng Đông — công thức này theo cách sốt sánh của Rasa.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn ngay khi còn nóng.",
+      "tip": "Món này ăn nóng mới ngon, sốt bám cua sẽ đông lại khi nguội. Ăn kèm cơm trắng và chuẩn bị kẹp càng cua, khăn ướt — ăn cua kiểu này hơi bừa bộn nhưng rất đáng (Rasa)."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 1256.18,
+      "proteinG": 37.01,
+      "carbohydrateG": 10.49,
+      "fatG": 119.58,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 874.57
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Cua biển sống nguyên con: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Gừng tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 4,
+        "detail": "Bột bắp (để áo cua): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 5,
+        "detail": "Dầu ăn (để chiên ngập cua): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 6,
+        "detail": "Dầu ăn (để xào): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 7,
+        "detail": "Dầu hào: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu trắng xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước lọc (pha sốt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Bột bắp (làm sánh sốt): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 4,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 5,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 9,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

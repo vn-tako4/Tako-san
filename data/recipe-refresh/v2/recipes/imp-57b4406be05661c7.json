@@ -1,0 +1,841 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-57b4406be05661c7",
+    "slug": "ba-chi-xao-tuong-dau",
+    "title": "Ba chỉ xào tương đậu"
+  },
+  "content": {
+    "description": "Lát ba chỉ mỏng xào giòn quyện tương đậu thơm nồng, món mặn béo giòn không kho nước kiểu Bắc Kinh.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Xào",
+      "Tương",
+      "Ba chỉ",
+      "Béo giòn"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-57b4406be05661c7.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.hungrylankan.com/recipes/easy-pork-belly-stir-fry/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.chinasichuanfood.com/twice-cooked-pork-recipe/?replytocom=1165781",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt ba chỉ heo",
+      "canonicalIngredientId": "PORK_BELLY",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": "cân tươi; Hungry Lankan dùng dải ba chỉ cắt sẵn dày ~0,5 cm",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "Hungry Lankan dùng 300 g ba chỉ cho 2 phần — nhân 1,5 cho 3 phần được 450 g. China Sichuan Food cũng dùng 300 g ba chỉ nhưng LUỘC trước 25–30 phút rồi mới xào (twice-cooked); Hungry Lankan xào trực tiếp thịt sống thái lát. Tên món 'xào tương đậu' gần với cách xào trực tiếp nên công thức này theo Hungry Lankan, ghi rõ biến thể luộc-trước của CSF trong bước 2.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 518,
+        "proteinG": 9.3,
+        "carbohydrateG": 0,
+        "fatG": 53,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 32
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167812",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Rượu Thiệu Hưng (Shaoxing wine)",
+      "canonicalIngredientId": "ING_ENR_579A6A19552283BE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng rượu nấu ăn ≈ 1 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hungry Lankan: ướp 1 muỗng canh + lúc xào 1 muỗng cà phê cho 300 g thịt (2 phần) — nhân 1,5 được ~22 ml, làm tròn 2 muỗng canh (30 ml) cho 3 phần: 1,5 muỗng canh ướp + 1/2 muỗng canh lúc xào. CSF cũng dùng 1 muỗng canh rượu khi luộc thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.5,
+        "carbohydrateG": 6.3,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 1.6,
+        "sodiumMg": 626
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169070",
+      "sourceNutritionNote": "USDA không có mục rượu Thiệu Hưng — dùng số liệu 'Alcoholic beverage, wine, cooking' (rượu vang nấu ăn) làm gần đúng."
+    },
+    {
+      "position": 2,
+      "sourceName": "Tiêu trắng xay",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.33,
+        "unit": "muỗng cà phê",
+        "text": "0.33 muỗng cà phê",
+        "gramEquivalent": 0.8,
+        "basis": "1 muỗng cà phê tiêu trắng xay ≈ 2,4 g (ước theo gia vị xay thông dụng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hungry Lankan dùng 1/4 muỗng cà phê ướp cho 300 g thịt — nhân 1,5 được ~1/3 muỗng cà phê cho 450 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.6,
+        "fatG": 2.1,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": "USDA không có số liệu đường cho tiêu trắng — để null, không bịa số."
+    },
+    {
+      "position": 3,
+      "sourceName": "Xì dầu nhạt",
+      "canonicalIngredientId": "ING_ENR_19A3C60192F07ED5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 16,
+        "basis": "USDA: 1 muỗng canh xì dầu ≈ 16 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN: Hungry Lankan chỉ dùng 1/2 muỗng cà phê xì dầu nhạt để ƯỚP thịt (2 phần); China Sichuan Food cho 1 muỗng canh xì dầu nhạt lúc XÀO (300 g thịt). Chọn tổng 1 muỗng canh cho 3 phần: 2 muỗng cà phê ướp + 1 muỗng cà phê lúc xào — ưu tiên CSF vì cần vị mặn rõ trong món xào tương đậu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.1,
+        "carbohydrateG": 4.9,
+        "fatG": 0.6,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Xì dầu đặc (dark soy sauce)",
+      "canonicalIngredientId": "ING_ENR_FDE6895A8FBD1E66",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê ≈ 5 ml ≈ 6 g (đặc hơn nước)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hungry Lankan dùng 1/2 muỗng cà phê ướp cho 300 g thịt, chủ yếu để lấy màu — nhân 1,5 được 3/4 muỗng cà phê, làm tròn 1 muỗng cà phê cho 450 g. CSF không dùng xì dầu đặc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.1,
+        "carbohydrateG": 4.9,
+        "fatG": 0.6,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "USDA không có mục xì dầu đặc riêng — dùng số liệu xì dầu nhạt (shoyu) làm gần đúng; xì dầu đặc thực tế mặn ít hơn nhưng ngọt và đặc hơn."
+    },
+    {
+      "position": 5,
+      "sourceName": "Ớt chuông đỏ",
+      "canonicalIngredientId": "ING_ENR_3908D9685441601A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "quả",
+        "text": "1.5 quả",
+        "gramEquivalent": 225,
+        "basis": "1 quả ớt chuông lớn ≈ 150 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Hungry Lankan dùng 1 quả ớt chuông đỏ lớn cắt sợi dày cho 2 phần — nhân 1,5 được 1,5 quả cho 3 phần. CSF dùng ớt xanh tươi + ngồng tỏi thay vì ớt chuông — khác rau ăn kèm, không mâu thuẫn về thịt và tương.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 26,
+        "proteinG": 1,
+        "carbohydrateG": 6,
+        "fatG": 0.3,
+        "fiberG": 2.1,
+        "sugarG": 4.2,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170108",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành tây vàng",
+      "canonicalIngredientId": "ING_ENR_1D29EB61F57EBFD1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "củ",
+        "text": "0.75 củ",
+        "gramEquivalent": 110,
+        "basis": "1 củ hành tây vừa ≈ 150 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.75,
+          "unit": "piece"
+        }
+      },
+      "note": "Hungry Lankan dùng 1/2 củ hành tây cắt lát dày cho 2 phần (~75 g) — nhân 1,5 được ~110 g cho 3 phần. CSF không dùng hành tây.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.3,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.2,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 9,
+        "unit": "tép",
+        "text": "9 tép",
+        "gramEquivalent": 27,
+        "basis": "1 tép tỏi vừa ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 9,
+          "unit": "piece"
+        }
+      },
+      "note": "Hungry Lankan dùng 6 tép tỏi băm cho 2 phần — nhân 1,5 được 9 tép cho 3 phần. CSF dùng 2 tép tỏi thái lát cho 300 g thịt — ít hơn nhưng vai trò thơm tương đương.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.4,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "nắm",
+        "text": "1.5 nắm",
+        "gramEquivalent": 60,
+        "basis": "1 cây hành lá ≈ 10 g; 1 nắm ~4 cây ≈ 40 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hungry Lankan dùng 1 nắm hành lá cho 2 phần, tách riêng phần trắng (xào thơm) và phần xanh (cho cuối). Nhân 1,5 được 1,5 nắm (~6 cây) cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.8,
+        "carbohydrateG": 7.3,
+        "fatG": 0.2,
+        "fiberG": 2.6,
+        "sugarG": 2.3,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Tương đậu cay (doubanjiang, loại Pixian)",
+      "canonicalIngredientId": "ING_ENR_E50A6725E4F4EC81",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 muỗng canh tương đậu ≈ 20 g (ước; tương đặc)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều dùng 1 muỗng canh cho 300 g thịt (2 phần theo HL) — nhân 1,5 được 1,5 muỗng canh cho 3 phần. Hungry Lankan khuyên băm nhỏ tương trước khi xào để không cắn phải miếng to.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có mục tương đậu cay (doubanjiang) — để null toàn bộ, không bịa số."
+    },
+    {
+      "position": 10,
+      "sourceName": "Đậu đen muối (douchi / tương hột đen)",
+      "canonicalIngredientId": "ING_ENR_FFD2EED328FCE62C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 13,
+        "basis": "1 muỗng canh đậu đen muối ≈ 9 g (ước)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hungry Lankan dùng 1 muỗng canh cho 2 phần (dặn rửa sơ cho bớt mặn, băm nhỏ); CSF dùng 2 muỗng cà phê cho 300 g thịt và cũng dặn băm sơ. Nhân theo HL: 1,5 muỗng canh cho 3 phần.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có mục đậu đen muối lên men (douchi) — để null toàn bộ, không bịa số."
+    },
+    {
+      "position": 11,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "lát",
+        "text": "1 lát",
+        "gramEquivalent": 10,
+        "basis": "1 lát gừng mỏng ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "slice"
+        }
+      },
+      "note": "Chỉ China Sichuan Food dùng gừng (1/2 củ cái thái lát + gừng khi luộc); Hungry Lankan không dùng gừng. Để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.8,
+        "carbohydrateG": 17.8,
+        "fatG": 0.8,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Ớt tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 10,
+        "basis": "1 quả ớt tươi ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ China Sichuan Food dùng 2 quả ớt xanh tươi cho 300 g thịt; Hungry Lankan không dùng ớt tươi (vị cay lấy từ doubanjiang). Để optional cho ai ăn cay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 26,
+        "proteinG": 1,
+        "carbohydrateG": 6,
+        "fatG": 0.3,
+        "fiberG": 2.1,
+        "sugarG": 4.2,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170108",
+      "sourceNutritionNote": "USDA không có mục ớt tươi cay riêng trong SR Legacy — dùng số liệu ớt chuông đỏ làm gần đúng (cùng họ ớt)."
+    },
+    {
+      "position": 13,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê đường ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN: Hungry Lankan dùng 1 muỗng cà phê đường cho 2 phần; CSF chỉ 1/2 muỗng cà phê cho 300 g thịt và ghi 'hoàn toàn optional'. Chọn 1,5 muỗng cà phê cho 3 phần theo HL — đường giúp các vị hòa quyện (CSF).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 100,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "tỉ trọng dầu ăn ≈ 0,91 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hungry Lankan dùng 1 muỗng cà phê dầu tráng chảo cho 2 phần (thịt ba chỉ tự ra mỡ nên cần rất ít dầu) — nhân 1,5 được 2 muỗng cà phê cho 3 phần. CSF cũng chỉ dùng 1 muỗng cà phê dầu, dặn không cho nhiều kẻo ngấy.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172336",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Muối (không nêm thêm)",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Muối via the same name key",
+      "review": null,
+      "usageRole": "qualitative",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "qualitative",
+        "text": "China Sichuan Food ghi rõ trong Cook's Note: vì doubanjiang, douchi và xì dầu đều đã mặn nên KHÔNG cần thêm muối. Hungry Lankan cũng không dùng muối rời trong công thức. Liệt kê để khẳng định không nêm muối.",
+        "gramEquivalent": null,
+        "basis": "không dùng",
+        "evidence": "missing",
+        "runtime": null
+      },
+      "note": "China Sichuan Food ghi rõ trong Cook's Note: vì doubanjiang, douchi và xì dầu đều đã mặn nên KHÔNG cần thêm muối. Hungry Lankan cũng không dùng muối rời trong công thức. Liệt kê để khẳng định không nêm muối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Thái thịt ba chỉ thành dải dày khoảng 0,5 cm. Nếu mua nguyên tảng, thái lát mỏng đều tay để thịt chín đều khi áp chảo.",
+      "tip": "Hungry Lankan dùng dải ba chỉ cắt sẵn dày ~0,5 cm mua ở siêu thị — lát mỏng vừa giúp thịt nhanh chín, vừa ra bớt mỡ."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Ướp thịt với 1,5 muỗng canh rượu Thiệu Hưng, tiêu trắng, 2 muỗng cà phê xì dầu nhạt và xì dầu đặc. Để yên trong lúc sơ chế rau củ (khoảng 10–15 phút).",
+      "tip": "Biến thể twice-cooked của China Sichuan Food: luộc nguyên tảng ba chỉ 25–30 phút với hành lá, gừng, hoa tiêu và rượu rồi để nguội mới thái lát mỏng 1 mm. Cách này thịt mềm hơn nhưng tốn thời gian; món xào nhanh này ướp trực tiếp theo Hungry Lankan.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế rau củ: ớt chuông cắt sợi dày, hành tây cắt lát dày, tỏi băm nhỏ, hành lá tách riêng phần trắng và phần xanh, gừng thái sợi, ớt tươi thái lát (nếu dùng). Băm nhỏ tương đậu và đậu đen muối trên thớt.",
+      "tip": "Hungry Lankan nhấn mạnh: băm nhỏ doubanjiang và douchi để gia vị tan đều, không cắn phải miếng to mặn gắt."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Làm nóng wok/chảo lớn (ưu tiên chảo thép/gang, không dùng chống dính cho bước áp thịt). Tráng 2 muỗng cà phê dầu, xếp thịt thành một lớp, áp chảo lửa lớn mỗi mặt 2–3 phút đến khi vàng và chín hẳn.",
+      "tip": "Hungry Lankan: xếp một lớp, không chồng lên nhau; thịt ba chỉ tự ra mỡ nên chỉ cần tráng chảo rất ít dầu.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Tắt bếp, gắp thịt ra, cắt thành miếng dài khoảng 4–5 cm vừa ăn.",
+      "tip": "Cắt sau khi áp chảo giúp miếng thịt giữ được độ vàng giòn bên ngoài theo cách của Hungry Lankan."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Bật bếp lửa vừa–nhỏ. Nếu trong chảo thiếu dầu (mỡ thịt chưa đủ tráng) thì thêm một ít dầu. Cho tương đậu và đậu đen muối đã băm vào, xào chậm đến khi dầu chuyển màu đỏ và dậy mùi thơm.",
+      "tip": "Bước then chốt cả hai nguồn đều nhấn mạnh: xào doubanjiang ở LỬA NHỎ cho dầu ngả đỏ (CSF gọi là 'key step'); Hungry Lankan dặn KHÔNG vặn lửa lớn ở bước này kẻo tương cháy đắng.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho tỏi băm, phần trắng hành lá (và gừng, ớt tươi nếu dùng) vào, xào khoảng 1 phút cho thơm.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho hành tây và ớt chuông vào, đảo nhanh tay khoảng 30 giây cho rau vừa tái.",
+      "tip": "Hungry Lankan: rau chỉ đảo 30 giây để giữ độ giòn ngọt, không xào mềm.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho thịt ba chỉ trở lại chảo, đảo đều khoảng 30 giây. Vặn lửa lớn, rưới 1/2 muỗng canh rượu Thiệu Hưng quanh thành chảo nóng và rắc đường, đảo nhanh cho quyện.",
+      "tip": "Rưới rượu vào thành chảo nóng (thay vì đổ thẳng lên thịt) để rượu bốc hơi thơm ngay — mẹo xào wok của Hungry Lankan.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Cho phần xanh hành lá vào, đảo nhanh một lượt rồi tắt bếp, dọn ngay ra đĩa. Ăn nóng với cơm trắng.",
+      "tip": "Hungry Lankan: đảo xong nhấc khỏi bếp ngay để rau không bị nấu quá; CSF: món này mặn đậm nên ăn kèm cơm trắng."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Thịt ba chỉ heo: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Rượu Thiệu Hưng (Shaoxing wine): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tiêu trắng xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Xì dầu nhạt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Xì dầu đặc (dark soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Ớt chuông đỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Hành tây vàng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tương đậu cay (doubanjiang, loại Pixian): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Đậu đen muối (douchi / tương hột đen): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Đường trắng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "QUALITATIVE_CONSUMED_AMOUNT",
+        "ingredientPosition": 15,
+        "detail": "Muối (không nêm thêm): edible quantity is qualitative"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      9,
+      10,
+      13,
+      14,
+      15
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 15,
+        "reason": "qualitative_quantity",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

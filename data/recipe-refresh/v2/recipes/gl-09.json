@@ -1,0 +1,709 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "gl-09",
+    "slug": "chawanmushi",
+    "title": "Trứng hấp Chawanmushi Nhật Bản"
+  },
+  "content": {
+    "description": "Trứng hấp mịn màng như thạch tan trong miệng cùng tôm ngọt và nấm.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 15,
+    "servings": 2,
+    "difficulty": "easy",
+    "tags": [
+      "Nhật Bản",
+      "Thanh đạm",
+      "Bữa tối nhẹ"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/gl-09.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.justonecookbook.com/chawanmushi-with-shrimp/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.chopstickchronicles.com/chawanmushi/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nấm hương khô",
+      "canonicalIngredientId": "ING_ENR_2DB57285E9ED967F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cái",
+        "text": "2 cái",
+        "gramEquivalent": 7.2,
+        "basis": "USDA SR Legacy food_portion.csv: 1 cây nấm hương khô = 3,6 g; 2 cây = 7,2 g.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "JOC: 2 cây nấm hương khô. Ngâm với 3 Tbsp nước 15 phút cho mềm; nước ngâm (lọc sạch) có thể dùng làm một phần dashi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 9.58,
+        "carbohydrateG": 75.37,
+        "fatG": 0.99,
+        "fiberG": 11.5,
+        "sugarG": null,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168436",
+      "sourceNutritionNote": "Bộ dữ liệu SR Legacy 2018-04 không có dòng đường cho mục này nên sugar_g để null."
+    },
+    {
+      "position": 1,
+      "sourceName": "Nước (để ngâm nấm hương)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 45,
+        "basis": "1 Tbsp = 15 ml; nước tỉ trọng 1 g/ml.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nước ngâm nấm, phần lớn được vắt bỏ sau khi ngâm. Không tính dinh dưỡng đáng kể.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Thịt đùi gà (không xương, không da)",
+      "canonicalIngredientId": "ING_ENR_3D6534CBC8127775",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "đùi",
+        "text": "0.5 đùi",
+        "gramEquivalent": 71,
+        "basis": "Suy từ JOC món oyakodon: 2 đùi gà = 10 oz (283 g) → 1 đùi ≈ 142 g; 1/2 đùi ≈ 71 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "JOC: 1/2 đùi gà cắt miếng nhỏ. Khối lượng ước tính từ số liệu đùi gà của chính JOC (10 oz/2 đùi).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 121,
+        "proteinG": 19.66,
+        "carbohydrateG": 0,
+        "fatG": 4.12,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 95
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173627",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tôm tươi",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "con",
+        "text": "4 con",
+        "gramEquivalent": 58,
+        "basis": "JOC (video Instant Pot chawanmushi): 5 con tôm = 2,6 oz (73 g) → 1 con ≈ 14,6 g; 4 con ≈ 58 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "JOC: 4 con tôm, bóc vỏ, bỏ chỉ đen, ngâm sake khử mùi. Khối lượng suy từ số liệu tôm của chính JOC.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "Bộ dữ liệu SR Legacy 2018-04 không có dòng fiber và đường cho mục này nên để null."
+    },
+    {
+      "position": 4,
+      "sourceName": "Rượu sake (để ướp gà và tôm)",
+      "canonicalIngredientId": "ING_ENR_9E9F222C85438B85",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Rượu sake via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 Tbsp = 15 ml; sake tỉ trọng ≈ 1 g/ml.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "JOC: 1 Tbsp ướp gà + 1 Tbsp ướp tôm để khử mùi. USDA FDC không có mục sake nên không có số liệu dinh dưỡng.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Mitsuba hoặc hành lá",
+      "canonicalIngredientId": "ING_ENR_52A5E6A838EDA7CC",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "nhánh",
+        "text": "4 nhánh",
+        "gramEquivalent": null,
+        "basis": null,
+        "evidence": "missing",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "JOC: 4 nhánh mitsuba, thắt nút ở cuống (hoặc thay bằng hành lá thái chéo). Không có khối lượng từ nguồn nên không quy đổi gram; USDA FDC không có mục mitsuba.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Hạt bạch quả (đã luộc chín)",
+      "canonicalIngredientId": "ING_ENR_D2A490AD25AD3027",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "hạt",
+        "text": "4 hạt",
+        "gramEquivalent": null,
+        "basis": null,
+        "evidence": "missing",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "JOC ghi là nguyên liệu tùy chọn (optional), không cho khối lượng nên không quy đổi gram.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 182,
+        "proteinG": 4.32,
+        "carbohydrateG": 37.6,
+        "fatG": 1.68,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170584",
+      "sourceNutritionNote": "FDC 170584 là 'Nuts, ginkgo nuts, raw' (bạch quả sống) — gần nhất trong USDA cho bạch quả luộc; số liệu có thể chênh nhẹ với bạch quả đã luộc. Bộ dữ liệu không có dòng fiber/đường cho mục này nên để null."
+    },
+    {
+      "position": 7,
+      "sourceName": "Nấm shimeji (nấm hải sản)",
+      "canonicalIngredientId": "ING_ENR_382BFC7166AE303A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "JOC: 1/2 gói nấm shimeji = 1,8 oz = 50 g.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "JOC: cắt bỏ gốc, tách thành cụm nhỏ. USDA FDC không có mục nấm shimeji nên không có số liệu dinh dưỡng.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Chả cá kamaboko",
+      "canonicalIngredientId": "ING_ENR_0C58D2E42ADD105F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "lát",
+        "text": "4 lát",
+        "gramEquivalent": null,
+        "basis": null,
+        "evidence": "missing",
+        "runtime": {
+          "amount": 4,
+          "unit": "slice"
+        }
+      },
+      "note": "JOC: 4 lát kamaboko thái mỏng, xếp lên trên cùng để trang trí. Không có khối lượng từ nguồn nên không quy đổi gram; USDA FDC không có mục kamaboko.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 50,
+        "basis": "JOC: 1 quả trứng gà lớn = 50 g (không vỏ).",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Tỉ lệ trứng:dashi của JOC là 1:2,5 theo khối lượng (50 g trứng : 120 ml dashi), khớp với công thức chawanmushi chuẩn 4 cốc của JOC (3 trứng : 1 3/4 cup dashi). Chopstick Chronicles dùng 3 trứng : 375 ml dashi cho 2 phần — tỉ lệ 1:2,5 GIỐNG JOC nhưng chia làm 3 cốc lớn hơn; mâu thuẫn về cỡ phần, lấy theo JOC vì servings của assignment là 2 phần đúng chuẩn JOC.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": "sugar_g tính bằng tổng các thành phần đường (sucrose+glucose+fructose+lactose+maltose) trong cùng bộ dữ liệu USDA SR Legacy 2018-04 [audit F3: bỏ tổng hợp đường thành phần, chuẩn chương trình dùng nutrient 269 đã công bố; không có → null]"
+    },
+    {
+      "position": 10,
+      "sourceName": "Mirin",
+      "canonicalIngredientId": "ING_ENR_ADD0B636AF255631",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2.5,
+        "basis": "1 tsp = 5 ml; mirin tỉ trọng ≈ 1 g/ml.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "JOC: 1/2 tsp mirin cho 1 quả trứng. Chopstick Chronicles dùng 1 tsp mirin cho 2 phần — mâu thuẫn, lấy theo JOC. USDA FDC không có mục mirin nên không có số liệu dinh dưỡng.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước tương usukuchi (nước tương nhạt màu)",
+      "canonicalIngredientId": "ING_ENR_AE3D933B5DC54CA9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2.7,
+        "basis": "USDA SR Legacy food_portion.csv: 1 tsp nước tương = 5,3 g; 0,5 tsp = 2,65 g ≈ 2,7 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "JOC khuyên dùng usukuchi để hỗn hợp trứng không bị sẫm màu; có thể thay bằng nước tương thường. Số liệu dinh dưỡng dùng mục shoyu thường của USDA làm tham chiếu gần nhất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": null,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "sugar_g tính bằng tổng các thành phần đường (sucrose+glucose+fructose+lactose+maltose) trong cùng bộ dữ liệu USDA SR Legacy 2018-04 [audit F3: bỏ tổng hợp đường thành phần, chuẩn chương trình dùng nutrient 269 đã công bố; không có → null]"
+    },
+    {
+      "position": 12,
+      "sourceName": "Muối kosher Diamond Crystal",
+      "canonicalIngredientId": "ING_ENR_1745D0A3DCC56B51",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.7,
+        "basis": "Diamond Crystal kosher salt: 1 tsp ≈ 2,8 g (tinh thể rỗng, nhẹ hơn muối ăn ~6 g/tsp).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "JOC định lượng theo đúng loại muối Diamond Crystal; nếu dùng muối ăn thường thì chỉ dùng một nửa lượng. Số liệu dinh dưỡng dùng mục 'Salt, table' của USDA (cùng là NaCl, giá trị theo khối lượng tương đương).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "Số liệu dùng mục 'Salt, table' của USDA (cùng là NaCl, giá trị theo khối lượng tương đương); SR Legacy không có dòng đường cho mục này."
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước dùng dashi",
+      "canonicalIngredientId": "ING_ENR_C302BF101301EAA1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "cup",
+        "text": "0.5 cup",
+        "gramEquivalent": 120,
+        "basis": "1/2 cup = 120 ml; dashi tỉ trọng ≈ nước.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "JOC: dashi để nguội hoặc hơi ấm — dashi nóng sẽ làm trứng vón cục. Có thể dùng dashi gói, bột dashi hoặc dashi chay kombu. USDA FDC không có mục dashi nên không có số liệu dinh dưỡng.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Ngâm 2 cây nấm hương khô với 3 Tbsp nước trong 15 phút cho mềm. Vắt ráo nước, thái lát mỏng.",
+      "tip": "JOC: nước ngâm nấm lọc sạch có thể dùng làm một phần của 1/2 cup dashi trong công thức.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cắt 1/2 đùi gà thành miếng nhỏ. Tôm bóc vỏ, bỏ chỉ đen. Cho gà và tôm vào 2 bát riêng, mỗi bát rưới 1 Tbsp sake, ướp để khử mùi.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Thắt nút lỏng từng cuống mitsuba (hoặc thái chéo hành lá). Nấm shimeji cắt bỏ gốc, tách thành cụm nhỏ. Kamaboko thái 4 lát mỏng.",
+      "tip": "JOC: thắt nút mitsuba để trang trí đẹp mắt."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đập 1 quả trứng vào bát, đánh nhẹ tay cho lòng trắng và lòng đỏ hòa quyện nhưng tránh tạo bọt. Thêm 1/2 tsp mirin, 1/2 tsp nước tương usukuchi, 1/4 tsp muối và 1/2 cup dashi (đã nguội hoặc hơi ấm), khuấy đều.",
+      "tip": "JOC: dashi phải nguội hoặc hơi ấm — dashi nóng sẽ làm trứng chín vón cục."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Lọc hỗn hợp trứng qua rây mịn vào bát khác hoặc ca có miệng rót.",
+      "tip": "JOC: lọc bỏ lòng trắng chưa tan và lợn cợn giúp custard mịn như lụa."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Chia nguyên liệu vào 2 cốc chawanmushi: xếp gà, nấm hương, nấm shimeji và bạch quả xuống đáy; đặt kamaboko, tôm và mitsuba lên trên cùng.",
+      "tip": "JOC: để nguyên liệu có màu sắc (tôm, kamaboko, mitsuba) ở trên cùng cho đẹp mắt."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Rót hỗn hợp trứng vào từng cốc đến khoảng 80% cốc, chừa topping hơi lộ lên trên. Dùng thìa hoặc xiên tre vớt hết bọt khí trên mặt. Đậy nắp cốc (hoặc bọc kín bằng giấy bạc).",
+      "tip": "JOC: bọt khí sẽ làm mặt custard bị rỗ, sần sùi."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Chọn nồi vừa với 2 cốc và có nắp. Đổ nước ngập đến nửa thân cốc (chưa cho cốc vào vội), đun sôi rồi hạ xuống lửa NHỎ NHẤT."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nhẹ nhàng đặt 2 cốc vào nồi nước nóng (nước không được sôi), đậy nắp nồi, hấp ở lửa nhỏ nhất trong 25–30 phút. Giữ nước ở 80–90°C suốt quá trình hấp.",
+      "tip": "JOC: tuyệt đối không để nước sôi — nhiệt cao làm trứng co rút không đều, custard bị rỗ và dai thay vì mịn mượt.",
+      "timerMinutes": 28
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Thử độ chín: xiên que vào giữa custard, nếu nước chảy ra trong là đã chín. Nghiêng nhẹ cốc kiểm tra custard đã đông đều."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Nhấc cốc ra khỏi nồi, đậy nắp lại, dọn ăn nóng với thìa nhỏ.",
+      "tip": "JOC: thức ăn thừa bảo quản trong cốc, để tủ lạnh tối đa 2 ngày; khi ăn hấp lại 2 phút."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 2,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 0,
+        "detail": "Nấm hương khô: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 1,
+        "detail": "Nước (để ngâm nấm hương): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Thịt đùi gà (không xương, không da): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tôm tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Rượu sake (để ướp gà và tôm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "MISSING_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Mitsuba hoặc hành lá: no evidence-backed gram equivalent"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 7,
+        "detail": "Nấm shimeji (nấm hải sản): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "MISSING_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Chả cá kamaboko: no evidence-backed gram equivalent"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 9,
+        "detail": "Trứng gà: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Mirin: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước tương usukuchi (nước tương nhạt màu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Muối kosher Diamond Crystal: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước dùng dashi: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/recipes/global/oyakodon.webp",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      4,
+      10,
+      11,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,678 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-244640181aff1fb6",
+    "slug": "nam-nuong-sa",
+    "title": "Nấm nướng sả"
+  },
+  "content": {
+    "description": "Xiên nấm nướng thơm sả quét tương, món chay nướng Thái mát lành đậm hương.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Nướng",
+      "Nấm",
+      "Chay",
+      "Thái Lan"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-244640181aff1fb6.json",
+    "rawSchemaSignature": "cuisine,ingredients,nutrition_computed,recipe_id,servings,source_conflicts,sources,steps,title",
+    "sources": [
+      {
+        "url": "https://afamily.vn/co-noi-chien-khong-dau-ma-chua-thu-lam-mon-nay-thi-qua-phi-thao-tac-5-phut-la-xong-thanh-pham-vua-ngon-vua-bo-2022040416544007.chn",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.datocms-assets.com/96698/1781218415-lemongrass-oyster-mushrooms.pdf",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "source_conflicts: Mâu thuẫn/lưu ý quan trọng: không tìm được MỘT công thức chuẩn duy nhất cho đúng tên món 'nấm nướng sả'. Nguồn AFamily (đã đọc toàn văn) hướng dẫn nướng nấm đùi gà bằng nồi chiên không dầu với tỉ lệ sốt cụ thể (2 tbsp dầu hào, 1 tbsp xì dầu, 1 tsp đường, 1 tsp tương ớt, 1/2 tsp tiêu, 1 tbsp dầu ăn, 1 tbsp nước; nướng 200°C trong 7–8 phút) nhưng KHÔNG hề có sả. Nguồn WTFork (PDF, đã đọc toàn văn) xác nhận cặp nguyên liệu sả–nấm–xì dầu–dầu mè nhưng đó là món XÀO nấm sò (stir-fry), không phải nướng, và dùng nấm sò thay vì nấm đùi gà. Công thức này tổng hợp: kỹ thuật nướng + tỉ lệ sốt của AFamily, thêm sả băm theo đúng tên món và hint_ingredients của assignment, có WTFork làm căn cứ cho việc kết hợp sả với nấm. Đã ghi rõ để không gây hiểu lầm đây là công thức nguyên bản từ một nguồn duy nhất."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "3 cây nấm đùi gà lớn; đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Chọn cây nấm chắc, đầu nấm nguyên vẹn, không bị nhớt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": 1.11,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/168580/nutrients",
+      "sourceNutritionNote": "USDA không có mục riêng cho nấm đùi gà (Pleurotus eryngii); dùng 'Mushrooms, oyster, raw' (Pleurotus ostreatus, SR Legacy, fdcId 168580) là họ hàng gần nhất trong cùng chi nấm sò."
+    },
+    {
+      "position": 1,
+      "sourceName": "Sả băm",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "2 cây sả lấy phần non băm nhuyễn ≈ 30 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Linh hồn của món ăn; băm càng nhuyễn sả càng thơm và bám đều vào nấm.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nguyên liệu tạo mùi chính của món; chưa tra cứu USDA trong phạm vi batch này. Để null để tránh suy diễn số liệu."
+    },
+    {
+      "position": 2,
+      "sourceName": "Xì dầu (nước tương)",
+      "canonicalIngredientId": "ING_ENR_F68EF5C1E847770A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "tbsp",
+        "text": "1.5 tbsp",
+        "gramEquivalent": 24,
+        "basis": "USDA FoodData Central: 1 tbsp soy sauce = 16 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 24,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/174277/nutrients",
+      "sourceNutritionNote": "Mục 'Soy sauce made from soy and wheat (shoyu)' (SR Legacy, fdcId 174277)."
+    },
+    {
+      "position": 3,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tbsp",
+        "text": "2 tbsp",
+        "gramEquivalent": 36,
+        "basis": "USDA FoodData Central: 1 tbsp oyster sauce = 18 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 36,
+          "unit": "g"
+        }
+      },
+      "note": "Tạo vị mặn ngọt đậm đà và giúp sốt sánh bám vào nấm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.92,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": 0,
+        "sodiumMg": 2733
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/174529/nutrients",
+      "sourceNutritionNote": "Mục 'Sauce, oyster, ready-to-serve' (SR Legacy, fdcId 174529)."
+    },
+    {
+      "position": 4,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "tsp",
+        "text": "1.5 tsp",
+        "gramEquivalent": 6,
+        "basis": "USDA FoodData Central: 1 tsp granulated sugar = 4.2 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 6,
+          "unit": "g"
+        }
+      },
+      "note": "Cân bằng vị mặn của xì dầu và dầu hào.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/169655/nutrients",
+      "sourceNutritionNote": "Mục 'Sugars, granulated' (SR Legacy, fdcId 169655)."
+    },
+    {
+      "position": 5,
+      "sourceName": "Tương ớt",
+      "canonicalIngredientId": "ING_ENR_3DA6FC9D8ECE414B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tsp",
+        "text": "2 tsp",
+        "gramEquivalent": 10,
+        "basis": "2 tsp ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điều chỉnh theo khả năng ăn cay; có thể dùng sriracha.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có mục generic trong USDA FoodData Central (chỉ có sản phẩm branded, không đồng nhất). Để null toàn bộ object."
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tbsp",
+        "text": "1 tbsp",
+        "gramEquivalent": 14,
+        "basis": "1 tbsp dầu mè ≈ 13.6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cho vào sau cùng để giữ mùi thơm; không đun quá lâu.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Chưa tra cứu USDA trong phạm vi batch này. Để null để tránh suy diễn số liệu."
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu đậu phộng (dầu ăn)",
+      "canonicalIngredientId": "ING_ENR_0D0AD59CE5046BC7",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tbsp",
+        "text": "1 tbsp",
+        "gramEquivalent": 13.5,
+        "basis": "USDA FoodData Central: 1 tbsp peanut oil = 13.5 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 13.5,
+          "unit": "g"
+        }
+      },
+      "note": "Dùng để trộn sốt ướp; có thể thay bằng dầu thực vật khác.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/171410/nutrients",
+      "sourceNutritionNote": "Mục 'Oil, peanut, salad or cooking' (SR Legacy, fdcId 171410)."
+    },
+    {
+      "position": 8,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tbsp",
+        "text": "1 tbsp",
+        "gramEquivalent": 9,
+        "basis": "1 tbsp tỏi băm ≈ 3 tép; USDA: 1 clove garlic = 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/169230/nutrients",
+      "sourceNutritionNote": "Mục 'Garlic, raw' (SR Legacy, fdcId 169230)."
+    },
+    {
+      "position": 9,
+      "sourceName": "Hành tím thái lát",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Hành tím via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "củ",
+        "text": "3 củ",
+        "gramEquivalent": 50,
+        "basis": "hành tím Việt Nam ≈ 15–20 g/củ",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Thái lát mỏng để nhanh ngấm gia vị khi nướng.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nguyên liệu phụ; chưa tra cứu USDA trong phạm vi batch này. Để null để tránh suy diễn số liệu."
+    },
+    {
+      "position": 10,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "tsp",
+        "text": "0.5 tsp",
+        "gramEquivalent": 1,
+        "basis": "1/2 tsp tiêu xay ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Lượng dùng rất nhỏ; chưa tra cứu USDA trong phạm vi batch này. Để null để tránh suy diễn số liệu."
+    },
+    {
+      "position": 11,
+      "sourceName": "Mè rang",
+      "canonicalIngredientId": "ING_ENR_DAB9547F85EF53B1",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Vừng rang via the same name key",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tsp",
+        "text": "1 tsp",
+        "gramEquivalent": 3,
+        "basis": "1 tsp mè ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rắc lên mặt khi dọn để tăng mùi thơm và độ bùi.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Lượng dùng rất nhỏ; chưa tra cứu USDA trong phạm vi batch này. Để null để tránh suy diễn số liệu."
+    },
+    {
+      "position": 12,
+      "sourceName": "Hành lá cắt nhỏ",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "nhánh",
+        "text": "3 nhánh",
+        "gramEquivalent": 30,
+        "basis": "2–3 nhánh hành lá (theo AFamily); USDA: 1 medium scallion = 15 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/170005/nutrients",
+      "sourceNutritionNote": "Mục 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy, fdcId 170005)."
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tbsp",
+        "text": "1 tbsp",
+        "gramEquivalent": 15,
+        "basis": "1 tbsp nước = 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Pha loãng sốt để dễ trộn đều và ngấm vào nấm.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước lọc không đóng góp dinh dưỡng đáng kể; để null."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế sả: cắt bỏ gốc và phần lá già, bóc lớp vỏ ngoài khô, chỉ lấy phần non màu vàng nhạt rồi băm thật nhuyễn.",
+      "tip": "Băm sả càng nhuyễn thì khi nướng sả càng thơm và bám đều vào từng khoanh nấm.",
+      "timerMinutes": 0
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Rửa sạch nấm đùi gà, cạo hết phần màng đen trên đầu nấm. Đun sôi một nồi nước, cho nấm vào luộc sơ khoảng 2 phút rồi vớt ra, để nguội bớt.",
+      "tip": "Luộc sơ giúp nấm sạch, bớt mùi hăng và khi nướng sẽ ngấm gia vị nhanh hơn (theo AFamily).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Thái nấm thành khoanh dày khoảng 1 cm, dùng dao khứa vài đường chéo trên mỗi khoanh nấm.",
+      "tip": "Đường khứa giúp sốt thấm sâu vào thớ nấm khi ướp và khi nướng.",
+      "timerMinutes": 0
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Pha nước sốt: cho xì dầu, dầu hào, đường trắng, tương ớt, tiêu xay, dầu mè, dầu đậu phộng và nước lọc vào bát, khuấy đều đến khi đường tan.",
+      "timerMinutes": 0
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho nấm đã sơ chế vào bát sứ, rưới đều hỗn hợp sốt, thêm sả băm, tỏi băm, hành tím thái lát và hành lá. Trộn nhẹ tay cho nấm áo đều sốt, ướp 15 phút.",
+      "tip": "Trở mặt nấm một lần giữa chừng để hai mặt ngấm đều.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Xếp nấm thành một lớp vào khay nướng hoặc giỏ nồi chiên không dầu, rưới phần sốt còn dư trong bát lên trên.",
+      "tip": "Không xếp chồng nấm lên nhau để hơi nóng lưu thông, nấm chín đều và xém mặt đẹp.",
+      "timerMinutes": 0
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nướng ở 200°C trong 7–8 phút đến khi nấm xém vàng mặt, dậy mùi thơm của sả và sốt.",
+      "tip": "Mỗi lò/nồi chiên khác nhau đôi chút; kiểm tra ở phút thứ 6 để tránh nấm bị khô quá.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Lấy nấm ra đĩa, rắc mè rang và một ít hành lá tươi lên mặt.",
+      "timerMinutes": 0
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Dọn nấm nướng sả dùng nóng với cơm trắng. Phần nước sốt còn dư trong khay rất ngon khi rưới vào cơm.",
+      "timerMinutes": 0
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 94.08,
+      "proteinG": 4.31,
+      "carbohydrateG": 10.53,
+      "fatG": 5,
+      "fiberG": 2.66,
+      "sugarG": 3.37,
+      "sodiumMg": 787.02
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Sả băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tương ớt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Hành tím thái lát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      8,
+      10,
+      11,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

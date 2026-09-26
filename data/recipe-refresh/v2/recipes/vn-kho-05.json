@@ -1,0 +1,629 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "vn-kho-05",
+    "slug": "tom-rim-man-ngot",
+    "title": "Tôm rim mặn ngọt mắm đường tỏi ớt"
+  },
+  "content": {
+    "description": "Tôm đồng hoặc tôm thẻ tươi vỏ giòn giòn, thịt dai ngọt rim kẹo mặn mặn ngọt ngọt, ăn với cơm nóng cực kỳ đưa miệng.",
+    "cuisine": "vietnamese",
+    "category": "mon_kho",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Món rim",
+      "Hải sản",
+      "Dưới 20 phút",
+      "Đưa cơm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/vn-kho-05.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "http://www.savourydays.com/tom-rim-man-ngot-caramelized-shrimps/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://kingfoodmart.com/bai-viet/cach-lam-tom-rim-man-ngot-dam-da-cuc-dua-com",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://toyenxin.com/blog-1/tom-rim-man-ngot-vi-cb.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm tươi",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "kingfoodmart: 300 g cho 2 người → scale 1,5× cho 3 phần ăn = 450 g; Savoury Days dùng 0,5 kg (không ghi số phần). Về sơ chế: SD để nguyên đầu và vỏ (cho rằng ngon hơn); kingfoodmart bóc vỏ, bỏ đầu, rút chỉ đen — lấy theo SD (để nguyên vỏ) vì SD là nguồn gốc kỹ thuật của món này.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "USDA không có số liệu fiber/sugar cho tôm tươi — để null theo quy tắc."
+    },
+    {
+      "position": 1,
+      "sourceName": "Hành khô (hành tím)",
+      "canonicalIngredientId": "ING_ENR_3B1B1AC60D28CEB2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "củ",
+        "text": "2 củ",
+        "gramEquivalent": 30,
+        "basis": "1 củ hành khô ≈ 15 g (ước lượng thực tế)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Savoury Days: 2–3 củ hành khô cho 0,5 kg tôm; kingfoodmart không dùng hành khô (chỉ tỏi). Lấy 2 củ theo SD.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 9,
+        "basis": "1 tép tỏi ≈ 3 g (chuẩn USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Mâu thuẫn: SD 2–3 tép cho 500 g tôm; kingfoodmart 10 g tỏi băm cho 2 người (→ 15 g ≈ 5 tép cho 3 người). Lấy 3 tép theo SD vì SD là nguồn gốc kỹ thuật rang tôm trước khi rim.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "USDA không có số liệu sugar/sodium cho bản raw này — để null theo quy tắc."
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhánh",
+        "text": "2 nhánh",
+        "gramEquivalent": 20,
+        "basis": "1 nhánh hành lá ≈ 10 g (ước lượng thực tế)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "kingfoodmart: 1 nhánh cho 2 người → 2 nhánh cho 3 người; SD: hành xanh thái khoanh là optional — lấy 2 nhánh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 54,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng nước mắm ≈ 1,2 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "kingfoodmart: 2 muỗng canh cho 2 người → scale 3 muỗng canh cho 3 người; toyenxin: 2 muỗng canh cho 300 g tôm; SD không định lượng ('sao cho vừa mặn ngọt').",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 19,
+        "basis": "1 muỗng canh đường ≈ 12,5 g (chuẩn đo lường nấu ăn)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Mâu thuẫn rõ: kingfoodmart 1 muỗng canh cho 2 người (→ 1,5 muỗng canh cho 3 người); toyenxin 2 muỗng canh cho 300 g tôm — ngọt hơn hẳn. Lấy 1,5 muỗng canh theo kingfoodmart (đã scale).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "USDA không có số liệu fiber/sugar riêng cho đường cát — để null theo quy tắc."
+    },
+    {
+      "position": 6,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.2,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2,3 g (chuẩn USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "kingfoodmart: 1/4 muỗng cà phê cho 2 người (→ ~1/2 cho 3 người); toyenxin: 1/2 muỗng cà phê; SD không định lượng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 20,
+        "basis": "1 muỗng canh dầu = 15 ml ≈ 13,6 g (tỉ trọng dầu ≈ 0,91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "kingfoodmart: 1 muỗng canh cho 2 người → 1,5 muỗng canh cho 3 người; SD: 1 thìa dầu ăn cho 500 g tôm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước hàng (nước màu)",
+      "canonicalIngredientId": "ING_ENR_AD17235697C53003",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê ≈ 5 ml ≈ 5 g (ước lượng thực tế)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ Savoury Days dùng (không định lượng); kingfoodmart và toyenxin không dùng. Để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có mã USDA generic cho nước hàng thắng từ đường — để null toàn bộ, không suy ra."
+    },
+    {
+      "position": 9,
+      "sourceName": "Ớt tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 5,
+        "basis": "1 quả ớt tươi ≈ 5 g (ước lượng thực tế)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Tên món có 'ớt' nhưng SD và kingfoodmart không dùng; toyenxin gợi ý 'có thể thêm ớt tùy khẩu vị'. Để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 2,
+        "carbohydrateG": 9.46,
+        "fatG": 0.2,
+        "fiberG": 1.5,
+        "sugarG": 5.1,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170497",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ dùng để rửa tôm với nước muối pha loãng (theo toyenxin); không nêm vào món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế tôm: cắt bớt râu và phần ngạnh cứng ở đầu, giữ nguyên đầu và vỏ (theo Savoury Days — để nguyên vỏ tôm rim sẽ ngon hơn). Rửa sạch với nước muối pha loãng rồi rửa lại nước sạch, để thật ráo.",
+      "tip": "SD: để nguyên đầu và vỏ thì ngon hơn; nhớ để tôm ráo nước để khi rang tôm săn giòn (kingfoodmart).",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Hành khô và tỏi bóc vỏ, băm nhỏ. Hành lá thái nhỏ. Ớt tươi thái lát (nếu dùng)."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun nóng dầu ăn trong chảo, phi thơm 1/2 số hành tỏi băm.",
+      "tip": "SD: chỉ phi 1/2 lượng hành tỏi trước, 1/2 còn lại cho vào cùng gia vị sau.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Để lửa to, cho tôm vào đảo đều đến khi tôm chuyển màu đỏ cam, hơi săn lại (chín khoảng 60–70%).",
+      "tip": "SD: rang tôm trước với hành tỏi và dầu ăn cho săn bóng lại rồi mới nêm gia vị — đây là điểm then chốt của món.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Nhấc chảo tôm ra khỏi bếp. Cho nước mắm, đường, nước hàng (nếu dùng) và 1/2 số hành tỏi còn lại vào, đảo đều cho gia vị bám quanh tôm.",
+      "tip": "SD: nêm mắm đường 'sao cho vừa mặn ngọt' theo khẩu vị; nhấc chảo khỏi bếp khi nêm để đường không cháy."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Bắc chảo trở lại bếp, rim ở lửa vừa–nhỏ, đảo nhẹ tay đến khi tôm chín hẳn và nước sốt sánh sệt lại, phủ đều quanh từng con tôm.",
+      "tip": "kingfoodmart: giảm lửa và rim từ từ để tôm ngấm đều gia vị; SD: có thể rim đến cạn sệt (giống kho quẹt) hoặc đảo khô tùy thích.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Tuyệt đối không đậy vung trong suốt quá trình rim.",
+      "tip": "SD lưu ý: các món rang/rim tôm không nên đậy vung vì sẽ gây mùi khó chịu."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Khi tôm đã thấm và sốt sánh, cho ớt tươi (nếu dùng), tiêu xay và hành lá vào, xóc đều."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nêm nếm lại lần cuối cho vừa mặn ngọt, tắt bếp."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Trút tôm ra đĩa, ăn ngay với cơm trắng nóng. Món này ăn kèm rau luộc hoặc dưa chua rất hợp.",
+      "tip": "kingfoodmart: ăn với cơm trắng nóng hổi và rau luộc/dưa chua để cân bằng vị."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 0,
+      "proteinG": 0,
+      "carbohydrateG": 0,
+      "fatG": 0,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 645.97
+    },
+    "originalPerServing": {
+      "energyKcal": 232.41,
+      "proteinG": 31.71,
+      "carbohydrateG": 10.39,
+      "fatG": 7.5,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Tôm tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Hành khô (hành tím): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Đường trắng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "https://images.unsplash.com/photo-1559742811-822873691df8?auto=format&fit=crop&w=800&q=80",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 4,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

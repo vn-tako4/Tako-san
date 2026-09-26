@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-9c48616208fff232",
+    "slug": "mi-y-bong-cai-xanh",
+    "title": "Mì Ý bông cải xanh"
+  },
+  "content": {
+    "description": "Sợi mì Ý trộn bông cải nghiền xanh bơ-tỏi, pasta rau củ mềm mượt chuẩn nhà bếp Ý.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Pasta",
+      "Bông cải",
+      "Ý",
+      "Xanh"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-9c48616208fff232.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.tavolartegusto.it/ricetta/pasta-con-broccoli/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=4Vqs9DjT1QY",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì Ý khô (pasta corta hoặc spaghetti)",
+      "canonicalIngredientId": "ING_ENR_0C563A23FE1B8A43",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 240,
+        "unit": "g",
+        "text": "240 g",
+        "gramEquivalent": 240,
+        "basis": "đơn vị gốc đã là gram; cả hai nguồn đều dùng 320 g cho 4 phần (TavolaArtegusto và video GZ) → 240 g cho 3 phần",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 240,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn khớp tuyệt đối về định lượng mì (320 g/4 phần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 371,
+        "proteinG": 13.04,
+        "carbohydrateG": 74.67,
+        "fatG": 1.51,
+        "fiberG": 3.2,
+        "sugarG": 2.67,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169736",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Bông cải xanh",
+      "canonicalIngredientId": "BROCCOLI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 525,
+        "unit": "g",
+        "text": "525 g",
+        "gramEquivalent": 525,
+        "basis": "đơn vị gốc đã là gram; TavolaArtegusto: 700 g broccoli (đã làm sạch) cho 4 phần → 525 g cho 3 phần",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 525,
+          "unit": "g"
+        }
+      },
+      "note": "Video GZ chỉ ghi '1 broccolo' (1 cây bông cải) không cân — MÂU THUẪN dạng định lượng; 1 cây bông cải vừa ≈ 500-600 g, gần khớp với 525 g nên lấy theo TavolaArtegusto.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 34,
+        "proteinG": 2.82,
+        "carbohydrateG": 6.64,
+        "fatG": 0.37,
+        "fiberG": 2.6,
+        "sugarG": 1.7,
+        "sodiumMg": 33
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170379",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tép",
+        "text": "1 tép",
+        "gramEquivalent": 5,
+        "basis": "1 tép tỏi trung bình ≈ 5 g (ước lượng phổ biến theo USDA FDC); TavolaArtegusto: 1 tép cho 4 phần, giữ 1 tép cho 3 phần",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Phô mai Parmigiano Reggiano bào",
+      "canonicalIngredientId": "ING_ENR_C9AE2624E7F86759",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Phô mai Parmigiano Reggiano bào mịn via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "TavolaArtegusto: 3-4 muỗng canh cho 4 phần → 2,25-3 muỗng canh cho 3 phần; 1 muỗng canh parmigiano bào ≈ 10 g → ≈ 30 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Video GZ dùng 100 g taleggio nấu fonduta + 2 lát pancetta cho 4 phần thay vì parmigiano — hai trường phái khác nhau; lấy theo TavolaArtegusto vì khớp hint 'phô mai' dạng bào rắc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 392,
+        "proteinG": 35.75,
+        "carbohydrateG": 3.22,
+        "fatG": 25,
+        "fiberG": 0,
+        "sugarG": 0.11,
+        "sodiumMg": 1175
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170848",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hạnh nhân đã bóc vỏ",
+      "canonicalIngredientId": "ING_ENR_078000436A036C83",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Hạnh nhân via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 45,
+        "unit": "g",
+        "text": "45 g",
+        "gramEquivalent": 45,
+        "basis": "đơn vị gốc đã là gram; TavolaArtegusto: 60 g mandorle sgusciate cho 4 phần → 45 g cho 3 phần",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 45,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 579,
+        "proteinG": 21.15,
+        "carbohydrateG": 21.55,
+        "fatG": 49.93,
+        "fiberG": 12.5,
+        "sugarG": 4.35,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170567",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu ô liu nguyên chất",
+      "canonicalIngredientId": "ING_ENR_3B7B05F341BDBC33",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 27,
+        "unit": "g",
+        "text": "27 g",
+        "gramEquivalent": 27,
+        "basis": "TavolaArtegusto (trong các bước): 2 muỗng canh lúc xào + 1 muỗng canh cuối cho 4 phần → ~2 muỗng canh cho 3 phần; 1 muỗng canh = 15 ml ≈ 13,6 g (tỉ trọng ~0,91) → ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 27,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước (để om bông cải)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "ml",
+        "text": "150 ml",
+        "gramEquivalent": 150,
+        "basis": "TavolaArtegusto: 1 bicchiere d'acqua (≈ 200 ml) cho 4 phần → 150 ml cho 3 phần",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 150,
+          "unit": "ml"
+        }
+      },
+      "note": "Nước om cạn dần trong quá trình stufare; không phải nước luộc mì. (Không gắn số liệu dinh dưỡng của bông cải cho nước.)",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước lọc không có giá trị dinh dưỡng đáng kể — để null."
+    },
+    {
+      "position": 7,
+      "sourceName": "Ớt tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 8,
+        "basis": "1 quả ớt tươi nhỏ ≈ 8 g (ước lượng worker)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "TavolaArtegusto ghi '1 peperoncino (facoltativo)' cho 4 phần — tùy chọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "qualitative",
+        "text": "TavolaArtegusto không định lượng muối ('salate' trong bước nấu); muối dùng cho nước luộc mì và nêm — để null theo quy tắc chống bịa đặt.",
+        "gramEquivalent": null,
+        "basis": null,
+        "evidence": "missing",
+        "runtime": null
+      },
+      "note": "TavolaArtegusto không định lượng muối ('salate' trong bước nấu); muối dùng cho nước luộc mì và nêm — để null theo quy tắc chống bịa đặt.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế bông cải: rửa sạch, tách lấy phần bông (cimette), bỏ cuống già cứng. Bông to chẻ đôi cho đều.",
+      "tip": "TavolaArtegusto: 'pulite i broccoli ricavando solo le cimette' — chỉ dùng bông, cuống già để nấu món khác."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Rang hạnh nhân trên chảo khô lửa vừa khoảng 1 phút cho thơm (theo TavolaArtegusto), trút ra để riêng.",
+      "tip": "TavolaArtegusto: 'tostate le mandorle 1 minuto' — rang nhanh, hạnh nhân cháy sẽ đắng.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho 2 muỗng canh dầu ô liu vào chảo lớn, phi tỏi đập dập khoảng 1 phút cho thơm (không để cháy).",
+      "tip": "TavolaArtegusto: 'aggiungete 2 cucchiai di olio, un aglio sbucciato e schiacciato e lasciate soffriggere 1 minuto'.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho bông cải vào chảo, đảo lửa lớn 2 phút cho xém cạnh, rồi đổ nước vào, đậy nắp om lửa nhỏ khoảng 15 phút cho bông cải mềm.",
+      "tip": "TavolaArtegusto: 'fate rosolare per 2 minuti a fiamma vivace, poi aggiungere 1 bicchiere d'acqua e lasciate stufare con coperchio per circa 15 min a fuoco basso'.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Khi bông cải đã mềm, dùng nĩa dằm nhẹ một phần bông cải ngay trong chảo, thêm 1 muỗng canh dầu ô liu, nêm muối.",
+      "tip": "Dằm một phần bông cải là bí quyết tạo độ sánh tự nhiên cho sốt (TavolaArtegusto: 'schiacciate con una forchetta')."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Trong lúc om bông cải, đun sôi nồi nước muối lớn, luộc mì đến al dente. Trước khi vớt, múc giữ lại khoảng 100 ml nước luộc.",
+      "tip": "Có thể luộc mì bằng chính nước đã chần bông cải như một số biến thể Ý để tăng vị ngọt — TavolaArtegusto luộc riêng.",
+      "timerMinutes": 9
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Gắp bỏ tỏi khỏi chảo. Lấy một nửa lượng bông cải + một nửa hạnh nhân cho vào máy xay cùng parmigiano và 1-2 muỗng canh nước luộc mì, xay thành kem mịn.",
+      "tip": "TavolaArtegusto: 'frullate la metà dei broccoli insieme alla metà delle mandorle, aggiungere parmigiano' — nửa xay nhuyễn, nửa để nguyên tạo độ giòn."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Vớt mì cho vào chảo bông cải, đổ kem bông cải xay vào, đảo nhanh tay trên lửa vừa 1-2 phút cho sốt bám đều. Nếu khô, thêm nước luộc mì từng muỗng.",
+      "tip": "Mantecare: đảo liên tục để tinh bột mì + kem bông cải quyện thành sốt sánh.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tắt bếp, cho bơ lạt (nếu dùng) vào đảo cho tan bóng, thêm ớt thái lát (nếu dùng). Dọn ra đĩa, rắc nốt hạnh nhân rang và parmigiano lên trên. Ăn nóng ngay.",
+      "tip": "Video GZ (nguồn 2) hoàn thiện bằng 'un po' di olio extra' khi mantecare — bơ ở đây là biến tấu theo hint, thay thế một phần dầu."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 443.15,
+      "proteinG": 18.54,
+      "carbohydrateG": 74.59,
+      "fatG": 9.34,
+      "fiberG": 8.99,
+      "sugarG": 5.76,
+      "sodiumMg": 62.7
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Phô mai Parmigiano Reggiano bào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Dầu ô liu nguyên chất: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước (để om bông cải): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 8,
+        "detail": "Muối: consumed/absorbed amount is not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      8
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "process_only",
+        "requiresReviewedTransformation": false
+      }
+    ]
+  }
+}

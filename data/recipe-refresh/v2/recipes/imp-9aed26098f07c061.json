@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-9aed26098f07c061",
+    "slug": "trung-duc-thit-bam",
+    "title": "Trứng đúc thịt bằm"
+  },
+  "content": {
+    "description": "Trứng đúc thịt hấp bông xốp cắt miếng chấm tương ớt, món nhanh quen thuộc của bữa cơm Việt.",
+    "cuisine": "vietnamese",
+    "category": "mon_nhanh_sang",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Hấp",
+      "Trứng",
+      "Nhanh",
+      "Cơm nhà"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-9aed26098f07c061.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.cet.edu.vn/cach-lam-trung-chien-thit-bam",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.cooky.vn/blog/tuyet-chieu-cho-mon-trung-duc-thit-gion-rum-hap-dan-2768",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "quả",
+        "text": "6 quả",
+        "gramEquivalent": 300,
+        "basis": "1 quả trứng gà lớn ~50 g (USDA FoodData Central: 1 large egg = 50 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6,
+          "unit": "piece"
+        }
+      },
+      "note": "Cooky dùng 3 quả trứng với 200 g thịt heo xay; CET (Chef Lập) dùng 3 quả trứng với 100 g thịt nạc bằm (cho 2-3 người) — hai nguồn mâu thuẫn về tỉ lệ thịt/trứng (67 g/quả vs 33 g/quả). Món này theo kiểu CET (khớp hint hành lá), quy về 4 phần = 6 trứng + 200 g thịt (tỉ lệ ~33 g/quả theo CET).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": "Đường không được báo cáo trong response USDA cho 'Egg, whole, raw, fresh' nên để null."
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt heo xay",
+      "canonicalIngredientId": "GROUND_PORK",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "CET khuyên mua thịt ba chỉ vừa nạc vừa mỡ để chiên trứng không bị khô; rửa nước muối loãng rồi băm nhỏ. Cooky dùng thịt heo xay sẵn 200 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 263,
+        "proteinG": 16.88,
+        "carbohydrateG": 0,
+        "fatG": 21.19,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167902",
+      "sourceNutritionNote": "Chất xơ và đường không được báo cáo trong response USDA cho 'Pork, fresh, ground, raw' nên để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 40,
+        "unit": "g",
+        "text": "40 g",
+        "gramEquivalent": 40,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 40,
+          "unit": "g"
+        }
+      },
+      "note": "CET dùng 30 g hành lá cho 2-3 người (1 nửa trộn vào trứng, 1 nửa rắc lên khi dọn); quy về 40 g cho 4 phần. Cooky dùng 40 g hành phi thay hành lá — mâu thuẫn, lấy theo CET vì khớp hint nguyên liệu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành tím khô",
+      "canonicalIngredientId": "ING_ENR_9FBCC3EEDB62599D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 20,
+        "basis": "1 củ hành tím khô cỡ vừa ~20 g (cân ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "CET dùng 1 củ hành tím khô băm nhuyễn phi thơm trước khi đổ trứng; quy về 1 củ cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": null,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Nước mắm ngon",
+      "canonicalIngredientId": "ING_ENR_352C1AA29FB15A32",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 12,
+        "basis": "1 muỗng cà phê ≈ 5 ml; nước mắm tỉ trọng ~1.2 g/ml, lấy xấp xỉ 1 muỗng cà phê ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "CET nêm 1 muỗng cà phê nước mắm ngon cho 3 trứng; Cooky nêm 1 muỗng cà phê cho 3 trứng + 200 g thịt — hai nguồn đồng thuận ở 1 muỗng cà phê/3 trứng, quy về 2 muỗng cà phê cho 6 trứng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": "Đường không được báo cáo trong response USDA cho 'Sauce, fish, ready-to-serve' nên để null."
+    },
+    {
+      "position": 5,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê muối ăn ≈ 6 g (chuẩn đo lường nhà bếp phổ biến)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "CET nêm 1/3 muỗng cà phê muối cho 3 trứng; Cooky không dùng muối (chỉ nước mắm + hạt nêm) — mâu thuẫn nhẹ, giữ 1/2 muỗng cà phê cho 6 trứng vì nước mắm đã mặn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê bột hạt nêm ≈ 5 g (cân ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "CET nêm 1/2 muỗng cà phê hạt nêm cho 3 trứng; Cooky nêm 1/2 muỗng cà phê cho 3 trứng + 200 g thịt — đồng thuận, quy về 1 muỗng cà phê cho 6 trứng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.66,
+        "carbohydrateG": 18.01,
+        "fatG": 13.88,
+        "fiberG": null,
+        "sugarG": 17.36,
+        "sodiumMg": 23875
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "Hạt nêm Việt (Knorr/Maggi) không có trong USDA SR Legacy/Foundation; dùng số liệu 'Soup, chicken broth or bouillon, dry' (bột nước dùng gà khô generic Mỹ) làm tương đương, chỉ tham chiếu gần đúng."
+    },
+    {
+      "position": 7,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 3 g (cân ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "CET nêm 1/4 muỗng cà phê tiêu cho 3 trứng; quy về 1/2 muỗng cà phê cho 6 trứng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": null,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh dầu ăn = 15 ml ≈ 13.6 g (tỉ trọng dầu ~0.91); 2 muỗng canh ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "CET dùng 1 muỗng canh dầu ăn chiên mảng mỏng đậy nắp; Cooky dùng 200 ml dầu chiên ngập từng miếng nhỏ — hai nguồn mâu thuẫn về cách chiên, lấy theo CET (1 muỗng canh cho 3 trứng → 2 muỗng canh cho 6 trứng) vì khớp hint và ít dầu hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Thịt heo mua về rửa sạch với nước muối loãng, rửa lại nước sạch, để ráo rồi băm nhỏ (hoặc dùng thịt heo xay sẵn).",
+      "tip": "CET (Chef Lập): nên mua thịt ba chỉ vừa có nạc vừa có mỡ, khi chiên trứng sẽ không bị khô.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Hành tím khô bóc vỏ, rửa sạch, đập dập rồi băm nhuyễn. Hành lá nhặt bỏ gốc và lá úa, rửa sạch, thái mịn; để riêng một nửa để rắc khi dọn.",
+      "tip": "CET: hành lá thái mịn, một nửa trộn vào trứng, một nửa rắc lên đĩa khi trình bày.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đập 6 quả trứng vào tô lớn, cho thịt bằm và một nửa hành lá thái mịn vào. Nêm 1/2 muỗng cà phê muối, 1/2 muỗng cà phê tiêu xay, 1 muỗng cà phê hạt nêm, 2 muỗng cà phê nước mắm ngon; dùng đũa đánh thật đều cho gia vị tan hết.",
+      "tip": "CET: đánh cho thật đều cho các gia vị tan hết. Không đánh quá lâu làm trứng bị bọt nhiều, chiên dễ xẹp.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Bắc chảo lên bếp lửa vừa, cho 2 muỗng canh dầu ăn vào đun nóng. Cho hành tím băm vào phi thơm vàng.",
+      "tip": "CET: bật lửa vừa, cho 1 muỗng canh dầu ăn vào đun sôi thì cho hành tím băm vào phi thơm.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đổ hỗn hợp trứng thịt vào chảo, dàn đều mặt chảo. Đậy nắp lại cho trứng chín đều từ trong ra ngoài.",
+      "tip": "CET: trút trứng trộn thịt bằm vào rồi lấy nắp đậy chảo lại cho trứng chín đều. Cooky chiên kiểu khác: xúc từng miếng nhỏ chiên ngập dầu cho giòn — mâu thuẫn cách làm, lấy theo CET.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Khi mặt dưới đã vàng, lật mặt trứng lại, chiên tiếp mặt còn lại đến khi chín đều, có màu vàng đẹp thì tắt bếp.",
+      "tip": "CET: quan sát khi thấy trứng vừa chín tới thì lật ngay để chín đều cả 2 mặt và có màu vàng đẹp. Lửa vừa để trứng chín kỹ mà không cháy.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Gắp trứng ra đĩa, cắt miếng hình tam giác vừa ăn, rắc phần hành lá còn lại lên trên cho đẹp mắt.",
+      "tip": "CET: trình bày ra đĩa, cắt miếng hình tam giác rồi rắc phần hành lá còn lại lên."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Dọn nóng với cơm trắng. Có thể chấm kèm tương ớt để tăng vị.",
+      "tip": "Cooky: tốt nhất dùng ngay khi còn nóng để tận hưởng vị béo; có thể chấm kèm tương ớt cay cay."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 310.55,
+      "proteinG": 18.57,
+      "carbohydrateG": 2.69,
+      "fatG": 24.69,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 961.43
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Trứng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Thịt heo xay: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 2,
+        "detail": "Hành lá: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành tím khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Nước mắm ngon: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 8,
+        "detail": "Dầu ăn: consumed/absorbed amount is not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 4,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      }
+    ]
+  }
+}

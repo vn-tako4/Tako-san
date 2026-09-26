@@ -1,0 +1,472 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-b1dcb812f8671a49",
+    "slug": "banh-trang-nuong-pho-mai",
+    "title": "Bánh tráng nướng phô mai"
+  },
+  "content": {
+    "description": "Bánh tráng nướng than giòn rụm phủ trứng-phô mai kéo sợi và ớt, món ăn vặt Đà Lạt quốc dân.",
+    "cuisine": "vietnamese",
+    "category": "mon_nhanh_sang",
+    "region": "nam",
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Ăn vặt",
+      "Đà Lạt",
+      "Phô mai",
+      "Nướng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-b1dcb812f8671a49.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://helenrecipes.com/vi/grilled-cheese-rice-paper-banh-trang-nuong-pho-mai/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://nauankhongkho.vn/blog/cach-lam-banh-trang-nuong-pho-mai-beo-ngay-bang-chao-chong-dinh-n6DzY77mP9Dr",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Bánh tráng (loại cuốn/nướng)",
+      "canonicalIngredientId": "RICE_PAPER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cái",
+        "text": "3 cái",
+        "gramEquivalent": 36,
+        "basis": "1 cái bánh tráng gạo tròn (đường kính ~22 cm) ~12 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Chọn bánh tráng gạo dày vừa, không quá mỏng để khi nướng không bị rách (theo các nguồn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 366,
+        "proteinG": 5.95,
+        "carbohydrateG": 80.13,
+        "fatG": 1.42,
+        "fiberG": 2.4,
+        "sugarG": 0.12,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169714",
+      "sourceNutritionNote": "USDA không có mục bánh tráng; dùng số liệu bột gạo trắng (Rice flour, white, unenriched, SR Legacy, fdcId 169714) làm tương đương vì bánh tráng khô chủ yếu là bột gạo + bột năng sấy khô."
+    },
+    {
+      "position": 1,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 150,
+        "basis": "1 quả trứng gà lớn ~50 g (USDA FoodData Central: 1 large egg = 50 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "1 quả trứng cho 1 cái bánh tráng (tỉ lệ theo Helen's Recipes: 1 trứng/bánh).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Phô mai mozzarella",
+      "canonicalIngredientId": "ING_ENR_CAFFC57A3B7CF88D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "g",
+        "text": "60 g",
+        "gramEquivalent": 60,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 60,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn về loại phô mai: Helen's Recipes dùng phô mai Camembert thái lát mỏng; nauankhongkho.vn dùng 1 thanh phô mai mozzarella cho 1 cái bánh. Lấy mozzarella 20 g/bánh (tổng 60 g cho 3 bánh) vì phổ biến, dễ mua; Camembert là lựa chọn thay thế theo Helen.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 299,
+        "proteinG": 22.17,
+        "carbohydrateG": 2.4,
+        "fatG": 22.14,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 486
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170845",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "trái",
+        "text": "2 trái",
+        "gramEquivalent": 6,
+        "basis": "1 trái ớt hiểm ~3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Helen's Recipes dùng tương ớt xịt lên mặt bánh; ở đây dùng ớt hiểm tươi thái lát theo gợi ý assignment — tương ớt là lựa chọn thay thế.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 2,
+        "carbohydrateG": 9.46,
+        "fatG": 0.2,
+        "fiberG": 1.5,
+        "sugarG": 5.1,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170497",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "nhánh",
+        "text": "3 nhánh",
+        "gramEquivalent": 30,
+        "basis": "1 nhánh hành lá ~10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Dùng làm mỡ hành rưới lên bánh theo cách của Helen's Recipes.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "1 muỗng canh dầu ăn = 15 ml ≈ 13,6 g (tỉ trọng dầu ~0,91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Đun nóng rồi rưới vào chén hành lá để làm mỡ hành (Helen's Recipes).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Xúc xích heo",
+      "canonicalIngredientId": "ING_ENR_1281372E6CD05710",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "cây",
+        "text": "0.5 cây",
+        "gramEquivalent": 25,
+        "basis": "1 cây xúc xích heo tiệt trùng ~50 g; dùng nửa cây",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "nauankhongkho.vn dùng 1 cây xúc xích cho 1 bánh; Helen's Recipes liệt kê xúc xích/lạp xưởng là topping tùy thích. Để optional, thái lát mỏng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 309,
+        "proteinG": 11.98,
+        "carbohydrateG": 0.94,
+        "fatG": 28.23,
+        "fiberG": null,
+        "sugarG": 0.94,
+        "sodiumMg": 827
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174584",
+      "sourceNutritionNote": "USDA không có mục xúc xích heo Việt Nam; dùng 'Sausage, smoked link sausage, pork' (SR Legacy, fdcId 174584) làm tương đương gần nhất (xúc xích heo đã chín)."
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành tím phi",
+      "canonicalIngredientId": "ING_ENR_A848FB30D1134D6E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 8,
+        "basis": "1 muỗng canh hành phi ~8 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Helen's Recipes dùng 1 muỗng canh hành tím phi rắc lên mặt bánh. Để optional.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có mục hành phi trong USDA SR Legacy/Foundation — để null, không suy ra."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Hành lá rửa sạch, cắt nhỏ cho vào chén. Đun nóng 1 muỗng canh dầu ăn cho sôi lăn tăn rồi rưới vào chén hành, trộn đều làm mỡ hành.",
+      "tip": "Cách làm mỡ hành của Helen's Recipes: đổ dầu nóng trực tiếp vào hành lá cắt nhỏ."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Xúc xích thái lát mỏng (nếu dùng). Phô mai mozzarella bào sợi hoặc thái lát mỏng. Ớt hiểm thái lát mỏng."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đặt chảo chống dính lên bếp, để lửa nhỏ đến vừa, cho chảo nóng khô rồi đặt 1 cái bánh tráng vào.",
+      "tip": "Không cho dầu vào chảo — bánh tráng nướng trên chảo khô mới giòn (cooky.vn)."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đập 1 quả trứng gà lên mặt bánh tráng, dùng mặt dưới của muỗng dàn trứng đều khắp bề mặt bánh.",
+      "tip": "Dàn nhanh tay khi chảo còn chưa quá nóng để trứng phủ đều, không vón cục (Helen's Recipes)."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Rưới đều mỡ hành lên trên lớp trứng."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Xếp xúc xích thái lát lên mặt bánh, rắc đều phô mai mozzarella."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nướng trên lửa nhỏ, thỉnh thoảng xoay bánh bằng kẹp cho chín đều, đến khi trứng chín, phô mai chảy ra và đáy bánh vàng giòn.",
+      "tip": "Xoay bánh liên tục để không bị cháy một chỗ (Helen's Recipes).",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rắc ớt hiểm thái lát và hành tím phi (nếu dùng) lên mặt bánh."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Gấp đôi miếng bánh tráng lại như quesadilla hoặc cắt thành miếng như pizza.",
+      "tip": "Helen's Recipes: gấp đôi hoặc cắt lát tùy thích."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Lấy bánh ra đĩa, lặp lại với 2 cái bánh còn lại. Dọn và ăn ngay khi còn nóng giòn.",
+      "tip": "Bánh tráng nướng phải ăn nóng mới giòn — để nguội sẽ bị mềm, dai."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 59.8,
+      "proteinG": 4.43,
+      "carbohydrateG": 0.48,
+      "fatG": 4.43,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 97.2
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Bánh tráng (loại cuốn/nướng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Trứng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Ớt hiểm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      7
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,788 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-72e70eb4e8fba4db",
+    "slug": "tom-xao-kim-chi",
+    "title": "Tôm xào kim chi"
+  },
+  "content": {
+    "description": "Tôm giòn xào kim chi cay nồng nước đỏ, món bokkeum Hàn biến tấu biển đậm vị.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Xào",
+      "Tôm",
+      "Kim chi",
+      "Hàn Quốc"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-72e70eb4e8fba4db.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://inthekitch.net/kimchi-shrimp-stir-fry/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.seattleymca.org/blog/recipe-kimchi-shrimp-and-mushroom-stir-fry",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm tươi",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "cân trực tiếp tôm đã bóc vỏ, bỏ chỉ lưng",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn 1 (In the Kitch, 4 phần): 1.5 lb ≈ 680 g tôm → quy đổi ≈ 510 g/3 phần, làm tròn 500 g. Nguồn 2 (YMCA, không ghi servings, ước ~4 phần): 1 lb ≈ 454 g tôm kèm 1 lb nấm — ít tôm hơn vì cân bằng với nấm. Lấy theo nguồn 1 vì tôm là nguyên liệu chính của món 'tôm xào kim chi'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Kim chi cải thảo",
+      "canonicalIngredientId": "ING_ENR_EC9C3FE3D678828E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "USDA FoodData Central: 1 cup kim chi = 150 g (fdcId 170392)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn: nguồn 1 dùng 3/4 cup/4 phần (≈ 85 g/3 phần); nguồn 2 dùng 1 packed cup (không ghi servings, ước ~4 phần → ≈ 110 g/3 phần). Lấy 100 g (≈ 2/3 cup) cho 3 phần, nằm giữa hai nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": null,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước kim chi (lấy từ hũ kim chi)",
+      "canonicalIngredientId": "ING_ENR_7D861A3C865FD9D2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 22,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng nước kim chi ≈ 1.0 → ≈ 15 g/muỗng",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn 1: 2 muỗng canh/4 phần → ≈ 1.5 muỗng canh/3 phần. Nguồn 2: 2 muỗng canh (không ghi servings). Dùng để ướp tôm và tăng vị chua cay đặc trưng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": null,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": "Không có số liệu riêng cho nước kim chi; dùng xấp xỉ số liệu kim chi (fdcId 170392). Thực tế nước kim chi loãng hơn, natri và chất xơ thấp hơn một chút."
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 9,
+        "basis": "USDA FoodData Central: 1 tép tỏi = 3 g (fdcId 169230)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn 1: 3 tép/4 phần (để ướp tôm); nguồn 2 không ghi lượng cụ thể. Giữ 3 tép cho 3 phần để đủ ướp thơm, băm nhỏ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Gừng tươi (nạo)",
+      "canonicalIngredientId": "ING_ENR_AC8F39D9801BC9B5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "USDA FoodData Central: 1 muỗng cà phê gừng tươi = 2 g (fdcId 169231)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 4,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn 1: 1 muỗng canh gừng nạo/4 phần → ≈ 2.25 muỗng cà phê/3 phần, làm tròn 2 muỗng cà phê. Nguồn 2 cũng dùng gừng nạo ướp tôm nhưng không ghi lượng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": null,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Bơ lạt",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 28,
+        "basis": "USDA FoodData Central: 1 muỗng canh bơ = 14.2 g (fdcId 173430)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 28,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn 1: 3 muỗng canh/4 phần (để áp chảo tôm) → ≈ 2.25 muỗng canh/3 phần, làm tròn 2 muỗng canh. Nguồn 2 dùng dầu bơ (avocado oil) thay bơ — hai nguồn khác nhau, lấy theo nguồn 1 vì hợp với cách áp chảo tôm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ăn (dầu đậu nành)",
+      "canonicalIngredientId": "ING_ENR_9E106551A8693C4D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "USDA FoodData Central: 1 muỗng cà phê dầu đậu nành = 4.5 g (fdcId 171411)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 9,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn 1: 1 muỗng canh dầu ô liu/4 phần (để xào rau) → ≈ 2.25 muỗng cà phê/3 phần, làm tròn 2 muỗng cà phê. Dùng dầu ăn thông thường thay dầu ô liu theo gợi ý món (hint_ingredients).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Bắp cải thảo",
+      "canonicalIngredientId": "ING_ENR_A58079A2FEF2F694",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "cup",
+        "text": "1.5 cup",
+        "gramEquivalent": 114,
+        "basis": "USDA FoodData Central: 1 cup bắp cải thảo bào sợi = 76 g (fdcId 169979)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 114,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn 1: 2 cups/4 phần → 1.5 cups/3 phần. Nguồn 2 không dùng bắp cải mà dùng nấm mỡ nâu — hai nguồn khác nhau về rau ăn kèm, lấy theo nguồn 1.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 16,
+        "proteinG": 1.2,
+        "carbohydrateG": 3.23,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": null,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169979",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Ớt chuông đỏ",
+      "canonicalIngredientId": "ING_ENR_3908D9685441601A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "quả",
+        "text": "0.75 quả",
+        "gramEquivalent": 90,
+        "basis": "USDA FoodData Central: 1 quả ớt chuông đỏ vừa = 119 g (fdcId 170108)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 0.75,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn 1: 1 quả/4 phần → 3/4 quả/3 phần ≈ 90 g, thái sợi. Nguồn 2 không dùng ớt chuông.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 26,
+        "proteinG": 0.99,
+        "carbohydrateG": 6.03,
+        "fatG": 0.3,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170108",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "USDA FoodData Central: 1 muỗng canh xì dầu = 18 g (fdcId 174278)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 36,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn 1: 2.5 muỗng canh/4 phần → ≈ 1.9 muỗng canh/3 phần, làm tròn 2 muỗng canh. Nguồn 2 không dùng xì dầu (chỉ nêm muối/tiêu) — lấy theo nguồn 1, đúng gợi ý món (hint_ingredients có xì dầu).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 10.51,
+        "carbohydrateG": 5.57,
+        "fatG": 0.1,
+        "fiberG": 0.8,
+        "sugarG": null,
+        "sodiumMg": 5586
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174278",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "USDA FoodData Central: 1 cây hành lá vừa = 15 g (fdcId 170005)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng hành lá trang trí lúc dọn (nguồn 1: sliced green onions; nguồn 2: 1/4 cup hành băm, không ghi servings). 2 cây cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 7,
+        "basis": "USDA FoodData Central: 1 muỗng cà phê dầu mè = 4.5 g (fdcId 171016)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 7,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ nguồn 2 dùng: 2 muỗng cà phê (không ghi servings, ước ~4 phần) → ≈ 1.5 muỗng cà phê/3 phần. Rưới lúc tắt bếp cho thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Vừng rang",
+      "canonicalIngredientId": "ING_ENR_DAB9547F85EF53B1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "USDA FoodData Central: 1 muỗng canh vừng = 9 g → 1 muỗng cà phê ≈ 3 g (fdcId 170150)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ nguồn 2 dùng: 1 muỗng canh (không ghi servings, ước ~4 phần) → ≈ 2.25 muỗng cà phê/3 phần, làm tròn 2 muỗng cà phê, rắc lúc dọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 573,
+        "proteinG": 17.73,
+        "carbohydrateG": 23.45,
+        "fatG": 49.67,
+        "fiberG": 11.8,
+        "sugarG": null,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170150",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "ước lượng thông dụng: 1 muỗng cà phê muối tinh ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn 2 ghi 'to taste' (nêm theo khẩu vị) khi xào nấm; nguồn 1 không dùng muối rời (đã có xì dầu + nước kim chi mặn). Chỉ nêm rất ít nếu nhạt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.5,
+        "basis": "ước lượng thông dụng: 1 muỗng cà phê tiêu đen xay ≈ 2.3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn 2 ghi 'to taste' khi xào; nguồn 1 không dùng. Không bắt buộc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": null,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế tôm: bóc vỏ, bỏ chỉ lưng, rửa sạch rồi thấm thật khô bằng khăn giấy.",
+      "tip": "Tôm thấm khô thì áp chảo mới vàng mặt, không bị ra nước và dai."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Ướp tôm với tỏi băm, gừng nạo và nước kim chi, trộn đều, để trong tủ lạnh 30 phút.",
+      "tip": "Nguồn 1 ướp 30 phút cho tôm thấm vị chua cay. Nếu vội, có thể bỏ qua bước ướp và xào trực tiếp như nguồn 2.",
+      "timerMinutes": 30
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế rau củ: kim chi cắt miếng vừa ăn; bắp cải thảo bào sợi; ớt chuông đỏ thái sợi; hành lá thái khúc 3–4 cm."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Làm nóng chảo lớn hoặc wok trên lửa vừa, cho bơ vào đun chảy hoàn toàn."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho tôm đã ướp vào chảo, áp chảo khoảng 2 phút mỗi mặt đến khi tôm chuyển màu hồng, thịt đục (không còn trong). Gắp tôm ra đĩa riêng, giữ lại phần bơ trong chảo.",
+      "tip": "Nguồn 1: vớt tôm ra trước để tôm không bị nấu quá chín và dai khi xào rau.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Vẫn chảo đó, thêm dầu ăn, tăng lên lửa vừa–cao. Cho bắp cải thảo và ớt chuông vào xào 2–3 phút đến khi rau vừa chín tới, còn giữ độ giòn.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho kim chi và xì dầu vào chảo, đảo đều thêm 1 phút cho kim chi nóng thấm rồi tắt bếp.",
+      "tip": "Nguồn 1: chỉ xào kim chi 1 phút ở cuối để kim chi không bị nát và giữ vị chua cay.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho tôm đã áp chảo trở lại chảo, đảo nhanh tay cho tôm quyện đều với rau và kim chi."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Rưới dầu mè lên khắp chảo, đảo đều lần cuối.",
+      "tip": "Nguồn 2: cho dầu mè khi đã tắt bếp để giữ mùi thơm, dầu mè đun lâu dễ đắng."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn ra đĩa, rắc hành lá và vừng rang lên trên. Ăn ngay khi còn nóng với cơm trắng.",
+      "tip": "Nguồn 1: món ăn ngon nhất khi vừa nấu xong; có thể vắt thêm lát chanh nếu thích (nguồn 1 gợi ý dùng kèm)."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 303.53,
+      "proteinG": 36.81,
+      "carbohydrateG": 7.22,
+      "fatG": 15.18,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1273.15
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Tôm tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Kim chi cải thảo: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nước kim chi (lấy từ hũ kim chi): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 4,
+        "detail": "Gừng tươi (nạo): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 5,
+        "detail": "Bơ lạt: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 6,
+        "detail": "Dầu ăn (dầu đậu nành): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 7,
+        "detail": "Bắp cải thảo: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 8,
+        "detail": "Ớt chuông đỏ: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 9,
+        "detail": "Xì dầu: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 10,
+        "detail": "Hành lá: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 11,
+        "detail": "Dầu mè: all seven nutrients are not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      12,
+      13,
+      14
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

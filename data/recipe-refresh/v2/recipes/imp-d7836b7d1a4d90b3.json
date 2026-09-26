@@ -1,0 +1,530 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-d7836b7d1a4d90b3",
+    "slug": "nam-chien-gion",
+    "title": "Nấm chiên giòn"
+  },
+  "content": {
+    "description": "Nấm chiên vỏ giòn ruột mềm chấm muối tiêu chanh, món chiên lạ miệng trẻ em nào cũng mê.",
+    "cuisine": "vietnamese",
+    "category": "mon_chien",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Chiên",
+      "Nấm",
+      "Giòn",
+      "Trẻ em"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-d7836b7d1a4d90b3.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://thewaterman.vn/blogs/mon-ngon/top-5-mon-an-hap-dan-tu-nam-dui-ga-ngon-kho-cuong",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.phunuvagiadinh.vn/vao-bep-346/10-cach-che-bien-mon-an-tu-nam-dui-ga-ma-cac-me-nen-biet-436978",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "thewaterman dùng 250 g (không ghi khẩu phần); tăng lên 300 g cho 3 khẩu phần, ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": 1.11,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "USDA không có mục riêng cho nấm đùi gà (king oyster); dùng số liệu nấm bào ngư (oyster mushroom) cùng họ Pleurotus làm tương đương gần nhất."
+    },
+    {
+      "position": 1,
+      "sourceName": "Bột năng",
+      "canonicalIngredientId": "ING_ENR_16E1325603444617",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "thewaterman: 100 g bột năng áo khô ngoài sau khi nhúng trứng (định lượng gram rõ nhất nên được chọn). Hai nguồn còn lại mâu thuẫn về cách dùng bột: phunuvagiadinh dùng 2 tbsp tinh bột ngô + 4 tbsp bột mì trộn vào trứng; phunutoday dùng 5 tbsp bột mì + 5 tbsp tinh bột + 2 trứng cho 2 cây nấm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 358,
+        "proteinG": 0.19,
+        "carbohydrateG": 88.69,
+        "fatG": 0.02,
+        "fiberG": 0.9,
+        "sugarG": 3.35,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169717",
+      "sourceNutritionNote": "USDA Tapioca, pearl, dry (FDC 169717) — proxy cho bột năng: tapioca pearl dry là bột sắn thật gần nhất"
+    },
+    {
+      "position": 2,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 50,
+        "basis": "1 quả trứng gà lớn ~50 g (USDA FoodData Central: 1 large egg = 50 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "thewaterman: 1 quả trứng đánh tan trộn 1 muỗng bột năng; phunutoday dùng 2 quả cho 2 cây nấm — mâu thuẫn, chọn 1 quả theo thewaterman (đúng tỉ lệ với 300 g nấm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Húng quế",
+      "canonicalIngredientId": "ING_ENR_624A598C55B6FDED",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "thewaterman: 20 g lá húng quế nhúng bột chiên giòn ăn kèm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 3.15,
+        "carbohydrateG": 2.65,
+        "fatG": 0.64,
+        "fiberG": 1.6,
+        "sugarG": 0.3,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172232",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 tsp muối tinh ≈ 6 g (quy ước đo lường nhà bếp phổ biến)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "thewaterman chỉ ghi 'ướp nấm với muối và tiêu' không định lượng; ước lượng 1 tsp, ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1/2 tsp tiêu xay ≈ 1 g (ước lượng, ghi rõ)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "thewaterman chỉ ghi 'ướp nấm với muối và tiêu' không định lượng; ước lượng 1/2 tsp, ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhánh",
+        "text": "2 nhánh",
+        "gramEquivalent": 10,
+        "basis": "1 nhánh hành lá ≈ 5 g (ước lượng, ghi rõ)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Gợi ý từ assignment; cả hai nguồn công thức đều KHÔNG dùng hành lá (dùng húng quế chiên giòn) — để tùy chọn trang trí.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu ăn (chiên ngập)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "ml",
+        "text": "500 ml",
+        "gramEquivalent": 455,
+        "basis": "500 ml × tỉ trọng dầu ~0,91 g/ml ≈ 455 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 500,
+          "unit": "ml"
+        }
+      },
+      "note": "Các nguồn chỉ ghi 'đun nóng dầu' / 'đổ dầu vào chảo' không định lượng; 500 ml đủ chiên ngập 300 g nấm. Lưu ý: phần lớn dầu còn lại sau chiên, lượng dầu thấm vào món ăn thực tế ít hơn nhiều.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Tương ớt (chấm kèm)",
+      "canonicalIngredientId": "ING_ENR_6A92A91076B8A33E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 muỗng canh ≈ 15 ml ≈ 15 g (quy đổi 1 ml ≈ 1 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "thewaterman gợi ý chấm kèm tương ớt/tương cà/sốt mayonnaise, không định lượng; ước lượng 2 tbsp, ghi rõ.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có mục tương đương đáng tin trong USDA FoodData Central cho tương ớt kiểu Việt Nam; để trống, tuyệt đối không ước đoán số liệu."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Chọn nấm đùi gà tươi: cuống chắc, màu trắng đều, mũ nâu tươi, không dập nát, không đốm nâu chảy nhớt. Cắt bỏ phần gốc, rửa sạch, để ráo.",
+      "tip": "thewaterman: không chọn cây nấm quá dài (>15 cm) vì bên trong dễ rỗng xốp, ăn không ngon.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đun sôi một nồi nước, cho nấm vào chần khoảng 2 phút rồi vớt ra, để ráo và dùng khăn/giấy thấm khô hoàn toàn.",
+      "tip": "Bước chần theo thewaterman giúp nấm bớt nước, khi chiên giòn lâu hơn.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cắt nấm thành miếng vừa ăn hoặc xé thành dải dài dọc theo thân nấm.",
+      "tip": "phunuvagiadinh: có thể xé hoặc thái thành dải dài để bột bám đều.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Ướp nấm với 1 muỗng cà phê muối và 1/2 muỗng cà phê tiêu xay, trộn đều, để 10 phút cho ngấm.",
+      "tip": "phunutoday ướp 1 thìa muối 10 phút rồi vắt kiệt nước — cách này mặn hơn; công thức này ướp nhẹ theo thewaterman.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đập 1 quả trứng gà ra chén, đánh tan, trộn đều với 1 muỗng canh bột năng (lấy từ 100 g đã chuẩn bị).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Lần lượt nhúng từng miếng nấm vào hỗn hợp trứng, sau đó lăn qua phần bột năng khô còn lại sao cho bột áo đều quanh miếng nấm.",
+      "tip": "Thấm nấm thật khô trước khi nhúng để lớp bột bám chắc, không bị bở khi chiên.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đổ 500 ml dầu ăn vào chảo sâu lòng hoặc nồi, đun nóng đến khoảng 170-180°C (thả đầu đũa vào thấy sủi tăm).",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Thả nấm đã áo bột vào chiên, trở đều đến khi lớp bột vàng đều các mặt thì vớt ra để lên giấy thấm dầu cho ráo.",
+      "tip": "Không chiên quá nhiều một mẻ để dầu không hạ nhiệt, nấm không bị ỉu.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Trước khi ăn, đun dầu thật nóng trở lại, cho nấm vào chiên lần 2 lửa lớn khoảng 30 giây đến khi vỏ vàng đậm, giòn rụm thì vớt ra ngay.",
+      "tip": "Mẹo chiên 2 lần từ phunuvagiadinh: lần 1 chiên vàng nhạt, lần 2 lửa lớn cho giòn — món ăn giữ giòn lâu hơn.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Nhúng nhanh lá húng quế qua bột còn dư (pha loãng nếu cần), thả vào dầu nóng chiên giòn rồi vớt ra để ráo dầu.",
+      "tip": "thewaterman: lá quế chiên giòn ăn kèm rất hợp; chiên nhanh tay vì lá mỏng dễ cháy.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Bày nấm chiên giòn ra đĩa cùng húng quế chiên. Dọn nóng, chấm kèm tương ớt (hoặc tương cà, sốt mayonnaise).",
+      "tip": "Ăn ngay khi còn nóng giòn; để lâu lớp bột sẽ ỉu."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 153.87,
+      "proteinG": 3.58,
+      "carbohydrateG": 35.83,
+      "fatG": 0.46,
+      "fiberG": 2.71,
+      "sugarG": 2.25,
+      "sodiumMg": 18.6
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Trứng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 7,
+        "detail": "Dầu ăn (chiên ngập): consumed/absorbed amount is not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      4,
+      5,
+      7,
+      8
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

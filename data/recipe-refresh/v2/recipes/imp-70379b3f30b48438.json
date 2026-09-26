@@ -1,0 +1,571 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-70379b3f30b48438",
+    "slug": "goi-dua-leo-tom-nhat",
+    "title": "Gỏi dưa leo tôm Nhật"
+  },
+  "content": {
+    "description": "Dưa leo muối nhanh giòn mát trộn tôm trong nước giấm ngọt thanh, món sunomono khai vị mùa nóng.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Sunomono",
+      "Nhật Bản",
+      "Khai vị",
+      "Mát lành"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-70379b3f30b48438.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://foreverfeeding.com/sunomono-salad-japanese-cucumber/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.justonecookbook.com/sunomono-with-cucumber-and-wakame/comment-page-2/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Dưa leo",
+      "canonicalIngredientId": "CUCUMBER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 225,
+        "unit": "g",
+        "text": "225 g",
+        "gramEquivalent": 225,
+        "basis": "đơn vị gốc đã là gram (cân sau khi rửa sạch)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 225,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN NHẸ: Just One Cookbook dùng 300 g dưa leo (2-3 quả dưa Nhật) cho 4 phần → 225 g cho 3 phần; Forever Feeding chỉ dùng 1 quả dưa vừa cho 4 phần (ít hơn rõ rệt). Lấy 225 g theo JOC — nguồn Nhật chuẩn và dễ cân đong cho bếp Việt (~2 quả dưa leo nhỏ hoặc 1,5 quả vừa).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 0.65,
+        "carbohydrateG": 3.63,
+        "fatG": 0.11,
+        "fiberG": 0.5,
+        "sugarG": 1.67,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168409",
+      "sourceNutritionNote": "Dùng mục 'Cucumber, with peel, raw' (cả vỏ) vì công thức chỉ bào vỏ xen kẽ tạo vân, không gọt hết."
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm tươi",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 170,
+        "unit": "g",
+        "text": "170 g",
+        "gramEquivalent": 170,
+        "basis": "đơn vị gốc đã là gram (cân sau khi bóc vỏ, bỏ chỉ đen)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 170,
+          "unit": "g"
+        }
+      },
+      "note": "Forever Feeding dùng 1⁄2 lb (227 g) tôm đã bóc vỏ cho 4 phần → 170 g cho 3 phần (khoảng 14-16 con cỡ vừa). Mua tôm tươi về tự bóc theo gợi ý (hint) của assignment.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 24,
+        "carbohydrateG": 0.2,
+        "fatG": 0.28,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 111
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175180",
+      "sourceNutritionNote": "Dùng mục 'Crustaceans, shrimp, cooked' vì tôm được luộc chín trước khi trộn gỏi."
+    },
+    {
+      "position": 2,
+      "sourceName": "Giấm gạo không nêm",
+      "canonicalIngredientId": "ING_ENR_B4876DF49F040175",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 muỗng canh = 15 ml ≈ 15 g (tỉ trọng giấm ≈ 1,0)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Forever Feeding dùng 3 muỗng canh cho 4 phần → 2,25 muỗng canh cho 3 phần; làm tròn 2 muỗng canh. MÂU THUẪN: JOC dùng 4 muỗng canh giấm cho 4 phần (nhiều hơn) — nhưng đó là công thức sunomono chay kèm wakame; ưu tiên Forever Feeding vì đúng là công thức sunomono kèm tôm như món này.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0,
+        "carbohydrateG": 0.04,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 0.04,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172237",
+      "sourceNutritionNote": "USDA không có mục giấm gạo riêng; dùng 'Vinegar, distilled' (fdcId 172237) làm tương đương gần nhất."
+    },
+    {
+      "position": 3,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 8,
+        "basis": "1 muỗng cà phê đường trắng ≈ 4 g (chuẩn đo lường nhà bếp phổ biến)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN: Forever Feeding dùng 1 muỗng canh đường cho 4 phần → 2,25 muỗng cà phê cho 3 phần; JOC dùng 2 muỗng canh cho 4 phần (gấp đôi). Ưu tiên Forever Feeding (công thức kèm tôm); JOC cảnh báo bớt đường sẽ làm vị giấm gắt hơn — nếm và điều chỉnh theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 100,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 11,
+        "basis": "1 muỗng cà phê = 5 ml; tỉ trọng xì dầu ≈ 1,13 g/ml → ≈ 5,65 g/muỗng cà phê",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN LỚN: Forever Feeding dùng 1 muỗng canh xì dầu cho 4 phần → 2,25 muỗng cà phê cho 3 phần; JOC chỉ dùng 1⁄2 muỗng cà phê cho 4 phần (ít hơn ~4 lần). Ưu tiên Forever Feeding vì đúng công thức có tôm; nếu ăn nhạt thì giảm về mức của JOC.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5490
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu mè rang",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê = 5 ml ≈ 4,55 g (tỉ trọng dầu ≈ 0,91); làm tròn 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ Forever Feeding dùng dầu mè (1 muỗng cà phê cho 4 phần → 3⁄4 muỗng cà phê cho 3 phần, làm tròn 1 muỗng cà phê); JOC KHÔNG dùng dầu mè trong sunomono truyền thống — ghi rõ để người nấu tự chọn. Món có tên 'gỏi' kiểu Việt nên giữ dầu mè cho thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": "USDA chỉ có mục 'Oil, sesame, salad or cooking' chung (không ghi rõ rang); dùng làm tương đương gần nhất."
+    },
+    {
+      "position": 6,
+      "sourceName": "Hạt mè rang",
+      "canonicalIngredientId": "ING_ENR_36C1725FFCC0FB57",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng canh hạt mè = 9 g (theo Sweet Potato Soul) → 1 muỗng cà phê ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Forever Feeding dùng 1 muỗng canh cho 4 phần → 2,25 muỗng cà phê cho 3 phần; JOC dùng 1⁄2 muỗng canh cho 4 phần (1,5 muỗng cà phê cho 3 phần) — chênh lệch không lớn, lấy 2 muỗng cà phê ở giữa.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 573,
+        "proteinG": 17.7,
+        "carbohydrateG": 23.4,
+        "fatG": 49.7,
+        "fiberG": 11.8,
+        "sugarG": 0.3,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170150",
+      "sourceNutritionNote": "USDA dùng mục hạt mè nguyên hạt sấy khô; rang khô không làm thay đổi đáng kể thành phần trên 100 g."
+    },
+    {
+      "position": 7,
+      "sourceName": "Muối ăn (để ướp dưa)",
+      "canonicalIngredientId": "ING_ENR_361639D21BDA1726",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Muối ăn via the same name key",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ăn ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "JOC dùng 1 muỗng cà phê muối xát dưa cho 4 phần; Forever Feeding chỉ ghi 'một ít muối'. Muối này dùng để ướp rồi VẮT BỎ nước — phần lớn không đi vào món ăn, lượng natri thực tế hấp thụ không đáng kể nên số liệu dinh dưỡng của muối chỉ mang tính tham chiếu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38800
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Hành lá (trang trí)",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "ước lượng phổ biến: 1 cây hành lá cỡ vừa ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Không có trong 2 nguồn công thức; thêm theo gợi ý (hint) của assignment làm rau trang trí, thái nhỏ rắc lên trên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Ớt khô xay (chili flakes)",
+      "canonicalIngredientId": "ING_ENR_BC22EC7CB63B0774",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.5,
+        "basis": "ước lượng phổ biến: 1⁄4 muỗng cà phê ớt khô ≈ 0,5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Forever Feeding dùng 1⁄4 muỗng cà phê cho 4 phần, là nguyên liệu tùy chọn tạo vị cay nhẹ; JOC không dùng. Để optional.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có mục ớt khô xay tương ứng trong SR Legacy; lượng dùng quá nhỏ (<0,2 g/khẩu phần) nên ảnh hưởng dinh dưỡng không đáng kể — để null kèm ghi chú."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế tôm: rửa sạch, bóc vỏ, dùng tăm hoặc mũi dao khều bỏ chỉ đen ở sống lưng, có thể giữ lại phần đuôi cho đẹp.",
+      "tip": "Mua tôm tươi còn vỏ về tự bóc sẽ ngọt hơn tôm bóc sẵn đông lạnh."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đun sôi một nồi nước. Cho tôm vào luộc 2-3 phút đến khi tôm cong lại, chuyển màu hồng đục. Vớt ra để ráo, để nguội hoàn toàn.",
+      "tip": "Không luộc quá lâu — tôm sẽ bị dai và khô (Forever Feeding).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Dưa leo rửa sạch, cắt bỏ hai đầu. Thái lát mỏng đều khoảng 2 mm bằng dao sắc hoặc bàn bào.",
+      "tip": "JOC bào vỏ xen kẽ từng dải để tạo vân sọc đẹp mắt; lát càng mỏng càng thấm sốt."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho dưa đã thái vào tô, rắc 1 muỗng cà phê muối lên, dùng tay bóp nhẹ cho muối thấm đều. Để yên 10 phút cho dưa ra bớt nước.",
+      "tip": "Bước ướp muối giúp dưa giòn và không làm loãng sốt về sau (cả JOC và Forever Feeding đều làm).",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Dùng tay vắt kiệt nước ở dưa, thấm khô bằng khăn giấy rồi cho vào tô trộn lớn.",
+      "tip": "Vắt càng kiệt, gỏi càng giòn và đậm vị."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Pha nước sốt: cho giấm gạo, đường, xì dầu, dầu mè rang và ớt khô (nếu dùng) vào bát nhỏ, khuấy đều đến khi đường tan hoàn toàn.",
+      "tip": "JOC đun nhẹ hỗn hợp trên bếp cho đường tan nhanh rồi để nguội — làm theo cách này nếu đường khó tan."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho dưa leo đã vắt, tôm đã nguội và hành lá thái nhỏ vào tô, rưới đều nước sốt lên trên, trộn nhẹ tay cho thấm.",
+      "tip": "Trộn nhẹ để lát dưa không bị nát."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rắc hạt mè rang lên trên, trộn nhẹ thêm một lần nữa."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Đậy kín tô, cho vào ngăn mát tủ lạnh ít nhất 15-20 phút cho các vị hòa quyện.",
+      "tip": "Forever Feeding gợi ý ướp lạnh 30 phút sẽ ngon hơn; nhưng không để quá 2 ngày vì dưa sẽ ra nước và mềm.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn gỏi ra từng bát nhỏ, ăn lạnh như món khai vị hoặc món ăn kèm.",
+      "tip": "Ăn kèm cơm trắng, cá nướng hoặc gà teriyaki rất hợp (gợi ý từ Forever Feeding)."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 67.35,
+      "proteinG": 14.09,
+      "carbohydrateG": 2.84,
+      "fatG": 0.24,
+      "fiberG": 0.38,
+      "sugarG": 1.25,
+      "sodiumMg": 64.4
+    },
+    "originalPerServing": {
+      "energyKcal": 110.81,
+      "proteinG": 14.92,
+      "carbohydrateG": 6.89,
+      "fatG": 2.94,
+      "fiberG": null,
+      "sugarG": 4.17,
+      "sodiumMg": 1043.75
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Giấm gạo không nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Đường trắng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Dầu mè rang: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Hạt mè rang: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 7,
+        "detail": "Muối ăn (để ướp dưa): consumed/absorbed amount is not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

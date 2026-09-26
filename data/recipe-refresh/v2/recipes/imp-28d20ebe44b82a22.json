@@ -1,0 +1,523 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-28d20ebe44b82a22",
+    "slug": "nam-xao-tuong-han",
+    "title": "Nấm xào tương Hàn"
+  },
+  "content": {
+    "description": "Nấm xào tương mè ngọt bóng, món banchan rau phụ bàn ăn Hàn đơn giản nhanh gọn.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Banchan",
+      "Hàn Quốc",
+      "Nấm",
+      "Món phụ"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-28d20ebe44b82a22.json",
+    "rawSchemaSignature": "ingredients,notes,nutrition_computed,recipe_id,servings,sources,steps,title",
+    "sources": [
+      {
+        "url": "https://www.10000recipe.com/en/6982082/How_to_make_Stir-fried_King_Oyster_Mushroom_",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.10000recipe.com/en/6964339/The_best_recipe_for_cooking__Stir-fried_pine_mushrooms",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "notes: Nguồn mâu thuẫn về chất béo và chất tạo ngọt: nguồn 1 (2 phần, nhân 1,5) dùng dầu hạt nho + đường; nguồn 2 (đúng 3 phần, Chef Min Yo Han) dùng dầu mè + si-rô tinh bột. File này theo nguồn 1 vì khớp tên món và cách làm đơn giản hơn; mâu thuẫn ghi rõ trong note nguyên liệu.",
+      "notes: Nguồn mâu thuẫn về sơ chế nấm: nguồn 1 xào nấm trực tiếp; nguồn 2 chần nấm trong nước sôi 1 phút, xả nước lạnh và vắt ráo trước khi xào để nấm dai giòn hơn. Cách chần của nguồn 2 được ghi làm mẹo trong bước 10.",
+      "notes: Ớt sừng đỏ: không quy đổi được gram và không có bản ghi USDA phù hợp → gram_equivalent và nutrition để null, ghi rõ trong gram_basis và nutrition_note.",
+      "notes: Hành lá là gợi ý trong assignment nhưng không có trong cả hai nguồn công thức thật → để tùy chọn."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "Nguồn 1 (10000recipe 6982082): 200 g nấm đùi gà cho 2 phần → 300 g cho 3 phần (nhân 1,5)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Mâu thuẫn: nguồn 2 (10000recipe 6964339, công thức của Chef Min Yo Han, đúng 3 phần) dùng 4 cây nấm nhưng không ghi gram; hai nguồn đều là nấm đùi gà (saesongi / king oyster).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 46,
+        "proteinG": 2.41,
+        "carbohydrateG": 8.5,
+        "fatG": 0.31,
+        "fiberG": 3.01,
+        "sugarG": null,
+        "sodiumMg": 0.77
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003599",
+      "sourceNutritionNote": "Bản ghi FDC 2003599 (Foundation) công bố Energy theo hệ số Atwater General: 46,4 kcal/100 g (làm tròn 46); không công bố trường Sugars, total → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 1,
+      "sourceName": "Ớt sừng đỏ",
+      "canonicalIngredientId": "ING_ENR_C86DB0034E210DD2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "quả",
+        "text": "1.5 quả",
+        "gramEquivalent": null,
+        "basis": "Nguồn 1: 1 quả ớt cho 2 phần → 1,5 quả cho 3 phần; không tìm được nguồn quy đổi gram đáng tin cho loại ớt sừng Hàn này nên gram_equivalent để null theo quy tắc",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn 1 dùng 'crunchy red pepper' (ớt giòn, vị như dưa chuột theo mô tả), thái lát xéo; nếu ăn cay có thể thêm ớt tươi. Nguồn 2 không dùng ớt.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có bản ghi USDA phù hợp cho loại ớt sừng Hàn này và không quy đổi được gram → nutrition để null theo quy tắc, không ước tính."
+    },
+    {
+      "position": 2,
+      "sourceName": "Dầu hạt nho",
+      "canonicalIngredientId": "ING_ENR_9CAC9C0BA77AE549",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 41,
+        "unit": "g",
+        "text": "41 g",
+        "gramEquivalent": 41,
+        "basis": "Nguồn 1: 2 TS dầu hạt nho cho 2 phần → 3 TS cho 3 phần; USDA FDC 171028: 1 tbsp dầu hạt nho = 13,6 g → 40,8 g, làm tròn 41 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 41,
+          "unit": "g"
+        }
+      },
+      "note": "Mâu thuẫn: nguồn 2 dùng 1,5 TS dầu mè để xào (cho 3 phần) thay vì dầu hạt nho; nguồn 2 lưu ý dầu mè có điểm khói thấp nên cho tỏi và dầu vào xào từ chảo nguội để tỏi không cháy.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171028",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 9,
+        "unit": "g",
+        "text": "9 g",
+        "gramEquivalent": 9,
+        "basis": "Nguồn 1: 2 tép tỏi cho 2 phần → 3 tép cho 3 phần; USDA FDC 169230: 1 tép tỏi = 3 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 9,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn 1 băm nhỏ 2 tép tỏi; ghi chú: nếu dùng tỏi băm sẵn thì cho khoảng nửa thìa. Nguồn 2 dùng 1,5 TS tỏi băm (nhiều hơn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 4,
+      "sourceName": "Xì dầu đặc (jin-ganjang)",
+      "canonicalIngredientId": "ING_ENR_C4F03F402FBC53AD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 24,
+        "unit": "g",
+        "text": "24 g",
+        "gramEquivalent": 24,
+        "basis": "Nguồn 1: 1 TS xì dầu đặc cho 2 phần → 1,5 TS cho 3 phần; USDA FDC 174277: 1 tbsp xì dầu = 16 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 24,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng 'thick soy sauce' (xì dầu đặc Hàn Quốc); nguồn 2 cũng dùng đúng 1,5 TS cho 3 phần — hai nguồn khớp nhau.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": null,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 27,
+        "unit": "g",
+        "text": "27 g",
+        "gramEquivalent": 27,
+        "basis": "Nguồn 1: 1 TS dầu hào cho 2 phần → 1,5 TS cho 3 phần; USDA FDC 174529: 1 tbsp dầu hào = 18 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 27,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn 2 cũng dùng đúng 1,5 TS dầu hào cho 3 phần — hai nguồn khớp nhau.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.92,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": null,
+        "sodiumMg": 2733
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174529",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 6,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "g",
+        "text": "6 g",
+        "gramEquivalent": 6,
+        "basis": "Nguồn 1: 1 ts đường cho 2 phần → 1,5 ts cho 3 phần; USDA FDC 169655: 1 tsp đường = 4,2 g → 6,3 g, làm tròn 6 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 6,
+          "unit": "g"
+        }
+      },
+      "note": "Mâu thuẫn: nguồn 2 dùng 1,5 TS si-rô tinh bột (starch syrup / mulyeot) thay cho đường, cho vào cuối khi đã tắt bếp và không xào lâu. Công thức này theo nguồn 1 (đường pha chung với sốt).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 15,
+        "basis": "America's Test Kitchen: 5 cây hành lá = 75 g → 1 cây ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Theo gợi ý nguyên liệu trong assignment; cả hai nguồn công thức thật đều không dùng hành lá (nguồn 1 dùng ớt sừng, nguồn 2 không dùng rau thơm) → để tùy chọn rắc lên khi dọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    },
+    {
+      "position": 8,
+      "sourceName": "Vừng rang",
+      "canonicalIngredientId": "ING_ENR_DAB9547F85EF53B1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "g",
+        "text": "3 g",
+        "gramEquivalent": 3,
+        "basis": "Nguồn 2 rắc một ít vừng khi hoàn thành; USDA FDC 170150: 1 tbsp vừng = 9 g → 1 tsp ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn 1 không dùng vừng; nguồn 2 rắc vừng (hoặc vừng đen) lên mặt khi dọn. Lấy theo nguồn 2.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 573,
+        "proteinG": 17.73,
+        "carbohydrateG": 23.45,
+        "fatG": 49.67,
+        "fiberG": 11.8,
+        "sugarG": null,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170150",
+      "sourceNutritionNote": "FDC API không trả về trường Sugars, total cho bản ghi này → sugar_g để null, không ước tính."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Rửa sạch nấm đùi gà, ớt sừng và tỏi; để ráo nước.",
+      "tip": "Nấm đùi gà ít ngấm nước, chỉ cần rửa nhanh rồi để ráo — không ngâm lâu."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Trong một bát nhỏ, trộn đều xì dầu đặc, dầu hào và đường, khuấy cho đường tan hết.",
+      "tip": "Pha sốt trước để khi xào chỉ việc rưới vào, nấm không bị xào quá lâu."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cắt bỏ phần gốc cứng của nấm, thái nấm thành miếng vừa ăn.",
+      "tip": "Thái miếng hơi dày một chút, nấm xào sẽ teo lại và giữ được độ dai giòn."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Ớt sừng thái lát xéo mỏng. Tỏi băm nhỏ."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho dầu hạt nho và tỏi băm vào chảo, đun lửa vừa đến khi tỏi dậy mùi thơm, hơi vàng.",
+      "tip": "Đừng để tỏi cháy — tỏi cháy sẽ làm món ăn bị đắng.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho nấm vào đảo đều, thêm ớt thái lát, xào lửa vừa cho nấm ra bớt nước và săn lại.",
+      "tip": "Xào lửa vừa, đảo đều tay để nấm chín đều mà không bị cháy.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Rưới đều hỗn hợp sốt đã pha vào chảo, đảo liên tục đến khi sốt sệt lại, nấm ngả màu nâu bóng đều.",
+      "tip": "Đảo nhanh tay ở bước này để sốt áo đều mà không bị cháy khét.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rắc vừng rang vào, đảo nhanh một lượt rồi tắt bếp."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Múc nấm xào ra đĩa, rắc hành lá thái nhỏ lên trên nếu dùng."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn ăn nóng với cơm trắng. Món này để nguội ăn vẫn ngon và dai theo nhận xét của nguồn công thức.",
+      "tip": "Mẹo từ nguồn 2 (Chef Min Yo Han): chần nấm trong nước sôi 1 phút, xả nước lạnh rồi vắt ráo trước khi xào — nấm sẽ dai giòn hơn. Muốn cay hơn thì thêm ớt tươi."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 195.18,
+      "proteinG": 3.64,
+      "carbohydrateG": 13.47,
+      "fatG": 14.57,
+      "fiberG": 3.41,
+      "sugarG": null,
+      "sodiumMg": 687.62
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Nấm đùi gà: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "MISSING_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Ớt sừng đỏ: no evidence-backed gram equivalent"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 2,
+        "detail": "Dầu hạt nho: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 4,
+        "detail": "Xì dầu đặc (jin-ganjang): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 5,
+        "detail": "Dầu hào: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 6,
+        "detail": "Đường: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Vừng rang: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [],
+    "runtimeExclusions": []
+  }
+}

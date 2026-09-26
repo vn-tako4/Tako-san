@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-9e4ad3e4074d2a1c",
+    "slug": "salad-bap-cai-tom-nhat",
+    "title": "Salad bắp cải tôm Nhật"
+  },
+  "content": {
+    "description": "Bắp cải sợi tươi giòn với tôm luộc, sốt giấm chanh thanh mát, salad phụ bàn ăn Nhật nhẹ nhàng.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Salad",
+      "Nhật Bản",
+      "Bắp cải",
+      "Mát lành"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-9e4ad3e4074d2a1c.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://lp.kewpie.co.jp/recipes/recipe/QP10006576/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://kewpie.co.id/en/recipe-list/coleslaw-salad-with-shrimp-and-shirataki",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Bắp cải",
+      "canonicalIngredientId": "CABBAGE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 180,
+        "unit": "g",
+        "text": "180 g",
+        "gramEquivalent": 180,
+        "basis": "Kewpie JP ghi キャベツ 2枚 = 120 g cho 2 phần → nhân 1,5 cho 3 phần = 180 g (tương đương 3 lá)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 180,
+          "unit": "g"
+        }
+      },
+      "note": "Công thức gốc của Kewpie dùng bắp cải sống thái sợi mỏng (細切り). Nguồn coleslaw Kewpie ID luộc sơ (chần) bắp cải trong nước muối sôi rồi vắt ráo trước khi trộn — đây là kỹ thuật khác; file này giữ đúng cách làm của công thức gốc và ghi chú lại sự khác biệt ở đây.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 1.28,
+        "carbohydrateG": 5.8,
+        "fatG": 0.1,
+        "fiberG": 2.5,
+        "sugarG": 3.2,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169975",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm sú (lớn, đã bóc vỏ, rút chỉ)",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 9,
+        "unit": "con",
+        "text": "9 con",
+        "gramEquivalent": 255,
+        "basis": "Kewpie JP ghi えび(大)6尾 = 170 g thịt tôm cho 2 phần (~28 g/con) → nhân 1,5 cho 3 phần = 9 con ≈ 255 g thịt tôm đã bóc vỏ",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 9,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều luộc tôm rồi mới trộn: Kewpie JP luộc chín rồi cắt miếng vừa ăn; Kewpie ID cũng luộc tôm trước. Tôm là loại lớn (えび(大)).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "USDA không công bố fiber và đường cho tôm sống nên để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.17,
+        "unit": "quả",
+        "text": "0.17 quả",
+        "gramEquivalent": 36,
+        "basis": "Kewpie JP ghi 玉ねぎ 1/8個 = 24 g cho 2 phần → nhân 1,5 cho 3 phần ≈ 36 g (~1/6 quả hành tây trung bình)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.17,
+          "unit": "piece"
+        }
+      },
+      "note": "Kewpie JP yêu cầu hành tây thái lát mỏng rồi ngâm nước lạnh và vắt ráo (水にさらして水気をきる) để bớt hăng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 35,
+        "unit": "g",
+        "text": "35 g",
+        "gramEquivalent": 35,
+        "basis": "Kewpie JP ghi にんじん 1/8本 = 23 g cho 2 phần → nhân 1,5 cho 3 phần ≈ 35 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 35,
+          "unit": "g"
+        }
+      },
+      "note": "Kewpie JP: cà rốt gọt vỏ thái sợi mỏng (せん切り).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Mayonnaise (Kewpie)",
+      "canonicalIngredientId": "ING_ENR_FE44BF7949A0C58D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 45,
+        "basis": "Kewpie JP: キユーピー マヨネーズ 大さじ2 cho 2 phần → nhân 1,5 = 大さじ3 cho 3 phần; 1 muỗng canh mayo ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn Kewpie ID dùng tới 5 muỗng canh mayo Kewpie cho 1 phần (colseslaw kiểu công nghiệp, có thêm shirataki) — tỷ lệ này khác xa công thức gốc JP; file giữ đúng định lượng của Kewpie JP.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 680,
+        "proteinG": 0.96,
+        "carbohydrateG": 0.57,
+        "fatG": 74.85,
+        "fiberG": 0,
+        "sugarG": 0.57,
+        "sodiumMg": 635
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171009",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Mứt cam (orange marmalade)",
+      "canonicalIngredientId": "ING_ENR_A15E3F03EA993174",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 60,
+        "basis": "Kewpie JP: アヲハタ 55 オレンジママレード 大さじ2 cho 2 phần → nhân 1,5 = 大さじ3 cho 3 phần; 1 muỗng canh mứt ≈ 20 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Công thức gốc của Kewpie JP dùng mứt cam オレンジママレード pha cùng mayo làm sốt (không phải đường/giấm như bản cũ bịa). Đây là điểm đặc trưng của món này.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 250,
+        "proteinG": 0,
+        "carbohydrateG": 65,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 50,
+        "sodiumMg": 50
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2442853",
+      "sourceNutritionNote": "USDA không có mục mứt cam Aohata 55 của Nhật; dùng số liệu entry branded 'Orange marmalade' đầy đủ nhất (fdcId 2442853, Shoprite) làm đại diện."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế tôm: bóc vỏ, rút chỉ đen ở lưng, rửa sạch qua nước muối loãng rồi xả lại bằng nước lạnh, để ráo.",
+      "tip": "Rạch một đường nông dọc lưng tôm sẽ lấy chỉ dễ hơn và tôm nở đẹp khi luộc."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đun sôi một nồi nước, cho tôm vào luộc 2–3 phút đến khi tôm cong lại và chuyển màu hồng đục. Vớt ra để ráo và nguội bớt, sau đó cắt thành miếng vừa ăn.",
+      "tip": "Không luộc tôm quá lâu — tôm bị dai và khô. Vớt ra để nguội tự nhiên hoặc ngâm nước đá 1 phút cho tôm giòn.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Bắp cải bỏ lá già bên ngoài, rửa sạch, thái sợi mỏng (細切り).",
+      "tip": "Thái càng mỏng, sốt càng bám đều và salad càng ngon."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Hành tây bóc vỏ, thái lát thật mỏng, ngâm vào tô nước lạnh 5–10 phút rồi vớt ra vắt ráo nước.",
+      "tip": "Ngâm nước lạnh là cách của Kewpie để hành tây bớt hăng mà vẫn giòn. Nhớ vắt ráo để sốt không bị loãng.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cà rốt gọt vỏ, thái sợi mỏng (せん切り)."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Pha sốt: cho 3 muỗng canh mayonnaise và 3 muỗng canh mứt cam vào chén, khuấy đều đến khi sánh mịn.",
+      "tip": "Khuấy sốt cho tan đều trước khi trộn giúp sốt áo đều lên rau, không bị vón cục mứt."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho bắp cải, hành tây đã vắt ráo, cà rốt và tôm vào tô lớn, rưới sốt lên và trộn đều nhẹ tay.",
+      "tip": "Trộn nhẹ tay để tôm không bị nát; trộn vừa đủ để rau áo đều sốt."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Dọn salad ra đĩa, ăn lạnh sẽ ngon nhất. Có thể để tủ lạnh 15–20 phút trước khi ăn.",
+      "tip": "Để lạnh giúp sốt ngấm vào rau, món ngon hơn rõ rệt."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 15,
+      "proteinG": 0.77,
+      "carbohydrateG": 3.48,
+      "fatG": 0.06,
+      "fiberG": 1.5,
+      "sugarG": 1.92,
+      "sodiumMg": 10.8
+    },
+    "originalPerServing": {
+      "energyKcal": 248.83,
+      "proteinG": 18.24,
+      "carbohydrateG": 18.8,
+      "fatG": 11.76,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 225.73
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Tôm sú (lớn, đã bóc vỏ, rút chỉ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Mayonnaise (Kewpie): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Mứt cam (orange marmalade): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      4,
+      5
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

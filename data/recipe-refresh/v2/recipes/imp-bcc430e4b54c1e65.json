@@ -1,0 +1,640 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-bcc430e4b54c1e65",
+    "slug": "canh-tom-chuet-tom",
+    "title": "Canh tom chuet tôm"
+  },
+  "content": {
+    "description": "Canh trong dịu tôm-cải cà chua không cay, món tom chuet nhẹ nhàng dành cho ngày muốn ấm mà không tê lưỡi.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Tom chuet",
+      "Thái Lan",
+      "Canh trong",
+      "Nhẹ nhàng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-bcc430e4b54c1e65.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://recipes.net/main-dish/soup/tom-chuet-clear-vegetable-soup-recipe/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://foodstyla.com/2025/09/12/tom-chuet/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://mytour.vn/vi/blog/bai-viet/chi-can-chua-day-20-phut-ban-da-co-ngay-mon-canh-bap-cai-thanh-mat.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm tươi (bóc vỏ, rút chỉ lưng)",
+      "canonicalIngredientId": "ING_ENR_CC3D92DA4DECA04A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "g",
+        "text": "250 g",
+        "gramEquivalent": 250,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 250,
+          "unit": "g"
+        }
+      },
+      "note": "Tom chuet gốc thường dùng thịt heo bằm/viên (foodstyla); bản này dùng tôm theo tên món. Tỉ lệ rau củ tham chiếu công thức canh bắp cải nấu tôm của mytour.vn (50 g tôm khô + 500 g bắp cải + 100 g cà chua cho 3-4 người), quy đổi sang tôm tươi ~250 g cho 4 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Bắp cải (bắp sú)",
+      "canonicalIngredientId": "ING_ENR_762DB41DB278CD80",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "foodstyla: tom chuet là canh trong nấu rau củ — điển hình là cải thảo/bắp cải, cà rốt, đậu que — trong nước dùng nêm xì dầu, cần tây, hành lá, tỏi. mytour.vn: 500 g bắp cải cho 3-4 người → lấy 400 g cho 4 người (điều chỉnh theo tỉ lệ).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 1.28,
+        "carbohydrateG": 5.8,
+        "fatG": 0.1,
+        "fiberG": 2.5,
+        "sugarG": 3.2,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169975",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Cà chua chín",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram (2 quả cà chua ~100 g/quả, bổ múi cau)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "mytour.vn dùng 100 g cà chua thái lát cho 3-4 người; recipes.net không dùng cà chua nhưng tom chuet linh hoạt rau củ theo mùa (foodstyla) — lấy 200 g (2 quả) cho 4 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "đơn vị gốc đã là gram (3-4 cây hành lá)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "recipes.net: 1 cup spring onion thái nhỏ. Đầu hành trắng để riêng phi thơm, phần lá thái nhỏ rắc sau khi tắt bếp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 12,
+        "unit": "g",
+        "text": "12 g",
+        "gramEquivalent": 12,
+        "basis": "đơn vị gốc đã là gram (4 tép tỏi băm nhỏ, ~3 g/tép)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 12,
+          "unit": "g"
+        }
+      },
+      "note": "recipes.net: 4 garlic cloves, finely sliced — phi thơm với dầu trước khi cho nước dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "recipes.net: 2 tbsp soy sauce; 1 Tbsp = 15 ml, tỉ trọng ~1 g/ml → 30 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Gia vị nêm chính của tom chuet (foodstyla, recipes.net đều dùng xì dầu/soy sauce).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 tsp muối ≈ 6 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "recipes.net ghi 'salt, to taste' — không định lượng cụ thể; dùng 1 tsp rồi nêm nếm lại cho vừa.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 tsp đường cát ≈ 4 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "mytour.vn dùng đường nêm canh bắp cải tôm; recipes.net không dùng đường — thêm 1 tsp để cân bằng vị chua nhẹ của cà chua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1⁄2 tsp tiêu xay ≈ 1 g (1 tsp ≈ 2.3 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "mytour.vn rắc tiêu khi ăn; tom chuet gốc vị thanh không cay — chỉ dùng ít tạo mùi thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "recipes.net: 1 tbsp vegetable oil; 1 Tbsp = 15 ml, tỉ trọng dầu ~0.91 → 13.6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Dùng phi thơm tỏi và đầu hành (recipes.net bước 1-2).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "dùng số liệu dầu đậu nành (soybean oil) — loại dầu ăn trung tính phổ biến"
+    },
+    {
+      "position": 10,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "lít",
+        "text": "1.5 lít",
+        "gramEquivalent": 1500,
+        "basis": "1.5 L = 1500 ml, tỉ trọng 1 g/ml",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "l"
+        }
+      },
+      "note": "recipes.net dùng 8 cups (1.9 L) vegetable stock nhưng không ghi số khẩu phần; món này dùng nước lọc + vị ngọt tự nhiên từ tôm, 1.5 L cho 4 người (~375 ml/người).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế tôm: rửa sạch, bóc vỏ, rút chỉ đen trên lưng, để ráo.",
+      "tip": "Dùng tôm tươi còn vỏ để canh ngọt nước hơn; có thể giữ vỏ nấu lấy nước dùng riêng nếu muốn."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế rau củ: bắp cải thái miếng vừa ăn, rửa sạch để ráo; cà chua bổ múi cau; tỏi băm nhỏ; hành lá thái nhỏ, phần đầu hành trắng để riêng.",
+      "tip": "mytour.vn: bắp cải thái miếng vừa ăn, rửa sạch; cà chua thái lát mỏng."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Bắc nồi lên bếp, cho 1 muỗng canh dầu ăn vào, phi thơm tỏi băm và đầu hành trắng.",
+      "tip": "recipes.net: phi tỏi 1 phút cho mềm thơm rồi mới cho xì dầu vào xào đến khi xì dầu sôi lăn tăn.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho tôm vào nồi, đảo nhanh tay 1-2 phút đến khi tôm săn lại, hơi chuyển hồng.",
+      "tip": "mytour.vn: đảo đầu hành và tôm cho thơm trước khi thêm nước — giúp tôm không tanh và canh thơm hơn.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đổ 1.5 lít nước vào nồi, đun sôi; vớt bọt kỹ để nước canh trong.",
+      "tip": "Vớt bọt là bước quan trọng của tom chuet — canh phải trong, vị thanh (foodstyla)."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho cà chua vào, nấu 2-3 phút cho cà chua hơi mềm, ra màu đẹp.",
+      "tip": "mytour.vn: cho cà chua vào trước bắp cải để cà chua kịp mềm và lên màu.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho bắp cải vào, nấu thêm 3-4 phút đến khi bắp cải vừa chín tới, còn giữ độ giòn ngọt.",
+      "tip": "mytour.vn: nấu đến khi bắp cải chín tới thì tắt bếp — nấu nhừ sẽ mất vị ngọt giòn.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nêm 2 muỗng canh xì dầu, 1 muỗng cà phê muối, 1 muỗng cà phê đường và 1⁄2 muỗng cà phê tiêu; khuấy tan, nếm và điều chỉnh vừa khẩu vị.",
+      "tip": "recipes.net: nêm muối vừa ăn ở cuối; tom chuet vị thanh nhẹ, không nêm mặn gắt."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tắt bếp, rắc hành lá thái nhỏ lên trên."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Múc canh ra tô, dùng nóng với cơm.",
+      "tip": "Tom chuet là món canh thanh, thường ăn kèm các món cay mặn trong bữa cơm Thái (foodstyla)."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 27.4,
+      "proteinG": 1.42,
+      "carbohydrateG": 6.35,
+      "fatG": 0.11,
+      "fiberG": 2.7,
+      "sugarG": 3.37,
+      "sodiumMg": 19.2
+    },
+    "originalPerServing": {
+      "energyKcal": 132.52,
+      "proteinG": 15.25,
+      "carbohydrateG": 10.82,
+      "fatG": 4,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1089.99
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Tôm tươi (bóc vỏ, rút chỉ lưng): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Cà chua chín: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "MISSING_NUTRIENT_REFERENCE",
+        "ingredientPosition": 10,
+        "detail": "Nước lọc: nutrient values have no source reference"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

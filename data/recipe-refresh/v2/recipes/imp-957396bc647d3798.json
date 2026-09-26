@@ -1,0 +1,531 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-957396bc647d3798",
+    "slug": "bong-cai-om-ca-chua-y",
+    "title": "Bông cải om cà chua Ý"
+  },
+  "content": {
+    "description": "Bông cải om mềm thấm sốt cà chua-tỏi, món rau phụ Ý ngọt dịu nhanh gọn.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Om",
+      "Bông cải",
+      "Ý",
+      "Món phụ"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-957396bc647d3798.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://ricettadioggi.it/broccoletti-con-pomodorini/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.ricettasprint.it/pasta-broccoli-sugo-pomodoro/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Bông cải xanh",
+      "canonicalIngredientId": "BROCCOLI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 800,
+        "unit": "g",
+        "text": "800 g",
+        "gramEquivalent": 800,
+        "basis": "đơn vị gốc đã là gram; ricettadioggi.it: 800 g broccoletti cho 4 phần (món contorno)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 800,
+          "unit": "g"
+        }
+      },
+      "note": "RicettaSprint (pasta con broccoli e sugo) dùng 500 g broccoli cho 4 phần — MÂU THUẪN; lấy theo ricettadioggi.it vì đúng thể loại món ăn kèm (contorno), còn RicettaSprint là món mì.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 34,
+        "proteinG": 2.82,
+        "carbohydrateG": 6.64,
+        "fatG": 0.37,
+        "fiberG": 2.6,
+        "sugarG": 1.7,
+        "sodiumMg": 33
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170379",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Cà chua bi chín",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram; ricettadioggi.it: 200 g pomodorini cho 4 phần",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": "USDA không có mục riêng cho cà chua bi; dùng số liệu cà chua đỏ chín thường (fdcId 170457) làm tương đương gần nhất."
+    },
+    {
+      "position": 2,
+      "sourceName": "Cá cơm muối (acciughe) đóng hộp",
+      "canonicalIngredientId": "ING_ENR_DBFB1235FC01E649",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "con",
+        "text": "2 con",
+        "gramEquivalent": 10,
+        "basis": "2 filet cá cơm ≈ 10 g (1 filet ≈ 4-5 g, ước lượng phổ biến); ricettadioggi.it: 2 acciughe cho 4 phần",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Tạo vị umami nền cho món; có thể bỏ qua nếu ăn chay — RicettaSprint (nguồn 2) không dùng cá cơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 210,
+        "proteinG": 28.89,
+        "carbohydrateG": 0,
+        "fatG": 9.71,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 3668
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174183",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 10,
+        "basis": "1 tép tỏi trung bình ≈ 5 g (ước lượng phổ biến theo USDA FDC); ricettadioggi.it: 1 tép cho 4 phần",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Carlo Gaiano (broccoli ripassati in padella) dùng 2-3 tép cho 2-4 phần — MÂU THUẪN với ricettadioggi.it (1 tép/4 phần); lấy 2 tép làm mức giữa, ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá (cipollotto)",
+      "canonicalIngredientId": "ING_ENR_5D529CD7AE82321D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 15,
+        "basis": "1 cây hành lá vừa ≈ 15 g (ước lượng phổ biến theo USDA FDC)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Thêm theo gợi ý assignment (hint_ingredients có 'Hành lá'); hai nguồn Ý dùng tỏi làm nền (RicettaSprint dùng thêm 1 củ hành tây/cipolla cho 4 phần) — hành lá là biến tấu theo hint.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu ô liu nguyên chất",
+      "canonicalIngredientId": "ING_ENR_3B7B05F341BDBC33",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 40,
+        "unit": "g",
+        "text": "40 g",
+        "gramEquivalent": 40,
+        "basis": "ricettadioggi.it (bước soffritto): 3 muỗng canh dầu; 1 muỗng canh = 15 ml ≈ 13,6 g (tỉ trọng dầu ~0,91) → ≈ 40 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 40,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Ớt tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 8,
+        "basis": "1 quả ớt tươi nhỏ ≈ 8 g (ước lượng worker)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "ricettadioggi.it ghi 'peperoncino facoltativo' (tùy chọn), không định lượng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Ngò tây (rau mùi tây) tươi",
+      "canonicalIngredientId": "ING_ENR_8B45B90A90E09B31",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "ước lượng worker: 1 nắm nhỏ để trang trí; nguồn chỉ ghi 'prezzemolo fresco tritato per guarnire' không định lượng",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ để trang trí khi dọn; nguồn không cho định lượng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 2.97,
+        "carbohydrateG": 6.33,
+        "fatG": 0.79,
+        "fiberG": 3.3,
+        "sugarG": 0.85,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170416",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "qualitative",
+        "text": "ricettadioggi.it chỉ ghi 'sale q.b.', không định lượng — để null theo quy tắc chống bịa đặt. Dùng cho nước chần bông cải và nêm khi om.",
+        "gramEquivalent": null,
+        "basis": null,
+        "evidence": "missing",
+        "runtime": null
+      },
+      "note": "ricettadioggi.it chỉ ghi 'sale q.b.', không định lượng — để null theo quy tắc chống bịa đặt. Dùng cho nước chần bông cải và nêm khi om.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "qualitative",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "qualitative",
+        "text": "ricettadioggi.it chỉ ghi 'pepe q.b.', không định lượng — để null theo quy tắc chống bịa đặt.",
+        "gramEquivalent": null,
+        "basis": null,
+        "evidence": "missing",
+        "runtime": null
+      },
+      "note": "ricettadioggi.it chỉ ghi 'pepe q.b.', không định lượng — để null theo quy tắc chống bịa đặt.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế bông cải: cắt bỏ lá già, tách thành bông nhỏ vừa ăn, rửa sạch dưới vòi nước.",
+      "tip": "ricettadioggi.it: loại bỏ phần cuống quá cứng, chỉ giữ bông và phần cuống non."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đun sôi nồi nước muối loãng, chần bông cải 3-4 phút cho vừa chín tới (vẫn giòn), vớt ra ngâm ngay vào nước đá để giữ màu xanh, rồi để ráo.",
+      "tip": "Ngâm nước đá giúp bông cải giữ màu xanh bóng và không bị nhũn khi om tiếp.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cà chua bi rửa sạch, bổ đôi. Tỏi đập dập bóc vỏ. Hành lá rửa sạch, cắt khúc khoảng 3 cm (giữ riêng phần đầu trắng và lá xanh). Ớt bỏ hạt, thái lát (nếu dùng)."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho dầu ô liu vào chảo lớn, phi tỏi đập dập với lửa vừa-nhỏ cho thơm vàng nhẹ. Cho cá cơm vào, dùng muỗng gỗ dằm cho tan thành kem.",
+      "tip": "ricettadioggi.it: 'farle sciogliere a fuoco medio-basso fino a creare una crema' — cá cơm tan hết, không còn mùi tanh.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho phần đầu trắng hành lá và cà chua bi bổ đôi vào chảo, tăng lửa vừa, om khoảng 5-7 phút, đảo thỉnh thoảng, đến khi cà chua mềm và ra nước.",
+      "tip": "ricettadioggi.it: nấu đến khi pomodorini 'appassiti e avranno rilasciato parte del loro succo'.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho bông cải đã chần vào chảo, đảo đều cho thấm sốt cà chua. Đậy nắp, om lửa nhỏ khoảng 8-10 phút cho bông cải chín mềm và thấm vị.",
+      "tip": "Nếu chảo khô, thêm 2-3 muỗng canh nước nóng; không thêm quá nhiều để món om sánh, không thành canh.",
+      "timerMinutes": 9
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Mở nắp, cho phần lá hành xanh và ớt thái lát vào, đảo 1 phút. Nêm muối và tiêu cho vừa miệng.",
+      "tip": "RicettaSprint (nguồn 2) nêm món broccoli-cà chua tương tự chỉ với muối và dầu ô liu — giữ nêm nếm đơn giản.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Gắp tỏi ra (nếu muốn), dọn bông cải om cà chua ra đĩa, rắc ngò tây thái nhỏ lên trên. Ăn nóng hoặc ấm, dùng làm món ăn kèm.",
+      "tip": "ricettadioggi.it: 'Prezzemolo fresco tritato per guarnire' — rắc ngò tây lúc dọn để giữ mùi thơm."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 77,
+      "proteinG": 6.08,
+      "carbohydrateG": 15.23,
+      "fatG": 0.84,
+      "fiberG": 5.8,
+      "sugarG": 4.72,
+      "sodiumMg": 68.5
+    },
+    "originalPerServing": {
+      "energyKcal": 176.82,
+      "proteinG": 7.1,
+      "carbohydrateG": 16.58,
+      "fatG": 11.12,
+      "fiberG": 6.02,
+      "sugarG": 4.94,
+      "sodiumMg": 162.3
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá (cipollotto): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Dầu ô liu nguyên chất: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 8,
+        "detail": "Muối: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "QUALITATIVE_CONSUMED_AMOUNT",
+        "ingredientPosition": 9,
+        "detail": "Tiêu đen xay: edible quantity is qualitative"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      8,
+      9
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 8,
+        "reason": "process_only",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 9,
+        "reason": "qualitative_quantity",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

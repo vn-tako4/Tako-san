@@ -1,0 +1,989 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-e26d04bf95bcede8",
+    "slug": "mi-ramen-heo-trung",
+    "title": "Mì ramen heo trứng"
+  },
+  "content": {
+    "description": "Tô ramen nhà nước dùng ngọt từ ba chỉ hầm, mì dai trứng lòng đào, hành lá-tỏi phi đậm hương phố Osaka.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 55,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Ramen",
+      "Nhật Bản",
+      "Nước dùng",
+      "Bữa tối"
+    ]
+  },
+  "research": {
+    "inputPath": "pilot/imp-e26d04bf95bcede8.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,nutrition_per_serving,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.justonecookbook.com/shoyu-ramen/comment-page-2/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://japanesecooking101.com/ramen-recipe/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://japanesecooking101.com/ajitama-recipe/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "lít",
+        "text": "6 lít",
+        "gramEquivalent": 6000,
+        "basis": "1 ml nước ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6,
+          "unit": "l"
+        }
+      },
+      "note": "JOC gốc: 12 QT (~11.4 L) cho 8 phần; chia đôi còn 6 L cho 4 phần. Nước dùng cô đặc sau 6 giờ còn đủ ~360 ml nước dùng/bát + phần lấy ra làm xốt chashu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 1,
+      "sourceName": "Xương chân giò heo (genkotsu)",
+      "canonicalIngredientId": "ING_ENR_8E57F60AD2344274",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": null,
+        "evidence": "source_explicit",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "JOC gốc: 11⁄3 lbs (~600 g) cho 8 phần; chia đôi ~300 g. Không có xương chân giò thì thay xương cổ/xương sống heo (JOC gợi ý).",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Xương chân giò (genkotsu): không có mục USDA FDC → nutrition null; xương chỉ dùng để nấu nước dùng, chất dinh dưỡng hòa tan vào nước dùng không định lượng được từ khối lượng xương"
+    },
+    {
+      "position": 2,
+      "sourceName": "Thịt ba chỉ heo (làm chashu)",
+      "canonicalIngredientId": "PORK_BELLY",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": null,
+        "evidence": "source_explicit",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "JOC gốc: 2 lbs (~908 g, 2 dải dài 3.8×5×25 cm, đã bỏ da) cho 8 phần. Cách làm khác từ Cooking101: ướp muối 2 muỗng cà phê qua đêm rồi hầm cùng nước dùng 1.5–2 giờ thay vì om xốt tương.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 518,
+        "proteinG": 9.34,
+        "carbohydrateG": 0,
+        "fatG": 53.01,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 32
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167812",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Mỡ gà đun chảy (rendered chicken fat)",
+      "canonicalIngredientId": "ING_ENR_B72C23D1753CB312",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": null,
+        "evidence": "source_explicit",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "JOC gốc: 3.5 oz (~100 g) cho 8 phần; JOC nhấn mạnh không nên bỏ qua vì quyết định độ béo thơm của nước dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 900,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 99.8,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173564",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "củ",
+        "text": "0.25 củ",
+        "gramEquivalent": 37.5,
+        "basis": "ước lượng 150 g/củ hành tây vừa × 0.25",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.25,
+          "unit": "piece"
+        }
+      },
+      "note": "JOC gốc: 1⁄2 củ cho 8 phần; để cả vỏ, cắt bỏ rễ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 9,
+        "basis": "ước lượng 3 g/tép tỏi",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "JOC gốc: 5 tép cho 8 phần; chia đôi làm tròn 3 tép; để cả vỏ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "củ",
+        "text": "0.5 củ",
+        "gramEquivalent": 25,
+        "basis": "ước lượng 50 g/củ gừng × 0.5",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "JOC gốc: 1 củ gừng cả vỏ thái lát cho 8 phần; chia đôi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành lá dài Tokyo negi",
+      "canonicalIngredientId": "ING_ENR_40B997AD023E7A02",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 89,
+        "basis": "1 cây hành boaro ≈ 89 g (USDA household weight)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "JOC gốc: 2 cây cho 8 phần; phần xanh cho vào nước dùng, phần trắng thái nhỏ cho tare và bát. Không có thì thay hành lá thường.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 61,
+        "proteinG": 1.5,
+        "carbohydrateG": 14.15,
+        "fatG": 0.3,
+        "fiberG": 1.8,
+        "sugarG": 3.9,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169246",
+      "sourceNutritionNote": "Hành negi Nhật: USDA không có mục riêng; proxy hành boaro (leek) — họ hành cùng loại, giá trị dinh dưỡng tương đương"
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước tương Nhật (cho xốt chashu/shoyu tare)",
+      "canonicalIngredientId": "ING_ENR_3CDDCBC009EFC829",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước tương Nhật via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 240,
+        "unit": "ml",
+        "text": "240 ml",
+        "gramEquivalent": 285,
+        "basis": "tỉ trọng nước tương ≈ 1.19 g/ml (240 ml ≈ 285 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 240,
+          "unit": "ml"
+        }
+      },
+      "note": "JOC gốc: 2 cups (~480 ml) cho 8 phần. Xốt này chính là shoyu tare cho bát mì; tare rất mặn, mỗi bát chỉ dùng 1–2 muỗng canh (bắt đầu với 1).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Sake (cho xốt chashu)",
+      "canonicalIngredientId": "ING_ENR_D9B22C939AB8AD9B",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Sake (để hấp cá) via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "ml",
+        "text": "30 ml",
+        "gramEquivalent": 30,
+        "basis": "ước lượng 1 ml ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "ml"
+        }
+      },
+      "note": "JOC gốc: 1⁄4 cup (~60 ml) cho 8 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 134,
+        "proteinG": 0.5,
+        "carbohydrateG": 5,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167723",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Mirin (cho xốt chashu)",
+      "canonicalIngredientId": "ING_ENR_ADD0B636AF255631",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Mirin via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "ml",
+        "text": "30 ml",
+        "gramEquivalent": 35,
+        "basis": "ước lượng tỉ trọng ≈ 1.16 g/ml (30 ml ≈ 35 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "ml"
+        }
+      },
+      "note": "JOC gốc: 1⁄4 cup (~60 ml) cho 8 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 300,
+        "proteinG": 0,
+        "carbohydrateG": 60,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 33.33,
+        "sodiumMg": 667
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2114521",
+      "sourceNutritionNote": "Bản ghi Branded (Mizkan America); mirin các hãng tương đương, lượng dùng nhỏ"
+    },
+    {
+      "position": 11,
+      "sourceName": "Muối hạt (Diamond Crystal kosher salt)",
+      "canonicalIngredientId": "ING_ENR_394772B8210C6D9B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 12,
+        "basis": "muối kosher Diamond Crystal xốp nhẹ hơn muối bàn: 1 muỗng canh ≈ 8 g (muối bàn ≈ 18 g/muỗng canh)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "JOC gốc: 3 Tbsp cho 8 phần; muối bàn thì giảm lượng vì mặn hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Mì ramen tươi (chukamen)",
+      "canonicalIngredientId": "ING_ENR_B9B5CD7387F53C92",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 600,
+        "unit": "g",
+        "text": "600 g",
+        "gramEquivalent": 600,
+        "basis": null,
+        "evidence": "source_explicit",
+        "runtime": {
+          "amount": 600,
+          "unit": "g"
+        }
+      },
+      "note": "JOC gốc: 2.5–3 lbs (~1132–1360 g) cho 8 phần ≈ 141–170 g mì tươi/phần. Cooking101 dùng mì khô chukamen (3–4 bó) hoặc mì spaghetti khô luộc cùng baking soda để tạo vị mì ramen — cách thay thế, lượng theo hướng dẫn gói.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 196,
+        "proteinG": 7.14,
+        "carbohydrateG": 37.86,
+        "fatG": 1.79,
+        "fiberG": 1.8,
+        "sugarG": 0,
+        "sodiumMg": 152
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2027673",
+      "sourceNutritionNote": "USDA không có mì ramen tươi; proxy mì lúa mì tươi (yakisoba, bản ghi Branded Wan Hua Foods) — cùng loại mì tươi, giá trị tương đương"
+    },
+    {
+      "position": 13,
+      "sourceName": "Trứng gà (làm trứng lòng đào ngâm tương ajitama)",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "cái",
+        "text": "4 cái",
+        "gramEquivalent": 200,
+        "basis": "1 quả trứng lớn ≈ 50 g (USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "4 quả cho 4 bát. JOC lưu ý tại tiệm Bizentei trứng là topping add-on (không bắt buộc); Cooking101 dùng trứng luộc lòng đào cắt đôi làm topping.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Nước tương (xốt ngâm trứng ajitama)",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 45,
+        "unit": "ml",
+        "text": "45 ml",
+        "gramEquivalent": 54,
+        "basis": "tỉ trọng nước tương ≈ 1.19 g/ml (45 ml ≈ 54 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 45,
+          "unit": "ml"
+        }
+      },
+      "note": "Cooking101 ajitama: 3 Tbsp (~45 ml) cho 3–4 quả trứng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Sake (xốt ngâm trứng ajitama)",
+      "canonicalIngredientId": "ING_ENR_D9B22C939AB8AD9B",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Sake (để hấp cá) via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 45,
+        "unit": "ml",
+        "text": "45 ml",
+        "gramEquivalent": 45,
+        "basis": "ước lượng 1 ml ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 45,
+          "unit": "ml"
+        }
+      },
+      "note": "Cooking101 ajitama: 3 Tbsp (~45 ml) cho 3–4 quả trứng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 134,
+        "proteinG": 0.5,
+        "carbohydrateG": 5,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167723",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 16,
+      "sourceName": "Mirin (xốt ngâm trứng ajitama)",
+      "canonicalIngredientId": "ING_ENR_ADD0B636AF255631",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Mirin via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "ml",
+        "text": "30 ml",
+        "gramEquivalent": 35,
+        "basis": "ước lượng tỉ trọng ≈ 1.16 g/ml (30 ml ≈ 35 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "ml"
+        }
+      },
+      "note": "Cooking101 ajitama: 2 Tbsp (~30 ml) cho 3–4 quả trứng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 300,
+        "proteinG": 0,
+        "carbohydrateG": 60,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 33.33,
+        "sodiumMg": 667
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2114521",
+      "sourceNutritionNote": "Bản ghi Branded (Mizkan America); mirin các hãng tương đương, lượng dùng nhỏ"
+    },
+    {
+      "position": 17,
+      "sourceName": "Đường (xốt ngâm trứng ajitama)",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 12.6,
+        "basis": "1 muỗng canh đường ≈ 12.6 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cooking101 ajitama: 1 Tbsp (~12 g) cho 3–4 quả trứng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 18,
+      "sourceName": "Hành lá trang trí",
+      "canonicalIngredientId": "ING_ENR_3358DA72D77B9223",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 15,
+        "basis": "ước lượng 1 cây hành lá ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "JOC gốc (phần 'For the Ramen'): 2 cây hành lá chỉ lấy phần xanh cho 8 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Cho 6 L nước, 300 g xương chân giò, 1⁄4 củ hành tây (để cả vỏ, cắt bỏ rễ), 3 tép tỏi (để cả vỏ) và 1⁄2 củ gừng thái lát vào nồi to. Đun lửa to cho sôi (khoảng 20–30 phút), không đậy nắp; khi sôi dùng vợt lưới mịn hớt sạch bọt và váng.",
+      "tip": "Hớt bọt kỹ là chìa khóa để nước dùng trong và vị sạch; JOC khuyên dùng nồi stockpot lớn, không châm thêm nước giữa chừng để khỏi loãng.",
+      "timerMinutes": 25
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Trong lúc chờ sôi, buộc chặt 450 g thịt ba chỉ bằng chỉ bếp (quấn mỗi vòng cách nhau ~1.3 cm, thắt nút đôi) để thịt không rã khi om. Khi nước đã sôi và hớt bọt xong, nhẹ nhàng thả thịt vào nồi; nấu lửa to, mở nắp, trong 2 giờ, tiếp tục hớt bọt thỉnh thoảng.",
+      "tip": "Buộc thật chặt nhưng đừng làm biến dạng miếng thịt; thịt sau 3 giờ hầm sẽ rất mềm, dễ nát.",
+      "timerMinutes": 120
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Khoảng 10 phút trước mốc 2 giờ, múc 240 ml nước dùng đang sôi ra một nồi khác; thêm 240 ml nước tương, 30 ml sake, 30 ml mirin và 1.5 muỗng canh muối, khuấy tan. Đun sôi nhẹ rồi tắt bếp, để sang một bên — đây là nước xốt om chashu.",
+      "tip": "Lượng xốt này sau khi om chashu xong sẽ trở thành shoyu tare (nước xốt nền) cho bát mì — không lãng phí."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đúng mốc 2 giờ: cho 50 g mỡ gà đun chảy và phần xanh của 1 cây hành negi vào nồi nước dùng (giữ phần trắng lại dùng sau). Nấu lửa to, mở nắp, thêm 1 giờ.",
+      "timerMinutes": 60
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Ở mốc 3 giờ: dùng kẹp gắp thật nhẹ nhàng vớt miếng thịt ba chỉ ra đĩa (thịt đã rất mềm). Chuyển thịt vào nồi xốt chashu, đặt nắp giọt otoshbuta (hoặc miếng giấy nhôm khoét lỗ) lên trên; đun sôi nhẹ rồi hạ lửa nhỏ, om 2 giờ, thỉnh thoảng múc xốt rưới lên thịt. Nồi nước dùng còn lại hạ lửa nhỏ, nấu mở nắp thêm 3 giờ.",
+      "tip": "Không lật thịt vì dễ nát — chỉ rưới xốt lên trên.",
+      "timerMinutes": 120
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Sau 2 giờ om: vớt chashu ra đĩa, dùng kéo cắt bỏ chỉ bếp thật nhẹ tay; để nguội hoàn toàn rồi ướp lạnh (ngăn đá tối đa 1 giờ cho se mặt, hoặc tủ lạnh qua đêm) để thái lát mỏng ~3 mm không bị nát. Hớt sạch mỡ và vụn thịt trên mặt xốt — phần xốt trong này chính là shoyu tare, dùng ngay hoặc để tủ lạnh.",
+      "tip": "Chashu phải lạnh và chắc, mỡ đã đông lại thì mới thái lát mỏng đẹp; dao dính mỡ thì nhúng vào nước dùng nóng để tan mỡ.",
+      "timerMinutes": 60
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Khi nước dùng đủ tổng 6 giờ: tắt bếp, dùng rây lưới mịn vớt bỏ hết xương và rau củ, lọc bỏ cặn. Có thể lọc lại lần 2 để nước dùng thật trong.",
+      "tip": "Không nêm muối vào nước dùng — vị mặn của bát mì đến từ shoyu tare."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Làm trứng ajitama: đun sôi một nồi nước, thả 4 quả trứng lạnh từ tủ lạnh vào, luộc đúng 7 phút; vớt ngay vào nước đá 15 phút rồi bóc vỏ. Nấu xốt ngâm: 45 ml nước tương + 45 ml sake + 30 ml mirin + 1 muỗng canh đường, đun sôi 1 phút cho tan đường, để nguội hoàn toàn. Cho trứng và xốt vào túi zip, ép hết khí, ướp tủ lạnh ít nhất vài giờ đến qua đêm.",
+      "tip": "Cooking101: trứng ngâm được đến 1 tuần trong tủ lạnh. Xốt hơi đậm, có thể pha loãng với 1–2 muỗng canh dashi hoặc nước theo khẩu vị.",
+      "timerMinutes": 7
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Chuẩn bị ăn: đun nồi nước dùng cho thật nóng (sôi nhẹ). Đun một nồi nước lớn khác để luộc mì. Thái lát chashu lạnh dày ~3 mm; thái nhỏ phần trắng của hành negi và hành lá trang trí; cắt đôi 4 quả trứng ajitama.",
+      "tip": "Mọi thứ phải sẵn sàng trước khi luộc mì vì mì chín là phải bày ngay, không chờ được."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Thả 600 g mì ramen tươi vào nước đang sôi mạnh, đảo tơi bằng đũa; luộc theo hướng dẫn gói (mì tươi thường 60–90 giây, hơi non một chút cho dai). Vớt ra rổ, lắc ráo thật kỹ để nước không làm loãng nước dùng.",
+      "timerMinutes": 1.5
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Mỗi bát: cho 1–2 muỗng canh shoyu tare (bắt đầu với 1 muỗng vì tare rất mặn) và 1 muỗng canh hành negi trắng thái nhỏ; chan 360 ml nước dùng thật nóng; cho mì vào, dùng đũa đảo vài lần cho mì thấm đều nước dùng rồi gấp gọn mì vào một bên bát cho đẹp.",
+      "tip": "Bát to hơn thì tăng tare và nước dùng tương ứng."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Nhanh tay xếp lên trên: vài lát chashu, nửa quả trứng ajitama, hành lá thái nhỏ; thêm menma (măng muối) và rong biển nori nếu thích. Dùng ngay khi còn nóng.",
+      "tip": "JOC xếp menma và nori là topping tùy chọn; tại Bizentei trứng ajitama cũng là lựa chọn thêm."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 989.25,
+      "proteinG": 21.22,
+      "carbohydrateG": 56.79,
+      "fatG": 74.8,
+      "fiberG": 2.7,
+      "sugarG": 0,
+      "sodiumMg": 264
+    },
+    "originalPerServing": {
+      "energyKcal": 233.11,
+      "proteinG": 14.03,
+      "carbohydrateG": 25.28,
+      "fatG": 5.38,
+      "fiberG": 1.51,
+      "sugarG": 10.98,
+      "sodiumMg": 6012.81
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Xương chân giò heo (genkotsu): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Gừng tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hành lá dài Tokyo negi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước tương Nhật (cho xốt chashu/shoyu tare): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Sake (cho xốt chashu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Mirin (cho xốt chashu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Muối hạt (Diamond Crystal kosher salt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Trứng gà (làm trứng lòng đào ngâm tương ajitama): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Nước tương (xốt ngâm trứng ajitama): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 15,
+        "detail": "Sake (xốt ngâm trứng ajitama): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 16,
+        "detail": "Mirin (xốt ngâm trứng ajitama): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 17,
+        "detail": "Đường (xốt ngâm trứng ajitama): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      0,
+      8,
+      11,
+      14,
+      17
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 0,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 17,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

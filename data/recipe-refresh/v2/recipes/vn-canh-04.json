@@ -1,0 +1,669 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "vn-canh-04",
+    "slug": "canh-suon-bi-dao",
+    "title": "Canh sườn hầm bí đao ngọt thanh"
+  },
+  "content": {
+    "description": "Sườn heo ninh mềm róc xương kết hợp vị ngọt thanh của bí đao xanh tạo nên món canh dễ ăn cho cả gia đình.",
+    "cuisine": "vietnamese",
+    "category": "mon_canh",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Món canh",
+      "Bổ dưỡng",
+      "Cơm nhà",
+      "Trẻ em thích"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/vn-canh-04.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://saigonesebaguette.vn/cach-nau-canh-bi-dao-ngon-thanh-mat-dam-da-chuan-vi-gia-dinh/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://capri.vn/cach-nau-canh-bi-dao-suon-non-bep-dien-tu-hong-ngoai-capri-viet-nam",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Sườn non heo",
+      "canonicalIngredientId": "ING_ENR_8476BF33B9218764",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn về định lượng: saigonesebaguette.vn 300–400g sườn non; capri.vn 300g; bản PDF Đại học Duy Tân 500g sườn. Lấy 400g — mức cao của dải chi tiết nhất, phù hợp 4 người ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 277,
+        "proteinG": 15.5,
+        "carbohydrateG": 0,
+        "fatG": 23.4,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 81
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167853",
+      "sourceNutritionNote": "Số liệu tra từ USDA FoodData Central API (DEMO_KEY) ngày 2026-09-26, ưu tiên bản ghi SR Legacy: lấy đúng nutrientNumber 208 (Energy, đã kiểm tra unitName=kcal — KHÔNG dùng 268 kJ), 203 protein, 205 carbohydrate, 204 total lipid, 291 fiber, 269 total sugars, 307 sodium. nutrition_source là URL trang chi tiết của đúng fdcId do API trả về."
+    },
+    {
+      "position": 1,
+      "sourceName": "Bí đao",
+      "canonicalIngredientId": "WINTER_MELON",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "saigonesebaguette.vn: 500g; capri.vn: 400–500g — lấy 500g theo nguồn chi tiết hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 13,
+        "proteinG": 0.4,
+        "carbohydrateG": 3,
+        "fatG": 0.2,
+        "fiberG": 2.9,
+        "sugarG": null,
+        "sodiumMg": 111
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170069",
+      "sourceNutritionNote": "USDA không công bố Total Sugars cho bản ghi waxgourd nên để null, không suy ra."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành tím (hành khô) băm",
+      "canonicalIngredientId": "ING_ENR_5CB2F389F653E150",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Hành tím (hành khô) via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "củ",
+        "text": "2 củ",
+        "gramEquivalent": 20,
+        "basis": "1 củ hành tím ta ~10 g (ước lượng phổ biến; USDA không có khối lượng chuẩn cho củ hành tím Việt Nam)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng hành tím băm để phi thơm (saigonesebaguette: 1 củ cho bản thịt băm; công thức sườn non ghi 'hành tím' không định lượng cụ thể). Lấy 2 củ cho 4 người ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "nhánh",
+        "text": "3 nhánh",
+        "gramEquivalent": 15,
+        "basis": "1 nhánh hành lá ~5 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 27,
+        "proteinG": 0.97,
+        "carbohydrateG": 5.74,
+        "fatG": 0.47,
+        "fiberG": 1.8,
+        "sugarG": 3.91,
+        "sodiumMg": 15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170006",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Mùi tàu",
+      "canonicalIngredientId": "ING_ENR_A51E0690D1C20752",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "lá",
+        "text": "6 lá",
+        "gramEquivalent": 10,
+        "basis": "1 lá mùi tàu ~1.5–2 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn mâu thuẫn về rau thơm: saigonesebaguette.vn và capri.vn dùng hành lá + ngò rí; bản PDF Đại học Duy Tân dùng hành lá + mùi tàu. Giữ mùi tàu theo assignment, ghi rõ mâu thuẫn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": "USDA không có bản ghi cho mùi tàu (culantro/Eryngium foetidum); dùng số liệu của ngò rí (cilantro) làm nguyên liệu tương đương gần nhất — lượng dùng nhỏ (~10g) nên ảnh hưởng dinh dưỡng không đáng kể."
+    },
+    {
+      "position": 5,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "đơn vị gốc đã là gram (ước lượng 1 mẩu gừng nhỏ)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ bản PDF Đại học Duy Tân dùng 1 mẩu gừng đập dập cho vào nồi hầm để khử mùi sườn; saigonesebaguette.vn và capri.vn không dùng — để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.8,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước mắm nguyên chất",
+      "canonicalIngredientId": "ING_ENR_AC6236474DD7A787",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "1 muỗng canh = 15 ml; 1 tbsp nước mắm ≈ 18 g (USDA food 174531: 1 tbsp = 18 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "saigonesebaguette.vn nêm 1 muỗng canh nước mắm cho bản thịt băm; bản sườn non ghi 'nước mắm' trong gia vị không định lượng cụ thể — lấy 2 muỗng canh cho 4 người (1 để ướp sườn, 1 để nêm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7850
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ≈ 6 g (USDA: 1 tsp table salt = 6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38800
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 10,
+        "basis": "1 muỗng canh hạt nêm ≈ 10 g (ước lượng theo khối lượng riêng tương đương muối tinh; không có chuẩn USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Các nguồn đều liệt kê hạt nêm trong gia vị nhưng không định lượng cụ thể cho bản sườn non — lấy 1 muỗng canh cho 4 người (chia 2 lần: ướp sườn và nêm khi nấu).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có bản ghi cho hạt nêm Việt Nam; để null toàn bộ, không bịa số."
+    },
+    {
+      "position": 9,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2 g (USDA: 1 tsp black pepper = 2.3 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu ăn thực vật",
+      "canonicalIngredientId": "ING_ENR_57DC624F79E53EB4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "1 muỗng canh dầu ăn = 15 ml ≈ 13.6 g (USDA: 1 tbsp vegetable oil = 13.6 g; tỉ trọng dầu ~0.91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Dùng để phi thơm hành tím và xào săn sườn (saigonesebaguette.vn: 'Phi thơm hành tím băm, cho sườn vào xào sơ để sườn săn lại').",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "lít",
+        "text": "1.5 lít",
+        "gramEquivalent": 1500,
+        "basis": "1 lít nước = 1000 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "l"
+        }
+      },
+      "note": "saigonesebaguette.vn: đổ khoảng 1.5 lít nước rồi hầm sườn 30–45 phút.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế sườn: rửa sạch sườn non, chặt miếng vừa ăn. Chần sườn qua nước sôi 2–3 phút cho ra hết bọt bẩn, vớt ra rửa lại thật sạch với nước.",
+      "tip": "Chần sườn giúp nước canh trong và không bị hôi (saigonesebaguette.vn).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Ướp sườn với 1 muỗng cà phê hạt nêm, 1 muỗng canh nước mắm và 1/2 muỗng cà phê tiêu xay; trộn đều, để 15 phút cho thấm gia vị.",
+      "tip": "saigonesebaguette.vn: ướp sườn với chút hạt nêm, nước mắm, tiêu trước khi xào.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Bí đao gọt vỏ, bỏ ruột và hạt, rửa sạch, cắt miếng vừa ăn dày khoảng 2 cm.",
+      "tip": "Không cắt quá mỏng vì bí đao nhanh chín, dễ bị nát (saigonesebaguette.vn)."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Hành tím bóc vỏ, băm nhỏ. Hành lá và mùi tàu rửa sạch, thái nhỏ. Gừng đập dập (nếu dùng)."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Bắc nồi lên bếp, cho 1 muỗng canh dầu ăn; khi dầu nóng, cho hành tím băm vào phi thơm. Cho sườn đã ướp vào xào săn trên lửa vừa khoảng 3–5 phút.",
+      "tip": "Xào săn giúp sườn thơm và giữ được độ ngọt (saigonesebaguette.vn).",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ 1.5 lít nước vào nồi, đun sôi; dùng muỗng hớt bỏ bọt để nước trong. Cho gừng đập dập vào (nếu dùng). Hạ nhỏ lửa, hầm sườn 30–45 phút đến khi sườn mềm.",
+      "tip": "Luôn hớt bọt trong lúc hầm để nước canh trong (saigonesebaguette.vn). Kiểm tra sườn mềm bằng cách xiên đũa qua dễ dàng.",
+      "timerMinutes": 40
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Khi sườn đã mềm, cho bí đao vào; đun sôi trở lại rồi hạ lửa nhỏ, nấu thêm 5–7 phút đến khi bí trong mờ, dùng đũa xiên qua được nhưng vẫn giữ miếng.",
+      "tip": "Bí đao rất nhanh chín — nấu quá lâu bí sẽ nhũn nát và mất vitamin (saigonesebaguette.vn).",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nêm nếm lại với muối và nước mắm cho vừa ăn. Lưu ý bí đao đã ngọt tự nhiên nên nêm nhẹ tay, nếm thử rồi điều chỉnh từ từ.",
+      "tip": "saigonesebaguette.vn: nêm nhẹ để không lấn át vị thanh của bí đao."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tắt bếp; rắc hành lá, mùi tàu thái nhỏ và chút tiêu xay lên trên."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Múc canh ra tô, dùng nóng với cơm trắng. Canh ngon nhất khi ăn ngay; nếu còn dư, để nguội hẳn rồi bảo quản ngăn mát 1–2 ngày."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 277,
+      "proteinG": 15.5,
+      "carbohydrateG": 0,
+      "fatG": 23.4,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 81
+    },
+    "originalPerServing": {
+      "energyKcal": 334.27,
+      "proteinG": 16.74,
+      "carbohydrateG": 5.83,
+      "fatG": 27.11,
+      "fiberG": 4.04,
+      "sugarG": null,
+      "sodiumMg": 1510.94
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Bí đao: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành tím (hành khô) băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Mùi tàu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước mắm nguyên chất: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dầu ăn thực vật: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=800&q=80",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

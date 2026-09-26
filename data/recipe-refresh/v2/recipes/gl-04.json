@@ -1,0 +1,585 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "gl-04",
+    "slug": "oyakodon",
+    "title": "Cơm gà trứng Oyakodon Nhật Bản"
+  },
+  "content": {
+    "description": "Món cơm donburi Nhật Bản với thịt gà mềm ngọt và trứng nấu lướt mịn mượt trên bát cơm nóng.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 15,
+    "servings": 2,
+    "difficulty": "easy",
+    "tags": [
+      "Nhật Bản",
+      "Dưới 20 phút",
+      "Cơm donburi"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/gl-04.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.justonecookbook.com/oyakodon/comment-page-1/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.chopstickchronicles.com/oyako-donburi/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt đùi gà (không xương, không da)",
+      "canonicalIngredientId": "ING_ENR_3D6534CBC8127775",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 283,
+        "unit": "g",
+        "text": "283 g",
+        "gramEquivalent": 283,
+        "basis": "JOC ghi 10 oz đùi gà không xương không da cho 2 phần.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 283,
+          "unit": "g"
+        }
+      },
+      "note": "JOC: 10 oz (283 g) cho 2 phần. Chopstick Chronicles dùng 250 g cho 2 phần — hai nguồn chênh nhẹ, lấy theo JOC là nguồn chính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 121,
+        "proteinG": 19.66,
+        "carbohydrateG": 0,
+        "fatG": 4.12,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 95
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173627",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "củ",
+        "text": "0.5 củ",
+        "gramEquivalent": 113,
+        "basis": "JOC: 1/2 củ hành tây = 4 oz = 113 g (đã bóc vỏ).",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả JOC và Chopstick Chronicles đều dùng 1/2 củ hành tây cho 2 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": null,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": "sugar_g tính bằng tổng các thành phần đường (sucrose+glucose+fructose+lactose+maltose) trong cùng bộ dữ liệu USDA SR Legacy 2018-04 [audit F3: bỏ tổng hợp đường thành phần, chuẩn chương trình dùng nutrient 269 đã công bố; không có → null]"
+    },
+    {
+      "position": 2,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "quả",
+        "text": "4 quả",
+        "gramEquivalent": 200,
+        "basis": "JOC: 1 quả trứng gà lớn = 50 g (không vỏ).",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "JOC: 3–4 quả cho 2 phần (chuẩn 2 quả/người; nấu 2 phần trong 1 chảo có thể dùng 3 quả = 1,5 quả/người). Chopstick Chronicles dùng 3 quả. Lấy 4 quả theo chuẩn 2 quả/người của JOC.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": "sugar_g tính bằng tổng các thành phần đường (sucrose+glucose+fructose+lactose+maltose) trong cùng bộ dữ liệu USDA SR Legacy 2018-04 [audit F3: bỏ tổng hợp đường thành phần, chuẩn chương trình dùng nutrient 269 đã công bố; không có → null]"
+    },
+    {
+      "position": 3,
+      "sourceName": "Rượu sake (để ướp gà)",
+      "canonicalIngredientId": "ING_ENR_9E9F222C85438B85",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Rượu sake via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "1 Tbsp = 15 ml; sake tỉ trọng ≈ 1 g/ml (tương đương nước).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "JOC: rưới 1 Tbsp sake lên gà ướp 5 phút để khử mùi. Chopstick Chronicles không dùng sake.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Nước dùng dashi",
+      "canonicalIngredientId": "ING_ENR_C302BF101301EAA1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "cup",
+        "text": "0.5 cup",
+        "gramEquivalent": 120,
+        "basis": "1 cup = 240 ml; dashi tỉ trọng ≈ nước.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "JOC: 1/2 cup (120 ml) cho 2 phần. Chopstick Chronicles dùng 3/4 cup (180 ml) — hai nguồn mâu thuẫn, lấy theo JOC. JOC khuyên dùng dashi gói (dashi packet) thay vì bột. USDA FDC không có mục dashi nên không có số liệu dinh dưỡng.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Nước tương Nhật",
+      "canonicalIngredientId": "ING_ENR_3CDDCBC009EFC829",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 32,
+        "basis": "USDA SR Legacy food_portion.csv: 1 Tbsp nước tương = 16 g; 2 Tbsp = 32 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "JOC: 2 Tbsp nước tương thường. Chopstick Chronicles: 1 Tbsp usukuchi (nước tương nhạt màu) — mâu thuẫn cả loại và lượng, lấy theo JOC; nếu muốn màu nhạt có thể thay bằng usukuchi theo CC.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": null,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "sugar_g tính bằng tổng các thành phần đường (sucrose+glucose+fructose+lactose+maltose) trong cùng bộ dữ liệu USDA SR Legacy 2018-04 [audit F3: bỏ tổng hợp đường thành phần, chuẩn chương trình dùng nutrient 269 đã công bố; không có → null]"
+    },
+    {
+      "position": 6,
+      "sourceName": "Mirin (rượu ngọt nấu ăn Nhật)",
+      "canonicalIngredientId": "ING_ENR_4FED33D016C8E319",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 Tbsp = 15 ml; mirin tỉ trọng ≈ 1 g/ml.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả JOC và Chopstick Chronicles đều dùng 2 Tbsp mirin cho 2 phần. USDA FDC không có mục mirin nên không có số liệu dinh dưỡng.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 8.4,
+        "basis": "USDA: 1 tsp đường ≈ 4,2 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "JOC (bản hiện tại): 2 tsp đường cho 2 phần. Chopstick Chronicles: 1 Tbsp đường — hai nguồn mâu thuẫn, lấy theo JOC.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": "sugar_g tính bằng tổng các thành phần đường (sucrose+glucose+fructose+lactose+maltose) trong cùng bộ dữ liệu USDA SR Legacy 2018-04 [audit F3: bỏ tổng hợp đường thành phần, chuẩn chương trình dùng nutrient 269 đã công bố; không có → null]"
+    },
+    {
+      "position": 8,
+      "sourceName": "Cơm gạo Nhật hạt ngắn đã nấu chín",
+      "canonicalIngredientId": "ING_ENR_2F5087190B5C81FC",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "JOC: 1 phần donburi = 1 2/3 cup cơm chín ≈ 250 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "JOC: 250 g cơm chín/phần donburi. Chopstick Chronicles: 3 cups cơm chín cho 2 phần (≈ 450–480 g) — chênh nhẹ, lấy theo JOC.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 130,
+        "proteinG": 2.36,
+        "carbohydrateG": 28.73,
+        "fatG": 0.19,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168932",
+      "sourceNutritionNote": "Bộ dữ liệu SR Legacy 2018-04 không có dòng fiber và đường cho mục này nên để null."
+    },
+    {
+      "position": 9,
+      "sourceName": "Mitsuba hoặc hành lá (trang trí)",
+      "canonicalIngredientId": "ING_ENR_52A5E6A838EDA7CC",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Mitsuba hoặc hành lá via the same name key",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "nhánh",
+        "text": "4 nhánh",
+        "gramEquivalent": null,
+        "basis": null,
+        "evidence": "missing",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "JOC: 4 nhánh mitsuba (hoặc thay bằng hành lá thái mỏng). Chopstick Chronicles: hành lá thái nhỏ + mitsuba tùy chọn. Không có khối lượng từ nguồn nên không quy đổi gram; USDA FDC không có mục mitsuba.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Ớt bột 7 vị shichimi togarashi",
+      "canonicalIngredientId": "ING_ENR_AA0909978A5BDF97",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "qualitative",
+        "text": "JOC ghi là gia vị tùy chọn rắc tại bàn, không định lượng. USDA FDC không có mục shichimi.",
+        "gramEquivalent": null,
+        "basis": null,
+        "evidence": "missing",
+        "runtime": null
+      },
+      "note": "JOC ghi là gia vị tùy chọn rắc tại bàn, không định lượng. USDA FDC không có mục shichimi.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Pha nước sốt: cho dashi, nước tương, mirin và đường vào bát, khuấy đều đến khi đường tan hoàn toàn.",
+      "tip": "JOC: trộn đều trước khi nấu để đường tan hết, sốt đồng nhất."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Thái 1/2 củ hành tây dọc thớ, bản rộng khoảng 6 mm. Cắt mitsuba/hành lá khúc 1,3 cm để riêng."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Lọc bỏ mỡ thừa và gân ở đùi gà. Cắt thịt theo kỹ thuật sogigiri: cắt dọc thớ thành dải rộng 2–2,5 cm, rồi nghiêng dao gần song song thớt, cắt ngang thớ thành miếng vuông 2–2,5 cm.",
+      "tip": "JOC: kỹ thuật sogigiri giúp miếng gà dày đều, chín nhanh và thấm gia vị tốt hơn."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho gà vào bát, rưới 1 Tbsp sake, để ướp 5 phút.",
+      "tip": "JOC: sake giúp khử mùi tanh của gà.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đổ hỗn hợp gia vị vào chảo vừa (không đậy nắp), đun sôi nhẹ rồi cho hành tây vào, nấu đến khi hành mềm.",
+      "tip": "JOC: nấu KHÔNG đậy nắp để hơi nước bay bớt, sốt đậm đà hơn.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho gà vào chảo, đảo đều, nấu đến khi thịt không còn màu hồng.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đập trứng ra bát, dùng đũa 'cắt' lòng trắng 5–6 lần cho vỡ thành từng cụm nhỏ — KHÔNG đánh tan. Lòng đỏ có thể vỡ một phần, tạo vân cẩm thạch trắng–vàng.",
+      "tip": "JOC: không đánh trứng tan đều — trứng đánh tan sẽ chỉ còn một màu vàng đồng nhất, kém đẹp."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rưới 2/3 hỗn hợp trứng (ưu tiên phần lòng trắng, chín lâu hơn) vào giữa chảo, tránh rìa chảo nơi trứng dễ cháy."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Rưới nốt 1/3 trứng còn lại (ưu tiên lòng đỏ) đều khắp mặt chảo. Nếu muốn trứng chín kỹ hơn, đậy nắp lại lúc này; nếu thích trứng còn mềm mọng thì để mở nắp.",
+      "tip": "JOC: trứng chín tới khi lòng trắng hơi se nhưng còn rung rinh, lòng đỏ mềm. Ngoài Nhật nên nấu trứng chín kỹ hơn vì lý do an toàn thực phẩm.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Xúc cơm nóng ra tô donburi, nhẹ nhàng trút hỗn hợp gà–trứng cùng nước sốt lên trên. Rắc mitsuba/hành lá và shichimi togarashi tùy thích. Dọn ăn ngay.",
+      "tip": "Chopstick Chronicles: dùng chảo nhỏ nông, đường kính tương đương miệng tô để dễ trút cả mảng lên cơm mà không vỡ."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 2,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Thịt đùi gà (không xương, không da): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Hành tây: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 2,
+        "detail": "Trứng gà: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Rượu sake (để ướp gà): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Nước dùng dashi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Nước tương Nhật: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Mirin (rượu ngọt nấu ăn Nhật): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Cơm gạo Nhật hạt ngắn đã nấu chín: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/recipes/global/oyakodon.webp",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      10
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "qualitative_quantity",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

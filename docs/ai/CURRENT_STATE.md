@@ -1,4 +1,95 @@
-# Current state — T20 release gate
+# Current state — Recipe Content Refresh V2 research canonicalization
+
+**PR #11 remediation (2026-09-27): `RECIPE_REFRESH_V2_RESEARCH_CANONICALIZED`; production release blocked.**
+Implementation checkpoint: `1f77902` on
+`codex/recipe-content-refresh-v2-canonical` (PR #11). The final local
+`pnpm check` passed with lint, typecheck, Vitest, migration smoke and build.
+PR #11 is open and mergeable; hosted CI run `36268138066` passed on exact
+documentation head `dea13cddb0c153d325baa593700545d801c9e851` with
+204 files / 4,597 tests, migration smoke and build. The PR description now
+records the release blockers and remote boundary.
+This section supersedes the earlier source-ready wording below. The original
+ZIP still yields 500 recipes, 4,938 steps and 6,766 ingredient lines. The
+source manifest now records `canonicalSourceReady=true`,
+`runtimeProjectionReady=false`, `productionReleaseReady=false`, four typed
+blockers, and `finalRuntimeFingerprint=null`. The 3,770-row projection and
+its `6d0e3eb85696bb7c31bc54ac62783bc94432aaf008028eca79b17041f3eaed87`
+fingerprint are provisional. Of 2,996 excluded rows, 2,860 require reviewed
+transformation. Generated ingredient concepts are provisional: 505 existing,
+0 reviewed new, 1,642 provisional new, 368 alias reconciliation rows. Source
+URLs are declared/structurally valid; content verification has no URL-specific
+record in the package. Nutrition remains 1 publishable, 288 blocked and 211
+truthful null. The source build/check and separate expected-failing release
+gate are in `scripts/recipe-refresh-v2.mjs`; the new root hash and exact
+verification checkpoint are recorded in `HANDOFF.md`. The
+remediated source artifact SHA-256 is
+`da87da20475fa8d7ec92c716e899ee572339573258ae6d9cc7f3f8f554f2d695`
+(previously `fc7eefe6573ee9de1083728db1f34b058954fa60ff478f7c5e41dce9e4570dbe`). Next:
+runtime/content reconciliation, reviewed ingredient authority, final release
+projection/fingerprint, then generated 0040. No remote mutation, deploy, 0040,
+or T20 enablement occurred.
+
+## Historical pre-remediation receipt (superseded)
+
+**Previously reported (2026-09-27): `RECIPE_REFRESH_V2_CANONICAL_SOURCE_READY`.** The
+canonical repository is `tako-vn/Tako-san`; work started from exact
+`origin/main` `c81d6da2b3a9c051270b97953bfbb2c5aa34d057` on branch
+`codex/recipe-content-refresh-v2-canonical`. Implementation checkpoint
+`fc5e713e10e0b63c890ba31fc29d9678be896ed7` is pushed. This certifies the
+source/compiler package only: no migration 0040, D1/R2 mutation, deploy,
+recipe-authority change, or T20 enablement occurred.
+
+## Recipe Content Refresh V2 canonical package — 2026-09-27 UTC
+
+The input ZIP SHA-256 is
+`ebc18f06ee7fb4498f8cd2a7886f333a85b385f32af4407ae1b44b4ec3cc06fe`.
+Independent audit found 500 recipes / 500 unique IDs, exactly the current
+500-ID release set; 4,938 steps; 6,766 ingredient lines (not the reported
+6,720); 15 root schema variants; 1,102 source references / 1,072 unique URLs;
+and 289 numeric plus 211 null source nutrition profiles. The normalized
+package has one strict schema, 6,743 quantified and 23 qualitative rows, 166
+process-only plus 7 mixed-process rows, and 3,770 runtime-projected versus
+2,996 intentionally excluded ingredient rows.
+
+Canonical source is in `data/recipe-refresh/v2`; machine audit artifacts are
+in `artifacts/recipe-refresh-v2`; the human receipt is `AUDIT_REPORT.md`.
+Canonical artifact SHA-256 is
+`fc7eefe6573ee9de1083728db1f34b058954fa60ff478f7c5e41dce9e4570dbe`;
+the runtime fingerprint from the repository's real `fingerprintRecipes()` is
+`6d0e3eb85696bb7c31bc54ac62783bc94432aaf008028eca79b17041f3eaed87`.
+`pnpm recipe:refresh:check` validates the 500-ID set, strict schema, units,
+ingredient IDs, quantities, step numbering, nutrition agreement, reviewed
+exceptions, per-file hashes, root hash, and runtime fingerprint.
+
+Nutrition was re-audited rather than copied: 353 calculation candidates, 1
+publishable profile, 288 blocked profiles, and 211 truthful null profiles.
+Blocked/null recipes expose no certified runtime macros. In particular,
+`vn-hap-01` no longer publishes sodium from a 500 g salt bed and
+`imp-6eaf6ed6d417c52c` no longer publishes energy from 1 L of frying oil.
+Ingredient reconciliation contains 2,515 rows: 505 existing IDs, 1,642 new
+reviewed `ING_ENR_*` mappings, 368 duplicate aliases, 0 ambiguous and 0
+invalid. The static 71-recipe `ALL_RECIPES`, INSERT-only import compiler,
+release `rel-bd00a4f53fcaeee4`, migrations through 0039, media readiness, and
+current authority behavior remain unchanged.
+
+Local release gates on the final documentation tree: focused refresh tests
+11/11, `pnpm recipe:refresh:check`, `pnpm recipe:import:check`, `pnpm
+typecheck`, `pnpm lint`, `git diff --check`, and `pnpm check` PASS; full
+Vitest is 204 files / 4,591 tests. A first full run exposed that this managed
+worktree's sparse-checkout omitted tracked `public/` assets; adding the
+tracked directory to the sparse set restored the checkout, and its 24 CSP/PWA
+brand tests plus the complete gate passed without repository changes.
+
+Next: independent PR review and hosted exact-head CI. After merge, build the
+Content Refresh V2 manifest and generated `0040_recipe_content_refresh_v2.sql`
+from this pinned package, then certify staging before any production rollout.
+
+`staging_mutation=NO` · `production_mutation=NO` · `deploy=NO` ·
+`T20_enablement=NO`
+
+---
+
+# Historical current state — T20 release gate
 
 **Latest (2026-09-26):** PR #9 merged into `main` at `cb22cfb` and exact-main
 CI passed. Cloudflare login now works locally, and read-only D1 list/info

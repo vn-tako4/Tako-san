@@ -1,0 +1,682 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-0abadc2e606770a7",
+    "slug": "cua-hap-sa",
+    "title": "Cua hấp sả"
+  },
+  "content": {
+    "description": "Cua hấp sả-chanh thơm nồng nhiệt đới, thịt cua ngọt đậm nguyên vị, món hấp Thái sang trọng.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Hấp",
+      "Cua",
+      "Sả",
+      "Thái Lan"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-0abadc2e606770a7.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps,title",
+    "sources": [
+      {
+        "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-cua-bien-hap-sa-ngon-nhu-ngoai-hang-sieu-de-tai-nha-08879",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://mytour.vn/vi/blog/bai-viet/cach-lam-cua-bien-hap-sa-ngon-khong-kem-gi-nha-hang-lai-cuc-de-lam.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cua thịt (cua biển sống)",
+      "canonicalIngredientId": "ING_ENR_06766BCFB5B6AA1A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2300,
+        "unit": "g",
+        "text": "2300 g",
+        "gramEquivalent": 2300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2300,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN ĐỊNH LƯỢNG: Điện Máy Xanh dùng 3 con cua 1,5–2 kg cho 3 phần (lấy mức giữa 1,75 kg, nhân 4/3 ≈ 2,33 kg, làm tròn 2,3 kg ~ 4 con vừa); Mytour chỉ dùng 1 kg cua cho 2–3 phần. Ưu tiên Điện Máy Xanh vì định lượng chi tiết, nêu rõ dùng cua thịt chắc. Chọn cua còn sống, yếm chắc, càng to khỏe.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 87,
+        "proteinG": 18.06,
+        "carbohydrateG": 0.04,
+        "fatG": 1.08,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 293
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174204",
+      "sourceNutritionNote": "Bản ghi FDC 174204 không công bố Total Sugars — để null, không ước tính."
+    },
+    {
+      "position": 1,
+      "sourceName": "Sả tươi",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "mixed_process",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 16,
+        "unit": "cây",
+        "text": "16 cây",
+        "gramEquivalent": 480,
+        "basis": "16 cây × ~30 g/cây (ước tính phổ biến; không có chuẩn FDC cho đơn vị cây sả VN)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 16,
+          "unit": "piece"
+        }
+      },
+      "note": "Điện Máy Xanh dùng 12 cây sả cho 3 phần → 16 cây cho 4 phần (Mytour cũng dùng lượng sả lớn, 400 g cho 1 kg cua). Một nửa đập dập cắt khúc lót đáy xửng, một nửa đập dập nhét vào bụng/mai cua cho thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.31,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "Bản ghi FDC 168573 không công bố fiber và Total Sugars — để null, không ước tính."
+    },
+    {
+      "position": 2,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 80,
+        "unit": "g",
+        "text": "80 g",
+        "gramEquivalent": 80,
+        "basis": "đơn vị gốc đã là gram (1 củ gừng to ~80 g, ước tính)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 80,
+          "unit": "g"
+        }
+      },
+      "note": "Điện Máy Xanh dùng 1 củ gừng cho 3 phần (thái lát lót cùng sả dưới đáy xửng); cho 4 phần dùng 1 củ to. Gừng cùng sả giúp khử mùi tanh và làm ấm bụng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Quất (tắc)",
+      "canonicalIngredientId": "ING_ENR_7545315D68A54FC5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 20,
+        "basis": "1 quả quất ~20 g (ước tính phổ biến)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Điện Máy Xanh dùng 1 quả quất cho 3 phần để cắt đôi chà xát khử mùi tanh cua; giữ 1 quả cho 4 phần vì chỉ dùng ngoài da, không ăn trực tiếp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 71,
+        "proteinG": 1.88,
+        "carbohydrateG": 15.9,
+        "fatG": 0.86,
+        "fiberG": 6.5,
+        "sugarG": 9.36,
+        "sodiumMg": 10
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168154",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tiêu đen hạt",
+      "canonicalIngredientId": "ING_ENR_7BE3068561479E66",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "muỗng cà phê",
+        "text": "4 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "4 tsp × ~2,3 g/tsp (quy ước 1 tsp tiêu ~2,3 g; hạt nguyên tương đương, ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện Máy Xanh dùng 1 muỗng canh tiêu hạt cho 3 phần → 4 muỗng cà phê cho 4 phần; rắc/xát cùng muối hột lên mình cua trước khi hấp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Muối hột",
+      "canonicalIngredientId": "ING_ENR_9266BF108288156D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "muỗng cà phê",
+        "text": "4 muỗng cà phê",
+        "gramEquivalent": 24,
+        "basis": "4 tsp × 6 g (USDA: 1 tsp muối ~6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện Máy Xanh dùng 1 muỗng canh muối hột cho 3 phần → 4 muỗng cà phê cho 4 phần; xát cùng tiêu hạt lên mình cua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Bia",
+      "canonicalIngredientId": "ING_ENR_A3FED75E4B78B2C3",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 440,
+        "unit": "ml",
+        "text": "440 ml",
+        "gramEquivalent": 444,
+        "basis": "đơn vị gốc đã là ml; 440 ml × ~1,01 g/ml (tỉ trọng bia) ≈ 444 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 440,
+          "unit": "ml"
+        }
+      },
+      "note": "Điện Máy Xanh dùng 330 ml (1 lon) cho 3 phần → 440 ml cho 4 phần. Bia đổ vào nồi hấp (mực bia dưới đáy xửng, không chạm cua) để hơi bia làm cua thơm ngọt; Mytour cũng dùng 1 lon bia cho 1 kg cua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 43,
+        "proteinG": 0.46,
+        "carbohydrateG": 3.55,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168746",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "1 Tbsp (15 ml) × 0,91 g/ml ≈ 13,6 g, làm tròn 14 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện Máy Xanh dùng 2 tsp dầu cho 3 phần → làm tròn 1 muỗng canh cho 4 phần; trộn với gia vị rồi quét lên mai cua trước lần hấp cuối cho cua bóng đẹp, thơm béo.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối tinh",
+      "canonicalIngredientId": "ING_ENR_2E70A9B68938F282",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "1,5 tsp × 6 g (USDA: 1 tsp muối ~6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện Máy Xanh dùng 1 tsp muối cho 3 phần → 1,5 tsp cho 4 phần; trộn cùng dầu ăn và các gia vị khác để quét lên cua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Bột ngọt",
+      "canonicalIngredientId": "ING_ENR_0A4564D231578559",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1,5 tsp × ~4 g (ước tính khối lượng bột)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện Máy Xanh dùng 1 tsp bột ngọt cho 3 phần → 1,5 tsp cho 4 phần; trộn cùng dầu ăn quét lên cua. Ai không dùng bột ngọt có thể bỏ qua.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có bản ghi bột ngọt (MSG) trong SR Legacy/Foundation — để null toàn bộ, không bịa số."
+    },
+    {
+      "position": 10,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 8,
+        "basis": "1,5 tsp × ~5 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện Máy Xanh dùng 1 tsp hạt nêm cho 3 phần → 1,5 tsp cho 4 phần; trộn cùng dầu ăn quét lên cua.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Hạt nêm là sản phẩm thương hiệu (Knorr/Ajinomoto...), thành phần thay đổi theo hãng; không có bản ghi generic tương đương trong FDC — để null toàn bộ."
+    },
+    {
+      "position": 11,
+      "sourceName": "Đường cát trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1,5 tsp × 4 g (1 tsp đường cát ~4 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện Máy Xanh dùng 1 tsp đường cho 3 phần → 1,5 tsp cho 4 phần; trộn cùng dầu ăn quét lên cua cho vị hài hòa.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Cho cua vào thau nước đá lạnh ngâm 10 phút cho cua \"ngủ\" (đờ ra, không còn kẹp), dễ sơ chế và khi hấp cua không bị rụng càng.",
+      "tip": "Điện Máy Xanh: ngâm nước đá 10 phút là bước bắt buộc để cua nằm im; không nên chọc tiết cua sống vì thịt sẽ nhạt.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Dùng bàn chải cứng chà kỹ mai, càng, kẽ chân cua dưới vòi nước chảy cho sạch bùn đất và rong rêu.",
+      "tip": "Chà kỹ các kẽ chân và khớp càng là nơi bám bẩn nhiều nhất."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cắt đôi quả quất, chà xát khắp mình cua để khử mùi tanh, sau đó rửa lại nước sạch một lần nữa và để ráo.",
+      "tip": "Điện Máy Xanh dùng quất chà cua thay vì chanh — mùi quất thơm dịu, hợp với cua hấp sả."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Sả bóc bỏ lớp vỏ ngoài già, rửa sạch, đập dập rồi cắt khúc khoảng 5 cm. Gừng gọt vỏ, thái lát mỏng.",
+      "tip": "Đập dập sả trước khi cắt giúp sả tiết tinh dầu, thơm hơn khi hấp."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Lót một nửa sả và gừng xuống đáy xửng hấp; nhét phần sả gừng còn lại vào khe bụng và dưới mai cua.",
+      "tip": "Lớp sả lót đáy giúp hơi nóng lưu thông, cua không bị đọng nước và thấm đều mùi thơm."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Xếp cua vào xửng (ngửa bụng lên trên để gạch không chảy ra), rắc đều muối hột và tiêu đen hạt lên mình cua.",
+      "tip": "Xếp cua thưa, không chồng lên nhau để hơi nóng phủ đều."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đổ bia vào nồi hấp (mực bia thấp hơn đáy xửng, không để bia chạm vào cua), đun sôi rồi đặt xửng cua lên, đậy kín nắp, hấp lửa lớn 7 phút.",
+      "tip": "Hơi bia làm thịt cua thơm ngọt, át mùi tanh — cả Điện Máy Xanh và Mytour đều dùng cách này.",
+      "timerMinutes": 7
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Mở nắp, trở mặt/đảo vị trí các con cua cho chín đều, đậy nắp lại hấp thêm 5 phút.",
+      "tip": "MÂU THUẪN CÁCH HẤP: Mytour hấp một mạch 10–12 phút không trở; Điện Máy Xanh chia 7 phút + trở cua + 5 phút. Ưu tiên cách Điện Máy Xanh vì trở cua giúp con to con nhỏ chín đều hơn.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Trong lúc chờ cua chín, trộn đều dầu ăn với muối tinh, bột ngọt, hạt nêm và đường thành hỗn hợp sệt.",
+      "tip": "Khuấy kỹ cho gia vị tan bớt vào dầu, khi quét sẽ bám đều lên mai cua."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Mở nắp nồi, dùng cọ phết đều hỗn hợp dầu-gia vị lên mai và càng cua, đậy nắp hấp thêm 1 phút cho gia vị thấm và mai cua bóng đẹp.",
+      "tip": "Điện Máy Xanh: quét dầu rồi hấp thêm 1 phút là bí quyết để cua hấp lên màu đỏ bóng như ngoài hàng.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Kiểm tra cua chín: mai đỏ au, yếm cứng, thử bẻ một càng thấy thịt trắng đục, chắc và róc vỏ là đạt. Gắp cua ra đĩa, trang trí vài khúc sả hấp cùng.",
+      "tip": "Không hấp quá lâu — thịt cua sẽ bị khô bở, mất ngọt."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Dọn cua ra khi còn nóng hổi, chấm kèm muối tiêu vắt nước quất (tận dụng muối, tiêu, quất trong phần nguyên liệu). Ăn ngay để cảm nhận vị ngọt tự nhiên của thịt cua.",
+      "tip": "Cua hấp sả ngon nhất khi ăn nóng; để nguội thịt sẽ tanh và bở dần."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 728.72,
+      "proteinG": 107.23,
+      "carbohydrateG": 41.83,
+      "fatG": 10.56,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 4897.49
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Cua thịt (cua biển sống): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 1,
+        "detail": "Sả tươi: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Gừng tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Quất (tắc): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tiêu đen hạt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Muối hột: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Bia: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Muối tinh: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Đường cát trắng: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

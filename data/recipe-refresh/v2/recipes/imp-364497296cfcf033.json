@@ -1,0 +1,766 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-364497296cfcf033",
+    "slug": "muc-nhoi-thit-hap-gung-hanh",
+    "title": "Mực nhồi thịt hấp gừng hành"
+  },
+  "content": {
+    "description": "Mực ống nhồi thịt xay trộn nấm, hấp chín mềm cùng gừng và hành lá, giữ trọn vị ngọt tự nhiên của hải sản, thanh nhẹ mà đầy đặn.",
+    "cuisine": "vietnamese",
+    "category": "mon_hap_luoc",
+    "region": "trung",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Món hấp",
+      "Hải sản",
+      "Đãi khách",
+      "Thanh đạm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-364497296cfcf033.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://muoibienseafood.com/cach-lam-muc-ong-nhoi-thit/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://eva.vn/bep-eva/cach-lam-muc-nhoi-thit-ngon-don-gian-de-lam-tai-nha-c162a474729.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://fptshop.com.vn/tin-tuc/dien-may/muc-nhoi-thit-hap-184931",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mực ống tươi",
+      "canonicalIngredientId": "SQUID",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram (khoảng 4-5 con theo muoibienseafood.com)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "muoibienseafood.com và eva.vn đều dùng 500 g mực ống cho công thức hấp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 92,
+        "proteinG": 15.58,
+        "carbohydrateG": 3.08,
+        "fatG": 1.38,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 44
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174223",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt heo xay",
+      "canonicalIngredientId": "GROUND_PORK",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "g",
+        "text": "250 g",
+        "gramEquivalent": 250,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 250,
+          "unit": "g"
+        }
+      },
+      "note": "Ba nguồn mâu thuẫn: muoibienseafood.com 250 g thịt heo xay; eva.vn 200 g thịt ba chỉ băm; fptshop.com.vn 100 g thịt heo xay cho 600 g mực. Lấy theo muoibienseafood.com vì đúng công thức 'hấp gừng hành' khớp tên món, ghi rõ các phía.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 263,
+        "proteinG": 16.88,
+        "carbohydrateG": 0,
+        "fatG": 21.19,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167902",
+      "sourceNutritionNote": "USDA không báo cáo đường tổng cho thịt heo xay ('Pork, fresh, ground, raw'); giữ null trường sugar_g."
+    },
+    {
+      "position": 2,
+      "sourceName": "Nấm hương khô",
+      "canonicalIngredientId": "ING_ENR_2DB57285E9ED967F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "nấm hương khô 1 tai ~1 g; 10 tai ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Theo hint của assignment ('Nấm hương'). fptshop.com.vn dùng '10 tai nấm hương khô' cho 600 g mực (không ghi gram) — quy đổi ~10 g cho 500 g mực. eva.vn cũng gợi ý có thể thêm nấm hương vào nhân.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 34,
+        "proteinG": 2.24,
+        "carbohydrateG": 6.79,
+        "fatG": 0.49,
+        "fiberG": 2.5,
+        "sugarG": 2.38,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169242",
+      "sourceNutritionNote": "Số liệu cho nấm hương TƯƠI ('Mushrooms, shiitake, raw'); nấm khô ngâm nở có hàm lượng nước khác nhưng đây là số liệu tương đương gần nhất có trong USDA SR Legacy/Foundation."
+    },
+    {
+      "position": 3,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram (1 củ nhỏ theo muoibienseafood.com)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "muoibienseafood.com: 20 g gừng — 10 g băm nhuyễn trộn nhân, 10 g thái sợi rải lên trên khi hấp. eva.vn: 1 nhánh gừng thái lát hấp cùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "nhánh",
+        "text": "3 nhánh",
+        "gramEquivalent": 30,
+        "basis": "1 nhánh hành lá ~10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "muoibienseafood.com: 3 nhánh hành lá băm nhuyễn trộn vào nhân. eva.vn dùng 6 đầu hành.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 10,
+        "basis": "1 củ hành tím ~10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "eva.vn dùng 1 củ hành khô băm; fptshop.com.vn dùng 2 củ hành tím cho 600 g mực. Lấy 1 củ cho 500 g mực, ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi ~3 g (USDA: 1 clove garlic = 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "eva.vn dùng 4 tép tỏi băm trong nhân. Lấy 2 tép cho vừa (nhân đã có gừng, hành), ghi rõ khác biệt với eva.vn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng nước mắm ~1,2 g/ml ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "muoibienseafood.com và fptshop.com.vn đều nêm 1 muỗng canh nước mắm vào nhân.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "1 muỗng cà phê muối ~6 g (USDA: 1 tsp table salt = 6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "muoibienseafood.com: 1/2 muỗng cà phê muối vào nhân + 1 muỗng cà phê muối pha nước chấm muối tiêu chanh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Bột ngọt",
+      "canonicalIngredientId": "ING_ENR_0A4564D231578559",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1/2 muỗng cà phê bột ngọt ~2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "muoibienseafood.com: 1/2 muỗng cà phê bột ngọt vào nhân.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có mục bột ngọt (monosodium glutamate) trong SR Legacy/Foundation. Để null theo quy tắc, không bịa số."
+    },
+    {
+      "position": 10,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1/2 muỗng cà phê hạt nêm ~2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "eva.vn dùng 1 muỗng cà phê bột nêm; fptshop.com.vn dùng 1 muỗng cà phê hạt nêm. muoibienseafood.com KHÔNG dùng hạt nêm — lấy 1/2 muỗng cà phê dung hòa, ghi rõ mâu thuẫn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Hạt nêm là gia vị tổng hợp, USDA không có số liệu generic trong SR Legacy/Foundation. Để null theo quy tắc."
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2.3,
+        "basis": "1 muỗng cà phê tiêu xay ~2,3 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "muoibienseafood.com: 1 muỗng cà phê tiêu vào nhân + 1/2 muỗng cà phê tiêu pha nước chấm. Tính chung 1 muỗng cà phê cho nhân, nước chấm tính riêng ở bước 7.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.2,
+        "basis": "1 muỗng cà phê đường cát ~4,2 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "eva.vn nêm 1 muỗng canh đường vào nhân; muoibienseafood.com và fptshop.com.vn KHÔNG dùng đường — lấy 1 muỗng cà phê ở mức tối thiểu, ghi rõ mâu thuẫn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Chanh (nước cốt, pha nước chấm)",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê ≈ 5 ml ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "muoibienseafood.com: 1 muỗng cà phê nước cốt chanh pha cùng muối tiêu làm nước chấm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 29,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.32,
+        "fatG": 0.3,
+        "fiberG": 2.8,
+        "sugarG": 2.5,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167746",
+      "sourceNutritionNote": "USDA ghi 'Lemons, raw, without peel'; dùng nước cốt chanh tươi."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế mực: rửa mực với nước muối loãng. Nắm đầu mực kéo nhẹ tách khỏi thân, rút bỏ túi mực đen, xương sống và nội tạng; bóc sạch lớp màng trong bụng. Cắt bỏ hai mắt và nặn bỏ răng ở giữa đầu mực. Rửa sạch lại, để ráo, giữ nguyên thân mực.",
+      "tip": "eva.vn: pha rượu trắng với gừng hoặc muối, bóp đều trong-ngoài mực 5 phút rồi rửa sạch, làm 2-3 lần để khử tanh."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Ngâm nấm hương khô trong nước 20-30 phút cho nở mềm. Vớt ra rửa sạch, cắt bỏ gốc cứng, băm nhuyễn.",
+      "tip": "fptshop.com.vn: ngâm 20-30 phút rồi mới băm.",
+      "timerMinutes": 25
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế gia vị: gừng cạo vỏ, một nửa băm nhuyễn, một nửa thái sợi. Hành lá rửa sạch, thái nhỏ. Hành tím và tỏi bóc vỏ, băm nhuyễn.",
+      "tip": "muoibienseafood.com: chia gừng làm hai phần — băm trộn nhân, thái sợi rải lên trên khi hấp."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Trộn nhân: cho thịt heo xay, nấm hương băm, gừng băm, hành lá, hành tím, tỏi băm vào tô; nêm 1 muỗng canh nước mắm, 1/2 muỗng cà phê muối, 1/2 muỗng cà phê bột ngọt, 1/2 muỗng cà phê hạt nêm, 1 muỗng cà phê tiêu xay và 1 muỗng cà phê đường. Nhồi/quết đều 2-3 phút cho nhân dẻo, để nghỉ 10-15 phút cho ngấm.",
+      "tip": "eva.vn và fptshop.com.vn: ướp nhân 10-15 phút trước khi nhồi.",
+      "timerMinutes": 12
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Nhồi nhân vào thân mực bằng muỗng nhỏ, chỉ nhồi khoảng 80% thân (không nhồi quá đầy). Dùng tăm tre ghim kín miệng mực.",
+      "tip": "Cả ba nguồn đều cảnh báo: nhồi quá đầy khi hấp nhân nở sẽ lồi ra ngoài; chừa khoảng 1 cm để ghim tăm."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Xếp mực đã nhồi vào xửng hấp, rải đều gừng thái sợi lên trên. Hấp cách thủy lửa vừa 15-20 phút đến khi mực chín — kiểm tra bằng cách xiên tăm, thấy nhân rắn là được.",
+      "tip": "muoibienseafood.com: hấp 15-20 phút; eva.vn và fptshop.com.vn: 20-25 phút. Không hấp quá lâu để mực không bị dai.",
+      "timerMinutes": 18
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Pha nước chấm muối tiêu chanh: trộn 1 muỗng cà phê muối, 1/2 muỗng cà phê tiêu xay và 1 muỗng cà phê nước cốt chanh, khuấy đều.",
+      "tip": "muoibienseafood.com: chấm muối tiêu chanh; hoặc dùng nước mắm gừng tùy thích."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Lấy mực ra, để nguội bớt rồi thái lát mỏng khoảng 0,5 cm, xếp ra đĩa. Dọn nóng kèm chén muối tiêu chanh.",
+      "tip": "muoibienseafood.com: món đã nấu nên dùng trong ngày; bảo quản tủ lạnh 1-2 ngày và hâm nóng trước khi ăn."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 4,
+      "proteinG": 0.09,
+      "carbohydrateG": 0.89,
+      "fatG": 0.04,
+      "fiberG": 0.1,
+      "sugarG": 0.09,
+      "sodiumMg": 0.65
+    },
+    "originalPerServing": {
+      "energyKcal": 298.1,
+      "proteinG": 30.77,
+      "carbohydrateG": 8.07,
+      "fatG": 15.07,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1318.13
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Mực ống tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Thịt heo xay: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nấm hương khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành tím: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Bột ngọt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Chanh (nước cốt, pha nước chấm): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

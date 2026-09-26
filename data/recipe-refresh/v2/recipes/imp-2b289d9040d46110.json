@@ -1,0 +1,671 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-2b289d9040d46110",
+    "slug": "dau-phu-kho-gung-han",
+    "title": "Đậu phụ kho gừng Hàn"
+  },
+  "content": {
+    "description": "Đậu phụ kho gừng nước tương ấm áp, món kho Hàn chay nhẹ cho bữa cơm thêm mặn.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Kho",
+      "Đậu phụ",
+      "Gừng",
+      "Hàn Quốc"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-2b289d9040d46110.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://ktasuperstores.com/recipe/sauteed-tofu-in-soy-sauce-dubu-jorim/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=ZszgVG4-Lgc",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Đậu phụ chắc (extra-firm tofu)",
+      "canonicalIngredientId": "ING_ENR_8187D0335B4A3CF2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "KTA: 1 block đậu phụ chắc; Food52/Esther Choi: 1 block 14 oz (≈397 g) cho 2-4 phần. Lấy 400 g cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 144.1,
+        "proteinG": 17.27,
+        "carbohydrateG": 2.78,
+        "fatG": 8.72,
+        "fiberG": 2.3,
+        "sugarG": null,
+        "sodiumMg": 14
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172475",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Gừng tươi băm nhỏ",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 10,
+        "basis": "1 muỗng canh gừng băm ≈ 10 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hai nguồn mâu thuẫn: KTA dùng 1 muỗng canh gừng băm; Food52 chỉ dùng 1 muỗng cà phê gừng bào. Vì tên món là 'kho gừng', lấy theo KTA (1 muỗng canh) để vị gừng rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 79.6,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Xì dầu (soy sauce)",
+      "canonicalIngredientId": "ING_ENR_547A1E993DDF5A3A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "1 muỗng canh xì dầu ≈ 18 g (tỉ trọng xì dầu ~1.2 g/ml, khối lượng chuẩn USDA FoodData Central)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hai nguồn mâu thuẫn lớn: KTA chỉ 1 muỗng canh; Food52 dùng 4 muỗng canh cho 2-4 phần. Lấy 2 muỗng canh cho 3 phần (mức trung gian), người nấu có thể nêm thêm khi kho.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "[audit round 4: đồng bộ lại toàn bộ 7 chỉ số theo bản ghi FDC 174277 — Soy sauce made from soy and wheat (shoyu)]"
+    },
+    {
+      "position": 3,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 12.5,
+        "basis": "1 muỗng canh đường cát ≈ 12.5 g (khối lượng chuẩn USDA FoodData Central)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hai nguồn mâu thuẫn: Food52 dùng 1 muỗng canh; KTA chỉ 1 muỗng cà phê. Lấy theo Food52 (1 muỗng canh) vì món kho cần vị mặn-ngọt cân bằng để ngấm vào đậu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 386.7,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "củ",
+        "text": "0.5 củ",
+        "gramEquivalent": 80,
+        "basis": "1/2 củ hành tây trung bình ≈ 80 g (USDA: 1 củ trung bình ≈ 110 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "KTA: 1/2 củ thái hạt lựu nhỏ; Food52: 1 củ nhỏ thái hạt lựu cho 2-4 phần. Lấy 1/2 củ cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 39.7,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 9,
+        "basis": "1 tép tỏi ≈ 3 g (khối lượng chuẩn USDA FoodData Central cho 1 clove garlic)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "KTA: 3 tép thái lát; Food52: 2 tép băm cho 2-4 phần. Lấy 3 tép băm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "[audit round 4: đồng bộ lại toàn bộ 7 chỉ số theo bản ghi FDC 169230 — Garlic, raw]"
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá trung bình ≈ 15 g (USDA FoodData Central: 1 medium green onion ≈ 15 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "KTA: 1 cây; Food52: 2 cây cho 2-4 phần. Lấy 2 cây.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32.3,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước (hoặc nước dùng rau củ)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 120,
+        "unit": "ml",
+        "text": "120 ml",
+        "gramEquivalent": 120,
+        "basis": "đơn vị gốc đã là ml (1 ml nước ≈ 1 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 120,
+          "unit": "ml"
+        }
+      },
+      "note": "KTA: 1/2 cup nước hoặc nước dùng; Food52: 1/2 cup nước nóng. Nước không có dinh dưỡng đáng kể nên để null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu mè rang",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "1 muỗng canh dầu mè ≈ 13.6 g (tỉ trọng dầu mè ~0.92 g/ml, khối lượng chuẩn USDA FoodData Central)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Food52: 1 muỗng canh dầu mè rang; KTA: 'to taste' (nêm theo khẩu vị). Lấy 1 muỗng canh, cho vào cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884.1,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Hạt mè rang",
+      "canonicalIngredientId": "ING_ENR_36C1725FFCC0FB57",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê hạt mè ≈ 3 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hai nguồn mâu thuẫn: Food52 dùng 1 muỗng canh; KTA 'to taste'. Lấy 1 muỗng cà phê cho 3 phần (mức vừa phải để rắc mặt).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 572.9,
+        "proteinG": 17.73,
+        "carbohydrateG": 23.45,
+        "fatG": 49.67,
+        "fiberG": 11.8,
+        "sugarG": 0.3,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170150",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Ớt bột Hàn (gochugaru)",
+      "canonicalIngredientId": "ING_ENR_397060224F2CC77D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê ớt bột khô ≈ 2 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Món 'kho gừng' không nhất thiết cay: KTA ghi 'chili flakes to taste'; Food52 (bản cay của Esther Choi) dùng tới 2 muỗng canh gochugaru kèm 1 muỗng canh mirin và 1 muỗng cà phê paprika — bản cay đó không áp dụng ở đây. Lấy 1 muỗng cà phê, để tùy chọn. USDA FDC không có mục riêng cho gochugaru nên dinh dưỡng để null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27.2,
+        "basis": "1 muỗng canh dầu ăn ≈ 13.6 g (khối lượng chuẩn USDA FoodData Central cho dầu thực vật)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "KTA: 3 muỗng canh dầu salad để áp chảo đậu; Food52: 2 muỗng canh dầu thực vật. Lấy 2 muỗng canh cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884.1,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Đậu phụ để ráo nước, thấm khô bằng khăn giấy, cắt miếng chữ nhật dày khoảng 1 cm (KTA cắt miếng dày 1/4 inch vừa ăn).",
+      "tip": "KTA: đặt đậu lên khăn giấy cho ráo — đậu khô thì áp chảo mới vàng giòn và không bị bắn dầu."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Gừng băm nhỏ, tỏi băm nhỏ, hành tây thái hạt lựu nhỏ, hành lá thái nhỏ."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Trộn nước sốt kho trong bát: xì dầu, đường, nước lọc (hoặc nước dùng), ớt bột Hàn (nếu dùng). Khuấy cho đường tan.",
+      "tip": "Pha sẵn sốt giúp nêm đều khi kho, đậu không bị chỗ mặn chỗ nhạt."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun nóng dầu ăn trong chảo chống dính lớn lửa vừa, xếp đậu phụ vào áp chảo mỗi mặt 3-4 phút đến khi vàng nhạt, gắp ra để riêng.",
+      "tip": "KTA: áp chảo đến khi vàng nâu hai mặt. Food52: khoảng 3-4 phút mỗi mặt. Không lật đậu quá sớm kẻo nát.",
+      "timerMinutes": 7
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Vẫn chảo đó, cho hành tây, tỏi, gừng và hành lá vào xào khoảng 1 phút cho thơm.",
+      "tip": "KTA: xào thơm 1 phút rồi mới cho nước vào tráng chảo (deglaze) để lấy hết phần cháy thơm dưới đáy chảo.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ nước vào chảo để tráng lấy phần cháy thơm, cho hết hỗn hợp sốt vào, khuấy đều, đun sôi nhẹ.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Xếp đậu phụ trở lại chảo, múc sốt rưới lên từng miếng đậu. Kho lửa vừa-nhỏ 3-4 phút cho đậu ngấm.",
+      "tip": "Food52: rưới sốt lên mặt đậu và hơi nhấc nhẹ miếng đậu để sốt chảy xuống dưới — đậu ngấm đều hai mặt.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Lật mặt đậu, rưới sốt thêm lần nữa, kho tiếp 1-2 phút đến khi nước sốt sệt lại, sánh bám quanh miếng đậu.",
+      "tip": "KTA: kho đến khi nước gần cạn hết. Không kho cạn khô hoàn toàn — chừa lại một ít sốt sệt để chan.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tắt bếp, rưới dầu mè rang lên, đảo nhẹ cho đều.",
+      "tip": "Dầu mè cho vào cuối cùng khi đã tắt bếp để giữ mùi thơm, KTA cũng làm vậy."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn đậu ra đĩa, rắc hạt mè rang và ít hành lá lên trên. Ăn nóng hoặc nguội đều ngon với cơm trắng.",
+      "tip": "Food52: món này ăn nguội với cơm cũng rất ngon, thích hợp làm món ăn kèm (banchan) để tủ lạnh."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Đậu phụ chắc (extra-firm tofu): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Gừng tươi băm nhỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Xì dầu (soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước (hoặc nước dùng rau củ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Dầu mè rang: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Hạt mè rang: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      2,
+      3,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

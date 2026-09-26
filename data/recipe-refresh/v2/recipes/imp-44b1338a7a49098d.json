@@ -1,0 +1,698 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-44b1338a7a49098d",
+    "slug": "canh-kimchi-dau-phu-han",
+    "title": "Canh kim chi đậu phụ Hàn"
+  },
+  "content": {
+    "description": "Kim chi chín xào ra nước đỏ cay đậm, đậu phụ non thấm sốt trong canh sôi, tô kimchi jjigae quốc dân Hàn Quốc.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 35,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Kimchi jjigae",
+      "Hàn Quốc",
+      "Cay",
+      "Cơm nhà"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-44b1338a7a49098d.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.maangchi.com/recipe/kimchi-jjigae",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.koreanbapsang.com/kimchi-jjigae-kimchi-stew/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Kim chi cải thảo chua",
+      "canonicalIngredientId": "ING_ENR_0BD52A84976DC9B2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "lb",
+        "text": "1 lb",
+        "gramEquivalent": 454,
+        "basis": "Maangchi: 1 pound kim chi cho 2-3 phần → giữ nguyên cho 3 phần; 1 lb = 453,6 g, làm tròn 454 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 453.59237,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi dùng 1 lb kim chi cắt khúc vừa ăn; Korean Bapsang dùng 2 cup kim chi nén chặt. Cả hai đều yêu cầu kim chi chua, lên men kỹ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": 1.06,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Nước kim chi",
+      "canonicalIngredientId": "ING_ENR_27FD2253A7768761",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "cup",
+        "text": "0.25 cup",
+        "gramEquivalent": 60,
+        "basis": "Maangchi: 1/4 cup nước kim chi; 1/4 cup = 60 ml ≈ 60 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi dùng 1/4 cup; Korean Bapsang dùng tới 1/2 cup nước kim chi nếu có. Dùng số liệu kim chi cải thảo làm giá trị tương đương.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": 1.06,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": "USDA không có record riêng cho nước kim chi; dùng số liệu kim chi cải thảo (FDC 170392) làm nguyên liệu tương đương gần nhất vì nước kim chi là phần nước của kim chi muối."
+    },
+    {
+      "position": 2,
+      "sourceName": "Thịt ba chỉ heo",
+      "canonicalIngredientId": "PORK_BELLY",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "lb",
+        "text": "0.5 lb",
+        "gramEquivalent": 227,
+        "basis": "Maangchi: 1/2 pound thịt vai hoặc ba chỉ cho 2-3 phần → giữ nguyên; 1/2 lb = 226,8 g, làm tròn 227 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 226.796185,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi cho phép dùng thịt vai hoặc ba chỉ (1/2 lb); Korean Bapsang dùng 4 oz (113 g) thịt ba chỉ có mỡ. Giữ 227 g theo Maangchi vì là nguồn chính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 518,
+        "proteinG": 9.34,
+        "carbohydrateG": 0,
+        "fatG": 53.01,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 32
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167812",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Đậu phụ",
+      "canonicalIngredientId": "TOFU",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 170,
+        "unit": "g",
+        "text": "170 g",
+        "gramEquivalent": 170,
+        "basis": "Korean Bapsang: 6 oz đậu phụ cho công thức của mình; 6 oz = 170,1 g, làm tròn 170 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 170,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi ghi '1/2 gói đậu phụ' không rõ khối lượng; thay bằng 6 oz (170 g) của Korean Bapsang để có định lượng chính xác. Thái lát dày khoảng 1 cm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 144,
+        "proteinG": 17.27,
+        "carbohydrateG": 2.78,
+        "fatG": 8.72,
+        "fiberG": 2.3,
+        "sugarG": null,
+        "sodiumMg": 14
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172475",
+      "sourceNutritionNote": "Record USDA là đậu phụ firm; record không có số liệu đường (sugar, nutrient 269) nên để null."
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 36,
+        "basis": "Maangchi: 3 cây hành lá; 1 cây = 12 g → 36 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi dùng 3 cây; Korean Bapsang dùng 2 cây thái khúc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 27,
+        "proteinG": 0.97,
+        "carbohydrateG": 5.74,
+        "fatG": 0.47,
+        "fiberG": 1.8,
+        "sugarG": 3.91,
+        "sodiumMg": 15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170006",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ vừa",
+        "text": "1 củ vừa",
+        "gramEquivalent": 110,
+        "basis": "Maangchi: 1 củ hành tây vừa, thái lát (1 cup); 1 củ vừa = 110 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi dùng 1 củ hành tây; Korean Bapsang không dùng hành tây trong công thức kimchi jjigae.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "Maangchi: 1 muỗng cà phê muối; 1 muỗng cà phê muối = 6 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 6,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi dùng 1 muỗng cà phê muối kosher; Korean Bapsang nêm muối/xì dầu 'vừa miệng'. Dùng số liệu muối ăn thông thường làm tương đương.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "Maangchi ghi muối kosher; dùng record muối ăn (FDC 173468) làm tương đương gần nhất."
+    },
+    {
+      "position": 7,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 8.4,
+        "basis": "Maangchi: 2 muỗng cà phê đường; 1 muỗng cà phê = 4,2 g → 8,4 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 8.4,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi dùng 2 muỗng cà phê đường để cân bằng vị chua; Korean Bapsang gợi ý thêm 1-2 muỗng cà phê đường nếu kim chi quá chua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 100,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Ớt bột Hàn (gochugaru)",
+      "canonicalIngredientId": "ING_ENR_397060224F2CC77D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 3.6,
+        "basis": "Maangchi: 2 muỗng cà phê ớt bột; 1 muỗng cà phê ớt bột ≈ 1,8 g → 3,6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi dùng 2 muỗng cà phê; Korean Bapsang dùng 1-3 muỗng cà phê tùy độ cay. Dùng số liệu ớt cayenne của USDA làm tương đương.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 318,
+        "proteinG": 12,
+        "carbohydrateG": 56.6,
+        "fatG": 17.3,
+        "fiberG": 27.2,
+        "sugarG": 10.3,
+        "sodiumMg": 30
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170932",
+      "sourceNutritionNote": "Record USDA là ớt cayenne xay, không phải gochugaru Hàn chính gốc; dùng làm nguyên liệu tương đương gần nhất."
+    },
+    {
+      "position": 9,
+      "sourceName": "Tương ớt Hàn (gochujang)",
+      "canonicalIngredientId": "ING_ENR_7B2DCEA4C5B68A51",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "Maangchi: 1 muỗng canh tương ớt; 1 muỗng canh = 15 ml, tương ớt đặc (tỉ trọng ≈ 1,2) → ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi dùng 1 muỗng canh gochujang; Korean Bapsang không dùng gochujang trong kimchi jjigae.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": "https://www.maangchi.com/recipe/kimchi-jjigae",
+      "sourceNutritionNote": "USDA không có record phù hợp cho tương ớt Hàn nguyên bản (record 2244609 là sốt gochujang pha nhiều đường/corn syrup, không đại diện cho gochujang truyền thống), nên để null toàn bộ và ghi rõ."
+    },
+    {
+      "position": 10,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2.8,
+        "basis": "Korean Bapsang: 1 muỗng cà phê tỏi băm; 1 muỗng cà phê = 2,8 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2.8,
+          "unit": "g"
+        }
+      },
+      "note": "Korean Bapsang dùng 1 muỗng cà phê tỏi băm để xào cùng kim chi và thịt; công thức của Maangchi không có tỏi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "Maangchi: 1 muỗng cà phê dầu mè rang; 1 muỗng cà phê = 4,5 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 4.5,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi rưới 1 muỗng cà phê dầu mè; Korean Bapsang dùng 1 muỗng canh dầu ăn để xào — ở đây thêm 1 muỗng canh dầu ăn ở bước xào theo kỹ thuật của Korean Bapsang.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "Korean Bapsang: 1 muỗng canh dầu ăn để xào kim chi và thịt; 1 muỗng canh dầu đậu nành = 13,6 g, làm tròn 14 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 14,
+          "unit": "g"
+        }
+      },
+      "note": "Korean Bapsang xào kim chi, thịt, ớt bột và tỏi với 1 muỗng canh dầu trước khi cho nước — kỹ thuật tạo vị đậm đà mà Maangchi không mô tả chi tiết.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước dùng cá cơm tảo bẹ",
+      "canonicalIngredientId": "ING_ENR_136ED51FDBCB67C6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cup",
+        "text": "2 cup",
+        "gramEquivalent": 473,
+        "basis": "Maangchi: 2 cup nước dùng cho 2-3 phần → giữ nguyên; 2 cup = 473 ml ≈ 473 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi nấu nước dùng từ 7 con cá cơm khô, củ cải, tảo bẹ, gốc hành (4 cup nước → 2,5 cup); cũng cho phép thay bằng nước canh gà/bò. Korean Bapsang dùng 2-2,5 cup nước lọc (hoặc nước vo gạo).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": "https://www.maangchi.com/recipe/kimchi-jjigae",
+      "sourceNutritionNote": "Không có dữ liệu USDA phù hợp cho nước dùng cá cơm tảo bẹ (đã tra ngày 2026-09-26: USDA chỉ có record cá cơm tươi sống FDC 174182, không có cá cơm khô myeolchi hay tảo bẹ khô tương ứng), nên để null toàn bộ và ghi rõ nguồn công thức."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Cắt kim chi thành khúc vừa ăn. Thịt ba chỉ thái lát mỏng hoặc miếng vừa ăn. Đậu phụ thái lát dày khoảng 1 cm. Hành tây thái lát mỏng, hành lá cắt khúc ngắn.",
+      "tip": "Kim chi càng chua, lên men kỹ thì canh càng ngon — lưu ý của cả Maangchi và Korean Bapsang."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đun nóng nồi với 1 muỗng canh dầu ăn ở lửa vừa-cao. Cho thịt ba chỉ, kim chi, 2 muỗng cà phê ớt bột và 1 muỗng cà phê tỏi băm vào, xào 5-7 phút đến khi kim chi mềm và thịt chín tới.",
+      "tip": "Xào kim chi với thịt trước khi cho nước là bước tạo vị đậm đà theo Korean Bapsang; Maangchi cho tất cả nguyên liệu vào nồi cùng lúc.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đổ 1/4 cup nước kim chi và 2 cup nước dùng cá cơm vào nồi, đun sôi.",
+      "tip": "Dùng nước vo gạo (nước vo lần 2-3) thay nước lọc theo mẹo của Korean Bapsang sẽ cho nước canh sánh và ngọt hơn."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Nêm 1 muỗng cà phê muối, 2 muỗng cà phê đường và 1 muỗng canh tương ớt, khuấy đều cho tương tan hết.",
+      "tip": "Đường giúp cân bằng vị chua gắt của kim chi già."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Hạ lửa vừa, đậy nắp, đun liu riu khoảng 15 phút cho kim chi và thịt ngấm gia vị.",
+      "tip": "Korean Bapsang đun sôi 5 phút rồi đậy nắp đun tiếp 15 phút.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho hành tây thái lát vào, đun thêm khoảng 5 phút cho hành chín mềm.",
+      "tip": "Bước này theo công thức của Maangchi; công thức Korean Bapsang không dùng hành tây.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nhẹ nhàng thả đậu phụ và hành lá vào nồi, nêm nếm lại cho vừa miệng, đun sôi thêm khoảng 5 phút cho đậu nóng đều và ngấm vị canh.",
+      "tip": "Không đảo mạnh để đậu không bị vỡ.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rưới 1 muỗng cà phê dầu mè lên mặt, tắt bếp.",
+      "tip": "Dầu mè cho vào cuối để giữ mùi thơm."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Múc canh ra bát khi còn sôi sùng sục, ăn nóng với cơm trắng.",
+      "tip": "Kimchi jjigae ngon nhất khi ăn ngay lúc vừa bắc khỏi bếp."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 499.3,
+      "proteinG": 9.31,
+      "carbohydrateG": 10.85,
+      "fatG": 47.13,
+      "fiberG": 3.28,
+      "sugarG": 6.43,
+      "sodiumMg": 1556.47
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Nước kim chi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 3,
+        "detail": "Đậu phụ: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Ớt bột Hàn (gochugaru): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tương ớt Hàn (gochujang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Nước dùng cá cơm tảo bẹ: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      8,
+      9,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

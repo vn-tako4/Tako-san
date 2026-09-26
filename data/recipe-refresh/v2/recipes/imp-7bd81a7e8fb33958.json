@@ -1,0 +1,576 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-7bd81a7e8fb33958",
+    "slug": "muc-om-sa-thai",
+    "title": "Mực om sả Thái"
+  },
+  "content": {
+    "description": "Mực om sả nước sánh chua nhẹ chanh, món om Thái biển thơm nồng đậm vị.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Om",
+      "Mực",
+      "Sả",
+      "Thái Lan"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-7bd81a7e8fb33958.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://steemit.com/food/@anbpt/thai-style-steamed-squid-recipe",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "http://www.food.com/recipe/phla-pla-meuk-9697?ftab=reviews",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=a8PC7vN4J2U",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mực tươi",
+      "canonicalIngredientId": "SQUID",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram (mực tươi làm sạch, để ráo)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Steemit: 500 g mực (không ghi số phần ăn); Food.com (Phla Pla Meuk): 300 g mực cho công thức gỏi 1 phần. Chọn 500 g cho 3 phần (~165 g/người, mức hợp lý cho món hải sản). LƯU Ý CÁCH LÀM: tên món 'om sả' — nguồn Steemit HẤP mực cùng sả 4–5 phút (sát nghĩa 'om' nhất nên lấy làm cách chính); nguồn Food.com là món GỎI phla (chần mực rồi trộn với sả, chanh, nước mắm) — hai cách khác nhau, ghi rõ để không lẫn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 92,
+        "proteinG": 15.58,
+        "carbohydrateG": 3.08,
+        "fatG": 1.38,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 44
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174223",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Sả tươi",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "cây",
+        "text": "4 cây",
+        "gramEquivalent": 80,
+        "basis": "1 cây sả tươi (bỏ gốc già và lá khô, lấy phần non) ≈ 20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Steemit: 4 cây sả thái lát mỏng cho 500 g mực; Food.com: 3 tbsp sả thái lát cho 300 g mực (tỉ lệ tương đương ~2–3 cây cho 500 g) — lấy theo Steemit: 4 cây.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.31,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "USDA SR Legacy không liệt kê Fiber và Total Sugars cho sả tươi — để null, không bịa số."
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "1 muỗng canh nước mắm ≈ 15 ml ≈ 18 g (tỉ trọng ~1.2)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Ba nguồn mâu thuẫn: Steemit 2 tbsp cho 500 g mực (món hấp); Food.com 3 tbsp cho 300 g mực (món gỏi, mặn hơn nhiều); Shada Jie Kitchen 3 tbsp cho 600 g mực. Lấy theo Steemit (cùng cách hấp): 2 tbsp — nêm lại theo khẩu vị khi ăn vì độ mặn nước mắm các hãng khác nhau.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 25,
+        "basis": "1 muỗng canh đường hạt ≈ 12.5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Steemit: 2 tbsp cho 500 g mực ('thêm đường và chanh theo khẩu vị'); Shada Jie Kitchen: 2 tbsp cho 600 g mực (tỉ lệ tương đương) — lấy theo Steemit: 2 tbsp. Food.com không dùng đường (món gỏi chua mặn thuần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả (lấy nước cốt)",
+        "text": "3 quả (lấy nước cốt)",
+        "gramEquivalent": 45,
+        "basis": "1 quả chanh tươi (lime) vắt được khoảng 1 muỗng canh ≈ 15 ml nước cốt",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Steemit: 3 tbsp nước cốt chanh cho 500 g mực; Food.com: 3.5 tbsp cho 300 g; Shada Jie: 4 tbsp (3 quả chanh) cho 600 g — lấy theo Steemit: 3 tbsp ≈ 3 quả chanh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.42,
+        "carbohydrateG": 8.42,
+        "fatG": 0.07,
+        "fiberG": 0.4,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168156",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "quả",
+        "text": "5 quả",
+        "gramEquivalent": 10,
+        "basis": "1 quả ớt hiểm tươi ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "Steemit chỉ ghi 'chilli (finely chopped)' mà không định lượng; Food.com dùng 2 tbsp ỚT BỘT khô (khác loại ớt tươi); Shada Jie dùng 6–8 quả ớt tươi cho 600 g mực. Quy đổi từ Shada Jie: ~5 quả cho 500 g mực — điều chỉnh theo độ cay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "tép",
+        "text": "5 tép",
+        "gramEquivalent": 15,
+        "basis": "1 tép tỏi trung bình ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "Steemit và Food.com KHÔNG liệt kê tỏi; Shada Jie Kitchen dùng 6–7 tép cho 600 g mực (tỏi là thành phần chuẩn của nước chấm hải sản Thái nam jim seafood). Quy đổi ~5 tép cho 500 g — để optional vì hai nguồn chính không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 20,
+        "basis": "1 cây hành lá ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Hint gốc có hành lá; Steemit ghi 'green onion (chopped)' mà không định lượng — dùng 2 cây cắt khúc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Rau mùi (ngò rí)",
+      "canonicalIngredientId": "ING_ENR_D6CB7B7A9989F08F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhánh",
+        "text": "2 nhánh",
+        "gramEquivalent": 20,
+        "basis": "1 nhánh rau mùi (ngò rí) ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Steemit ghi 'coriander (chopped)' mà không định lượng; Shada Jie dùng 2 nhánh rau mùi cho 600 g — dùng 2 nhánh cắt nhỏ để rắc lên trên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 240,
+        "unit": "ml",
+        "text": "240 ml",
+        "gramEquivalent": 240,
+        "basis": "đơn vị gốc đã là ml (≈ gram)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 240,
+          "unit": "ml"
+        }
+      },
+      "note": "Steemit: 1 cup (240 ml) nước cho vào hấp cùng mực — tạo phần nước 'om' sả; Shada Jie chỉ dùng 2 tbsp nước sôi pha sốt. Lấy theo Steemit vì cùng cách hấp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế mực: rút bỏ nội tạng, mắt và xương sống (mai mực); lột bỏ lớp da ngoài nếu muốn; rửa sạch dưới vòi nước lạnh, dùng khăn giấy thấm thật khô.",
+      "tip": "Thấm khô mực là bước quan trọng — mực ướt sẽ ra nhiều nước khi hấp, làm loãng vị sốt."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Khứa mặt trong thân mực thành hình vảy cá (đan chéo) rồi cắt miếng khoảng 2.5 × 5 cm; râu mực cắt khúc vừa ăn, để các miếng cỡ đều nhau cho chín đồng đều.",
+      "tip": "Food.com: khứa vảy cá giúp gia vị thấm sâu vào thịt mực và khi chín miếng mực cong lại đẹp mắt."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sả đập dập: một nửa thái lát mỏng để lót đáy đĩa sâu lòng (đĩa dùng được trong nồi hấp); một nửa băm nhỏ để pha nước sốt. Hành lá cắt khúc, rau mùi cắt nhỏ, ớt và tỏi băm nhỏ.",
+      "tip": "Đập dập sả trước khi thái giúp tinh dầu sả thoát ra nhiều hơn khi hấp."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Xếp mực lên lớp sả lót trong đĩa. Khuấy tan đường với nước mắm và nước lọc, rưới đều lên mực.",
+      "tip": "Steemit: trộn đều các nguyên liệu rồi mới cho mực vào — đảm bảo mực ngấm đều gia vị ngay từ đầu."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun nồi hấp cho nước sôi mạnh, đặt đĩa mực vào, đậy nắp, hấp 4–5 phút đến khi mực vừa cong lại, thịt chuyển đục hoàn toàn.",
+      "tip": "KHÔNG hấp quá lâu — mực quá lửa sẽ dai như cao su. Steemit hấp 4–5 phút; Shada Jie hấp 8 phút cho 600 g (hơi lâu). Một nguồn Đức hấp đến 20 phút là quá mức, không theo.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Trong lúc chờ hấp, pha nước sốt chấm kiểu Thái: nước mắm, nước cốt chanh, đường, ớt băm, tỏi băm (nếu dùng) và sả băm — khuấy tan đường, nếm và chỉnh cho cân bằng chua–cay–mặn–ngọt.",
+      "tip": "Nước sốt chuẩn Thái (nam jim seafood) phải nếm thấy đủ 4 vị rõ ràng, không vị nào lấn át. Steemit cũng dặn 'thêm đường và chanh theo khẩu vị'."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Lấy đĩa mực ra khỏi nồi hấp (cẩn thận hơi nóng), chắt bớt nước hấp nếu quá nhiều. Rưới đều nước sốt đã pha lên mực còn đang nóng hổi.",
+      "tip": "Rưới sốt khi mực còn nóng giúp mực hút vị nhanh hơn — tương tự cách Food.com trộn mực nóng với sốt."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rắc rau mùi và hành lá cắt khúc lên trên, dọn ngay khi còn nóng với cơm trắng.",
+      "tip": "Món này ngon nhất khi ăn nóng — để nguội mực sẽ tanh và dai dần. Food.com gợi ý thêm vài lát chanh trang trí (optional)."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 153.33,
+      "proteinG": 25.97,
+      "carbohydrateG": 5.13,
+      "fatG": 2.3,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 73.33
+    },
+    "originalPerServing": {
+      "energyKcal": 232.38,
+      "proteinG": 27.77,
+      "carbohydrateG": 24.59,
+      "fatG": 2.53,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1022.72
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Sả tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Chanh tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Ớt hiểm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Rau mùi (ngò rí): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      3,
+      9
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

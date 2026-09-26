@@ -1,0 +1,738 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-afdcd866c1f92192",
+    "slug": "ca-om-ca-chua-y",
+    "title": "Cá om cà chua Ý"
+  },
+  "content": {
+    "description": "Cá om sốt cà chua-hành mềm mọng, món pesce in umido Ý đậm biển.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Umido",
+      "Cá om",
+      "Ý",
+      "Cà chua"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-afdcd866c1f92192.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://memoriediangelina.com/2014/09/26/pesce-allacqua-pazza-fish-poached-in-crazy-water/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.americastestkitchen.com/recipes/13987-pesce-all-acqua-pazza-southern-italian-poached-fish",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cá thịt trắng phi lê (cá vược, cá mú hoặc cá tuyết)",
+      "canonicalIngredientId": "ING_ENR_B3B5F4428C90A28D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 600,
+        "unit": "g",
+        "text": "600 g",
+        "gramEquivalent": 600,
+        "basis": "cân trực tiếp; khoảng 4 miếng phi lê 150 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 600,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn thống nhất dùng cá thịt trắng chắc thịt. ATK dùng 680 g haddock cho 4 người; Memorie di Angelina dùng 6+ miếng phi lê cho 4-6 người. Chọn 600 g (4 miếng) cho 4 suất — cá vược (sea bass) là lựa chọn điển hình nhất theo Angelina.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 97,
+        "proteinG": 18.43,
+        "carbohydrateG": 0,
+        "fatG": 2,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 68
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175142",
+      "sourceNutritionNote": "Số liệu cho cá vược sống (Fish, sea bass, mixed species, raw), SR Legacy."
+    },
+    {
+      "position": 1,
+      "sourceName": "Cà chua bi",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "cân trực tiếp",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn mâu thuẫn về lượng: Memorie di Angelina dùng 500 g cho 4-6 người; ATK dùng 227 g (8 oz) cho đúng 4 người. Chọn 400 g ở giữa — đủ tạo nước sốt sánh mà không át vị cá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": "Số liệu cho cà chua đỏ chín sống (Tomatoes, red, ripe, raw), SR Legacy."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ nhỏ",
+        "text": "1 củ nhỏ",
+        "gramEquivalent": 100,
+        "basis": "1 củ hành tây nhỏ khoảng 100 g (ước lượng phổ biến; USDA: 1 củ vừa ~110 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "ATK có 1 củ hành tây nhỏ băm nhỏ trong soffritto; Memorie di Angelina ghi bản gốc chỉ dùng tỏi, hành tây thuộc 'phiên bản tinh tế hơn'. Vì assignment gợi ý có hành tây, giữ lại theo ATK.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 9,
+        "basis": "1 tép tỏi ~3 g (USDA FoodData Central: 1 clove garlic = 3 g); 3 tép ~9 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn thống nhất: ATK 3 tép thái lát mỏng; Angelina 3-4 tép đập dập.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Dầu olive nguyên chất",
+      "canonicalIngredientId": "ING_ENR_5E8873BA99FB2891",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27.2,
+        "basis": "1 muỗng canh dầu ăn = 15 ml ≈ 13.6 g (tỉ trọng dầu ~0.91); 2 muỗng ≈ 27.2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ATK dùng đúng 2 muỗng canh dầu olive extra-virgin cho 4 người; Angelina không định lượng ('Olive Oil' q.b.). Dùng theo ATK.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167737",
+      "sourceNutritionNote": "USDA không có mục dầu olive nguyên chất riêng trong kết quả phù hợp; dùng số liệu mục dầu ăn hỗn hợp (corn, peanut, and olive) — năng lượng và chất béo tương đương dầu olive nguyên chất."
+    },
+    {
+      "position": 5,
+      "sourceName": "Rượu vang trắng khô",
+      "canonicalIngredientId": "ING_ENR_F568CF3B013695D9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "ml",
+        "text": "60 ml",
+        "gramEquivalent": 59.6,
+        "basis": "60 ml × tỉ trọng rượu vang trắng ~0.994 ≈ 59.6 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 60,
+          "unit": "ml"
+        }
+      },
+      "note": "ATK dùng 1/4 cup (~60 ml); Angelina chỉ ghi 'a splash' (một chút). Dùng 60 ml theo ATK — đủ để khử mùi tanh và tạo chiều sâu cho nước dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 82,
+        "proteinG": 0.07,
+        "carbohydrateG": 2.6,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.96,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174837",
+      "sourceNutritionNote": "Số liệu cho vang trắng để bàn (table wine, white); phần lớn cồn bay hơi khi nấu."
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "ml",
+        "text": "300 ml",
+        "gramEquivalent": 300,
+        "basis": "1 ml nước = 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 300,
+          "unit": "ml"
+        }
+      },
+      "note": "ATK dùng 1 1/4 cup (~296 ml) nước; Angelina ghi 'đủ ngập nửa miếng cá'. Dùng 300 ml, điều chỉnh sao cho nước ngập khoảng nửa miếng cá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 7,
+      "sourceName": "Ớt khô",
+      "canonicalIngredientId": "ING_ENR_D222D118E5B8BD04",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "trái nhỏ",
+        "text": "1 trái nhỏ",
+        "gramEquivalent": 1,
+        "basis": "1 trái ớt khô nhỏ ~1 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều để ớt là tùy chọn: Angelina '1-2 dried chili peppers (optional)'; ATK 1/4 muỗng cà phê ớt bột khô. Số liệu dinh dưỡng dùng cho ớt tươi đỏ — lượng dùng quá nhỏ nên sai số không đáng kể.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "Số liệu cho ớt cay đỏ tươi sống (SR Legacy); dùng gần đúng cho ớt khô vì lượng chỉ ~1 g."
+    },
+    {
+      "position": 8,
+      "sourceName": "Lá nguyệt quế khô",
+      "canonicalIngredientId": "ING_ENR_32C779E4F254DBE5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "lá",
+        "text": "1 lá",
+        "gramEquivalent": 0.3,
+        "basis": "1 lá nguyệt quế khô ~0.3 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ ATK dùng 1 lá nguyệt quế; Angelina không nhắc. Để tùy chọn.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Lượng quá nhỏ (~0.3 g), giá trị dinh dưỡng không đáng kể; không tra cứu."
+    },
+    {
+      "position": 9,
+      "sourceName": "Mùi tây tươi",
+      "canonicalIngredientId": "ING_ENR_D6EDD5F0078ABE8C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh băm",
+        "text": "3 muỗng canh băm",
+        "gramEquivalent": 11.4,
+        "basis": "1 muỗng canh mùi tây băm ~3.8 g (USDA: 1 tbsp parsley = 3.8 g); 3 muỗng ~11.4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ATK dùng 3 muỗng canh mùi tây băm (chia 2 lần); Angelina dùng 'a few sprigs' băm nhỏ. Thống nhất ở 3 muỗng canh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 2.97,
+        "carbohydrateG": 6.33,
+        "fatG": 0.79,
+        "fiberG": 3.3,
+        "sugarG": 0.85,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170416",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ~6 g (USDA: 1 tsp table salt = 6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ATK dùng 1 muỗng cà phê muối kosher chia 2 lần (ướp cá + nấu nước dùng). Dùng tổng 1 muỗng cà phê, nêm nếm lại cuối cùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "1 muỗng cà phê tiêu đen xay ~2.3 g; 1/4 muỗng ~0.6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "ATK dùng 1/4 muỗng cà phê tiêu; Angelina ghi 'salt and pepper' chung chung. Dùng theo ATK.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Ô liu (xanh hoặc đen)",
+      "canonicalIngredientId": "ING_ENR_48656D4A9791D3EA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "cân trực tiếp (đã bỏ hạt)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "Tùy chọn theo Angelina ('a handful of olives'); công thức của Susan Gravely dùng 1/2 cup ô liu Kalamata bỏ hạt cho 4 người (~50 g). Không bắt buộc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 145,
+        "proteinG": 1.03,
+        "carbohydrateG": 3.84,
+        "fatG": 15.32,
+        "fiberG": 3.3,
+        "sugarG": 0.54,
+        "sodiumMg": 1556
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169096",
+      "sourceNutritionNote": "Số liệu cho ô liu xanh ngâm đóng hộp (SR Legacy); ô liu đen Kalamata tương đương về năng lượng."
+    },
+    {
+      "position": 13,
+      "sourceName": "Nụ bạch hoa (caper) ngâm",
+      "canonicalIngredientId": "ING_ENR_9EEA000F42FCD48E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "cân trực tiếp sau khi để ráo (~1.5 muỗng canh; USDA: 1 tbsp caper để ráo ~8.6 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Tùy chọn theo Angelina; công thức Susan Gravely dùng 1/4 cup (~35 g) cho 4 người. Chọn 15 g ở mức vừa phải.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.36,
+        "carbohydrateG": 4.89,
+        "fatG": 0.86,
+        "fiberG": 3.2,
+        "sugarG": 0.41,
+        "sodiumMg": 2348
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172238",
+      "sourceNutritionNote": "Số liệu cho caper đóng hộp (SR Legacy); natri cao do ngâm muối — tráng qua nước trước khi dùng."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế cá: rửa phi lê cá dưới vòi nước lạnh, dùng khăn giấy thấm thật khô. Rắc đều 1/2 muỗng cà phê muối và toàn bộ tiêu đen lên hai mặt cá, để yên 10 phút cho thấm.",
+      "tip": "Thấm khô cá giúp thịt cá săn và không bị tanh khi om.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế rau củ: cà chua bi rửa sạch, bổ đôi; tỏi bóc vỏ thái lát mỏng; hành tây bóc vỏ thái hạt lựu nhỏ; mùi tây rửa sạch, băm nhỏ, chia làm hai phần.",
+      "timerMinutes": 0
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đặt chảo sâu lòng (đủ xếp cá một lớp) lên bếp, cho dầu olive vào đun lửa vừa. Cho tỏi thái lát và ớt khô vào, đảo liên tục 1-2 phút đến khi tỏi bắt đầu xèo xèo và hơi vàng — tuyệt đối không để tỏi cháy kẻo đắng.",
+      "tip": "Tỏi cháy sẽ làm cả nồi nước dùng bị đắng, phải làm lại từ đầu.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho hành tây băm và lá nguyệt quế (nếu dùng) vào chảo cùng 1/2 muỗng cà phê muối còn lại, đảo đều 2-3 phút đến khi hành vừa mềm trong, không cần vàng.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho cà chua bi bổ đôi vào, đảo nhẹ 2-3 phút cho cà vừa mềm và ra nước. Nếu dùng ô liu và nụ bạch hoa, cho vào ở bước này.",
+      "tip": "Không nấu cà quá nhừ — cà chỉ cần mềm, giữ được hình dáng trong nước dùng.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ rượu vang trắng vào chảo, để sôi 1 phút cho bay hơi cồn. Thêm 300 ml nước lọc (hoặc nước dùng cá nếu có) và một nửa lượng mùi tây băm, đun sôi trở lại.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nhẹ nhàng đặt các miếng cá vào chảo (mặt da xuống dưới nếu còn da), gạt rau củ sang bên. Dùng muỗng múc nước dùng rưới lên mặt cá. Lượng nước nên ngập khoảng nửa miếng cá — thêm bớt nước cho phù hợp.",
+      "timerMinutes": 0
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Hạ lửa nhỏ, đậy nắp, om liu riu 5-7 phút tùy độ dày của cá (cá dày 2-2.5 cm cần khoảng 7 phút). Không cần lật cá nếu phi lê không quá dày.",
+      "tip": "Cá chín tới khi thịt chuyển đục hoàn toàn và dễ tách thành từng thớ khi ấn nhẹ bằng nĩa.",
+      "timerMinutes": 7
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tắt bếp, giữ nguyên nắp đậy và để yên 3-5 phút cho cá chín đều bằng hơi nóng còn lại. Vớt bỏ lá nguyệt quế, nêm nếm lại nước dùng cho vừa miệng.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Gắp cá ra 4 bát sâu lòng hoặc đĩa vành cao, múc nước dùng cùng cà chua và rau củ chan đều lên trên. Rắc phần mùi tây còn lại, dùng ngay khi còn nóng.",
+      "tip": "Món này ăn kèm bánh mì giòn để chấm nước dùng — đúng kiểu ngư dân Naples.",
+      "timerMinutes": 0
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 18,
+      "proteinG": 0.88,
+      "carbohydrateG": 3.89,
+      "fatG": 0.2,
+      "fiberG": 1.2,
+      "sugarG": 2.63,
+      "sodiumMg": 5
+    },
+    "originalPerServing": {
+      "energyKcal": 269.67,
+      "proteinG": 29.28,
+      "carbohydrateG": 8.32,
+      "fatG": 12.01,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 974.7
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cá thịt trắng phi lê (cá vược, cá mú hoặc cá tuyết): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Dầu olive nguyên chất: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Rượu vang trắng khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Mùi tây tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      4,
+      6,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

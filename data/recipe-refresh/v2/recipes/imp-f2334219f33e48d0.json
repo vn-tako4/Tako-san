@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-f2334219f33e48d0",
+    "slug": "tom-nuong-muoi-nhat",
+    "title": "Tôm nướng muối Nhật"
+  },
+  "content": {
+    "description": "Tôm nguyên vỏ nướng muối thô cháy cạnh, món ebi shioyaki biển Nhật đơn giản mà đậm đà.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Shioyaki",
+      "Nhật Bản",
+      "Tôm",
+      "Nướng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-f2334219f33e48d0.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "http://food-in-japan.com/2013/03/grilled-prawn-ebi-no-shioyaki/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://recipe.rakuten.co.jp/recipe/1000018825/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm tươi nguyên vỏ (tôm sú/tôm đỏ lớn)",
+      "canonicalIngredientId": "ING_ENR_98A6A85072D597F4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 9,
+        "unit": "con",
+        "text": "9 con",
+        "gramEquivalent": 360,
+        "basis": "tôm sú cỡ lớn ≈ 40 g/con",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 9,
+          "unit": "piece"
+        }
+      },
+      "note": "Rakuten #1000018825: 6 con tôm đỏ cho 2 người → quy đổi 9 con cho 3 người. Dùng tôm nguyên vỏ, cỡ lớn; công thức gốc dùng tôm đỏ ăn sống được (刺身用), nhưng tôm sú tươi thông thường cũng làm được.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "USDA không liệt kê fiber/sugar cho tôm sống (Crustaceans, shrimp, raw, fdcId 175179, SR Legacy); để fiber_g và sugar_g = 0 vì tôm hầu như không chứa chất xơ và đường."
+    },
+    {
+      "position": 1,
+      "sourceName": "Muối (muối biển/muối đá)",
+      "canonicalIngredientId": "ING_ENR_311733F76A72C536",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 10,
+        "basis": "1 nhúm muối (ひとつまみ) ≈ 1 g; 9 con × 1 nhúm ≈ 9 g, làm tròn 2 muỗng cà phê ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rakuten: mỗi con một nhúm muối (1尾につきひとつまみ). food-in-japan: có thể rắc hào phóng vì muối bám chủ yếu trên vỏ, thịt bên trong không bị mặn gắt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Rượu sake",
+      "canonicalIngredientId": "ING_ENR_9E9F222C85438B85",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 90,
+        "unit": "ml",
+        "text": "90 ml",
+        "gramEquivalent": 90,
+        "basis": "1 ml sake ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 90,
+          "unit": "ml"
+        }
+      },
+      "note": "Rakuten: 10 ml/con, rưới lên tôm để 5 phút cho khử mùi tanh. Trang ghi rõ: nhà có trẻ nhỏ hoặc không thích có thể bỏ qua — chỉ dùng muối cũng đủ ngon (岩塩だけでも美味しいですよ). Phần lớn sake được để ráo và bay hơi khi nướng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 134,
+        "proteinG": 0.5,
+        "carbohydrateG": 5,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167723",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "quả",
+        "text": "0.5 quả",
+        "gramEquivalent": 50,
+        "basis": "1 quả chanh cỡ vừa ≈ 100 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Cắt múi cau, ăn kèm để vắt lên tôm khi ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 29,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.32,
+        "fatG": 0.3,
+        "fiberG": 2.8,
+        "sugarG": 2.5,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167746",
+      "sourceNutritionNote": "Số liệu cho thịt chanh không vỏ (Lemons, raw, without peel, fdcId 167746)."
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "cây",
+        "text": "0.5 cây",
+        "gramEquivalent": 50,
+        "basis": "1 cây hành lá Nhật (長ねぎ) ≈ 100 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Thái nhỏ, rắc trang trí khi dọn theo gợi ý của assignment.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 27,
+        "proteinG": 0.97,
+        "carbohydrateG": 5.74,
+        "fatG": 0.47,
+        "fiberG": 1.8,
+        "sugarG": 3.91,
+        "sodiumMg": 15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170006",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Tôm rửa sạch dưới vòi nước, dùng kéo cắt bớt râu dài và chân; thấm thật khô bằng khăn giấy.",
+      "tip": "Rakuten: rửa tôm, gạt nhẹ cho sạch bẩn trước khi ướp."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Xếp tôm vào khay, rưới đều rượu sake lên mình tôm, để yên 5 phút cho khử mùi tanh.",
+      "tip": "Rakuten #1000018825: 10 ml sake cho mỗi con tôm, để 5 phút. Rượu bay hơi hết khi nướng nên trẻ nhỏ ăn cũng yên tâm.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Vớt tôm ra, dùng khăn giấy thấm lại thật khô cả hai mặt.",
+      "tip": "Thấm khô kỹ là bí quyết để vỏ tôm giòn xém thay vì bị hấp hơi khi nướng."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Xiên que tre dọc thân tôm từ đầu đến đuôi để tôm giữ thẳng khi nướng.",
+      "tip": "food-in-japan: xiên que giữ tôm không bị cong khi gặp nhiệt. Nên ngâm que tre trong nước trước để que không bị cháy."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Rắc muối đều khắp mình tôm, cả hai mặt.",
+      "tip": "food-in-japan: rắc muối hào phóng lên vỏ — muối nằm trên vỏ nên thịt tôm bên trong không bị mặn gắt."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Làm nóng vỉ nướng (grill) ở lửa vừa; lót giấy bạc và gấp mép giấy thành gờ cao để hứng nước ngọt chảy ra từ tôm.",
+      "tip": "Rakuten: gấp mép giấy bạc thành gờ (土手) vì tôm sẽ ra nước ngọt khi nướng."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Xếp tôm lên vỉ, nướng 3–5 phút đến khi vỏ chuyển đỏ và hơi xém cạnh; lật mặt, nướng thêm 2–3 phút cho chín đều.",
+      "tip": "Rakuten: lửa vừa, mặt đầu 3–5 phút đến khi lên màu đẹp thì lật, mặt sau 2–3 phút là xong.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Dọn tôm ra đĩa, rắc hành lá thái nhỏ và xếp múi chanh bên cạnh. Khi ăn bóc vỏ, vắt chanh lên thịt tôm.",
+      "tip": "food-in-japan: bóc vỏ khi ăn vì muối bám chủ yếu trên vỏ — thịt tôm bên trong vừa ngọt vừa không mặn."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 151.53,
+      "proteinG": 24.62,
+      "carbohydrateG": 4.01,
+      "fatG": 0.74,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1438.17
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Tôm tươi nguyên vỏ (tôm sú/tôm đỏ lớn): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Muối (muối biển/muối đá): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Chanh tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

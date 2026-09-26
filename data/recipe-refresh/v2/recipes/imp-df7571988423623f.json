@@ -1,0 +1,598 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-df7571988423623f",
+    "slug": "muc-hap-sa-ot",
+    "title": "Mực hấp sả ớt"
+  },
+  "content": {
+    "description": "Mực nguyên hấp sả-ớt giòn ngọt chấm muối tiêu xanh, món hấp biển thanh mát miền Trung.",
+    "cuisine": "vietnamese",
+    "category": "mon_hap_luoc",
+    "region": "trung",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Hấp",
+      "Mực",
+      "Sả",
+      "Miền Trung"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-df7571988423623f.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://buffetposeidon.com/tin-tuc/cach-lam-muc-hap-vua-ngot-vua-gion-ca-nha-cung-me",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://nuocmamtin.com/6-cach-lam-mon-muc-hap-tuyet-ngon/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mực tươi",
+      "canonicalIngredientId": "SQUID",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn chính đều dùng 500 g mực tươi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 92,
+        "proteinG": 15.58,
+        "carbohydrateG": 3.08,
+        "fatG": 1.38,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 44
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174223",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Sả tươi",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 50,
+        "basis": "1 cây sả sau khi bóc vỏ già ≈ 25 g (ước lượng, ghi rõ)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng 2 cây sả (Poseidon ghi '2 củ sả').",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.31,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "Mục USDA không trả number 291 (fiber) và 269 (sugar) nên để null theo quy tắc."
+    },
+    {
+      "position": 2,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 5,
+        "basis": "ớt hiểm nhỏ, 1 quả ≈ 2,5 g (ước lượng, ghi rõ)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Mâu thuẫn: Poseidon dùng 1 quả ớt; nuocmamtin dùng 3-4 quả ớt đỏ. Chọn 2 quả ớt hiểm cho vị cay vừa với 500 g mực, ghi rõ lý do.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "Dùng số liệu ớt cay đỏ chung của USDA (ớt hiểm/bird's eye không có mục riêng)."
+    },
+    {
+      "position": 3,
+      "sourceName": "Chanh",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "quả",
+        "text": "0.5 quả",
+        "gramEquivalent": 20,
+        "basis": "1/2 quả chanh ta ≈ 20 g cả quả (quả chanh ta ~40 g/quả; ước lượng, ghi rõ)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Poseidon: 1/2 quả chanh lấy nước cốt pha vào bát nước mắm chấm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 30,
+        "proteinG": 0.7,
+        "carbohydrateG": 10.54,
+        "fatG": 0.2,
+        "fiberG": 2.8,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168155",
+      "sourceNutritionNote": "'Chanh' trong công thức Việt thường là chanh ta (lime), không phải chanh vàng (lemon)."
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "nhánh",
+        "text": "10 nhánh",
+        "gramEquivalent": 50,
+        "basis": "1 nhánh hành lá ≈ 5 g (ước lượng, ghi rõ)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "piece"
+        }
+      },
+      "note": "Poseidon: 10 nhánh hành lá thái nhỏ rắc lên mực trước khi hấp; nuocmamtin chỉ dùng hành lá trang trí — chọn theo Poseidon vì định lượng rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Gừng",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "excluded_process",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 20,
+        "basis": "1 củ gừng nhỏ ≈ 20 g (ước lượng, ghi rõ)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Mâu thuẫn: Poseidon dùng 2 củ gừng lót đáy xửng hấp khử tanh; nuocmamtin không dùng gừng — để tùy chọn, ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 muỗng canh = 15 ml, quy đổi 1 ml ≈ 1 g (nước mắm thực tế hơi đặc hơn nước do muối)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Poseidon: 1 tbsp nước mắm pha bát chấm (với tiêu, đường, nước cốt chanh); nuocmamtin: 1 thìa nước mắm trộn ướp mực — tổng 2 tbsp (1 ướp + 1 pha chấm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 8,
+        "basis": "1 tsp đường cát ≈ 4 g (quy ước đo lường nhà bếp phổ biến)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Poseidon: 1 tsp đường vào nước mắm chấm; nuocmamtin: 1/2 thìa đường ướp mực — tổng hợp 2 tsp (1 ướp + 1 pha chấm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "Mục USDA không trả number 291 (fiber) và 269 (sugar) nên để null theo quy tắc."
+    },
+    {
+      "position": 8,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1/2 tsp tiêu xay ≈ 1 g (ước lượng, ghi rõ)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều dùng khoảng 1/2 thìa tiêu (Poseidon 1/2 tsp; nuocmamtin 1/2 thìa).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Nước lọc (hấp)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "ml",
+        "text": "500 ml",
+        "gramEquivalent": 500,
+        "basis": "1 ml nước = 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 500,
+          "unit": "ml"
+        }
+      },
+      "note": "Nước cho vào nồi hấp (không phải nguyên liệu ăn); lượng đủ để tạo hơi trong 10-15 phút hấp, ước lượng 500 ml.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173647",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Chọn mực tươi: thân săn chắc, thịt dày, màu sáng, không có mùi lạ.",
+      "tip": "Poseidon: mực tươi sống, thịt dày là yếu tố quyết định độ giòn ngọt của món hấp.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế mực: rút bỏ nội tạng, túi mực, cắt bỏ mắt, lột bỏ lớp màng da bên ngoài, rửa 2-3 lần với nước cho thật sạch. Mực vừa và nhỏ để nguyên con; mực to cắt khoanh vừa ăn.",
+      "tip": "phunutoday (mực hấp sả): rửa từ 2-3 lần nước cho thật sạch để khử tanh.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Ướp mực với 1 muỗng canh nước mắm, 1 muỗng cà phê đường và 1/2 muỗng cà phê tiêu xay, trộn đều, để 15-30 phút cho thấm.",
+      "tip": "Mâu thuẫn nguồn: Poseidon không ướp mà rắc chút hạt nêm trước khi hấp; nuocmamtin/phunutoday-sả ướp 30 phút — công thức này chọn ướp nhẹ để mực đậm đà hơn.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Sơ chế gia vị hấp: sả bóc vỏ già, rửa sạch, đập dập, cắt khúc; gừng (nếu dùng) cạo vỏ, đập dập hoặc thái lát; ớt thái lát vát; hành lá thái nhỏ.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Pha nước mắm chua ngọt để chấm: 1 muỗng canh nước mắm + 1 muỗng cà phê đường + 1/2 muỗng cà phê tiêu (lấy từ phần đã định lượng) + nước cốt 1/2 quả chanh, khuấy đều cho tan.",
+      "tip": "Poseidon: cho tiêu, đường và nước cốt chanh vào bát nước mắm khuấy đều.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ 500 ml nước vào nồi hấp, đun sôi với lửa to.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Xếp sả đập dập (và gừng nếu dùng) xuống đáy đĩa sâu lòng hoặc xửng hấp, xếp mực đã ướp lên trên, rắc ớt thái lát và hành lá thái nhỏ lên mặt.",
+      "tip": "Lớp sả lót đáy giúp mực thơm và không dính đĩa.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Đặt đĩa mực vào nồi hấp, đậy kín nắp, hấp lửa to 5-7 phút đến khi mực chín tới (thân mực cong tròn, thịt săn trắng đục).",
+      "tip": "Mâu thuẫn thời gian: Poseidon hấp 5-7 phút cho mực nguyên con vừa; nuocmamtin hấp 15-20 phút (mực xẻ lát trộn gia vị, khay hấp sâu) — chọn 5-7 phút theo Poseidon, kiểm tra bằng mắt: mực chín tới là cong tròn, hấp quá lâu mực dai.",
+      "timerMinutes": 7
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tắt bếp, để yên đĩa mực trong nồi thêm 1-2 phút rồi lấy ra.",
+      "tip": "phunutoday-sả: để yên 1-2 phút sau khi tắt bếp giúp mực chín đều, không bị sốc nhiệt.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Bày mực hấp ra đĩa, rưới phần nước ngọt tiết ra khi hấp lên trên. Dọn nóng, chấm nước mắm chua ngọt đã pha.",
+      "tip": "Poseidon: ăn ngay khi còn nóng để giữ trọn vị giòn ngọt; có thể ăn với cơm nóng hoặc làm món nhậu."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 153.33,
+      "proteinG": 25.97,
+      "carbohydrateG": 5.13,
+      "fatG": 2.3,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 73.33
+    },
+    "originalPerServing": {
+      "energyKcal": 197.77,
+      "proteinG": 27.31,
+      "carbohydrateG": 15.84,
+      "fatG": 2.5,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 870.01
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Sả tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Ớt hiểm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Chanh: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Nước lọc (hấp): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": [
+      "excluded process ingredient #5: Gừng"
+    ]
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

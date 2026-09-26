@@ -1,0 +1,855 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-b398545ca76325f1",
+    "slug": "canh-bap-cai-sa-thai",
+    "title": "Canh bắp cải sả Thái"
+  },
+  "content": {
+    "description": "Canh cải bắp sả chua thanh trong veo, canh chay Thái nhẹ nhàng khai vị.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Canh chay",
+      "Cải bắp",
+      "Sả",
+      "Thái Lan"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-b398545ca76325f1.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps,title_fix",
+    "sources": [
+      {
+        "url": "https://recipewise.net/recipe/thai-ish-cabbage-soup/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.katebarnes.com.au/recipe/coriander-lemongrass-cabbage-soup/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "title_fix: File cũ bị flag vì ghép công thức canh bắp cải Thái không sả với công thức khác. Đã nghiên cứu lại: công thức theo Recipe Wise 'Thai-Ish Cabbage Soup' (full page, nêu rõ hương vị Thái từ nước mắm, gừng và sả) với định lượng chia đôi từ 6 xuống 3 khẩu phần. Nguồn thứ hai katebarnes.com (Coriander, Lemongrass & Cabbage Soup) là full page độc lập xác nhận khái niệm canh bắp cải + sả là món thật (trùng 5 nguyên liệu lõi: bắp cải, sả, gừng, chanh, ngò rí) nhưng là công thức khác (dùng tamari, nước cốt dừa, khoai lang) nên KHÔNG lấy nguyên liệu từ đó — mọi nguyên liệu ở trên đều từ Recipe Wise."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt bò xay",
+      "canonicalIngredientId": "ING_ENR_78AA16A4FB89BDE5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 130,
+        "unit": "g",
+        "text": "130 g",
+        "gramEquivalent": 130,
+        "basis": "9 oz ≈ 255 g cho 6 phần ăn (nguồn); chia 2 cho 3 khẩu phần ≈ 130 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 130,
+          "unit": "g"
+        }
+      },
+      "note": "Xào săn trước khi cho rau củ",
+      "sourceNutritionPer100g": {
+        "energyKcal": 198,
+        "proteinG": 19.42,
+        "carbohydrateG": 0,
+        "fatG": 12.73,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 68
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168608",
+      "sourceNutritionNote": "FDC 168608, SR Legacy (Beef, grass-fed, ground, raw)"
+    },
+    {
+      "position": 1,
+      "sourceName": "Hành tây băm",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "1/2 củ băm cho 6 phần ăn; chia 2 ≈ 1/4 củ ≈ 30 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Băm nhỏ, xào cùng thịt bò",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": "FDC 170000, SR Legacy"
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 9,
+        "basis": "1 tép tỏi ≈ 3 g; 6 tép cho 6 phần ăn, chia 2",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Băm nhỏ, xào cùng thịt bò và hành tây",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "FDC 169230, SR Legacy"
+    },
+    {
+      "position": 3,
+      "sourceName": "Gừng tươi băm",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "2 muỗng canh cho 6 phần ăn; chia 2 ≈ 1 muỗng canh ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Gọt vỏ, băm nhỏ — hương vị Thái đặc trưng cùng với sả",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": "FDC 169231, SR Legacy"
+    },
+    {
+      "position": 4,
+      "sourceName": "Sả băm nhỏ",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê sả băm cho 6 phần ăn; chia 2 ≈ 1/2 muỗng cà phê ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ lấy phần non, băm thật nhỏ cho thơm",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.31,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "FDC 168573, SR Legacy (Lemon grass (citronella), raw)"
+    },
+    {
+      "position": 5,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 60,
+        "basis": "1 củ cà rốt vừa ≈ 60 g; 2 củ cho 6 phần ăn, chia 2",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Thái hạt lựu hoặc lát mỏng",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": "FDC 170393, SR Legacy"
+    },
+    {
+      "position": 6,
+      "sourceName": "Ớt jalapeño",
+      "canonicalIngredientId": "ING_ENR_576D5AA02AABCB75",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "quả",
+        "text": "0.5 quả",
+        "gramEquivalent": 7,
+        "basis": "1 quả jalapeño ≈ 14 g; 1 quả cho 6 phần ăn, chia 2",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Băm nhỏ; điều chỉnh theo khả năng ăn cay — nguồn ghi có thể quá cay với một số người",
+      "sourceNutritionPer100g": {
+        "energyKcal": 29,
+        "proteinG": 0.91,
+        "carbohydrateG": 6.5,
+        "fatG": 0.37,
+        "fiberG": 2.8,
+        "sugarG": 4.12,
+        "sodiumMg": 3
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168576",
+      "sourceNutritionNote": "FDC 168576, SR Legacy"
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước mắm Thái",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "2 muỗng canh cho 6 phần ăn; chia 2 ≈ 1 muỗng canh ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Gia vị mặn chính tạo vị Thái",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7850
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2706457",
+      "sourceNutritionNote": "FDC 2706457, FNDDS Survey"
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu mè (dầu vừng)",
+      "canonicalIngredientId": "ING_ENR_480ED44AA26C864C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "2 muỗng cà phê cho 6 phần ăn; chia 2 ≈ 1 muỗng cà phê ≈ 4.5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cho vào cùng lúc với nước mắm",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": "FDC 171016, SR Legacy"
+    },
+    {
+      "position": 9,
+      "sourceName": "Nước dùng bò (loại ít muối)",
+      "canonicalIngredientId": "ING_ENR_A9136821AE77A280",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cup",
+        "text": "2 cup",
+        "gramEquivalent": 480,
+        "basis": "4 cups ≈ 960 ml cho 6 phần ăn; chia 2 ≈ 2 cups ≈ 480 ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn cho phép thay bằng nước + viên súp dashida",
+      "sourceNutritionPer100g": {
+        "energyKcal": 7,
+        "proteinG": 1.14,
+        "carbohydrateG": 0.04,
+        "fatG": 0.22,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 372
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171538",
+      "sourceNutritionNote": "FDC 171538, SR Legacy (Soup, beef broth or bouillon canned, ready-to-serve)"
+    },
+    {
+      "position": 10,
+      "sourceName": "Nước tương (loại ít muối)",
+      "canonicalIngredientId": "ING_ENR_44141FC6A0C63220",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng canh",
+        "text": "0.5 muỗng canh",
+        "gramEquivalent": 9,
+        "basis": "1 muỗng canh cho 6 phần ăn; chia 2 ≈ 1/2 muỗng canh ≈ 9 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn cho phép thay bằng Braggs liquid aminos",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "FDC 174277, SR Legacy (Soy sauce made from soy and wheat, shoyu)"
+    },
+    {
+      "position": 11,
+      "sourceName": "Đường nâu",
+      "canonicalIngredientId": "ING_ENR_BCD3DFAFE3C19745",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "2 muỗng canh cho 6 phần ăn; chia 2 ≈ 1 muỗng canh ≈ 14 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cân bằng vị mặn của nước mắm",
+      "sourceNutritionPer100g": {
+        "energyKcal": 380,
+        "proteinG": 0.12,
+        "carbohydrateG": 98.09,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 97.02,
+        "sodiumMg": 28
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168833",
+      "sourceNutritionNote": "FDC 168833, SR Legacy"
+    },
+    {
+      "position": 12,
+      "sourceName": "Bắp cải xanh",
+      "canonicalIngredientId": "ING_ENR_D7A5F5604E2E1AE9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 225,
+        "unit": "g",
+        "text": "225 g",
+        "gramEquivalent": 225,
+        "basis": "1/2 đầu bắp cải thái sợi cho 6 phần ăn; chia 2 ≈ 1/4 đầu ≈ 225 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 225,
+          "unit": "g"
+        }
+      },
+      "note": "Thái sợi (julienne), cho vào sau để giữ độ giòn",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 1.28,
+        "carbohydrateG": 5.8,
+        "fatG": 0.1,
+        "fiberG": 2.5,
+        "sugarG": 3.2,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169975",
+      "sourceNutritionNote": "FDC 169975, SR Legacy"
+    },
+    {
+      "position": 13,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "bó",
+        "text": "1 bó",
+        "gramEquivalent": 100,
+        "basis": "2 bó cho 6 phần ăn; chia 2 ≈ 1 bó ≈ 100 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "bunch"
+        }
+      },
+      "note": "Cắt khúc, cho vào cùng bắp cải",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2709794",
+      "sourceNutritionNote": "FDC 2709794, FNDDS Survey"
+    },
+    {
+      "position": 14,
+      "sourceName": "Nước cốt chanh",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "2 muỗng canh cho 6 phần ăn; chia 2 ≈ 1 muỗng canh ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Vắt từ chanh tươi, cho vào cuối để giữ vị chua thanh",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.42,
+        "carbohydrateG": 8.42,
+        "fatG": 0.07,
+        "fiberG": 0.4,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168156",
+      "sourceNutritionNote": "FDC 168156, SR Legacy (Lime juice, raw)"
+    },
+    {
+      "position": 15,
+      "sourceName": "Ngò rí (rau mùi)",
+      "canonicalIngredientId": "ING_ENR_A4DBF30834E778C1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 8,
+        "basis": "1/4 cup băm cho 6 phần ăn; chia 2 ≈ 2 muỗng canh ≈ 8 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Băm nhỏ, cho vào sau khi tắt bếp",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": "FDC 169997, SR Legacy"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế: hành tây băm nhỏ; tỏi, gừng, sả băm nhuyễn; cà rốt thái hạt lựu hoặc lát mỏng; bắp cải thái sợi; hành lá cắt khúc; ớt jalapeño thái lát; chanh vắt lấy nước cốt; ngò rí băm nhỏ.",
+      "tip": "Bắp cải thái sợi đều để chín cùng lúc; sả chỉ lấy phần non băm thật nhỏ kẻo xơ.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đặt nồi lớn (hoặc nồi gang) lên bếp lửa vừa. Cho thịt bò xay vào, dùng muỗng dằm tơi, xào đến khi thịt nâu vàng đều.",
+      "tip": "Xào thịt đến vàng nâu để tạo vị đậm đà cho nước dùng; gạn bớt mỡ thừa nếu thịt ra nhiều mỡ.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho hành tây băm và tỏi băm vào nồi, đảo đều, xào 2–3 phút đến khi hành mềm và thơm.",
+      "tip": "Không để tỏi cháy kẻo nước dùng bị đắng.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho gừng băm, sả băm, cà rốt, ớt jalapeño, nước mắm, dầu mè, nước dùng bò, nước tương và đường nâu vào nồi. Khuấy đều.",
+      "tip": "Cho sả và gừng vào lúc này để tinh dầu thơm ngấm dần vào nước dùng trong quá trình hầm.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun sôi rồi hạ nhỏ lửa, hầm liu riu 20–25 phút đến khi cà rốt mềm.",
+      "tip": "Hớt bọt nếu có để nước canh trong. Nếm thử: vị mặn của nước mắm, ngọt nhẹ của đường nâu, thơm của sả gừng.",
+      "timerMinutes": 22
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho bắp cải thái sợi, hành lá cắt khúc và nước cốt chanh vào nồi. Đun thêm 5–10 phút đến khi bắp cải vừa mềm.",
+      "tip": "Cho bắp cải vào sau để giữ độ giòn ngọt; nước cốt chanh cho vào cuối để giữ vị chua tươi.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nếm lại và điều chỉnh: thêm nước mắm nếu nhạt, thêm chanh nếu muốn chua hơn, bớt ớt nếu cay quá.",
+      "tip": "Nguồn lưu ý: nước mắm có thể là vị lạ với một số người và món có thể cay — gia giảm theo khẩu vị gia đình.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Tắt bếp, cho ngò rí băm vào khuấy đều. Múc canh ra bát, dùng nóng.",
+      "tip": "Ngò rí cho vào sau khi tắt bếp để giữ hương thơm tươi. Món ăn ấm bụng, giàu đạm và chất xơ — hợp cho bữa tối se lạnh."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 185.3,
+      "proteinG": 13.06,
+      "carbohydrateG": 17.46,
+      "fatG": 7.67,
+      "fiberG": 3.82,
+      "sugarG": 9.63,
+      "sodiumMg": 1297.41
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Thịt bò xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Hành tây băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Gừng tươi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Sả băm nhỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước mắm Thái: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Dầu mè (dầu vừng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Nước dùng bò (loại ít muối): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Nước tương (loại ít muối): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Đường nâu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Bắp cải xanh: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Nước cốt chanh: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 15,
+        "detail": "Ngò rí (rau mùi): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      14,
+      15
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 15,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

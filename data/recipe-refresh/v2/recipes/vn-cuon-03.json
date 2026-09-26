@@ -1,0 +1,821 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "vn-cuon-03",
+    "slug": "nom-hoa-chuoi-tai-heo",
+    "title": "Nộm hoa chuối tai heo giòn sần sật"
+  },
+  "content": {
+    "description": "Hoa chuối bào mỏng ngâm trắng tinh quyện cùng tai heo luộc giòn sần sật, vị chua ngọt thanh tao cùng lạc rang bùi bùi.",
+    "cuisine": "vietnamese",
+    "category": "mon_cuon_nom",
+    "region": "bac",
+    "cookTimeMinutes": 25,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Món nộm",
+      "Khai vị",
+      "Giòn sần sật",
+      "Ăn không ngấy"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/vn-cuon-03.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://vietnamnet.vn/cach-lam-nom-hoa-chuoi-tai-heo-khong-tham-gion-ngon-2178226.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://kingfoodmart.com/bai-viet/cong-thuc-nau-an/nom-hoa-chuoi",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tai heo",
+      "canonicalIngredientId": "ING_ENR_6FC37DE2AC59F16C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cái",
+        "text": "1 cái",
+        "gramEquivalent": 450,
+        "basis": "1 cái tai heo làm sạch (gồm sụn) nặng khoảng 450–500 g; lấy 450 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "vietnamnet: 1 cái tai heo; xaydungso: 500 g tai heo — hai nguồn khớp nhau.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 234,
+        "proteinG": 22.45,
+        "carbohydrateG": 0.6,
+        "fatG": 15.1,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 191
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167857",
+      "sourceNutritionNote": "sugar_g không có trong response USDA."
+    },
+    {
+      "position": 1,
+      "sourceName": "Hoa chuối",
+      "canonicalIngredientId": "ING_ENR_5510308EA3214201",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": "trọng lượng hoa chuối đã thái lát (phần ăn được)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "vietnamnet: 450 g hoa chuối thái sẵn hoặc 1 bắp nguyên (1 bắp ~600 g thái được ~450 g phần ăn được). kingfoodmart: dùng hoa chuối tây, không dùng chuối tiêu vì chát và dễ thâm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có mục hoa chuối (banana blossom); kết quả tìm được 'Bananas, dehydrated' không tương đương — để null toàn bộ."
+    },
+    {
+      "position": 2,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "1 củ cà rốt vừa ≈ 150 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "vietnamnet: 1 củ cà rốt bào sợi; xaydungso: 2 củ cà rốt — mâu thuẫn; lấy 1 củ (150 g) theo vietnamnet vì công thức của họ có định lượng nước trộn rõ ràng đi kèm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Giá đỗ",
+      "canonicalIngredientId": "BEAN_SPROUTS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "xaydungso: 100 g giá đỗ; vietnamnet không dùng giá đỗ — mâu thuẫn; giữ giá đỗ theo xaydungso và hint của assignment.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 30,
+        "proteinG": 3.04,
+        "carbohydrateG": 5.94,
+        "fatG": 0.18,
+        "fiberG": 1.8,
+        "sugarG": 4.13,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169957",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "1/2 củ hành tây vừa (≈ 100 g/củ)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "vietnamnet: 1 củ hành tây thái nhỏ; xaydungso không dùng hành tây — mâu thuẫn; lấy 1/2 củ để món không quá hăng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Rau thơm (kinh giới, húng quế, rau mùi)",
+      "canonicalIngredientId": "ING_ENR_A75AF84236B911F5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "vietnamnet: 'rau thơm các loại'; xaydungso: rau răm, húng quế, mùi tàu; kingfoodmart: tía tô, kinh giới — các nguồn khác nhau về loại rau, điểm chung là rau thơm thái nhỏ; lấy 50 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 3.15,
+        "carbohydrateG": 2.65,
+        "fatG": 0.64,
+        "fiberG": 1.6,
+        "sugarG": 0.3,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172232",
+      "sourceNutritionNote": "Dùng số liệu húng quế tây (sweet basil, fdcId 172232) tương đương hỗn hợp rau thơm."
+    },
+    {
+      "position": 6,
+      "sourceName": "Lạc rang giã dập",
+      "canonicalIngredientId": "ING_ENR_815F6B34851A4A8C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "xaydungso: 50 g lạc rang; vietnamnet: 100 g lạc khô (chưa rang) — mâu thuẫn; lấy 50 g lạc rang giã dập theo xaydungso vì đó là trạng thái dùng trực tiếp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 587,
+        "proteinG": 24.35,
+        "carbohydrateG": 21.26,
+        "fatG": 49.66,
+        "fiberG": 8.4,
+        "sugarG": 4.9,
+        "sodiumMg": 410
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174262",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước cốt chanh",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 55,
+        "unit": "ml",
+        "text": "55 ml",
+        "gramEquivalent": 55,
+        "basis": "1 quả chanh vắt được ~25–30 ml nước cốt; gồm 5 muỗng cà phê (≈ 25 ml) pha nước trộn + 1 quả (≈ 30 ml) ngâm hoa chuối",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 55,
+          "unit": "ml"
+        }
+      },
+      "note": "vietnamnet: 5 muỗng cà phê nước cốt chanh trong nước trộn + chanh ngâm hoa chuối chống thâm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.42,
+        "carbohydrateG": 8.42,
+        "fatG": 0.07,
+        "fiberG": 0.4,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168156",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "1 muỗng canh muối ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "vietnamnet: muối chà rửa tai heo + muối pha nước ngâm hoa chuối; kingfoodmart: thêm ít muối khi luộc tai heo.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "1 củ tỏi ≈ 15 g tép đã bóc",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "vietnamnet: 1 củ tỏi băm nhuyễn cho vào nước trộn nộm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "USDA không có số liệu sugar_g và sodium_mg cho mục này."
+    },
+    {
+      "position": 10,
+      "sourceName": "Ớt tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "1 trái ớt sừng ≈ 10 g; ớt hiểm ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "vietnamnet: 2 quả ớt băm nhuyễn vào nước trộn + ớt thái lát trang trí — lấy 2 trái băm (10 g) + 1 trái trang trí (5 g).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng cà phê",
+        "text": "3 muỗng cà phê",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng cà phê nước mắm ≈ 5 ml; tỉ trọng nước mắm ≈ 1.2 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "vietnamnet: 3 muỗng cà phê nước mắm pha nước trộn nộm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 25,
+        "unit": "g",
+        "text": "25 g",
+        "gramEquivalent": 25,
+        "basis": "5 muỗng cà phê đường ≈ 25 g (1 muỗng cà phê ≈ 5 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 25,
+          "unit": "g"
+        }
+      },
+      "note": "vietnamnet: 5 muỗng cà phê đường pha nước trộn. xaydungso pha tỉ lệ 3 muỗng cà phê đường : 2 muỗng cà phê giấm : 1 muỗng cà phê mắm — quá nhạt mắm, có dấu hiệu nhầm lẫn trong bài; không dùng, lấy theo vietnamnet.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "USDA không trả sugar_g/fiber_g cho 'Sugars, granulated'; để null theo quy tắc."
+    },
+    {
+      "position": 13,
+      "sourceName": "Bột canh",
+      "canonicalIngredientId": "ING_ENR_320147815B9D3EBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê bột canh ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "vietnamnet: 1 thìa bột canh cho vào nước luộc tai heo. Dùng số liệu muối ăn USDA làm tương đương bột canh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "Dùng số liệu muối ăn (table salt, fdcId 173468) tương đương bột canh."
+    },
+    {
+      "position": 14,
+      "sourceName": "Giấm gạo",
+      "canonicalIngredientId": "ING_ENR_422700EA71994D6A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "ml",
+        "text": "30 ml",
+        "gramEquivalent": 30,
+        "basis": "tỉ trọng giấm ≈ 1 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "ml"
+        }
+      },
+      "note": "vietnamnet: giấm hoặc rượu ngâm tai heo 10–15 phút khử mùi hôi; kingfoodmart: có thể dùng giấm hoặc nước cốt chanh ngâm hoa chuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0,
+        "carbohydrateG": 0.04,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.04,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172237",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Hành phi",
+      "canonicalIngredientId": "ING_ENR_AB085C7498BA1E47",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "vietnamnet: rắc hành phi thơm lên mặt nộm khi trình bày.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "hành phi (chiên dầu) không có mục USDA tin cậy; hành khô sống (72 kcal) gây sai lệch vật chất → null"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế tai heo: dùng dao cạo sạch lông và chất bẩn trong tai; lấy muối hòa với nước cốt chanh chà kỹ khắp mặt tai. Ngâm tai heo trong giấm (hoặc rượu trắng) 10–15 phút để khử mùi hôi, rồi rửa sạch lại.",
+      "tip": "vietnamnet: chọn tai có màu sáng, không thâm đen, sờ thấy săn chắc; tai có mùi nặng, nhớt thì không mua.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Luộc tai heo: cho tai vào nồi, đổ nước ngập, thêm 1 muỗng cà phê bột canh (và vài lát gừng nếu thích), đun sôi rồi hạ lửa luộc đến khi tai vừa chín tới. Vớt ra ngâm ngay vào tô nước đá 15 phút cho tai trắng, giòn; để ráo rồi thái sợi mỏng vừa ăn.",
+      "tip": "Không luộc quá chín sẽ mất độ giòn sần sật; ngâm nước đá là bí quyết giúp tai trắng giòn (vietnamnet, kingfoodmart).",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế hoa chuối: bóc bỏ bẹ già bên ngoài, dùng dao sắc thái lát thật mỏng; thái đến đâu cho ngay vào thau nước pha muối và nước cốt 1 quả chanh đến đó. Ngâm 10–15 phút, dùng tay đảo nhẹ cho ra bớt nhựa, vớt ra rửa lại vài lần với nước sạch rồi để thật ráo.",
+      "tip": "Ngâm ngay sau khi thái để hoa chuối không thâm; dùng hoa chuối tây mới ngon, không dùng chuối tiêu vì chát và dễ thâm (vietnamnet, kingfoodmart).",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Sơ chế rau củ còn lại: cà rốt gọt vỏ, bào sợi; giá đỗ nhặt rửa sạch, để ráo; hành tây bóc vỏ, thái lát mỏng; rau thơm nhặt rửa sạch, thái nhỏ; lạc rang bóc vỏ, giã dập vừa (không giã nát).",
+      "tip": "Mọi nguyên liệu phải để thật ráo nước trước khi trộn, nộm mới giòn và không bị ra nước (kingfoodmart)."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Pha nước trộn nộm: cho 3 muỗng cà phê nước mắm, 5 muỗng cà phê đường, 5 muỗng cà phê nước cốt chanh vào bát; khuấy cho đường tan hoàn toàn rồi thêm tỏi băm và ớt băm nhuyễn. Nêm lại cho vị mặn – ngọt – chua cân bằng, hơi cay nhẹ.",
+      "tip": "vietnamnet: có thể gia giảm theo khẩu vị gia đình; kingfoodmart: có thể thay chanh bằng giấm hoặc nước cốt tắc."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Trộn nộm: cho hoa chuối, tai heo thái sợi, cà rốt, giá đỗ, hành tây vào âu lớn; rưới từ từ nước trộn vào, dùng đũa đảo nhẹ cho gia vị phủ đều. Để yên 15 phút cho ngấm.",
+      "tip": "Trộn nhẹ tay để rau thơm và hoa chuối không bị dập nát; không ngâm quá lâu, hoa chuối sẽ mất giòn (vietnamnet, kingfoodmart).",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Hoàn thiện: cho rau thơm thái nhỏ và 2/3 lượng lạc rang giã dập vào, trộn đều lần cuối."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Trình bày và thưởng thức: bày nộm ra đĩa, rắc phần lạc rang còn lại, hành phi và ớt thái lát bỏ hạt lên mặt; ăn ngay.",
+      "tip": "Nộm đạt yêu cầu: hoa chuối trắng giòn không thâm, tai heo sần sật, vị chua – cay – mặn – ngọt hài hòa (vietnamnet)."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 83.75,
+      "proteinG": 4.2,
+      "carbohydrateG": 4.47,
+      "fatG": 6.33,
+      "fiberG": 1.7,
+      "sugarG": 1.68,
+      "sodiumMg": 53.25
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Tai heo: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Hoa chuối: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước cốt chanh: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 8,
+        "detail": "Muối: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Ớt tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Bột canh: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Giấm gạo: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 15,
+        "detail": "Hành phi: all seven nutrients are not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      7,
+      8,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

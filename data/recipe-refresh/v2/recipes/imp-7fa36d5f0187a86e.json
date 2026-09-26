@@ -1,0 +1,583 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-7fa36d5f0187a86e",
+    "slug": "com-chien-ba-chi-hanh",
+    "title": "Cơm chiên ba chỉ hành"
+  },
+  "content": {
+    "description": "Mỡ ba chỉ chiên giòn cạnh rang cùng cơm nguội hành lá, hạt cơm béo thơm khác hẳn cơm chiên thường.",
+    "cuisine": "vietnamese",
+    "category": "mon_nhanh_sang",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Cơm chiên",
+      "Ba chỉ",
+      "Béo thơm",
+      "Nhanh"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-7fa36d5f0187a86e.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://afamily.vn/com-rang-thit-bam-ma-lam-the-nay-thi-ai-khong-thich-moi-la-20190218132440125.chn",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://afamily.vn/thom-lung-mon-thit-ba-chi-rang-xi-dau-20120214100926488.chn",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cơm nguội",
+      "canonicalIngredientId": "RICE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "bát",
+        "text": "3 bát",
+        "gramEquivalent": 600,
+        "basis": "Ước lượng: 1 bát cơm chín kiểu Việt Nam ~200 g (USDA: 1 cup cơm chín ~186 g). Cơm NGUỘI tơi hạt theo khuyến nghị của cả hai nguồn.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "afamily (gốc thewoksoflife): 4 bát cơm cho công thức (không ghi số khẩu phần, ước tương đương 4 phần) — scale tuyến tính về 3 bát cho 3 phần. HNAA/mẹo chiên cơm: cơm nguội để tủ lạnh giúp hạt cơm rời, khô, chiên tơi hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 130,
+        "proteinG": 2.38,
+        "carbohydrateG": 28.6,
+        "fatG": 0.21,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168930",
+      "sourceNutritionNote": "USDA không công bố fiber và sugar cho mục này → null theo quy tắc."
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt ba chỉ",
+      "canonicalIngredientId": "PORK_BELLY",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "Đơn vị gốc đã là gram.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "afamily cơm rang thịt bằm: 225 g thịt cho 4 bát cơm (~4 phần) → scale 3 phần ≈ 170 g, làm tròn 200 g vì thịt là nguyên liệu chính của món. Nguồn thịt ba chỉ rang xì dầu: thái mỏng ~0,3 cm, rang cho ra mỡ trước khi nêm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 518,
+        "proteinG": 9.34,
+        "carbohydrateG": 0,
+        "fatG": 53,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 32
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167812",
+      "sourceNutritionNote": "Dùng 'Pork, fresh, belly, raw' (SR Legacy, không da). USDA còn mục Foundation 'belly, with skin' cho số khác hẳn (energy không có, carbs âm) — chọn bản không da vì món chiên cơm thường thái miếng không da; ghi nhận sự khác biệt."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 30,
+        "basis": "Ước lượng: 1 cây hành lá ~10 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn thịt ba chỉ rang xì dầu: cho hành tươi vào cuối, 'càng ngon khi cho thật nhiều phần đầu hành trắng'. Dùng cả phần đầu trắng (phi thơm đầu) và lá xanh (rắc cuối).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 10,
+        "basis": "Ước lượng: 1 củ tỏi nhỏ ~10 g (khoảng 3-4 tép).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều phi thơm tỏi trước khi cho nguyên liệu chính vào.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 24,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng xì dầu ~1,06 → 15 × 1,06 ≈ 16 g/muỗng.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "afamily cơm rang thịt bằm: hỗn hợp xốt có 30 ml nước tương + 8 ml hắc xì dầu cho 4 bát cơm → scale 3 bát ≈ 28 ml. Món này theo kỹ thuật 'thịt ba chỉ rang xì dầu': trút xì dầu rưới quanh mép chảo cho thịt ngấm đều. Dùng 1,5 muỗng canh xì dầu nhạt (~24 ml).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5490
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "Dùng 'Soy sauce made from soy and wheat (shoyu)' — gần nhất với xì dầu phổ thông dùng trong bếp Việt."
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 20,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng dầu ăn ~0,91 → 15 × 0,91 ≈ 13,6 g/muỗng.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "afamily dùng 30 ml dầu cho 4 bát cơm → scale 3 bát ≈ 22 ml (≈ 1,5 muỗng canh). Thịt ba chỉ tự ra mỡ khi rang nên chỉ cần lượng dầu vừa đủ phi tỏi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2.5,
+        "basis": "1 muỗng cà phê muối ~5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Xì dầu đã mặn; chỉ nêm thêm rất ít muối để điều vị cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38800
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "1 muỗng cà phê tiêu xay ~2,3 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "afamily dùng 1/4 muỗng cà phê hạt tiêu trong hỗn hợp xốt cho 4 bát cơm — giữ nguyên lượng này cho 3 bát.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê đường ~4 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cân bằng vị mặn của xì dầu. Tham khảo: công thức thịt ba chỉ rang (vietgiaitri) dùng 1/2 muỗng cà phê đường cho 400 g thịt cùng 1 muỗng canh nước mắm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 100,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê bột hạt nêm ~4 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Gia vị hoàn thiện món; các nguồn cơm rang thịt bằm đều dùng hạt nêm trong xốt/xào. Để optional vì xì dầu + đường đã đủ vị cơ bản.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.7,
+        "carbohydrateG": 18,
+        "fatG": 13.9,
+        "fiberG": null,
+        "sugarG": 17.4,
+        "sodiumMg": 23900
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "USDA không có đúng 'hạt nêm gà' (Knorr) — dùng số liệu tương đương 'Soup, chicken broth or bouillon, dry' (SR Legacy 171562), chỉ mang tính tham chiếu gần đúng."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Bóp nhẹ cơm nguội cho từng hạt tơi ra, nhặt bỏ hạt vón cục.",
+      "tip": "Cơm nấu từ hôm trước, để tủ lạnh qua đêm sẽ khô ráo, hạt rời — chiên tơi hơn (mẹo chung của các công thức cơm rang)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Thịt ba chỉ rửa sạch, để ráo, thái miếng mỏng khoảng 0,3 cm, bản vừa ăn.",
+      "tip": "Thái mỏng giúp thịt nhanh ra mỡ và xém cạnh khi rang (theo nguồn thịt ba chỉ rang xì dầu)."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Hành lá tách riêng phần đầu trắng và lá xanh, cắt nhỏ. Tỏi bóc vỏ, băm nhuyễn.",
+      "tip": "Phần đầu hành trắng dùng để phi thơm, lá xanh rắc vào cuối giữ màu đẹp."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đặt chảo chống dính lên bếp, cho 1,5 muỗng canh dầu ăn vào đun nóng vừa. Cho thịt ba chỉ vào rang ở lửa vừa, đảo đều cho thịt săn lại và tiết bớt mỡ, các cạnh hơi xém vàng.",
+      "tip": "Không cần nhiều dầu vì thịt ba chỉ tự ra mỡ. Chắt bớt mỡ thừa ra nếu quá nhiều để cơm không bị ngấy.",
+      "timerMinutes": 7
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho tỏi băm và phần đầu hành trắng vào chảo thịt, phi thơm khoảng 30 giây.",
+      "tip": "Phi nhanh tay trên lửa lớn để tỏi thơm mà không bị cháy đắng."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Rưới đều 1,5 muỗng canh xì dầu quanh mép chảo nóng, đảo nhanh cho thịt thấm đều, rang thêm khoảng 1 phút.",
+      "tip": "Rưới xì dầu vào mép chảo nóng giúp xì dầu dậy mùi thơm (kỹ thuật của nguồn rang xì dầu) thay vì đổ trực tiếp lên thịt.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho toàn bộ cơm nguội vào chảo, dùng đũa/xẻng đảo đều tay trên lửa lớn để hạt cơm thấm đều mỡ và xì dầu, hạt cơm săn lại, tơi ra.",
+      "tip": "Đảo liên tục trên lửa lớn — bí quyết để hạt cơm săn, không dính và thấm xốt đều (nguồn afamily/thewoksoflife).",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nêm 1 muỗng cà phê đường, 1/4 muỗng cà phê tiêu, 1 muỗng cà phê hạt nêm (nếu dùng) và 1/2 muỗng cà phê muối nếu còn nhạt. Đảo thêm 1-2 phút cho gia vị thấm.",
+      "tip": "Nêm từng ít một vì xì dầu đã mặn; nếm lại trước khi thêm muối.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho phần lá hành xanh cắt nhỏ vào, đảo nhanh khoảng 30 giây rồi tắt bếp.",
+      "tip": "Cho hành lá vào cuối để giữ màu xanh và mùi thơm tươi; nguồn rang xì dầu nhấn mạnh 'cho thật nhiều phần đầu hành trắng' để món thơm ngon."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Múc cơm chiên ra đĩa, rắc thêm chút tiêu xay, dùng nóng.",
+      "tip": "Cơm chiên ngon nhất khi ăn ngay lúc còn nóng hổi, hạt cơm tơi và thơm mùi hành-xì dầu."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 345.33,
+      "proteinG": 6.23,
+      "carbohydrateG": 0,
+      "fatG": 35.33,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 21.33
+    },
+    "originalPerServing": {
+      "energyKcal": 685.9,
+      "proteinG": 12.28,
+      "carbohydrateG": 61.13,
+      "fatG": 42.69,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1104.75
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cơm nguội: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      0,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 0,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

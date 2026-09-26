@@ -1,0 +1,719 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-b9d222a8c523b8e4",
+    "slug": "dua-leo-dap-toi-tu-xuyen",
+    "title": "Dưa leo đập tỏi Tứ Xuyên"
+  },
+  "content": {
+    "description": "Dưa leo đập dập thấm tỏi-dầu mè-ớt, món khai vị lạnh Tứ Xuyên giòn sần giải ngấy.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Món lạnh",
+      "Tứ Xuyên",
+      "Khai vị",
+      "Giải ngấy"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-b9d222a8c523b8e4.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://thewoksoflife.com/smashed-asian-cucumber-salad/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://thehutong.com/wp-content/documents/recipes/July.pdf",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.thebeijinger.com/blog/2016/10/23/learn-how-make-smacked-cucumber-salad-and-never-be-short-perfect-side-dish",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Dưa leo",
+      "canonicalIngredientId": "CUCUMBER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "WOL dùng 1-1.5 lb (~450-680 g, khoảng 2 quả dưa chuột Anh) cho công thức; hutong dùng 2 quả dưa dài. Lấy 2 quả ≈ 500 g cho 3 phần ăn. Nên chọn dưa vỏ mỏng, ít hạt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 0.65,
+        "carbohydrateG": 3.63,
+        "fatG": 0.11,
+        "fiberG": 0.5,
+        "sugarG": 1.67,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168409",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 15,
+        "basis": "1 tép tỏi trung bình ~5 g → 3 tép ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "hutong dùng 3 tép tỏi băm nhỏ cho 2 quả dưa; WOL dùng 2-4 tép; thebeijinger dùng 1 tbsp tỏi băm — thống nhất 3 tép đập dập băm nhỏ cho 3 phần ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Ớt hiểm tươi",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 6,
+        "basis": "1 quả ớt hiểm tươi ~2 g → 3 quả ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Theo hint assignment dùng ớt hiểm thái lát; hutong dùng 1 quả ớt đỏ vừa thái lát + 2 quả ớt khô cho bước rưới dầu nóng; thebeijinger bản cay dùng dầu ớt + hoa tiêu. Tăng giảm số ớt tùy độ cay mong muốn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "Dùng số liệu ớt cay đỏ tươi của USDA; ớt hiểm tương đương về dinh dưỡng."
+    },
+    {
+      "position": 3,
+      "sourceName": "Ớt khô nguyên quả",
+      "canonicalIngredientId": "ING_ENR_E4C701DB2C22EFFA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 1,
+        "basis": "2 quả ớt khô nhỏ ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "hutong cho 2 quả ớt khô vào dầu nóng rưới lên dưa (kiểu Tứ Xuyên chuẩn); WOL và thebeijinger không dùng — tùy chọn cho bản cay rưới dầu nóng.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có mục ớt khô phù hợp; lượng dùng rất nhỏ nên để null."
+    },
+    {
+      "position": 4,
+      "sourceName": "Hoa tiêu Tứ Xuyên",
+      "canonicalIngredientId": "ING_ENR_3E59EF9CE853955A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1/2 muỗng cà phê hoa tiêu ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "hutong dùng 'a pinch of sichuan peppercorns' rắc lên dưa; thebeijinger dùng 'a pinch' hoa tiêu xay cho bản cay — tùy chọn, tạo tê cay đặc trưng Tứ Xuyên.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có mục hoa tiêu nên để null; lượng dùng rất nhỏ."
+    },
+    {
+      "position": 5,
+      "sourceName": "Muối ăn (ướp dưa)",
+      "canonicalIngredientId": "ING_ENR_361639D21BDA1726",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Muối ăn via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ăn ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL dùng 1 tsp muối ướp cho 450-680 g dưa; thebeijinger dùng 1/2 tsp cho 1-2 quả; hutong chỉ 'a pinch' — ba nguồn mâu thuẫn; lấy 1 tsp theo WOL vì có bước chắt nước (có thể rửa nhanh) nên dưa không bị mặn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.5,
+        "unit": "muỗng cà phê",
+        "text": "2.5 muỗng cà phê",
+        "gramEquivalent": 10,
+        "basis": "1 muỗng cà phê đường cát ≈ 4.2 g → 2.5 tsp ≈ 10.5 g, làm tròn 10 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL dùng 2.5 tsp đường cho công thức; thebeijinger dùng 2 tsp — gần nhau, lấy theo WOL để cân bằng vị chua mặn của sốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Xì dầu nhạt (light soy sauce)",
+      "canonicalIngredientId": "ING_ENR_F4D1B45C3CF6671C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "ml",
+        "text": "15 ml",
+        "gramEquivalent": 18,
+        "basis": "tỉ trọng xì dầu ≈ 1.2 g/ml → 15 ml ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "ml"
+        }
+      },
+      "note": "WOL dùng 3 tsp (= 1 tbsp) cho 450-680 g dưa; thebeijinger dùng 1 tsp; hutong dùng 1/2 tsp — ba nguồn mâu thuẫn rõ rệt; lấy 1 tbsp theo WOL vì công thức này có bước ướp muối chắt nước nên cần sốt đậm hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Giấm đen Chinkiang (Trấn Giang)",
+      "canonicalIngredientId": "ING_ENR_E1BFC928CC74D374",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "ml",
+        "text": "30 ml",
+        "gramEquivalent": 30,
+        "basis": "tỉ trọng giấm ≈ 1.0 g/ml → 30 ml ≈ 30 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "ml"
+        }
+      },
+      "note": "hutong dùng 2 tbsp giấm cho 2 quả dưa; thebeijinger dùng 2 tsp giấm Chinkiang; WOL dùng 1.5 tbsp rice vinegar — mâu thuẫn; món Tứ Xuyên chuẩn dùng giấm đen nên lấy 2 tbsp theo hutong.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có mục giấm đen/giấm gạo nên để null; lượng dùng nhỏ, ảnh hưởng dinh dưỡng không đáng kể."
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "ml",
+        "text": "10 ml",
+        "gramEquivalent": 9,
+        "basis": "tỉ trọng dầu mè ≈ 0.92 g/ml → 10 ml ≈ 9.2 g, làm tròn 9 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "ml"
+        }
+      },
+      "note": "WOL dùng 2 tsp dầu mè trong nước sốt trộn; hutong và thebeijinger không dùng dầu mè riêng (họ dùng dầu rưới nóng) — lấy theo WOL cho nước sốt trộn trực tiếp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu ớt",
+      "canonicalIngredientId": "ING_ENR_FCF4512F3356E1EB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "ml",
+        "text": "10 ml",
+        "gramEquivalent": 9,
+        "basis": "tỉ trọng dầu ≈ 0.91 g/ml → 10 ml ≈ 9.1 g, làm tròn 9 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "ml"
+        }
+      },
+      "note": "WOL dùng 1-2 tsp dầu ớt tùy chọn; thebeijinger bản cay dùng đến 2 tbsp dầu ớt — mâu thuẫn; lấy 2 tsp tùy khẩu vị, có thể bỏ qua nếu đã làm bước rưới dầu nóng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171410",
+      "sourceNutritionNote": "USDA không có mục dầu ớt riêng; tính theo số liệu dầu lạc."
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu lạc (rưới nóng kiểu Tứ Xuyên)",
+      "canonicalIngredientId": "ING_ENR_8991EFA1D52F6B0D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "ml",
+        "text": "30 ml",
+        "gramEquivalent": 27,
+        "basis": "tỉ trọng dầu ăn ≈ 0.91 g/ml → 30 ml ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 30,
+          "unit": "ml"
+        }
+      },
+      "note": "hutong đun nóng 3 tbsp dầu với ớt khô nguyên quả rồi rưới lên dưa; WOL gợi ý rưới 1 tbsp dầu nóng nếu bỏ dầu ớt — mâu thuẫn về lượng; lấy 2 tbsp cho 3 phần, chỉ dùng khi làm bản rưới dầu nóng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171410",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Vừng trắng rang",
+      "canonicalIngredientId": "ING_ENR_290707F4C2139F2E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê vừng ≈ 3 g → 2 tsp ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL dùng 2 tsp vừng rang rắc trang trí; hutong dùng 'some white sesame seeds' — chỉ để trang trí, tùy chọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 573,
+        "proteinG": 17.73,
+        "carbohydrateG": 23.45,
+        "fatG": 49.67,
+        "fiberG": 11.8,
+        "sugarG": 0.3,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170150",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Ngò rí (trang trí)",
+      "canonicalIngredientId": "ING_ENR_0F9D040BCEE6A9AF",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Ngò rí via the same name key",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "WOL dùng 1/4 cup ngò rí thái nhỏ rắc lên khi dọn; hutong và thebeijinger không dùng — tùy chọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Rửa sạch 2 quả dưa leo, lau khô bằng khăn sạch. Cắt bỏ hai đầu dưa.",
+      "tip": "WOL: lau khô dưa trước khi đập để dễ thao tác và sốt bám tốt hơn; nên chọn dưa vỏ mỏng, ít hạt."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đập dưa: đặt lưỡi dao bản to nằm ngang lên quả dưa, dùng lòng bàn tay còn lại vỗ nhẹ cho dưa nứt vỡ, tách thành khoảng 4 dải dài. Lặp lại dọc hết quả dưa.",
+      "tip": "WOL: chỉ vỗ vừa đủ để dưa nứt vỡ, không đập nát — các vết nứt và mép lởm chởm giúp sốt bám và ngấm sâu, đây là linh hồn của món 拍黄瓜."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Dựng các dải dưa đã đập, cắt chéo góc 45° thành miếng vừa ăn dài khoảng 3 cm, cho vào tô lớn.",
+      "tip": "Cắt chéo tạo miếng dưa có diện tích bề mặt lớn, ngấm sốt đều hơn cắt thẳng."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Ướp muối: trộn đều dưa với 1 muỗng cà phê muối, để yên 15-30 phút cho dưa ra bớt nước.",
+      "tip": "WOL: muối rút nước giúp dưa giòn hơn và sốt không bị loãng; thebeijinger ướp 10 phút cũng đủ nếu vội.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Trong lúc chờ dưa ướp: tỏi đập dập băm nhỏ; ớt hiểm thái lát mỏng; rang vừng trắng cho thơm nếu dùng.",
+      "tip": "thebeijinger: nếu không thích mùi tỏi quá nồng, băm tỏi miếng to hơn một chút thay vì băm nhuyễn."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Pha nước sốt: trong bát nhỏ trộn đều xì dầu nhạt, giấm đen Chinkiang, đường, dầu mè và dầu ớt (nếu dùng), khuấy đến khi đường và muối tan hoàn toàn.",
+      "tip": "WOL: khuấy kỹ cho đường muối tan hết trước khi trộn vào dưa thì vị mới đều; nếm thử và chỉnh chua-ngọt-mặn theo khẩu vị."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Chắt bỏ phần nước dưa đã ra; vắt nhẹ cho ráo. Nếu thấy dưa còn mặn, tráng nhanh qua nước lạnh rồi thấm khô.",
+      "tip": "WOL chỉ chắt nước; một số nguồn gợi ý tráng nhanh nước lạnh để bớt mặn — chọn cách nào cũng được, miễn là thấm thật khô trước khi trộn sốt."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho dưa đã ráo vào tô, thêm tỏi băm, ớt hiểm thái lát, rưới nước sốt lên và trộn đều tay cho từng miếng dưa áo đều sốt.",
+      "tip": "Trộn bằng tay (đeo găng) hoặc đũa cả nhẹ nhàng để không làm nát miếng dưa đã đập."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Bản Tứ Xuyên rưới dầu nóng (tùy chọn, thay cho dầu ớt): đun nóng dầu lạc trong chảo/wok cùng ớt khô nguyên quả và hoa tiêu đến khi ớt chuyển đỏ tươi, dậy mùi thơm thì rưới ngay lên đĩa dưa.",
+      "tip": "hutong: rưới dầu đang sôi lên dưa để 'đánh thức' mùi tỏi ớt — nhưng đừng để ớt cháy đen sẽ đắng; không khuấy mạnh làm nhũ hóa, chỉ trộn nhẹ để sốt thành lớp (layered sauce).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Rắc vừng trắng rang và ngò rí thái nhỏ lên trên (tùy chọn). Trộn nhẹ lần cuối."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Nếm lại và chỉnh vị: thiếu mặn thêm chút xì dầu, thiếu chua thêm giấm, muốn cay hơn thêm dầu ớt hoặc ớt hiểm.",
+      "tip": "thebeijinger (bản cay): giảm đường và giấm xuống còn 1/2 tsp mỗi loại rồi thêm dầu ớt + hoa tiêu xay nếu thích cay tê đúng chất Tứ Xuyên."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Dọn ngay, hoặc đậy kín ướp lạnh 15-30 phút cho ngấm rồi dọn. Không trộn sốt quá sớm và không để lâu.",
+      "tip": "WOL cảnh báo: muối trong sốt tiếp tục rút nước dưa — trộn xong để lâu dưa sẽ mềm và sốt bị loãng, nên trộn sát giờ ăn."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 25,
+      "proteinG": 1.08,
+      "carbohydrateG": 6.05,
+      "fatG": 0.18,
+      "fiberG": 0.83,
+      "sugarG": 2.78,
+      "sodiumMg": 3.33
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Ớt hiểm tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Muối ăn (ướp dưa): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Xì dầu nhạt (light soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Giấm đen Chinkiang (Trấn Giang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      4,
+      5,
+      6,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

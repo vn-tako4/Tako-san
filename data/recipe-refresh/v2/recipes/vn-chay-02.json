@@ -1,0 +1,757 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "vn-chay-02",
+    "slug": "canh-nam-hat-sen-tao-do",
+    "title": "Canh nấm hạt sen táo đỏ thanh lọc"
+  },
+  "content": {
+    "description": "Nước canh trong veo ngọt ngào từ củ quả ninh tự nhiên, hạt sen bở tơi bùi béo cùng các loại nấm tươi bổ dưỡng an thần.",
+    "cuisine": "vietnamese",
+    "category": "mon_chay",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Món chay",
+      "Bổ dưỡng",
+      "An thần",
+      "Thanh nhiệt"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/vn-chay-02.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://fptshop.com.vn/tin-tuc/dien-may/canh-cu-sen-164454",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://mytour.vn/vi/blog/bai-viet/thu-mon-canh-nam-chay-thom-ngon-giau-dinh-duong.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "cân trực tiếp; thái lát mỏng",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "MyTour: 150 g nấm các loại (rơm/hương/bạch tuyết) cho 2-3 người; món này chia 100 g nấm đùi gà + 100 g nấm kim châm cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": 1.11,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "Nấm đùi gà (king oyster, Pleurotus eryngii) không có mục riêng trong SR Legacy; dùng 'Mushrooms, oyster, raw' làm tương đương."
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm kim châm",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "cân trực tiếp; cắt bỏ gốc, tách nhỏ",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "Xem note nấm đùi gà: 100 g nấm kim châm cho 4 phần (quy từ 150 g nấm các loại/2-3 người của MyTour).",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": 2.42,
+        "carbohydrateG": 8.14,
+        "fatG": 0.24,
+        "fiberG": 2.94,
+        "sugarG": null,
+        "sodiumMg": 0.42
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003600",
+      "sourceNutritionNote": "Mục Foundation 'Mushroom, enoki' thiếu energy (208) và sugar (269) trong API — để null theo quy tắc."
+    },
+    {
+      "position": 2,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 150,
+        "basis": "1 củ cà rốt vừa ~100-150 g; lấy 150 g, tỉa hoa",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "FPT Shop: 1 củ; MyTour: 1 củ cho 2-3 người — lấy 1 củ (~150 g) tỉa hoa cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Bắp ngọt",
+      "canonicalIngredientId": "ING_ENR_1E552577107218D7",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "trái",
+        "text": "0.5 trái",
+        "gramEquivalent": 80,
+        "basis": "1 trái bắp ngọt ~200-250 g cả cùi, hạt ≈ 120 g; dùng 1/2 trái lấy hạt ≈ 80 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Không nguồn nào định lượng bắp ngọt cho món canh này; bắp ngọt có trong hint món ăn — 1/2 trái là mức phổ biến cho nồi canh 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 86,
+        "proteinG": 3.27,
+        "carbohydrateG": 18.7,
+        "fatG": 1.35,
+        "fiberG": 2,
+        "sugarG": 6.26,
+        "sodiumMg": 15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169998",
+      "sourceNutritionNote": "Số liệu bắp ngọt sống; nấu chín thay đổi không đáng kể ở mức dùng này."
+    },
+    {
+      "position": 4,
+      "sourceName": "Củ sen",
+      "canonicalIngredientId": "ING_ENR_311715371CB6C6DA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "cân trực tiếp; gọt vỏ, thái lát",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "FPT Shop (canh củ sen hầm táo đỏ): 300 g — lấy nguyên. Ngâm nước muối loãng sau khi thái để không thâm (FPT Shop).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 74,
+        "proteinG": 2.6,
+        "carbohydrateG": 17.23,
+        "fatG": 0.1,
+        "fiberG": 4.9,
+        "sugarG": null,
+        "sodiumMg": 40
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169250",
+      "sourceNutritionNote": "Mục 'Lotus root, raw' thiếu sugar (269) trong API — để null theo quy tắc."
+    },
+    {
+      "position": 5,
+      "sourceName": "Hạt sen khô",
+      "canonicalIngredientId": "ING_ENR_B734035A0E242BBD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "cân khô trước khi ngâm",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "FPT Shop: 100 g (không ghi tươi/khô); MyTour: 100 g cho 2-3 người — mâu thuẫn về scale, lấy 150 g hạt sen khô cho 4 phần; ngâm nở và bỏ tâm trước khi nấu (MyTour, Điện Máy Xanh).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 332,
+        "proteinG": 15.41,
+        "carbohydrateG": 64.47,
+        "fatG": 1.97,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170149",
+      "sourceNutritionNote": "Mục 'Seeds, lotus seeds, dried' thiếu fiber (291) và sugar (269) trong API — để null theo quy tắc."
+    },
+    {
+      "position": 6,
+      "sourceName": "Táo đỏ khô",
+      "canonicalIngredientId": "ING_ENR_4946946A3DA641E5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "1 quả táo đỏ khô ~5-6 g; 50 g ≈ 8-10 quả",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "FPT Shop: 100 g; Tripi (canh chân nấm táo đỏ): 5 quả (~25-30 g) — mâu thuẫn, lấy 50 g trung gian cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 281,
+        "proteinG": 4.72,
+        "carbohydrateG": 72.52,
+        "fatG": 0.5,
+        "fiberG": 6,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168152",
+      "sourceNutritionNote": "USDA Jujube, Chinese, fresh, dried (FDC 168152) — mục táo đỏ KHÔ thật trong USDA (thay raw)"
+    },
+    {
+      "position": 7,
+      "sourceName": "Kỷ tử khô",
+      "canonicalIngredientId": "ING_ENR_BF0E94A420F03DA6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "cân trực tiếp",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "FPT Shop: 20 g kỷ tử; hint món ăn không có kỷ tử — để optional, giảm còn 10 g cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 349,
+        "proteinG": 14.26,
+        "carbohydrateG": 77.06,
+        "fatG": 0.39,
+        "fiberG": 13,
+        "sugarG": 45.61,
+        "sodiumMg": 298
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173032",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Mùi tàu",
+      "canonicalIngredientId": "ING_ENR_A51E0690D1C20752",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "1 nắm nhỏ mùi tàu ~10 g; thái khúc 0,5 cm",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "MyTour dùng rau mùi tàu thái khúc cho canh nấm chay — lấy 1 nắm nhỏ cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": "Mùi tàu (culantro) không có trong USDA; dùng 'Coriander (cilantro) leaves, raw' (ngò rí) làm tương đương."
+    },
+    {
+      "position": 9,
+      "sourceName": "Boa rô",
+      "canonicalIngredientId": "ING_ENR_E091C2CD98FD6EA1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "cây",
+        "text": "0.5 cây",
+        "gramEquivalent": 60,
+        "basis": "1 cây boa rô ~100-150 g; dùng 1/2 cây ≈ 60 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "MyTour: 1 củ boa rô cho 2-3 người — lấy 1/2 cây cho 4 phần; phần trắng phi thơm, phần lá cho vào cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 61,
+        "proteinG": 1.5,
+        "carbohydrateG": 14.15,
+        "fatG": 0.3,
+        "fiberG": 1.8,
+        "sugarG": 3.9,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169246",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối hột",
+      "canonicalIngredientId": "ING_ENR_9266BF108288156D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 12,
+        "basis": "USDA: 1 muỗng cà phê muối ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Saigonese Baguette: 1 thìa cà phê muối cho 500 ml nước canh nấm; MyTour nêm 1 thìa nước mắm + 1 thìa hạt nêm cho 1 lít — quy 2 muỗng cà phê muối hột cho 1,5 lít, nêm thêm theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Hạt nêm chay",
+      "canonicalIngredientId": "ING_ENR_E0E5BC7DAA233BCD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 10,
+        "basis": "ước lượng theo khối lượng riêng bột nêm: 1 muỗng canh ≈ 10 g; không có nguồn chuẩn",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MyTour: 1 thìa hạt nêm cho 1 lít nước (2-3 người) — quy 1 muỗng canh cho 1,5 lít/4 phần; nêm thêm theo khẩu vị.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có mục hạt nêm chay; không bịa số — để null toàn bộ."
+    },
+    {
+      "position": 12,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "USDA: 1 muỗng canh dầu ăn ≈ 13,6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MyTour: 1,5-2 thìa dầu ăn chay để xào nguyên liệu trước khi đổ nước — lấy 1 muỗng canh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "Dùng mục SR Legacy 'Oil, soybean, salad or cooking' (fdcId 171411)."
+    },
+    {
+      "position": 13,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "lít",
+        "text": "1.5 lít",
+        "gramEquivalent": 1500,
+        "basis": "1 lít = 1000 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "l"
+        }
+      },
+      "note": "FPT Shop: 1,5 lít nước cho canh củ sen hầm táo đỏ; MyTour: 1 lít cho 2-3 người — 1,5 lít cho 4 phần hợp lý, hai nguồn nhất quán khi quy scale.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Ngâm táo đỏ trong nước ấm 10 phút cho nở mềm, vớt ra để ráo. Hạt sen khô ngâm nở, tách bỏ tâm để canh không bị đắng.",
+      "tip": "Táo đỏ ngâm nở trước khi hầm cho nhanh mềm (Tripi); hạt sen bỏ tâm để không đắng (MyTour). Có thể ngâm hạt sen khô 30-45 phút nếu hạt còn cứng (Điện Máy Xanh).",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Củ sen gọt vỏ, rửa sạch, thái lát mỏng vừa ăn rồi ngâm ngay vào âu nước muối loãng.",
+      "tip": "Ngâm củ sen trong nước muối loãng để giữ độ giòn và không bị thâm đen (FPT Shop)."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cà rốt gọt vỏ, tỉa hoa dày khoảng 0,5-1 cm. Bắp ngọt tách hạt hoặc cắt khúc vừa ăn.",
+      "tip": "Cà rốt cắt dày một chút sẽ ngon hơn khi hầm (Điện Máy Xanh); tỉa hoa cho đẹp mắt (MyTour)."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Nấm đùi gà cắt bỏ gốc, thái lát mỏng. Nấm kim châm cắt bỏ gốc, tách thành chùm nhỏ, rửa sạch nhẹ tay, để ráo.",
+      "tip": "Nấm rửa nhẹ dưới vòi nước, để ráo hoàn toàn; nấm kim châm quá dài có thể cắt đôi (Saigonese Baguette)."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Boa rô rửa sạch, thái nhỏ phần trắng để phi thơm, phần lá để riêng. Mùi tàu cắt bỏ rễ, thái khúc dài khoảng 0,5 cm.",
+      "tip": "Chia boa rô làm hai phần dùng ở hai thời điểm khác nhau (MyTour)."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đun nóng 1 muỗng canh dầu ăn, phi thơm phần trắng boa rô. Cho nấm đùi gà, cà rốt, củ sen, bắp và hạt sen vào xào sơ 1-2 phút, nêm 1 muỗng cà phê muối hột và 1/2 muỗng canh hạt nêm chay cho thấm.",
+      "tip": "Xào sơ nguyên liệu với gia vị trước khi đổ nước giúp canh đậm đà hơn (MyTour xào cà rốt, bí đỏ, hạt sen, nấm rồi mới thêm nước).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đổ 1,5 lít nước lọc vào nồi, đun sôi rồi hạ lửa nhỏ, hầm khoảng 15 phút cho hạt sen, củ sen và cà rốt chín mềm, vớt bọt để nước trong.",
+      "tip": "Cho hạt sen vào nấu trước vì lâu mềm nhất; vớt bọt trong quá trình hầm để nước canh trong (FPT Shop).",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho táo đỏ vào, hầm thêm 10-15 phút cho táo ra vị ngọt thanh.",
+      "tip": "Táo đỏ cho vào sau để không bị nát bở; FPT Shop hầm táo đỏ cùng đợt với củ sen, cà rốt khoảng 20 phút.",
+      "timerMinutes": 12
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho nấm kim châm và kỷ tử (nếu dùng) vào, nấu thêm 3-5 phút cho nấm vừa chín tới.",
+      "tip": "Nấm chín rất nhanh, chỉ cần 3-5 phút là mềm — nấu lâu nấm bị dai, mất ngọt (MyTour, Saigonese Baguette).",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Nêm nếm lại với muối hột và hạt nêm chay cho vừa ăn.",
+      "tip": "Canh thanh lọc nên nêm nhạt vừa phải để giữ vị ngọt tự nhiên của táo đỏ, củ sen và nấm."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Cho phần lá boa rô và mùi tàu vào, tắt bếp. Múc ra tô, rắc thêm ít tiêu xay, dùng nóng.",
+      "tip": "Rau thơm cho vào cuối cùng để giữ mùi thơm (MyTour rắc lá mùi lên trên khi dọn)."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 8.25,
+      "proteinG": 0.83,
+      "carbohydrateG": 1.52,
+      "fatG": 0.1,
+      "fiberG": 0.58,
+      "sugarG": 0.28,
+      "sodiumMg": 4.5
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": 11.39,
+      "carbohydrateG": 61.19,
+      "fatG": 4.87,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1240.32
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Nấm kim châm: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Bắp ngọt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 4,
+        "detail": "Củ sen: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hạt sen khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Táo đỏ khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Mùi tàu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Boa rô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Muối hột: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Hạt nêm chay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "MISSING_NUTRIENT_REFERENCE",
+        "ingredientPosition": 13,
+        "detail": "Nước lọc: nutrient values have no source reference"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      10,
+      11,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,979 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-d4d1de72f13e8f30",
+    "slug": "lasagna-bo-bam",
+    "title": "Lasagna bò bằm"
+  },
+  "content": {
+    "description": "Lớp mì-sốt bò-béchamel-phô mai xếp chồng nướng vàng, đĩa lasagna Bologna sang trọng chủ nhật.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 80,
+    "servings": 6,
+    "difficulty": "hard",
+    "tags": [
+      "Lasagna",
+      "Ý",
+      "Nướng lò",
+      "Chủ nhật"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-d4d1de72f13e8f30.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.giallozafferano.com/recipes/Lasagne-alla-Bolognese.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=FBCzH1CcxCA",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://nigelwakelen.com/italian-recipe/lasagne-alla-bolognese/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt bò xay",
+      "canonicalIngredientId": "ING_ENR_78AA16A4FB89BDE5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 525,
+        "unit": "g",
+        "text": "525 g",
+        "gramEquivalent": 525,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 525,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN ASSIGNMENT: tên món ghi 'bò bằm' (thịt bò xay) nhưng hint_ingredients ghi 'thịt heo xay'. Công thức GZ chuẩn: 700 g thịt bò xay + 270 g pancetta tươi (ba chỉ heo muối, KHÔNG phải thịt heo xay) cho 8 phần; scale 6/8 → 525 g bò. Ưu tiên GZ (nguồn Ý chuẩn). GZ cũng gợi ý có thể trộn thêm thịt heo xay cho béo hơn nhưng bản gốc là bò + pancetta.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 254,
+        "proteinG": 17.17,
+        "carbohydrateG": 0,
+        "fatG": 20,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 66
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174036",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Pancetta tươi (ba chỉ heo muối, không hun khói)",
+      "canonicalIngredientId": "ING_ENR_312EBA0870720582",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "GZ: 270 g pancetta tươi cho 8 phần; scale 6/8 → 202.5 g, làm tròn 200 g. Pancetta tươi ở Việt Nam khó tìm — có thể thay bằng ba chỉ heo tươi thái nhỏ (tăng chút muối) hoặc thịt heo xay theo gợi ý hint, nhưng hương vị sẽ khác bản GZ chuẩn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": 15.2,
+        "carbohydrateG": null,
+        "fatG": 35.83,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 49.7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2727576",
+      "sourceNutritionNote": "pancetta là ba chỉ heo muối ủ (không hun khói); USDA không có mục pancetta nên dùng số liệu ba chỉ heo tươi (Pork, belly, with skin, raw — Foundation) làm proxy; thực tế pancetta mặn và đậm vị hơn, giá trị energy/carbohydrate của bản ghi Foundation thiếu nên để null"
+    },
+    {
+      "position": 2,
+      "sourceName": "Cà chua xay nhuyễn (passata)",
+      "canonicalIngredientId": "ING_ENR_4FA4878C3AEB06EA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 260,
+        "unit": "g",
+        "text": "260 g",
+        "gramEquivalent": 260,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 260,
+          "unit": "g"
+        }
+      },
+      "note": "GZ: 350 g passata cho 8 phần; scale 6/8 → 262.5 g, làm tròn 260 g. ITRK khuyên dùng cà chua đóng hộp Mutti hoặc Cirio cho vị ngon nhất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 38,
+        "proteinG": 1.65,
+        "carbohydrateG": 8.98,
+        "fatG": 0.21,
+        "fiberG": 1.9,
+        "sugarG": 4.83,
+        "sodiumMg": 28
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170460",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 80,
+        "unit": "g",
+        "text": "80 g",
+        "gramEquivalent": 80,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 80,
+          "unit": "g"
+        }
+      },
+      "note": "GZ: 110 g cho 8 phần; scale 6/8 → 82.5 g, làm tròn 80 g. Bộ ba soffritto (cà rốt + cần tây + hành tây) tỉ lệ 1:1:1 theo GZ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Cần tây (cọng)",
+      "canonicalIngredientId": "ING_ENR_5B684C9FE0E3E178",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 80,
+        "unit": "g",
+        "text": "80 g",
+        "gramEquivalent": 80,
+        "basis": "đơn vị gốc đã là gram (≈1-2 cọng cần tây)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 80,
+          "unit": "g"
+        }
+      },
+      "note": "GZ: 110 g cho 8 phần; scale 6/8 → 80 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 14,
+        "proteinG": 0.69,
+        "carbohydrateG": 2.97,
+        "fatG": 0.17,
+        "fiberG": 1.6,
+        "sugarG": 1.34,
+        "sodiumMg": 80
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169988",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành tây vàng",
+      "canonicalIngredientId": "ING_ENR_1D29EB61F57EBFD1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 80,
+        "unit": "g",
+        "text": "80 g",
+        "gramEquivalent": 80,
+        "basis": "đơn vị gốc đã là gram (≈1/2 củ hành lớn)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 80,
+          "unit": "g"
+        }
+      },
+      "note": "GZ: 110 g hành vàng cho 8 phần; scale 6/8 → 80 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước dùng rau củ (giữ nóng)",
+      "canonicalIngredientId": "ING_ENR_D74180A79DF48F0D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 260,
+        "unit": "ml",
+        "text": "260 ml",
+        "gramEquivalent": 260,
+        "basis": "1 ml nước dùng ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 260,
+          "unit": "ml"
+        }
+      },
+      "note": "GZ: 350 g (≈350 ml) cho 8 phần; scale 6/8 → 260 ml. Châm thêm từng vá trong suốt 2 giờ ninh ragù; giữ nóng để không làm gián đoạn quá trình ninh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 6,
+        "proteinG": 0.23,
+        "carbohydrateG": 1.02,
+        "fatG": 0.07,
+        "fiberG": 0,
+        "sugarG": 0.57,
+        "sodiumMg": 303
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171180",
+      "sourceNutritionNote": "số liệu nước dùng rau củ đóng hộp (USDA SR Legacy ghi 'Soup, SWANSON, vegetable broth') — dùng làm ước lượng"
+    },
+    {
+      "position": 7,
+      "sourceName": "Rượu vang đỏ",
+      "canonicalIngredientId": "ING_ENR_80311443A991AAE8",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 80,
+        "unit": "ml",
+        "text": "80 ml",
+        "gramEquivalent": 80,
+        "basis": "1 ml rượu vang ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 80,
+          "unit": "ml"
+        }
+      },
+      "note": "GZ: 110 g cho 8 phần; scale 6/8 → 82.5 g, làm tròn 80 ml. Dùng để khử mùi thịt và tạo chiều sâu cho sốt; phải để bay hơi hoàn toàn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 0.07,
+        "carbohydrateG": 2.61,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.62,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173190",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Bột cà chua cô đặc (double concentrate)",
+      "canonicalIngredientId": "ING_ENR_C95E54A43981111D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 24,
+        "basis": "1 muỗng canh bột cà chua cô đặc ≈ 16 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "GZ: 2 muỗng canh cho 8 phần; scale 6/8 → 1.5 muỗng canh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": 4.23,
+        "carbohydrateG": 20.19,
+        "fatG": 0.73,
+        "fiberG": 4.7,
+        "sugarG": null,
+        "sodiumMg": 61.15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2685580",
+      "sourceNutritionNote": "bản ghi Foundation của USDA thiếu giá trị Energy nên để null"
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu ô liu extra virgin",
+      "canonicalIngredientId": "ING_ENR_DE4B6B013D75B239",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4.5,
+        "unit": "muỗng canh",
+        "text": "4.5 muỗng canh",
+        "gramEquivalent": 61,
+        "basis": "1 muỗng canh ≈ 15 ml; 1 ml dầu ô liu ≈ 0.91 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "GZ: 6 muỗng canh cho 8 phần; scale 6/8 → 4.5 muỗng canh (≈67 ml). Dùng để áp pancetta và xào rau củ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.5,
+        "unit": "muỗng cà phê",
+        "text": "2.5 muỗng cà phê",
+        "gramEquivalent": 15,
+        "basis": "1 muỗng cà phê muối hạt ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "GZ ghi 'vừa đủ' cho cả ragù và béchamel. Nêm nhạt tay ở đầu vì ninh cạn 2 giờ nước sốt sẽ mặn lên; nêm lại ở cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay mới",
+      "canonicalIngredientId": "ING_ENR_9043CEF9624AAEB6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2.3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "GZ ghi 'vừa đủ'; 1 muỗng cà phê cho 6 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Sữa tươi nguyên kem (cho béchamel)",
+      "canonicalIngredientId": "ING_ENR_3D34F4B09B331BD5",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Sữa tươi nguyên kem via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 600,
+        "unit": "ml",
+        "text": "600 ml",
+        "gramEquivalent": 600,
+        "basis": "1 ml sữa ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 600,
+          "unit": "ml"
+        }
+      },
+      "note": "GZ: 800 g sữa cho 8 phần; scale 6/8 → 600 ml. Đun nóng nhưng KHÔNG để sôi trước khi đổ vào roux.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 3.27,
+        "carbohydrateG": 4.63,
+        "fatG": 3.2,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 38
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746782",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Bơ lạt (cho béchamel)",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 38,
+        "unit": "g",
+        "text": "38 g",
+        "gramEquivalent": 38,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 38,
+          "unit": "g"
+        }
+      },
+      "note": "GZ: 50 g cho 8 phần; scale 6/8 → 37.5 g, làm tròn 38 g. Tỉ lệ bơ:bột mì 1:1 cho roux.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Bột mì đa dụng (cho béchamel)",
+      "canonicalIngredientId": "ING_ENR_A9194AD78D914D6C",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Bột mì đa dụng via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 38,
+        "unit": "g",
+        "text": "38 g",
+        "gramEquivalent": 38,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 38,
+          "unit": "g"
+        }
+      },
+      "note": "GZ: 50 g cho 8 phần; scale 6/8 → 37.5 g, làm tròn 38 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 364,
+        "proteinG": 10.33,
+        "carbohydrateG": 76.31,
+        "fatG": 0.98,
+        "fiberG": 2.7,
+        "sugarG": 0.27,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168936",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Nhục đậu khấu (nutmeg) mới bào",
+      "canonicalIngredientId": "ING_ENR_D51D3B0CF7947972",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 0.5,
+        "basis": "1 nhúm nhục đậu khấu bào ≈ 0.5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "GZ ghi 'vừa đủ' (to taste). Một nhúm nhỏ là đủ — cho nhiều sẽ hắc, át vị sữa.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 525,
+        "proteinG": 5.84,
+        "carbohydrateG": 49.29,
+        "fatG": 36.31,
+        "fiberG": 20.8,
+        "sugarG": 2.99,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171326",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 16,
+      "sourceName": "Lá mì lasagne khô",
+      "canonicalIngredientId": "ING_ENR_5AF520A49BC5A101",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "lá",
+        "text": "10 lá",
+        "gramEquivalent": 170,
+        "basis": "1 lá lasagne khô ≈ 17 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "piece"
+        }
+      },
+      "note": "Bản chuẩn GZ dùng pasta tươi trứng rau chân vịt tự cán (175 g semolina + 75 g bột 00 + 125 g rau chân vịt + 1 trứng + 2 lòng đỏ cho 8 phần) — công đoạn phức tạp. Ở đây dùng lá lasagne khô cho thực tế (nigelwakelen: 8 lá cho 4-6 phần → 10 lá cho 6 phần). Nếu dùng loại cần trụng thì trụng 30-40 giây/lá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 371,
+        "proteinG": 13.04,
+        "carbohydrateG": 74.67,
+        "fatG": 1.51,
+        "fiberG": 3.2,
+        "sugarG": 2.67,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169736",
+      "sourceNutritionNote": "số liệu mì khô generic (SR Legacy Pasta, dry, enriched)"
+    },
+    {
+      "position": 17,
+      "sourceName": "Phô mai Parmigiano Reggiano bào mịn",
+      "canonicalIngredientId": "ING_ENR_C9AE2624E7F86759",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 110,
+        "unit": "g",
+        "text": "110 g",
+        "gramEquivalent": 110,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 110,
+          "unit": "g"
+        }
+      },
+      "note": "GZ: 150 g cho 8 phần; scale 6/8 → 112.5 g, làm tròn 110 g. Rắc giữa các lớp và phủ mặt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 420,
+        "proteinG": 28.42,
+        "carbohydrateG": 13.91,
+        "fatG": 27.84,
+        "fiberG": 0,
+        "sugarG": 0.07,
+        "sodiumMg": 1804
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171247",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 18,
+      "sourceName": "Bơ lạt (phết khuôn và rải mặt)",
+      "canonicalIngredientId": "ING_ENR_7FED53274B5A5AAA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "GZ: 'butter to taste' — phết đáy khuôn chống dính và rải vụn bơ lên mặt lasagna cho vàng đẹp khi nướng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Chuẩn bị: cà rốt, cần tây, hành tây băm thật nhỏ (soffritto); pancetta thái sợi rồi băm nhỏ; thịt bò xay để ráo. Đun nước dùng rau củ cho nóng, giữ ấm.",
+      "tip": "Rau củ băm càng nhỏ, sốt ragù càng mịn và quyện (GZ)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Nồi to, lửa vừa: cho dầu ô liu và pancetta băm vào, đảo 3-4 phút cho pancetta ra mỡ, hơi vàng xém.",
+      "tip": "Không để pancetta cháy — mỡ pancetta chảy ra là nền béo thơm của cả nồi ragù (GZ).",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho rau củ băm (cà rốt, cần tây, hành tây) vào nồi, xào 5-6 phút đến khi mềm, trong suốt.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho thịt bò xay vào, tăng lên lửa lớn, dùng muỗng dằm tơi thịt; áp chảo 8-10 phút cho thịt vàng sém, săn lại.",
+      "tip": "Thịt phải vàng sém mới thơm — thịt xám xịt vì ra nước sẽ làm sốt nhạt nhẽo. GZ nhấn mạnh: thịt phải 'well browned to seal the juices'.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đổ rượu vang đỏ vào, cạo sạch lớp cháy dính đáy nồi, để sôi đến khi rượu bay hơi hoàn toàn, không còn mùi cồn.",
+      "tip": "Bước deglaze này lấy lại toàn bộ vị ngon dính ở đáy nồi (fond).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho passata và bột cà chua cô đặc vào, đảo đều; thêm 1-2 vá nước dùng nóng. Đun sôi lại rồi hạ lửa nhỏ liu riu, đậy vung hé (không đậy kín), ninh tối thiểu 2 giờ.",
+      "tip": "GZ: tối thiểu 2 giờ, càng lâu càng ngon — 'sốt ở phút 90 và sốt ở giờ thứ 2 khác nhau rõ rệt'. Thỉnh thoảng đảo và châm thêm nước dùng nóng khi cạn; sốt không được khô cũng không loãng.",
+      "timerMinutes": 120
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Khi ragù gần xong, làm béchamel: đun sữa cho nóng già (không để sôi). Nồi khác lửa vừa: cho 38 g bơ vào tan chảy, đổ bột mì vào một lần, đảo 2-3 phút thành hỗn hợp roux vàng nhạt.",
+      "tip": "Roux chỉ đến vàng nhạt — để nâu sẽ đắng và át mùi sữa (GZ).",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Đổ sữa nóng vào roux làm 3 lần, mỗi lần vừa đổ vừa khuấy mạnh bằng phới cho mịn rồi mới đổ tiếp; đun khuấy đến khi sốt sánh kem. Nêm muối và một nhúm nhục đậu khấu bào.",
+      "tip": "Sữa phải nóng và đổ từng ít một, khuấy liên tục — đây là cách chống vón cục (GZ). Béchamel đạt là khi phủ được mặt sau muỗng.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Đun nồi nước muối sôi. Trụng từng lá lasagne 30-40 giây (chỉ với loại cần trụng sơ), vớt ra trải lên khăn sạch, xếp cạnh nhau không chồng lên nhau. Bật lò nướng 170°C (lửa trên-dưới, không quạt).",
+      "tip": "Lá ướt chồng lên nhau sẽ dính chặt không gỡ được (GZ). Kiểm tra bao bì: nhiều loại lá khô hiện nay không cần trụng."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Phết bơ đều đáy và thành khuôn 30x20 cm. Xếp lớp: một lớp mỏng béchamel + một lớp mỏng ragù dưới đáy, đặt lá mì lên; rồi lặp lại — béchamel, ragù, rắc parmigiano, lá mì — cho đến 5 lớp mì.",
+      "tip": "GZ: 5 lớp. Mỗi lớp phết đều tay, không dày quá — lasagna ngon là các lớp mỏng, cân bằng."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Lớp trên cùng (sau lá mì cuối): phủ kín ragù rồi đến béchamel, rắc nhiều parmigiano, rải vụn bơ lên mặt. Cho vào lò 170°C nướng 40 phút đến khi mặt vàng đều, sốt sủi bọt.",
+      "tip": "MÂU THUẪN NHIỆT ĐỘ: GZ 170°C/40 phút; nigelwakelen 180°C/40 phút; mural.uv.es 180°C/45 phút — lấy theo GZ (nguồn Ý chuẩn). Nếu mặt vàng quá nhanh, đậy giấy bạc.",
+      "timerMinutes": 40
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Lấy lasagna ra, để nghỉ 10 phút rồi mới cắt miếng.",
+      "tip": "Để nghỉ giúp các lớp kết lại, cắt miếng vuông vức không vỡ — GZ: 10 phút; nigelwakelen: 5-10 phút.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 13,
+      "instruction": "Cắt miếng vuông, dọn nóng. Món này để qua đêm trong tủ lạnh rồi hâm lại còn ngon hơn (các lớp thấm quyện) — ragù thừa bảo quản 2-3 ngày.",
+      "tip": "Đúng kiểu Bologna: lasagna là món Chủ nhật, nấu từ hôm trước, hôm sau hâm lại (GZ)."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 6,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 401.6,
+      "proteinG": 21.8,
+      "carbohydrateG": 12.56,
+      "fatG": 29.28,
+      "fiberG": 1.37,
+      "sugarG": 2.76,
+      "sodiumMg": 410.82
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": 34.38,
+      "carbohydrateG": null,
+      "fatG": 55.15,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1581.8
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Pancetta tươi (ba chỉ heo muối, không hun khói): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Cần tây (cọng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành tây vàng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước dùng rau củ (giữ nóng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Rượu vang đỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Bột cà chua cô đặc (double concentrate): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu ô liu extra virgin: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu đen xay mới: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Sữa tươi nguyên kem (cho béchamel): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 15,
+        "detail": "Nhục đậu khấu (nutmeg) mới bào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 16,
+        "detail": "Lá mì lasagne khô: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      8,
+      9,
+      10,
+      11,
+      15
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 15,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

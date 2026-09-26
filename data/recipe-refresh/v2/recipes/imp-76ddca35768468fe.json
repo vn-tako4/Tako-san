@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-76ddca35768468fe",
+    "slug": "bo-nuong-yakiniku-muoi",
+    "title": "Bò nướng yakiniku muối"
+  },
+  "content": {
+    "description": "Lát bò mỏng nướng cháy cạnh chấm muối-chanh, món yakiniku muối Nhật tối cuối tuần quây quần.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Yakiniku",
+      "Nhật Bản",
+      "Bò",
+      "Cuối tuần"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-76ddca35768468fe.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://cookingwithdog.com/recipe/yakiniku/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://cookpad.com/eng/recipes/170243",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt bò thái lát mỏng (short ribs hoặc đùi)",
+      "canonicalIngredientId": "ING_ENR_FCFEF3AB4406B323",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "Cooking with Dog dùng 200 g cho 2 người → scale tuyến tính 300 g cho 3 người",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Cooking with Dog: 'Beef Slices (for Yakiniku) short ribs or round', 200 g cho 2 người. Món ăn theo kiểu muối: nướng xong chấm muối + vắt chanh (trang web ghi rõ 'Enjoy it with the homemade sauce, or salt and lemon juice').",
+      "sourceNutritionPer100g": {
+        "energyKcal": 240,
+        "proteinG": 17.22,
+        "carbohydrateG": 0,
+        "fatG": 19.03,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 75
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170827",
+      "sourceNutritionNote": "Nguồn cho phép 2 loại thịt (short ribs hoặc round); số liệu dinh dưỡng dùng short ribs có cả nạc lẫn mỡ (đại diện cho lát thịt yakiniku có vân mỡ)."
+    },
+    {
+      "position": 1,
+      "sourceName": "Muối ăn (nêm thịt khi nướng)",
+      "canonicalIngredientId": "ING_ENR_361639D21BDA1726",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Muối ăn via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 tsp muối ăn ≈ 6 g (USDA: 1 teaspoon table salt = 6,08 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cooking with Dog chỉ ghi 'Salt' không định lượng; 1 tsp cho 300 g thịt là mức nêm vừa ăn, người nấu tự điều chỉnh theo khẩu vị khi nướng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 58,
+        "basis": "1 quả chanh tươi trung bình ≈ 58 g (USDA: 1 fruit = 58 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Cooking with Dog: 'Lemon, sliced' — cắt lát/múi cau để vắt lên thịt nướng tại bàn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 29,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.32,
+        "fatG": 0.3,
+        "fiberG": 2.8,
+        "sugarG": 2.5,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167746",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá (làm sốt negi-shio)",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "Đơn vị gốc đã là gram (Cookpad)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Cookpad (Green Onion Sauce For Yakiniku): 200 g hành lá băm nhỏ cho cả mẻ sốt gia đình, dọn mỗi người một đĩa nhỏ — đủ cho 3 phần ăn, thừa có thể dùng dần. Hành lá ở đây là green onion/scallion.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Nước cốt chanh (cho sốt)",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "1 Tbsp nước cốt chanh ≈ 15,25 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cookpad: 1 Tbsp lemon juice trong nhóm gia vị [A] của sốt negi-shio.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 22,
+        "proteinG": 0.35,
+        "carbohydrateG": 6.9,
+        "fatG": 0.24,
+        "fiberG": 0.3,
+        "sugarG": 2.52,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167747",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu mè (cho sốt)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "1 Tbsp dầu mè ≈ 13,6 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cookpad: 1 Tbsp sesame oil trong nhóm gia vị [A].",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Muối ăn (cho sốt)",
+      "canonicalIngredientId": "ING_ENR_361639D21BDA1726",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Muối ăn via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.25,
+        "unit": "muỗng cà phê",
+        "text": "1.25 muỗng cà phê",
+        "gramEquivalent": 7.5,
+        "basis": "1 tsp muối ăn ≈ 6 g (USDA) → 1,25 tsp ≈ 7,5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cookpad ghi '1 to 1 1/2 teaspoons Salt'; lấy giữa khoảng 1,25 tsp. Người nấu nếm và chỉnh mặn theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Tỏi bào nhuyễn (cho sốt)",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "g",
+        "text": "6 g",
+        "gramEquivalent": 6,
+        "basis": "Đơn vị gốc đã là gram (công thức negi-shio tare của đầu bếp Haruma: 6 g tỏi bào)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 6,
+          "unit": "g"
+        }
+      },
+      "note": "Sốt negi-shio của Cookpad không có tỏi; thêm 6 g tỏi bào theo công thức negi-shio tare của đầu bếp Nhật Haruma (mirin 30 g, sake 30 g, nước cốt chanh 4 g, tỏi bào 6 g, bột gà 2 g) — khớp với hint có 'tỏi'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.2,
+        "basis": "1 tsp tiêu đen xay ≈ 2,3 g (USDA) → 1⁄2 tsp ≈ 1,2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Không bắt buộc: các công thức negi-shio (Yahoo Expert, Tokyo-recipes) rắc tiêu 'to taste' khi dọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Băm nhỏ 200 g hành lá (cả phần trắng và xanh).",
+      "tip": "Cookpad: băm càng nhỏ sốt càng quyện; thể tích hành sẽ xẹp còn khoảng một nửa sau khi trộn."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Trộn sốt negi-shio: cho hành lá băm vào bát, thêm 1 muỗng canh nước cốt chanh, 1 muỗng canh dầu mè, 1,25 muỗng cà phê muối và 6 g tỏi bào, trộn đều. Để nghỉ ít nhất 5 phút cho hành ra nước và ngấm vị.",
+      "tip": "Yahoo Expert (Otenki Mama): để 5 phút hành sẽ ra nước, sốt sánh lại; bảo quản tủ lạnh dùng được 7–10 ngày.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cắt 1 quả chanh thành 6 múi cau, xếp ra đĩa nhỏ để vắt tại bàn."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Xếp 300 g thịt bò thái lát ra đĩa, để ở nhiệt độ phòng khoảng 10 phút cho bớt lạnh (thịt lạnh cho lên vỉ sẽ ra nước và dai).",
+      "tip": "Cooking with Dog: short ribs và round là hai loại thịt phổ biến cho yakiniku; lát thịt càng mỏng nướng càng nhanh.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Làm nóng vỉ nướng/chảo gang ở lửa vừa-lớn cho thật nóng. Không cần thêm dầu nếu dùng thịt có vân mỡ.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Xếp thịt lên vỉ từng mẻ vừa phải, không chồng chất. Nướng mỗi mặt khoảng 20–60 giây đến khi xém cạnh và chuyển màu.",
+      "tip": "Cooking with Dog: lật thịt ngay khi mặt dưới chín; lát mỏng chín rất nhanh, nướng quá sẽ dai."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Trong lúc nướng, rắc muối và một ít tiêu đen xay lên từng mặt thịt.",
+      "tip": "Món này ăn theo kiểu 'muối': chỉ nêm muối + tiêu, không ướp sốt ngọt như yakiniku tare thông thường."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Gắp thịt ra đĩa ngay khi chín. Vắt một múi chanh lên thịt nóng.",
+      "tip": "Cooking with Dog: 'As soon as each ingredient is cooked, enjoy it with the sauce, or salt and lemon juice.'"
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Múc sốt negi-shio ra từng đĩa nhỏ, chấm thịt nướng hoặc đặt một ít sốt lên miếng thịt rồi ăn kèm cơm nóng.",
+      "tip": "Cookpad: sốt này ăn kèm thịt nướng rất hợp; phần sốt thừa đậy kín để tủ lạnh."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn nóng ngay khi còn trên vỉ; tiếp tục nướng các mẻ tiếp theo và ăn dần."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 264.31,
+      "proteinG": 18.57,
+      "carbohydrateG": 5.55,
+      "fatG": 19.17,
+      "fiberG": 1.78,
+      "sugarG": 1.57,
+      "sodiumMg": 86.01
+    },
+    "originalPerServing": {
+      "energyKcal": 313.28,
+      "proteinG": 18.84,
+      "carbohydrateG": 7.96,
+      "fatG": 23.92,
+      "fiberG": 2.43,
+      "sugarG": 2.19,
+      "sodiumMg": 1830.63
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Muối ăn (nêm thịt khi nướng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Chanh tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Nước cốt chanh (cho sốt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Dầu mè (cho sốt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Muối ăn (cho sốt): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      4,
+      5,
+      6,
+      8
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

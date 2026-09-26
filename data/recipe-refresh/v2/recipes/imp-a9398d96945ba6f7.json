@@ -1,0 +1,872 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-a9398d96945ba6f7",
+    "slug": "canh-kim-chi-dau-phu-thit-ba-chi-kimchi-jjigae",
+    "title": "Canh kim chi đậu phụ thịt ba chỉ Kimchi jjigae"
+  },
+  "content": {
+    "description": "Kim chi chua lên men nấu cùng thịt ba chỉ và đậu phụ mềm, nước canh cay nồng đậm đà, món canh Hàn Quốc ấm bụng ngày lạnh.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Hàn Quốc",
+      "Món canh",
+      "Cay",
+      "Kim chi"
+    ]
+  },
+  "research": {
+    "inputPath": "pilot/imp-a9398d96945ba6f7.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,nutrition_per_serving,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.maangchi.com/recipe/kimchi-jjigae",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://mykoreankitchen.com/kimchi-jjigae/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "kim chi cải thảo chua (lên men ít nhất 2-3 tuần)",
+      "canonicalIngredientId": "ING_ENR_F1CB52CC5A370AE2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": "450g theo công thức",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi dùng 1 pound (454 g) cho 4 phần ăn kèm món phụ; My Korean Kitchen dùng 3/4 cup (~135 g) cho nồi nhỏ ~2 phần. Chọn 450 g theo Maangchi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": 1.06,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": "USDA FDC 170392 — Cabbage, kimchi (SR Legacy)."
+    },
+    {
+      "position": 1,
+      "sourceName": "nước kim chi (kimchi brine)",
+      "canonicalIngredientId": "ING_ENR_6EEA4CBF23FB6225",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "ml",
+        "text": "60 ml",
+        "gramEquivalent": 60,
+        "basis": "nước ngâm kim chi, mật độ ≈ 1 g/ml, ước lượng",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 60,
+          "unit": "ml"
+        }
+      },
+      "note": "Maangchi: 1/4 cup; My Korean Kitchen không dùng riêng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Phần nước ngâm kim chi — không có dữ liệu FDC; không dùng chỉ số kim chi cái làm proxy cho phần nước — để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "thịt ba chỉ heo",
+      "canonicalIngredientId": "PORK_BELLY",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 230,
+        "unit": "g",
+        "text": "230 g",
+        "gramEquivalent": 230,
+        "basis": "230g theo công thức",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 230,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 1/2 pound thịt vai (pork shoulder) hoặc thịt ba chỉ (pork belly). My Korean Kitchen: 180 g thịt ba chỉ không da cho ~2 phần. Chọn ba chỉ theo định danh món ăn; thái miếng vừa ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 518,
+        "proteinG": 9.34,
+        "carbohydrateG": 0,
+        "fatG": 53.01,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 32
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167812",
+      "sourceNutritionNote": "USDA FDC 167812 — Pork, fresh, belly, raw (SR Legacy)."
+    },
+    {
+      "position": 3,
+      "sourceName": "đậu phụ",
+      "canonicalIngredientId": "TOFU",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "150g theo công thức",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 1/2 bìa (optional). My Korean Kitchen: 150 g đậu phụ cứng (firm tofu), thái lát dày 1 cm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 144,
+        "proteinG": 17.27,
+        "carbohydrateG": 2.78,
+        "fatG": 8.72,
+        "fiberG": 2.3,
+        "sugarG": null,
+        "sodiumMg": 14
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172475",
+      "sourceNutritionNote": "USDA FDC 172475 — Tofu, raw, firm, prepared with calcium sulfate (SR Legacy)."
+    },
+    {
+      "position": 4,
+      "sourceName": "hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "150g theo công thức",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 1 củ vừa thái lát (~1 cup). My Korean Kitchen: 30 g hành tây nâu cho ~2 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": "USDA FDC 170000 — Onions, raw (SR Legacy)."
+    },
+    {
+      "position": 5,
+      "sourceName": "hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 45,
+        "basis": "ước lượng 1 cây hành lá ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi: 3 cây. My Korean Kitchen: 1/2 nhánh nhỏ cho ~2 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "USDA FDC 170005 — Onions, spring or scallions (includes tops and bulb), raw (SR Legacy)."
+    },
+    {
+      "position": 6,
+      "sourceName": "ớt bột Hàn (gochugaru)",
+      "canonicalIngredientId": "ING_ENR_397060224F2CC77D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "5g theo công thức",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 2 muỗng cà phê cho 4 phần. My Korean Kitchen: 1 muỗng canh cho ~2 phần (tương đương ~10 g/4 phần) — mức cay cao hơn. Chọn theo Maangchi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 318,
+        "proteinG": 12.01,
+        "carbohydrateG": 56.63,
+        "fatG": 17.27,
+        "fiberG": 27.2,
+        "sugarG": 10.34,
+        "sodiumMg": 30
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170932",
+      "sourceNutritionNote": "USDA FDC 170932 — Spices, pepper, red or cayenne (SR Legacy). Proxy: gochugaru không có trong FDC, dùng 'Spices, pepper, red or cayenne' (ớt bột khô)."
+    },
+    {
+      "position": 7,
+      "sourceName": "tương ớt Hàn (gochujang)",
+      "canonicalIngredientId": "ING_ENR_7B2DCEA4C5B68A51",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "15g theo công thức",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 1 muỗng canh. My Korean Kitchen: 1 muỗng cà phê cho ~2 phần (tương đương ~10 g/4 phần). Chọn theo Maangchi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 3.33,
+        "carbohydrateG": 53.33,
+        "fatG": 5,
+        "fiberG": 0,
+        "sugarG": 43.33,
+        "sodiumMg": 967
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2244609",
+      "sourceNutritionNote": "USDA FDC 2244609 — GOCHUJANG SAUCE, GOCHUJANG (Branded). Branded — gochujang đóng gói."
+    },
+    {
+      "position": 8,
+      "sourceName": "đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 8,
+        "unit": "g",
+        "text": "8 g",
+        "gramEquivalent": 8,
+        "basis": "8g theo công thức",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 8,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 2 muỗng cà phê. My Korean Kitchen không dùng đường (ướp thịt bằng mirin thay thế).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": "USDA FDC 169655 — Sugars, granulated (SR Legacy)."
+    },
+    {
+      "position": 9,
+      "sourceName": "muối kosher",
+      "canonicalIngredientId": "ING_ENR_D47E715919C7E9BC",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "g",
+        "text": "6 g",
+        "gramEquivalent": 6,
+        "basis": "6g theo công thức",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 6,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 1 muỗng cà phê. My Korean Kitchen dùng 1 muỗng canh nước tương thay cho muối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "USDA FDC 173468 — Salt, table (SR Legacy). Muối ăn — chỉ số trên 100 g muối nguyên chất."
+    },
+    {
+      "position": 10,
+      "sourceName": "dầu mè rang",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "ml",
+        "text": "5 ml",
+        "gramEquivalent": 4.6,
+        "basis": "1 ml dầu mè ≈ 0.92 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "ml"
+        }
+      },
+      "note": "Maangchi: 1 muỗng cà phê rưới lên trên. My Korean Kitchen không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": "USDA FDC 171016 — Oil, sesame, salad or cooking (SR Legacy)."
+    },
+    {
+      "position": 11,
+      "sourceName": "nước dùng cá cơm (hoặc nước dùng gà/bò, hoặc nước lọc)",
+      "canonicalIngredientId": "ING_ENR_4F275049F8851430",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước dùng cá cơm (hoặc nước dùng rau/canh gà) via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "ml",
+        "text": "500 ml",
+        "gramEquivalent": 500,
+        "basis": "nước dùng, mật độ ≈ 1 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 500,
+          "unit": "ml"
+        }
+      },
+      "note": "Maangchi: 2 cups nước dùng cá cơm (anchovy stock). My Korean Kitchen: 1 cup nước lọc cho ~2 phần. Có thể dùng nước lọc nếu không có nước dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 16,
+        "proteinG": 2.26,
+        "carbohydrateG": 0,
+        "fatG": 0.81,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 156
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172885",
+      "sourceNutritionNote": "USDA FDC 172885 — Soup, stock, fish, home-prepared (SR Legacy). Proxy: nước dùng cá cơm tự nấu, dùng 'Soup, stock, fish, home-prepared' làm proxy; nước lọc thì ~0."
+    },
+    {
+      "position": 12,
+      "sourceName": "nấm hương tươi",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "50g theo công thức",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ My Korean Kitchen dùng (2 cây nhỏ ~50 g cho ~2 phần). Maangchi không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 34,
+        "proteinG": 2.24,
+        "carbohydrateG": 6.79,
+        "fatG": 0.49,
+        "fiberG": 2.5,
+        "sugarG": 2.38,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169242",
+      "sourceNutritionNote": "USDA FDC 169242 — Mushrooms, shiitake, raw (SR Legacy)."
+    },
+    {
+      "position": 13,
+      "sourceName": "rượu nấu ăn ngọt (mirin)",
+      "canonicalIngredientId": "ING_ENR_EB15DD6B7294D8ED",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "ml",
+        "text": "15 ml",
+        "gramEquivalent": 16.4,
+        "basis": "1 ml mirin ≈ 1.09 g, ước lượng",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "ml"
+        }
+      },
+      "note": "Chỉ My Korean Kitchen dùng để ướp thịt ba chỉ 15 phút cùng tiêu đen. Maangchi không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 233,
+        "proteinG": 0,
+        "carbohydrateG": 46.67,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 43.33,
+        "sodiumMg": 600
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2039206",
+      "sourceNutritionNote": "USDA FDC 2039206 — KIKKOMAN, AJI-MIRIN (Branded). Branded mirin — sake nấu ăn ngọt."
+    },
+    {
+      "position": 14,
+      "sourceName": "tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "g",
+        "text": "1 g",
+        "gramEquivalent": 1,
+        "basis": "1g theo công thức",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ My Korean Kitchen dùng để ướp thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "USDA FDC 170931 — Spices, pepper, black (SR Legacy)."
+    },
+    {
+      "position": 15,
+      "sourceName": "tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "g",
+        "text": "1.5 g",
+        "gramEquivalent": 1.5,
+        "basis": "1.5g theo công thức",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ My Korean Kitchen dùng 1/4 muỗng cà phê trong sốt nền. Maangchi không dùng tỏi trong món này.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "USDA FDC 169230 — Garlic, raw (SR Legacy)."
+    },
+    {
+      "position": 16,
+      "sourceName": "nước tương",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "ml",
+        "text": "15 ml",
+        "gramEquivalent": 17.9,
+        "basis": "1 ml nước tương ≈ 1.19 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "ml"
+        }
+      },
+      "note": "Chỉ My Korean Kitchen dùng 1 muỗng canh trong sốt nền thay cho muối. Maangchi dùng muối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "USDA FDC 174277 — Soy sauce made from soy and wheat (shoyu) (SR Legacy)."
+    },
+    {
+      "position": 17,
+      "sourceName": "cá cơm khô (bỏ đầu, bỏ ruột)",
+      "canonicalIngredientId": "ING_ENR_9FF48328696BA6F1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 7,
+        "unit": "con",
+        "text": "7 con",
+        "gramEquivalent": 14,
+        "basis": "ước lượng 1 con cá cơm khô ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 7,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ Maangchi dùng để nấu nước dùng cá cơm (cùng củ cải Hàn 1/3 cup, rong biển khô 4x5 inch, gốc hành lá, 4 cups nước). Có thể thay bằng nước dùng gà/bò hoặc nước lọc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 131,
+        "proteinG": 20.35,
+        "carbohydrateG": 0,
+        "fatG": 4.84,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 104
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174182",
+      "sourceNutritionNote": "USDA FDC 174182 — Fish, anchovy, european, raw (SR Legacy). Proxy: cá cơm tươi châu Âu (Fish, anchovy, european, raw); cá cơm khô cô đặc hơn nên chỉ số này ước thấp."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Ướp thịt ba chỉ đã thái miếng vừa ăn với rượu mirin và tiêu đen xay, để khoảng 15 phút cho ngấm (theo My Korean Kitchen).",
+      "tip": "Nếu không có mirin, có thể bỏ qua bước ướp mà cho thịt trực tiếp vào nồi như cách của Maangchi.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Nấu nước dùng cá cơm (tùy chọn): cho cá cơm khô, củ cải Hàn thái lát mỏng, rong biển khô và gốc hành lá vào nồi với 4 cups nước. Đun sôi lửa vừa-lớn 20 phút, hạ nhỏ lửa thêm 5 phút rồi lọc bỏ bã, giữ lại nước dùng (theo Maangchi).",
+      "tip": "Nước dùng cá cơm cho vị đậm đà nhất, nhưng nước dùng gà/bò hoặc nước lọc cũng dùng được.",
+      "timerMinutes": 25
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cắt kim chi thành miếng vừa ăn. Thái đậu phụ thành lát dày khoảng 1 cm. Hành tây thái lát mỏng. Hành lá xắt chéo.",
+      "tip": "Dùng kim chi đã lên men chua kỹ (ít nhất 2-3 tuần) — kim chi tươi mới làm chưa đủ chua để nấu canh."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Xào sơ kim chi trong chảo nóng cho đến khi mềm (theo My Korean Kitchen). Nếu nồi đủ to, có thể làm trực tiếp trong nồi nấu canh.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Trộn đều hỗn hợp gia vị nền trong một bát nhỏ: ớt bột gochugaru, tương ớt gochujang, đường, muối (hoặc nước tương) và tỏi băm nếu dùng."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Xếp thịt ba chỉ đã ướp ở đáy nồi nông. Cho kim chi, hành tây, nấm hương (nếu dùng), đậu phụ và hỗn hợp gia vị vào nồi. Đổ nước dùng cá cơm vào, trừ hành lá để lại sau."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Rưới dầu mè rang lên trên. Đậy nắp và nấu lửa vừa-lớn khoảng 10 phút.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Mở nắp, dùng muỗng khuấy nhẹ để gia vị hòa tan đều vào nước canh. Xếp lại các lát đậu phụ lên trên cho đẹp.",
+      "tip": "Thỉnh thoảng múc nước canh chan lên các nguyên liệu để vị thấm đều."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Đậy nắp lại, nấu thêm 10-15 phút ở lửa vừa cho đến khi thịt chín mềm và kim chi thấm vị.",
+      "tip": "Thịt ba chỉ chín là canh đạt; kim chi chua càng nấu lâu càng mềm ngon.",
+      "timerMinutes": 12
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Rắc hành lá đã xắt chéo lên trên, đảo nhẹ rồi tắt bếp."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Múc canh ra từng chén nhỏ, dùng muỗng lớn múc từ nồi chung. Ăn nóng ngay với cơm trắng.",
+      "tip": "Kiểu ăn truyền thống là đặt nồi canh ở giữa bàn, mỗi người tự múc vào chén riêng."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 351.45,
+      "proteinG": 7.3,
+      "carbohydrateG": 10.91,
+      "fatG": 31.48,
+      "fiberG": 2.78,
+      "sugarG": 6.53,
+      "sodiumMg": 1198.18
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 1,
+        "detail": "nước kim chi (kimchi brine): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 3,
+        "detail": "đậu phụ: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "dầu mè rang: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "nước dùng cá cơm (hoặc nước dùng gà/bò, hoặc nước lọc): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      },
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

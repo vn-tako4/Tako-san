@@ -1,0 +1,787 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-f5abd36e99d48d94",
+    "slug": "dau-phu-mapo-tu-xuyen",
+    "title": "Đậu phụ Mapo Tứ Xuyên"
+  },
+  "content": {
+    "description": "Đậu phụ non om trong sốt mapo cay tê, hạt tiêu Tứ Xuyên tê đầu lưỡi, món trứ danh của vùng Tứ Xuyên.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "medium",
+    "tags": [
+      "Tứ Xuyên",
+      "Cay tê",
+      "Đậu phụ",
+      "Đưa cơm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-f5abd36e99d48d94.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://thewoksoflife.com/ma-po-tofu-real-deal/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://omnivorescookbook.com/wprm_print/authentic-mapo-tofu-%E9%BA%BB%E5%A9%86%E8%B1%86%E8%85%90-2",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "muỗng canh",
+        "text": "6 muỗng canh",
+        "gramEquivalent": 82,
+        "basis": "6 muỗng canh = 90 ml; tỉ trọng dầu ăn ≈ 0,91 g/ml; chia đôi: 3 muỗng canh phi ớt, 3 muỗng canh xào",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 1⁄2 cốc (120 ml) chia đôi cho 4 phần; scale x0,75 = 90 ml. Omnivore's chỉ dùng 1 muỗng canh dầu cho 2 phần — ít hơn nhiều; mâu thuẫn, ưu tiên WOL vì dầu ớt tự phi là linh hồn của công thức này (WOL).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "Dùng số liệu dầu đậu nành (171411) — loại dầu ăn phổ biến ở Việt Nam — làm đại diện cho 'dầu ăn' chung chung."
+    },
+    {
+      "position": 1,
+      "sourceName": "Ớt hiểm tươi (Thai bird chili)",
+      "canonicalIngredientId": "ING_ENR_A1E9DC7FC99DDA1F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 2,
+        "basis": "1 quả ớt hiểm tươi ước lượng ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "WOL: 1-2 quả thái lát mỏng cho 4 phần; scale x0,75 ≈ 1 quả. Omnivore's KHÔNG dùng ớt tươi/khô mà chỉ dùng dầu ớt làm sẵn + doubanjiang — mâu thuẫn về cách tạo vị cay; ưu tiên WOL (tự phi ớt).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "USDA không có mục ớt hiểm; dùng số liệu 'Peppers, hot chili, red, raw' (170106) làm tương đương."
+    },
+    {
+      "position": 2,
+      "sourceName": "Ớt khô đỏ",
+      "canonicalIngredientId": "ING_ENR_F8F185882C77F813",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "quả",
+        "text": "5 quả",
+        "gramEquivalent": 2.5,
+        "basis": "1 quả ớt khô ước lượng ≈ 0,5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "WOL: 6-8 quả cắt khúc cho 4 phần; scale x0,75 ≈ 5-6 quả, lấy 5 quả. Phi cùng ớt tươi ở bước làm dầu ớt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "Dùng số liệu ớt cay đỏ tươi (170106) làm tương đương cho ớt khô; số liệu ớt khô USDA không có mục phù hợp."
+    },
+    {
+      "position": 3,
+      "sourceName": "Bột tiêu Tứ Xuyên",
+      "canonicalIngredientId": "ING_ENR_652E17950FB307E3",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê bột tiêu Tứ Xuyên ước lượng ≈ 2 g; giữ lại 1⁄4 muỗng cà phê để rắc trang trí cuối (theo WOL)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 1⁄2-11⁄2 muỗng canh xay mịn cho 4 phần (giữ 1⁄4 muỗng cà phê trang trí); scale x0,75 ≈ 1-3 muỗng cà phê, lấy 2. WOL cảnh báo: tiêu càng tươi càng tê mạnh, nên giảm nếu tiêu mới; tiêu cháy sẽ đắng. Omnivore's dùng 2 muỗng cà phê cho 2 phần + rang riêng để trang trí — tương đương.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có mục tiêu Tứ Xuyên (Zanthoxylum); để null thay vì dùng tiêu đen thay thế sai bản chất."
+    },
+    {
+      "position": 4,
+      "sourceName": "Gừng băm nhuyễn",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 20,
+        "basis": "1 muỗng canh gừng tươi băm ước lượng ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 3 muỗng canh cho 4 phần; scale x0,75 = 2,25 muỗng canh, làm tròn 2.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi băm nhuyễn",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh tỏi băm ước lượng ≈ 9 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 3 muỗng canh cho 4 phần; scale x0,75 = 2,25 muỗng canh, làm tròn 2.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tra USDA cho tỏi trong batch này để tiết kiệm quota DEMO_KEY; lượng nhỏ, để null."
+    },
+    {
+      "position": 6,
+      "sourceName": "Thịt heo xay",
+      "canonicalIngredientId": "GROUND_PORK",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 170,
+        "unit": "g",
+        "text": "170 g",
+        "gramEquivalent": 170,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 170,
+          "unit": "g"
+        }
+      },
+      "note": "WOL: 8 oz (225 g) cho 4 phần; scale x0,75 = 170 g. Omnivore's ướp thịt trước với rượu + xì dầu + gừng, WOL xào trực tiếp không ướp — khác biệt kỹ thuật, ưu tiên WOL.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 263,
+        "proteinG": 16.88,
+        "carbohydrateG": 0,
+        "fatG": 21.19,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167902",
+      "sourceNutritionNote": "Number 269 (Total Sugars) không có trong response USDA → để null."
+    },
+    {
+      "position": 7,
+      "sourceName": "Tương đậu cay Tứ Xuyên (doubanjiang)",
+      "canonicalIngredientId": "ING_ENR_10DE7BB80A384513",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh tương đậu đặc ước lượng ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 1-2 muỗng canh tùy độ mặn/cay cho 4 phần; scale x0,75 ≈ 1-1,5 muỗng canh, lấy 1,5. WOL nhấn mạnh doubanjiang (nhất là loại Pixian) và tiêu Tứ Xuyên là hai nguyên liệu không thể thay thế. Omnivore's dùng 3 muỗng canh cho 2 phần (mặn/cay hơn hẳn) — mâu thuẫn, ưu tiên WOL.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có mục doubanjiang/tương đậu cay; không dùng tương miso hay tương ớt khác thay thế vì sai bản chất món; để null."
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước dùng gà",
+      "canonicalIngredientId": "ING_ENR_11FB997D0B872A56",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "cốc",
+        "text": "0.5 cốc",
+        "gramEquivalent": 120,
+        "basis": "1⁄2 cốc = 120 ml ≈ 120 g; có thể thay bằng nước lọc (WOL)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 2⁄3 cốc nước dùng gà ít mặn (hoặc nước lọc) cho 4 phần; scale x0,75 = 1⁄2 cốc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 16,
+        "proteinG": 2.02,
+        "carbohydrateG": 0.38,
+        "fatG": 0.57,
+        "fiberG": 0,
+        "sugarG": 0.29,
+        "sodiumMg": 306
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174551",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Đậu phụ non (silken tofu)",
+      "canonicalIngredientId": "ING_ENR_C44619D4DFF4D6C0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 340,
+        "unit": "g",
+        "text": "340 g",
+        "gramEquivalent": 340,
+        "basis": "đơn vị gốc đã là gram; tương đương 1 hộp đậu phụ non 300-400 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 340,
+          "unit": "g"
+        }
+      },
+      "note": "WOL: 1 lb (450 g) đậu phụ non (silken) cắt miếng 2,5 cm cho 4 phần; scale x0,75 = 340 g. Omnivore's dùng 1 block 400 g đậu firm/medium firm cho 2 phần — khác loại đậu và tỉ lệ; ưu tiên WOL (silken đúng chuẩn Tứ Xuyên).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 76,
+        "proteinG": 8.08,
+        "carbohydrateG": 1.87,
+        "fatG": 4.78,
+        "fiberG": 0.3,
+        "sugarG": 0.62,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172476",
+      "sourceNutritionNote": "USDA SR Legacy không có mục silken tofu generic; dùng số liệu 'Tofu, raw, regular, prepared with calcium sulfate' (172476) làm tương đương gần nhất, đậu non thực tế mềm và nhiều nước hơn một chút."
+    },
+    {
+      "position": 10,
+      "sourceName": "Nước (pha bột ngô)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 45,
+        "basis": "3 muỗng canh = 45 ml ≈ 45 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 1⁄4 cốc nước pha với bột ngô cho 4 phần; scale x0,75 = 3 muỗng canh.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước không cung cấp dinh dưỡng; để null."
+    },
+    {
+      "position": 11,
+      "sourceName": "Bột ngô (cornstarch)",
+      "canonicalIngredientId": "ING_ENR_457143B2409443CB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê bột ngô ước lượng ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 11⁄2 muỗng cà phê cho 4 phần; scale x0,75 ≈ 1,1 muỗng cà phê, làm tròn 1.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 381,
+        "proteinG": 0.26,
+        "carbohydrateG": 91.27,
+        "fatG": 0.05,
+        "fiberG": 0.9,
+        "sugarG": 0,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169698",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 1.1,
+        "basis": "1⁄4 muỗng cà phê = 1,25 ml; tỉ trọng dầu mè ≈ 0,91 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 1⁄4 muỗng cà phê (optional). Scale x0,75 ≈ 1⁄5 muỗng cà phê, giữ 1⁄4 cho dễ đong.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1⁄4 muỗng cà phê đường ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 1⁄4 muỗng cà phê (optional, nếu dùng). Omnivore's dùng 1 muỗng cà phê cho 2 phần — nhiều hơn; ưu tiên WOL.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 15,
+        "basis": "1 cây hành lá ước lượng ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "WOL: 1 cây hành lá thái nhỏ cho 4 phần; giữ 1 cây cho 3 phần (chênh lệch không đáng kể). Omnivore's dùng 2 cây cho 2 phần — nhiều hơn; ưu tiên WOL.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Chuẩn bị sẵn mọi thứ trước khi bật bếp: gừng tỏi băm nhuyễn; đậu phụ cắt miếng vuông 2,5 cm; pha 1 muỗng cà phê bột ngô với 3 muỗng canh nước, khuấy tan; tiêu Tứ Xuyên xay mịn (giữ lại 1⁄4 muỗng cà phê để rắc cuối).",
+      "tip": "WOL: món xào nhanh nên phải sơ chế xong hết mới nấu."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Làm dầu ớt: đun chảo/wok lửa nhỏ, cho 3 muỗng canh dầu ăn vào, thêm ớt hiểm tươi thái lát và ớt khô cắt khúc. Đảo thỉnh thoảng, phi đến khi thơm khoảng 5 phút, cẩn thận không để ớt cháy. Tắt bếp, để riêng cả dầu lẫn ớt.",
+      "tip": "WOL: ớt cháy sẽ đắng; nếu có sẵn dầu ớt phi tại nhà thì bỏ qua bước này (nhưng chỉ lấy phần dầu trong, vì dầu ớt nhà làm thường đã mặn).",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho 3 muỗng canh dầu còn lại vào wok, đun lửa vừa. Cho gừng băm vào phi 1 phút, thêm tỏi băm phi thêm 1 phút cho thơm.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Tăng lửa lớn, cho thịt heo xay vào, dùng xẻng dằm tơi thịt, xào đến khi thịt chín săn.",
+      "tip": "WOL bản cập nhật: cho bột tiêu Tứ Xuyên vào SAU khi thịt đã chín (xem bước 5), vì cho sớm dễ cháy tiêu gây đắng — đây là điểm sửa so với bản cũ.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho 2 muỗng cà phê bột tiêu Tứ Xuyên (trừ phần để trang trí) vào, đảo nhanh 15-30 giây.",
+      "tip": "WOL: đảo quá lâu tiêu sẽ cháy và đắng. Nếu tiêu của bạn rất tươi/khỏe, giảm xuống 1 muỗng cà phê.",
+      "timerMinutes": 0.5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho tương đậu cay vào, đảo đều đến khi hỗn hợp chuyển màu đỏ đẹp.",
+      "tip": "WOL: tương đậu cay Pixian cho màu và vị chuẩn nhất; đảo kỹ để tương quyện vào thịt.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đổ 1⁄2 cốc nước dùng gà vào, khuấy đều, để sôi liu riu khoảng 1 phút.",
+      "tip": "Trong lúc này tranh thủ kiểm tra lại đậu phụ và hỗn hợp bột ngô đã pha.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Khuấy lại chén bột ngô cho tan đều rồi đổ vào chảo, đảo đến khi sốt sánh lại. Nếu sốt quá đặc, thêm từng chút nước hoặc nước dùng.",
+      "tip": "WOL: sốt phải đủ sánh để bám vào miếng đậu nhưng vẫn còn nước sốt để chan cơm.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Đổ phần dầu ớt đã phi ở bước 2 (cả dầu lẫn ớt) vào chảo, đảo đều. Nhẹ tay cho đậu phụ vào, dùng xẻng hất/đảo nhẹ cho đậu áo đều sốt, đun 3-5 phút cho đậu ngấm.",
+      "tip": "WOL: đảo nhẹ tay để miếng đậu non không nát. Omnivore's om đậy nắp 8-10 phút cho cạn một nửa — khác kỹ thuật; công thức này đun mở nắp 3-5 phút theo WOL.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Thêm dầu mè, đường (nếu dùng) và hành lá thái nhỏ, đảo đến khi hành vừa héo.",
+      "tip": "WOL: nếm lại ở bước này; tương đậu đã mặn nên thường không cần thêm muối.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Tắt bếp, dọn ra đĩa sâu lòng, rắc 1⁄4 muỗng cà phê bột tiêu Tứ Xuyên giữ lại lên trên. Ăn nóng với cơm trắng.",
+      "tip": "WOL: 'rice is absolutely not optional' — món này sinh ra để ăn với cơm."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 86.13,
+      "proteinG": 9.16,
+      "carbohydrateG": 2.12,
+      "fatG": 5.42,
+      "fiberG": 0.34,
+      "sugarG": 0.7,
+      "sodiumMg": 7.93
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Ớt hiểm tươi (Thai bird chili): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Ớt khô đỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Bột tiêu Tứ Xuyên: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Gừng băm nhuyễn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tỏi băm nhuyễn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 6,
+        "detail": "Thịt heo xay: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tương đậu cay Tứ Xuyên (doubanjiang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước dùng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Nước (pha bột ngô): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Bột ngô (cornstarch): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      0,
+      3,
+      4,
+      5,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 0,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

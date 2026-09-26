@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-4693d6520fbd9d49",
+    "slug": "bo-nuong-toi",
+    "title": "Bò nướng tỏi"
+  },
+  "content": {
+    "description": "Lát bò nướng tỏi lát cháy cạnh thơm lừng chấm muối tiêu, món nướng Trung nhanh gọn.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Nướng",
+      "Bò",
+      "Tỏi",
+      "Trung Hoa"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-4693d6520fbd9d49.json",
+    "rawSchemaSignature": "cuisine,ingredients,notes,nutrition_computed,recipe_id,servings,sources,steps,title",
+    "sources": [
+      {
+        "url": "https://www.chinasichuanfood.com/beef-and-garlic-stir-fry/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://lynnandruss.com/2022/08/03/spicy-chinese-beef-skewers/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "notes: LƯU Ý NGUỒN: không tìm được công thức '蒜香烤牛肉' chuẩn từ các nguồn Trung uy tín (Woks of Life, China Sichuan Food, Red House Spice đều không có món bò nướng tỏi lát). Công thức này dựng từ mô tả món trong dataset ('lát bò nướng tỏi lát cháy cạnh thơm lừng, chấm muối tiêu, món nướng Trung nhanh gọn') kết hợp: (1) kỹ thuật ướp xì dầu + nướng lát bò của Milk Street qua blog Accounting for Taste (thịt thái 1⁄4 inch, ướp xì dầu-dầu ăn, nướng lửa lớn 2-3 phút/mặt đến xém), (2) cách dùng tỏi với thịt bò của China Sichuan Food (món 蒜香牛肉粒: thịt bò + tỏi nguyên tép + hành lá + xì dầu, phi tỏi đến hơi vàng). Phần tỏi lát phi vàng và đồ chấm muối tiêu theo đúng mô tả dataset."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt bò thái lát",
+      "canonicalIngredientId": "BEEF_SIRLOIN",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": "Đơn vị gốc đã là gram; ~150 g/người cho món mặn chính 3 người. Chọn thăn bò hoặc nạc vai, thái lát mỏng 3-5 mm ngang thớ.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "Số liệu là thịt bò flank nạc sống (USDA); dùng xấp xỉ cho thăn/nạc vai nạc thái lát, có thể chênh lệch nhẹ theo phần thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 21.72,
+        "carbohydrateG": 0,
+        "fatG": 6.29,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 57
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/168609/nutrients",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 40,
+        "basis": "1 củ tỏi ≈ 8-10 tép ≈ 40 g. Một nửa thái lát mỏng (nướng/phi ăn kèm theo đúng mô tả 'tỏi lát cháy cạnh'), một nửa băm nhỏ để ướp thịt.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "China Sichuan Food (món 蒜香牛肉粒) dùng tới 2 củ tỏi nguyên cho 200 g thịt bò — tỏi là nguyên liệu chính của món chứ không chỉ là gia vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/1104647/nutrients",
+      "sourceNutritionNote": "USDA không báo cáo sugar và sodium cho mặt hàng tỏi này; để 0."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 45,
+        "basis": "1 cây hành lá cỡ vừa ≈ 15 g (USDA: 1 medium green onion ≈ 15 g); cắt khúc 3-4 cm để rắc lên thịt nướng.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/170005/nutrients",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "2 muỗng canh = 30 ml; tỉ trọng xì dầu ≈ 1.2 → ≈ 36 g; dùng để ướp thịt.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Milk Street (Spicy Chinese Beef Skewers) ướp 680 g thịt bò với 1 muỗng canh xì dầu + gia vị khô; món này nhấn tỏi-xì dầu theo mô tả dataset nên dùng 2 muỗng canh cho 450 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/174277/nutrients",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng ≈ 0.91 → ≈ 14 g; một phần ướp thịt, một phần quét vỉ nướng.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/172370/nutrients",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ≈ 6 g (USDA); 1⁄2 ướp thịt, 1⁄2 trộn tiêu làm đồ chấm theo mô tả dataset 'chấm muối tiêu'.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/173468/nutrients",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2 g; trộn với muối làm đồ chấm.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.61,
+        "fatG": 2.12,
+        "fiberG": 26.2,
+        "sugarG": 0,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/170933/nutrients",
+      "sourceNutritionNote": "Dùng số liệu tiêu trắng (USDA 170933) tương đương cho tiêu đen; hai loại xay có thành phần gần nhau, lượng dùng nhỏ nên sai số không đáng kể. USDA không báo cáo sugar cho tiêu trắng; để 0."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế thịt bò: rửa nhanh qua nước lạnh, thấm thật khô bằng khăn giấy. Thái thịt thành lát mỏng 3-5 mm, nhớ thái ngang thớ để thịt không bị dai.",
+      "tip": "Mẹo của Milk Street và các bếp Hoa: cho thịt vào ngăn đá 20-30 phút cho hơi cứng lại sẽ thái lát mỏng đều dễ dàng. Milk Street thái dày khoảng 6 mm (1⁄4 inch)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế tỏi và hành: tỏi bóc vỏ, một nửa thái lát mỏng đều, một nửa băm nhỏ. Hành lá rửa sạch, cắt khúc 3-4 cm.",
+      "tip": "Thái tỏi thành lát (không băm) đúng như mô tả món 'tỏi lát cháy cạnh' — lát tỏi khi phi/nướng sẽ vàng giòn rìa, thơm hơn tỏi băm dễ cháy."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Ướp thịt: cho thịt bò vào tô lớn cùng tỏi băm, xì dầu, dầu ăn và 1⁄2 muỗng cà phê muối, trộn đều cho gia vị bám khắp mặt thịt. Bọc kín, ướp trong tủ lạnh 20-30 phút.",
+      "tip": "Không ướp quá lâu với xì dầu vì muối sẽ rút nước làm thịt khô khi nướng.",
+      "timerMinutes": 25
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Làm nóng bếp nướng: chuẩn bị vỉ nướng than, bếp nướng điện hoặc chảo gang ở lửa lớn trực tiếp. Quét một lớp dầu ăn mỏng lên mặt vỉ cho thịt không dính.",
+      "tip": "Milk Street: với bếp gas, làm nóng trước 10-15 phút để thịt có lớp cháy xém đẹp mà bên trong không bị chín quá.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Nướng thịt: xếp các lát thịt lên vỉ thành một lớp, không chồng lên nhau. Nướng 2-3 phút mỗi mặt đến khi mặt thịt xém vàng, rìa hơi cháy cạnh thì lật.",
+      "tip": "Milk Street: nướng đến khi xém nhẹ mỗi mặt, tổng 4-6 phút tùy độ dày. Nếu nhiều thịt, chia nướng 2 mẻ để giữ nhiệt vỉ.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Trong lúc chờ thịt: đun nóng một ít dầu trong chảo nhỏ, cho tỏi thái lát vào phi trên lửa vừa đến khi lát tỏi vàng giòn ở rìa thì vớt ngay ra giấy thấm dầu.",
+      "tip": "China Sichuan Food: phi tỏi đến khi mặt hơi vàng nâu là đạt; để quá lửa tỏi sẽ đắng. Tỏi lát vàng giòn chính là điểm nhấn 'cháy cạnh thơm lừng' của món.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Xếp thịt nướng ra đĩa, rắc đều tỏi lát phi vàng và hành lá cắt khúc lên trên."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Pha đồ chấm: trộn 1⁄2 muỗng cà phê muối còn lại với tiêu đen xay. Dọn thịt nướng khi còn nóng, chấm muối tiêu.",
+      "tip": "Đúng như mô tả gốc của món: lát bò nướng tỏi lát cháy cạnh, chấm muối tiêu."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 296.95,
+      "proteinG": 34.78,
+      "carbohydrateG": 5.91,
+      "fatG": 14.26,
+      "fiberG": 1.02,
+      "sugarG": 0.4,
+      "sodiumMg": 1522.25
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Thịt bò thái lát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

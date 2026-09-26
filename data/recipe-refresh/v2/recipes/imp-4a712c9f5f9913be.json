@@ -1,0 +1,753 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-4a712c9f5f9913be",
+    "slug": "mi-tom-nong",
+    "title": "Mì tôm nóng"
+  },
+  "content": {
+    "description": "Tô mì nóng tôm tươi-hành lá nước dùng gừng trong, bữa sáng Trung ấm bụng nhanh gọn.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Mì nóng",
+      "Tôm",
+      "Trung Hoa",
+      "Bữa sáng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-4a712c9f5f9913be.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.slurrp.com/amp/recipes/quick-chinese-shrimp-noodle-soup-1645189001",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.allrecipes.com/recipe/25760/shrimp-noodle-soup/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm tươi bóc vỏ",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 340,
+        "unit": "g",
+        "text": "340 g",
+        "gramEquivalent": 340,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 340,
+          "unit": "g"
+        }
+      },
+      "note": "Slurrp dùng 450 g (1 lb) cho 4 phần → scale 0,75 = 340 g cho 3 phần; Allrecipes dùng 340 g (12 oz) cho 6 phần — mâu thuẫn, lấy theo Slurrp vì sát phong cách mì tôm Trung hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "USDA không công bố fiber/sugar cho tôm sống nên để null."
+    },
+    {
+      "position": 1,
+      "sourceName": "Mì trứng khô",
+      "canonicalIngredientId": "ING_ENR_0A798CCBF8C89499",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 170,
+        "unit": "g",
+        "text": "170 g",
+        "gramEquivalent": 170,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 170,
+          "unit": "g"
+        }
+      },
+      "note": "Slurrp: 227 g mì khô cho 4 phần → 170 g cho 3 phần; Allrecipes dùng 113 g bún gạo cho 6 phần — mâu thuẫn, lấy theo Slurrp (mì trứng khô gần mì sợi Trung hơn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 384,
+        "proteinG": 14.16,
+        "carbohydrateG": 71.27,
+        "fatG": 4.44,
+        "fiberG": 3.3,
+        "sugarG": 1.88,
+        "sodiumMg": 21
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169731",
+      "sourceNutritionNote": "Dùng số liệu mì trứng khô làm đại diện cho mì sợi khô."
+    },
+    {
+      "position": 2,
+      "sourceName": "Gừng tươi băm nhỏ",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Slurrp: 1 inch (~15 g) cho 4 phần → ~10 g cho 3 phần; Allrecipes: 1 tbsp băm cho 6 phần — mâu thuẫn, lấy theo Slurrp scale.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 10,
+        "basis": "1 tép tỏi trung bình ~5 g (USDA: 1 clove garlic ≈ 3-7 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Slurrp: 3 tép cho 4 phần; Allrecipes: 2 tép cho 6 phần — mâu thuẫn, lấy 2 tép cho 3 phần (nằm giữa hai nguồn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Nước dùng gà",
+      "canonicalIngredientId": "ING_ENR_11FB997D0B872A56",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 720,
+        "unit": "ml",
+        "text": "720 ml",
+        "gramEquivalent": 720,
+        "basis": "nước dùng loãng, tỉ trọng ≈ 1 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 720,
+          "unit": "ml"
+        }
+      },
+      "note": "Slurrp: 4 cups nước dùng + 4 cups nước cho 4 phần → 3 cups + 3 cups cho 3 phần; Allrecipes dùng 8 cups nước dùng gà nguyên cho 6 phần — mâu thuẫn về độ đậm, lấy theo Slurrp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 6,
+        "proteinG": 0.64,
+        "carbohydrateG": 0.44,
+        "fatG": 0.21,
+        "fiberG": 0,
+        "sugarG": 0.43,
+        "sodiumMg": 371
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174536",
+      "sourceNutritionNote": "Dùng số liệu nước dùng gà pha sẵn (ready-to-serve) làm tương đương."
+    },
+    {
+      "position": 5,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 720,
+        "unit": "ml",
+        "text": "720 ml",
+        "gramEquivalent": 720,
+        "basis": "nước, tỉ trọng 1 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 720,
+          "unit": "ml"
+        }
+      },
+      "note": "Theo Slurrp (4 cups cho 4 phần, scale 0,75).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh xì dầu ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Slurrp: 2 tbsp cho 4 phần → 1,5 tbsp cho 3 phần; Allrecipes: 2 tbsp cho 6 phần — mâu thuẫn, lấy theo Slurrp scale.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "1 muỗng canh dầu ăn = 15 ml ≈ 13,6 g (tỉ trọng dầu ~0,91); 2 tsp = 2/3 tbsp ≈ 9 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Slurrp: 1 tbsp cho 4 phần → ~2 tsp cho 3 phần; Allrecipes: 2 tsp cho 6 phần — mâu thuẫn, lấy theo Slurrp scale.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "Dùng số liệu dầu đậu nành (dầu ăn phổ biến) làm đại diện."
+    },
+    {
+      "position": 8,
+      "sourceName": "Cải thìa",
+      "canonicalIngredientId": "ING_ENR_A6F1B0B6297F02B6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 105,
+        "unit": "g",
+        "text": "105 g",
+        "gramEquivalent": 105,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 105,
+          "unit": "g"
+        }
+      },
+      "note": "Slurrp: 2 cups cải thìa cắt nhỏ cho 4 phần → 1,5 cups cho 3 phần; 1 cup cải thìa cắt nhỏ ≈ 70 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 13,
+        "proteinG": 1.5,
+        "carbohydrateG": 2.18,
+        "fatG": 0.2,
+        "fiberG": 1,
+        "sugarG": 1.18,
+        "sodiumMg": 65
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170390",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Nấm mỡ trắng thái lát",
+      "canonicalIngredientId": "ING_ENR_57DBAB8A20398482",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "Slurrp: 1 cup nấm thái lát cho 4 phần → 0,75 cup cho 3 phần; 1 cup nấm thái lát ≈ 70 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 22,
+        "proteinG": 3.09,
+        "carbohydrateG": 3.26,
+        "fatG": 0.34,
+        "fiberG": 1,
+        "sugarG": 1.98,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169251",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê muối ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều ghi 'to taste' (nêm vừa miệng), không định lượng; 1/2 tsp là mức khởi điểm hợp lý, nêm lại khi nấu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu trắng xay",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2,3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Slurrp ghi 'pepper to taste'; Allrecipes dùng 1/4 tsp tiêu đen cho 6 phần — lấy tiêu trắng 1/4 tsp cho đúng phong cách Trung.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.61,
+        "fatG": 2.12,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": "USDA không công bố sugar cho tiêu trắng nên để null."
+    },
+    {
+      "position": 12,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 45,
+        "basis": "1 cây hành lá trung bình ~15 g (USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn dùng hành lá trang trí 'as per need'; 3 cây cho 3 tô.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "1 muỗng cà phê dầu ≈ 4,5 g (1 tbsp ≈ 13,6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Slurrp gợi ý 'a splash of sesame oil' để tăng hương vị; không bắt buộc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế tôm: bóc vỏ, bỏ chỉ đen ở lưng, rửa sạch, để ráo nước.",
+      "tip": "Slurrp dùng tôm đã bóc vỏ sẵn (peeled and deveined). Để ráo kỹ giúp tôm xào nhanh săn, không ra nước."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế rau củ: gừng gọt vỏ băm nhỏ; tỏi bóc vỏ băm nhuyễn; cải thìa cắt khúc vừa ăn; nấm thái lát mỏng; hành lá cắt nhỏ để riêng."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đặt nồi lớn lên bếp, cho dầu ăn vào đun nóng vừa, cho tỏi và gừng băm vào phi thơm khoảng 30 giây đến 1 phút, không để cháy.",
+      "tip": "Slurrp: sauté garlic and ginger until fragrant; Allrecipes: xào hành, tỏi, gừng, ớt khoảng 2 phút. Tỏi cháy sẽ đắng.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho tôm vào nồi, xào nhanh trên lửa lớn đến khi tôm chuyển màu hồng và hơi săn lại thì vớt ra đĩa, để riêng.",
+      "tip": "Slurrp xào tôm trước rồi vớt ra để tôm không bị nấu quá dai; Allrecipes cho tôm vào sau cùng cùng rau — mâu thuẫn, lấy theo Slurrp.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đổ nước dùng gà, nước lọc và xì dầu vào nồi, khuấy đều, đun sôi.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Khi nước sôi, cho mì vào nấu theo thời gian ghi trên bao bì đến khi sợi mì chín mềm vừa ăn, khuấy nhẹ để mì không dính.",
+      "tip": "Slurrp: cook noodles until tender. Mì trứng khô thường cần 5-8 phút.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho cải thìa và nấm thái lát vào nồi, đun thêm 2-3 phút cho rau vừa chín tới, vẫn giữ màu xanh.",
+      "tip": "Slurrp: simmer a few minutes until vegetables are cooked. Không đun rau quá lâu sẽ mất giòn.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho tôm đã xào trở lại nồi, đun thêm khoảng 1 phút cho tôm nóng lại và ngấm nước dùng.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nêm muối và tiêu trắng, nếm lại và điều chỉnh cho vừa khẩu vị.",
+      "tip": "Cả hai nguồn đều nêm 'to taste' ở bước cuối vì xì dầu và nước dùng đã mặn sẵn."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Múc mì, tôm, rau và nước dùng ra tô, rưới dầu mè, rắc hành lá cắt nhỏ lên trên, dùng nóng.",
+      "tip": "Slurrp: serve hot, garnish with chopped green onions. Ăn ngay khi còn nóng, mì để lâu sẽ trương."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 228.48,
+      "proteinG": 9.12,
+      "carbohydrateG": 42.29,
+      "fatG": 2.67,
+      "fiberG": 2.45,
+      "sugarG": 1.87,
+      "sodiumMg": 35.92
+    },
+    "originalPerServing": {
+      "energyKcal": 394.13,
+      "proteinG": 34.68,
+      "carbohydrateG": 46.12,
+      "fatG": 8.35,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1946.11
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Tôm tươi bóc vỏ: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Nước dùng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu trắng xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      13
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 4,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

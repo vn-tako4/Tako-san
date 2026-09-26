@@ -1,0 +1,675 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-ac77ed3af015efd7",
+    "slug": "canh-bo-bap-cai",
+    "title": "Canh bò bắp cải"
+  },
+  "content": {
+    "description": "Lát bò mềm nấu bắp cải ngọt nước canh trong, món canh ấm đậm cho bữa tối mưa gió.",
+    "cuisine": "vietnamese",
+    "category": "mon_canh",
+    "region": "nam",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Món canh",
+      "Bò",
+      "Ấm",
+      "Cơm nhà"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-ac77ed3af015efd7.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://tomate.com.vn/cach-nau-canh-bap-cai-thit-bo/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "http://naungon.com/index.php?id=-canh-~-kham-pha-cong-thuc-nau-canh-bap-cai-ngon-voi-thit-bo-bo-duong-",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt bò thăn (thái lát mỏng)",
+      "canonicalIngredientId": "ING_ENR_745FC31DDEB3506D",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Thịt bò thăn via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng 200 g cho ~4 người (Tomate: 200 g thăn hoặc nạc vai; NauNgon: 2 lạng thăn). Nhất quán.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 199,
+        "proteinG": 19.7,
+        "carbohydrateG": 0,
+        "fatG": 13.4,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 80
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174707",
+      "sourceNutritionNote": "Dùng 'Beef, loin, top sirloin cap steak, boneless, separable lean and fat, trimmed to 1/8\" fat, choice, raw' (USDA 174707, SR Legacy) thay thế cho thăn bò Việt; độ béo 13.4 g/100 g là của phần thịt có mỡ viền, phần thịt nạc lọc mỡ sẽ béo ít hơn."
+    },
+    {
+      "position": 1,
+      "sourceName": "Bắp cải",
+      "canonicalIngredientId": "CABBAGE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Tomate: 300 g (~1/2 bắp cải vừa) cho 4 người. NauNgon: 1/4 cây (nếu bắp nhỏ thì 1/2). Lấy theo Tomate vì định lượng rõ ràng hơn; 1/4-1/2 cây tùy cỡ bắp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 1.28,
+        "carbohydrateG": 5.8,
+        "fatG": 0.1,
+        "fiberG": 2.5,
+        "sugarG": 3.2,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169975",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Cà chua",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 130,
+        "basis": "1 quả cà chua vừa ~130 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "MÂU THUẪN: Tomate dùng 1-2 quả cà chua để tạo vị chua nhẹ và màu đẹp; NauNgon KHÔNG dùng cà chua. Dùng 1 quả theo Tomate (nguồn chi tiết hơn). Cũng lưu ý: hint_ingredients có 'Cà rốt' nhưng cả hai nguồn đều KHÔNG dùng cà rốt nên file này không đưa cà rốt vào; nếu muốn thêm có thể cho 1/2 củ cà rốt thái khoanh cùng lúc với bắp cải.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 9,
+        "basis": "3 tép tỏi ~9 g (USDA: 1 tép ~3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Tomate: 3 tép băm nhuyễn (1 phần ướp bò, 1 phần phi thơm). NauNgon: 2 tép. Lấy theo Tomate.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "nhánh",
+        "text": "3 nhánh",
+        "gramEquivalent": 30,
+        "basis": "1 nhánh hành lá ~10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Tomate: 50 g hành lá + rau mùi chung. NauNgon: 'vài cọng hành lá'. Dùng 3 nhánh (~30 g).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Rau mùi (ngò rí)",
+      "canonicalIngredientId": "ING_ENR_D6CB7B7A9989F08F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "ước chừng một nắm nhỏ rau mùi",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN: Tomate dùng 'hành lá, rau mùi'; NauNgon dùng 'hành lá, mùi tàu'. Hai loại rau thơm khác nhau; lấy theo Tomate (rau mùi/ngò rí) vì là nguồn chính của file này.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "lít",
+        "text": "1.5 lít",
+        "gramEquivalent": 1500,
+        "basis": "đơn vị gốc đã là ml (≈ gram)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "l"
+        }
+      },
+      "note": "Tomate: 1.5-2 lít cho 4 người. NauNgon: '1 tô nước lạnh' (không định lượng). Dùng 1.5 lít.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 7,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.25,
+        "unit": "muỗng cà phê",
+        "text": "1.25 muỗng cà phê",
+        "gramEquivalent": 7,
+        "basis": "1 muỗng cà phê muối ≈ 5.8 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tomate: 'một chút' muối ướp bò + nêm canh (không định lượng). NauNgon: 1 muỗng cà phê muối ướp bò. Dùng tổng 1 muỗng cà phê đầy (~7 g: 1 tsp ướp + 1/4 tsp nêm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê hạt nêm dạng bột ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tomate: nêm hạt nêm ở bước nấu canh (không định lượng). NauNgon: có trong danh sách gia vị nhưng công thức không định lượng. Dùng 1 muỗng cà phê, nêm nếm lại cho vừa.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.66,
+        "carbohydrateG": 18.01,
+        "fatG": 13.88,
+        "fiberG": 0,
+        "sugarG": 17.36,
+        "sodiumMg": 23875
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "Số liệu thay thế bằng 'Soup, chicken broth or bouillon, dry' (USDA 171562) — nguyên liệu generic gần nhất; KHÔNG khớp tuyệt đối với hạt nêm Việt Nam."
+    },
+    {
+      "position": 9,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2.1 g; 1/2 muỗng ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều dùng tiêu: ướp bò và rắc khi ăn. Tomate: 'rắc thêm tiêu xay nếu thích'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 17,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng nước mắm ~1.16 g/ml ≈ 17 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tomate: ướp bò với 'một chút' nước mắm + nêm 'một ít nước mắm' lúc nấu canh. NauNgon: ướp không dùng nước mắm, chỉ liệt kê trong gia vị chung. Dùng tổng 1 muỗng canh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 13.6,
+        "basis": "1 muỗng canh dầu ăn = 15 ml ≈ 13.6 g (tỉ trọng dầu ~0.91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tomate: 'một ít dầu ăn' phi tỏi, xào bò. NauNgon: 'nửa thìa dầu chiên' ướp bò + 'một xíu dầu' phi tỏi. Dùng tổng 1 muỗng canh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Thịt bò rửa sạch, để ráo, thái lát mỏng ngang thớ. Ướp với 1/2 lượng tỏi băm, 1 muỗng cà phê muối, 1/2 muỗng canh nước mắm, 1/2 muỗng cà phê tiêu và 1/2 muỗng canh dầu ăn; trộn đều, để 15-20 phút cho ngấm.",
+      "tip": "Tomate khuyên chọn thăn bò hoặc nạc vai để thịt mềm. NauNgon: thêm nửa thìa dầu khi ướp giúp thịt mềm mịn, không khô.",
+      "timerMinutes": 18
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Bắp cải tách lá, rửa nhiều lần cho sạch bụi bẩn (có thể ngâm nước muối loãng 15 phút theo NauNgon), để ráo rồi cắt miếng vừa ăn.",
+      "tip": "Tomate: nên chọn bắp cải non, màu xanh nhạt, lá chắc để khi nấu giữ độ giòn ngọt."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cà chua rửa sạch, bổ múi cau. Hành lá, rau mùi rửa sạch, cắt nhỏ."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho 1/2 muỗng canh dầu ăn còn lại vào nồi, đun nóng, phi thơm phần tỏi băm còn lại. Cho thịt bò đã ướp vào xào nhanh ở lửa lớn đến khi vừa chín tới thì trút ra tô riêng.",
+      "tip": "Cả hai nguồn đều nhấn mạnh: xào nhanh lửa lớn và vớt thịt ra riêng để thịt không bị dai, giữ độ ngọt.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Vẫn dùng nồi đó, cho cà chua vào xào sơ cho mềm, tạo màu đẹp cho nước canh.",
+      "tip": "Bước này chỉ có ở Tomate (NauNgon không dùng cà chua); giúp canh có vị chua nhẹ thanh mát.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ 1.5 lít nước lọc vào nồi, đun sôi."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Khi nước sôi, cho bắp cải vào, nấu khoảng 5-7 phút đến khi bắp cải chín mềm nhưng vẫn giữ độ giòn.",
+      "tip": "Tomate: không nấu bắp cải quá lâu sẽ bị nhừ, mất vị giòn ngọt.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho thịt bò đã xào trở lại nồi. Nêm 1 muỗng cà phê hạt nêm, 1/2 muỗng canh nước mắm còn lại và 1/4 muỗng cà phê muối; nêm nếm lại cho vừa miệng.",
+      "tip": "Tomate: nêm nhẹ tay để giữ vị thanh của bắp cải và vị ngọt tự nhiên của thịt bò."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nước sôi lại thì tắt bếp ngay, tránh đun lâu làm thịt bò dai."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Múc canh ra tô, cho hành lá và rau mùi cắt nhỏ lên trên, rắc thêm tiêu xay. Dùng nóng cùng cơm trắng."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 118.25,
+      "proteinG": 10.81,
+      "carbohydrateG": 4.35,
+      "fatG": 6.78,
+      "fiberG": 1.88,
+      "sugarG": 2.4,
+      "sodiumMg": 53.5
+    },
+    "originalPerServing": {
+      "energyKcal": 165.84,
+      "proteinG": 11.89,
+      "carbohydrateG": 7.59,
+      "fatG": 10.44,
+      "fiberG": 2.71,
+      "sugarG": 3.83,
+      "sodiumMg": 1309.74
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Cà chua: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Rau mùi (ngò rí): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 11,
+        "detail": "Dầu ăn: consumed/absorbed amount is not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      }
+    ]
+  }
+}

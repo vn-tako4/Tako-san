@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-328b6c9769e256eb",
+    "slug": "tom-nuong-muoi-ot-han",
+    "title": "Tôm nướng muối ớt Hàn"
+  },
+  "content": {
+    "description": "Tôm nướng muối-ớt chấm dầu mè hành lá, món nướng Hàn vịt biển đậm đà.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Nướng",
+      "Tôm",
+      "Hàn Quốc",
+      "Muối ớt"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-328b6c9769e256eb.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.maangchi.com/recipe/saeu-sogeum-gui",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.10000recipe.com/en/7002681/How_to_grill_shrimp_with_salt_and_how_to_cook_time_frying_pan__P",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm tươi (tôm sú/tôm thẻ lớn, còn vỏ)",
+      "canonicalIngredientId": "ING_ENR_0C17978DA34A14F0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram (12 con tôm lớn ~6 inch, ước ~40 g/con)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi: 8 con tôm lớn (~6 inch/con) cho 2 phần → 12 con cho 3 phần; khối lượng 500 g là ước tính theo kích thước, không có trong nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "[audit round 4: đồng bộ lại toàn bộ 7 chỉ số theo bản ghi FDC 175179 — Crustaceans, shrimp, raw]"
+    },
+    {
+      "position": 1,
+      "sourceName": "Muối biển hạt to (coarse sea salt)",
+      "canonicalIngredientId": "ING_ENR_346986B34E3C2CA7",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram (ước đủ phủ một lớp dày đáy chảo 28 cm)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn đều không định lượng muối lót chảo; 300 g là ước tính. Maangchi nhấn mạnh BẮT BUỘC dùng muối biển hạt to: muối tinh hoặc muối kosher quá mịn sẽ bám vào vỏ khiến tôm bị mặn gắt. Phần lớn lớp muối lót không ăn — số liệu dinh dưỡng muối chỉ mang tính tham chiếu. Muối sau khi nướng ngấm mùi tôm, Maangchi gợi ý giữ lại để nấu món khác.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Tương ớt Hàn (gochujang)",
+      "canonicalIngredientId": "ING_ENR_7B2DCEA4C5B68A51",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 54,
+        "basis": "1 muỗng canh tương ớt đặc ≈ 18 g (tỉ trọng tương đặc ~1.2 g/ml, ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi: 2 muỗng canh gochujang cho nước chấm của 2 phần → 3 muỗng canh cho 3 phần. USDA FDC (SR Legacy) không có mục riêng cho gochujang nên dinh dưỡng để null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Nước cốt chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 45,
+        "basis": "1 muỗng canh nước cốt chanh ≈ 15 g (khối lượng chuẩn USDA FoodData Central)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi: 2-3 muỗng canh nước cốt chanh tươi cho 2 phần → 3 muỗng canh cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 21.7,
+        "proteinG": 0.35,
+        "carbohydrateG": 6.9,
+        "fatG": 0.24,
+        "fiberG": 0.3,
+        "sugarG": 2.52,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167747",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Mật ong",
+      "canonicalIngredientId": "ING_ENR_32FA0711241370F1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 14,
+        "basis": "1 muỗng cà phê mật ong ≈ 7 g (khối lượng chuẩn USDA FoodData Central)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi: 1-2 muỗng cà phê mật ong (hoặc đường) cho 2 phần → 2 muỗng cà phê cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 304,
+        "proteinG": 0.3,
+        "carbohydrateG": 82.4,
+        "fatG": 0,
+        "fiberG": 0.2,
+        "sugarG": 82.12,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169640",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "tép",
+        "text": "2 tép",
+        "gramEquivalent": 6,
+        "basis": "1 tép tỏi ≈ 3 g (khối lượng chuẩn USDA FoodData Central cho 1 clove garlic)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi: 1 tép tỏi băm cho nước chấm 2 phần → 2 tép cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "[audit round 4: đồng bộ lại toàn bộ 7 chỉ số theo bản ghi FDC 169230 — Garlic, raw]"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Tôm đông lạnh thì rã đông trong nước lạnh (còn nguyên túi). Dùng kéo cắt bỏ râu, chân và phần nhọn ở đầu tôm, rửa sạch bằng nước muối loãng rồi để thật ráo.",
+      "tip": "10000recipe: rã đông kỹ trong nước lạnh giúp tôm nướng ngon như tôm tươi; rửa nước muối loãng trước khi cấp đông giữ tôm tươi lâu.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Dùng tăm rút chỉ đen (đường ruột) ở lưng tôm: chọc tăm vào giữa đốt thứ 2-3 tính từ đầu, khều nhẹ kéo chỉ ra.",
+      "tip": "10000recipe: chỉ tôm có vị đắng và có thể gây đau bụng, nên rút bỏ. Maangchi: có thể xẻ dọc lưng tôm để tôm không bị cong khi nướng, trông đẹp mắt hơn."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Pha nước chấm: trộn đều gochujang, nước cốt chanh, mật ong, tỏi băm và ớt hiểm băm nhỏ. Nếm và điều chỉnh chua-cay-ngọt theo khẩu vị.",
+      "tip": "Maangchi: nước chấm chua-cay-ngọt này là linh hồn của món tôm nướng muối — pha trước để khi tôm chín là có ngay."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Lót giấy bạc vào chảo (loại chảo cũ, đáy dày), rải muối biển hạt to phủ kín một lớp dày đều khắp đáy chảo.",
+      "tip": "10000recipe: lót giấy bạc chỉ để dễ vệ sinh, không ảnh hưởng vị. Maangchi: dọn tôm nướng trên lớp muối trông rất đẹp mắt khi bày ra bàn."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đậy nắp, đun chảo lửa vừa-nhỏ khoảng 5 phút cho lớp muối nóng đều.",
+      "tip": "10000recipe: bí quyết là làm nóng muối trước — muối nóng sẵn giúp tôm chín nhanh, không bị khô. Maangchi cũng làm nóng muối trước vì cùng lý do.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Xếp tôm thành một lớp lên trên lớp muối nóng, đậy nắp lại, giữ lửa vừa-nhỏ, nướng 5 phút.",
+      "tip": "Xếp tôm một lớp, không chồng lên nhau để chín đều.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Mở nắp, lật mặt tôm, đậy nắp nướng thêm 3 phút đến khi vỏ tôm chuyển đỏ đều, thân tôm cong và săn lại.",
+      "tip": "10000recipe: tổng thời gian nướng 8 phút (5+3) — không nướng non (chưa chín) cũng không nướng quá (tôm khô, bở). Maangchi: tôm nhỏ hơn thì giảm thời gian.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Gắp tôm ra đĩa (gạt bỏ hạt muối bám trên vỏ), rắc hành lá thái nhỏ lên trên.",
+      "tip": "Maangchi: muối hạt to ít tiếp xúc với vỏ nên chỉ cần gạt nhẹ là sạch; tôm đã thấm vị mặn vừa đủ từ lớp muối."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Dọn tôm nóng kèm bát nước chấm gochujang-ớt hiểm. Bóc vỏ chấm và ăn ngay.",
+      "tip": "Món này ở Hàn thường dùng làm mồi nhậu (anju). Ăn ngay khi còn nóng là ngon nhất — tôm nguội sẽ kém ngọt."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Tôm tươi (tôm sú/tôm thẻ lớn, còn vỏ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Muối biển hạt to (coarse sea salt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tương ớt Hàn (gochujang): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Nước cốt chanh tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Mật ong: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      3,
+      4
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

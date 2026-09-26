@@ -1,0 +1,521 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-fbbe89a1039604fc",
+    "slug": "nam-xao-toi-trung",
+    "title": "Nấm xào tỏi Trung"
+  },
+  "content": {
+    "description": "Nấm xào tỏi nước tương thơm lừng, món xào nhanh mười phút chuẩn vị mặn chay Trung Hoa.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Xào",
+      "Nấm",
+      "Nhanh",
+      "Chay"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-fbbe89a1039604fc.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.chinasichuanfood.com/?p=23988",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://thewoksoflife.com/king-oyster-mushroom-stir-fry-vegan/?adt_ei=*|EMAIL|*",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nấm đùi gà (king oyster)",
+      "canonicalIngredientId": "ING_ENR_EB2B705B6866EF2E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "China Sichuan Food dùng 3 cây cỡ vừa (không ghi khối lượng, ước ~300 g); Woks of Life dùng 450 g cho bản cay. Hai nguồn mâu thuẫn nhẹ về lượng — lấy 400 g cho 3 phần ăn kèm, ưu tiên CSF vì đúng món xào tỏi không cay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 46.4,
+        "proteinG": 2.41,
+        "carbohydrateG": 8.5,
+        "fatG": 0.31,
+        "fiberG": 3.01,
+        "sugarG": null,
+        "sodiumMg": 0.77
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2003599",
+      "sourceNutritionNote": "Mục Foundation 'Mushroom, king oyster' không có nutrient 208 (Energy, kcal) và 269 (Total Sugars) nên để null, không suy ra. USDA Foundation 2003599 'Mushroom, king oyster' — energy từ nutrient 957 (Atwater General, kcal; không có 208); sugar null (không báo cáo)"
+    },
+    {
+      "position": 1,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 30,
+        "basis": "1 củ tỏi trung bình ≈ 30 g (khoảng 8-10 tép; 1 tép ≈ 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "CSF: 1 củ tỏi băm nhuyễn; WOL: 8 tép thái lát — tương đương nhau, không mâu thuẫn thực chất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Xì dầu nhạt (light soy sauce)",
+      "canonicalIngredientId": "ING_ENR_F4D1B45C3CF6671C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh xì dầu = 15 ml; tỉ trọng xì dầu ≈ 1,2 g/ml → ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều dùng 1 muỗng canh xì dầu nhạt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "USDA dùng mục 'Soy sauce made from soy and wheat (shoyu)' làm đại diện xì dầu nhạt."
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá trung bình ≈ 15 g (quy đổi thông dụng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "CSF ghi 'green onion sections' không định lượng; lấy 2 cây cho 3 phần theo ước lượng thông thường.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "USDA SR Legacy 170005 'Onions, spring or scallions (includes tops and bulb), raw' — bản ghi đầy đủ 7 chỉ số (thay 2727585 Foundation thiếu energy/carbs/fat; audit round 5)"
+    },
+    {
+      "position": 4,
+      "sourceName": "Dầu ăn thực vật",
+      "canonicalIngredientId": "ING_ENR_57DC624F79E53EB4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh dầu ăn = 15 ml; tỉ trọng dầu thực vật ≈ 0,91 g/ml → 2 muỗng ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "CSF dùng 2 muỗng canh (chia 2 lần: quét chảo áp nấm + phi tỏi); WOL dùng tới 5 muỗng canh vì chiên nấm ngập hơn trong bản cay. Lấy theo CSF 2 muỗng canh vì sát món xào tỏi đơn giản.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 1,
+        "basis": "1 nhúm muối ≈ 1 g (quy đổi thông dụng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "CSF ghi 'một nhúm muối' (pinch of salt), không định lượng chính xác.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1 muỗng cà phê đường ≈ 4 g → 1/4 muỗng ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "CSF dùng 1/8 muỗng cà phê; WOL dùng 1/2 muỗng cà phê — mâu thuẫn. Lấy 1/4 muỗng cà phê làm trung gian cho 3 phần, ưu tiên CSF (món gốc xào tỏi).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng canh",
+        "text": "0.5 muỗng canh",
+        "gramEquivalent": 9,
+        "basis": "1 muỗng canh dầu hào ≈ 18 g → 1/2 muỗng ≈ 9 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "CSF ghi rõ optional (tùy chọn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.92,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": 0,
+        "sodiumMg": 2733
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174529",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Ớt tươi (ớt hiểm)",
+      "canonicalIngredientId": "ING_ENR_C1A0333858C16D4F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 5,
+        "basis": "1 quả ớt hiểm ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "CSF dùng 1 quả ớt Thái cắt khoanh (không ghi optional nhưng món là xào tỏi, ớt chỉ tạo màu/điểm cay nhẹ); WOL dùng 5 quả ớt sừng cho bản cay — khác hẳn định vị món. Để optional vì tên món 'xào tỏi' không bắt buộc cay.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tra USDA cho nguyên liệu optional trang trí, lượng quá nhỏ."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế nấm: lau sạch nấm bằng khăn ẩm (không ngâm nước vì nấm hút nước nhanh, làm mất độ giòn). Cắt bỏ phần gốc cứng, cắt nấm thành khoanh tròn dày 1-1,5 cm.",
+      "tip": "CSF: khía các đường song song nông trên một mặt khoanh nấm, xoay ngang khía tiếp (kiểu caro), làm cả hai mặt — giúp nấm chín nhanh và thấm gia vị hơn."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Bóc vỏ tỏi, băm nhuyễn. Hành lá cắt khúc khoảng 3 cm. Ớt (nếu dùng) thái khoanh mỏng."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Quét một lớp dầu mỏng lên chảo (dùng khoảng 1/2 lượng dầu), đun lửa vừa-lớn. Xếp các khoanh nấm vào chảo thành một lớp, áp chảo đến khi một mặt hơi xém vàng thì lật mặt còn lại. Tổng khoảng 3-5 phút rồi gắp nấm ra đĩa.",
+      "tip": "CSF: nếu nấm ra nước trong lúc áp chảo (do đã rửa), chắt bỏ phần nước đó để nấm không bị bở.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho phần dầu còn lại vào chảo, hạ lửa vừa. Cho 3/4 lượng tỏi băm vào phi đến khi dậy mùi thơm và hơi vàng.",
+      "tip": "CSF: phi tỏi vừa thơm là được, để cháy sẽ đắng. WOL cũng lưu ý chỉ phi tỏi khoảng 30 giây.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho 1/4 tỏi băm còn lại vào chảo cùng muối, đường, xì dầu và dầu hào (nếu dùng). Đảo đều cho gia vị hòa quyện thành sốt tỏi.",
+      "tip": "CSF cho 1/4 tỏi sống vào sau để giữ mùi tỏi tươi nồng — đây là điểm nhấn của món."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho nấm đã áp chảo trở lại chảo, đảo nhanh tay khoảng 1-2 phút cho nấm thấm đều sốt tỏi.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho hành lá cắt khúc và ớt khoanh vào, đảo nhanh thêm khoảng 30 giây rồi tắt bếp.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Dọn nấm ra đĩa, ăn nóng với cơm trắng.",
+      "tip": "CSF: nấm đùi gà làm theo cách này có vị gần giống bào ngư, ăn nóng mới ngon."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 165.53,
+      "proteinG": 4.56,
+      "carbohydrateG": 16.33,
+      "fatG": 9.52,
+      "fiberG": 4.54,
+      "sugarG": null,
+      "sodiumMg": 545.09
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Nấm đùi gà (king oyster): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Xì dầu nhạt (light soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Dầu ăn thực vật: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

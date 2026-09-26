@@ -1,5 +1,82 @@
 # Architecture Decisions
 
+## ADR-032 — Recipe Content Refresh V2 uses a richer canonical source and a separate deterministic runtime projection
+
+**Status:** Accepted 2026-09-27 for the canonical-source branch. No migration,
+remote D1/R2 mutation, recipe-authority change, deployment or T20 enablement is
+authorized by this decision.
+
+**Context:** The externally researched 500-recipe ZIP is not a runtime import
+batch. It contains 15 root shapes, qualitative and process ingredients,
+unsupported culinary units, 289 nominal nutrition profiles with process-media
+errors, and research provenance that must not be flattened into
+`RuntimeRecipeIngredient`. The existing T14E compiler is intentionally
+INSERT-only, the closed runtime unit vocabulary is still required by planner,
+inventory, shopping and cooking, and `ALL_RECIPES` remains the 71-recipe
+rollback baseline under ADR-027/030.
+
+**Decision:**
+
+1. `data/recipe-refresh/v2` is the canonical research source for this content
+   generation. Every recipe uses one strict schema and preserves identity,
+   research sources, normalized steps, source-rich ingredient quantity evidence,
+   usage/nutrition roles, nutrition certification, legacy media compatibility
+   and audit metadata. Source truth may be richer than runtime truth.
+2. Ingredient roles include consumed, process-only, mixed-process, optional,
+   garnish and qualitative. Nutrition separately distinguishes consumed,
+   excluded process, unresolved absorption and excluded optional rows. Unknown
+   edible quantity or absorption remains explicit; no made-up gram/ml/count
+   value is introduced to satisfy runtime contracts.
+3. Ingredient identity uses the existing exact catalog resolver first, then a
+   deterministic provisional name key for `ING_ENR_*` IDs. Nutrition/FDC URLs are
+   evidence only and never identity authority. This prevents proxy reuse from
+   merging foods such as miso with soy sauce, galangal with ginger, or bell
+   pepper with generic chili. Reconciliation remains machine-readable.
+4. Nutrition is recomputed from evidenced edible gram equivalents. Explicitly
+   non-consumed process rows are excluded; frying, extraction, marinades and
+   mixed use with unknown transfer/absorption block certification. Only a
+   complete seven-nutrient profile with no material blocker publishes as
+   `<recipe-id>_nutrition_v2`; blocked/null profiles expose null certified
+   nutrients and retain a separate non-publishable candidate for audit.
+5. `scripts/recipe-refresh-v2.mjs` is a no-network deterministic build/check
+   boundary. It writes the canonical package, audit artifacts and exact
+   `RuntimeRecipe` projection, hashes ordered canonical files, and computes
+   runtime identity only through the project's `fingerprintRecipes()`.
+   `pnpm recipe:refresh:check` fails on catalog/schema/exception/hash/projection
+   drift. Mutable URL spot checks are evidence outside the canonical hash.
+   The runtime fingerprint is explicitly provisional. `pnpm recipe:refresh:release-check`
+   fails with typed blockers until a separately reviewed production projection
+   and final fingerprint exist.
+6. Runtime projection does not make quantities nullable. It admits only
+   canonical IDs with positive `StandardUnit` quantities, excludes non-shopping
+   water and estimated process quantities, and omits uncertified nutrition.
+   Rich process/qualitative metadata remains source-only until a separately
+   reviewed runtime contract can carry it without breaking planner/inventory/
+   shopping/cooking/T20 behavior.
+7. The T14E import compiler and current release manifest remain unchanged.
+   Content Refresh V2 is a separate future convergence path. Before generating
+   `0040_recipe_content_refresh_v2.sql`, reconcile runtime/content loss, promote
+   ingredient authority with evidence, verify sources, certify nutrition, and
+   generate a complete final projection. The migration must preserve recipe IDs,
+   verify exact old/new states, inspect child FKs and fail closed on unknown state.
+
+**PR #11 remediation:** The original canonical package conflated source validity
+with release readiness. The source manifest now records four typed blockers,
+`productionReleaseReady=false`, `finalRuntimeFingerprint=null`, and a separate
+provisional projection fingerprint. All 500 source files retain URL references
+but distinguish structural validity from content verification. Generated
+`ING_ENR_*` identities are provisional until an explicit review record exists;
+the ingredient-authority assertion rejects provisional IDs. Per-recipe exclusion
+reasons and an aggregate coverage report make runtime loss auditable. This adds
+no D1 schema or runtime quantity contract change.
+
+**Consequences:** The canonical package can be reviewed and reproduced without
+production reads, network calls or AI. A refresh release may update the D1 500
+while preserving the static 71 rollback baseline. Nutrition coverage may shrink
+rather than publish false precision. Media remains ADR-025 metadata/R2 work and
+is not marked ready by this source. Staging certification and any 0040 rollout
+are separate release tasks.
+
 ## ADR-031 — Meal Composition V2: one composition per slot, additive storage, shared revision, single-subtraction projection (T20)
 
 **Status:** Accepted 2026-09-25 for T20 implementation. Gated off by default; no

@@ -1,0 +1,887 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-e75e90d847daa628",
+    "slug": "mi-xao-hai-san",
+    "title": "Mì xào hải sản"
+  },
+  "content": {
+    "description": "Sợi mì xào tôm-mực cùng cải, hải sản chần sơ xào lửa lớn, món xào biển đậm đà no bụng.",
+    "cuisine": "vietnamese",
+    "category": "mon_xao",
+    "region": "nam",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Xào",
+      "Hải sản",
+      "Mì",
+      "Nam Bộ"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-e75e90d847daa628.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-mi-xao-hai-san-hap-dan-la-mieng-cho-ca-nha-01030",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://blogcooky.wordpress.com/2018/10/25/cach-lam-mi-xao-hai-san-hap-dan/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì trứng khô (vắt mì)",
+      "canonicalIngredientId": "ING_ENR_3CC5E578F9D53CA8",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram; Điện máy XANH dùng 100 g mì (2 vắt) cho 2 người, nhân 1,5 cho 3 người",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "Điện máy XANH dùng vắt mì khô 100 g cho 2 người; Cooky dùng 2 gói mì tôm ăn liền nhưng không ghi số người ăn — hai nguồn mâu thuẫn về loại mì. Lấy vắt mì khô theo Điện máy XANH, 150 g cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 384,
+        "proteinG": 14.16,
+        "carbohydrateG": 71.27,
+        "fatG": 4.44,
+        "fiberG": 3.3,
+        "sugarG": 1.88,
+        "sodiumMg": 21
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169731",
+      "sourceNutritionNote": "Dùng số liệu mì trứng khô (dry egg noodles) trong FDC."
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm tươi",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Điện máy XANH dùng 100 g tôm cho 2 người (tức 150 g cho 3 người); Cooky dùng 200 g tôm không ghi số người — mâu thuẫn. Lấy 200 g cho 3 người để phần hải sản đầy đặn, ghi rõ lý do.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "Response FDC không có số liệu fiber_g và sugar_g cho tôm nên để null hai chỉ số này. [audit round 4: đồng bộ lại toàn bộ 7 chỉ số theo bản ghi FDC 175179 — Crustaceans, shrimp, raw]"
+    },
+    {
+      "position": 2,
+      "sourceName": "Mực tươi",
+      "canonicalIngredientId": "SQUID",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "g",
+        "text": "250 g",
+        "gramEquivalent": 250,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 250,
+          "unit": "g"
+        }
+      },
+      "note": "Điện máy XANH dùng 200 g mực cho 2 người (tức 300 g cho 3 người); Cooky dùng 200 g không ghi số người — mâu thuẫn. Lấy mức trung gian 250 g cho 3 người, ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 79,
+        "proteinG": 16.24,
+        "carbohydrateG": 0.82,
+        "fatG": 0.7,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 372
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174215",
+      "sourceNutritionNote": "Dùng số liệu mực nang (cuttlefish) generic trong FDC — gần nhất với mực ống/mực tươi; response không có số liệu sugar_g nên để null."
+    },
+    {
+      "position": 3,
+      "sourceName": "Cải thìa",
+      "canonicalIngredientId": "ING_ENR_A6F1B0B6297F02B6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram; 150 g tương đương khoảng 4-5 cây cải thìa vừa",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "Cả Điện máy XANH (100 g cho 2 người) và Cooky (200 g) đều dùng cải thìa; hint món lại ghi bắp cải — mâu thuẫn giữa hint và hai nguồn. Giữ cải thìa theo cả hai nguồn (150 g cho 3 người); có thể thay bằng bắp cải thái sợi nếu thích, hương vị tương đương.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 20.259,
+        "proteinG": 1.02375,
+        "carbohydrateG": 3.51495,
+        "fatG": 0.2338,
+        "fiberG": 1.259,
+        "sugarG": null,
+        "sodiumMg": 14.27
+      },
+      "sourceNutritionReference": "https://fdc.nal.usda.gov/food-details/2685572/nutrients",
+      "sourceNutritionNote": "[audit round 4: đồng bộ lại toàn bộ 7 chỉ số theo bản ghi FDC 2685572 — Cabbage, bok choy, raw]"
+    },
+    {
+      "position": 4,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram; Điện máy XANH trong công thức 'mì tôm xào hải sản' ghi 'cà rốt 1 củ'; Cooky dùng 1/2 củ cà rốt",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "Cooky dùng 1/2 củ cà rốt; Điện máy XANH (công thức mì tôm xào hải sản) dùng 1 củ cà rốt — mâu thuẫn nhẹ. Lấy 100 g (khoảng 1 củ nhỏ) cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Ớt chuông",
+      "canonicalIngredientId": "ING_ENR_A51AABC36AFD6C89",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram; 150 g tương đương 1 quả ớt chuông lớn (Điện máy XANH dùng 1 quả cho 2 người)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "Điện máy XANH dùng 1 quả ớt chuông cho 2 người; Cooky không dùng ớt chuông. Lấy 1 quả lớn (~150 g) cho 3 người theo Điện máy XANH.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 20,
+        "proteinG": 0.86,
+        "carbohydrateG": 4.64,
+        "fatG": 0.17,
+        "fiberG": 1.7,
+        "sugarG": 2.4,
+        "sodiumMg": 3
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170427",
+      "sourceNutritionNote": "[audit round 4: đồng bộ lại toàn bộ 7 chỉ số theo bản ghi FDC 170427 — Peppers, sweet, green, raw]"
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 75,
+        "unit": "g",
+        "text": "75 g",
+        "gramEquivalent": 75,
+        "basis": "đơn vị gốc đã là gram; 75 g tương đương 1/2 củ hành tây vừa",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 75,
+          "unit": "g"
+        }
+      },
+      "note": "Cooky dùng 1 củ hành tây nhưng không ghi số người ăn (ước 2-3 người); Điện máy XANH không dùng hành tây. Lấy 1/2 củ (~75 g) cho 3 người — ước lượng, ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram; 20 g tương đương 2-3 nhánh hành lá vừa",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Hành lá có trong hint món nhưng cả hai nguồn đều không dùng. Thêm 20 g cắt khúc rắc lên khi dọn theo hint.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Ngò rí",
+      "canonicalIngredientId": "ING_ENR_0F9D040BCEE6A9AF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "đơn vị gốc đã là gram; 15 g ngò rí trang trí (Cooky dùng 50 g nhưng không ghi số người ăn)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Cooky dùng 50 g ngò rí nhưng không ghi số người ăn; Điện máy XANH không dùng. Lấy 15 g rắc trang trí cho 3 người — ước lượng, ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "đơn vị gốc đã là gram; 15 g tương đương khoảng 1 củ tỏi nhỏ (5 tép, 1 tép ≈ 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Cooky dùng 1 củ tỏi; Điện máy XANH chỉ ghi 'bóc tỏi băm nhuyễn' không định lượng. Lấy 1 củ nhỏ (~15 g) băm nhuyễn phi thơm theo Cooky.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "Response FDC không có số liệu sugar_g và sodium_mg cho tỏi nên để null hai chỉ số này."
+    },
+    {
+      "position": 10,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram; 20 g tương đương 2 củ hành tím nhỏ",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Cooky dùng 2 củ hành tím; Điện máy XANH không dùng. Lấy 2 củ nhỏ (~20 g) băm nhỏ phi cùng tỏi theo Cooky.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Nước tương (xì dầu)",
+      "canonicalIngredientId": "ING_ENR_D492E3A9BF8971C4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "ml",
+        "text": "15 ml",
+        "gramEquivalent": 18,
+        "basis": "15 ml × khối lượng riêng nước tương ≈ 1,2 ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "ml"
+        }
+      },
+      "note": "Cooky dùng 2 muỗng cà phê nước tương nêm; Điện máy XANH không dùng nước tương (chỉ dùng hạt nêm, đường, bột ngọt, tiêu). Lấy 1 muỗng canh (15 ml) cho 3 người theo Cooky.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 10.51,
+        "carbohydrateG": 5.57,
+        "fatG": 0.1,
+        "fiberG": 0.8,
+        "sugarG": 1.7,
+        "sodiumMg": 5586
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174278",
+      "sourceNutritionNote": "[audit round 4: đồng bộ lại toàn bộ 7 chỉ số theo bản ghi FDC 174278 — Soy sauce made from soy (tamari)]"
+    },
+    {
+      "position": 12,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "3 muỗng canh = 45 ml; 45 ml × khối lượng riêng dầu ăn ≈ 0,91 ≈ 41 g (khớp portion USDA: 1 tbsp dầu = 13,6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Điện máy XANH dùng 2 muỗng canh dầu cho 2 người; Cooky dùng 2 muỗng canh không ghi số người. Nhân theo Điện máy XANH: 3 muỗng canh cho 3 người.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "1 muỗng cà phê hạt nêm ≈ 5 g (ước lượng theo muỗng đong chuẩn) → 3 muỗng cà phê ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "Điện máy XANH dùng tới 2 muỗng canh hạt nêm cho 2 người (1 muỗng ướp hải sản + 1 muỗng xào rau); Cooky chỉ dùng 1 muỗng cà phê — hai nguồn mâu thuẫn rất lớn. Lấy mức trung gian thấp 3 muỗng cà phê (~15 g) cho 3 người vì còn nêm muối và nước tương, ghi rõ lý do.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.66,
+        "carbohydrateG": 18.01,
+        "fatG": 13.88,
+        "fiberG": 0,
+        "sugarG": 17.36,
+        "sodiumMg": 23875
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "Dùng số liệu của bột canh gà khô (chicken bouillon, dry) generic trong FDC — gần nhất với hạt nêm, ghi rõ để tham khảo."
+    },
+    {
+      "position": 14,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 7,
+        "unit": "g",
+        "text": "7 g",
+        "gramEquivalent": 7,
+        "basis": "1 muỗng cà phê đường cát ≈ 4,2 g (chuẩn USDA: 1 tsp = 4,2 g) → 1,5 muỗng cà phê ≈ 6 g, làm tròn 7 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 7,
+          "unit": "g"
+        }
+      },
+      "note": "Điện máy XANH dùng 1 muỗng cà phê đường cho 2 người (1/2 ướp + 1/2 xào rau); Cooky không dùng đường. Nhân cho 3 người: ~1,5 muỗng cà phê (~7 g).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.8,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "Response FDC không có số liệu fiber_g và sugar_g cho đường cát nên để null hai chỉ số này."
+    },
+    {
+      "position": 15,
+      "sourceName": "Bột ngọt",
+      "canonicalIngredientId": "ING_ENR_0A4564D231578559",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "g",
+        "text": "3 g",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê bột ngọt ≈ 4 g (ước lượng); lấy 3/4 muỗng cà phê ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "g"
+        }
+      },
+      "note": "Điện máy XANH dùng 1/2 muỗng cà phê bột ngọt ướp hải sản cho 2 người; Cooky không dùng. Lấy ~3/4 muỗng cà phê (~3 g) cho 3 người. FDC không có mục generic cho bột ngọt nên dinh dưỡng để null.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có mục generic cho bột ngọt (MSG) trong FDC nên để null toàn bộ, không bịa số."
+    },
+    {
+      "position": 16,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "g",
+        "text": "3 g",
+        "gramEquivalent": 3,
+        "basis": "1/2 muỗng cà phê muối ≈ 3 g (chuẩn USDA: 1 tsp muối ăn = 6,06 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "g"
+        }
+      },
+      "note": "Cooky dùng 1/2 muỗng cà phê muối; Điện máy XANH không dùng muối (dùng hạt nêm). Lấy 1/2 muỗng cà phê (~3 g) theo Cooky.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 17,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "g",
+        "text": "2 g",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2,3 g (chuẩn USDA) → 1 muỗng cà phê ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng 1/2 muỗng cà phê tiêu (Điện máy XANH ướp hải sản, Cooky nêm). Cho 3 người lấy 1 muỗng cà phê (~2 g).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế tôm mực: tôm bóc vỏ, ngắt bỏ đầu, dùng dao rạch sống lưng rút bỏ chỉ đen, rửa sạch để ráo. Mực rút bỏ túi mực và nội tạng, rửa sạch trong ngoài, thái khoanh tròn dày khoảng 1 đốt ngón tay.",
+      "tip": "Điện máy XANH nhấn mạnh để tôm mực thật ráo nước trước khi xào để không bị ra nước, xào mới săn và thơm."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Ướp hải sản: cho tôm và mực vào tô, thêm 1 muỗng canh hạt nêm, 1/2 muỗng cà phê đường, bột ngọt và 1/2 muỗng cà phê tiêu xay, trộn đều, ướp khoảng 15 phút cho ngấm.",
+      "tip": "Chỉ ướp phần gia vị này cho hải sản theo Điện máy XANH; phần hạt nêm còn lại để nêm khi xào rau.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế rau củ: cải thìa tách từng lá, ngâm nước muối loãng rồi rửa sạch, cắt khúc khoảng 5 cm. Cà rốt gọt vỏ thái lát mỏng. Ớt chuông bỏ hạt thái sợi dài. Hành tây thái múi cau. Hành lá cắt khúc, ngò rí nhặt rửa sạch. Tỏi và hành tím băm nhỏ."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Sơ chế mì: ngâm vắt mì trong tô nước lạnh khoảng 10 phút cho mềm, sau đó chần nhanh qua nước sôi khoảng 30 giây rồi vớt ra xả ngay với nước lạnh, để ráo.",
+      "tip": "Hai nguồn mâu thuẫn ở bước này: Cooky chỉ ngâm nước lạnh 10 phút và dặn KHÔNG chần vì mì sẽ bở; Điện máy XANH ngâm rồi chần 30 giây và xả lạnh cho sợi dai. Lấy theo Điện máy XANH (chần nhanh + xả lạnh) để sợi mì dai hơn khi xào."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Xào hải sản: bắc chảo lên bếp, cho 1 muỗng canh dầu ăn, phi thơm một nửa tỏi và hành tím băm. Cho tôm mực đã ướp vào xào lửa lớn đến khi vừa săn chín tới thì trút ra đĩa riêng.",
+      "tip": "Xào lửa lớn và xào riêng hải sản trước để tôm mực không ra nước làm ỉu rau và mì (cả hai nguồn đều làm vậy).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Xào rau củ: cho tiếp 1 muỗng canh dầu ăn vào chảo, cho ớt chuông và cà rốt vào xào, thêm một ít nước lọc, nêm 1 muỗng canh hạt nêm và 1 muỗng cà phê đường, xào lửa vừa khoảng 5 phút cho rau củ vừa chín tới.",
+      "tip": "Cho ít nước vào khi xào rau củ theo Điện máy XANH để rau chín đều mà không bị cháy, đồng thời tạo phần nước xốt thấm vào mì.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho cải thìa và hành tây vào chảo, đảo đều tay đến khi cải vừa mềm. Đổ mì đã ráo vào, đảo đều cho mì thấm gia vị và quyện với rau củ.",
+      "tip": "Cho mì vào khi rau vừa chín tới để mì thấm nước xốt mà rau không bị nhũn.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho tôm mực đã xào trở lại chảo, đảo đều trên lửa lớn thêm khoảng 1 phút. Rưới nước tương vào, nêm nếm lại cho vừa khẩu vị gia đình rồi tắt bếp.",
+      "tip": "Nêm nước tương ở cuối theo Cooky để giữ mùi thơm; nếm lại vì hạt nêm và nước tương đều mặn.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Dọn mì ra đĩa, rắc hành lá cắt khúc, ngò rí và một ít tiêu xay lên trên. Ăn ngay khi còn nóng.",
+      "tip": "Mì xào phải ăn nóng mới ngon — để nguội sợi mì sẽ bết và tanh mùi hải sản."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 233.75,
+      "proteinG": 8.49,
+      "carbohydrateG": 45.28,
+      "fatG": 2.46,
+      "fiberG": 4.39,
+      "sugarG": 5.5,
+      "sodiumMg": 40.17
+    },
+    "originalPerServing": {
+      "energyKcal": 522.25,
+      "proteinG": 37.79,
+      "carbohydrateG": 53.36,
+      "fatG": 17.91,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Tôm tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 2,
+        "detail": "Mực tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Cải thìa: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Nước tương (xì dầu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 15,
+        "detail": "Bột ngọt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 16,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 17,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 11,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,711 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-d463228be1e6e7c0",
+    "slug": "com-risotto-nam-bo-pho-mai-beo-ngay",
+    "title": "Cơm Risotto nấm bơ phô mai béo ngậy"
+  },
+  "content": {
+    "description": "Gạo om từ từ với nước dùng, nấm xào thơm, kết thúc bằng bơ và phô mai bào tạo độ béo mịn, món cơm Ý ấm áp cho bữa tối.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 40,
+    "servings": 3,
+    "difficulty": "medium",
+    "tags": [
+      "Ý",
+      "Cơm risotto",
+      "Nấm",
+      "Béo ngậy"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-d463228be1e6e7c0.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/watch?v=PNPTJOPHSqE",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.insidetherustickitchen.com/creamy-mushroom-risotto/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Gạo Carnaroli (hoặc Arborio)",
+      "canonicalIngredientId": "ING_ENR_0D8D9A0480ADC563",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 240,
+        "unit": "g",
+        "text": "240 g",
+        "gramEquivalent": 240,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 240,
+          "unit": "g"
+        }
+      },
+      "note": "GZ: 320 g gạo Carnaroli cho công thức gốc — không ghi rõ khẩu phần, ước 4 phần theo chuẩn 80 g gạo khô/người; scale 3/4 → 240 g cho 3 phần. ITRK (400 g arborio, cũng khoảng 4 phần) nhấn mạnh: chỉ dùng Arborio hoặc Carnaroli mới cho độ sánh kem, không thay bằng gạo thường.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 365,
+        "proteinG": 7.13,
+        "carbohydrateG": 79.95,
+        "fatG": 0.66,
+        "fiberG": 1.3,
+        "sugarG": 0.12,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169756",
+      "sourceNutritionNote": "số liệu gạo trắng hạt dài khô generic (SR Legacy Rice, white, long-grain, regular, raw, unenriched)"
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm porcini tươi (hoặc nấm hương/nấm mỡ trắng)",
+      "canonicalIngredientId": "ING_ENR_AAD754CB6AD6BEBF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "GZ: 400 g nấm porcini tươi cho công thức gốc; scale 3/4 → 300 g. Porcini tươi ở Việt Nam hiếm và đắt — ITRK cho phép dùng nấm trắng (button), nấm chestnut/crimini, chanterelle, portobello; nấm hương tươi là lựa chọn thay thế hợp lý và dễ mua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 22,
+        "proteinG": 3.09,
+        "carbohydrateG": 3.26,
+        "fatG": 0.34,
+        "fiberG": 1,
+        "sugarG": 1.98,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169251",
+      "sourceNutritionNote": "USDA không có mục porcini tươi (SR Legacy/Foundation) nên dùng số liệu nấm trắng generic (Mushrooms, white, raw)"
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành tây vàng",
+      "canonicalIngredientId": "ING_ENR_1D29EB61F57EBFD1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "g",
+        "text": "60 g",
+        "gramEquivalent": 60,
+        "basis": "đơn vị gốc đã là gram (3/4 củ hành nhỏ ≈ 60 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 60,
+          "unit": "g"
+        }
+      },
+      "note": "GZ: 1 củ hành vàng nhỏ (small golden onion) cho công thức gốc → 3/4 củ ≈ 60 g cho 3 phần. ITRK: 1 củ hành trắng băm nhỏ cho ~4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tép",
+        "text": "1 tép",
+        "gramEquivalent": 3,
+        "basis": "1 tép tỏi ≈ 3 g (USDA FoodData Central: 1 clove garlic = 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "GZ: 1 tép cho công thức gốc; ITRK: 2 tép băm nhỏ cho ~4 phần — mâu thuẫn nhẹ, lấy 1 tép theo GZ (nguồn Ý chuẩn, món này vị nấm là chính).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Nước dùng rau củ (giữ nóng)",
+      "canonicalIngredientId": "ING_ENR_D74180A79DF48F0D",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 750,
+        "unit": "ml",
+        "text": "750 ml",
+        "gramEquivalent": 750,
+        "basis": "1 ml nước dùng ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 750,
+          "unit": "ml"
+        }
+      },
+      "note": "GZ: 1 lít nước dùng rau củ cho công thức gốc; scale 3/4 → 750 ml. ITRK dùng nước dùng gà (chicken stock) và khuyên chọn loại ít muối để dễ kiểm soát nêm nếm. PHẢI giữ nước dùng nóng lăn tăn suốt quá trình nấu — cho nước nguội vào sẽ làm cơm sượng, mất độ kem (cả hai nguồn đều nhấn mạnh).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 6,
+        "proteinG": 0.23,
+        "carbohydrateG": 1.02,
+        "fatG": 0.07,
+        "fiberG": 0,
+        "sugarG": 0.57,
+        "sodiumMg": 303
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171180",
+      "sourceNutritionNote": "số liệu nước dùng rau củ đóng hộp (USDA SR Legacy ghi 'Soup, SWANSON, vegetable broth') — dùng làm ước lượng"
+    },
+    {
+      "position": 5,
+      "sourceName": "Bơ lạt (để xào)",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 22,
+        "unit": "g",
+        "text": "22 g",
+        "gramEquivalent": 22,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 22,
+          "unit": "g"
+        }
+      },
+      "note": "GZ: 30 g bơ + 2 muỗng canh dầu ô liu để xào cho công thức gốc; scale 3/4 → 22 g bơ (phần bơ mantecatura cuối tính riêng).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ô liu extra virgin",
+      "canonicalIngredientId": "ING_ENR_DE4B6B013D75B239",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh ≈ 15 ml; 1 ml dầu ô liu ≈ 0.91 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "GZ: 2 muỗng canh cho công thức gốc; scale 3/4 → 1.5 muỗng canh (≈20 ml).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Bơ lạt LẠNH (để kem hóa cuối)",
+      "canonicalIngredientId": "ING_ENR_6ADCC248DB8045C6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 22,
+        "unit": "g",
+        "text": "22 g",
+        "gramEquivalent": 22,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 22,
+          "unit": "g"
+        }
+      },
+      "note": "GZ: 30 g bơ LẠNH cắt nhỏ cho bước mantecatura cho công thức gốc; scale 3/4 → 22 g. Bơ phải lạnh và chỉ cho vào khi đã TẮT BẾP, đánh mạnh để nhũ hóa — đây là bí quyết độ 'béo ngậy' (cả hai nguồn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Phô mai Parmigiano Reggiano bào mịn",
+      "canonicalIngredientId": "ING_ENR_C9AE2624E7F86759",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 37,
+        "unit": "g",
+        "text": "37 g",
+        "gramEquivalent": 37,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 37,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN: GZ dùng 50 g parmigiano cho công thức gốc (scale 3/4 → 37 g); ITRK chỉ dùng 2 muỗng canh parmesan (~10 g) + 1 muỗng canh mascarpone cho ~4 phần. Lấy theo GZ (37 g) vì tên món nhấn mạnh 'phô mai béo ngậy'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 420,
+        "proteinG": 28.42,
+        "carbohydrateG": 13.91,
+        "fatG": 27.84,
+        "fiberG": 0,
+        "sugarG": 0.07,
+        "sodiumMg": 1804
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171247",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Rau mùi tây băm nhỏ",
+      "canonicalIngredientId": "ING_ENR_D6EDD5F0078ABE8C",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Mùi tây tươi via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng canh mùi tây băm ≈ 3.8 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "GZ: 2 muỗng canh cho công thức gốc; scale 3/4 → 1.5 muỗng canh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 2.97,
+        "carbohydrateG": 6.33,
+        "fatG": 0.79,
+        "fiberG": 3.3,
+        "sugarG": 0.85,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170416",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối hạt ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều 'vừa đủ' (to taste). Nêm nhạt tay vì parmigiano và nước dùng đã mặn — nêm lại ở cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay mới",
+      "canonicalIngredientId": "ING_ENR_9043CEF9624AAEB6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2.3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "GZ: 'vừa đủ'; 1/2 muỗng cà phê cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Rượu vang trắng khô",
+      "canonicalIngredientId": "ING_ENR_F568CF3B013695D9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "ml",
+        "text": "60 ml",
+        "gramEquivalent": 60,
+        "basis": "1 ml rượu ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 60,
+          "unit": "ml"
+        }
+      },
+      "note": "Công thức GZ porcini gốc KHÔNG dùng rượu; video GZ risotto nấm hỗn hợp dùng 80 ml cho 2 phần. Thêm vào dạng TÙY CHỌN để tăng hương thơm — có thể bỏ qua, món vẫn đúng bản GZ porcini.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 82,
+        "proteinG": 0.07,
+        "carbohydrateG": 2.6,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.96,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174837",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Đun nước dùng rau củ cho sôi lăn tăn rồi hạ lửa nhỏ, giữ nóng suốt quá trình nấu risotto.",
+      "tip": "Nước dùng nguội làm cơm sượng và mất độ kem — ITRK gọi đây là lỗi phổ biến nhất khi nấu risotto."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Nấm lau sạch bằng khăn ẩm (không rửa ngâm nước), thái lát dày khoảng 0.5 cm. Hành tây băm nhỏ, tỏi băm nhỏ, mùi tây băm nhỏ để riêng.",
+      "tip": "Nấm rửa nước sẽ ngấm nước, xào không xém vàng được (GZ)."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Chảo lớn lửa vừa-cao: cho 1 muỗng canh dầu ô liu và 10 g bơ (lấy từ phần bơ xào) vào. Phi tỏi 30 giây cho thơm rồi cho nấm vào xào 4-5 phút đến khi nấm ra hết nước và hơi xém vàng. Nêm muối, tiêu; trút ra đĩa, để riêng 1/3 số nấm đẹp nhất để trang trí cuối.",
+      "tip": "GZ xào nấm riêng trước để nấm có màu xém đẹp; ITRK xào chung với hành — lấy theo GZ. Đừng xếp nấm quá dày trong chảo, nấm sẽ hấp thay vì xào.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Nồi/chảo sâu lòng lửa vừa: cho nốt 0.5 muỗng canh dầu ô liu còn lại vào, xào hành tây 3-4 phút đến trong suốt, mềm — không để hành vàng.",
+      "tip": "ITRK: xào hành chậm, không lên màu — hành vàng sẽ làm risotto có vị đắng.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho gạo vào nồi, đảo đều 2-3 phút cho từng hạt gạo trong lại, thấm đều dầu (bước tostatura).",
+      "tip": "Hạt gạo phải trong suốt ở viền — bước rang này giúp gạo giữ độ dai, không bị nát khi nấu (GZ).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "(Tùy chọn) Đổ rượu vang trắng vào, đảo đều đến khi rượu bay hơi hoàn toàn, không còn mùi cồn.",
+      "tip": "Bỏ qua bước này nếu không dùng rượu — đúng bản GZ porcini gốc.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Múc 2-3 vá nước dùng NÓNG vào ngập mặt gạo, đảo đều tay. Khi nước gần cạn thì lại thêm từng vá một, vừa thêm vừa đảo.",
+      "tip": "Luôn thêm nước dùng nóng, từng ít một — đổ ồ ạt một lúc cơm sẽ nhão, ngoài sống trong nát (cả hai nguồn)."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Sau khoảng 8 phút nấu, cho 2/3 số nấm đã xào vào nấu cùng cơm. Tiếp tục thêm nước dùng từng vá, đảo đều tay.",
+      "tip": "GZ cho nấm vào giữa chừng để nấm thấm vị nước dùng mà không bị nát.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Tổng thời gian nấu khoảng 16-18 phút: nếm thử — hạt gạo chín tới, còn hơi sật ở lõi (al dente); hỗn hợp sánh sệt, sóng sánh khi lắc nồi (all'onda), không khô cũng không loãng.",
+      "tip": "Risotto chuẩn phải 'all'onda' — như sóng vỗ khi lắc chảo. Khô quá thì thêm vá nước dùng; loãng quá thì nấu thêm 1-2 phút (GZ).",
+      "timerMinutes": 18
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "TẮT BẾP. Cho bơ lạnh cắt nhỏ và parmigiano bào vào, đánh mạnh tay 1-2 phút đến khi cơm bóng mượt, kem mịn (mantecatura).",
+      "tip": "Đây là bước quyết định độ 'béo ngậy': bơ phải LẠNH, cho vào khi đã tắt bếp, đánh mạnh để nhũ hóa thành kem (cả hai nguồn đều nhấn mạnh).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Rắc mùi tây băm, nêm lại muối và tiêu cho vừa miệng. Để nghỉ 1 phút cho cơm ổn định.",
+      "tip": "Nêm nếm ở cuối vì parmigiano và nước dùng đã mặn — nêm sớm dễ bị mặn (ITRK).",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Múc risotto ra đĩa sâu lòng, xếp 1/3 số nấm để riêng lên trên, rắc thêm chút parmigiano và tiêu đen xay mới. Dọn ngay khi còn nóng.",
+      "tip": "Risotto không chờ được — để 5 phút là đặc lại, mất độ kem ngon. ITRK: muốn lỏng hơn thì thêm chút nước dùng nóng."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 470.96,
+      "proteinG": 12.42,
+      "carbohydrateG": 68.94,
+      "fatG": 16.2,
+      "fiberG": 2.04,
+      "sugarG": 2.09,
+      "sodiumMg": 233.11
+    },
+    "originalPerServing": {
+      "energyKcal": 566.39,
+      "proteinG": 13.39,
+      "carbohydrateG": 74.5,
+      "fatG": 22.42,
+      "fiberG": 2.56,
+      "sugarG": 4.58,
+      "sodiumMg": 1768.87
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành tây vàng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Nước dùng rau củ (giữ nóng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu ô liu extra virgin: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Rau mùi tây băm nhỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu đen xay mới: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      4,
+      6,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 4,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

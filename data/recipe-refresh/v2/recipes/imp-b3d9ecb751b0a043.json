@@ -1,0 +1,664 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-b3d9ecb751b0a043",
+    "slug": "bo-xao-hanh-tay-ot",
+    "title": "Bò xào hành tây ớt"
+  },
+  "content": {
+    "description": "Lát bò mềm xào hành tây ngọt và ớt tươi cay nhẹ, sốt xì dầu bóng, món xào Trung đưa cơm kinh điển.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Xào",
+      "Bò",
+      "Hành tây",
+      "Đưa cơm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-b3d9ecb751b0a043.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://phunutoday.vn/cach-lam-bo-xao-hanh-tay-thom-ngon-hap-dan-nhat-ai-an-cung-me-d131365.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://toyenxin.com/blog-1/cach-lam-mon-thit-bo-xao-hanh-tay-vi-cb.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.aussiebeeflamb.com.vn/recipes/beef/recipes/beef-with-fried-garlic/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt bò (thăn) thái lát mỏng",
+      "canonicalIngredientId": "ING_ENR_F3C110986666C1A1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "phunutoday: 400 g thịt bò (không ghi số phần; ước ~4 phần) → 300 g cho 3 phần. toyenxin: 500 g. Chọn 300 g theo tỉ lệ phunutoday. Lát mỏng, thái ngang thớ để thịt mềm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 164,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 9.4,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 51.3
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2646175",
+      "sourceNutritionNote": "USDA entry Foundation không công bố Energy (208); dùng Energy (Atwater General Factors, nutrient 957) = 164 kcal/100 g; fiber/sugar = 0 g (giả định 0 cho thịt bò nạc tươi, phù hợp SR Legacy)."
+    },
+    {
+      "position": 1,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 150,
+        "basis": "1 củ hành tây vừa ≈ 150 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "MÂU THUẪN: phunutoday dùng '1 củ nhỏ' cho 400 g bò; toyenxin dùng 2 củ cho 500 g bò. Chọn 1 củ vừa (~150 g) cho 300 g bò theo tỉ lệ phunutoday — nguồn chi tiết hơn và có bước ướp kỹ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Ớt hiểm",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "trái",
+        "text": "3 trái",
+        "gramEquivalent": 9,
+        "basis": "1 trái ớt hiểm ≈ 3 g; 3 × 3 = 9 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Danh mục ghi 'Ớt hiểm'. phunutoday chỉ ghi 'ớt: 1 quả' (không rõ loại); toyenxin dùng '1 quả ớt xanh'. Chọn 3 trái ớt hiểm thái lát cho vị cay đặc trưng — điều chỉnh theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "tép",
+        "text": "4 tép",
+        "gramEquivalent": 12,
+        "basis": "1 tép tỏi ≈ 3 g; 4 × 3 = 12 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "phunutoday: 3 nhánh tỏi cho 400 g bò → 4 tép cho 3 phần (băm nhỏ để phi thơm và một ít ướp thịt).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": "Entry USDA này không công bố chỉ số đường/chất xơ tương ứng (trường thiếu trong foodNutrients); để null các trường thiếu, không điền bừa."
+    },
+    {
+      "position": 4,
+      "sourceName": "Sả",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 20,
+        "basis": "1 cây sả ≈ 20 g (lấy phần non, bóc bẹ già)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "MÂU THUẪN: phunutoday dùng 2 cây sả băm xào cùng tỏi ớt; toyenxin KHÔNG dùng sả. Để optional — có sả thì thơm kiểu miền Nam, không có vẫn đúng món theo toyenxin.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.3,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "Entry USDA này không công bố chỉ số đường/chất xơ tương ứng (trường thiếu trong foodNutrients); để null các trường thiếu, không điền bừa."
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng ≈ 1,2 → ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Danh mục ghi 'Xì dầu'. MÂU THUẪN GIA VỊ ƯỚP: toyenxin ướp bò với 1 muỗng canh xì dầu + 1 muỗng canh nước mắm; phunutoday ướp với muối + hạt nêm + dầu hào, KHÔNG dùng xì dầu. Công thức này dùng xì dầu theo danh mục + toyenxin.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 10.5,
+        "carbohydrateG": 5.57,
+        "fatG": 0.1,
+        "fiberG": 0.8,
+        "sugarG": 1.7,
+        "sodiumMg": 5590
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174278",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "phunutoday: ướp thịt bò với dầu hào (cùng muối, tiêu) 20 phút. toyenxin không dùng dầu hào — ghi nhận biến thể.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central (tra ngày 2026-09-26 bằng DEMO_KEY, ưu tiên SR Legacy/Foundation) không có entry phù hợp cho dầu hào; không tìm được nguồn dinh dưỡng chuẩn khác đã kiểm chứng → để null toàn bộ, tuyệt đối không điền bừa."
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh dầu ≈ 13,6 g; 2 × 13,6 ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "phunutoday: một ít dầu để ướp thịt (giúp thịt mềm) + dầu để phi xào. toyenxin: 2 muỗng canh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "phunutoday: gia vị ướp và nêm chính ('hạt nêm, dầu hào').",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central (tra ngày 2026-09-26 bằng DEMO_KEY, ưu tiên SR Legacy/Foundation) không có entry phù hợp cho hạt nêm; không tìm được nguồn dinh dưỡng chuẩn khác đã kiểm chứng → để null toàn bộ, tuyệt đối không điền bừa."
+    },
+    {
+      "position": 9,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê muối ≈ 6 g; 0,5 × 6 = 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "phunutoday: ướp thịt với 'một chút muối'. Dùng thêm để rửa thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38800
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê đường ≈ 4 g; 0,5 × 4 = 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "toyenxin: '1 muỗng cà phê đường' ướp cho 500 g bò → 1/2 muỗng cho 300 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": "Entry USDA này không công bố chỉ số đường/chất xơ tương ứng (trường thiếu trong foodNutrients); để null các trường thiếu, không điền bừa."
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2 g; 0,5 × 2 = 1 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "phunutoday: ướp thịt với hạt tiêu; rắc thêm khi dọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Thịt bò mua về rửa sạch với nước muối loãng để khử mùi, sau đó thấm thật khô bằng giấy ăn hoặc khăn sạch.",
+      "tip": "phunutoday: 'rửa sạch với muối'. Thấm khô kỹ giúp thịt khi xào được áp chảo săn mặt thay vì bị luộc trong nước tiết ra.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Thái thịt bò thành lát mỏng vừa ăn, nhớ thái ngang thớ thịt.",
+      "tip": "phunutoday: 'rửa sạch với muối, thái thành những miếng mỏng vừa ăn'. Thái ngang thớ là bí quyết để thịt xào không dai.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Ướp thịt bò với muối, tiêu xay, xì dầu, dầu hào, đường và 1 muỗng cà phê dầu ăn, trộn đều, để 15-20 phút cho thấm.",
+      "tip": "phunutoday: ướp 20 phút, và 'ướp thịt thêm với chút ít dầu' — mẹo nhỏ giúp miếng thịt xào mềm ngon mà vẫn đậm đà.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Hành tây bóc vỏ, thái múi cau hoặc thái lát vừa. Tỏi bóc vỏ băm nhỏ. Sả (nếu dùng) bóc bẹ già, băm nhỏ. Ớt hiểm thái lát.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun nóng dầu ăn trong chảo trên lửa vừa, cho tỏi băm vào phi thơm, rồi cho ớt hiểm và sả băm vào xào chung khoảng 30 giây cho dậy mùi.",
+      "tip": "phunutoday: 'cho tỏi vào phi thơm, cho thêm ớt và sả vào xào chung'.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho hành tây vào chảo, đảo nhanh trên lửa lớn khoảng 1-2 phút cho hành vừa chín tới, vẫn giữ độ giòn.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho thịt bò đã ướp vào chảo, để lửa lớn, đảo nhanh tay đến khi thịt vừa chuyển màu, chín tái là được. Nêm lại với hạt nêm cho vừa ăn.",
+      "tip": "MÂU THUẪN TRÌNH TỰ: phunutoday xào tỏi-ớt-sả → hành tây trước, cho bò vào SAU CÙNG; toyenxin xào bò TRƯỚC đến chín tái rồi mới cho hành tây + ớt. Chọn theo phunutoday vì thịt đã thái lát mỏng theo danh mục — lát mỏng chín trong 1-2 phút, cho sau cùng tránh xào lâu bị dai. Tuyệt đối không xào bò quá 2-3 phút.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Tắt bếp, rắc tiêu xay lên trên, múc ra đĩa. Dùng nóng với cơm trắng.",
+      "tip": "phunutoday: 'món ăn sẽ ngon hơn nữa khi bạn dùng nóng'."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Thịt bò (thăn) thái lát mỏng: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Ớt hiểm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Xì dầu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu hào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

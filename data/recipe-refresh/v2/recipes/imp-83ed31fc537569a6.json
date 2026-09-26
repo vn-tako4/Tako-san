@@ -1,0 +1,655 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-83ed31fc537569a6",
+    "slug": "bo-cuon-rau-bina-y",
+    "title": "Bò cuộn rau bina Ý"
+  },
+  "content": {
+    "description": "Lát bò cuộn rau bina-phô mai áp chảo involtini, món Ý khéo tay chan sốt đậm.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Involtini",
+      "Ý",
+      "Bò cuộn",
+      "Khéo tay"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-83ed31fc537569a6.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.ricettecucinare.com/ricette/involtini-di-manzo-agli-spinaci/24667",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.ricettasprint.it/involtini-carne-ricotta-spinaci/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt bò thái lát mỏng (polpa di manzo)",
+      "canonicalIngredientId": "ING_ENR_9551D76AE6A19734",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 8,
+        "unit": "lát",
+        "text": "8 lát",
+        "gramEquivalent": 800,
+        "basis": "nguồn không ghi khối lượng; 1 lát thịt bò thái cho involtini ≈ 80–100 g → lấy 100 g/lát",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 8,
+          "unit": "slice"
+        }
+      },
+      "note": "Nguồn: '8 fettine di polpa di manzo'. Dần mỏng trước khi cuộn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 150.1,
+        "proteinG": 21.24,
+        "carbohydrateG": 0,
+        "fatG": 6.59,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 63
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172128",
+      "sourceNutritionNote": "Dùng số liệu thịt bò thăn đùi (round) thái lát gần nhất (SR Legacy 172128); nguồn không nêu phần thịt cụ thể. [AUTO-FIX 2026-09-26] energy_kcal 628.0 là giá trị kJ (USDA nutrient 268) bị ghi nhầm thành kcal; đã quy đổi đúng 628.0/4.184 = 150.1 kcal (khớp nutrient 208)."
+    },
+    {
+      "position": 1,
+      "sourceName": "Rau bina (spinaci) tươi",
+      "canonicalIngredientId": "ING_ENR_1D6497DDF5F4F697",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn: 400 g cho 4 phần. Một phần cho vào nhân, phần còn lại cho vào sốt ở cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23.2,
+        "proteinG": 2.86,
+        "carbohydrateG": 3.63,
+        "fatG": 0.39,
+        "fiberG": 2.2,
+        "sugarG": 0.42,
+        "sodiumMg": 79
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168462",
+      "sourceNutritionNote": "[AUTO-FIX 2026-09-26] energy_kcal 97.0 là giá trị kJ (USDA nutrient 268) bị ghi nhầm thành kcal; đã quy đổi đúng 97.0/4.184 = 23.2 kcal (khớp nutrient 208)."
+    },
+    {
+      "position": 2,
+      "sourceName": "Phô mai lát",
+      "canonicalIngredientId": "ING_ENR_F11062987F6AA539",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 8,
+        "unit": "lát",
+        "text": "8 lát",
+        "gramEquivalent": 160,
+        "basis": "1 lát phô mai ≈ 20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 8,
+          "unit": "slice"
+        }
+      },
+      "note": "Nguồn ghi '8 fettine di formaggio' chung chung, không nêu loại phô mai. Bản ricettasprint dùng 250 g ricotta trộn rau bina làm nhân + bọc ngoài bằng pancetta — mâu thuẫn về nhân; giữ theo nguồn chính (phô mai lát) và ghi chú biến thể.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 351.6,
+        "proteinG": 25.58,
+        "carbohydrateG": 2.14,
+        "fatG": 26.62,
+        "fiberG": 0,
+        "sugarG": 0.56,
+        "sodiumMg": 727
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170850",
+      "sourceNutritionNote": "Nguồn không nêu loại phô mai; dùng số liệu provolone (SR Legacy 170850) làm tương đương. [AUTO-FIX 2026-09-26] energy_kcal 1471.0 là giá trị kJ (USDA nutrient 268) bị ghi nhầm thành kcal; đã quy đổi đúng 1471.0/4.184 = 351.6 kcal (khớp nutrient 208)."
+    },
+    {
+      "position": 3,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "củ",
+        "text": "3 củ",
+        "gramEquivalent": 183,
+        "basis": "1 củ cà rốt vừa ≈ 61 g (USDA FoodData Central)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Một phần băm nhỏ cho vào nhân, phần còn lại thái không quá nhỏ cho vào sốt (nguồn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41.3,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": "[AUTO-FIX 2026-09-26] energy_kcal 173.0 là giá trị kJ (USDA nutrient 268) bị ghi nhầm thành kcal; đã quy đổi đúng 173.0/4.184 = 41.3 kcal (khớp nutrient 208)."
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành khô (scalogno)",
+      "canonicalIngredientId": "ING_ENR_742625084F7167D1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "củ",
+        "text": "2 củ",
+        "gramEquivalent": 50,
+        "basis": "1 củ hành khô vừa ≈ 25 g (ước tính); nguồn không ghi khối lượng",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Băm nhỏ, cho vào sốt sau bước om rượu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 71.9,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": "[AUTO-FIX 2026-09-26] energy_kcal 301.0 là giá trị kJ (USDA nutrient 268) bị ghi nhầm thành kcal; đã quy đổi đúng 301.0/4.184 = 71.9 kcal (khớp nutrient 208)."
+    },
+    {
+      "position": 5,
+      "sourceName": "Rượu vang trắng khô",
+      "canonicalIngredientId": "ING_ENR_F568CF3B013695D9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "bicchiere",
+        "text": "0.5 bicchiere",
+        "gramEquivalent": 74,
+        "basis": "1/2 bicchiere ≈ 60–75 ml; tỷ trọng vang trắng ≈ 0,99",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 82,
+        "proteinG": 0.07,
+        "carbohydrateG": 2.6,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.96,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174837",
+      "sourceNutritionNote": "[AUTO-FIX 2026-09-26] energy_kcal 342.0 là giá trị kJ (USDA nutrient 268) bị ghi nhầm thành kcal; đã thay bằng nutrient 208 đã verify qua FDC API = 82.0 kcal."
+    },
+    {
+      "position": 6,
+      "sourceName": "Cà chua tươi",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 150,
+        "basis": "1 quả cà chua vừa-lớn ≈ 150 g (ước tính); nguồn không ghi khối lượng",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Bóc vỏ, thái hạt lựu, cho vào sốt om cùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 17.7,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": "[AUTO-FIX 2026-09-26] energy_kcal 74.0 là giá trị kJ (USDA nutrient 268) bị ghi nhầm thành kcal; đã quy đổi đúng 74.0/4.184 = 17.7 kcal (khớp nutrient 208)."
+    },
+    {
+      "position": 7,
+      "sourceName": "Bơ",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 50,
+        "unit": "g",
+        "text": "50 g",
+        "gramEquivalent": 50,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 50,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn: '50 g burro' — 1 cục to để xào rau bina + phần còn lại để áp chảo cuộn thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 643
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173410",
+      "sourceNutritionNote": "[AUTO-FIX 2026-09-26] energy_kcal 2999.0 là giá trị kJ (USDA nutrient 268) bị ghi nhầm thành kcal; đã thay bằng nutrient 208 đã verify qua FDC API = 717.0 kcal."
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu ô liu",
+      "canonicalIngredientId": "ING_ENR_F3F7B0E29159178B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "1 muỗng canh dầu ô liu = 15 ml ≈ 13,6 g (tỷ trọng ~0,91)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn: '1 muỗng canh dầu' để áp chảo + dầu xào rau bina không định lượng; ước 3 muỗng canh cho cả món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884.1,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": "[AUTO-FIX 2026-09-26] energy_kcal 3699.0 là giá trị kJ (USDA nutrient 268) bị ghi nhầm thành kcal; đã quy đổi đúng 3699.0/4.184 = 884.1 kcal (khớp nutrient 208)."
+    },
+    {
+      "position": 9,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tép",
+        "text": "1 tép",
+        "gramEquivalent": 3,
+        "basis": "1 tép tỏi ≈ 3 g (USDA FoodData Central)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn chính (ricettecucinare) KHÔNG dùng tỏi; bản ricettasprint dùng 1 tép phi với dầu để xào rau bina → đưa vào theo biến thể ricettasprint, ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "[AUTO-FIX 2026-09-26] energy_kcal 623.0 là giá trị kJ (USDA nutrient 268) bị ghi nhầm thành kcal; đã quy đổi đúng 623.0/4.184 = 148.9 kcal (khớp nutrient 208). [audit round 4: đồng bộ lại toàn bộ 7 chỉ số theo bản ghi FDC 169230 — Garlic, raw]"
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn ghi q.b. (vừa đủ); 5 g (~1 muỗng cà phê) là lượng tham khảo.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2 g (USDA FoodData Central); nguồn ghi q.b.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "[AUTO-FIX 2026-09-26] energy_kcal 1050.0 là giá trị kJ (USDA nutrient 268) bị ghi nhầm thành kcal; đã quy đổi đúng 1050.0/4.184 = 251.0 kcal (khớp nutrient 208)."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Luộc sơ rau bina trong nước sôi, vớt ra để ráo rồi vắt kiệt nước.",
+      "tip": "Vắt thật kiệt để nhân không bị ướt khiến cuộn thịt dễ bung (nguồn)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Phi tỏi (nếu dùng) với 1 muỗng canh dầu ô liu cho thơm, cho rau bina vào xào với 1 cục bơ to cho thấm, nêm chút muối và tiêu.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Dần mỏng 8 lát thịt bò. Trên mỗi lát xếp lần lượt: 1 lát phô mai, 1 ít cà rốt băm nhỏ và 1 ít rau bina đã xào."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cuộn chặt từng lát thịt lại, buộc bằng chỉ nấu ăn màu trắng (hoặc ghim bằng tăm) cho khỏi bung."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun nóng 1 muỗng canh dầu ô liu với phần bơ còn lại trong chảo sâu (tegame), cho các cuộn thịt vào áp chảo đến khi vàng đều các mặt.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Rưới rượu vang trắng vào chảo, để lửa vừa cho cồn bay hơi hết.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho hành khô băm và cà chua bóc vỏ thái hạt lựu vào, nêm muối tiêu, đậy nắp và om lửa nhỏ 20 phút.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho nốt phần cà rốt băm còn lại (thái không quá nhỏ) vào sốt, om thêm 5 phút.",
+      "tip": "Theo đúng trình tự của nguồn: cà rốt cho vào trước, rau bina cho vào sau.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho nốt phần rau bina còn lại vào, om thêm 5 phút nữa rồi tắt bếp.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn các cuộn thịt còn nóng hổi cùng với nước sốt của chúng.",
+      "tip": "Món này hợp ăn kèm polenta mềm hoặc khoai tây nghiền (gợi ý kiểu Ý)."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 112.83,
+      "proteinG": 2.97,
+      "carbohydrateG": 3.64,
+      "fatG": 10.53,
+      "fiberG": 2.2,
+      "sugarG": 0.43,
+      "sodiumMg": 643.85
+    },
+    "originalPerServing": {
+      "energyKcal": 696.35,
+      "proteinG": 56.86,
+      "carbohydrateG": 13.48,
+      "fatG": 44.82,
+      "fiberG": 4.47,
+      "sugarG": 4.98,
+      "sodiumMg": 1096.95
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Thịt bò thái lát mỏng (polpa di manzo): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Phô mai lát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành khô (scalogno): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Rượu vang trắng khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Cà chua tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Dầu ô liu: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      8,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

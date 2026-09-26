@@ -1,0 +1,703 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-7cb7368109956ad5",
+    "slug": "canh-kim-chi-gia",
+    "title": "Canh kim chi giá"
+  },
+  "content": {
+    "description": "Canh kim chi-giá đỗ nhẹ nhàng cay thanh, món canh Hàn nhanh gọn ấm bụng.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Canh",
+      "Kim chi",
+      "Giá đỗ",
+      "Nhẹ nhàng"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-7cb7368109956ad5.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://blog.naver.com/sundoong2/224414009011",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://app.samsungfood.com/recipes/10701940085ce7475ac801504be0584dc7d",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Giá đỗ",
+      "canonicalIngredientId": "BEAN_SPROUTS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "cân trực tiếp",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "Nguồn 1: 콩나물 250 g (một túi, không ghi servings — ước 2–3 phần) → quy đổi ≈ 400 g cho 4 phần. Nguồn 2 (백종원) không ghi lượng giá, chỉ dặn cho giá vào khi nước sôi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 30,
+        "proteinG": 3.04,
+        "carbohydrateG": 5.94,
+        "fatG": 0.18,
+        "fiberG": 1.8,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169957",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Kim chi chín (신김치/묵은지)",
+      "canonicalIngredientId": "ING_ENR_DB92E4B1AF661ED0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "cân trực tiếp; theo USDA 1 cup kim chi = 150 g thì 200 g ≈ 1.3 cup",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn về lượng: nguồn 1 dùng 신김치 1컵 듬뿍 (~150–170 g); nguồn 2 (백종원) dùng 묵은지 1컵 반 (225 g). Lấy 200 g cho 4 phần, nằm giữa hai nguồn. Cả hai nguồn đều nhấn mạnh phải dùng kim chi chín kỹ thì nước canh mới sâu và trong.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": null,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước kim chi",
+      "canonicalIngredientId": "ING_ENR_27FD2253A7768761",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 120,
+        "unit": "ml",
+        "text": "120 ml",
+        "gramEquivalent": 120,
+        "basis": "tỉ trọng nước kim chi ≈ 1.0 → 120 ml ≈ 120 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 120,
+          "unit": "ml"
+        }
+      },
+      "note": "Nguồn 2 (백종원): 김칫국물 1/2컵. Nguồn 1: 2/3컵 (~130 ml). Lấy theo nguồn 2: 120 ml. Cả hai nguồn đều cho nước kim chi vào cùng lúc với kim chi, ninh trước để lấy vị chua cay nền.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": null,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": "Không có số liệu riêng cho nước kim chi; dùng xấp xỉ số liệu kim chi (fdcId 170392). Thực tế nước kim chi loãng hơn, natri và chất xơ thấp hơn một chút."
+    },
+    {
+      "position": 3,
+      "sourceName": "Tỏi (băm nhỏ)",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 9,
+        "basis": "USDA FoodData Central: 1 tép tỏi = 3 g (fdcId 169230); 3 tép băm được khoảng 1 muỗng canh",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng 다진 마늘 1큰술 — hoàn toàn đồng thuận, không mâu thuẫn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Nước mắm cá ngừ Hàn (참치액젓)",
+      "canonicalIngredientId": "ING_ENR_D5B5DDBA960AC7BB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "USDA FoodData Central: 1 muỗng canh nước mắm = 18 g (fdcId 174531)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều dùng 참치액 1큰술 để nêm — hoàn toàn đồng thuận. Nguồn 1 ghi có thể thay bằng 액젓 các loại (nước mắm cá cơm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": "USDA không có mục riêng cho 참치액젓; dùng 'Sauce, fish, ready-to-serve' (nước mắm cá cơm generic, fdcId 174531) làm xấp xỉ gần nhất."
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu Hàn (국간장)",
+      "canonicalIngredientId": "ING_ENR_118DC650FF856A88",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "USDA FoodData Central: 1 muỗng canh xì dầu = 18 g (fdcId 174278)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 18,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ nguồn 1 dùng 국간장 1큰술; nguồn 2 (백종원) không dùng mà nêm bằng muối và 참치액. Giữ lại theo nguồn 1 vì 국간장 cho màu canh đẹp và vị đậm đà; nếu theo đúng nguồn 2 thì bỏ qua và nêm muối thêm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 10.51,
+        "carbohydrateG": 5.57,
+        "fatG": 0.1,
+        "fiberG": 0.8,
+        "sugarG": null,
+        "sodiumMg": 5586
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174278",
+      "sourceNutritionNote": "Dùng số liệu xì dầu generic (tamari, fdcId 174278) làm xấp xỉ; 국간장 (xì dầu nấu canh Hàn) thực tế mặn hơn, natri cao hơn."
+    },
+    {
+      "position": 6,
+      "sourceName": "Ớt bột Hàn (고춧가루)",
+      "canonicalIngredientId": "ING_ENR_FA7C22BA06967594",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 7,
+        "basis": "ước lượng bếp Hàn: 1 muỗng canh ớt bột Hàn ≈ 6–8 g, lấy 7 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ nguồn 2 (백종원) dùng 고춧가루 1스푼 수북 cho vị cay nồng (얼큰); nguồn 1 KHÔNG dùng ớt bột — nước canh trong và thanh hơn. Hai hướng khác nhau, giữ lại dạng optional để người nấu chọn.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có số liệu cho ớt bột Hàn (gochugaru); để null, tuyệt đối không bịa số."
+    },
+    {
+      "position": 7,
+      "sourceName": "Tảo bẹ khô (다시마)",
+      "canonicalIngredientId": "ING_ENR_C35DBA1C69EE0165",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 12,
+        "unit": "lá",
+        "text": "12 lá",
+        "gramEquivalent": 25,
+        "basis": "ước lượng: 1 lá tảo bẹ khô cỡ 3×4 cm ≈ 2 g. Nguồn 2 dùng 15장 cho 1.8 L nước → 12–13 lá cho 1.5 L, lấy 12 lá.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 12,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn 2 (백종원): nước 1800 ml + tảo bẹ 15 lá + 2–3 viên súp cá cơm để nấu nước dùng. Nguồn 1 dùng cách đơn giản hơn: nước + 쯔유 (hoặc gói súp dashi/코인육수). Công thức này theo nguồn 2 vì nước dùng truyền thống ngọt sâu hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 43,
+        "proteinG": 1.68,
+        "carbohydrateG": 9.57,
+        "fatG": 0.56,
+        "fiberG": 1.3,
+        "sugarG": null,
+        "sodiumMg": 233
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168457",
+      "sourceNutritionNote": "USDA chỉ có số liệu kelp tươi sống (fdcId 168457); tảo bẹ khô cô đặc dinh dưỡng hơn nhiều nên số liệu này chỉ mang tính tham chiếu, thực tế ăn vào rất ít vì vớt bỏ tảo sau khi nấu."
+    },
+    {
+      "position": 8,
+      "sourceName": "Viên súp cá cơm Hàn (멸치코인)",
+      "canonicalIngredientId": "ING_ENR_1630762990A0A03B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "viên",
+        "text": "2 viên",
+        "gramEquivalent": 8,
+        "basis": "ước lượng theo sản phẩm viên súp Hàn thông dụng (멸치코인): 1 viên ≈ 4 g. Nguồn 2 dùng 3알 cho 1.8 L → 2–3 viên cho 1.5 L, lấy 2 viên.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn 2: 멸치육수용 코인 3알 cho 1.8 L. Nguồn 1 gợi ý thay thế đơn giản: 1 gói súp dashi (다시팩) hoặc 2 muỗng canh 쯔유 — dùng cách nào cũng được.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Sản phẩm chế biến sẵn của Hàn Quốc, USDA FoodData Central không có số liệu; để null, tuyệt đối không bịa số."
+    },
+    {
+      "position": 9,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 25,
+        "basis": "USDA FoodData Central: 1 cây hành lá lớn = 25 g (fdcId 170005). Nguồn 1 dùng 1/2대 cho nồi nhỏ hơn → 1 cây cho 4 phần.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Cả hai nguồn đều cho hành lá vào cuối cùng, đun sôi bùng một dạo rồi tắt bếp để hành giữ màu xanh và mùi thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Ớt sừng xanh Hàn (청양고추)",
+      "canonicalIngredientId": "ING_ENR_7556B0AE0D65EC47",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 15,
+        "basis": "ước lượng: ớt 청양 Hàn quả nhỏ, ~10–15 g/quả (USDA: 1 quả ớt xanh cay Mỹ = 45 g, to hơn nhiều — fdcId 170497)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ nguồn 2 dùng (thái lát, cho vào cùng gia vị); nguồn 1 không dùng. Không bắt buộc — ai không ăn cay nồng thì bỏ qua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 2,
+        "carbohydrateG": 9.46,
+        "fatG": 0.2,
+        "fiberG": 1.5,
+        "sugarG": null,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170497",
+      "sourceNutritionNote": "Dùng số liệu ớt xanh cay generic (fdcId 170497) làm xấp xỉ; ớt 청양 Hàn thực tế cay nồng hơn nhiều."
+    },
+    {
+      "position": 11,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "ước lượng thông dụng: 1 muỗng cà phê muối tinh ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều dặn nêm muối CUỐI CÙNG, sau khi đã có nước mắm/xì dầu và nước kim chi (đều mặn sẵn) — nêm nhạt tay, thiếu mới thêm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Nước",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "lít",
+        "text": "1.5 lít",
+        "gramEquivalent": 1500,
+        "basis": "1.5 lít nước = 1500 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "l"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn về lượng nước: nguồn 1 dùng 1 L (nồi nhỏ, không ghi servings); nguồn 2 (백종원) dùng 1800 ml. Lấy 1.5 L cho 4 phần, nằm giữa hai nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Nước tinh khiết, các chỉ số dinh dưỡng bằng 0."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế giá đỗ: nhặt bỏ vỏ hạt và phần bị hư, ngâm nước lạnh 5 phút rồi rửa sạch, vớt ra để ráo.",
+      "tip": "Nguồn 1: giữ nguyên cả rễ giá, đừng ngắt bỏ — rễ giá chứa nhiều asparagine giúp giải rượu, lại làm nước canh ngọt hơn.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Kim chi cắt miếng vừa ăn; hành lá thái vát; ớt sừng thái lát mỏng; tỏi băm nhỏ."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Nấu nước dùng: cho 1.5 lít nước và tảo bẹ khô vào nồi, đun lửa lớn. Nước vừa sôi bùng thì vớt tảo bẹ ra ngay, cho 2 viên súp cá cơm vào đun thêm 1 phút.",
+      "tip": "Nguồn 2: vớt tảo bẹ ngay khi nước sôi — để lâu nước dùng sẽ bị đắng.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho kim chi và nước kim chi vào nồi nước dùng đang sôi mạnh.",
+      "tip": "Nguồn 2: cho kim chi vào lúc nước đang sôi mạnh để kim chi nhanh mềm và ra vị."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Nêm tỏi băm, nước mắm cá ngừ, ớt bột, xì dầu vào nồi, khuấy đều. Cho ớt sừng vào nếu dùng."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Khi nước sôi trở lại, cho giá đỗ vào, đun lửa lớn 5–6 phút, thỉnh thoảng đảo nhẹ cho giá chín đều. Giá chín là khi hết mùi hăng ở phần đầu mà thân vẫn giữ được độ giòn.",
+      "tip": "Nguồn 2: đun lửa lớn, đảo nhẹ giữa chừng để giá chín đều mà không bị nát.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Mẹo chống tanh quan trọng: từ lúc cho giá vào, MỞ NẮP suốt quá trình nấu. Nếu đã đậy nắp thì phải đậy đến cùng, tuyệt đối không mở ra đóng vào giữa chừng.",
+      "tip": "Nguồn 1 và kinh nghiệm bếp Hàn: mở nắp giúp hơi tanh của giá bay đi; đóng–mở nắp giữa chừng sẽ giữ mùi tanh lại trong nồi. Lưu ý mâu thuẫn: nguồn 1 sau bước này còn đậy nắp ninh thêm 10 phút lửa vừa sau khi cho hành lá — ai thích nước đậm hơn có thể làm theo, nhưng phải chấp nhận giá sẽ mềm hơn."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nếm lại nước canh, nêm muối cho vừa miệng.",
+      "tip": "Kim chi, nước kim chi và nước mắm đều mặn sẵn nên nêm muối nhạt tay, thiếu mới thêm — cả hai nguồn đều dặn như vậy."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho hành lá vào, đun sôi bùng một dạo rồi tắt bếp.",
+      "tip": "Nguồn 2: cho hành cuối cùng để hành giữ được màu xanh và mùi thơm.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Để canh nghỉ vài phút cho nước dùng ngấm sâu rồi múc ra tô.",
+      "tip": "Nguồn 1: '뜸들인 후 드셔야 국물이 충분히 우러나 훨씬 깊고 시원한 맛' — để nghỉ một lúc nước canh sẽ đậm và trong vị hơn hẳn.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Ăn nóng với cơm trắng.",
+      "tip": "Nguồn 1: canh thừa có thể cho cơm nguội vào nấu thành cháo kim chi giá (김치콩나물죽) rất ngon."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 55.82,
+      "proteinG": 5.06,
+      "carbohydrateG": 10.43,
+      "fatG": 0.65,
+      "fiberG": 3.46,
+      "sugarG": null,
+      "sodiumMg": 1606.64
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Giá đỗ: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Kim chi chín (신김치/묵은지): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nước kim chi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Tỏi (băm nhỏ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Nước mắm cá ngừ Hàn (참치액젓): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tảo bẹ khô (다시마): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Viên súp cá cơm Hàn (멸치코인): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 9,
+        "detail": "Hành lá: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Nước: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      4,
+      6,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

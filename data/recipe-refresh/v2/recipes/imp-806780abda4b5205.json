@@ -1,0 +1,919 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-806780abda4b5205",
+    "slug": "com-chien-dua-tom-hai-san",
+    "title": "Cơm chiên dứa tôm hải sản"
+  },
+  "content": {
+    "description": "Cơm chiên tơi hạt cùng tôm tươi, dứa chín ngọt và trứng gà, nêm nước mắm thơm lừng, bữa sáng nhanh gọn đầy màu sắc.",
+    "cuisine": "vietnamese",
+    "category": "mon_nhanh_sang",
+    "region": "nam",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Ăn sáng",
+      "Cơm chiên",
+      "Dưới 20 phút",
+      "Hải sản"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-806780abda4b5205.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.huongnghiepaau.com/com-chien-dua-hai-san-kieu-thai",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://toyenxin.com/blog-1/com-chien-hai-vi-cb.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cơm nguội",
+      "canonicalIngredientId": "RICE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "bát",
+        "text": "3 bát",
+        "gramEquivalent": 600,
+        "basis": "Ước lượng: 1 bát cơm chín ~200 g (USDA: 1 cup cơm chín ~186 g).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HNAA không ghi lượng cơm cho công thức (chỉ ghi 'cơm nguội để tủ lạnh cho hạt rời, khô'); variant toyenxin dùng 2 bát cơm cho công thức 100 g tôm + 100 g mực. Lấy 3 bát cho 3 phần. Cơm nguội tơi hạt là điểm mấu chốt được cả ba nguồn nhấn mạnh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 130,
+        "proteinG": 2.38,
+        "carbohydrateG": 28.6,
+        "fatG": 0.21,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168930",
+      "sourceNutritionNote": "USDA không công bố fiber và sugar cho mục này → null theo quy tắc."
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm tươi",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "Đơn vị gốc đã là gram (khối lượng tôm đã bóc vỏ).",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn về lượng: HNAA 6-10 con tôm (không ghi gram); toyenxin 100 g tôm sú + 100 g mực cho 2 bát cơm. Món có tên 'tôm hải sản' nên lấy tôm làm hải sản chính: 200 g cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "USDA không công bố fiber và sugar cho tôm sống → null theo quy tắc."
+    },
+    {
+      "position": 2,
+      "sourceName": "Mực tươi",
+      "canonicalIngredientId": "SQUID",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "Đơn vị gốc đã là gram.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "toyenxin: 100 g mực (variant dùng 2 bát cơm) → scale 3 phần ≈ 150 g. HNAA không dùng mực (chỉ tôm) — món này kết hợp cả hai theo toyenxin.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 92,
+        "proteinG": 15.6,
+        "carbohydrateG": 3.08,
+        "fatG": 1.38,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 44
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174223",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Dứa (thơm)",
+      "canonicalIngredientId": "PINEAPPLE",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "same conservative ingredient-name key as an exact existing canonical alias",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 900,
+        "basis": "Ước lượng: 1 quả dứa chưa gọt cỡ vừa ~900 g. Ruột dùng cho món ~200 g; phần vỏ giữ làm bát đựng.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "HNAA: '1 quả dứa chưa gọt' — bổ đôi, khoét ruột thái hạt lựu, giữ vỏ làm bát đựng cơm. toyenxin: 100 g dứa cho 2 bát cơm. Dùng 1 quả cho 3 phần vừa đủ ruột + vỏ đựng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.54,
+        "carbohydrateG": 13.1,
+        "fatG": 0.12,
+        "fiberG": 1.4,
+        "sugarG": 9.85,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169124",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 100,
+        "basis": "USDA FoodData Central: 1 quả trứng gà lớn (large egg) = 50 g.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "HNAA dùng 1 quả; variant toyenxin dùng 1-2 quả; hoangnguyen dùng 2 quả. Lấy 2 quả cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 148,
+        "proteinG": 12.4,
+        "carbohydrateG": 0.2,
+        "fatG": 9.96,
+        "fiberG": 0,
+        "sugarG": 0.2,
+        "sodiumMg": 129
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/748967",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Đậu Hà Lan",
+      "canonicalIngredientId": "ING_ENR_85BC93EA2DAE42AC",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "Đơn vị gốc đã là gram.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn: HNAA 50 g; toyenxin 100 g (cho 2 bát cơm). Lấy 100 g theo toyenxin (scale gần đúng cho 3 phần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 81,
+        "proteinG": 5.42,
+        "carbohydrateG": 14.4,
+        "fatG": 0.4,
+        "fiberG": 5.7,
+        "sugarG": 5.67,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170419",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "củ",
+        "text": "0.5 củ",
+        "gramEquivalent": 60,
+        "basis": "Ước lượng: 1 củ cà rốt vừa ~120 g → 1/2 củ ≈ 60 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "HNAA: 1/2 củ cà rốt cắt hạt lựu; toyenxin: 1 củ (cho 2 bát cơm). Lấy 1/2 củ theo HNAA.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "củ",
+        "text": "2 củ",
+        "gramEquivalent": 20,
+        "basis": "Ước lượng: 1 củ hành tím ~10 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "toyenxin: 2 củ hành tím băm nhỏ (cho 2 bát cơm); HNAA: 'hành tím, tỏi' không định lượng. Lấy 2 củ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 10,
+        "basis": "Ước lượng: 1 tép tỏi ~3 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "HNAA: băm nhuyễn, phi thơm 2 đợt (nửa cho xào hải sản, nửa cho chiên cơm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "nhánh",
+        "text": "2 nhánh",
+        "gramEquivalent": 15,
+        "basis": "Ước lượng: 1 nhánh hành lá ~7-8 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "toyenxin: 1 nhánh hành lá (cho 2 bát cơm). Lấy 2 nhánh cho 3 phần, thái nhỏ rắc cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 34,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng nước mắm ~1,15 → 15 × 1,15 ≈ 17 g/muỗng.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HNAA pha xốt: 3 muỗng canh nước mắm + 4 muỗng canh nước + 1 muỗng cà phê đường + 1 muỗng cà phê bột cà ri (cho công thức không rõ khẩu phần). toyenxin: nêm nước mắm trực tiếp lúc xào hải sản và lúc trộn cơm. Lấy 2 muỗng canh, chia 2 đợt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7850
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê đường ~4 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HNAA: 1 muỗng cà phê đường trong hỗn hợp xốt cà ri.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 100,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Bột cà ri",
+      "canonicalIngredientId": "ING_ENR_1F36BC1C85BC8F35",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê bột cà ri ~3 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HNAA: 1 muỗng cà phê bột cà ri hòa cùng nước mắm + nước + đường — gia vị tạo mùi đặc trưng 'kiểu Thái' của món. toyenxin (variant thơm) không dùng cà ri.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 325,
+        "proteinG": 14.3,
+        "carbohydrateG": 55.8,
+        "fatG": 14,
+        "fiberG": 53.2,
+        "sugarG": 2.76,
+        "sodiumMg": 52
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170924",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê bột hạt nêm ~4 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "toyenxin nêm hạt nêm khi xào hải sản và khi trộn cơm. HNAA không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.7,
+        "carbohydrateG": 18,
+        "fatG": 13.9,
+        "fiberG": null,
+        "sugarG": 17.4,
+        "sodiumMg": 23900
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "USDA không có đúng 'hạt nêm gà' — dùng số liệu tương đương 'Soup, chicken broth or bouillon, dry' (SR Legacy 171562), chỉ tham chiếu gần đúng."
+    },
+    {
+      "position": 14,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "1 muỗng cà phê tiêu xay ~2,3 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "toyenxin: rắc tiêu lúc hoàn thiện.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng dầu ăn ~0,91 → 15 × 0,91 ≈ 13,6 g/muỗng.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Dùng 2 đợt: xào hải sản và chiên cơm (theo cả hai nguồn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 16,
+      "sourceName": "Hạt điều rang",
+      "canonicalIngredientId": "ING_ENR_D0B08757E23BD0F0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "Đơn vị gốc đã là gram.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ HNAA dùng (50 g, không rõ khẩu phần). Lấy 30 g cho 3 phần, rắc vào cuối cho bùi. Có thể bỏ qua nếu không có.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 553,
+        "proteinG": 18.2,
+        "carbohydrateG": 30.2,
+        "fatG": 43.8,
+        "fiberG": 3.3,
+        "sugarG": 5.91,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170162",
+      "sourceNutritionNote": "Số liệu USDA là hạt điều THÔ; bản rang chín chênh lệch không đáng kể về macro, ghi nhận để tham chiếu."
+    },
+    {
+      "position": 17,
+      "sourceName": "Nho khô",
+      "canonicalIngredientId": "ING_ENR_25DB45A7AFFD8E5B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "Đơn vị gốc đã là gram.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ HNAA dùng (50 g, không rõ khẩu phần). Lấy 30 g cho 3 phần, tạo vị chua ngọt. Có thể bỏ qua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 301,
+        "proteinG": 3.28,
+        "carbohydrateG": 80,
+        "fatG": 0.2,
+        "fiberG": 3.3,
+        "sugarG": 65.7,
+        "sodiumMg": 24
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168164",
+      "sourceNutritionNote": "Dùng số liệu 'Raisins, golden, seedless'; công thức chỉ ghi 'nho khô' không phân loại."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Bổ dọc quả dứa làm đôi, dùng dao/muỗng khoét lấy ruột ra, giữ nguyên phần vỏ làm bát đựng cơm. Phần ruột dứa thái hạt lựu (~200 g).",
+      "tip": "Khoét khéo để vỏ dứa còn nguyên hình chiếc thuyền — cách trình bày đặc trưng của món theo HNAA."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Tôm rửa sạch, lột vỏ, rút chỉ đen lưng, cắt khúc vừa ăn. Mực làm sạch, thái miếng vừa ăn. Ướp tôm, mực với một chút hạt nêm và tiêu khoảng 10 phút.",
+      "tip": "Rút chỉ đen giúp tôm không bị tanh và đắng (toyenxin). Ướp trước giúp hải sản đậm vị hơn.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cà rốt gọt vỏ, thái hạt lựu. Đậu Hà Lan rửa sạch, để ráo. Hành tím, tỏi băm nhuyễn. Hành lá thái nhỏ. Cơm nguội bóp nhẹ cho hạt tơi ra.",
+      "tip": "Bóp cơm tơi trước khi chiên giúp cơm thấm đều gia vị (HNAA)."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Hòa 1 muỗng cà phê bột cà ri với 1 muỗng canh nước mắm, 1 muỗng cà phê đường và 2 muỗng canh nước lọc thành hỗn hợp xốt đồng nhất.",
+      "tip": "HNAA pha xốt: 1 muỗng bột cà ri + 4 muỗng canh nước + 3 muỗng canh nước mắm + 1 muỗng cà phê đường. Ở đây giữ nguyên tỉ lệ nhưng rút gọn lượng nước mắm trong xốt còn 1 muỗng canh (1 muỗng canh còn lại nêm lúc xào hải sản) để tổng lượng mắm vừa 2 muỗng canh."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun nóng 1 muỗng canh dầu ăn, phi thơm một nửa chỗ hành tím-tỏi băm. Cho tôm, mực vào xào trên lửa lớn 2-3 phút đến khi vừa chín tới (tôm chuyển màu hồng), nêm 1 muỗng canh nước mắm và chút hạt nêm, trút ra đĩa để riêng.",
+      "tip": "Chỉ xào hải sản vừa chín tới để giữ độ ngọt, không bị khô dai (mẹo của toyenxin).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Dùng lại chảo, thêm 1 muỗng canh dầu ăn, phi thơm nửa chỗ hành tím-tỏi còn lại. Đập 2 quả trứng vào, đảo đều cho trứng tơi ra.",
+      "tip": "HNAA: cho trứng vào đảo trước, sau đó mới đổ hỗn hợp xốt cà ri vào.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đổ hỗn hợp xốt bột cà ri vào chảo trứng, đảo đều tay. Cho cơm nguội vào, đảo liên tục trên lửa lớn đến khi hạt cơm săn lại và thấm đều màu cà ri.",
+      "tip": "Đảo cơm trên lửa lớn và liên tục để hạt cơm vàng đều, không bị nhão (toyenxin).",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho cà rốt hạt lựu và đậu Hà Lan vào đảo cùng cơm khoảng 2 phút cho rau củ chín tới.",
+      "tip": "Cho rau củ vào trước hải sản vì rau củ cần thời gian chín lâu hơn.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho tôm, mực đã xào vào chảo cơm, thêm dứa thái hạt lựu, đảo đều 2-3 phút cho tất cả hòa quyện. Nêm nếm lại với chút nước mắm/đường cho vừa miệng.",
+      "tip": "Cho dứa vào cuối để dứa giữ được vị chua ngọt tươi, không bị nát (HNAA).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Cho hạt điều rang và nho khô (nếu dùng) vào đảo đều. Rắc hành lá thái nhỏ và chút tiêu xay, tắt bếp.",
+      "tip": "Hạt điều + nho khô là điểm nhấn 'kiểu Thái' của HNAA: bùi bùi, chua ngọt."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Múc cơm chiên vào hai nửa vỏ dứa đã khoét, trang trí thêm ít hành lá, dùng nóng.",
+      "tip": "Dọn trong vỏ dứa vừa đẹp mắt vừa giữ mùi thơm đặc trưng của món."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 122.33,
+      "proteinG": 13.74,
+      "carbohydrateG": 6.41,
+      "fatG": 4.14,
+      "fiberG": 1.9,
+      "sugarG": 1.96,
+      "sodiumMg": 66.67
+    },
+    "originalPerServing": {
+      "energyKcal": 789.97,
+      "proteinG": 37.28,
+      "carbohydrateG": 121.1,
+      "fatG": 19.08,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1377.47
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cơm nguội: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Tôm tươi: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Dứa (thơm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hành tím: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Bột cà ri: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 15,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      0,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 0,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 15,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

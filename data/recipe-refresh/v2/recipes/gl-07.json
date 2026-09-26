@@ -1,0 +1,798 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "gl-07",
+    "slug": "kimbap-han-quoc",
+    "title": "Cơm cuộn Kimbap Hàn Quốc"
+  },
+  "content": {
+    "description": "Cơm cuộn rong biển nhân trứng rán, xúc xích/thịt và dưa chuột giòn mát rượi.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Hàn Quốc",
+      "Meal prep",
+      "Dã ngoại"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/gl-07.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.maangchi.com/recipe/gimbap",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.koreanbapsang.com/gimbapkimbap-korean-dried-seaweed-rolls/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cơm trắng hạt ngắn, nấu chín",
+      "canonicalIngredientId": "ING_ENR_ECE4E4777F99A77E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "cốc",
+        "text": "4 cốc",
+        "gramEquivalent": 744,
+        "basis": "1 cốc cơm hạt ngắn nấu chín ≈ 186 g (USDA FoodData Central); số liệu UHH cho 1 cốc khớp mức này",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi dùng 4 cốc cơm cho 5 cuộn (2–3 phần ăn); lấy nguyên lượng cho 3 phần. Cơm phải dẻo, nấu hơi khô một chút để dễ cuộn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 130,
+        "proteinG": 2.36,
+        "carbohydrateG": 28.73,
+        "fatG": 0.19,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/article/nutritionfacts-v1/rice-white-short-grain-cooked-1-cup",
+      "sourceNutritionNote": "Quy đổi từ số liệu UHH cho 1 cốc (186 g); chất xơ và đường không được nguồn liệt kê nên để null."
+    },
+    {
+      "position": 1,
+      "sourceName": "Gim (lá rong biển khô) cuộn kimbap",
+      "canonicalIngredientId": "ING_ENR_0C702CA7600B76FE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "lá",
+        "text": "5 lá",
+        "gramEquivalent": 15,
+        "basis": "1 lá gim (nori) khô ≈ 3 g (slism)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi dùng 5 lá gim cho 5 cuộn. Chọn lá gim to, nguyên vẹn, mặt nhám hướng lên trên khi trải cơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 173,
+        "proteinG": 39.33,
+        "carbohydrateG": 38.67,
+        "fatG": 3.67,
+        "fiberG": 31.33,
+        "sugarG": null,
+        "sodiumMg": 610
+      },
+      "sourceNutritionReference": "https://slism.com/calorie/109003/",
+      "sourceNutritionNote": "Nguồn slism không liệt kê đường riêng nên để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Thịt bò (skirt steak), thái sợi",
+      "canonicalIngredientId": "ING_ENR_93F0734836F38041",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 225,
+        "unit": "g",
+        "text": "225 g",
+        "gramEquivalent": 225,
+        "basis": "1/2 lb = 226,8 g (1 lb = 453,6 g)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 225,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi dùng 1/2 lb thịt bò thái sợi mỏng, ướp rồi xào chín. Korean Bapsang cũng liệt kê thịt bò là nhân kinh điển (có thể thay bằng thịt lợn hoặc bỏ qua cho bản chay).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 141.2,
+        "proteinG": 21.53,
+        "carbohydrateG": 0,
+        "fatG": 5.41,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 55.1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174776",
+      "sourceNutritionNote": "Quy đổi từ khẩu phần 3 oz (85 g); dùng thịt thăn bò (flank steak) sống của USDA làm tham chiếu gần nhất cho skirt steak."
+    },
+    {
+      "position": 3,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ lớn",
+        "text": "1 củ lớn",
+        "gramEquivalent": 72,
+        "basis": "1 củ cà rốt lớn ≈ 72 g (USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi dùng 1 củ cà rốt lớn, thái sợi dài rồi xào sơ với chút muối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.57,
+        "fatG": 0.25,
+        "fiberG": 2.8,
+        "sugarG": 4.54,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/article/nutritionfacts-v1/carrots-raw-1-medium",
+      "sourceNutritionNote": "Quy đổi từ số liệu 1 củ vừa (61 g) của UHH."
+    },
+    {
+      "position": 4,
+      "sourceName": "Rau chân vịt (rau bina)",
+      "canonicalIngredientId": "ING_ENR_13D1A6A9236F39CC",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 9,
+        "unit": "oz",
+        "text": "9 oz",
+        "gramEquivalent": 255,
+        "basis": "1 oz = 28,35 g; 9 oz ≈ 255 g (Maangchi dùng 8–10 oz)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 255.145708,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi dùng 8–10 oz rau chân vịt, chần sơ rồi vắt ráo, trộn muối + dầu mè + tỏi. Korean Bapsang cho phép thay bằng dưa leo nếu không có rau chân vịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.87,
+        "carbohydrateG": 3.63,
+        "fatG": 0.4,
+        "fiberG": 2.2,
+        "sugarG": 0.43,
+        "sodiumMg": 79
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/article/nutritionfacts-v1/spinach-raw-1-cup",
+      "sourceNutritionNote": "Quy đổi từ số liệu 1 cốc rau sống (30 g) của UHH."
+    },
+    {
+      "position": 5,
+      "sourceName": "Danmuji (củ cải muối vàng Hàn Quốc)",
+      "canonicalIngredientId": "ING_ENR_68CEC72CF1A5A253",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "thanh",
+        "text": "5 thanh",
+        "gramEquivalent": 100,
+        "basis": "1 thanh danmuji ≈ 20 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi dùng 5 thanh danmuji dài cho 5 cuộn. Chưa tìm được số liệu dinh dưỡng đáng tin cho danmuji nên để null toàn bộ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Trứng gà (tráng mỏng, thái sợi)",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "quả",
+        "text": "3 quả",
+        "gramEquivalent": 150,
+        "basis": "1 quả trứng gà lớn ≈ 50 g (USDA; UHH dùng 50 g cho trứng luộc)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi dùng 3 quả trứng tráng mỏng rồi thái sợi dài làm nhân. Số liệu dùng là trứng sống (trước khi tráng).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 147,
+        "proteinG": 12.58,
+        "carbohydrateG": 0.77,
+        "fatG": 9.94,
+        "fiberG": 0,
+        "sugarG": 0.77,
+        "sodiumMg": 140
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/article/nutritionfacts-v1/egg-whole-raw-fresh-1-cup-486-large-eggs",
+      "sourceNutritionNote": "Quy đổi từ số liệu 1 cốc trứng sống (243 g) của UHH."
+    },
+    {
+      "position": 7,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 9,
+        "basis": "1 tép tỏi ≈ 3 g (USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Maangchi dùng 3 tép tỏi băm cho phần ướp thịt bò và trộn rau chân vịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.33,
+        "carbohydrateG": 33,
+        "fatG": 0.67,
+        "fiberG": 2,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/nutrition-facts/article/nutritionfacts-v1/garlic-raw-1-clove",
+      "sourceNutritionNote": "Quy đổi từ số liệu 1 tép (3 g) của UHH."
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước tương (shoyu)",
+      "canonicalIngredientId": "ING_ENR_47C2428D34783146",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 32,
+        "basis": "MyFoodData: 1 muỗng canh nước tương shoyu = 16 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi dùng 2 muỗng canh nước tương để ướp thịt bò.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "Quy đổi từ số liệu 1 muỗng canh (16 g) của MyFoodData. [audit round 4: đồng bộ lại toàn bộ 7 chỉ số theo bản ghi FDC 174277 — Soy sauce made from soy and wheat (shoyu)]"
+    },
+    {
+      "position": 9,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.2,
+        "basis": "1 muỗng cà phê đường cát = 4,2 g (UHH)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 4.2,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi dùng 1 muỗng cà phê đường trong hỗn hợp ướp thịt bò.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 100,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 100,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/nutrition-facts/article/nutritionfacts-v1/sugars-granulated-1-tsp",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 40.8,
+        "basis": "1 muỗng canh dầu mè = 13,6 g (UHH)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 40.8,
+          "unit": "g"
+        }
+      },
+      "note": "Maangchi dùng dầu mè để trộn cơm, trộn rau chân vịt và ướp thịt bò; tổng khoảng 3 muỗng canh cho công thức này.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/article/nutritionfacts-v1/oil-sesame-salad-or-cooking-1-tablespoon",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu ăn thực vật",
+      "canonicalIngredientId": "ING_ENR_57DC624F79E53EB4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27.2,
+        "basis": "1 muỗng canh dầu ăn ≈ 13,6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Dùng để tráng trứng và xào thịt bò, cà rốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://www.recipetips.com/usda/food-nutrition/t--04044/oil-soybean-salad-or-cooking.asp",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ăn ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Dùng để nêm cơm, xào cà rốt và trộn rau chân vịt. Chưa tra được nguồn dinh dưỡng chuẩn cho muối ăn trong phạm vi nghiên cứu nên để null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Vừng trắng rang",
+      "canonicalIngredientId": "ING_ENR_290707F4C2139F2E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 9,
+        "basis": "1 muỗng canh vừng = 9 g (UHH)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 9,
+          "unit": "g"
+        }
+      },
+      "note": "Trộn vào cơm theo Maangchi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 573,
+        "proteinG": 17.73,
+        "carbohydrateG": 23.45,
+        "fatG": 49.67,
+        "fiberG": 11.8,
+        "sugarG": 0.3,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://www.uhhospitals.org/health-information/health-and-wellness-library/article/nutritionfacts-v1/seeds-sesame-seeds-whole-dried-1-tbsp",
+      "sourceNutritionNote": "Quy đổi từ số liệu 1 muỗng canh (9 g) của UHH."
+    },
+    {
+      "position": 14,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.5,
+        "basis": "1/4 muỗng cà phê tiêu xay ≈ 0,5 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Maangchi dùng một chút tiêu trong hỗn hợp ướp thịt bò. Chưa tra được nguồn dinh dưỡng chuẩn nên để null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Vo gạo sạch, nấu cơm với lượng nước ít hơn bình thường một chút để cơm dẻo nhưng ráo. Khi cơm chín, xới tơi và để nguội bớt đến còn âm ấm.",
+      "tip": "Maangchi: cơm quá ướt sẽ làm gim bị mềm và khó cuộn chặt."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Trộn cơm còn ấm với 1 muỗng cà phê muối, 2 muỗng canh dầu mè và vừng rang; đảo nhẹ tay cho đều, nếm thử vừa miệng.",
+      "tip": "Nêm cơm khi còn ấm giúp muối tan và dầu mè thấm đều từng hạt cơm."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Ướp thịt bò: thịt thái sợi mỏng, trộn với 2 muỗng canh nước tương, 1 muỗng cà phê đường, 1 muỗng canh dầu mè, tỏi băm và chút tiêu xay; để thấm 15 phút.",
+      "tip": "Thái thịt ngang thớ, sợi dài khoảng 5–7 cm để khi cuộn không bị đứt khúc.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Chần rau chân vịt trong nước sôi 30–60 giây, vớt ra xả nước lạnh, vắt thật ráo rồi trộn với 1/2 muỗng cà phê muối, 1 muỗng canh dầu mè và chút tỏi băm.",
+      "tip": "Vắt rau thật khô là bước quan trọng — rau ướt sẽ làm kimbap bị nhão.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đánh tan 3 quả trứng với chút muối, tráng mỏng trên chảo chống dính với ít dầu ăn; để nguội rồi thái sợi dài.",
+      "tip": "Tráng lửa nhỏ để mặt trứng vàng đều, không bị cháy xém.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cà rốt thái sợi dài, xào nhanh trên chảo nóng với chút dầu ăn và muối khoảng 2–3 phút cho vừa chín tới, vẫn giữ độ giòn.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Xào thịt bò đã ướp trên lửa lớn 3–4 phút đến khi chín và hơi xém cạnh; trút ra đĩa riêng.",
+      "tip": "Xào lửa lớn và nhanh tay để thịt không ra nước, giữ được vị ngọt.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Chuẩn bị danmuji: nếu thanh củ cải to thì chẻ đôi theo chiều dọc cho vừa cuộn."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Trải mành tre lên mặt phẳng sạch, đặt một lá gim lên trên (mặt nhám hướng lên). Dàn đều một lớp cơm mỏng khoảng 3/4 lá gim, chừa mép trên khoảng 2 cm không có cơm.",
+      "tip": "Nhúng tay vào nước pha chút dầu mè khi dàn cơm để cơm không dính tay."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Xếp nhân thành hàng ngang gần mép dưới: một ít thịt bò, trứng thái sợi, cà rốt, rau chân vịt và một thanh danmuji. Không xếp quá nhiều nhân.",
+      "tip": "Mỗi loại nhân một hàng mỏng, dàn đều theo chiều ngang cuộn."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Cuộn chặt tay từ mép dưới lên, vừa cuộn vừa nén nhẹ qua mành tre; khi đến mép gim không có cơm thì thấm chút nước để dán kín.",
+      "tip": "Maangchi: cuộn chặt nhưng không quá mạnh tay để gim không bị rách."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Quét một lớp mỏng dầu mè lên mặt ngoài các cuộn kimbap, dùng dao sắc (thấm nước) cắt mỗi cuộn thành 8–10 khoanh dày khoảng 2 cm. Bày ra đĩa, dùng ngay.",
+      "tip": "Quét dầu mè giúp mặt gim bóng đẹp và thơm; lau dao sau mỗi lần cắt để khoanh cắt gọn, không dính cơm."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 142.83,
+      "proteinG": 0.53,
+      "carbohydrateG": 2.1,
+      "fatG": 15.09,
+      "fiberG": 0.35,
+      "sugarG": 1.41,
+      "sodiumMg": 0.33
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cơm trắng hạt ngắn, nấu chín: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Gim (lá rong biển khô) cuộn kimbap: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 2,
+        "detail": "Thịt bò (skirt steak), thái sợi: consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Rau chân vịt (rau bina): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Danmuji (củ cải muối vàng Hàn Quốc): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Trứng gà (tráng mỏng, thái sợi): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước tương (shoyu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Dầu ăn thực vật: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/recipes/global/kimchi-fried-rice.webp",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      0,
+      8,
+      11,
+      12,
+      14
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 0,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

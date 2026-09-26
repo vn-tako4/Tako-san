@@ -1,0 +1,664 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-d005aca18d138bfe",
+    "slug": "tom-xao-hung-que-thai",
+    "title": "Tôm xào húng quế Thái"
+  },
+  "content": {
+    "description": "Tôm xào tỏi-ớt dậy mùi húng quế Thái cuối cùng, pad krapao tôm chan cơm trứng chiên.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Pad krapao",
+      "Tôm",
+      "Thái Lan",
+      "Húng quế"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-d005aca18d138bfe.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.mintsmeals.com/posts/thai-holy-basil-shrimp-stir-fry-pad-krapow-goong-recipe",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://praewcooks.com/thai-basil-shrimp/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm tươi (bóc vỏ, bỏ chỉ đen)",
+      "canonicalIngredientId": "ING_ENR_7B8E16FCD96F052B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "MintsMeals dùng 200 g tôm (không ghi số phần ăn); PraewCooks dùng 8 con tôm lớn (không ghi số phần); một video công thức đường phố Thái trong kết quả tìm kiếm dùng 260 g cho 2 phần. Lấy 300 g cho 3 phần (~100 g tôm/người).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "đơn vị gốc đã là gram (≈ 5 tép; USDA FoodData Central: 1 tép tỏi ≈ 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "MintsMeals dùng 10 g tỏi băm; PraewCooks dùng 2 tép tỏi — mâu thuẫn; lấy 15 g (~5 tép) cho 3 phần, ở giữa hai nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.1,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Ớt hiểm (ớt chỉ thiên)",
+      "canonicalIngredientId": "ING_ENR_3051CC9C7B89F98F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 8,
+        "unit": "quả",
+        "text": "8 quả",
+        "gramEquivalent": 10,
+        "basis": "Ớt hiểm Thái ~1–1.5 g/quả (ước tính từ kích thước thực tế; USDA không có mục riêng cho ớt hiểm)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 8,
+          "unit": "piece"
+        }
+      },
+      "note": "MintsMeals: 5 quả ớt hiểm; PraewCooks: 3 quả (ghi 'điều chỉnh theo khẩu vị') — mâu thuẫn; lấy 8 quả cho 3 phần, giảm bớt nếu không ăn cay được.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "Dùng số liệu ớt cay đỏ chung của USDA (Peppers, hot chili, red, raw); USDA không có mục riêng cho ớt hiểm Thái."
+    },
+    {
+      "position": 3,
+      "sourceName": "Lá húng quế Thái (holy basil, đã nhặt lá)",
+      "canonicalIngredientId": "ING_ENR_0121EB2200008912",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Lá húng quế tươi via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram (≈ 1.5 nắm lá)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn đều chỉ ghi 'a handful' (một nắm) không định lượng gram; lấy ~1.5 nắm ≈ 20 g lá cho 3 phần. MintsMeals nhấn mạnh phải dùng holy basil (lá có răng cưa, vị cay nồng); PraewCooks cho biết có thể thay bằng húng quế Thái thường nếu không mua được holy basil.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 3.15,
+        "carbohydrateG": 2.65,
+        "fatG": 0.64,
+        "fiberG": 1.6,
+        "sugarG": 0.3,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172232",
+      "sourceNutritionNote": "USDA không có mục riêng cho holy basil (Ocimum tenuiflorum); dùng số liệu húng quế thường (Basil, fresh) làm tương đương."
+    },
+    {
+      "position": 4,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 muỗng canh ≈ 15 ml; dầu hào tỉ trọng ~1.0–1.1 g/ml nên 1 muỗng ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MintsMeals: 2 Tbsp; PraewCooks: 1 Tbsp — mâu thuẫn; lấy 2 Tbsp cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.9,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": 0,
+        "sodiumMg": 2730
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174529",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu nhạt",
+      "canonicalIngredientId": "ING_ENR_19A3C60192F07ED5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh ≈ 15 ml; xì dầu tỉ trọng ~1.2 g/ml nên 1 muỗng ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MintsMeals dùng 1⁄2 Tbsp xì dầu; PraewCooks không dùng xì dầu (sốt của họ chỉ có dầu hào + nước mắm) — mâu thuẫn; giữ 1 Tbsp cho 3 phần để cân bằng vị mặn-ngọt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5490
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1 muỗng canh ≈ 15 ml; nước mắm tỉ trọng ~1.2 g/ml nên 1 muỗng ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MintsMeals: 1⁄2 Tbsp; PraewCooks: 1 Tbsp — mâu thuẫn; lấy 1 Tbsp cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7850
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 8,
+        "basis": "USDA FoodData Central: 1 tsp đường cát = 4.2 g; 2 tsp ≈ 8 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MintsMeals: 1⁄2 Tbsp (~1.5 tsp); PraewCooks: 1 tsp — lấy 2 tsp cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 100,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "1 muỗng canh = 15 ml; nước 1 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ PraewCooks dùng 1 Tbsp nước để làm loãng sốt giúp áo đều tôm; MintsMeals không dùng — giữ lại theo PraewCooks. Nước không có giá trị dinh dưỡng đáng kể nên nutrition để null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu ăn (dầu thực vật)",
+      "canonicalIngredientId": "ING_ENR_DBE4377CA2A0A47E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.5,
+        "unit": "muỗng canh",
+        "text": "2.5 muỗng canh",
+        "gramEquivalent": 34,
+        "basis": "USDA FoodData Central: 1 Tbsp dầu đậu nành = 13.6 g; 2.5 Tbsp ≈ 34 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều dùng 2 Tbsp dầu cho công thức của họ; lấy 2.5 Tbsp cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": "Dùng số liệu dầu đậu nành (loại dầu thực vật phổ biến để xào)."
+    },
+    {
+      "position": 10,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "g",
+        "text": "60 g",
+        "gramEquivalent": 60,
+        "basis": "đơn vị gốc đã là gram (≈ 1⁄2 củ hành tây cỡ vừa; USDA: 1 củ vừa ≈ 110 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 60,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ PraewCooks dùng 1⁄2 củ hành tây thái lát; MintsMeals không dùng. PraewCooks lưu ý bản pad kra pao truyền thống của Thái không cho rau củ — hành tây là cách người bán hàng rong 'độn' thêm cho đầy đặn; để optional, bỏ qua nếu muốn giữ bản truyền thống.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Gạo thơm (nấu cơm ăn kèm)",
+      "canonicalIngredientId": "RICE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 240,
+        "unit": "g",
+        "text": "240 g",
+        "gramEquivalent": 240,
+        "basis": "đơn vị gốc đã là gram (~80 g gạo khô/người cho 3 phần)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 240,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn đều dọn món này với cơm gạo thơm nóng và gợi ý thêm trứng ốp la; cơm không phải thành phần của món xào nên để optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 365,
+        "proteinG": 7.13,
+        "carbohydrateG": 80,
+        "fatG": 0.66,
+        "fiberG": 1.3,
+        "sugarG": 0.12,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169756",
+      "sourceNutritionNote": "Số liệu cho gạo khô; cơm chín nở gấp ~2.5–3 lần trọng lượng gạo khô."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế tôm: rửa tôm với nước lạnh, bóc vỏ, bỏ đầu, râu và chân; dùng tăm rút chỉ đen dọc sống lưng rồi rửa lại, để ráo.",
+      "tip": "PraewCooks gợi ý giữ lại đầu tôm khi xào — gạch từ đầu tôm ra dầu làm sốt béo và đậm đà hơn (bỏ qua nếu không thích)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Giã tỏi ớt: cho tỏi và ớt hiểm vào cối giã dập thô (hoặc xay nhuyễn bằng máy xay nhỏ).",
+      "tip": "MintsMeals dùng máy xay thực phẩm; PraewCooks giã cối — giã tay cho mùi thơm nồng hơn."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Pha sốt: cho dầu hào, xì dầu, nước mắm, đường và nước vào chén nhỏ, khuấy đều cho đường tan hoàn toàn."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun nóng wok hoặc chảo lớn với dầu ăn trên lửa vừa-lớn; cho hỗn hợp tỏi ớt vào phi thơm khoảng 30 giây, đảo liên tục kẻo tỏi cháy đắng.",
+      "tip": "Tỏi chuyển vàng nhạt là đạt; để cháy sẽ làm cả món bị đắng."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho tôm vào xào nhanh trên lửa lớn đến khi tôm hơi cong, chuyển hồng và gần chín.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Rưới đều hỗn hợp sốt vào chảo, đảo cho tôm áo đều sốt; để tôm om trong sốt thêm khoảng 1 phút cho thấm.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nếu dùng hành tây: cho hành tây thái lát vào, xào thêm đến khi hành hơi mềm trong và tôm chín hẳn.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Tắt bếp, cho lá húng quế vào, đảo nhanh 2–3 lượt cho lá vừa héo nhờ hơi nóng còn lại.",
+      "tip": "Cho rau vào sau khi tắt bếp để giữ mùi thơm cay nồng đặc trưng của holy basil; xào lâu rau sẽ thâm và mất mùi."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Dọn ngay ra đĩa, ăn nóng với cơm gạo thơm; có thể thêm trứng ốp la lòng đào ăn kèm như gợi ý của cả hai nguồn.",
+      "tip": "Món này phải ăn ngay khi còn nóng — để nguội tôm sẽ dai và sốt kém ngon."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 516.2,
+      "proteinG": 27.54,
+      "carbohydrateG": 72.26,
+      "fatG": 12.53,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1198.64
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Tôm tươi (bóc vỏ, bỏ chỉ đen): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Ớt hiểm (ớt chỉ thiên): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Lá húng quế Thái (holy basil, đã nhặt lá): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Dầu hào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Xì dầu nhạt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu ăn (dầu thực vật): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

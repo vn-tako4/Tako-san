@@ -1,0 +1,661 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-4f7a2cd919912ac9",
+    "slug": "mi-tron-trung-hanh",
+    "title": "Mì trộn trứng hành"
+  },
+  "content": {
+    "description": "Mì trộn trứng chiên sợi-hành lá nước tương, bữa nhanh mười phút cho bữa tối vội vàng.",
+    "cuisine": "vietnamese",
+    "category": "mon_nhanh_sang",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 15,
+    "servings": 2,
+    "difficulty": "easy",
+    "tags": [
+      "Mì trộn",
+      "Trứng",
+      "Nhanh",
+      "Bữa tối"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-4f7a2cd919912ac9.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://saigonesebaguette.vn/cach-xao-mi-tom/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://afamily.vn/mi-tron-sieu-toc-cho-bua-sang-ngon-mieng-20130224050356503.chn",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì tôm (mì ăn liền)",
+      "canonicalIngredientId": "ING_ENR_AA40B075CF5A8A1E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "gói",
+        "text": "2 gói",
+        "gramEquivalent": 150,
+        "basis": "1 gói mì tôm Hảo Hảo = 75 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "pack"
+        }
+      },
+      "note": "Cả hai nguồn đều dùng mì ăn liền dạng gói (saigonesebaguette: 1 gói/vắt; afamily: 1-2 gói). Lấy 2 gói cho 2 người (1 gói/người).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 478,
+        "proteinG": 7.5,
+        "carbohydrateG": 60,
+        "fatG": 23.33,
+        "fiberG": 0.8,
+        "sugarG": 4.17,
+        "sodiumMg": 2517
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/401923",
+      "sourceNutritionNote": "Không có bản generic SR Legacy/Foundation cho mì ăn liền; dùng bản Branded (DRAGONFLY 'INSTANT NOODLES', fdcId 401923) vì không có lựa chọn khác — số liệu theo nhãn dinh dưỡng, chỉ mang tính tham chiếu."
+    },
+    {
+      "position": 1,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 100,
+        "basis": "1 quả trứng gà lớn ≈ 50 g (USDA FoodData Central: 1 large egg = 50 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "MÂU THUẪN: saigonesebaguette dùng 2 quả cho 1 gói mì (1 quả đảo vào mì + 1 quả ốp la trang trí); afamily dùng 1 quả trứng luộc cho 1-2 gói mì. Lấy 1 quả/người, chiên ốp la đặt lên trên — cách làm phổ biến và cân đối nhất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 20,
+        "basis": "1 cây hành lá ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Một phần làm mỡ hành, một phần thái nhỏ rắc lên mặt (cả hai nguồn đều dùng hành lá).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "USDA SR Legacy 170005 'Onions, spring or scallions (includes tops and bulb), raw' — bản ghi đầy đủ 7 chỉ số (thay 2727585 Foundation thiếu energy/carbs/fat; audit round 5)"
+    },
+    {
+      "position": 3,
+      "sourceName": "Xì dầu (nước tương)",
+      "canonicalIngredientId": "ING_ENR_F68EF5C1E847770A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 35.4,
+        "basis": "2 muỗng canh = 30 ml; tỉ trọng xì dầu ≈ 1.18",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "afamily: 2 muỗng canh cho 1-2 gói mì; saigonesebaguette: 1 muỗng canh/gói mì. Cả hai quy về ~1 muỗng canh/gói → 2 muỗng canh cho 2 gói, không mâu thuẫn thực chất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 17.7,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng nước mắm ≈ 1.18",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "saigonesebaguette: 1/2 muỗng canh nước mắm cho 1 gói mì → 1 muỗng canh cho 2 gói. afamily không dùng nước mắm (chỉ dùng xì dầu) — lấy theo saigonesebaguette để món đậm đà hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27.3,
+        "basis": "2 muỗng canh = 30 ml; tỉ trọng dầu ăn ≈ 0.91",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "1 muỗng canh làm mỡ hành + 1 muỗng canh chiên trứng ốp la. saigonesebaguette dùng 1/2 muỗng canh để xào mì cho 1 gói.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 20,
+        "basis": "1 củ hành tím ≈ 20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "saigonesebaguette: hành tím băm phi thơm với mì (không định lượng); lấy 1 củ băm cho 2 gói.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê đường cát ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN: afamily dùng 1 muỗng canh đường trong nước trộn cho 1-2 gói mì; saigonesebaguette không dùng đường. Vì công thức này đã có nước mắm (mặn), lấy 1 muỗng cà phê đường để cân vị, tránh ngọt gắt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Giấm gạo",
+      "canonicalIngredientId": "ING_ENR_422700EA71994D6A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng giấm ≈ 1.0",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ có trong công thức afamily (1 muỗng canh trong nước trộn); saigonesebaguette không dùng. Để optional cho vị chua nhẹ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0,
+        "carbohydrateG": 0.04,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0.04,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172237",
+      "sourceNutritionNote": "Không có giấm gạo trong USDA; dùng số liệu giấm trắng chưng cất (Vinegar, distilled, fdcId 172237) làm tương đương."
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu vừng",
+      "canonicalIngredientId": "ING_ENR_F937B73E948ED41F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4.6,
+        "basis": "1 muỗng cà phê = 5 ml; tỉ trọng dầu vừng ≈ 0.92",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ có trong công thức afamily (1/2 muỗng cà phê cho 1-2 gói); lấy 1 muỗng cà phê cho 2 gói, optional để tăng mùi thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Vừng rang",
+      "canonicalIngredientId": "ING_ENR_DAB9547F85EF53B1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê vừng rang ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "afamily: 1/2 muỗng cà phê vừng rang cho 1-2 gói; lấy 1 muỗng cà phê cho 2 gói, rắc lên mặt, optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 573,
+        "proteinG": 17.73,
+        "carbohydrateG": 23.45,
+        "fatG": 49.67,
+        "fiberG": 11.8,
+        "sugarG": 0.3,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170150",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "1/4 muỗng cà phê tiêu xay ≈ 0.6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Rắc nhẹ lên mặt khi hoàn thành, optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế: hành lá thái nhỏ, chia làm hai phần — một phần làm mỡ hành, một phần để rắc lên mặt; hành tím bóc vỏ, băm nhỏ."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Làm mỡ hành: đun nóng 1 muỗng canh dầu ăn đến bốc khói nhẹ, rưới đều vào chén hành lá thái nhỏ, trộn nhanh tay.",
+      "tip": "Dầu phải thật nóng thì hành mới thơm và giữ màu xanh; không để dầu cháy khét."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Pha nước trộn trong tô lớn: khuấy tan xì dầu, nước mắm, đường (thêm giấm gạo và dầu vừng nếu dùng) đến khi đường tan hết.",
+      "tip": "afamily: có thể đun sôi nhẹ nước trộn để đường tan nhanh và sốt sánh hơn."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun sôi một nồi nước; cho 2 gói mì vào chần 30 giây đến 3 phút tùy loại mì, vớt ra xả ngay qua nước lạnh rồi để thật ráo.",
+      "tip": "saigonesebaguette: trụng đúng kỹ thuật (xả nước lạnh ngay) giúp sợi mì dai, không bở nát khi trộn.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Chiên trứng ốp la: đun nóng 1 muỗng canh dầu ăn còn lại trên chảo, đập 2 quả trứng vào, chiên lửa vừa đến độ chín mong muốn — lòng đào hoặc chín kỹ tùy khẩu vị.",
+      "tip": "Có thể phi thơm hành tím băm trước khi cho trứng vào để trứng thơm hơn (theo saigonesebaguette).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho mì đã ráo nước vào tô nước trộn, dùng đũa trộn đều cho từng sợi mì thấm gia vị.",
+      "tip": "Trộn lúc mì còn nóng thì gia vị thấm nhanh và đều hơn."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Thêm mỡ hành vào tô mì, trộn đều lần nữa."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Chia mì ra 2 tô/phần; đặt 1 quả trứng ốp la lên trên mỗi phần."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Rắc hành lá thái nhỏ còn lại, vừng rang và một chút tiêu xay lên mặt."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Trộn đều khi ăn; dùng ngay khi còn nóng để mì không bị khô và trứng không bị tanh.",
+      "tip": "afamily: món ngon nhất khi ăn ngay sau khi chế biến."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 2,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 358.5,
+      "proteinG": 5.63,
+      "carbohydrateG": 45,
+      "fatG": 17.5,
+      "fiberG": 0.6,
+      "sugarG": 3.13,
+      "sodiumMg": 1887.75
+    },
+    "originalPerServing": {
+      "energyKcal": 612.31,
+      "proteinG": 14.52,
+      "carbohydrateG": 51.51,
+      "fatG": 39.09,
+      "fiberG": 1.57,
+      "sugarG": 6.73,
+      "sodiumMg": 3629.02
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Trứng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Xì dầu (nước tương): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Hành tím: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

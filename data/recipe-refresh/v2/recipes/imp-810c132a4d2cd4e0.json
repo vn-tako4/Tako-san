@@ -1,0 +1,1052 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-810c132a4d2cd4e0",
+    "slug": "canh-chua-tom-dua-nam-bo",
+    "title": "Canh chua tôm dứa Nam Bộ"
+  },
+  "content": {
+    "description": "Nước canh chua thanh từ dứa chín và cà chua, tôm tươi vừa chín tới, giá đỗ giòn, món canh cơm miền Nam ngày nóng.",
+    "cuisine": "vietnamese",
+    "category": "mon_canh",
+    "region": "nam",
+    "cookTimeMinutes": 30,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Món canh",
+      "Nam Bộ",
+      "Chua ngọt",
+      "Cơm nhà"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-810c132a4d2cd4e0.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.bachhoaxanh.com/kinh-nghiem-hay/tiet-lo-cach-nau-canh-chua-tom-phong-cach-nam-bo-ngon-tuyet-1173143",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "http://Vietgiaitri.com/cach-nau-canh-chua-tom-ngon-chuan-vi-nam-bo-20221230i6813335/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://tiepthitieudung.com/am-thuc/cach-nau-canh-chua-tom-phong-cach-nam-bo-183806.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Tôm sú tươi bóc vỏ",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "Vietgiaitri (MRLVN): 400 g cho 3-4 người; tiepthitieudung: 200 g cho 2 người — hai nguồn cùng tỉ lệ ~100 g/người, lấy 400 g cho 4 khẩu phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "Tôm sống: đường (269) và chất xơ (291) không được báo cáo trong nguồn FDC nên để null, không ước tính."
+    },
+    {
+      "position": 1,
+      "sourceName": "Dứa (thơm)",
+      "canonicalIngredientId": "PINEAPPLE",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "same conservative ingredient-name key as an exact existing canonical alias",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "trái",
+        "text": "0.5 trái",
+        "gramEquivalent": 350,
+        "basis": "1/2 trái dứa loại vừa (cả trái ~900 g), gọt vỏ bỏ mắt còn khoảng 60-70% → ≈350 g (ước tính có căn cứ, không phải cân chính xác).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Bachhoaxanh: 1 trái thơm cho 2-3 người; Vietgiaitri: 1/2 trái cho 3-4 người — mâu thuẫn tỉ lệ; lấy theo Vietgiaitri vì ghi rõ 3-4 người, gần nhất với 4 khẩu phần của assignment.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.54,
+        "carbohydrateG": 13.12,
+        "fatG": 0.12,
+        "fiberG": 1.4,
+        "sugarG": 9.85,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169124",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Cà chua",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 200,
+        "basis": "1 quả cà chua vừa ~100 g (kích thước phổ biến).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Vietgiaitri: 2 quả cho 3-4 người; tiepthitieudung: 2 quả cho 2 người — mâu thuẫn; lấy 2 quả theo Vietgiaitri (ghi rõ khẩu phần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Đậu bắp",
+      "canonicalIngredientId": "ING_ENR_D9328EA6D4982BC2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "quả",
+        "text": "5 quả",
+        "gramEquivalent": 60,
+        "basis": "1 quả đậu bắp ~10-12 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "Vietgiaitri: 4-5 quả cho 3-4 người; tiepthitieudung: 5 quả cho 2 người — hai nguồn gần tương đương, lấy 5 quả.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 1.93,
+        "carbohydrateG": 7.45,
+        "fatG": 0.19,
+        "fiberG": 3.2,
+        "sugarG": 1.48,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169260",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Bạc hà (dọc mùng)",
+      "canonicalIngredientId": "ING_ENR_51E6EDA1D93ED547",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 200,
+        "basis": "1 cây bạc hà (dọc mùng) loại vừa ~200 g (ước tính từ kích thước phổ biến ngoài chợ).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "MÂU THUẪN NGUỒN: tiepthitieudung dùng 1 cây cho 2 người; Vietgiaitri KHÔNG dùng bạc hà mà dùng 3-4 bắp ngô bao tử. Giữ bạc hà vì đúng chất canh chua Nam Bộ; ngô bao tử để riêng mục tùy chọn bên dưới.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central không có mục generic cho thân dọc mùng (Colocasia gigantea) nên để null toàn bộ, không dùng số liệu thay thế."
+    },
+    {
+      "position": 5,
+      "sourceName": "Giá đỗ",
+      "canonicalIngredientId": "BEAN_SPROUTS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "Vietgiaitri: 100 g cho 3-4 người; tiepthitieudung: 100 g cho 2 người — mâu thuẫn; lấy 100 g theo Vietgiaitri (ghi rõ khẩu phần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 30,
+        "proteinG": 3.04,
+        "carbohydrateG": 5.94,
+        "fatG": 0.18,
+        "fiberG": 1.8,
+        "sugarG": 4.13,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169957",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Me chín",
+      "canonicalIngredientId": "ING_ENR_FC20A824709D6756",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Me chua via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram (me chín khô, chưa dầm).",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN NGUỒN: tiepthitieudung dùng 10 g me cho 2 người (→ 20 g cho 4 người); Vietgiaitri không liệt kê chất tạo chua nào ngoài cà chua + dứa (chỉ dặn 'nêm sao cho bật lên vị chua'). Giữ me vì đó là vị chua chuẩn Nam Bộ; dùng me dạng nước cốt dầm từ me chín khô.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 239,
+        "proteinG": 2.8,
+        "carbohydrateG": 62.5,
+        "fatG": 0.6,
+        "fiberG": 5.1,
+        "sugarG": 38.8,
+        "sodiumMg": 28
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167763",
+      "sourceNutritionNote": "Số liệu là me sống nguyên quả (raw tamarind); dùng làm nước cốt nên giá trị thực tế khi pha loãng thấp hơn — ghi rõ để không hiểu lầm."
+    },
+    {
+      "position": 7,
+      "sourceName": "Ớt sừng",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "trái",
+        "text": "2 trái",
+        "gramEquivalent": 30,
+        "basis": "1 trái ớt sừng ~15 g (kích thước phổ biến).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "tiepthitieudung: 2 trái cho 2 người; Vietgiaitri: 1 trái cho 3-4 người — mâu thuẫn; lấy 2 trái, giảm bớt nếu không ăn được cay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 15,
+        "basis": "1 tép tỏi ~5 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Vietgiaitri: 3 tép tỏi + 2 củ hành khô cho 3-4 người; tiepthitieudung: tỏi bằm (không định lượng). Lấy 3 tép tỏi băm để phi thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 11,
+        "basis": "1 muỗng cà phê ≈ 5 ml; tỉ trọng nước mắm ≈ 1,1 g/ml → 10 ml ≈ 11 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Vietgiaitri: 1 muỗng cà phê ướp tôm + '1 chút' khi nêm; tiepthitieudung và Bachhoaxanh không dùng nước mắm. Lấy 2 muỗng cà phê (1 ướp tôm, 1 nêm cuối).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 25,
+        "basis": "1 muỗng canh đường cát ≈ 12-13 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "tiepthitieudung: 1 muỗng canh cho 2 người (→ 2 muỗng canh cho 4 người); Vietgiaitri: 'đường' không định lượng. Đường + me là 2 gia vị không thể thiếu của canh chua Nam Bộ (tiepthitieudung).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ≈ 6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "tiepthitieudung: 1 muỗng cà phê muối cho 2 người; vì công thức này còn dùng nước mắm nên giữ 1 muỗng cà phê cho 4 người, nêm lại theo khẩu vị thay vì scale tuyến tính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Bột ngọt",
+      "canonicalIngredientId": "ING_ENR_0A4564D231578559",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2.5,
+        "basis": "1 muỗng cà phê bột ngọt ≈ 5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "tiepthitieudung: 1/4 muỗng cà phê cho 2 người (→ 1/2 muỗng cà phê cho 4 người).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA chỉ có số liệu Branded cho bột ngọt (MSG), không có mục SR Legacy/Foundation generic nên để null toàn bộ, không dùng số liệu branded."
+    },
+    {
+      "position": 13,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê hạt nêm ≈ 5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Vietgiaitri: 'bột nêm (hoặc bột canh)' không định lượng; tiepthitieudung không dùng hạt nêm. Lấy 1 muỗng cà phê, nêm lại theo khẩu vị.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Hạt nêm phụ thuộc thương hiệu/công thức từng hãng, không dùng số liệu generic nên để null."
+    },
+    {
+      "position": 14,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng dầu ăn ~0,91 → 30 ml ≈ 27 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Vietgiaitri: 2 muỗng canh xào tôm + 2 muỗng canh xào cà chua dứa (tổng 4 muỗng canh); tiepthitieudung: 'dầu ăn' không định lượng. Lấy 2 muỗng canh để phi thơm và xào sơ, tránh nhiều dầu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nắm",
+        "text": "1 nắm",
+        "gramEquivalent": 30,
+        "basis": "1 nắm hành lá (3-4 cây) ~30 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Vietgiaitri: 'hành lá, mùi tàu' không định lượng; Bachhoaxanh dùng ngò gai + rau ôm. Dùng cả hành lá, ngò gai, rau om theo đúng bộ rau nêm Nam Bộ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 16,
+      "sourceName": "Ngò gai",
+      "canonicalIngredientId": "ING_ENR_A420DB17D647F89F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nắm",
+        "text": "1 nắm",
+        "gramEquivalent": 10,
+        "basis": "1 nắm ngò gai (4-5 lá) ~10 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Bộ rau nêm chuẩn Nam Bộ theo Bachhoaxanh (ngò gai + rau ôm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": "USDA Coriander (cilantro) leaves, raw (FDC 169997) — proxy cho ngò gai/mùi tàu (culantro): ngò rí cùng họ"
+    },
+    {
+      "position": 17,
+      "sourceName": "Rau om (rau ngổ)",
+      "canonicalIngredientId": "ING_ENR_D3553D2D9245D70E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nắm",
+        "text": "1 nắm",
+        "gramEquivalent": 10,
+        "basis": "1 nắm rau om (rau ngổ) ~10 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Bộ rau nêm chuẩn Nam Bộ theo Bachhoaxanh (ngò gai + rau ôm).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có mục generic cho rau om nên để null toàn bộ."
+    },
+    {
+      "position": 18,
+      "sourceName": "Ngô bao tử",
+      "canonicalIngredientId": "ING_ENR_9CAE9AF26A643E59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "bắp",
+        "text": "4 bắp",
+        "gramEquivalent": 60,
+        "basis": "1 bắp ngô bao tử ~15 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "TÙY CHỌN — chỉ Vietgiaitri dùng (3-4 bắp cho 3-4 người); tiepthitieudung và Bachhoaxanh không dùng. Bỏ qua vẫn đúng vị.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tra USDA cho nguyên liệu tùy chọn này nên để null."
+    },
+    {
+      "position": 19,
+      "sourceName": "Chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 40,
+        "basis": "1 quả chanh ~40 g (cả quả, lấy nước cốt ~15-20 ml).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "TÙY CHỌN — assignment gợi ý chanh nhưng cả 3 nguồn công thức Nam Bộ đều dùng me làm chất tạo chua. Chanh là phương án thay thế khi không có me (1-2 quả), không dùng đồng thời với me.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 29,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.32,
+        "fatG": 0.3,
+        "fiberG": 2.8,
+        "sugarG": 2.5,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167746",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 20,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.8,
+        "unit": "lít",
+        "text": "1.8 lít",
+        "gramEquivalent": 1800,
+        "basis": "đơn vị gốc đã là ml (≈ gram).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.8,
+          "unit": "l"
+        }
+      },
+      "note": "Vietgiaitri: 1,5-2 lít cho 3-4 người; tiepthitieudung: ~1 lít cho 2 người (→ 2 lít cho 4 người). Lấy 1,8 lít (trung bình hai nguồn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế tôm: bóc vỏ giữ lại phần đuôi, rút chỉ đen dọc sống lưng, rửa sạch, để ráo. Ướp tôm với 1 muỗng cà phê nước mắm và ít tiêu xay, để thấm khoảng 15-20 phút.",
+      "tip": "Vietgiaitri: rút chỉ đen giúp tôm không bị tanh và đắng; ướp trước giúp tôm đậm đà hơn.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Làm nước cốt me: cho me chín vào chén, đổ nước sôi vào, dầm nát rồi lọc qua rây bỏ hạt, giữ lại phần nước cốt.",
+      "tip": "tiepthitieudung: dầm me với nước sôi giúp me ra hết vị chua nhanh hơn nước nguội.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế rau củ: cà chua bổ múi cau; dứa gọt vỏ bỏ mắt, cắt miếng tam giác vừa ăn; đậu bắp ngâm nước muối loãng 10 phút, rửa sạch; bạc hà tước vỏ, cắt lát xéo mỏng; giá đỗ rửa sạch để ráo; hành lá, ngò gai, rau om thái nhỏ; ớt sừng cắt lát chéo.",
+      "tip": "Vietgiaitri: đậu bắp gần nấu mới cắt chéo — cắt sớm đậu tiết nhiều nhớt và kém xanh.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Phi thơm: bắc nồi lên bếp, cho 2 muỗng canh dầu ăn vào đun nóng, cho tỏi băm vào phi đến khi vàng thơm.",
+      "tip": "tiepthitieudung phi tỏi băm; Bachhoaxanh phi hành tím — đều được, tỏi hợp với tôm hơn.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Xào sơ tôm: cho tôm đã ướp vào đảo nhanh đến khi tôm săn lại và chuyển màu đỏ au, trút tôm ra bát riêng.",
+      "tip": "MÂU THUẪN NGUỒN: Vietgiaitri xào tôm riêng rồi cho lại vào sau để tôm ngọt, không bị bã khô như nấu từ đầu; tiepthitieudung xào cà chua rồi cho tôm xào chung từ đầu. Lấy theo Vietgiaitri vì tôm giữ được độ ngọt và giòn.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Xào cà chua và dứa: dùng lại nồi vừa xào tôm, cho cà chua và dứa vào xào, nêm ít muối, đảo đều đến khi cà chua mềm và dứa dậy mùi thơm.",
+      "tip": "Vietgiaitri: nêm ít bột canh/muối khi xào giúp cà chua, dứa dịu vị chua và đậm ngọt hơn.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Chế nước và nấu nền: đổ 1,8 lít nước sôi vào nồi, đun sôi rồi hạ lửa vừa, nấu thêm khoảng 5 phút cho cà chua và dứa tiết hết vị chua ngọt.",
+      "tip": "tiepthitieudung: cho nước sôi thay vì nước lạnh vừa tiết kiệm thời gian vừa hạn chế mùi tanh của tôm. Vietgiaitri: nấu với nước lọc đầu tôm (giã đầu tôm lọc lấy nước) sẽ ngọt hơn, nhưng tốn công — dùng nước lọc thường vẫn ngon.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Tạo vị chua và nêm nếm: cho nước cốt me vào, nêm muối, đường, bột ngọt, hạt nêm và 1 muỗng cà phê nước mắm còn lại; nếm sao cho canh có vị chua thanh nổi bật, ngọt dịu, mặn vừa và hơi cay.",
+      "tip": "tiepthitieudung nhấn mạnh: đường và me là 2 gia vị không thể thiếu của canh chua Nam Bộ; vị chua phải 'bật lên' mới đúng chất (Vietgiaitri).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho đậu bắp và bạc hà vào, nấu thêm 3-4 phút cho vừa chín tới, vẫn giữ độ giòn và màu xanh.",
+      "tip": "MÂU THUẪN NGUỒN: tiepthitieudung cho đậu bắp, bạc hà, giá vào cùng lúc ở cuối; saigonesebaguette cho rau lâu chín (bạc hà, đậu bắp) vào trước 3-5 phút rồi mới cho giá. Lấy cách sau để đậu bắp và bạc hà chín đều mà giá vẫn giòn.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Cho tôm đã xào trở lại nồi, nấu thêm 2-3 phút cho tôm chín hẳn và thấm vị canh.",
+      "tip": "Cho tôm vào muộn giúp tôm không bị nấu quá lâu, giữ được độ giòn ngọt (Vietgiaitri).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Cho giá đỗ và ớt lát vào, đợi nước sôi trở lại khoảng 15 giây thì tắt bếp ngay.",
+      "tip": "Vietgiaitri: chỉ nấu thêm 15 giây sau khi cho giá; tiepthitieudung: tắt lửa ngay khi canh sôi lại sau khi cho rau — giúp giá, bạc hà, đậu bắp giữ độ giòn, không bị chín nhũn.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Múc canh ra tô lớn, rắc hành lá, ngò gai, rau om lên trên. Dùng nóng với cơm trắng hoặc bún, chấm tôm với chén nước mắm mặn cho tròn vị.",
+      "tip": "tiepthitieudung: canh chua tôm chấm với chén nước mắm mặn sẽ tăng hương vị; ăn nóng là ngon nhất."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 19.45,
+      "proteinG": 0.9,
+      "carbohydrateG": 4.61,
+      "fatG": 0.08,
+      "fiberG": 0.71,
+      "sugarG": 2.97,
+      "sodiumMg": 2.9
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Tôm sú tươi bóc vỏ: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Dứa (thơm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Cà chua: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Đậu bắp: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Bạc hà (dọc mùng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Ớt sừng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Bột ngọt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 15,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 16,
+        "detail": "Ngò gai: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 17,
+        "detail": "Rau om (rau ngổ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 20,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      20
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 9,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 13,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 14,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 15,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 16,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 17,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 20,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

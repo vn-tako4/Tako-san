@@ -1,0 +1,567 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-f44be7e8c88c20d3",
+    "slug": "sup-ca-hoi-kem-y",
+    "title": "Súp cá hồi kem Ý"
+  },
+  "content": {
+    "description": "Súp cá hồi kem sữa mượt với cà rốt-hành, món Ý ấm áp sang trọng mùa lạnh.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Súp",
+      "Cá hồi",
+      "Kem",
+      "Ý"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-f44be7e8c88c20d3.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.buttalapasta.it/ricette/ricetta-per-la-zuppa-di-panna-e-salmone/24165/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.unafamigliaincucina.com/zuppa-di-salmone-finlandese/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cá hồi phi lê tươi (không da)",
+      "canonicalIngredientId": "ING_ENR_E958613F68AC479A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "Ba nguồn mâu thuẫn về định lượng: Buttalapasta 200 g (ghi 1 phần nhưng định lượng tương đương ~4 phần); Una Famiglia in Cucina 500 g cho 3 phần (~167 g/phần); Nonsprecare.it 400 g cho 4 phần. Lấy 400 g cho 4 phần (100 g/phần) theo Nonsprecare.it vì cùng 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 208,
+        "proteinG": 20.4,
+        "carbohydrateG": 0,
+        "fatG": 13.4,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 59
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175167",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Kem tươi (whipping cream, panna fresca)",
+      "canonicalIngredientId": "ING_ENR_947E03830C68D24A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "ml",
+        "text": "250 ml",
+        "gramEquivalent": 250,
+        "basis": "250 ml × ~1,0 g/ml (tỉ trọng kem tươi ~1,0)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 250,
+          "unit": "ml"
+        }
+      },
+      "note": "Buttalapasta: 600 ml kem tươi; Una Famiglia in Cucina: 200 ml cho 3 phần — hai nguồn mâu thuẫn, lấy 250 ml cho 4 phần là mức trung gian. Gợi ý món ghi 'sữa tươi' nhưng CẢ HAI nguồn Ý đều dùng panna (kem tươi) và tên món là 'súp kem' — dùng kem tươi theo nguồn, ghi rõ sự khác biệt với gợi ý.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 340,
+        "proteinG": 2.84,
+        "carbohydrateG": 2.84,
+        "fatG": 36.1,
+        "fiberG": 0,
+        "sugarG": 2.92,
+        "sodiumMg": 27
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170859",
+      "sourceNutritionNote": "Số liệu cho kem tươi đánh bông (Cream, fluid, heavy whipping)."
+    },
+    {
+      "position": 2,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 150,
+        "basis": "1 củ hành tây vừa ≈ 150 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Buttalapasta dùng 1 củ hành tây (cipolla); Una Famiglia in Cucina dùng 200 g tỏi tây (porri) cho 3 phần — hai nguồn khác loại hành, lấy hành tây theo gợi ý món, ghi rõ sự thay thế.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "củ",
+        "text": "2 củ",
+        "gramEquivalent": 200,
+        "basis": "2 củ cà rốt vừa ≈ 200 g (cà rốt vừa ~100 g/củ)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Una Famiglia in Cucina: 250 g cà rốt cho 3 phần; Buttalapasta KHÔNG dùng cà rốt — ghi rõ khác biệt. Lấy 2 củ (~200 g) cho 4 phần theo gợi ý món có cà rốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Khoai tây",
+      "canonicalIngredientId": "ING_ENR_3A8C12C2984F3703",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram (khoảng 3 củ khoai tây vừa)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "Ba nguồn mâu thuẫn lớn: Buttalapasta 600 g; Una Famiglia in Cucina 500 g cho 3 phần (~167 g/phần); Cookpad (Manyuz88) 100 g cho 4 phần. Lấy 400 g cho 4 phần (100 g/phần) là mức trung gian — khoai tây là nền tạo độ sánh cho súp theo cả hai nguồn chính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 77,
+        "proteinG": 2.05,
+        "carbohydrateG": 17.5,
+        "fatG": 0.09,
+        "fiberG": 2.1,
+        "sugarG": 0.82,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170026",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Bơ lạt",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 30,
+        "unit": "g",
+        "text": "30 g",
+        "gramEquivalent": 30,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 30,
+          "unit": "g"
+        }
+      },
+      "note": "Buttalapasta: 50 g bơ; Una Famiglia in Cucina: 20 g bơ cho 3 phần — hai nguồn mâu thuẫn, lấy 30 g cho 4 phần là mức trung gian.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.1,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": "Số liệu cho bơ không muối (Butter, without salt)."
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước dùng cá (brodo di pesce)",
+      "canonicalIngredientId": "ING_ENR_A5A37D640C0384CB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1000,
+        "unit": "ml",
+        "text": "1000 ml",
+        "gramEquivalent": 1000,
+        "basis": "đơn vị gốc đã là ml (≈ g, tỉ trọng nước dùng ~1)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "l"
+        }
+      },
+      "note": "Una Famiglia in Cucina: 1,3 lít nước dùng cá cho 3 phần; Buttalapasta: 600 ml nước lọc (không phải nước dùng) — hai nguồn mâu thuẫn, lấy 1 lít nước dùng cá cho 4 phần là mức trung gian, ưu tiên nước dùng cá vì cho vị ngọt đậm hơn (theo Una Famiglia in Cucina). Có thể thay bằng nước lọc + 1 muỗng cà phê hạt nêm nếu không có nước dùng cá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 16,
+        "proteinG": 2.26,
+        "carbohydrateG": 0,
+        "fatG": 0.81,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 156
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172885",
+      "sourceNutritionNote": "Số liệu cho nước dùng cá nấu tại nhà (Soup, stock, fish, home-prepared, USDA)."
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "khoảng 1-2 cây hành lá ≈ 20 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Theo gợi ý món, dùng rắc cuối khi dọn. Nguồn Ý dùng rau thì là tươi (aneto) và thì là dại (finocchio selvatico) — hành lá được thay theo gợi ý món, ghi rõ không tương đương hoàn toàn về mùi vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "g",
+        "text": "6 g",
+        "gramEquivalent": 6,
+        "basis": "khoảng 1 muỗng cà phê ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6,
+          "unit": "g"
+        }
+      },
+      "note": "Buttalapasta ghi '3 muỗng cà phê muối' (3 cucchiaini ≈ 15-18 g, khá nhiều); Una Famiglia in Cucina chỉ ghi 'muối vừa đủ' (q.b.) — hai nguồn mâu thuẫn, lấy 6 g cho 4 phần là mức vừa phải, đã ghi rõ. Nên nêm từ từ và nếm lại vì nước dùng cá đã có vị mặn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38800
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "g",
+        "text": "2 g",
+        "gramEquivalent": 2,
+        "basis": "1 muỗng cà phê tiêu xay ≈ 2 g (USDA: 1 muỗng cà phê ~2,3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "g"
+        }
+      },
+      "note": "Cả hai nguồn chỉ ghi 'tiêu vừa đủ' (pepe q.b.), không định lượng; 2 g cho 4 phần là mức ước lượng, đã ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.4,
+        "carbohydrateG": 64,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế rau củ: khoai tây gọt vỏ, cắt hạt lựu cỡ 1,5-2 cm. Cà rốt gọt vỏ, thái lát mỏng. Hành tây bóc vỏ, băm nhỏ. Hành lá rửa sạch, thái nhỏ để riêng.",
+      "tip": "Cắt khoai tây hạt lựu đều nhau để chín đồng thời — miếng quá to sẽ lâu mềm, miếng quá nhỏ dễ nát thành bột."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Sơ chế cá hồi: rửa sạch phi lê, thấm thật khô bằng giấy bếp, kiểm tra và nhổ bỏ xương dăm, cắt thành khối vuông cạnh khoảng 3 cm.",
+      "tip": "Buttalapasta: cắt cá thành lát/khối dày ~1 cm, thao tác nhẹ tay để miếng cá không bị nát khi nấu."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun chảy bơ trong nồi lớn ở lửa vừa. Cho hành tây băm vào xào 3-4 phút cho mềm trong, không để vàng.",
+      "tip": "Una Famiglia in Cucina: xào hành (porri) cho mềm dịu (appassire) ở lửa vừa trước khi cho rau củ khác vào — hành xào vừa tới sẽ ngọt, hành cháy sẽ đắng.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho khoai tây và cà rốt vào nồi, đảo đều 2 phút cho thấm bơ. Đổ nước dùng cá vào, đun sôi.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Hạ lửa nhỏ, đậy nắp và nấu liu riu khoảng 20-25 phút đến khi khoai tây chín mềm, dùng nĩa xiên thử thấy bở là được.",
+      "tip": "Una Famiglia in Cucina: nấu rau củ trong nước dùng khoảng 30 phút cho 3 phần đến khi khoai mềm hẳn — khoai mềm là nền tạo độ sánh tự nhiên cho súp.",
+      "timerMinutes": 25
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho các khối cá hồi vào nồi, nấu ở lửa nhỏ 7-10 phút, không đảo mạnh tay để cá không bị nát. Cá chín là khi thịt chuyển màu hồng đục và dễ tách thớ.",
+      "tip": "Buttalapasta: KHÔNG nấu cá hồi ở lửa lớn để tránh làm cá bị nát (sfaldarlo). Una Famiglia in Cucina: giữ lửa nhỏ để miếng cá nguyên vẹn.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đổ kem tươi vào nồi, khuấy thật nhẹ cho hòa quyện. Nêm muối và tiêu đen, đun thêm 2-3 phút ở lửa nhỏ cho súp ấm đều thì tắt bếp — không để súp sôi bùng sau khi cho kem.",
+      "tip": "MÂU THUẪN NGUỒN về thứ tự: Buttalapasta cho kem vào TRƯỚC rồi mới cho cá; Una Famiglia in Cucina cho cá vào TRƯỚC rồi mới cho kem. Chọn theo Una Famiglia in Cucina vì cá cần thời gian chín ổn định, còn kem chỉ cần làm ấm nhanh — đun kem quá lâu dễ bị tách. Kem tươi gặp nhiệt cao đột ngột có thể tách váng nên chỉ đun liu riu.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Tắt bếp, đậy nắp để súp nghỉ 5 phút cho các vị hòa quyện. Múc súp ra tô sâu lòng, rắc hành lá thái nhỏ và một ít tiêu đen xay mới lên trên. Dọn nóng, có thể ăn kèm bánh mì nướng giòn hoặc bánh mì đen.",
+      "tip": "Una Famiglia in Cucina: súp cá hồi kem ngon nhất khi dọn nóng, ăn kèm bánh mì giòn.",
+      "timerMinutes": 5
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 261.77,
+      "proteinG": 20.46,
+      "carbohydrateG": 0,
+      "fatG": 19.48,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 59.83
+    },
+    "originalPerServing": {
+      "energyKcal": 629.63,
+      "proteinG": 30.96,
+      "carbohydrateG": 28.26,
+      "fatG": 44.34,
+      "fiberG": 4.39,
+      "sugarG": 6.73,
+      "sodiumMg": 1091.6
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Kem tươi (whipping cream, panna fresca): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Khoai tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước dùng cá (brodo di pesce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

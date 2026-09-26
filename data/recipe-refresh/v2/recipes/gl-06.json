@@ -1,0 +1,779 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "gl-06",
+    "slug": "pad-krapow",
+    "title": "Thịt băm xào lá quế kiểu Thái (Pad Krapow)"
+  },
+  "content": {
+    "description": "Món thịt heo băm xào cay thơm lừng lá quế ăn kèm cơm trắng và trứng rán giòn viền.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 12,
+    "servings": 2,
+    "difficulty": "easy",
+    "tags": [
+      "Thái Lan",
+      "Dưới 20 phút",
+      "Cay"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/gl-06.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.kaveyeats.com/thai-recipe-pad-krapow-moo-pork-stir-fried-with-holy-basil",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "http://hot-thai-kitchen.com/holy-basil-stir-fry/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://rachelcooksthai.com/pad-kaprow-moo/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://norecipes.com/thai-basil-chicken-pad-krapow-gai-recipe/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt heo xay",
+      "canonicalIngredientId": "GROUND_PORK",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Kavey Eats (công thức từ sách Baan của Kay Plunkett-Hogge, đúng 2 phần) dùng 300 g thịt heo xay; Hot Thai Kitchen dùng 300 g cho khoảng 4 phần còn Rachel Cooks Thai (bản heo) dùng khoảng 200 g (1 cup) — ba nguồn mâu thuẫn về tỉ lệ thịt/phần. Giữ 300 g theo Kavey Eats vì khớp đúng servings = 2 của assignment.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 233,
+        "proteinG": 18,
+        "carbohydrateG": 0,
+        "fatG": 18,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 54
+      },
+      "sourceNutritionReference": "https://foodzilla.com/foods/pork-ground-raw",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "tép",
+        "text": "6 tép",
+        "gramEquivalent": 18,
+        "basis": "1 tép tỏi ≈ 3 g (USDA FoodData Central)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6,
+          "unit": "piece"
+        }
+      },
+      "note": "Kavey Eats: 6 tép tỏi giã cùng ớt bằng cối chày; Hot Thai Kitchen và Rachel Cooks Thai băm nhuyễn — kỹ thuật sơ chế mâu thuẫn, giữ cách giã của nguồn chính (Kavey).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://www.caloriesta.com/en/calories-in-food/garlic-raw?i=11215",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Ớt hiểm Thái (ớt chỉ thiên)",
+      "canonicalIngredientId": "ING_ENR_8B044DA9E6028C41",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "quả",
+        "text": "5 quả",
+        "gramEquivalent": 8,
+        "basis": "định lượng trực tiếp bằng gram; ớt hiểm Thái nhỏ nên không dùng conversion 1 quả = 45 g (conversion đó dành cho ớt lớn)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "Kavey Eats dùng 4–6 quả ớt hiểm; Hot Thai Kitchen và Rachel Cooks Thai không định lượng cụ thể mà ghi 'theo khẩu vị'. Lấy 5 quả cho 2 phần (mức giữa), tăng giảm tùy độ cay mong muốn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://www.caloriesta.com/en/calories-in-food/peppers-hot-chili-red-raw?i=11819",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Ớt sừng đỏ",
+      "canonicalIngredientId": "ING_ENR_C86DB0034E210DD2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 30,
+        "basis": "1 quả ớt sừng đỏ lớn ≈ 30 g (ước lượng từ mô tả công thức)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Chỉ Kavey Eats dùng thêm 1 quả ớt sừng đỏ cắt khúc; các nguồn còn lại không có. Ớt sừng cho màu đẹp và vị cay dịu hơn ớt hiểm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://www.caloriesta.com/en/calories-in-food/peppers-hot-chili-red-raw?i=11819",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Đậu que (đậu cove)",
+      "canonicalIngredientId": "ING_ENR_9A7608BB73AF0E8C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN NGUỒN: Kavey Eats dùng 100 g green beans cắt khúc 1 cm; Hot Thai Kitchen dùng đậu đũa (long beans); Rachel Cooks Thai ghi đậu đũa là biến thể phổ biến; đầu bếp David Thompson (được Kay trích dẫn) cho rằng bản 'chuẩn' chỉ dùng nước mắm, không xì dầu và KHÔNG đậu. Kay Plunkett-Hogge tự nhận thích bản có đậu và xì dầu. Giữ 100 g đậu que theo nguồn chính.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tìm được dữ liệu dinh dưỡng chuẩn (USDA) cho đậu que/yardlong bean đúng loại; chỉ có số liệu proxy green bean nên để toàn object null theo quy tắc chống bịa đặt."
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu đen (dark soy sauce)",
+      "canonicalIngredientId": "ING_ENR_4E556CE7076C70B4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "1 muỗng canh xì dầu ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kavey Eats dùng 2 tbsp xì dầu đen + 2 tbsp xì dầu nhạt. MÂU THUẪN: Kay ghi bản thứ hai của công thức thay cả hai loại xì dầu bằng 3 tbsp nước mắm (nam pla) và bỏ đậu que; bản hybrid mà Kay hay làm dùng cả xì dầu lẫn nước mắm. Hot Thai Kitchen (bản gà) dùng xì dầu đen + nước mắm + dầu hào.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tìm được dữ liệu dinh dưỡng chuẩn cho xì dầu đen đặc (thick black soy sauce) đúng sản phẩm; để toàn object null, không đoán."
+    },
+    {
+      "position": 6,
+      "sourceName": "Xì dầu nhạt (light soy sauce)",
+      "canonicalIngredientId": "ING_ENR_F4D1B45C3CF6671C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 36,
+        "basis": "1 muỗng canh xì dầu ≈ 18 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Xem note ở xì dầu đen về bản thay thế bằng nước mắm và bản hybrid của Kay Plunkett-Hogge.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://www.caloriesta.com/en/calories-in-food/soy-sauce-made-from-soy-and-wheat-shoyu?i=16123",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Đường cát",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 1,
+        "basis": "1 nhúm đường cát ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kavey Eats chỉ dùng 'a pinch' đường; Hot Thai Kitchen dùng 1 tsp đường cho công thức của họ. Giữ 1 nhúm theo nguồn chính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://www.caloriesta.com/en/calories-in-food/sugars-granulated?i=19335",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu thực vật (dầu đậu nành)",
+      "canonicalIngredientId": "ING_ENR_C7F0DE01299AC853",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh dầu đậu nành = 13,6 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 27,
+          "unit": "g"
+        }
+      },
+      "note": "Kavey Eats dùng 2 tbsp vegetable oil xào; Rachel Cooks Thai dùng 2–4 tbsp dầu xào. Giữ 2 tbsp theo nguồn chính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://www.traditionaloven.com/foods/multi-units-converter/oil-soybean-salad-or-cooking.html",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Muối biển",
+      "canonicalIngredientId": "ING_ENR_881CFF1F982AA4BB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 0.5,
+        "basis": "1 nhúm muối biển ≈ 0,5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kavey Eats dùng 'a pinch' muối biển khi giã ớt-tỏi; các nguồn còn lại không dùng muối rời (vị mặn đã có từ xì dầu/nước mắm).",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tra được nguồn dinh dưỡng chuẩn cho muối biển đúng loại trong phạm vi tra cứu; để null theo quy tắc."
+    },
+    {
+      "position": 10,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 30,
+        "basis": "1 muỗng canh nước = 15 ml ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kavey Eats pha 2 tbsp nước cùng xì dầu và đường thành hỗn hợp sốt trước khi xào.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 11,
+      "sourceName": "Lá húng quế thánh (holy basil, lá quế Thái)",
+      "canonicalIngredientId": "ING_ENR_30CF46F975B9719A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nắm lớn",
+        "text": "1 nắm lớn",
+        "gramEquivalent": 25,
+        "basis": "1 nắm lá húng quế rất lớn ≈ 25 g (ước lượng từ 'a very large handful' của nguồn chính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Kavey Eats: 'a very large handful, the more the merrier'; Rachel Cooks Thai: 1 cup nén cho công thức 2 phần. MÂU THUẪN KỸ THUẬT: Kavey cho gần hết basil vào chảo đảo cho héo; Hot Thai Kitchen và No Recipes TẮT BẾP rồi mới cho basil vào để giữ hương. Kay lưu ý holy basil và Thai sweet basil khác biệt rõ về hương vị — không thay bằng húng quế thường nếu muốn đúng vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 3.15,
+        "carbohydrateG": 2.65,
+        "fatG": 0.64,
+        "fiberG": 1.6,
+        "sugarG": 0.3,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://www.caloriesta.com/en/calories-in-food/basil-fresh?i=2044",
+      "sourceNutritionNote": "Dùng số liệu basil tươi generic (USDA) làm proxy cho holy basil; chưa có dữ liệu chuẩn riêng cho holy basil."
+    },
+    {
+      "position": 12,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 100,
+        "basis": "1 quả trứng gà lớn = 50 g (USDA FoodData Central)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Kavey Eats dọn kèm Kai Dao (trứng chiên kiểu Thái); Hot Thai Kitchen và Rachel Cooks Thai cũng chiên trứng ăn kèm — cả ba nguồn thống nhất. Hot Thai Kitchen chiên trứng trong dầu nóng sâu để viền phồng giòn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://www.caloriesta.com/en/calories-in-food/egg-whole-raw-fresh?i=1123",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 13,
+      "sourceName": "Dầu chiên trứng",
+      "canonicalIngredientId": "ING_ENR_BEAC0DD8A499B9B9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh dầu đậu nành = 13,6 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 27,
+          "unit": "g"
+        }
+      },
+      "note": "Rachel Cooks Thai dùng 2–3 tbsp dầu để chiên trứng kiểu Thái; Hot Thai Kitchen chiên trong dầu nóng sâu. Giữ 2 tbsp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://www.traditionaloven.com/foods/multi-units-converter/oil-soybean-salad-or-cooking.html",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Cơm hoa nhài (cơm jasmine) nấu chín",
+      "canonicalIngredientId": "ING_ENR_A50DDF588D39E5D9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "chén",
+        "text": "2 chén",
+        "gramEquivalent": 316,
+        "basis": "1 chén cơm trắng nấu chín = 158 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 316,
+          "unit": "g"
+        }
+      },
+      "note": "Cả ba nguồn đều dọn pad krapow trên cơm jasmine nóng. Cơm là thành phần của suất ăn hoàn chỉnh nên có định lượng cho 2 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 130,
+        "proteinG": 2.69,
+        "carbohydrateG": 28.17,
+        "fatG": 0.28,
+        "fiberG": 0.4,
+        "sugarG": 0.05,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://www.medindia.net/nutrition-data/rice-white-long-grain-regular-cooked-unenriched-without-salt.htm",
+      "sourceNutritionNote": "Dùng số liệu cơm trắng hạt dài nấu không muối (USDA) làm proxy cho cơm jasmine nấu chín."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế nguyên liệu: ớt hiểm và ớt sừng bỏ cuống (giữ hoặc bỏ hạt tùy độ cay), tỏi bóc vỏ; cho ớt, tỏi và nhúm muối vào cối, giã thành hỗn hợp sần sùi. Thịt heo xay để ráo. Đậu que tước xơ, cắt khúc khoảng 1 cm. Húng quế nhặt lấy lá, rửa nhẹ và để ráo.",
+      "tip": "Kavey Eats giã ớt-tỏi bằng cối chày cho dậy mùi hơn băm; Hot Thai Kitchen và Rachel Cooks Thai băm nhuyễn cũng được. Giã sần sùi, đừng giã nát thành bột."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Pha nước sốt trong một bát nhỏ: 2 muỗng canh xì dầu đen, 2 muỗng canh xì dầu nhạt, 2 muỗng canh nước lọc, khuấy tan 1 nhúm đường cát.",
+      "tip": "Pha sẵn sốt trước khi bật bếp vì các bước xào diễn ra rất nhanh, không kịp nêm nếm giữa chừng (Kavey Eats)."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun chảo wok (hoặc chảo sâu lòng) trên lửa lớn cho thật nóng, cho 2 muỗng canh dầu thực vật vào tráng đều.",
+      "tip": "Wok phải thật nóng mới tạo được mùi khói đặc trưng của món xào Thái, nhưng đừng để dầu bốc khói quá lâu sẽ bị khét."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho hỗn hợp ớt-tỏi đã giã vào, đảo nhanh vài giây cho dậy mùi thơm.",
+      "tip": "Kavey Eats nhấn mạnh chỉ xào vài giây đến khi thơm là dừng — tỏi vừa chuyển vàng là đắng, hỏng cả món.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho thịt heo xay vào, dùng xẻng dằm cho thịt tơi ra, đảo đều đến khi thịt chín hoàn toàn và săn lại.",
+      "tip": "Dằm thịt thật tơi để miếng thịt thấm sốt đều; thịt phải chín kỹ, không còn màu hồng.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho đậu que cắt khúc vào, đảo 1–2 phút cho đậu vừa chín tới, vẫn giữ độ giòn và màu xanh.",
+      "tip": "Kavey Eats cho đậu vào sau thịt. Bản 'purist' của đầu bếp David Thompson bỏ đậu hoàn toàn — nếu không thích đậu có thể bỏ qua bước này.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Đổ bát nước sốt đã pha vào chảo, đảo đều cho sốt sôi bùng lên và thấm vào thịt.",
+      "tip": "Nêm nếm lại ở bước này: bản hybrid của Kay có thể thêm 1–2 muỗng cà phê nước mắm nếu muốn vị đậm đà hơn.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho gần hết lá húng quế vào chảo, đảo nhanh cho lá héo và quyện vào thịt rồi tắt bếp.",
+      "tip": "MÂU THUẪN KỸ THUẬT: Kavey cho basil vào chảo nóng đảo héo; Hot Thai Kitchen và No Recipes tắt bếp rồi mới cho basil để giữ hương thơm. Cách nào cũng được, đừng nấu basil quá lâu sẽ mất mùi.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Đun nóng 2 muỗng canh dầu trong chảo nhỏ đến khi dầu thật nóng già, đập từng quả trứng vào chiên đến khi viền trứng phồng giòn, lòng đào hoặc chín tùy thích rồi vớt ra.",
+      "tip": "Hot Thai Kitchen: chiên trứng kiểu Thái trong dầu nóng sâu thì viền trứng phồng giòn rụm — đây là điểm đặc trưng của Kai Dao.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Xới cơm jasmine nóng ra đĩa (mỗi phần 1 chén), cho thịt xào húng quế lên trên, đặt trứng ốp la lên cùng, rắc phần lá húng quế còn lại. Dọn ngay khi còn nóng.",
+      "tip": "Pad krapow chuẩn là món 'cơm một đĩa': cơm + thịt xào + trứng ốp la ăn cùng nhau, không dọn riêng từng món (Kavey Eats)."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 2,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 747.34,
+      "proteinG": 37.6,
+      "carbohydrateG": 45.22,
+      "fatG": 45.72,
+      "fiberG": 0.69,
+      "sugarG": 0.48,
+      "sodiumMg": 153.94
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Ớt sừng đỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 4,
+        "detail": "Đậu que (đậu cove): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Xì dầu đen (dark soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Xì dầu nhạt (light soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Đường cát: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Muối biển: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Lá húng quế thánh (holy basil, lá quế Thái): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 13,
+        "detail": "Dầu chiên trứng: consumed/absorbed amount is not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/recipes/global/pad-krapow.webp",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

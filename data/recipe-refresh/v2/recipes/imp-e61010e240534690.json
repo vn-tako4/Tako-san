@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-e61010e240534690",
+    "slug": "muc-om-ca-chua-y",
+    "title": "Mực om cà chua Ý"
+  },
+  "content": {
+    "description": "Mực om cà chua-tỏi mềm mọng nước sốt, calamari in umido Ý đậm nhà bếp biển.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Calamari",
+      "Ý",
+      "Mực om",
+      "Cà chua"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-e61010e240534690.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://primochef.it/calamari-in-umido/ricette/amp/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://ricettein30minuti.it/calamari-in-umido-ricetta-veloce/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mực tươi (mực ống/calamari)",
+      "canonicalIngredientId": "ING_ENR_08EA645135AC2103",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 600,
+        "unit": "g",
+        "text": "600 g",
+        "gramEquivalent": 600,
+        "basis": "cân mực đã làm sạch; cả hai nguồn đều tính theo mực đã làm sạch (nguồn B ghi rõ 'calamari puliti')",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 600,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN LỚN VỀ LƯỢNG MỰC: nguồn A dùng 1 kg mực (không ghi số phần; với 1 kg thường là 4-6 phần); nguồn B dùng 400 g mực đã làm sạch cho đúng 4 phần. Chọn 600 g cho 4 phần: mực là nguyên liệu chính và hao hụt ~30% khi om; 600 g sống → ~400 g chín (~100 g/người), hợp lý cho món chính. Đây là mức trung gian giữa hai nguồn, đã ghi rõ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 92,
+        "proteinG": 15.58,
+        "carbohydrateG": 3.08,
+        "fatG": 1.38,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 44
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174223",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Cà chua lột vỏ đóng hộp (pomodori pelati)",
+      "canonicalIngredientId": "ING_ENR_EC27C9FCF4AEA833",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "1 hộp cà chua lột vỏ tiêu chuẩn 400 g (cả hộp, tính cả nước)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN: nguồn A dùng 250 g pelati cho 1 kg mực; nguồn B dùng 1 hộp 400 g pelati cho 4 phần (400 g mực). Chọn 400 g (1 hộp) theo nguồn B — công thức đúng 4 phần, tỉ lệ sốt cà chua đậm hơn hợp với tên món 'mực om cà chua'. Đã ghi rõ nguồn A dùng ít hơn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": 0.8675,
+        "carbohydrateG": 4.2874,
+        "fatG": 0.2063,
+        "fiberG": 0.8725,
+        "sugarG": null,
+        "sodiumMg": 111.5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2685578",
+      "sourceNutritionNote": "USDA chỉ có số liệu cà chua hộp nguyên quả có thêm muối (Foundation); giữ nguyên energy_kcal = null do API không trả về — không bịa số"
+    },
+    {
+      "position": 2,
+      "sourceName": "Rượu vang trắng khô",
+      "canonicalIngredientId": "ING_ENR_F568CF3B013695D9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "ml",
+        "text": "100 ml",
+        "gramEquivalent": 99,
+        "basis": "1 ly rượu vang để bàn (bicchiere) ~200 ml → 1/2 ly ≈ 100 ml; tỉ trọng rượu vang ~0,99 → ≈ 99 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 100,
+          "unit": "ml"
+        }
+      },
+      "note": "Hai nguồn thống nhất: nguồn A '1/2 bicchiere vino bianco secco', nguồn B '1/2 bicchiere di vino bianco'. Dùng để deglaze (sfumare) sau khi xào mực.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 82,
+        "proteinG": 0.07,
+        "carbohydrateG": 2.6,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174837",
+      "sourceNutritionNote": "số liệu của rượu vang sống; phần lớn cồn bay hơi trong quá trình nấu"
+    },
+    {
+      "position": 3,
+      "sourceName": "Dầu olive extra virgin",
+      "canonicalIngredientId": "ING_ENR_84084B36AB5F7081",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng dầu olive ~0,91 → 2 muỗng canh (30 ml) ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn A: 2 muỗng canh dầu. Nguồn B chỉ ghi 'poco olio' (ít dầu), không định lượng. Chọn 2 muỗng canh theo nguồn A.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tép",
+        "text": "1 tép",
+        "gramEquivalent": 3,
+        "basis": "1 tép tỏi ~3 g (USDA FoodData Central: 1 clove garlic = 3 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Hai nguồn thống nhất 1 tép: nguồn A bóc vỏ băm nhuyễn phi với ớt; nguồn B bóc vỏ, bỏ mầm xanh ('anima') rồi phi nguyên tép.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": null,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Ớt tươi (peperoncino)",
+      "canonicalIngredientId": "ING_ENR_3CD911C250BF45A1",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 5,
+        "basis": "1 quả ớt tươi nhỏ ~5 g (ước lượng; nguồn chỉ ghi '1 quả', không định lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn A dùng 1 quả ớt tươi (để nguyên quả hoặc băm, tùy muốn vớt ra cuối hay giữ lại). Nguồn B không dùng ớt. Đánh dấu optional.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": null,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Ngò tây tươi (prezzemolo)",
+      "canonicalIngredientId": "ING_ENR_EAB62B2B4113997C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nắm nhỏ",
+        "text": "1 nắm nhỏ",
+        "gramEquivalent": 15,
+        "basis": "1 nắm ngò tây (ciuffo) ~15 g (ước lượng theo nắm rau thơm tươi)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nguồn A: 1 nắm ngò tây (1 ciuffo), băm rắc cuối. Nguồn B không dùng ngò tây mà dùng 'foglie di basilico' (lá húng quế) trang trí. Chọn ngò tây theo nguồn A; ai thích có thể thay bằng lá húng quế tươi theo nguồn B. Gợi ý món ăn ghi 'hành lá' nhưng cả hai nguồn Ý đều không dùng hành lá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 2.97,
+        "carbohydrateG": 6.33,
+        "fatG": 0.79,
+        "fiberG": 3.3,
+        "sugarG": null,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170416",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Muối tinh",
+      "canonicalIngredientId": "ING_ENR_2E70A9B68938F282",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối tinh ~6 g (USDA: 1 tsp table salt = 6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn ghi q.b./'una presa di sale' (một nhúm), không định lượng. Nguồn A nêm 1 nhúm muối khi cho cà chua vào, rồi nêm lại sau khi om. Định lượng 1 muỗng cà phê để app tính toán; nêm nếm lại theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế mực: rửa sạch dưới vòi nước. Tách phần râu khỏi thân, bỏ túi mực, nội tạng và tấm mai trong suốt trong thân. Cắt bỏ mắt và chiếc răng cứng ở gốc chùm râu. Rửa lại thật sạch.",
+      "tip": "Theo nguồn A: nếu mua mực chưa làm sạch, loại bỏ interiora (nội tạng) và becco (răng). Mực đông lạnh cũng dùng được (nguồn B).",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Thái thân mực thành khoanh tròn hoặc sợi dài (listerelle) dày khoảng 1 cm; chùm râu cắt đôi nếu to.",
+      "tip": "Nguồn A: cắt thân thành anelli (khoanh), râu cắt 2-3 phần tùy kích cỡ. Miếng đều nhau thì chín đều."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Tỏi bóc vỏ, bỏ phần mầm xanh ở giữa (nguồn B gọi là 'anima' — gây đắng), băm nhuyễn hoặc để nguyên tép tùy thích. Ớt tươi rửa sạch, để nguyên quả hoặc băm nhỏ.",
+      "tip": "Nguồn A: ớt để nguyên quả thì cuối bữa vớt ra được; băm nhỏ thì cay đều cả sốt."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun nóng 2 muỗng canh dầu olive trong chảo/nồi rộng ở lửa vừa. Cho tỏi và ớt vào phi thơm khoảng 1 phút, không để tỏi cháy.",
+      "tip": "Tỏi cháy sẽ đắng và làm hỏng mùi sốt (cả hai nguồn đều nhấn mạnh phi nhanh).",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho mực vào chảo, đảo nhanh tay 2 phút cho mực săn lại và thấm dầu tỏi ớt.",
+      "tip": "Theo nguồn A: 'fateli insaporire per un paio di minuti girando spesso' — đảo thường xuyên 2 phút.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Đổ 100 ml rượu vang trắng vào, vặn lửa lớn để rượu sôi mạnh và bay hơi gần hết (khoảng 2-3 phút).",
+      "tip": "Nguồn A: 'sfumate con il vino e alzate il fuoco in modo da farlo evaporare rapidamente'. Bước này khử mùi tanh và tạo nền vị cho sốt.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho 400 g cà chua lột vỏ đóng hộp vào, dùng muỗng gỗ dằm nát thành miếng vừa. Nêm 1 muỗng cà phê muối, đảo đều.",
+      "tip": "Nguồn A dằm cà chua bằng nĩa; nguồn B dằm bằng muỗng gỗ ngay trong nồi. Nêm một nhúm muối ở bước này (nguồn A)."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Hạ lửa nhỏ liu riu, đậy nắp và om 10 phút.",
+      "tip": "MÂU THUẪN THỜI GIAN OM: nguồn B (đúng 4 phần) om đậy nắp 10 phút; nguồn A om 15-18 phút ở lửa liu riu không đậy nắp. Chọn 10 phút đậy nắp theo nguồn B rồi mở nắp sánh sốt ở bước sau. Kiểm tra: mực phải mềm, không dai — thời gian có thể xê dịch tùy cỡ mực (nguồn A).",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Mở nắp, nêm nếm lại muối cho vừa. Vặn lửa lớn, đun thêm 3-5 phút, đảo nhẹ đến khi sốt cà chua sánh lại theo ý thích.",
+      "tip": "Theo nguồn B: mở nắp, tăng lửa, đun đến khi 'il sugo si sarà ristretto' (sốt sánh lại). Đừng đun cạn quá — cần giữ chút sốt để chấm bánh mì.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Tắt bếp, rắc ngò tây băm nhỏ lên trên, đảo nhẹ. Dọn ra đĩa khi còn nóng hổi, ăn kèm bánh mì để chấm sốt.",
+      "tip": "Nguồn A: hoàn thiện với prezzemolo tươi và dọn 'ben caldi'. Mẹo quan trọng của nguồn A: nấu mực đúng thời gian — nấu quá lâu mực sẽ dai như cao su ('tenderanno a diventare gommosi'). Bảo quản tủ lạnh tối đa 2 ngày, hâm lại bằng chảo."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": 24.44,
+      "carbohydrateG": 10.15,
+      "fatG": 9.07,
+      "fiberG": 1.03,
+      "sugarG": null,
+      "sodiumMg": 762.58
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Mực tươi (mực ống/calamari): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Cà chua lột vỏ đóng hộp (pomodori pelati): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Rượu vang trắng khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Dầu olive extra virgin: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Ngò tây tươi (prezzemolo): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Muối tinh: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      6,
+      7
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

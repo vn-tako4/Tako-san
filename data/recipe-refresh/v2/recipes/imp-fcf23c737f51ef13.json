@@ -1,0 +1,710 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-fcf23c737f51ef13",
+    "slug": "com-chien-ca-chua-trung",
+    "title": "Cơm chiên cà chua trứng"
+  },
+  "content": {
+    "description": "Hạt cơm áo sốt cà chua đỏ au với trứng bông vàng, món cơm chiên kiểu Trung giản dị mà nghiện.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Cơm chiên",
+      "Cà chua",
+      "Trung Hoa",
+      "Nhanh"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-fcf23c737f51ef13.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://christieathome.com/blog/tomato-egg-fried-rice/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=JsGxtNvt3G0",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cơm nguội (cơm trắng chín, để lạnh qua đêm)",
+      "canonicalIngredientId": "RICE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 700,
+        "unit": "g",
+        "text": "700 g",
+        "gramEquivalent": 700,
+        "basis": "4,5 cup cơm chín ≈ 700 g (1 cup cơm trắng chín ≈ 155-160 g, quy đổi thông dụng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 700,
+          "unit": "g"
+        }
+      },
+      "note": "Christie at Home: 3 cup cơm cho 2 phần → 4,5 cup cho 3 phần. Khuyên dùng cơm jasmine để tủ lạnh qua đêm; cơm mới nấu còn ướt sẽ làm cơm chiên bị nhão.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 130,
+        "proteinG": 2.69,
+        "carbohydrateG": 28.17,
+        "fatG": 0.28,
+        "fiberG": 0.4,
+        "sugarG": 0.05,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168878",
+      "sourceNutritionNote": "USDA dùng mục 'Rice, white, long-grain, regular, enriched, cooked' vì Christie khuyên dùng cơm jasmine (gạo hạt dài)."
+    },
+    {
+      "position": 1,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "quả",
+        "text": "6 quả",
+        "gramEquivalent": 300,
+        "basis": "1 quả trứng gà lớn ≈ 50 g (USDA FoodData Central: 1 large egg = 50 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6,
+          "unit": "piece"
+        }
+      },
+      "note": "Christie: 4 quả trứng lớn cho 2 phần → 6 quả cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Cà chua chín",
+      "canonicalIngredientId": "TOMATO",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 270,
+        "unit": "g",
+        "text": "270 g",
+        "gramEquivalent": 270,
+        "basis": "1 cup cà chua cắt hạt lựu ≈ 180 g → 1,5 cup ≈ 270 g (khoảng 2 quả cà chua vừa)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 270,
+          "unit": "g"
+        }
+      },
+      "note": "Christie: 1 cup cà chua cắt hạt lựu cho 2 phần → 1,5 cup cho 3 phần; khuyên dùng cà chua vườn/roma chín ngọt, tránh cà chua bi vì ra quá nhiều nước. Nguồn YouTube khuyên bỏ hạt cà chua để cơm không nhão, Christie không yêu cầu — ghi nhận mâu thuẫn nhẹ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18,
+        "proteinG": 0.88,
+        "carbohydrateG": 3.89,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": 2.63,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170457",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá trung bình ≈ 15 g (quy đổi thông dụng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Christie: 1 cây hành lá cắt nhỏ cho 2 phần → 2 cây cho 3 phần (làm tròn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "USDA SR Legacy 170005 'Onions, spring or scallions (includes tops and bulb), raw' — bản ghi đầy đủ 7 chỉ số (thay 2727585 Foundation thiếu energy/carbs/fat; audit round 5)"
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 9,
+        "basis": "1 tép tỏi ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Christie: 2 tép tỏi băm cho 2 phần → 3 tép cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Dầu ăn thực vật",
+      "canonicalIngredientId": "ING_ENR_57DC624F79E53EB4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 41,
+        "basis": "1 muỗng canh dầu ăn = 15 ml; tỉ trọng dầu thực vật ≈ 0,91 g/ml → 3 muỗng ≈ 41 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Christie: 2 muỗng canh cho 2 phần → 3 muỗng canh cho 3 phần (1 muỗng chiên trứng + 2 muỗng xào cơm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Ketchup (tương cà)",
+      "canonicalIngredientId": "ING_ENR_13A9070938D97D7E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 51,
+        "basis": "1 muỗng canh ketchup ≈ 17 g → 3 muỗng ≈ 51 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Christie: 2 muỗng canh cho 2 phần → 3 muỗng canh cho 3 phần; nhấn mạnh 'do not skip' vì tạo vị chua đặc trưng. Nguồn YouTube dùng tới 1/4 cup (≈4 muỗng canh) cho ~2 phần — nhiều hơn; lấy theo Christie là nguồn chính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 101,
+        "proteinG": 1.04,
+        "carbohydrateG": 27.4,
+        "fatG": 0.1,
+        "fiberG": 0.3,
+        "sugarG": 21.27,
+        "sodiumMg": 907
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168556",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh dầu hào ≈ 18 g → 1,5 muỗng ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Christie: 1 muỗng canh cho 2 phần → 1,5 muỗng canh cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.92,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": 0,
+        "sodiumMg": 2733
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174529",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Xì dầu đậm (dark soy sauce)",
+      "canonicalIngredientId": "ING_ENR_C47BAF84B5F2B838",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh xì dầu = 15 ml; tỉ trọng ≈ 1,2 g/ml → 1,5 muỗng ≈ 27 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Christie dùng dark soy sauce để tạo màu nâu cho hạt cơm; ghi có thể thay bằng xì dầu thường (regular soy sauce) nếu không có.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": "USDA SR Legacy không có mục riêng cho dark soy sauce; dùng số liệu 'Soy sauce made from soy and wheat (shoyu)' làm tương đương gần nhất, có thể lệch nhẹ về độ mặn/màu."
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 6.8,
+        "basis": "1 muỗng cà phê dầu mè ≈ 4,5 g → 1,5 muỗng ≈ 6,8 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Christie: 1 muỗng cà phê cho 2 phần → 1,5 muỗng cà phê cho 3 phần; tạo mùi thơm đặc trưng, có thể bỏ nếu dị ứng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "muỗng cà phê",
+        "text": "0.75 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1 muỗng cà phê đường ≈ 4 g → 3/4 muỗng ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN: Christie (nguồn chính) KHÔNG dùng đường; nguồn YouTube dùng 1/2 muỗng cà phê đường cho ~2 phần (→ 3/4 muỗng cho 3 phần) cùng 1/2 muỗng cà phê muối. Để optional vì nguồn chính không dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "muỗng cà phê",
+        "text": "0.75 muỗng cà phê",
+        "gramEquivalent": 4.5,
+        "basis": "3/4 muỗng cà phê muối ≈ 4,5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN: Christie KHÔNG nêm muối riêng (xì dầu + dầu hào đã đủ mặn); nguồn YouTube dùng 1/2 muỗng cà phê muối cho ~2 phần (→ 3/4 muỗng cho 3 phần). Để optional — chỉ nêm khi nếm thấy nhạt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Tiêu trắng xay",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1/2 muỗng cà phê tiêu trắng xay ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ nguồn YouTube dùng (1/4 muỗng cà phê cho ~2 phần → 1/2 muỗng cho 3 phần); Christie không dùng. Optional.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tra USDA cho gia vị optional lượng nhỏ."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Chuẩn bị: đập 6 quả trứng vào tô, đánh tan đều. Cà chua cắt hạt lựu (có thể bỏ hạt nếu muốn cơm khô ráo hơn). Hành lá cắt nhỏ, tỏi băm nhuyễn.",
+      "tip": "Christie: cắt cà chua hạt lựu nhỏ để nước cà chua bay hơi nhanh, cơm không bị nhão. Nguồn YouTube nhấn mạnh PHẢI bỏ hạt nếu không cơm sẽ ướt nhão."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Tơi cơm nguội: dùng tay sạch hoặc muôi xới cơm, bóp nhẹ cho các hạt cơm rời nhau thành từng hạt.",
+      "tip": "Christie: bắt buộc dùng cơm nguội để lạnh (day-old); hạt cơm tách rời khi chiên mới tơi và thấm đều gia vị."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun 1 muỗng canh dầu ăn trong chảo lớn/wok với lửa vừa-lớn. Đổ trứng đã đánh vào, đảo nhanh tay cho trứng vừa đông thành miếng (còn hơi ẩm) thì múc ra đĩa để riêng.",
+      "tip": "Christie: trứng còn ẩm thì múc ra ngay — trứng sẽ chín tiếp bằng nhiệt dư, chiên khô quá sẽ bị dai.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho 2 muỗng canh dầu ăn còn lại vào chảo, cho hành lá vào phi 10-15 giây cho thơm.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho cà chua cắt hạt lựu và tỏi băm vào chảo, đảo đều vài phút cho cà chua mềm, ra nước rồi để nước bay hơi gần hết.",
+      "tip": "Christie: PHẢI để nước cà chua bay hơi hết trước khi cho cơm vào, nếu không cơm chiên sẽ nhão — đây là điểm quyết định thành bại của món.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho cơm nguội đã tơi vào chảo, đảo đều tay cho hạt cơm nóng lên và tách rời hoàn toàn.",
+      "tip": "Dùng lửa vừa-lớn để hạt cơm hơi xém thơm, không để lửa nhỏ khiến cơm hấp hơi.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Rưới đều ketchup, dầu hào và xì dầu đậm lên cơm, đảo nhanh tay cho đến khi từng hạt cơm đều lên màu nâu bóng.",
+      "tip": "Christie: thứ tự cho gia vị sau khi cơm đã nóng tơi — đảo đều để màu lên đồng nhất.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho trứng bác đã chiên trở lại chảo, rưới dầu mè lên, đảo đều cho trứng quyện với cơm.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nêm nếm lại: nếu nhạt thêm chút muối (nguồn YouTube) hoặc xì dầu; nếu thích chua ngọt đậm hơn thêm ketchup/đường theo khẩu vị.",
+      "tip": "Hai nguồn mâu thuẫn về muối/đường (Christie không dùng, YouTube dùng) — nêm theo khẩu vị, ưu tiên nếm trước khi thêm."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Tắt bếp, dọn cơm chiên ra đĩa, rắc thêm hành lá lên trên nếu thích. Ăn nóng ngay.",
+      "tip": "Christie: món này ngon nhất khi ăn ngay; để tủ lạnh được 4 ngày nhưng không nên đông đá vì trứng sẽ bị dai."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 641.45,
+      "proteinG": 21.03,
+      "carbohydrateG": 78.76,
+      "fatG": 26.4,
+      "fiberG": 2.49,
+      "sugarG": 7.77,
+      "sodiumMg": 1626.85
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cơm nguội (cơm trắng chín, để lạnh qua đêm): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Trứng gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Cà chua chín: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Dầu ăn thực vật: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Ketchup (tương cà): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Dầu hào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Xì dầu đậm (dark soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

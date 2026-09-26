@@ -1,0 +1,658 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-8301ed8c884fb619",
+    "slug": "cai-bap-xao-nam-chay",
+    "title": "Cải bắp xào nấm chay"
+  },
+  "content": {
+    "description": "Cải bắp giòn ngọt xào cùng nấm nước tương, món chay mặn nhẹ nhanh gọn cho bữa cơm chay ngày rằm.",
+    "cuisine": "vietnamese",
+    "category": "mon_chay",
+    "region": "toan_quoc",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Chay",
+      "Xào",
+      "Cải bắp",
+      "Nhanh"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-8301ed8c884fb619.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "http://naungon.com/index.php?id=-cach-lam-bap-cai-xao-nam-~-mon-viet-nam-bap-cai-xao-nam-xao-bap-cai-bap-cai-trang-xao-nam-rau-cu-xao-nam-xao-bap-cai-voi-nam-&pageindex=4628",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://fptshop.com.vn/tin-tuc/dien-may/bap-cai-xao-nam-181628",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://eva.vn/bep-eva/xao-bap-cai-khong-can-cau-ky-them-thu-nay-duoc-mon-chay-ngon-hon-ca-thit-c162a494086.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Bắp cải",
+      "canonicalIngredientId": "CABBAGE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "naungon (cooky): 250 g bắp cải (không ghi rõ khẩu phần, ước 2-3 người). Assignment 3 khẩu phần → 400 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 1.28,
+        "carbohydrateG": 5.8,
+        "fatG": 0.1,
+        "fiberG": 2.5,
+        "sugarG": 3.2,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169975",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN/THAY THẾ NGUỒN: naungon (cooky) dùng 150 g nấm mỡ; fptshop dùng nấm rơm (không định lượng); eva dùng nấm hương khô ngâm 2 giờ. Assignment yêu cầu nấm đùi gà — thay tương đương, giữ lượng 200 g. Cắt lát chéo mỏng như cách sachi/blogkhoedep làm với cải thảo xào nấm đùi gà.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": 1.11,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "USDA không có mục riêng cho nấm đùi gà (king oyster); fdcId 168580 là 'Mushrooms, oyster, raw' (nấm sò) — số liệu gần nhất cùng họ nấm, ghi rõ để không hiểu lầm là số liệu đo trực tiếp trên nấm đùi gà."
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 15,
+        "basis": "1 tép tỏi ~5 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "naungon (cooky): 1 muỗng cà phê tỏi băm; sachi: tỏi đập dập băm nhuyễn (không định lượng). Lấy 3 tép (~1 muỗng canh tỏi băm) để phi thơm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Ớt",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "trái",
+        "text": "1 trái",
+        "gramEquivalent": 10,
+        "basis": "1 trái ớt ~10 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "naungon (cooky): 2 trái ớt; eva: ớt khô tùy sở thích. Lấy 1 trái ớt tươi cho 3 người, tăng giảm theo khẩu vị cay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 2,
+        "carbohydrateG": 9.46,
+        "fatG": 0.2,
+        "fiberG": 1.5,
+        "sugarG": 5.1,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170497",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hẹ",
+      "canonicalIngredientId": "ING_ENR_6E5773C305A97F84",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "g",
+        "text": "60 g",
+        "gramEquivalent": 60,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 60,
+          "unit": "g"
+        }
+      },
+      "note": "naungon (cooky): 100 g hẹ (không ghi rõ khẩu phần, ước 2-3 người). Assignment 3 khẩu phần → 60 g; cắt khúc 2-3 cm, cho vào cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 30,
+        "proteinG": 3.27,
+        "carbohydrateG": 4.35,
+        "fatG": 0.73,
+        "fiberG": 2.5,
+        "sugarG": 1.85,
+        "sodiumMg": 3
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169994",
+      "sourceNutritionNote": "USDA không có mục cho hẹ ta (Allium tuberosum); fdcId 169994 là 'Chives, raw' (hẹ tây, Allium schoenoprasum) — số liệu gần nhất, ghi rõ để không hiểu lầm."
+    },
+    {
+      "position": 5,
+      "sourceName": "Xì dầu (nước tương)",
+      "canonicalIngredientId": "ING_ENR_F68EF5C1E847770A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "ml",
+        "text": "15 ml",
+        "gramEquivalent": 18,
+        "basis": "15 ml × tỉ trọng xì dầu ~1,2 g/ml ≈ 18 g.",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "ml"
+        }
+      },
+      "note": "naungon (cooky): 15 ml nước tương; fptshop: 2 muỗng cà phê nước tương (~10 ml) — mâu thuẫn nhẹ; lấy 15 ml theo cooky vì đó là công thức bắp cải xào nấm trực tiếp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 10.51,
+        "carbohydrateG": 5.57,
+        "fatG": 0.1,
+        "fiberG": 0.8,
+        "sugarG": 1.7,
+        "sodiumMg": 5586
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174278",
+      "sourceNutritionNote": "fdcId 174278 là 'Soy sauce made from soy (tamari)' — xì dầu đậu nành nguyên chất; xì dầu thường (shoyu) có thêm lúa mì nên số liệu chỉ gần đúng."
+    },
+    {
+      "position": 6,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ≈ 6 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "naungon (cooky): 1 muỗng cà phê muối; fptshop: 1/2 muỗng cà phê (xào nấm) + 1/2 muỗng cà phê (muối chần, không tính vào món) — hai nguồn thống nhất 1 muỗng cà phê nêm vào món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Hạt nêm chay",
+      "canonicalIngredientId": "ING_ENR_E0E5BC7DAA233BCD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 5,
+        "basis": "1 muỗng cà phê hạt nêm ≈ 5 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "MÂU THUẪN NGUỒN: naungon (cooky) dùng 1 muỗng canh hạt nêm chay; fptshop dùng tổng 1,5 muỗng cà phê (1 + 1/2). Chênh lệch lớn — lấy 1 muỗng cà phê làm mốc, nêm lại theo khẩu vị vì món đã có xì dầu mặn.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Hạt nêm chay phụ thuộc thương hiệu/công thức từng hãng, không dùng số liệu generic nên để null."
+    },
+    {
+      "position": 8,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê đường cát ≈ 4 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "fptshop: 1/2 muỗng cà phê đường; naungon (cooky) không dùng đường. Lấy 1 muỗng cà phê để cân vị mặn của xì dầu trong món chay.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu ăn",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng canh",
+        "text": "2 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng dầu ăn ~0,91 → 30 ml ≈ 27 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "naungon (cooky) và fptshop đều dùng 2 muỗng canh dầu ăn — hai nguồn thống nhất.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171411",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1/2 muỗng cà phê tiêu xay ≈ 1 g.",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "fptshop: rắc tiêu xay cuối cùng (không định lượng); sachi: rắc tiêu xay lên mặt. Lấy 1/2 muỗng cà phê.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tra USDA cho nguyên liệu lượng rất nhỏ này nên để null."
+    },
+    {
+      "position": 11,
+      "sourceName": "Rượu trắng",
+      "canonicalIngredientId": "ING_ENR_294DFC31F494E0E0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "1 muỗng canh = 15 ml ≈ 15 g (tỉ trọng rượu trắng ≈ 1).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "TÙY CHỌN — chỉ naungon (cooky) dùng 1 muỗng canh để khử mùi nấm; fptshop và eva không dùng. Bỏ qua vẫn ngon.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tra USDA cho nguyên liệu tùy chọn này nên để null."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế bắp cải: cắt bỏ phần lõi cứng ở giữa và những lá ngoài bị vàng; tách từng lá, ngâm nước muối pha loãng 5-10 phút, rửa lại nước sạch, để ráo rồi cắt thành miếng vừa ăn.",
+      "tip": "fptshop: ngâm nước muối loãng giúp loại bỏ tạp chất và sâu bọ ẩn trong kẽ lá.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Chần sơ bắp cải (khuyến nghị): đun sôi một nồi nước, cho 1 muỗng cà phê muối vào, cho bắp cải vào chần khoảng 3 phút rồi vớt ra để ráo.",
+      "tip": "MÂU THUẪN NGUỒN: fptshop chần bắp cải 3 phút giúp cải giữ màu xanh, xào nhanh và không ra nhiều nước; naungon (cooky) xào trực tiếp không chần. Lấy theo fptshop — món xào sẽ giòn ngọt hơn; bỏ qua bước này vẫn được nhưng phải xào lâu hơn.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế nấm đùi gà: cắt bỏ phần gốc, rửa sạch với nước muối loãng, để ráo rồi cắt thành từng lát chéo mỏng vừa ăn.",
+      "tip": "sachi/blogkhoedep (cải thảo xào nấm đùi gà): cắt lát chéo giúp nấm nhanh thấm gia vị và chín đều; không nên cắt quá dày vì nấm đùi gà chắc thịt.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Sơ chế gia vị khô: tỏi bóc vỏ, băm nhuyễn; ớt thái lát mỏng; hẹ rửa sạch, cắt khúc khoảng 2-3 cm.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Phi thơm: bắc chảo lên bếp, cho 2 muỗng canh dầu ăn vào đun nóng, cho tỏi băm vào phi khoảng 10-30 giây đến khi vàng thơm.",
+      "tip": "naungon (cooky): phi tỏi băm với 2 muỗng canh dầu, đảo khoảng 10 giây — không để tỏi cháy sẽ đắng.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Xào nấm trước: cho nấm đùi gà vào chảo, đảo đều trên lửa vừa khoảng 3 phút cho nấm săn lại.",
+      "tip": "MÂU THUẪN NGUỒN: eva xào nấm hương trước với muối cho săn và ngấm gia vị; sachi xào nấm đùi gà sơ 5 phút; fptshop xào nấm rơm chỉ 1 phút. Nấm đùi gà dày thịt hơn nấm rơm nên xào 3 phút là vừa — nấm săn, thấm dầu tỏi mà chưa ra hết nước.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Cho bắp cải vào, vặn lửa lớn, đảo nhanh tay 3-4 phút cho cải chín tới, vẫn giữ độ giòn.",
+      "tip": "MÂU THUẪN NGUỒN: naungon (cooky) xào 5-10 phút; fptshop xào lửa lớn 3 phút sau khi đã chần. Vì đã chần sơ ở bước 2 nên chỉ cần 3-4 phút lửa lớn — xào lâu cải ra nước và mất giòn.",
+      "timerMinutes": 4
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Nêm gia vị: cho 15 ml xì dầu, 1 muỗng cà phê muối, 1 muỗng cà phê hạt nêm chay, 1 muỗng cà phê đường (và 1 muỗng canh rượu trắng nếu dùng) vào, đảo đều cho thấm; nếm lại cho vừa ăn.",
+      "tip": "MÂU THUẪN NGUỒN về hạt nêm: cooky 1 muỗng canh vs fptshop tổng 1,5 muỗng cà phê — chênh lệch lớn; lấy 1 muỗng cà phê vì món đã có xì dầu mặn, nêm thiếu còn chữa được, nêm mặn khó cứu. Món chay nên dùng hạt nêm chay và xì dầu chay.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho hẹ cắt khúc và ớt lát vào, đảo thêm khoảng 30 giây cho hẹ vừa chín tới.",
+      "tip": "naungon (cooky): tắt lửa rồi rắc hẹ vào đảo đều — hẹ giữ được màu xanh và mùi thơm đặc trưng.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Tắt bếp, rắc 1/2 muỗng cà phê tiêu xay lên trên, đảo đều lần cuối.",
+      "tip": "fptshop và sachi đều rắc tiêu xay cuối cùng để dậy mùi thơm."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Bày món ra đĩa, dùng nóng với cơm trắng; có thể dọn kèm chén xì dầu để chấm thêm.",
+      "tip": "sachi: món này ăn cùng cơm nóng rất hợp; nấm đùi gà giòn sựt, bắp cải ngọt giòn — đơn giản mà ngon hơn thịt (eva)."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 61.33,
+      "proteinG": 4.57,
+      "carbohydrateG": 12.66,
+      "fatG": 0.55,
+      "fiberG": 5.37,
+      "sugarG": 5.38,
+      "sodiumMg": 36.6
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Ớt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Xì dầu (nước tương): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hạt nêm chay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

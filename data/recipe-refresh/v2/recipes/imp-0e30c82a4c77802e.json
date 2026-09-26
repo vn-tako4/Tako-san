@@ -1,0 +1,725 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-0e30c82a4c77802e",
+    "slug": "goi-dau-phu-cay-thai",
+    "title": "Gỏi đậu phụ cay Thái"
+  },
+  "content": {
+    "description": "Đậu phụ chiên giòn trộn chanh-ớt cay tê, gỏi chay Thái mát lạ đầy vị.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Gỏi",
+      "Chay",
+      "Đậu phụ",
+      "Thái Lan"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-0e30c82a4c77802e.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps,title",
+    "sources": [
+      {
+        "url": "https://hot-thai-kitchen.com/chilled-tofu-salad/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.simplysuwanee.com/vegan-tofu-larb/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.vietworldkitchen.com/blog/2021/08/tofu-larb-recipe-laap-tao-hu.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Đậu phụ mềm (soft tofu)",
+      "canonicalIngredientId": "ING_ENR_9ECEF740DEFF055E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 450,
+        "unit": "g",
+        "text": "450 g",
+        "gramEquivalent": 450,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 450,
+          "unit": "g"
+        }
+      },
+      "note": "MÂU THUẪN NGUỒN: Hot Thai Kitchen dùng 300 g đậu phụ mềm ướp lạnh, ăn lạnh kiểu yum tao hu yen; Simply Suwanee dùng đậu phụ cứng (extra-firm) xào ấm kiểu larb với bột gạo rang và nước mắm — là công thức khác hẳn. Giữ bản HTK vì đúng tên món được giao (Gỏi đậu phụ cay Thái, ăn lạnh). Thẻ công thức HTK không ghi rõ số khẩu phần (các salad tương tự của HTK thường cho 2 người ăn kèm) — file này quy ước thẻ = 2 phần, nhân 1,5 cho 3 phần = 450 g (~1,5 gói 300 g).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 76,
+        "proteinG": 8.08,
+        "carbohydrateG": 1.87,
+        "fatG": 4.78,
+        "fiberG": 0.3,
+        "sugarG": 0.62,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172476",
+      "sourceNutritionNote": "Số liệu của đậu phụ regular; công thức dùng đậu phụ mềm (soft) — chênh lệch nhỏ, ghi rõ để tham khảo."
+    },
+    {
+      "position": 1,
+      "sourceName": "Xì dầu (nước tương)",
+      "canonicalIngredientId": "ING_ENR_F68EF5C1E847770A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.25,
+        "unit": "muỗng canh",
+        "text": "2.25 muỗng canh",
+        "gramEquivalent": 40,
+        "basis": "2,25 Tbsp × 15 ml × ~1,2 g/ml (tỉ trọng xì dầu) ≈ 40 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK dùng 1,5 Tbsp xì dầu → 2,25 Tbsp (2 muỗng canh + 1 muỗng cà phê) cho 3 phần. Dùng xì dầu thường (không phải loại ít muối) để đủ vị mặn nền cho nước trộn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước cốt chanh tươi",
+      "canonicalIngredientId": "LIME",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2.25,
+        "unit": "muỗng canh",
+        "text": "2.25 muỗng canh",
+        "gramEquivalent": 34,
+        "basis": "2,25 Tbsp nước cốt chanh ≈ 34 ml ≈ 34 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK dùng 1,5 Tbsp nước cốt chanh (lime juice) → 2,25 Tbsp cho 3 phần; vắt từ chanh tươi, bỏ hạt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 0.42,
+        "carbohydrateG": 8.42,
+        "fatG": 0.07,
+        "fiberG": 0.4,
+        "sugarG": 1.69,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168156",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Đường thốt nốt",
+      "canonicalIngredientId": "ING_ENR_A21CCD219EA432B0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "1,5 Tbsp đường thốt nốt xắt nhỏ, đong đầy (packed) ≈ 18 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK dùng 1 Tbsp đường thốt nốt đong đầy, xắt/bào nhỏ → 1,5 Tbsp cho 3 phần. Phải khuấy đến khi đường tan hoàn toàn trong nước trộn; nếu đường miếng to khó tan, có thể giã nhỏ trước.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Đường thốt nốt không có bản ghi trong SR Legacy/Foundation (kết quả tìm kiếm FDC chỉ ra 'Oil, palm' — sai nguyên liệu) — để null toàn bộ, không dùng số liệu đường cát thay thế."
+    },
+    {
+      "position": 4,
+      "sourceName": "Ớt hiểm Thái",
+      "canonicalIngredientId": "CHILI",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "quả",
+        "text": "4 quả",
+        "gramEquivalent": 20,
+        "basis": "4 quả × ~5 g/quả (ước tính phổ biến)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "HTK ghi 'to taste' (tùy khẩu vị), băm nhuyễn cho vào nước trộn. Lấy 4 quả cho 3 phần ở mức cay vừa; ai ăn cay ít thì giảm còn 1–2 quả, ai ăn cay nhiều có thể tăng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành tím (shallot)",
+      "canonicalIngredientId": "ING_ENR_662B922D065B4B6A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "1,5 Tbsp hành tím thái hạt lựu ≈ 15 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK dùng 1 Tbsp hành tím thái hạt lựu nhỏ → 1,5 Tbsp cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Sả băm nhuyễn",
+      "canonicalIngredientId": "LEMONGRASS",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 9,
+        "basis": "1,5 Tbsp sả băm nhuyễn ≈ 9 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK dùng 1 Tbsp sả thái lát mỏng → 1,5 Tbsp cho 3 phần; băm thật nhuyễn để sả không bị xơ khi ăn sống. Chỉ lấy phần thân non trắng, bỏ lớp già bên ngoài.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 99,
+        "proteinG": 1.82,
+        "carbohydrateG": 25.31,
+        "fatG": 0.49,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168573",
+      "sourceNutritionNote": "Bản ghi FDC 168573 không công bố fiber và Total Sugars — để null, không ước tính."
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 18,
+        "basis": "3 Tbsp hành lá thái nhỏ ≈ 18 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK dùng 2 Tbsp hành lá thái nhỏ → 3 Tbsp cho 3 phần; lấy cả phần đầu trắng và lá xanh.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Rau mùi (ngò rí)",
+      "canonicalIngredientId": "ING_ENR_D6CB7B7A9989F08F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "cọng",
+        "text": "5 cọng",
+        "gramEquivalent": 11,
+        "basis": "5 cọng × ~2,2 g/cọng (USDA: 9 cọng rau mùi ≈ 20 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "HTK dùng 3 cọng rau mùi thái nhỏ → 5 cọng cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Lá bạc hà",
+      "canonicalIngredientId": "ING_ENR_DE807A2A67C4D306",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "lá",
+        "text": "5 lá",
+        "gramEquivalent": 3,
+        "basis": "5 lá bạc hà ≈ 3 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "HTK dùng 3 lá bạc hà thái nhỏ → 5 lá cho 3 phần. Đúng vị Thái nên dùng rau húng lủi (spearmint) thay vì bạc hà Âu (peppermint).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 44,
+        "proteinG": 3.29,
+        "carbohydrateG": 8.41,
+        "fatG": 0.73,
+        "fiberG": 6.8,
+        "sugarG": null,
+        "sodiumMg": 30
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173475",
+      "sourceNutritionNote": "Dùng số liệu spearmint (FDC 173475, rau húng lủi) thay vì peppermint cho đúng loại rau trong công thức. Bản ghi không công bố Total Sugars — để null."
+    },
+    {
+      "position": 10,
+      "sourceName": "Dưa leo",
+      "canonicalIngredientId": "CUCUMBER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 60,
+        "unit": "g",
+        "text": "60 g",
+        "gramEquivalent": 60,
+        "basis": "1/4 cup dưa leo thái hạt lựu ~39 g (USDA) × 1,5 ≈ 60 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 60,
+          "unit": "g"
+        }
+      },
+      "note": "HTK dùng 1/4 cup dưa leo thái hạt lựu nhỏ → khoảng 3/8 cup (60 g) cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 10,
+        "proteinG": 0.59,
+        "carbohydrateG": 2.16,
+        "fatG": 0.16,
+        "fiberG": 0.7,
+        "sugarG": 1.38,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169225",
+      "sourceNutritionNote": "Bản ghi FDC 169225 là dưa leo gọt vỏ; công thức HTK không ghi rõ gọt vỏ hay không — chênh lệch dinh dưỡng không đáng kể."
+    },
+    {
+      "position": 11,
+      "sourceName": "Ớt chuông đỏ",
+      "canonicalIngredientId": "ING_ENR_3908D9685441601A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 9,
+        "basis": "1 Tbsp ớt chuông thái hạt lựu ≈ 9 g (USDA: 1 Tbsp ≈ 9,3 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK dùng 2 tsp ớt chuông đỏ thái hạt lựu thật nhỏ → 1 Tbsp cho 3 phần; chủ yếu để tạo màu và vị ngọt nhẹ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 26,
+        "proteinG": 0.99,
+        "carbohydrateG": 6.03,
+        "fatG": 0.3,
+        "fiberG": 2.1,
+        "sugarG": 4.2,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170108",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Mè đen",
+      "canonicalIngredientId": "ING_ENR_1696787F015145C3",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 1,
+        "basis": "1 nhúm mè ≈ 1 g (ước tính)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "HTK dùng 'a pinch' mè đen để rắc trang trí; cho 3 phần lấy 1 nhúm đầy. Có thể rang sơ cho thơm trước khi rắc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 573,
+        "proteinG": 17.73,
+        "carbohydrateG": 23.45,
+        "fatG": 49.67,
+        "fiberG": 11.8,
+        "sugarG": 0.3,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170150",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Cho đậu phụ vào tủ lạnh ít nhất 2 giờ cho thật lạnh — món gỏi này ngon nhất khi đậu mát lạnh, tương phản với nước trộn chua cay mặn ngọt.",
+      "tip": "Hot Thai Kitchen nhấn mạnh chữ 'chilled' trong tên món: đậu phải lạnh thì ăn mới đã.",
+      "timerMinutes": 120
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Nhẹ nhàng lấy đậu ra khỏi hộp, đổ bỏ nước trong hộp. Dùng dao mỏng xắt đậu thành khối vuông lớn (khoảng 4 cm), xếp ngay ngắn vào đĩa sâu lòng.",
+      "tip": "Đậu phụ mềm rất dễ vỡ — lướt dao nhẹ tay, không ấn mạnh; xếp vào đĩa sâu lòng để hứng nước trộn."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Sơ chế rau thơm: hành tím thái hạt lựu nhỏ; sả lấy phần thân non trắng, băm thật nhuyễn; hành lá (cả đầu trắng và lá xanh), rau mùi, bạc hà thái nhỏ; dưa leo thái hạt lựu; ớt chuông thái hạt lựu thật nhỏ; ớt hiểm băm nhuyễn.",
+      "tip": "Sả ăn sống nên băm càng nhuyễn càng tốt để không bị xơ; ớt hiểm có thể bỏ hạt nếu sợ quá cay.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Pha nước trộn: cho xì dầu, nước cốt chanh, đường thốt nốt và ớt hiểm băm vào bát, khuấy đều đến khi đường tan hoàn toàn.",
+      "tip": "Đường thốt nốt miếng to khó tan — xắt/bào nhỏ hoặc giã vụn trước khi pha; nếm thử để nhớ vị gốc trước khi trộn rau."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho hành tím, sả, hành lá, rau mùi, bạc hà, dưa leo và ớt chuông vào bát nước trộn, trộn đều cho rau củ thấm vị.",
+      "tip": "Trộn nhẹ tay để rau thơm không bị nát, dưa leo không ra quá nhiều nước."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Múc hỗn hợp rau củ trộn lên trên từng miếng đậu phụ, chia đều cho các miếng.",
+      "tip": "Đặt rau củ lên trên thay vì trộn chung với đậu để miếng đậu giữ nguyên khối đẹp mắt, không bị vỡ."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Rưới phần nước trộn còn lại trong bát xung quanh đĩa đậu (không rưới trực tiếp quá nhiều lên mặt đậu để đậu không bị mặn).",
+      "tip": "Nước trộn đọng dưới đáy đĩa sẽ thấm dần vào đậu khi ăn — đúng kiểu trình bày của Hot Thai Kitchen."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rắc đều mè đen lên trên cùng để trang trí và thêm vị bùi.",
+      "tip": "Mè đen rang sơ trên chảo khô 1–2 phút sẽ thơm hơn nhiều."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Nếm phần nước trộn trong đĩa, điều chỉnh lại cho vừa miệng: thiếu chua thêm chanh, thiếu mặn thêm xì dầu, thiếu ngọt thêm đường, thiếu cay thêm ớt.",
+      "tip": "Vị chuẩn của yum là chua – mặn – ngọt – cay cân bằng, không vị nào lấn át."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn ngay khi đậu còn mát lạnh; ăn kèm cơm gạo thơm nóng nếu thích (tùy chọn, ngoài công thức gốc).",
+      "tip": "Món này không để lâu — rau thơm sẽ ỉu và đậu ra nước nếu trộn xong để quá 15–20 phút."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 114,
+      "proteinG": 12.12,
+      "carbohydrateG": 2.81,
+      "fatG": 7.17,
+      "fiberG": 0.45,
+      "sugarG": 0.93,
+      "sodiumMg": 10.5
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Xì dầu (nước tương): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nước cốt chanh tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Đường thốt nốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Ớt hiểm Thái: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành tím (shallot): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Sả băm nhuyễn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Rau mùi (ngò rí): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Lá bạc hà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dưa leo: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Ớt chuông đỏ: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Mè đen: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 1,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

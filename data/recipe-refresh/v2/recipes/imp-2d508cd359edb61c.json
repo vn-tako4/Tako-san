@@ -1,0 +1,758 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-2d508cd359edb61c",
+    "slug": "dau-phu-hap-tom-gung",
+    "title": "Đậu phụ hấp tôm gừng"
+  },
+  "content": {
+    "description": "Đậu phụ non hấp cùng tôm tươi và gừng ấm như món dim sum nhà, chấm xì dầu hành lá thanh nhẹ.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 25,
+    "servings": 3,
+    "difficulty": "medium",
+    "tags": [
+      "Hấp",
+      "Dim sum",
+      "Đậu phụ",
+      "Tôm"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-2d508cd359edb61c.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,nutrition_per_serving,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://smellylunchbox.com/stuffed-egg-tofu-shrimp/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "http://www.naokomoore.com/2009/01/steamed-tofu-shrimp.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Đậu phụ trứng (egg tofu)",
+      "canonicalIngredientId": "ING_ENR_7D7A0943C39779D4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "package",
+        "text": "1.5 package",
+        "gramEquivalent": 360,
+        "basis": "1 package (tube) 8.5 oz = 240 g theo smellylunchbox; dùng 1.5 package cho 3 khẩu phần",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "pack"
+        }
+      },
+      "note": "Mâu thuẫn nguồn: smellylunchbox dùng đậu phụ trứng (egg tofu) đúng như tên món; bản Naoko dùng đậu phụ thường (medium-firm). Theo nguồn chính (smellylunchbox).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 66,
+        "proteinG": 6.3,
+        "carbohydrateG": 1.7,
+        "fatG": 3.8,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://www.fatsecret.com.sg/calories-nutrition/unicurd/egg-tofu/100g",
+      "sourceNutritionNote": "FDC không có đậu phụ trứng; số liệu lấy từ nhãn sản phẩm Unicurd Egg Tofu trên fatsecret (tham khảo). Trang nhãn chỉ công bố energy/protein/carb/fat nên fiber, sugar, sodium để null."
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm tươi bóc vỏ, bỏ chỉ đen",
+      "canonicalIngredientId": "ING_ENR_7ECED0D0E848E39A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 170,
+        "unit": "g",
+        "text": "170 g",
+        "gramEquivalent": 170,
+        "basis": "4 oz = 113.4 g theo smellylunchbox (cho 8 miếng); nhân 1.5 cho 3 khẩu phần: 113.4 × 1.5 ≈ 170 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 170,
+          "unit": "g"
+        }
+      },
+      "note": "Cả 2 nguồn đều dùng tôm tươi băm nhuyễn thành chả; smellylunchbox 4 oz cho 8 miếng, Naoko 1/2 lb cho 12 miếng (tương đương 9 g/miếng).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "FDC không liệt kê fiber và total sugars cho tôm sống nên để null."
+    },
+    {
+      "position": 2,
+      "sourceName": "Gừng tươi băm",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "tbsp",
+        "text": "1.5 tbsp",
+        "gramEquivalent": 15,
+        "basis": "Quy ước nấu ăn: 1 muỗng canh gừng băm ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả 2 nguồn đều dùng gừng băm trong chả tôm; Naoko còn dùng gừng thái sợi trong sốt rưới nóng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": null,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho gừng tươi nên để null."
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 45,
+        "basis": "Quy ước: 1 cây hành lá trung bình ≈ 15 g; smellylunchbox dùng 2 cây cho 8 miếng → 3 cây cho 12 miếng",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "smellylunchbox dùng 2 cây (đầu trắng thái lát trộn vào chả, lá xanh trang trí); Naoko dùng hành lá trong sốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho hành lá nên để null."
+    },
+    {
+      "position": 4,
+      "sourceName": "Rượu Thiệu Hưng (Shaoxing)",
+      "canonicalIngredientId": "ING_ENR_790F7173F74DF67C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "tsp",
+        "text": "1.5 tsp",
+        "gramEquivalent": 7.5,
+        "basis": "1 tsp rượu ≈ 5 ml ≈ 5 g (tỷ trọng ≈ 1.0)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Mâu thuẫn nguồn: smellylunchbox dùng 1 tsp cho 8 miếng; Naoko dùng 1 tbsp rượu gạo trong chả tôm. Theo nguồn chính (smellylunchbox), nhân 1.5.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.5,
+        "carbohydrateG": 6.3,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 626
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169070",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho rượu nấu ăn nên để null."
+    },
+    {
+      "position": 5,
+      "sourceName": "Bột bắp (cornstarch)",
+      "canonicalIngredientId": "ING_ENR_5F2E7E7F19C4B936",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "tsp",
+        "text": "1.5 tsp",
+        "gramEquivalent": 5,
+        "basis": "Quy ước nấu ăn: 1 tsp bột bắp ≈ 3 g; dùng 3/4 tsp trong chả tôm + 3/4 tsp trong sốt",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "smellylunchbox dùng 1/2 tsp trong chả tôm và 1/2 tsp trong sốt cho 8 miếng; Naoko dùng 1/2 tbsp bột khoai tây cho 12 miếng. Theo nguồn chính, nhân 1.5.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 381,
+        "proteinG": 0.26,
+        "carbohydrateG": 91.27,
+        "fatG": 0.05,
+        "fiberG": 0.9,
+        "sugarG": null,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169698",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho bột bắp nên để null."
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "tsp",
+        "text": "1.5 tsp",
+        "gramEquivalent": 7,
+        "basis": "1 tbsp dầu ăn ≈ 13.6 g theo ví dụ FDC trong brief; 1 tsp dầu mè ≈ 4.5 g; dùng 3/4 tsp trong chả tôm + 3/4 tsp trong sốt",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "smellylunchbox dùng 1/2 tsp trong chả tôm và 1/4 tsp trong sốt cho 8 miếng; Naoko dùng 2 tbsp dầu mè nóng rưới lên sốt cho 12 miếng (mâu thuẫn định lượng). Theo nguồn chính, nhân 1.5.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho dầu mè nên để null."
+    },
+    {
+      "position": 7,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "g",
+        "text": "1 g",
+        "gramEquivalent": 1,
+        "basis": "Cân định lượng trực tiếp; tương đương khoảng 1/4 tsp muối tinh",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "g"
+        }
+      },
+      "note": "smellylunchbox dùng 1/8 tsp cho 8 miếng (nhân 1.5); Naoko nêm muối 'vừa đủ' theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho muối nên để null."
+    },
+    {
+      "position": 8,
+      "sourceName": "Tiêu trắng xay",
+      "canonicalIngredientId": "ING_ENR_CE0F576CB30DCEBE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "g",
+        "text": "0.5 g",
+        "gramEquivalent": 0.5,
+        "basis": "Quy ước: một nhúm tiêu xay ≈ 0.5 g (1/8 tsp tiêu trong chả + nhúm nhỏ trong sốt)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "g"
+        }
+      },
+      "note": "Cả 2 nguồn đều dùng tiêu trắng: smellylunchbox dùng trong chả tôm và sốt; Naoko dùng muối + tiêu trong chả tôm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 10.4,
+        "carbohydrateG": 68.61,
+        "fatG": 2.12,
+        "fiberG": 26.2,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170933",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho tiêu trắng nên để null."
+    },
+    {
+      "position": 9,
+      "sourceName": "Xì dầu nhạt",
+      "canonicalIngredientId": "ING_ENR_19A3C60192F07ED5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "tsp",
+        "text": "0.75 tsp",
+        "gramEquivalent": 4.5,
+        "basis": "1 tsp xì dầu ≈ 5 ml; tỷ trọng ≈ 1.2 → 3/4 tsp ≈ 4.5 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Mâu thuẫn nguồn: smellylunchbox dùng 1/2 tsp xì dầu trong sốt nấu sánh cho 8 miếng; Naoko dùng 2 tbsp xì dầu trong sốt rưới cho 12 miếng. Theo nguồn chính, nhân 1.5.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 57,
+        "proteinG": 9.05,
+        "carbohydrateG": 5.59,
+        "fatG": 0.3,
+        "fiberG": 0.7,
+        "sugarG": null,
+        "sodiumMg": 3598
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172473",
+      "sourceNutritionNote": "FDC không có bản ghi 'light soy sauce' nên dùng bản low-sodium shoyu làm gần đúng; total sugars không được liệt kê nên để null."
+    },
+    {
+      "position": 10,
+      "sourceName": "Dầu hào",
+      "canonicalIngredientId": "ING_ENR_7BB44CA507E12348",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "tsp",
+        "text": "0.5 tsp",
+        "gramEquivalent": 3,
+        "basis": "1 tsp dầu hào ≈ 5 ml; tỷ trọng ≈ 1.2 → 1/2 tsp ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Mâu thuẫn nguồn: chỉ smellylunchbox dùng dầu hào (1/4 tsp trong sốt); Naoko không dùng. Theo nguồn chính, nhân 1.5.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 51,
+        "proteinG": 1.35,
+        "carbohydrateG": 10.92,
+        "fatG": 0.25,
+        "fiberG": 0.3,
+        "sugarG": null,
+        "sodiumMg": 2733
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174529",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho dầu hào nên để null."
+    },
+    {
+      "position": 11,
+      "sourceName": "Đường trắng",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "tsp",
+        "text": "0.5 tsp",
+        "gramEquivalent": 2,
+        "basis": "Quy ước: 1 tsp đường trắng ≈ 4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "smellylunchbox dùng một nhúm đường trong sốt; Naoko dùng một nhúm đường trong chả tôm và trong sốt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": "FDC không liệt kê total sugars riêng cho đường cát; toàn bộ carb là đường nhưng vẫn để null theo quy tắc không suy luận."
+    },
+    {
+      "position": 12,
+      "sourceName": "Nước lọc (làm sốt)",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.75,
+        "unit": "cup",
+        "text": "0.75 cup",
+        "gramEquivalent": 180,
+        "basis": "3/4 cup = 180 ml ≈ 180 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "smellylunchbox dùng 1/2 cup nước làm nền sốt cho 8 miếng, nhân 1.5 cho 3 khẩu phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173647",
+      "sourceNutritionNote": "Nước lọc không có giá trị dinh dưỡng đáng kể; toàn bộ dinh dưỡng để null."
+    },
+    {
+      "position": 13,
+      "sourceName": "Lòng trắng trứng gà",
+      "canonicalIngredientId": "ING_ENR_991DDA0585795D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cái",
+        "text": "1 cái",
+        "gramEquivalent": 33,
+        "basis": "1 lòng trắng trứng gà lớn ≈ 33 g (quy ước khẩu phần USDA)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Mâu thuẫn nguồn: Naoko dùng 1 lòng trắng trứng trong chả tôm cho 12 miếng; smellylunchbox không dùng (chỉ dùng bột bắp + dầu mè). Đặt tùy chọn, theo cách Naoko.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 52,
+        "proteinG": 10.9,
+        "carbohydrateG": 0.73,
+        "fatG": 0.17,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 166
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172183",
+      "sourceNutritionNote": "FDC không liệt kê total sugars cho lòng trắng trứng nên để null."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế và băm tôm: Tôm rửa sạch, bóc vỏ, bỏ chỉ đen, thấm thật khô bằng giấy bếp. Băm nhuyễn tôm thành chả tôm mịn (không xay máy để giữ độ dai). Tip: tôm phải khô ráo thì chả tôm mới dẻo dính; giấy bếp thấm kỹ là bước quan trọng nhất.",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Trộn chả tôm: Cho chả tôm vào tô lớn, thêm rượu Thiệu Hưng, bột bắp, dầu mè, muối, tiêu trắng. Trộn thật mạnh tay và đều theo một chiều trong 3-5 phút đến khi chả tôm dẻo, dính và có độ đàn hồi. (Bản Naoko trộn mịn rồi bọc lại ướp tủ lạnh 30 phút; bản smellylunchbox trộn mạnh 3-5 phút rồi dùng ngay — theo bản chính.)",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Thêm gừng, hành vào chả: Thêm gừng băm và đầu hành trắng thái lát mỏng vào chả tôm, trộn đều lần cuối. Nếu dùng lòng trắng trứng (tùy chọn theo Naoko), cho vào bước này và trộn đều."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cắt đậu phụ trứng: Cắt bỏ 2 đầu ống đậu phụ trứng, nhẹ nhàng đẩy đậu ra và cắt thành 12 lát dày đều nhau (mỗi tube 240 g cắt 8 lát). Xếp các lát đậu vào đĩa sâu lòng chịu nhiệt."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đắp chả tôm lên đậu: Dùng muỗng múc khoảng 1 muỗng canh chả tôm đắp lên mỗi lát đậu phụ, vê tròn nhẹ thành chóp. Đảm bảo chả tôm bao phủ hết mặt đậu để khi hấp không bị khô."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Hấp đậu phụ tôm: Đun sôi nồi hấp/nước trong chảo sâu. Đặt đĩa vào, đậy nắp, hấp lửa lớn 9-10 phút đến khi tôm chín hẳn, chuyển màu hồng cam và săn lại. (Bản Naoko hấp 10-13 phút với đậu phụ thường; bản smellylunchbox hấp 9-10 phút.) Tip: nhiệt trong của tôm nên đạt 74°C (165°F).",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nấu sốt rưới: Trong lúc hấp, pha sốt: hòa đều nước, xì dầu, dầu hào, bột bắp, đường và tiêu trắng trong một bát nhỏ. Đun chảo nhỏ lửa vừa, đổ hỗn hợp vào, khuấy liên tục khoảng 2 phút đến khi sốt trong, sánh nhẹ thì tắt bếp, thêm dầu mè.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rưới sốt: Hấp xong lấy đĩa ra, chắt bỏ phần nước đọng trong đĩa (theo smellylunchbox). Rưới đều sốt nóng lên từng miếng đậu phụ tôm."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Hoàn thiện và thưởng thức: Rắc phần lá hành xanh thái nhỏ lên trên trang trí. Dọn ăn nóng ngay với cơm trắng. Tip: món này ăn ngay sau khi hấp là ngon nhất; để lâu đậu phụ ra nước và chả tôm bị dai.",
+      "tip": "Muốn miếng chả tôm giòn dai hơn, cho chả tôm đã trộn vào tủ lạnh 30 phút trước khi đắp lên đậu (theo bản Naoko). Không nên dùng tôm đông lạnh rã đông kém chất lượng vì chả sẽ bị bở."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 0,
+        "detail": "Đậu phụ trứng (egg tofu): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Tôm tươi bóc vỏ, bỏ chỉ đen: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Gừng tươi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Rượu Thiệu Hưng (Shaoxing): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Bột bắp (cornstarch): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tiêu trắng xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Xì dầu nhạt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Dầu hào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Đường trắng: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Nước lọc (làm sốt): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

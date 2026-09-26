@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-b33750551f6ea7fe",
+    "slug": "nam-nuong-bo-shoyu",
+    "title": "Nấm nướng bơ shoyu"
+  },
+  "content": {
+    "description": "Nấm đùi gà nướng chảo nóng với bơ-xì dầu, vị umami béo đậm, món nhậu izakaya chớm tối.",
+    "cuisine": "japanese",
+    "cookTimeMinutes": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Izakaya",
+      "Nhật Bản",
+      "Nấm",
+      "Bơ"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/jp/imp-b33750551f6ea7fe.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://entabe.com/30407/eringi-sauteed-with-butter-and-soy-sauce",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.soscuisine.fr/recipe/sauteed-japanese-mushrooms",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.youtube.com/shorts/moU4G9m9rXo",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Nấm đùi gà (eringi)",
+      "canonicalIngredientId": "ING_ENR_A3A6E50EBE3B4F57",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "≈ 1.5 pack nấm Nhật. Himahiyo: '2-3 cây lớn (200 g)' là lượng cho 2 phần, tức 1 pack ≈ 200 g; entabe: 1 pack cho 2 phần. Công thức này 300 g cho 3 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": 1.11,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "USDA Foundation có entry 'Mushroom, king oyster' (fdcId 2003599) nhưng thiếu Energy và Sugars nên dùng entry generic 'Mushrooms, oyster, raw' (Pleurotus ostreatus, họ hàng gần của nấm đùi gà Pleurotus eryngii)."
+    },
+    {
+      "position": 1,
+      "sourceName": "Bơ mặn",
+      "canonicalIngredientId": "ING_ENR_95EF12DDF2A4B09C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn mâu thuẫn: entabe dùng 10 g bơ cho 2 phần; Himahiyo dùng 15 g bơ cho 2 phần. Lấy 20 g cho 3 phần — gần mức Himahiyo quy đổi (22.5 g), làm tròn xuống.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 643
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173410",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Xì dầu (shoyu)",
+      "canonicalIngredientId": "ING_ENR_4B3D4B69D5D57916",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng cà phê",
+        "text": "1.5 muỗng cà phê",
+        "gramEquivalent": 8,
+        "basis": "USDA: 1 Tbsp soy sauce = 16 g → 1.5 tsp ≈ 8 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hai nguồn mâu thuẫn: entabe dùng 1/2 tsp shoyu cho 2 phần; Himahiyo dùng 1 tsp shoyu cho 2 phần. Lấy 1.5 tsp cho 3 phần (theo Himahiyo quy đổi — nguồn duy nhất ghi rõ trọng lượng nấm 200 g).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Muối ăn",
+      "canonicalIngredientId": "ING_ENR_361639D21BDA1726",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "nhúm",
+        "text": "1 nhúm",
+        "gramEquivalent": 1,
+        "basis": "1 nhúm muối ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều ghi 'vừa đủ' (proper quantity / a little), không định lượng — 1 nhúm là ước lượng tối thiểu để có gram_equivalent, nêm theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "muỗng cà phê",
+        "text": "0.25 muỗng cà phê",
+        "gramEquivalent": 0.6,
+        "basis": "USDA: 1 tsp black pepper = 2.3 g → 1/4 tsp ≈ 0.6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Cả hai nguồn đều ghi 'vừa đủ', không định lượng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cây",
+        "text": "1 cây",
+        "gramEquivalent": 15,
+        "basis": "1 cây hành lá ~15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "entabe không dùng hành lá; SOSCuisine rắc hành lá thái nhỏ lên trên khi hoàn thành — giữ theo hint của món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 27,
+        "proteinG": 0.97,
+        "carbohydrateG": 5.74,
+        "fatG": 0.47,
+        "fiberG": 1.8,
+        "sugarG": 3.91,
+        "sodiumMg": 15
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170006",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Cắt bỏ phần gốc cứng của nấm đùi gà, lau sạch bằng khăn ẩm (không ngâm rửa — nấm hút nước sẽ bị nhão khi chiên)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Thái nấm thành khoanh dày 1.5-2 cm (entabe). Có thể khía mặt nấm hình caro cho thấm gia vị và trông giống sò điệp (Himahiyo).",
+      "tip": "Thái dày kiểu 'scallop-style' là điểm đặc trưng của món: miếng nấm dày ăn giòn sần sật như sò điệp."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Hành lá thái nhỏ, để riêng."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đặt chảo lên bếp lửa vừa, cho bơ vào đun tan chảy hoàn toàn."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Xếp các khoanh nấm thành một lớp vào chảo, chiên mặt thứ nhất 2-3 phút đến khi vàng nâu.",
+      "tip": "Không xếp nấm chồng lên nhau — nấm ra nước sẽ bị hấp thay vì chiên vàng giòn mặt.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Lật nấm, chiên mặt còn lại đến vàng nâu đều.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Rắc muối và tiêu đen đều lên hai mặt nấm."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Rưới xì dầu quanh thành chảo nóng, đảo nhanh 10-15 giây cho nấm thấm đều.",
+      "tip": "Himahiyo: rưới shoyu quanh mép chảo nóng để shoyu bốc hơi thơm (hương cháy cạnh) thay vì đổ trực tiếp lên nấm."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho hành lá thái nhỏ vào, đảo nhanh rồi tắt bếp. Bày nấm ra đĩa, ăn nóng.",
+      "tip": "SOSCuisine: rắc hành lá lên trên cùng lúc dọn — món ăn nóng là ngon nhất, để nguội bơ đông lại sẽ ngấy."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 80.8,
+      "proteinG": 3.37,
+      "carbohydrateG": 6.09,
+      "fatG": 5.82,
+      "fiberG": 2.3,
+      "sugarG": 1.11,
+      "sodiumMg": 60.87
+    },
+    "originalPerServing": {
+      "energyKcal": 84.07,
+      "proteinG": 3.65,
+      "carbohydrateG": 6.64,
+      "fatG": 5.86,
+      "fiberG": 2.46,
+      "sugarG": 1.32,
+      "sodiumMg": 337.33
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Xì dầu (shoyu): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Muối ăn: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      3,
+      4
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 4,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

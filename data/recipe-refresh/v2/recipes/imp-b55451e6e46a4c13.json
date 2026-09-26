@@ -1,0 +1,595 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-b55451e6e46a4c13",
+    "slug": "bap-cai-cuon-hap-thit",
+    "title": "Bắp cải cuộn hấp thịt"
+  },
+  "content": {
+    "description": "Lá bắp cải chần mềm cuộn nhân thịt băm-cà rốt hấp chín, nước hấp ngọt thanh, món hấp khéo tay chiêu đãi.",
+    "cuisine": "vietnamese",
+    "category": "mon_hap_luoc",
+    "region": "bac",
+    "cookTimeMinutes": 50,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Hấp",
+      "Bắp cải",
+      "Khéo tay",
+      "Bắc Bộ"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-b55451e6e46a4c13.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://bepmina.vn/mon-viet/cach-lam-bap-cai-cuon-thit/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://thitsachnhapkhau.net/huong-dan-cach-lam-bap-cai-cuon-thit-hap/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Bắp cải",
+      "canonicalIngredientId": "CABBAGE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cái",
+        "text": "1 cái",
+        "gramEquivalent": 800,
+        "basis": "1 cái bắp cải vừa ~800 g; dùng khoảng 12 lá lớn (~600 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Chọn cây bắp cải cuộn lỏng, cầm nhẹ tay, lá to và mềm để dễ tách lá và cuộn không rách (bepmina.vn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 25,
+        "proteinG": 1.28,
+        "carbohydrateG": 5.8,
+        "fatG": 0.1,
+        "fiberG": 2.5,
+        "sugarG": 3.2,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169975",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt heo xay (nạc vai)",
+      "canonicalIngredientId": "ING_ENR_82F140D97375C02F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn: bepmina.vn dùng 200 g thịt lợn vai + 150 g ức gà cho 5 người; thitsachnhapkhau.net dùng 300 g thịt vai heo cho 4 người. Lấy 300 g thịt heo xay thuần theo gợi ý assignment và đúng 4 khẩu phần của thitsachnhapkhau.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 263,
+        "proteinG": 16.88,
+        "carbohydrateG": 0,
+        "fatG": 21.19,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167902",
+      "sourceNutritionNote": "USDA không có số liệu đường tổng (269) cho thịt heo xay sống — để null, không suy ra."
+    },
+    {
+      "position": 2,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "củ",
+        "text": "0.5 củ",
+        "gramEquivalent": 75,
+        "basis": "1 củ cà rốt vừa ~150 g; dùng nửa củ",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "Băm nhỏ trộn vào nhân cho ngọt và đẹp mắt (bepmina.vn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "cây",
+        "text": "5 cây",
+        "gramEquivalent": 50,
+        "basis": "1 cây hành lá ~10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 5,
+          "unit": "piece"
+        }
+      },
+      "note": "Một phần băm nhỏ trộn vào nhân, vài cọng dài chần sơ để buộc cố định cuộn bắp cải (bepmina.vn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 15,
+        "basis": "1 tép tỏi ~5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Băm nhuyễn ướp vào thịt (thitsachnhapkhau.net: 3 tép tỏi cho 300 g thịt).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Mộc nhĩ khô",
+      "canonicalIngredientId": "ING_ENR_E73DB362B3DAF3FF",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 20,
+        "unit": "g",
+        "text": "20 g",
+        "gramEquivalent": 20,
+        "basis": "đơn vị gốc đã là gram (trọng lượng khô)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 20,
+          "unit": "g"
+        }
+      },
+      "note": "bepmina.vn dùng 20 g mộc nhĩ khô cho nhân (thitsachnhapkhau.net không dùng — thêm theo bepmina cho nhân giòn, thơm). Ngâm nở được ~90-100 g.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 284,
+        "proteinG": 9.25,
+        "carbohydrateG": 73.01,
+        "fatG": 0.73,
+        "fiberG": 70.1,
+        "sugarG": null,
+        "sodiumMg": 35
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168581",
+      "sourceNutritionNote": "Số liệu theo 100 g mộc nhĩ KHÔ (Fungi, Cloud ears, dried, SR Legacy); USDA không có số liệu đường tổng (269) — để null."
+    },
+    {
+      "position": 6,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 15,
+        "basis": "1 muỗng canh = 15 ml ≈ 15 g (tỉ trọng nước mắm ~1,0)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Hai nguồn mâu thuẫn: thitsachnhapkhau.net ướp 2 muỗng cà phê nước mắm cho 300 g thịt; bepmina.vn ướp 1 muỗng canh (1 thìa) nước mắm cho 350 g thịt. Lấy 1 muỗng canh — ướp đậm một chút vì bắp cải nhạt, dễ ngấm (mẹo của cookpad Nguyệt Anh: 'Ướp thịt đậm cũng được vì bắp cải rất ngọt').",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê hạt nêm ~4 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Ướp vào thịt (cả hai nguồn đều dùng 1 muỗng cà phê/thìa hạt nêm).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.66,
+        "carbohydrateG": 18.01,
+        "fatG": 13.88,
+        "fiberG": null,
+        "sugarG": 17.36,
+        "sodiumMg": 23875
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "USDA không có mục hạt nêm Việt Nam; dùng 'Soup, chicken broth or bouillon, dry' (SR Legacy, fdcId 171562) làm tương đương gần nhất."
+    },
+    {
+      "position": 8,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1.5,
+        "basis": "1 muỗng cà phê tiêu xay ~3 g; dùng nửa muỗng",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Ướp vào thịt và rắc lên mặt khi dọn (cả hai nguồn: 1/2 thìa tiêu xay).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "vài hạt muối cho nước chần, ~3 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Chỉ dùng cho nước chần bắp cải (bepmina.vn: 'thả vào vài hạt muối tinh').",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Thịt heo xay cho vào tô, ướp với tỏi băm, 2 cây hành lá băm nhỏ, 1 muỗng canh nước mắm, 1 muỗng cà phê hạt nêm và 1/2 muỗng cà phê tiêu xay. Trộn đều, để ướp 10-15 phút cho thấm.",
+      "tip": "thitsachnhapkhau.net: ướp 10 phút. Ướp thịt đậm một chút vì bắp cải nhạt, khi hấp sẽ cân bằng (cookpad Nguyệt Anh).",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Mộc nhĩ ngâm nước nóng cho nở mềm, cắt bỏ chân, rửa sạch rồi băm nhỏ.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cà rốt gọt vỏ, băm nhỏ, trộn đều vào tô thịt đã ướp cùng mộc nhĩ."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Bắp cải tách riêng từng lá to, cẩn thận không để rách. Rửa sạch, để ráo. Dùng dao cắt mỏng hoặc bỏ phần cuống cứng ở đầu lá.",
+      "tip": "Chọn cây bắp cải cuộn lỏng, cầm nhẹ tay để tách lá dễ (bepmina.vn)."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun nồi nước sôi, thả vào vài hạt muối. Chần nhanh lá bắp cải khoảng 1 phút cho mềm rồi vớt ngay ra chậu nước lạnh.",
+      "tip": "Chần 1 phút rồi ngâm nước lạnh giúp lá mềm dễ cuộn mà vẫn giữ màu xanh (bepmina.vn).",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Chần thêm vài cọng hành lá dài khoảng 30 giây trong nước sôi rồi vớt ra nước lạnh — dùng làm dây buộc.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Trải 1 lá bắp cải ra thớt, xúc một muỗng nhân thịt đặt vào giữa. Gập 2 mép lá rồi cuộn lại như cuốn nem, dùng cọng hành lá đã chần buộc cố định.",
+      "tip": "Không cuộn quá chặt vì thịt còn nở ra trong quá trình hấp (bepmina.vn). Cuốn nhỏ vừa để thịt nhanh chín."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Xếp các cuộn bắp cải vào xửng hấp (hoặc đĩa sâu lòng đặt trong nồi hấp)."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Hấp cách thủy tính từ khi nước sôi khoảng 20 phút cho thịt chín hẳn.",
+      "tip": "Hai nguồn mâu thuẫn về thời gian: bepmina.vn hấp 20-25 phút; thitsachnhapkhau.net hấp 15 phút. Lấy 20 phút cho cuộn cỡ vừa; kiểm tra bằng cách dùng tăm xiên qua phần thịt — không còn nước hồng chảy ra là chín (thitsachnhapkhau.net).",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Xếp bắp cải cuộn thịt ra đĩa, rắc thêm chút tiêu xay lên trên."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Dọn nóng, chấm cùng nước tương, tương ớt hoặc nước mắm nguyên chất.",
+      "tip": "bepmina.vn: chấm nước tương hoặc tương ớt; cookpad Nguyệt Anh: chấm nước mắm nguyên chất."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 283.65,
+      "proteinG": 16.72,
+      "carbohydrateG": 19.76,
+      "fatG": 16.37,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 919.25
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Bắp cải: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Thịt heo xay (nạc vai): all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 5,
+        "detail": "Mộc nhĩ khô: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 9,
+        "detail": "Muối: consumed/absorbed amount is not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      }
+    ]
+  }
+}

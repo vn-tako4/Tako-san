@@ -1,0 +1,520 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-6d26ce6b0af4fb79",
+    "slug": "rau-bina-om-kem-y",
+    "title": "Rau bina om kem Ý"
+  },
+  "content": {
+    "description": "Rau bina om kem sữa mềm mượt, món rau phụ Ý béo thanh nhanh gọn.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "difficulty": "easy",
+    "tags": [
+      "Om kem",
+      "Rau bina",
+      "Ý",
+      "Món phụ"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-6d26ce6b0af4fb79.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,nutrition_note,nutrition_per_serving,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "http://houdelier.com/pdfs/ricette/GZRic-Spinaci-ricchi-con-besciamella.pdf",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://gemuese.stage.campfire.ch/media/rezepte/spinaci-gratinati-con-briciole-di-pane-fritte.pdf",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "nutrition_note: Backfill 2026-09-26: nutrition_per_100g của từng nguyên liệu tra live từ USDA FoodData Central API, ưu tiên SR Legacy; nutrient 208 kiểm tra unitName=kcal (không nhầm nutrient 268 kJ). sugar_g để null khi mục USDA không có số liệu đường."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Rau bina tươi (rau chân vịt)",
+      "canonicalIngredientId": "ING_ENR_7BE364AD26FCDA79",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 750,
+        "unit": "g",
+        "text": "750 g",
+        "gramEquivalent": 750,
+        "basis": "đơn vị gốc đã là gram (GZ PDF: 1.5 kg cho 6 phần → 750 g cho 3 phần)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 750,
+          "unit": "g"
+        }
+      },
+      "note": "750 g là trọng lượng rau tươi trước khi luộc. GZ: luộc xong vắt thật kỹ nước rồi thái thô — rau sẽ xẹp còn khoảng 1/5 khối lượng ban đầu.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.86,
+        "carbohydrateG": 3.63,
+        "fatG": 0.39,
+        "fiberG": 2.2,
+        "sugarG": 0.42,
+        "sodiumMg": 79
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168462",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "củ",
+        "text": "0.25 củ",
+        "gramEquivalent": 20,
+        "basis": "GZ PDF: 'Cipolle 1/2' cho 6 phần → 1/4 củ cho 3 phần; 1/4 củ hành tây vừa ≈ 20 g (ước lượng)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.25,
+          "unit": "piece"
+        }
+      },
+      "note": "Băm nhỏ, xào lửa thật nhỏ đến khi trong suốt (GZ: mất khoảng 10 phút).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Bơ",
+      "canonicalIngredientId": "BUTTER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 25,
+        "unit": "g",
+        "text": "25 g",
+        "gramEquivalent": 25,
+        "basis": "đơn vị gốc đã là gram (GZ PDF: 50 g cho 6 phần → 25 g cho 3 phần)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 25,
+          "unit": "g"
+        }
+      },
+      "note": "Dùng để làm sốt béchamel (đun chảy rồi cho bột mì vào). Dinh dưỡng: USDA FDC 173430 'Butter, without salt'.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 717,
+        "proteinG": 0.85,
+        "carbohydrateG": 0.06,
+        "fatG": 81.11,
+        "fiberG": 0,
+        "sugarG": 0.06,
+        "sodiumMg": 11
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173430",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Bột mì đa dụng",
+      "canonicalIngredientId": "ING_ENR_A9194AD78D914D6C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 25,
+        "unit": "g",
+        "text": "25 g",
+        "gramEquivalent": 25,
+        "basis": "đơn vị gốc đã là gram (GZ PDF: 50 g cho 6 phần → 25 g cho 3 phần)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 25,
+          "unit": "g"
+        }
+      },
+      "note": "Cho vào bơ đã chảy, khuấy 1–2 phút làm roux trước khi đổ sữa.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 364,
+        "proteinG": 10.33,
+        "carbohydrateG": 76.31,
+        "fatG": 0.98,
+        "fiberG": 2.7,
+        "sugarG": 0.27,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168894",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Sữa tươi",
+      "canonicalIngredientId": "FRESH_MILK",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "ml",
+        "text": "250 ml",
+        "gramEquivalent": 257,
+        "basis": "250 ml × tỉ trọng sữa tươi ~1.03 ≈ 257 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 250,
+          "unit": "ml"
+        }
+      },
+      "note": "GZ PDF: 'Latte fresco 1/2 litro' cho 6 phần → 250 ml cho 3 phần. Đổ từ từ vào roux vừa đổ vừa khuấy để sốt không vón.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 61,
+        "proteinG": 3.15,
+        "carbohydrateG": 4.8,
+        "fatG": 3.25,
+        "fiberG": 0,
+        "sugarG": 5.05,
+        "sodiumMg": 43
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171265",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Phô mai Parmigiano Reggiano bào mịn",
+      "canonicalIngredientId": "ING_ENR_C9AE2624E7F86759",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 25,
+        "unit": "g",
+        "text": "25 g",
+        "gramEquivalent": 25,
+        "basis": "đơn vị gốc đã là gram (GZ PDF: 50 g cho 6 phần → 25 g cho 3 phần)",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 25,
+          "unit": "g"
+        }
+      },
+      "note": "Cho vào béchamel sau khi sốt đã sánh, khuấy tan rồi nhấc khỏi bếp mới trộn rau.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 420,
+        "proteinG": 28.42,
+        "carbohydrateG": 13.91,
+        "fatG": 27.84,
+        "fiberG": 0,
+        "sugarG": 0.07,
+        "sodiumMg": 1804
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171247",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Dầu ô liu nguyên chất",
+      "canonicalIngredientId": "ING_ENR_3B7B05F341BDBC33",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 14,
+        "basis": "1 muỗng canh dầu ô liu = 15 ml ≈ 13.6 g (tỉ trọng dầu ~0.91); GZ dùng 2 muỗng canh cho 6 phần → 1 muỗng canh cho 3 phần",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Dùng để xào hành tây ở lửa thật nhỏ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171413",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "qualitative",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "qualitative",
+        "text": "GZ chỉ ghi 'q.b.' (vừa đủ), không có định lượng — để null theo quy tắc chống bịa đặt. Nêm vào béchamel và nêm lại sau khi trộn rau.",
+        "gramEquivalent": null,
+        "basis": null,
+        "evidence": "missing",
+        "runtime": null
+      },
+      "note": "GZ chỉ ghi 'q.b.' (vừa đủ), không có định lượng — để null theo quy tắc chống bịa đặt. Nêm vào béchamel và nêm lại sau khi trộn rau.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Nhục đậu khấu (nutmeg) bào",
+      "canonicalIngredientId": "ING_ENR_DDA16C6621051726",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "qualitative",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "qualitative",
+        "text": "GZ: 'un pizzico' (một nhúm nhỏ) bào vào béchamel — không có định lượng, để null.",
+        "gramEquivalent": null,
+        "basis": null,
+        "evidence": "missing",
+        "runtime": null
+      },
+      "note": "GZ: 'un pizzico' (một nhúm nhỏ) bào vào béchamel — không có định lượng, để null.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 525,
+        "proteinG": 5.84,
+        "carbohydrateG": 49.29,
+        "fatG": 36.31,
+        "fiberG": 20.8,
+        "sugarG": 2.99,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171326",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Nhặt bỏ lá úa, rửa rau bina thật sạch nhiều lần dưới vòi nước cho hết đất cát. Không cần để ráo hẳn — giữ lại phần nước đọng trên lá.",
+      "tip": "Có thể dùng rau bina tươi đã rửa sạch đóng túi bán sẵn (mẹo của GZ)."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cho rau bina còn ướt vào nồi to, đậy nắp, đun ở lửa vừa đến khi rau xẹp và chín mềm.",
+      "tip": "GZ: luộc rau bằng chính phần nước đọng lại sau khi rửa (thay vì nhiều nước) để giữ được nhiều dinh dưỡng nhất; cách tối ưu nhất là hấp nhanh (cottura a vapore).",
+      "timerMinutes": 5
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Vớt rau ra rổ, để hơi nguội rồi dùng tay vắt thật kỹ cho ra hết nước thừa, sau đó thái thô.",
+      "tip": "Bước then chốt: rau vắt không kỹ sẽ ra nước làm sốt béchamel bị loãng và nhạt."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Hành tây băm nhỏ. Cho dầu ô liu vào chảo nhỏ, xào hành ở lửa thật nhỏ đến khi hành trong suốt và mềm (khoảng 10 phút).",
+      "tip": "GZ: 'a fuoco dolcissimo' — lửa thật nhỏ, hành chỉ cần trong suốt, không để vàng hay cháy.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho rau bina đã vắt vào chảo hành, đảo nhanh vài giây ở lửa nhỏ cho rau thấm dầu và thơm hành."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Làm sốt béchamel: đun chảy bơ trong nồi nhỏ, cho bột mì vào khuấy đều 1–2 phút (không để bột vàng). Từ từ đổ sữa tươi vào, vừa đổ vừa khuấy liên tục bằng phới để không vón cục."
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nấu sốt ở lửa nhỏ, khuấy đều tay đến khi sốt sánh mịn. Nêm muối và bào một nhúm nhỏ nhục đậu khấu vào.",
+      "tip": "Sốt đạt là khi phủ đều mặt muỗng và vẽ một đường không bị chảy lấp ngay.",
+      "timerMinutes": 8
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho phô mai Parmigiano Reggiano bào mịn vào sốt béchamel, khuấy cho tan đều rồi nhấc nồi khỏi bếp.",
+      "tip": "GZ: cho phô mai vào rồi mới nhấc khỏi bếp — không đun tiếp để phô mai không bị tách dầu."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Đổ rau bina đã xào vào nồi sốt, trộn đều cho rau quyện hoàn toàn với béchamel. Nêm nếm lại muối cho vừa miệng."
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Dọn ngay ra đĩa khi còn nóng.",
+      "tip": "GZ: món này là contorno (món ăn kèm), rất hợp với thịt hoặc cá nướng; phải dọn ngay — để nguội sốt sẽ đặc quánh lại và mất ngon."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 3,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 182.58,
+      "proteinG": 10.45,
+      "carbohydrateG": 16.6,
+      "fatG": 10.14,
+      "fiberG": 5.73,
+      "sugarG": 1.08,
+      "sodiumMg": 348.92
+    },
+    "originalPerServing": {
+      "energyKcal": 278.76,
+      "proteinG": 13.22,
+      "carbohydrateG": 21.33,
+      "fatG": 17.59,
+      "fiberG": 5.84,
+      "sugarG": 5.69,
+      "sodiumMg": 386.11
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Sữa tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Dầu ô liu nguyên chất: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "QUALITATIVE_CONSUMED_AMOUNT",
+        "ingredientPosition": 7,
+        "detail": "Muối: edible quantity is qualitative"
+      },
+      {
+        "code": "QUALITATIVE_CONSUMED_AMOUNT",
+        "ingredientPosition": 8,
+        "detail": "Nhục đậu khấu (nutmeg) bào: edible quantity is qualitative"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      6,
+      7,
+      8
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "qualitative_quantity",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "qualitative_quantity",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

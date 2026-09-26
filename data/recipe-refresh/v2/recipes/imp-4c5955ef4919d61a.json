@@ -1,0 +1,516 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-4c5955ef4919d61a",
+    "slug": "mi-y-cua-ot",
+    "title": "Mì Ý cua ớt"
+  },
+  "content": {
+    "description": "Linguine cua thịt với ớt-tỏi sốt dầu, món pasta biển Ý sang trọng cho tối đặc biệt.",
+    "cuisine": "italian",
+    "cookTimeMinutes": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Linguine cua",
+      "Ý",
+      "Pasta",
+      "Biển"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/it/imp-4c5955ef4919d61a.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,nutrition_note,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.ciociariaecucina.it/diario-di-cucina/spaghetti-aglio-olio-e-peperoncino-con-polpa-di-granchio-e-bottarga-di-muggine/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://cucinaconmegraziellaeraffaele.it/spaghetti-al-granchio-blu/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "nutrition_note: Số liệu làm tròn 1 chữ số thập phân. Gợi ý assignment có 'hành lá' nhưng nguồn Ciociaria không dùng hành lá — đã loại khỏi công thức và ghi rõ tại đây."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì Ý spaghetti khô",
+      "canonicalIngredientId": "ING_ENR_9AC85FC487BFBC5A",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "Nguồn Ciociaria ghi đúng 400 g spaghetti cho 4 khẩu phần — giữ nguyên.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 371,
+        "proteinG": 13.2,
+        "carbohydrateG": 74.7,
+        "fatG": 1.5,
+        "fiberG": 3.2,
+        "sugarG": 2.6,
+        "sodiumMg": 5.5
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Pasta%2C_enriched%2C_dry_nutritional_value.html",
+      "sourceNutritionNote": "Số liệu quy đổi từ khẩu phần 91 g ghi trên trang (338 kcal/91 g → 371 kcal/100 g, các chỉ số khác quy đổi tương tự)."
+    },
+    {
+      "position": 1,
+      "sourceName": "Thịt cua đã làm sạch",
+      "canonicalIngredientId": "CRAB_MEAT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "g",
+        "text": "250 g",
+        "gramEquivalent": 250,
+        "basis": "Nguồn Ciociaria ghi đúng 250 g thịt cua đã làm sạch (polpa di granchio) cho 4 khẩu phần — giữ nguyên.",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 250,
+          "unit": "g"
+        }
+      },
+      "note": "Điểm nguồn mâu thuẫn: Ciociaria dùng thịt cua làm sạch sẵn, không nấu cà chua; nguồn Graziella/Raffaele dùng 2 con cua xanh nguyên con nấu cùng 150 g cà chua bi và vang trắng. Ưu tiên Ciociaria vì khớp tên món 'Mì Ý cua ớt' (không nhắc cà chua).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 93,
+        "proteinG": 19.9,
+        "carbohydrateG": 2.2,
+        "fatG": 0.5,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 342
+      },
+      "sourceNutritionReference": "https://i.fnri.dost.gov.ph/fct/library/report/4017",
+      "sourceNutritionNote": "Số liệu của cua xanh Philippines (FNRI-DOST); cua xanh Địa Trung Hải cùng họ Portunidae nên chấp nhận làm tương đương gần đúng."
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "tép",
+        "text": "1 tép",
+        "gramEquivalent": 3,
+        "basis": "Nguồn Ciociaria dùng 1 tép tỏi ('1 spicchio d'aglio'). 1 tép tỏi ≈ 3 g (NutritionValue: 1 clove garlic = 3 g).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Nguồn nhấn mạnh phi tỏi ở lửa thấp, không để vàng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Garlic%2C_raw_nutritional_value.html?size=100%20g",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Dầu ô liu nguyên chất",
+      "canonicalIngredientId": "ING_ENR_3B7B05F341BDBC33",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "muỗng canh",
+        "text": "3 muỗng canh",
+        "gramEquivalent": 42,
+        "basis": "Nguồn Ciociaria chỉ ghi q.b. (vừa đủ); 3 muỗng canh là ước lượng bếp cho món xào tỏi-ớt 4 khẩu phần (không phải số liệu nguồn). 1 muỗng canh dầu ô liu = 14,0 g (trang NutritionValue của dầu ô liu).",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Gợi ý assignment ghi 'dầu ăn' chung chung; nguồn Ý dùng dầu ô liu nguyên chất — dùng đúng theo nguồn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 900,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Olive_oil_82104000_nutritional_value.html?size=100+g",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Ớt khô",
+      "canonicalIngredientId": "ING_ENR_D222D118E5B8BD04",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "quả",
+        "text": "1 quả",
+        "gramEquivalent": 1,
+        "basis": "Nguồn Ciociaria ghi 'peperoncino secco' (ớt khô) không định lượng; 1 quả ớt khô nhỏ ≈ 1 g (ước lượng bếp).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "Không tìm được số liệu dinh dưỡng tin cậy cho ớt khô — để null toàn bộ theo quy tắc chống bịa đặt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không tìm được số liệu dinh dưỡng tin cậy cho ớt khô — để null toàn bộ theo quy tắc chống bịa đặt."
+    },
+    {
+      "position": 5,
+      "sourceName": "Bottarga cá đối",
+      "canonicalIngredientId": "ING_ENR_A23BF1D6EA6124A3",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "qualitative",
+        "text": "Nguồn Ciociaria dùng bottarga bào mỏng rắc khi dọn ('leggera grattugiata di bottarga di muggine') nhưng không ghi định lượng; không tìm được số liệu dinh dưỡng tin cậy — để null theo quy tắc chống bịa đặt. Nguyên liệu tùy chọn, có thể bỏ qua.",
+        "gramEquivalent": null,
+        "basis": null,
+        "evidence": "missing",
+        "runtime": null
+      },
+      "note": "Nguồn Ciociaria dùng bottarga bào mỏng rắc khi dọn ('leggera grattugiata di bottarga di muggine') nhưng không ghi định lượng; không tìm được số liệu dinh dưỡng tin cậy — để null theo quy tắc chống bịa đặt. Nguyên liệu tùy chọn, có thể bỏ qua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có định lượng nguồn và không có số liệu dinh dưỡng tin cậy."
+    },
+    {
+      "position": 6,
+      "sourceName": "Vỏ chanh vàng bào",
+      "canonicalIngredientId": "ING_ENR_DA961A9056D3DC57",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "g",
+        "text": "6 g",
+        "gramEquivalent": 6,
+        "basis": "Nguồn Ciociaria dùng vỏ bào của 1 quả chanh; 1 muỗng canh vỏ chanh bào ≈ 6 g (NutritionValue: 1 tbsp lemon peel = 6 g).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6,
+          "unit": "g"
+        }
+      },
+      "note": "Chỉ bào phần vỏ vàng, tránh phần cùi trắng gây đắng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 47,
+        "proteinG": 1.5,
+        "carbohydrateG": 16,
+        "fatG": 0.3,
+        "fiberG": 11,
+        "sugarG": 4.2,
+        "sodiumMg": 6
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Lemon_peel%2C_raw_nutritional_value.html?size=100%20g",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Mùi tây tươi",
+      "canonicalIngredientId": "ING_ENR_D6EDD5F0078ABE8C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "Nguồn Ciociaria ghi 'prezzemolo fresco tritato' không định lượng; 10 g ≈ 1 nắm nhỏ mùi tây băm (ước lượng bếp).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 36,
+        "proteinG": 3,
+        "carbohydrateG": 6.3,
+        "fatG": 0.8,
+        "fiberG": 3.3,
+        "sugarG": 0.9,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://www.nutritionvalue.org/Parsley,_fresh_nutritional_value.html?size=100+g",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "g",
+        "text": "2 g",
+        "gramEquivalent": 2,
+        "basis": "Nguồn Ciociaria chỉ ghi 'sale q.b.'; 2 g là ước lượng bếp cho 4 khẩu phần, chưa tính muối trong nước luộc mì (thường thải bỏ cùng nước).",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "g"
+        }
+      },
+      "note": null,
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://www.recipetips.com/usda/food-nutrition/t--02047/salt-table.asp",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Đun sôi một nồi to nước với 1 muỗng canh muối. Cho spaghetti vào luộc, tính thời gian ít hơn hướng dẫn trên bao bì khoảng 1 phút để mì còn rất al dente; trước khi vớt giữ lại 1 vá nước luộc mì.",
+      "tip": "Nước luộc mì chứa tinh bột, là 'chất kết dính' tự nhiên giúp sốt dầu bám đều vào sợi mì — đừng đổ bỏ hết."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Trong lúc chờ mì: mùi tây rửa sạch, băm thật nhỏ; chanh rửa sạch, bào lấy phần vỏ vàng (tránh cùi trắng). Thịt cua để ráo, gỡ bỏ mảnh vỏ cứng nếu còn sót."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Cho dầu ô liu, tép tỏi đập dập và ớt khô vào chảo sâu lòng còn lạnh, bật lửa nhỏ. Phi từ từ khoảng 2–3 phút cho dầu thơm mùi tỏi ớt.",
+      "tip": "Nguồn Ciociaria nhấn mạnh: phi ở nhiệt thấp và tuyệt đối không để tỏi chuyển vàng — tỏi vàng sẽ làm cả món bị đắng.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Gắp bỏ tép tỏi (tùy thích), cho thịt cua vào chảo, đảo nhẹ tay khoảng 1–2 phút cho cua ấm lên và ngấm dầu thơm. Không đảo mạnh tay làm nát thịt cua.",
+      "tip": "Cua đã chín sẵn nên chỉ cần làm ấm; nấu lâu thịt cua sẽ khô và bở.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Múc 1 vá nước luộc mì đang sôi cho vào chảo cua, lắc chảo và khuấy nhanh tay để dầu và nước luộc nhũ hóa thành lớp sốt hơi sánh, bao đều thịt cua.",
+      "tip": "Kỹ thuật mantecatura: nhũ hóa bằng nước luộc mì giúp sốt 'trắng' sánh mịn mà không cần kem hay bơ."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Vớt mì đang rất al dente cho thẳng vào chảo sốt, đảo và xóc chảo trên lửa vừa khoảng 1 phút cho sợi mì hút sốt và hoàn tất độ chín.",
+      "tip": "Nếu chảo khô, thêm từng ít nước luộc mì cho đến khi sốt bám bóng đều sợi mì.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Tắt bếp. Cho vỏ chanh bào và mùi tây băm vào, rưới thêm một vòng dầu ô liu nguyên chất sống, trộn đều.",
+      "tip": "Cho vỏ chanh và rau thơm ngoài lửa để giữ hương tươi; nhiệt dư của chảo đủ làm dậy mùi."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Chia mì ra 4 đĩa, bào một lớp mỏng bottarga cá đối lên trên mỗi đĩa (nếu dùng). Dọn nóng ngay.",
+      "tip": "Bottarga mặn và thơm đặc trưng — chỉ bào một lớp mỏng, không cho nhiều."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 429.13,
+      "proteinG": 25.64,
+      "carbohydrateG": 76.08,
+      "fatG": 1.81,
+      "fiberG": 3.2,
+      "sugarG": 2.6,
+      "sodiumMg": 219.25
+    },
+    "originalPerServing": {
+      "energyKcal": 526.35,
+      "proteinG": 25.78,
+      "carbohydrateG": 76.72,
+      "fatG": 12.34,
+      "fiberG": 3.46,
+      "sugarG": 2.69,
+      "sodiumMg": 414.87
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Dầu ô liu nguyên chất: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Ớt khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Vỏ chanh vàng bào: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Mùi tây tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      3,
+      5
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 5,
+        "reason": "qualitative_quantity",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,672 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-9f9a3f24b4141acb",
+    "slug": "cua-chien-toi-ot-thai",
+    "title": "Cua chiên tỏi ớt Thái"
+  },
+  "content": {
+    "description": "Cua chiên giòn tỏi-ớt vàng thơm, món chiên biển Thái giòn cạnh đậm vị.",
+    "cuisine": "thai",
+    "cookTimeMinutes": 40,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Chiên",
+      "Cua",
+      "Tỏi ớt",
+      "Thái Lan"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/th/imp-9f9a3f24b4141acb.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps,title_fix",
+    "sources": [
+      {
+        "url": "https://www.wongnai.com/recipes/ugc/bd72b139cd1145bc9c0e8e7156ee8e1a",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.pim.in.th/side-dish-by-seafood-and-aquatic-food/801-fried-soft-shell-crabs-with-pepper-and-garlic",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": [
+      "title_fix: File cũ bị flag vì dùng nguồn TÔM (goong pad prik kratiem) áp lên thịt cua gỡ sẵn — không phải công thức cua thật. Món thật đúng tên 'Cua chiên tỏi ớt Thái' là ปูนิ่มคั่วพริกเกลือ / ปูนิ่มผัดพริกเกลือ (cua lột chiên giòn xào tỏi ớt): cua lột chiên ngập dầu rồi xào với tỏi, ớt, rễ rau mùi, nêm muối-đường. Hai nguồn Thái độc lập đã đọc full page: wongnai.com và pim.in.th. Xung đột nguồn: wongnai dùng 200 g bột chiên giòn cho 2 con cua còn pim chỉ dùng 3 muỗng canh; pim dùng tiêu xay còn wongnai dùng đường — đã ghi chú rõ trong từng nguyên liệu."
+    ]
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Cua lột (cua mềm vỏ, soft-shell crab)",
+      "canonicalIngredientId": "ING_ENR_8CDB1BC40CD742C0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "con",
+        "text": "4 con",
+        "gramEquivalent": 800,
+        "basis": "2 ตัว ≈ 400 g (pim.in.th); x2 cho 4 khẩu phần",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Rã đông, cắt mỗi con làm 4 phần, thấm thật khô",
+      "sourceNutritionPer100g": {
+        "energyKcal": 87,
+        "proteinG": 18.06,
+        "carbohydrateG": 0.04,
+        "fatG": 1.08,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 293
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174204",
+      "sourceNutritionNote": "FDC 174204, SR Legacy (Crustaceans, crab, blue, raw)"
+    },
+    {
+      "position": 1,
+      "sourceName": "Bột chiên giòn",
+      "canonicalIngredientId": "ING_ENR_9D5FCCF96F7849F8",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 400,
+        "unit": "g",
+        "text": "400 g",
+        "gramEquivalent": 400,
+        "basis": "Không có mục bột chiên giòn trong USDA; nguồn wongnai dùng 200 g cho 2 phần ăn, x2 cho 4 khẩu phần",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 400,
+          "unit": "g"
+        }
+      },
+      "note": "Lăn khô cua qua bột (không pha nước). LƯU Ý: nguồn pim.in.th chỉ dùng 3 muỗng canh (~25 g) cho 2 con cua — hai nguồn chênh lệch lớn, ở đây theo tỷ lệ của wongnai.",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có mục USDA tin cậy cho bột chiên giòn hỗn hợp (chỉ có mục Branded), giữ null"
+    },
+    {
+      "position": 2,
+      "sourceName": "Tỏi băm",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 6,
+        "unit": "củ",
+        "text": "6 củ",
+        "gramEquivalent": 180,
+        "basis": "1 củ tỏi ≈ 30 g; 3 หัว (wongnai) cho 2 phần ăn, x2 cho 4 khẩu phần",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 6,
+          "unit": "piece"
+        }
+      },
+      "note": "Một phần chiên vàng giòn trước để rắc cuối, phần còn lại phi thơm xào cùng cua",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": "FDC 169230, SR Legacy"
+    },
+    {
+      "position": 3,
+      "sourceName": "Ớt hiểm băm (pơrik khi nu suan)",
+      "canonicalIngredientId": "ING_ENR_43D149B5C5B574EA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "quả",
+        "text": "4 quả",
+        "gramEquivalent": 4,
+        "basis": "1 quả ớt hiểm ≈ 1 g; 2 เม็ด (wongnai) cho 2 phần ăn, x2",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "Băm nhỏ, phi cùng tỏi; điều chỉnh theo khả năng ăn cay",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 2,
+        "carbohydrateG": 9.46,
+        "fatG": 0.2,
+        "fiberG": 1.5,
+        "sugarG": 5.1,
+        "sodiumMg": 7
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170497",
+      "sourceNutritionNote": "FDC 170497, SR Legacy (Peppers, hot chili, green, raw)"
+    },
+    {
+      "position": 4,
+      "sourceName": "Ớt sừng đỏ băm (pơrik chi fa)",
+      "canonicalIngredientId": "ING_ENR_B571C1C6B9A1B8DB",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 30,
+        "basis": "1 quả ớt sừng đỏ ≈ 15 g; 1 เม็ด (wongnai) cho 2 phần ăn, x2",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Băm nhỏ, cho vào sau cùng với cua để giữ màu đỏ đẹp",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.87,
+        "carbohydrateG": 8.81,
+        "fatG": 0.44,
+        "fiberG": 1.5,
+        "sugarG": 5.3,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170106",
+      "sourceNutritionNote": "FDC 170106, SR Legacy (Peppers, hot chili, red, raw)"
+    },
+    {
+      "position": 5,
+      "sourceName": "Rễ rau mùi (rễ ngò rí) băm",
+      "canonicalIngredientId": "ING_ENR_B00D42629A00757B",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "rễ",
+        "text": "10 rễ",
+        "gramEquivalent": 30,
+        "basis": "10 rễ ≈ 30 g (ước chừng 3 g/rễ)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "piece"
+        }
+      },
+      "note": "Băm nhỏ, phi cùng tỏi tạo hương thơm đặc trưng món Thái",
+      "sourceNutritionPer100g": {
+        "energyKcal": null,
+        "proteinG": null,
+        "carbohydrateG": null,
+        "fatG": null,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "Không có mục USDA tin cậy cho rễ rau mùi, giữ null"
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "2 cây ≈ 30 g; gồm phần lá cắt khúc (ต้นหอมซอย) và phần đầu trắng (โคนต้นหอม) theo wongnai",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "Phần lá cắt khúc rắc cuối; phần đầu trắng cắt khúc xào cùng ớt sừng",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/2709794",
+      "sourceNutritionNote": "FDC 2709794, FNDDS Survey"
+    },
+    {
+      "position": 7,
+      "sourceName": "Rau mùi (ngò rí)",
+      "canonicalIngredientId": "ING_ENR_D6CB7B7A9989F08F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 5,
+        "unit": "g",
+        "text": "5 g",
+        "gramEquivalent": 5,
+        "basis": "Một nắm nhỏ trang trí",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 5,
+          "unit": "g"
+        }
+      },
+      "note": "Trang trí mặt đĩa",
+      "sourceNutritionPer100g": {
+        "energyKcal": 23,
+        "proteinG": 2.13,
+        "carbohydrateG": 3.67,
+        "fatG": 0.52,
+        "fiberG": 2.8,
+        "sugarG": 0.87,
+        "sodiumMg": 46
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169997",
+      "sourceNutritionNote": "FDC 169997, SR Legacy"
+    },
+    {
+      "position": 8,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 6,
+        "basis": "1 muỗng cà phê muối ≈ 6 g; 1/2 ช้อนชา (wongnai) cho 2 phần ăn, x2",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nêm vào lúc xào cua",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": "FDC 173468, SR Legacy"
+    },
+    {
+      "position": 9,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê đường ≈ 4 g; 1/2 ช้อนชา (wongnai) cho 2 phần ăn, x2",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Nêm vào lúc xào cua. LƯU Ý: nguồn pim.in.th KHÔNG dùng đường — theo wongnai.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": "FDC 169655, SR Legacy"
+    },
+    {
+      "position": 10,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1/2 muỗng cà phê tiêu xay ≈ 1 g; theo pim.in.th (1/4 ชช. cho 2 con cua), x2",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Tùy chọn — chỉ có ở nguồn pim.in.th, dùng ướp/lăn cùng bột",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": "FDC 170931, SR Legacy"
+    },
+    {
+      "position": 11,
+      "sourceName": "Dầu ăn (để chiên ngập)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 700,
+        "unit": "ml",
+        "text": "700 ml",
+        "gramEquivalent": 640,
+        "basis": "pim.in.th: 1.5 ถ้วย (~360 ml) cho 2 con cua; x2 ≈ 700 ml ≈ 640 g (tỉ trọng dầu ~0.91)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 700,
+          "unit": "ml"
+        }
+      },
+      "note": "Dùng chiên cua ngập dầu; phần lớn được gạn bỏ sau khi chiên",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172336",
+      "sourceNutritionNote": "FDC 172336, SR Legacy (dầu canola, dùng làm đại diện cho dầu ăn thông dụng)"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Rã đông cua lột hoàn toàn nếu dùng cua đông lạnh. Mỗi con cắt làm 4 phần (con nhỏ cắt làm 2). Rửa nhanh qua nước, để ráo rồi thấm thật khô bằng khăn giấy.",
+      "tip": "Bí quyết của pim.in.th: cắt cua khi còn hơi đông dở để được miếng đẹp; cua phải thật khô thì khi chiên dầu mới không bắn và cua mới giòn.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Tỏi bóc vỏ, băm nhỏ (chia khoảng 1 muỗng canh ra để riêng). Ớt hiểm và ớt sừng băm nhỏ. Rễ rau mùi rửa sạch, băm nhỏ. Hành lá cắt khúc: phần lá xanh để rắc cuối, phần đầu trắng để xào.",
+      "tip": "Chuẩn bị sẵn hết nguyên liệu vì các bước xào diễn ra rất nhanh.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun nóng một ít dầu trong chảo, cho phần tỏi băm đã chia ra vào chiên đến vàng giòn, nhanh tay vớt ra để ráo dầu, phơi cho khô giòn.",
+      "tip": "Chiên vừa vàng thì vớt ngay — tỏi còn nóng sẽ vàng thêm và dễ bị đắng nếu để quá (wongnai).",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Cho cua vào tô lớn, rắc bột chiên giòn (và tiêu xay nếu dùng) vào, xóc/lăn đều cho bột bám khắp các miếng cua. Không pha bột với nước.",
+      "tip": "Lăn bột khô giúp cua giòn rụm; lắc nhẹ cho rơi bớt bột thừa để lớp vỏ không bị dày.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Đun nóng lượng dầu chiên ngập đến khoảng 170–180°C. Thả từng miếng cua vào chiên đến vàng giòn đều các mặt thì vớt ra, để lên rổ/giấy thấm dầu.",
+      "tip": "Chiên từng mẻ vừa chảo, không thả dồn một lúc kẻo nhiệt dầu tụt làm cua ỉu. pim.in.th: dùng lửa vừa, lửa quá to cua dễ cháy trước khi giòn.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Dùng lại chảo vừa chiên, gạn hết dầu chỉ chừa lại một lớp mỏng. Bật lửa nhỏ, cho phần tỏi băm còn lại, rễ rau mùi băm và ớt hiểm băm vào phi đến thơm.",
+      "tip": "Phi lửa nhỏ để tỏi và ớt dậy mùi mà không cháy.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Mở lửa lớn, cho ớt sừng đỏ băm và phần đầu trắng hành lá vào, đảo nhanh tay cho ớt vừa chín tới.",
+      "tip": "Ớt sừng cho vào sau để giữ màu đỏ tươi đẹp mắt (wongnai).",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Cho cua đã chiên vào chảo, nêm muối và đường, đảo/xóc nhanh tay cho gia vị bám đều quanh các miếng cua.",
+      "tip": "Đảo nhẹ tay để cua không bị nát; nêm xong nếm lại cho vừa miệng — món có vị mặn ngọt cay hài hòa (wongnai). pim.in.th lưu ý lượng ớt có thể tăng giảm theo khẩu vị.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho phần lá hành cắt khúc vào, đảo nhanh một lượt rồi tắt bếp. Gắp cua ra đĩa lớn, rắc tỏi chiên giòn lên trên, trang trí rau mùi. Dùng ngay khi còn nóng giòn.",
+      "tip": "Món ngon nhất khi ăn nóng — để nguội cua mất giòn, độ ngon giảm hơn một nửa (pim.in.th)."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Cua lột (cua mềm vỏ, soft-shell crab): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 1,
+        "detail": "Bột chiên giòn: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Tỏi băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Ớt hiểm băm (pơrik khi nu suan): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Ớt sừng đỏ băm (pơrik chi fa): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Rễ rau mùi (rễ ngò rí) băm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 11,
+        "detail": "Dầu ăn (để chiên ngập): consumed/absorbed amount is not evidenced"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "estimated_process",
+        "requiresReviewedTransformation": false
+      }
+    ]
+  }
+}

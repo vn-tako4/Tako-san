@@ -1,0 +1,713 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-85a3d8b84fc0bc05",
+    "slug": "mi-ramen-pho-mai-kim-chi",
+    "title": "Mì ramen phô mai kim chi"
+  },
+  "content": {
+    "description": "Mì ramen nóng chanh? nóng cay với kim chi, trứng và phô mai tan chảy, tô ramyeon phô mai quốc dân Hàn Quốc.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "difficulty": "easy",
+    "tags": [
+      "Ramyeon",
+      "Hàn Quốc",
+      "Phô mai",
+      "Cay"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-85a3d8b84fc0bc05.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://cookcookgo.com/korean-kimchi-bacon-cheese-ramen/?noamp=available",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://thewoksoflife.com/kimchi-ramen/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Mì ramen ăn liền",
+      "canonicalIngredientId": "ING_ENR_F98524277321E615",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "gói",
+        "text": "2 gói",
+        "gramEquivalent": 240,
+        "basis": "ước tính theo gói mì ăn liền Hàn tiêu chuẩn ~120 g/gói (VD: Ottogi Jin Ramen 120 g); cookcookgo không ghi khối lượng gói; FDC liệt kê 1 gói ~81 g cho chuẩn gói Mỹ — hai chuẩn khác nhau, lấy theo chuẩn Hàn vì món Hàn",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 2,
+          "unit": "pack"
+        }
+      },
+      "note": "cookcookgo: '2 packages Instant Ramen Noodles' (2 phần), không ghi khối lượng gói.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 384,
+        "proteinG": 14.16,
+        "carbohydrateG": 71.27,
+        "fatG": 4.44,
+        "fiberG": 3.3,
+        "sugarG": 1.88,
+        "sodiumMg": 21
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169731",
+      "sourceNutritionNote": "Gói gia vị đi kèm KHÔNG dùng trong công thức này (cookcookgo nêm bằng nước kim chi + đường + hạt nêm gà); mì được luộc, xả ráo. Không có mục FDC SR riêng cho 'vắt mì ramen ăn liền đã chiên' nên dùng xấp xỉ mì trứng khô — chất béo thực tế của mì gói chiên (dầu cọ) cao hơn số liệu này."
+    },
+    {
+      "position": 1,
+      "sourceName": "Kim chi cải thảo",
+      "canonicalIngredientId": "ING_ENR_EC9C3FE3D678828E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cup",
+        "text": "1 cup",
+        "gramEquivalent": 150,
+        "basis": "FDC 170392: 1 cup kim chi cải thảo = 150 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "cookcookgo: 1 cup kim chi cắt nhỏ (2 phần); The Woks of Life: 1/2 cup cho 1 phần (tương đương 1 cup cho 2 phần) — hai nguồn khớp nhau.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": 1.06,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Nước kim chi",
+      "canonicalIngredientId": "ING_ENR_27FD2253A7768761",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 80,
+        "unit": "ml",
+        "text": "80 ml",
+        "gramEquivalent": 80,
+        "basis": "1 cup = 240 ml; tỉ trọng nước kim chi ≈ 1 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 80,
+          "unit": "ml"
+        }
+      },
+      "note": "cookcookgo: 1/3 cup (80 ml) nước kim chi (2 phần); The Woks of Life: 1/4 cup cho 1 phần — hai nguồn mâu thuẫn nhẹ, lấy theo cookcookgo là nguồn chính của món.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 15,
+        "proteinG": 1.1,
+        "carbohydrateG": 2.4,
+        "fatG": 0.5,
+        "fiberG": 1.6,
+        "sugarG": 1.06,
+        "sodiumMg": 498
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170392",
+      "sourceNutritionNote": "Không có mục FDC riêng cho nước kim chi; dùng xấp xỉ số liệu kim chi cải thảo (170392)."
+    },
+    {
+      "position": 3,
+      "sourceName": "Phô mai cheddar bào sợi",
+      "canonicalIngredientId": "ING_ENR_A6BE86576EBE11FA",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.25,
+        "unit": "cup",
+        "text": "0.25 cup",
+        "gramEquivalent": 25,
+        "basis": "FDC 328637: 1 cup cheddar bào sợi = 105 g → 1/4 cup ≈ 26 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "cookcookgo: '1/4 cup Shredded Cheddar Cheese or more' — không định lượng chính xác phần 'or more'; lấy 1/4 cup ≈ 25 g. Dùng cheddar mild theo gợi ý của nguồn (có thể thay sharp/extra-sharp nếu thích đậm vị hơn).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 408,
+        "proteinG": 23.3,
+        "carbohydrateG": 2.44,
+        "fatG": 34,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 654
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/328637",
+      "sourceNutritionNote": "Mục FDC Foundation không công bố fiber và sugar — để null, không ước tính."
+    },
+    {
+      "position": 4,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "quả",
+        "text": "2 quả",
+        "gramEquivalent": 100,
+        "basis": "USDA FoodData Central: 1 large egg = 50 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "cookcookgo chỉ gợi ý 'top with a Fried Egg' (trứng ốp la đặt lên trên) ở bước dọn; hint món liệt kê trứng gà là nguyên liệu chính nên đưa vào định lượng 1 quả/phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Tỏi",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "tép",
+        "text": "3 tép",
+        "gramEquivalent": 15,
+        "basis": "ước tính: 1 tép tỏi lớn ≈ 5 g (tép trung bình ~3 g theo FDC)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "cookcookgo: 3 large garlic cloves, băm nhỏ (2 phần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 149,
+        "proteinG": 6.36,
+        "carbohydrateG": 33.06,
+        "fatG": 0.5,
+        "fiberG": 2.1,
+        "sugarG": 1,
+        "sodiumMg": 17
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169230",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành tím (hành tây đỏ)",
+      "canonicalIngredientId": "ING_ENR_2912BBD02202AAF6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "củ",
+        "text": "1 củ",
+        "gramEquivalent": 70,
+        "basis": "USDA: 1 củ hành (tây) nhỏ ≈ 70 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "cookcookgo: '1 small Red Onion, diced' (2 phần). The Woks of Life không dùng hành tím.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": 4.24,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "cây",
+        "text": "2 cây",
+        "gramEquivalent": 30,
+        "basis": "FDC 170005: 1 cây hành lá trung bình = 15 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 2,
+          "unit": "piece"
+        }
+      },
+      "note": "cookcookgo: 2 green onions, thái nhỏ (2 phần). The Woks of Life: 1 scallion cho 1 phần — khớp tỉ lệ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Dầu mè",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "muỗng cà phê",
+        "text": "4 muỗng cà phê",
+        "gramEquivalent": 18,
+        "basis": "2 tsp trộn mì sau luộc + 2 tsp cho vào lúc trộn cuối; 1 tsp = 5 ml; tỉ trọng dầu mè ≈ 0,91 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "cookcookgo: '2 tsp Sesame Oil + 2 tsp extra' (2 phần): 2 tsp trộn vào mì sau khi xả ráo cho tơi, 2 tsp cho vào khi trộn cuối cùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Dầu thực vật",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 9,
+        "basis": "1 tsp = 5 ml; tỉ trọng dầu thực vật ≈ 0,91 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "cookcookgo: 2 tsp vegetable oil để phi tỏi (2 phần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/172370",
+      "sourceNutritionNote": "Dùng số liệu dầu đậu nành tinh luyện (FDC 172370) làm đại diện cho 'dầu thực vật' chung."
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 2,
+        "basis": "1 tsp đường cát ≈ 4 g (USDA)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "cookcookgo: 1/2 tsp sugar (2 phần). The Woks of Life: 1/4 tsp cho 1 phần — khớp tỉ lệ.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Hạt nêm gà",
+      "canonicalIngredientId": "ING_ENR_558AA52E8ADF933E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "ước tính: 1 tsp bột nêm gà ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "cookcookgo: 1/2 tsp chicken bouillon (2 phần) — thay cho gói gia vị mì. Nguồn không ghi loại viên hay bột; lấy theo dạng bột.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.66,
+        "carbohydrateG": 18.01,
+        "fatG": 13.88,
+        "fiberG": 0,
+        "sugarG": 17.36,
+        "sodiumMg": 23875
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Nước luộc mì (giữ lại)",
+      "canonicalIngredientId": "ING_ENR_4C9FDCDAC6D4EAE4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 80,
+        "unit": "ml",
+        "text": "80 ml",
+        "gramEquivalent": 80,
+        "basis": "1/3 cup = 80 ml; tỉ trọng ≈ 1 g/ml",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 80,
+          "unit": "ml"
+        }
+      },
+      "note": "Không phải nguyên liệu mua riêng: múc lại từ nồi luộc mì trước khi xả ráo (cookcookgo: reserve 1/3 cup ramen water), dùng để trộn tạo độ ẩm cho mì.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 2
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174158",
+      "sourceNutritionNote": "Nước luộc mì chứa tinh bột và muối thôi ra từ mì nên giá trị thực cao hơn nước lọc; dùng số liệu nước lọc (FDC 174158) làm mốc thấp."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Sơ chế: kim chi cắt nhỏ; tỏi băm nhuyễn; hành tím thái hạt lựu; hành lá thái nhỏ để riêng phần trang trí.",
+      "tip": "Kim chi dùng loại lên men kỹ (chua vừa) sẽ thơm hơn khi xào — The Woks of Life cũng dùng kim chi xào trước khi cho chất lỏng."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Đun sôi một nồi nước lớn. Cho 2 vắt mì ramen vào, luộc 2–3 phút, không luộc quá chín. Trước khi đổ mì ra, múc giữ lại 80 ml nước luộc.",
+      "tip": "cookcookgo nhấn mạnh 'Do not overcook' vì mì còn đảo nóng trên chảo sau đó.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đổ mì ra rổ, xả nhanh qua nước lạnh cho tơi, để ráo. Cho mì vào tô, trộn ngay với 2 muỗng cà phê dầu mè để sợi mì không dính vào nhau. Để sang một bên.",
+      "tip": "Xả nước lạnh giúp mì giữ độ dai (theo cookcookgo)."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đặt chảo lớn lên bếp lửa vừa-cao, cho 2 muỗng cà phê dầu thực vật. Dầu nóng thì cho tỏi băm vào phi khoảng 15 giây cho thơm, không để cháy.",
+      "tip": "Tỏi cháy sẽ đắng — đảo nhanh tay và chuyển bước ngay khi dậy mùi thơm.",
+      "timerMinutes": 1
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Cho hành tím vào, xào khoảng 2 phút cho hơi mềm. Thêm kim chi cắt nhỏ, đảo đều thêm 1 phút.",
+      "tip": "Xào kim chi trước giúp kim chi dậy mùi thơm và bớt gắt — cả hai nguồn đều làm bước này (The Woks of Life xào kim chi 2 phút trước khi cho nước dùng).",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho mì đã trộn dầu mè vào chảo. Thêm nước kim chi, đường, hạt nêm gà và 80 ml nước luộc mì đã giữ lại. Đảo đều tay cho mì thấm gia vị, sau đó thêm 2 muỗng cà phê dầu mè còn lại, trộn đều lần nữa.",
+      "tip": "MÂU THUẪN PHƯƠNG PHÁP GIỮA HAI NGUỒN: cookcookgo làm kiểu mì trộn khô (không nước dùng, nêm bằng nước kim chi + hạt nêm gà thay gói gia vị); The Woks of Life làm kiểu mì nước với 2,5 cup nước dùng gà/rau. Công thức này theo cookcookgo (khớp tên món 'mì ramen phô mai kim chi' và hint không có nước dùng). Nếu thích ăn nước, có thể thêm nước dùng theo cách của The Woks of Life.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Rắc hành lá thái nhỏ vào, đảo đều. Hạ lửa xuống vừa-nhỏ, rải đều phô mai cheddar bào sợi lên mặt mì, đậy nắp chảo lại cho phô mai chảy ra.",
+      "tip": "cookcookgo: hạ lửa trước khi cho phô mai để mì không bị nấu quá chín trong lúc chờ phô mai chảy.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Trong lúc chờ phô mai chảy, ốp la 2 quả trứng trong chảo khác (lòng đào hoặc chín tùy thích). Chia mì ra 2 tô, đặt mỗi tô 1 quả trứng ốp la lên trên, rắc thêm hành lá. Dọn ăn ngay khi còn nóng.",
+      "tip": "cookcookgo gợi ý trứng ốp la là topping tùy chọn nhưng rất hợp; ăn ngay để phô mai còn chảy và mì chưa bị nở.",
+      "timerMinutes": 3
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 2,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 87.55,
+      "proteinG": 7.38,
+      "carbohydrateG": 3.26,
+      "fatG": 5.16,
+      "fiberG": 1.59,
+      "sugarG": 1.33,
+      "sodiumMg": 446.9
+    },
+    "originalPerServing": {
+      "energyKcal": 757.74,
+      "proteinG": 28.84,
+      "carbohydrateG": 97.07,
+      "fatG": 28.72,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1114.66
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Mì ramen ăn liền: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nước kim chi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Phô mai cheddar bào sợi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Tỏi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Hành tím (hành tây đỏ): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Dầu mè: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Dầu thực vật: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Hạt nêm gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Nước luộc mì (giữ lại): gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      2,
+      3,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 2,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 3,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

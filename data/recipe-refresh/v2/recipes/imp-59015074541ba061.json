@@ -1,0 +1,732 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-59015074541ba061",
+    "slug": "canh-kho-qua-nhoi-tom",
+    "title": "Canh khổ qua nhồi tôm"
+  },
+  "content": {
+    "description": "Khổ qua cắt khoanh nhồi nhân tôm-thịt băm dai ngọt, hầm nước dùng trong, món canh giải nhiệt quen thuộc ngày hè.",
+    "cuisine": "vietnamese",
+    "category": "mon_canh",
+    "region": "nam",
+    "cookTimeMinutes": 50,
+    "servings": 4,
+    "difficulty": "medium",
+    "tags": [
+      "Món canh",
+      "Giải nhiệt",
+      "Nam Bộ",
+      "Cơm nhà"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/vn/imp-59015074541ba061.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://tiphay.vn/bai-viet/giai-nhiet-cho-bua-com-trua-he-voi-mon-canh-kho-qua-nhoi-tom-thit-p201.html",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://helenrecipes.com/vi/recipe-stuffed-bitter-melon-soup-canh-kho-qua-nhoi-thit/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Khổ qua (mướp đắng)",
+      "canonicalIngredientId": "BITTER_MELON",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "trái",
+        "text": "4 trái",
+        "gramEquivalent": 700,
+        "basis": "1 trái khổ qua cỡ vừa ~175 g (dao động 150–200 g tùy trái)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "tiphay/Cooky dùng 3 trái (khẩu phần không ghi rõ); Helen dùng 1 kg cho 6 phần (~167 g/phần). Lấy 4 trái cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 17,
+        "proteinG": 1,
+        "carbohydrateG": 3.7,
+        "fatG": 0.17,
+        "fiberG": 2.8,
+        "sugarG": null,
+        "sodiumMg": 5
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168393",
+      "sourceNutritionNote": "sugar_g không có trong dữ liệu USDA của mục này → để null, không tự suy ra."
+    },
+    {
+      "position": 1,
+      "sourceName": "Tôm sú tươi",
+      "canonicalIngredientId": "SHRIMP",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 300,
+        "unit": "g",
+        "text": "300 g",
+        "gramEquivalent": 300,
+        "basis": "1 con tôm sú cỡ vừa ~15 g (cả vỏ); 300 g ≈ 20 con",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 300,
+          "unit": "g"
+        }
+      },
+      "note": "tiphay/Cooky dùng 14 con tôm sú cho 3 trái khổ qua: 9 con lột vỏ giữ nguyên cắm trang trí, còn lại băm nhuyễn trộn nhân. Công thức này scale lên 4 phần: ~200 g bóc vỏ băm nhuyễn làm nhân + 8 con giữ nguyên cắm lên trên.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 85,
+        "proteinG": 20.1,
+        "carbohydrateG": 0,
+        "fatG": 0.51,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 119
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/175179",
+      "sourceNutritionNote": "fiber_g và sugar_g không có trong dữ liệu USDA của mục này → để null, không tự suy ra."
+    },
+    {
+      "position": 2,
+      "sourceName": "Thịt heo xay",
+      "canonicalIngredientId": "GROUND_PORK",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 200,
+        "unit": "g",
+        "text": "200 g",
+        "gramEquivalent": 200,
+        "basis": "cân trực tiếp",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 200,
+          "unit": "g"
+        }
+      },
+      "note": "tiphay/Cooky dùng 120 g thịt băm + 60 g giò sống cho 3 trái khổ qua; Helen dùng 500 g thịt băm cho 6 phần. Hint assignment không có giò sống nên bỏ giò sống, tăng thịt lên 200 g cho 4 phần để nhân đủ dẻo, kết dính.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 263,
+        "proteinG": 16.88,
+        "carbohydrateG": 0,
+        "fatG": 21.19,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 56
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/167902",
+      "sourceNutritionNote": "sugar_g không có trong dữ liệu USDA của mục này → để null, không tự suy ra."
+    },
+    {
+      "position": 3,
+      "sourceName": "Nấm hương khô",
+      "canonicalIngredientId": "ING_ENR_2DB57285E9ED967F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "10 g nấm hương khô, ngâm nước ấm nở ra ~35 g (gấp ~3.5 lần)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "Hai nguồn công thức đều dùng nấm mèo (tiphay: 30 g; Helen: 15 g); hint assignment yêu cầu nấm hương khô ngâm nên lấy theo hint. Định lượng dinh dưỡng tính trên 10 g nấm khô.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 296,
+        "proteinG": 9.58,
+        "carbohydrateG": 75.37,
+        "fatG": 0.99,
+        "fiberG": 11.5,
+        "sugarG": 2.21,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168436",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Hành tím",
+      "canonicalIngredientId": "ING_ENR_8A591F6DEC9664A5",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "củ",
+        "text": "3 củ",
+        "gramEquivalent": 30,
+        "basis": "1 củ hành tím ~10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "tiphay/Cooky dùng 3–4 củ hành tím băm cho nhân.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 72,
+        "proteinG": 2.5,
+        "carbohydrateG": 16.8,
+        "fatG": 0.1,
+        "fiberG": 3.2,
+        "sugarG": 7.87,
+        "sodiumMg": 12
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170499",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "cây",
+        "text": "3 cây",
+        "gramEquivalent": 30,
+        "basis": "1 cây hành lá ~10 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "piece"
+        }
+      },
+      "note": "Dùng cả đầu hành (băm vào nhân) và lá (cắt khúc cho vào canh lúc cuối).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": 2.33,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "garnish",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "củ",
+        "text": "0.5 củ",
+        "gramEquivalent": 60,
+        "basis": "1/2 củ cà rốt cỡ vừa ~60 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "tiphay/Cooky dùng 1 củ cà rốt: một nửa tỉa hoa cho vào nồi canh trang trí, một nửa băm nhỏ trộn nhân. Công thức này dùng 1/2 củ cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "lít",
+        "text": "1.5 lít",
+        "gramEquivalent": 1500,
+        "basis": "1.5 lít nước = 1500 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1.5,
+          "unit": "l"
+        }
+      },
+      "note": "tiphay/Cooky dùng 1.2 lít nước (khẩu phần không ghi rõ); Helen dùng 3 lít cho 6 phần (500 ml/phần). Lấy 1.5 lít cho 4 phần (375 ml/phần).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 8,
+      "sourceName": "Nước mắm",
+      "canonicalIngredientId": "FISH_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "muỗng canh",
+        "text": "1.5 muỗng canh",
+        "gramEquivalent": 27,
+        "basis": "1 muỗng canh nước mắm = 15 ml ≈ 18 g (tỉ trọng ~1.2)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Dùng 1 muỗng cà phê (≈6 g) ướp nhân + 1 muỗng canh (≈18 g... ) — tổng 1.5 muỗng canh nêm canh. Helen nêm 3 muỗng canh cho 3 lít nước; tiphay chỉ nêm hạt nêm. Lấy mức giữa, nêm lại theo khẩu vị ở bước cuối.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 35,
+        "proteinG": 5.06,
+        "carbohydrateG": 3.64,
+        "fatG": 0.01,
+        "fiberG": 0,
+        "sugarG": 3.64,
+        "sodiumMg": 7851
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174531",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Hạt nêm",
+      "canonicalIngredientId": "ING_ENR_9ED41AF1DDD06BAD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 10,
+        "basis": "1 muỗng canh hạt nêm ≈ 10 g (ước lượng, tương đương bột nêm dạng hạt)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "tiphay/Cooky ướp nhân với 1 muỗng canh hạt nêm và nêm thêm 1–2 muỗng canh vào canh; Helen nêm bột nêm 'vừa ăn'. Lấy 1 muỗng canh chia cho ướp nhân và nêm canh, nêm lại theo khẩu vị.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 267,
+        "proteinG": 16.66,
+        "carbohydrateG": 18.01,
+        "fatG": 13.88,
+        "fiberG": 0,
+        "sugarG": 17.36,
+        "sodiumMg": 23875
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171562",
+      "sourceNutritionNote": "Số liệu của 'Soup, chicken broth or bouillon, dry' (USDA 171562) dùng tương đương cho hạt nêm VN; không phải sản phẩm chính xác."
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng cà phê",
+        "text": "1 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê đường ≈ 4 g (USDA: 1 tsp sugar ≈ 4.2 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Theo công thức Knorr/Món Ngon VN (tài liệu ĐH Duy Tân): 1 muỗng cà phê đường ướp nhân cho 2 trái khổ qua; scale lên 4 trái.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 3,
+        "basis": "1/2 muỗng cà phê muối ≈ 3 g (USDA: 1 tsp table salt = 6 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "Một phần cho vào nước luộc sơ khổ qua, một phần ướp nhân. Nguồn Knorr/Món Ngon VN: 1/2 muỗng cà phê muối cho 2 trái khổ qua.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Tiêu xay",
+      "canonicalIngredientId": "ING_ENR_AE334AA98E2ADBDD",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "muỗng cà phê",
+        "text": "0.5 muỗng cà phê",
+        "gramEquivalent": 1,
+        "basis": "1/2 muỗng cà phê tiêu xay ≈ 1 g (USDA: 1 tsp black pepper ≈ 2.3 g)",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "tiphay/Cooky ướp nhân với 1/2 muỗng cà phê tiêu; rắc thêm khi dọn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": 0.64,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Nấm hương khô ngâm nước ấm 15–20 phút cho nở mềm, rửa sạch, bóp ráo rồi băm nhỏ.",
+      "tip": "Ngâm nước ấm (không dùng nước sôi) để nấm nở đều mà vẫn giữ mùi thơm.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Tôm rửa sạch. Lấy 200 g bóc vỏ, bỏ chỉ đen, băm (hoặc xay) nhuyễn. 8 con còn lại lột vỏ nhưng giữ lại phần đuôi để cắm trang trí.",
+      "tip": "Theo tiphay/Cooky: cắm đuôi tôm lên trên khoanh khổ qua sau khi nhồi nhân."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Khổ qua rửa sạch, cắt khoanh dày 2–3 cm (trái nhỏ có thể bổ dọc như bánh mì), dùng cán muỗng nạo bỏ sạch ruột và hạt.",
+      "tip": "Helen lưu ý: chọn trái màu nhạt, ít gai nếu không ăn được đắng."
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Đun sôi một nồi nước với chút muối, cho khổ qua vào luộc sơ 2 phút rồi vớt ra để ráo.",
+      "tip": "tiphay/Cooky luộc sơ để giảm vị đắng; Helen KHÔNG luộc sơ (giữ vị đắng nguyên bản tốt cho sức khỏe). Lấy theo tiphay/Cooky vì món này nhấn mạnh 'thanh mát, dễ ăn'.",
+      "timerMinutes": 2
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Hành tím bóc vỏ, băm nhỏ. Hành lá: lấy phần đầu hành trắng băm nhỏ, phần lá cắt khúc. Cà rốt gọt vỏ: một nửa tỉa hoa, một nửa băm nhỏ."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Trộn nhân: cho tôm băm, thịt heo xay, nấm hương băm, hành tím băm, đầu hành băm, cà rốt băm vào tô lớn. Thêm 1 muỗng cà phê nước mắm, 1 muỗng cà phê hạt nêm, 1 muỗng cà phê đường, 1/2 muỗng cà phê tiêu và chút muối; trộn đều, ướp 15 phút.",
+      "tip": "Trộn và nhồi nhân vài phút cho dẻo, dai thì nhân mới kết dính, không bị rơi ra khi nấu (Helen).",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Nhồi nhân vào từng khoanh khổ qua, ém chặt tay (không nhồi quá chặt vì thịt chín sẽ nở). Cắm một con tôm nguyên (giữ đuôi) lên trên mỗi khoanh.",
+      "tip": "Không nhồi quá ít kẻo thịt rơi ra khi nấu, cũng không quá chặt kẻo nứt (Helen)."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Đun sôi 1.5 lít nước trong nồi lớn. Nêm 1 muỗng canh nước mắm và phần hạt nêm còn lại, nếm cho vừa miệng."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Cho khổ qua đã nhồi và cà rốt tỉa hoa vào nồi, nấu lửa vừa khoảng 20 phút đến khi khổ qua mềm, xiên đũa qua dễ dàng.",
+      "tip": "Helen: KHÔNG đậy nắp và thỉnh thoảng vớt bọt để nước canh trong. tiphay/Cooky nấu 20 phút với 1.2 lít nước.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Nêm nếm lại cho vừa ăn, cho hành lá cắt khúc vào rồi tắt bếp."
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Múc canh ra tô lớn, rắc thêm chút tiêu xay lên trên."
+    },
+    {
+      "stepNumber": 12,
+      "instruction": "Dùng nóng với cơm trắng. Có thể trụng cọng hành rồi buộc quanh khoanh khổ qua cho đẹp mắt khi dọn (mẹo của Helen)."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "originalPerServing": {
+      "energyKcal": 259.89,
+      "proteinG": 26.75,
+      "carbohydrateG": 13.46,
+      "fatG": 11.71,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": 1556.34
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 0,
+        "detail": "Khổ qua (mướp đắng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Tôm sú tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "INCOMPLETE_NUTRIENT_REFERENCE",
+        "ingredientPosition": 2,
+        "detail": "Thịt heo xay: all seven nutrients are not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Nấm hương khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Hành tím: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Nước lọc: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Nước mắm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Hạt nêm: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Tiêu xay: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 7,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

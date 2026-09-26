@@ -1,0 +1,1044 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-a3e676be13c4c51c",
+    "slug": "bo-ham-nam-han",
+    "title": "Bò hầm nấm Hàn"
+  },
+  "content": {
+    "description": "Bò hầm nấm-cà rốt nước sánh đậm, món braise Hàn ấm áp cuối tuần.",
+    "cuisine": "korean",
+    "cookTimeMinutes": 80,
+    "servings": 5,
+    "difficulty": "medium",
+    "tags": [
+      "Hầm",
+      "Bò",
+      "Nấm",
+      "Hàn Quốc"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/kr/imp-a3e676be13c4c51c.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://www.koreanbapsang.com/bulgogi-jeongol-hot-pot/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://www.youtube.com/shorts/eT6x8z-13E0",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Thịt bò thái lát mỏng (thăn/bắp, kiểu bulgogi)",
+      "canonicalIngredientId": "ING_ENR_F17ECF279D4204E7",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 500,
+        "unit": "g",
+        "text": "500 g",
+        "gramEquivalent": 500,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 500,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 1 lb (450 g) thịt thái lát mỏng; công thức lẩu nấm thịt bò của kênh Hàn trên YouTube: 300 g — mâu thuẫn, lấy 500 g cho 5 phần (100 g/người). Thái lát mỏng ~3 mm, có thể để thịt vào ngăn đá 1 giờ cho dễ thái.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 241.4,
+        "proteinG": 18.69,
+        "carbohydrateG": 0.2,
+        "fatG": 18.43,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 51
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173403",
+      "sourceNutritionNote": "dùng số liệu thăn bò ribeye của USDA; thịt bulgogi thực tế có thể nạc hoặc mỡ hơn một chút."
+    },
+    {
+      "position": 1,
+      "sourceName": "Nấm đùi gà",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 250,
+        "unit": "g",
+        "text": "250 g",
+        "gramEquivalent": 250,
+        "basis": "đơn vị gốc đã là gram (≈ 3 cây)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 250,
+          "unit": "g"
+        }
+      },
+      "note": "Công thức YouTube Hàn: 2 cây (200 g); KB (beoseot jeongol): dùng nấm thập cẩm 12 oz trong đó có nấm đùi gà (king). Lấy 250 g cho 5 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33.22,
+        "proteinG": 3.31,
+        "carbohydrateG": 6.09,
+        "fatG": 0.41,
+        "fiberG": 2.3,
+        "sugarG": 1.11,
+        "sodiumMg": 18
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168580",
+      "sourceNutritionNote": "USDA không phân biệt nấm đùi gà (king oyster); dùng số liệu nấm sò (oyster) gần tương đương nhất."
+    },
+    {
+      "position": 2,
+      "sourceName": "Nấm hương tươi",
+      "canonicalIngredientId": "MUSHROOM",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 100,
+        "unit": "g",
+        "text": "100 g",
+        "gramEquivalent": 100,
+        "basis": "đơn vị gốc đã là gram (≈ 4-5 cái)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 100,
+          "unit": "g"
+        }
+      },
+      "note": "Công thức YouTube Hàn: 4 cái (120 g); KB dùng nấm thập cẩm. Lấy 100 g cho 5 phần, cắt lát dày.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 33.7,
+        "proteinG": 2.24,
+        "carbohydrateG": 6.79,
+        "fatG": 0.49,
+        "fiberG": 2.5,
+        "sugarG": 2.38,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169242",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 3,
+      "sourceName": "Cà rốt",
+      "canonicalIngredientId": "CARROT",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 120,
+        "unit": "g",
+        "text": "120 g",
+        "gramEquivalent": 120,
+        "basis": "đơn vị gốc đã là gram (≈ 1 củ vừa)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 120,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 1 củ nhỏ thái lát mỏng; công thức YouTube Hàn: 1/2 củ (80 g) — mâu thuẫn nhẹ, lấy 1 củ vừa ~120 g cho 5 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 41.35,
+        "proteinG": 0.93,
+        "carbohydrateG": 9.58,
+        "fatG": 0.24,
+        "fiberG": 2.8,
+        "sugarG": 4.74,
+        "sodiumMg": 69
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170393",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Cải thảo",
+      "canonicalIngredientId": "ING_ENR_96E60D68BBF89A84",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 150,
+        "unit": "g",
+        "text": "150 g",
+        "gramEquivalent": 150,
+        "basis": "đơn vị gốc đã là gram (≈ 3-4 lá)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 150,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 2 lá cải thảo lớn; công thức YouTube Hàn: 3 lá bắp cải (130 g) kèm cải thìa — lấy 150 g cải thảo, cắt miếng vừa ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 16,
+        "proteinG": 1.2,
+        "carbohydrateG": 3.23,
+        "fatG": 0.2,
+        "fiberG": 1.2,
+        "sugarG": null,
+        "sodiumMg": 9
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169979",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 5,
+      "sourceName": "Hành tây",
+      "canonicalIngredientId": "ONION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 160,
+        "unit": "g",
+        "text": "160 g",
+        "gramEquivalent": 160,
+        "basis": "đơn vị gốc đã là gram (≈ 1 củ vừa)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 160,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 1/4 củ cho vào nước dùng + 1/2 củ thái lát ăn kèm trong lẩu. Lấy 1 củ vừa ~160 g chia hai phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 40,
+        "proteinG": 1.1,
+        "carbohydrateG": 9.34,
+        "fatG": 0.1,
+        "fiberG": 1.7,
+        "sugarG": null,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170000",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 6,
+      "sourceName": "Hành lá",
+      "canonicalIngredientId": "SCALLION",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 45,
+        "unit": "g",
+        "text": "45 g",
+        "gramEquivalent": 45,
+        "basis": "3 cây × ~15 g/cây",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 45,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 2-3 cây cắt khúc. Lấy 3 cây ~45 g, cắt khúc 5 cm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 32,
+        "proteinG": 1.83,
+        "carbohydrateG": 7.34,
+        "fatG": 0.19,
+        "fiberG": 2.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170005",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 7,
+      "sourceName": "Tảo bẹ khô (dashima)",
+      "canonicalIngredientId": "ING_ENR_806A45404E2A5C99",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 10,
+        "unit": "g",
+        "text": "10 g",
+        "gramEquivalent": 10,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 10,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 1 miếng 3x3 inch (~8 g) cho 5 cups nước dùng. Lấy 10 g; vớt bỏ sau khi nấu nước dùng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 43.02,
+        "proteinG": 1.68,
+        "carbohydrateG": 9.57,
+        "fatG": 0.56,
+        "fiberG": 1.3,
+        "sugarG": 0.6,
+        "sodiumMg": 233
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168457",
+      "sourceNutritionNote": "số liệu rong biển tươi của USDA; dashima khô đậm đặc khoáng chất hơn nhưng lượng dùng nhỏ nên chênh lệch không đáng kể."
+    },
+    {
+      "position": 8,
+      "sourceName": "Củ cải trắng (nấu nước dùng)",
+      "canonicalIngredientId": "ING_ENR_82EA2338E1AACBE8",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Củ cải trắng via the same name key",
+      "review": null,
+      "usageRole": "process_only",
+      "nutritionRole": "unresolved_absorption",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 85,
+        "unit": "g",
+        "text": "85 g",
+        "gramEquivalent": 85,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 85,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 3 oz (85 g) cắt khối lớn cho vào nồi nước dùng; vớt bỏ sau 15 phút.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 18.16,
+        "proteinG": 0.6,
+        "carbohydrateG": 4.1,
+        "fatG": 0.1,
+        "fiberG": 1.6,
+        "sugarG": 2.5,
+        "sodiumMg": 21
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168451",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 9,
+      "sourceName": "Xì dầu (ướp thịt)",
+      "canonicalIngredientId": "SOY_SAUCE",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 55,
+        "unit": "ml",
+        "text": "55 ml",
+        "gramEquivalent": 59,
+        "basis": "55 ml × tỉ trọng xì dầu ~1.07 g/ml (USDA: 1 tbsp = 16 g)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 55,
+          "unit": "ml"
+        }
+      },
+      "note": "KB: 3 tbsp cho 450 g thịt → ~3.5 tbsp (≈ 55 ml) cho 500 g thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Đường (ướp thịt)",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Đường via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 12,
+        "unit": "g",
+        "text": "12 g",
+        "gramEquivalent": 12,
+        "basis": "đơn vị gốc đã là gram (≈ 1 tbsp)",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 12,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 1 tbsp đường trong sốt ướp bulgogi.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 385,
+        "proteinG": 0,
+        "carbohydrateG": 99.6,
+        "fatG": 0.32,
+        "fiberG": null,
+        "sugarG": null,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/746784",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Mật ong (ướp thịt)",
+      "canonicalIngredientId": "ING_ENR_32FA0711241370F1",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Mật ong via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 21,
+        "unit": "g",
+        "text": "21 g",
+        "gramEquivalent": 21,
+        "basis": "1 tbsp mật ong ≈ 21 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 21,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 1 tbsp mật ong (có thể thay bằng đường nếu không có).",
+      "sourceNutritionPer100g": {
+        "energyKcal": 304,
+        "proteinG": 0.3,
+        "carbohydrateG": 82.4,
+        "fatG": 0,
+        "fiberG": 0.2,
+        "sugarG": null,
+        "sodiumMg": 4
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169640",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 12,
+      "sourceName": "Rượu nấu ăn (ướp thịt)",
+      "canonicalIngredientId": "ING_ENR_CA3FEDAA923D315C",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Rượu nấu ăn via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "ml",
+        "text": "15 ml",
+        "gramEquivalent": 15,
+        "basis": "15 ml × tỉ trọng ~1.0",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "ml"
+        }
+      },
+      "note": "KB: 1 tbsp rượu nấu (mirin/matsul) trong sốt ướp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 49.95,
+        "proteinG": 0.5,
+        "carbohydrateG": 6.3,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 1.55,
+        "sodiumMg": 626
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169070",
+      "sourceNutritionNote": "số liệu rượu nấu ăn (cooking wine) generic của USDA."
+    },
+    {
+      "position": 13,
+      "sourceName": "Tỏi băm (ướp thịt)",
+      "canonicalIngredientId": "GARLIC",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "g",
+        "text": "15 g",
+        "gramEquivalent": 15,
+        "basis": "1 tbsp tỏi băm ≈ 15 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 1 tbsp tỏi trong sốt ướp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 6.62,
+        "carbohydrateG": 28.2,
+        "fatG": 0.38,
+        "fiberG": 2.7,
+        "sugarG": null,
+        "sodiumMg": null
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/1104647",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 14,
+      "sourceName": "Dầu mè (ướp thịt)",
+      "canonicalIngredientId": "COOKING_OIL",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 13,
+        "unit": "g",
+        "text": "13 g",
+        "gramEquivalent": 13,
+        "basis": "1 tbsp × ~13.6 g (tỉ trọng dầu ~0.91), làm tròn 13 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 13,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 1 tbsp dầu mè trong sốt ướp.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 884,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 100,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171016",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 15,
+      "sourceName": "Lê Hàn xay nhuyễn (ướp thịt)",
+      "canonicalIngredientId": "ING_ENR_42DB27AA093BECE9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 45,
+        "unit": "g",
+        "text": "45 g",
+        "gramEquivalent": 45,
+        "basis": "3 tbsp lê xay ≈ 45 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 45,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 3 tbsp lê/táo Hàn xay nhuyễn trong sốt ướp (làm thịt mềm và ngọt tự nhiên); công thức YouTube Hàn: 1 tbsp nước lê — mâu thuẫn, lấy theo KB.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 42.07,
+        "proteinG": 0.5,
+        "carbohydrateG": 10.65,
+        "fatG": 0.23,
+        "fiberG": 3.6,
+        "sugarG": 7.05,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/168177",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 16,
+      "sourceName": "Tiêu đen xay",
+      "canonicalIngredientId": "ING_ENR_645CFFD89E2FD64E",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "g",
+        "text": "1 g",
+        "gramEquivalent": 1,
+        "basis": "~1/4 tsp",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 1/8 tsp cho 450 g thịt → ~1/4 tsp (≈ 1 g) cho 500 g thịt.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 251,
+        "proteinG": 10.39,
+        "carbohydrateG": 63.95,
+        "fatG": 3.26,
+        "fiberG": 25.3,
+        "sugarG": null,
+        "sodiumMg": 20
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170931",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 17,
+      "sourceName": "Xì dầu loại dùng cho canh (nêm nước dùng)",
+      "canonicalIngredientId": "ING_ENR_C486D58609E391A9",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 15,
+        "unit": "ml",
+        "text": "15 ml",
+        "gramEquivalent": 16,
+        "basis": "15 ml × tỉ trọng ~1.07",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 15,
+          "unit": "ml"
+        }
+      },
+      "note": "KB: 1 tbsp soup soy sauce (guk-ganjang) để nêm nước dùng; có thể thay bằng xì dầu thường.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 18,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 3,
+        "unit": "g",
+        "text": "3 g",
+        "gramEquivalent": 3,
+        "basis": "1/2 tsp muối ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 3,
+          "unit": "g"
+        }
+      },
+      "note": "KB ghi 'salt to taste' (nêm theo khẩu vị) — 3 g là ước lượng khởi điểm, nêm thêm sau khi nếm.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": null,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 19,
+      "sourceName": "Nước lọc",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1200,
+        "unit": "ml",
+        "text": "1200 ml",
+        "gramEquivalent": 1200,
+        "basis": "1200 ml × 1 g/ml",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 1200,
+          "unit": "ml"
+        }
+      },
+      "note": "KB: 5 cups (~1.2 L) để nấu nước dùng; khi bày lẩu dùng 2-3 cups, phần còn lại châm thêm trong lúc ăn.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    },
+    {
+      "position": 20,
+      "sourceName": "Mì khoai lang (dangmyeon)",
+      "canonicalIngredientId": "ING_ENR_6043864F4DB9080C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "optional",
+      "nutritionRole": "excluded_optional",
+      "optional": true,
+      "includeInShopping": true,
+      "includeInNutrition": false,
+      "quantity": {
+        "kind": "measured",
+        "amount": 85,
+        "unit": "g",
+        "text": "85 g",
+        "gramEquivalent": 85,
+        "basis": "đơn vị gốc đã là gram",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 85,
+          "unit": "g"
+        }
+      },
+      "note": "KB: 3 oz (85 g) — nguyên liệu tùy chọn, ngâm nước ấm 20 phút trước khi cho vào lẩu.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "chưa tra được số liệu miến khoai lang Hàn trên USDA → để null, tuyệt đối không bịa số."
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Nấu nước dùng: cho 1.2 L nước, tảo bẹ, củ cải trắng cắt khối lớn và 1/4 củ hành tây vào nồi. Đun sôi lửa lớn rồi hạ lửa vừa, nấu 15 phút. Vớt bỏ tảo bẹ, củ cải và hành tây.",
+      "tip": "KB: không nấu tảo bẹ quá lâu sẽ làm nước dùng bị nhớt và đắng.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Nêm nước dùng với 1 tbsp xì dầu loại dùng cho canh, muối và tiêu cho vừa miệng. Giữ ấm.",
+      "tip": "Nước dùng lạt một chút cũng được vì sốt ướp thịt bò sẽ tiết ra thêm vị mặn ngọt khi nấu lẩu."
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Ướp thịt bò: trộn đều xì dầu, đường, mật ong, rượu nấu ăn, tỏi băm, dầu mè, lê xay và tiêu trong tô lớn. Cho thịt bò thái lát mỏng vào, dùng tay trộn nhẹ cho thấm đều. Ướp trong lúc sơ chế rau củ.",
+      "tip": "KB: nếu mua thịt thái sẵn, dùng dao khía vài đường cho miếng thịt nhỏ lại vừa ăn.",
+      "timerMinutes": 15
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Sơ chế nấm: nấm đùi gà cắt lát dày khoảng 1 cm hoặc chẻ dọc thành miếng vừa ăn; nấm hương tươi cắt bỏ chân, cắt lát dày.",
+      "tip": "KB: nấm nấu sẽ teo lại khá nhiều nên đừng cắt quá mỏng."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Sơ chế rau củ: cà rốt thái lát mỏng; cải thảo cắt miếng vừa ăn; 1/2 củ hành tây còn lại thái lát; hành lá cắt khúc 5 cm."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Nếu dùng mì khoai lang: ngâm trong nước ấm 20 phút cho mềm, vớt ra để ráo.",
+      "timerMinutes": 20
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Dùng nồi lẩu nông, xếp thịt bò đã ướp và các loại nấm, rau củ thành từng cụm xen kẽ cho đẹp mắt. Cho mì khoai lang (nếu dùng) vào cùng.",
+      "tip": "KB: xếp theo cụm thay vì trộn lẫn để món lẩu trông hấp dẫn như ngoài hàng."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Đổ khoảng 750 ml (3 cups) nước dùng vào nồi, đủ ngập khoảng 2/3 nguyên liệu.",
+      "tip": "Phần nước dùng còn lại giữ nóng để châm thêm trong lúc ăn."
+    },
+    {
+      "stepNumber": 9,
+      "instruction": "Đun lửa lớn cho sôi, dùng đũa tách các lát thịt bò cho khỏi dính vào nhau.",
+      "timerMinutes": 3
+    },
+    {
+      "stepNumber": 10,
+      "instruction": "Hạ lửa vừa, nấu thêm 5-7 phút đến khi nấm mềm và thịt bò chín tới.",
+      "tip": "Thịt bò thái mỏng rất nhanh chín — nấu quá lâu thịt sẽ dai. Công thức YouTube Hàn cũng chỉ đun lẩu vừa sôi tới.",
+      "timerMinutes": 6
+    },
+    {
+      "stepNumber": 11,
+      "instruction": "Nêm nếm lại nước dùng cho vừa miệng, rắc hành lá lên trên. Dọn nóng ngay tại bàn, vừa ăn vừa châm thêm nước dùng và rau nấm nếu còn.",
+      "tip": "KB: có thể nấu làm 2 mẻ tùy kích cỡ nồi, hoặc vừa ăn vừa thêm nguyên liệu như ăn lẩu."
+    }
+  ],
+  "nutrition": {
+    "certification": "null_truthful",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 5,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 241.4,
+      "proteinG": 18.69,
+      "carbohydrateG": 0.2,
+      "fatG": 18.43,
+      "fiberG": 0,
+      "sugarG": 0,
+      "sodiumMg": 51
+    },
+    "originalPerServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Nấm đùi gà: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Nấm hương tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Cà rốt: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Cải thảo: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Hành tây: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Hành lá: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 7,
+        "detail": "Tảo bẹ khô (dashima): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "UNRESOLVED_ABSORPTION",
+        "ingredientPosition": 8,
+        "detail": "Củ cải trắng (nấu nước dùng): consumed/absorbed amount is not evidenced"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Xì dầu (ướp thịt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Đường (ướp thịt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Mật ong (ướp thịt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Rượu nấu ăn (ướp thịt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 13,
+        "detail": "Tỏi băm (ướp thịt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 14,
+        "detail": "Dầu mè (ướp thịt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 15,
+        "detail": "Lê Hàn xay nhuyễn (ướp thịt): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 16,
+        "detail": "Tiêu đen xay: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 17,
+        "detail": "Xì dầu loại dùng cho canh (nêm nước dùng): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 18,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "MISSING_NUTRIENT_REFERENCE",
+        "ingredientPosition": 19,
+        "detail": "Nước lọc: nutrient values have no source reference"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      19
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 19,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

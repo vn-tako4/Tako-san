@@ -1,0 +1,701 @@
+{
+  "schemaVersion": 2,
+  "recipeVersion": 2,
+  "identity": {
+    "id": "imp-edac077a60dfa8b5",
+    "slug": "trung-kho-tra-trung-hoa",
+    "title": "Trứng kho trà Trung Hoa"
+  },
+  "content": {
+    "description": "Trứng luộc kho trà vân đá thơm vị trà-xì dầu, món ăn vặt Trung Hoa ngắm nghía từng đường vân.",
+    "cuisine": "chinese",
+    "cookTimeMinutes": 50,
+    "servings": 4,
+    "difficulty": "easy",
+    "tags": [
+      "Trứng",
+      "Trà",
+      "Trung Hoa",
+      "Ăn vặt"
+    ]
+  },
+  "research": {
+    "inputPath": "batch/cn/imp-edac077a60dfa8b5.json",
+    "rawSchemaSignature": "ingredients,nutrition_computed,recipe_id,servings,sources,steps",
+    "sources": [
+      {
+        "url": "https://thewoksoflife.com/chinese-tea-eggs/",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      },
+      {
+        "url": "https://sauers.com/blogs/the-spice-hunter-recipes/chinese-tea-eggs",
+        "role": "declared",
+        "verification": "structurally_valid",
+        "verificationEvidence": null,
+        "note": null
+      }
+    ],
+    "notes": []
+  },
+  "ingredients": [
+    {
+      "position": 0,
+      "sourceName": "Trứng gà",
+      "canonicalIngredientId": "CHICKEN_EGG",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "exact exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 4,
+        "unit": "quả",
+        "text": "4 quả",
+        "gramEquivalent": 200,
+        "basis": "USDA FoodData Central: 1 large egg = 50 g",
+        "evidence": "reviewed_derived",
+        "runtime": {
+          "amount": 4,
+          "unit": "piece"
+        }
+      },
+      "note": "WOL công thức gốc 12 trứng/12 phần; scale x1/3 cho 4 phần.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 143,
+        "proteinG": 12.56,
+        "carbohydrateG": 0.72,
+        "fatG": 9.51,
+        "fiberG": 0,
+        "sugarG": 0.37,
+        "sodiumMg": 142
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171287",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 1,
+      "sourceName": "Gừng tươi",
+      "canonicalIngredientId": "GINGER",
+      "reconciliation": "existing_canonical_id",
+      "reconciliationReason": "context-stripped exact_alias resolution against the reviewed catalog",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "lát",
+        "text": "1 lát",
+        "gramEquivalent": 5,
+        "basis": "1 lát gừng dày ~2 mm, đường kính ~3 cm ước lượng ≈ 5 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "slice"
+        }
+      },
+      "note": "WOL: 2 lát cho 12 trứng; scale ≈ 0,7 lát, làm tròn 1 lát mỏng.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 80,
+        "proteinG": 1.82,
+        "carbohydrateG": 17.77,
+        "fatG": 0.75,
+        "fiberG": 2,
+        "sugarG": 1.7,
+        "sodiumMg": 13
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169231",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 2,
+      "sourceName": "Hoa hồi",
+      "canonicalIngredientId": "ING_ENR_E3301615B29A7FC8",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "cái",
+        "text": "1 cái",
+        "gramEquivalent": 1,
+        "basis": "1 hoa hồi khô nguyên ước lượng ≈ 1 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "WOL: 3 hoa hồi cho 12 trứng; scale x1/3 = 1. Sauers dùng 2 hoa hồi cho 6 trứng (tương đương 1,3 hoa/4 trứng) — chênh lệch nhỏ, ưu tiên WOL.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 337,
+        "proteinG": 17.6,
+        "carbohydrateG": 50.02,
+        "fatG": 15.9,
+        "fiberG": 14.6,
+        "sugarG": null,
+        "sodiumMg": 16
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171316",
+      "sourceNutritionNote": "USDA không có mục riêng cho hoa hồi (Illicium verum); dùng số liệu 'Spices, anise seed' (hạt hồi) làm tương đương gần nhất. Number 269 (Total Sugars) không có trong response → để null."
+    },
+    {
+      "position": 3,
+      "sourceName": "Quế thanh",
+      "canonicalIngredientId": "ING_ENR_59DEA2EA2E16333F",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.5,
+        "unit": "thanh",
+        "text": "0.5 thanh",
+        "gramEquivalent": 1.5,
+        "basis": "1 thanh quế khô ước lượng ≈ 3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      },
+      "note": "WOL: 1 thanh cho 12 trứng; scale x1/3. Sauers dùng 1 thanh cho 6 trứng (tương đương 0,7 thanh/4 trứng) — chênh lệch nhỏ, ưu tiên WOL.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 247,
+        "proteinG": 3.99,
+        "carbohydrateG": 80.59,
+        "fatG": 1.24,
+        "fiberG": 53.1,
+        "sugarG": 2.17,
+        "sodiumMg": 10
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/171320",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 4,
+      "sourceName": "Lá nguyệt quế",
+      "canonicalIngredientId": "ING_ENR_43B2CB0E47FF8903",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "lá",
+        "text": "1 lá",
+        "gramEquivalent": 0.3,
+        "basis": "1 lá nguyệt quế khô ước lượng ≈ 0,3 g",
+        "evidence": "estimated",
+        "runtime": {
+          "amount": 1,
+          "unit": "piece"
+        }
+      },
+      "note": "WOL: 2 lá cho 12 trứng; scale x1/3 ≈ 0,7 lá, làm tròn 1 lá.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 313,
+        "proteinG": 7.61,
+        "carbohydrateG": 74.97,
+        "fatG": 8.36,
+        "fiberG": 26.3,
+        "sugarG": null,
+        "sodiumMg": 23
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/170917",
+      "sourceNutritionNote": "Number 269 (Total Sugars) không có trong response USDA → để null."
+    },
+    {
+      "position": 5,
+      "sourceName": "Lá trà đen khô",
+      "canonicalIngredientId": "ING_ENR_6CBE55F492115EE4",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê lá trà đen khô rời ước lượng ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 2 muỗng canh cho 12 trứng; scale x1/3 = 2 muỗng cà phê. WOL dặn dùng trà lá rời thay vì túi lọc.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA FoodData Central chỉ có mục trà đen pha sẵn (brewed/ready-to-drink), không có lá trà khô; lượng dùng rất nhỏ nên để null thay vì dùng số liệu sai loại."
+    },
+    {
+      "position": 6,
+      "sourceName": "Tiêu Tứ Xuyên",
+      "canonicalIngredientId": "ING_ENR_DE0B44C10C0DB9B2",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.3333333333333333,
+        "unit": "muỗng cà phê",
+        "text": "0.3333333333333333 muỗng cà phê",
+        "gramEquivalent": 0.7,
+        "basis": "1 muỗng cà phê tiêu Tứ Xuyên ước lượng ≈ 2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 1 muỗng cà phê cho 12 trứng; scale x1/3.",
+      "sourceNutritionPer100g": null,
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "USDA không có mục tiêu Tứ Xuyên (Zanthoxylum); lượng dùng rất nhỏ nên để null."
+    },
+    {
+      "position": 7,
+      "sourceName": "Xì dầu nhạt (light soy sauce)",
+      "canonicalIngredientId": "ING_ENR_F4D1B45C3CF6671C",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1,
+        "unit": "muỗng canh",
+        "text": "1 muỗng canh",
+        "gramEquivalent": 17,
+        "basis": "1 muỗng canh = 15 ml; tỉ trọng xì dầu ≈ 1,15 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 3 muỗng canh cho 12 trứng; scale x1/3. Sauers dùng 3 muỗng canh xì dầu (không phân biệt nhạt/đặc) cho 6 trứng — mặn hơn công thức WOL; ưu tiên WOL.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 53,
+        "proteinG": 8.14,
+        "carbohydrateG": 4.93,
+        "fatG": 0.57,
+        "fiberG": 0.8,
+        "sugarG": 0.4,
+        "sodiumMg": 5493
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174277",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 8,
+      "sourceName": "Xì dầu đặc (dark soy sauce)",
+      "canonicalIngredientId": "ING_ENR_FDE6895A8FBD1E66",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.33,
+        "unit": "muỗng cà phê",
+        "text": "1.33 muỗng cà phê",
+        "gramEquivalent": 7.5,
+        "basis": "11⁄3 muỗng cà phê ≈ 6,6 ml; tỉ trọng xì dầu ≈ 1,15 g/ml",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 4 muỗng cà phê cho 12 trứng; scale x1/3 ≈ 1,33 muỗng cà phê.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 60,
+        "proteinG": 10.51,
+        "carbohydrateG": 5.57,
+        "fatG": 0.1,
+        "fiberG": 0.8,
+        "sugarG": 1.7,
+        "sodiumMg": 5586
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/174278",
+      "sourceNutritionNote": "USDA không có mục xì dầu đặc riêng; dùng số liệu tamari (174278, đặc và đậm vị tương tự) làm tương đương, ghi rõ không phải cùng sản phẩm."
+    },
+    {
+      "position": 9,
+      "sourceName": "Đường",
+      "canonicalIngredientId": "ING_ENR_D2E694F210DAC2E6",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.3333333333333333,
+        "unit": "muỗng cà phê",
+        "text": "0.3333333333333333 muỗng cà phê",
+        "gramEquivalent": 1.4,
+        "basis": "1 muỗng cà phê đường cát ≈ 4,2 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 1 muỗng cà phê cho 12 trứng; scale x1/3.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 387,
+        "proteinG": 0,
+        "carbohydrateG": 99.98,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 99.8,
+        "sodiumMg": 1
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169655",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 10,
+      "sourceName": "Muối",
+      "canonicalIngredientId": "ING_ENR_A67011E859722CB0",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 0.6666666666666666,
+        "unit": "muỗng cà phê",
+        "text": "0.6666666666666666 muỗng cà phê",
+        "gramEquivalent": 4,
+        "basis": "1 muỗng cà phê muối ăn ≈ 6 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 2 muỗng cà phê cho 12 trứng; scale x1/3. Sauers dùng tới 2 muỗng cà phê muối cho 6 trứng (tương đương 1,3 muỗng/4 trứng, mặn gấp đôi WOL) — mâu thuẫn, ưu tiên WOL vì công thức mới được cập nhật.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 38758
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/173468",
+      "sourceNutritionNote": null
+    },
+    {
+      "position": 11,
+      "sourceName": "Rượu Thiệu Hưng (Shaoxing wine)",
+      "canonicalIngredientId": "ING_ENR_579A6A19552283BE",
+      "reconciliation": "provisional_new_canonical_id",
+      "reconciliationReason": "new deterministic enrichment concept; ingredient authority review pending",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": true,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 2,
+        "unit": "muỗng cà phê",
+        "text": "2 muỗng cà phê",
+        "gramEquivalent": 10,
+        "basis": "2 muỗng cà phê = 10 ml ≈ 10 g",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL: 2 muỗng canh cho 12 trứng; scale x1/3 = 2 muỗng cà phê.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 50,
+        "proteinG": 0.5,
+        "carbohydrateG": 6.3,
+        "fatG": 0,
+        "fiberG": null,
+        "sugarG": 1.55,
+        "sodiumMg": 626
+      },
+      "sourceNutritionReference": "https://api.nal.usda.gov/fdc/v1/food/169070",
+      "sourceNutritionNote": "USDA không có mục rượu Thiệu Hưng; dùng số liệu 'Alcoholic beverage, wine, cooking' (169070) làm tương đương gần nhất."
+    },
+    {
+      "position": 12,
+      "sourceName": "Nước",
+      "canonicalIngredientId": "ING_ENR_572914FFD2108D59",
+      "reconciliation": "duplicate_alias",
+      "reconciliationReason": "provisional alias of Nước lọc via the same name key",
+      "review": null,
+      "usageRole": "consumed",
+      "nutritionRole": "consumed",
+      "optional": false,
+      "includeInShopping": false,
+      "includeInNutrition": true,
+      "quantity": {
+        "kind": "measured",
+        "amount": 1.5,
+        "unit": "cốc",
+        "text": "1.5 cốc",
+        "gramEquivalent": 350,
+        "basis": "1 cốc (cup) = 240 ml ≈ 240 g; 1,5 cốc ≈ 350 ml, đủ ngập 4 quả trứng trong nồi nhỏ",
+        "evidence": "estimated",
+        "runtime": null
+      },
+      "note": "WOL bản cập nhật: 4-5 cốc cho 12 trứng (bản cũ dùng 7 cốc, đã giảm để vị đậm hơn); scale x1/3 ≈ 1,5 cốc.",
+      "sourceNutritionPer100g": {
+        "energyKcal": 0,
+        "proteinG": 0,
+        "carbohydrateG": 0,
+        "fatG": 0,
+        "fiberG": 0,
+        "sugarG": 0,
+        "sodiumMg": 0
+      },
+      "sourceNutritionReference": null,
+      "sourceNutritionNote": "nước lọc (tap water): USDA không có mục; giá trị dinh dưỡng ~0"
+    }
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "instruction": "Lấy trứng ra khỏi tủ lạnh, để ở nhiệt độ phòng 1-2 giờ trước khi luộc.",
+      "tip": "WOL: trứng ở nhiệt độ phòng giúp vỏ ít bị nứt khi thả vào nước sôi."
+    },
+    {
+      "stepNumber": 2,
+      "instruction": "Cho gừng, hoa hồi, quế, lá nguyệt quế, lá trà đen, tiêu Tứ Xuyên, xì dầu nhạt, xì dầu đặc, đường, muối, rượu Thiệu Hưng và 1,5 cốc nước vào nồi vừa. Đun sôi, hạ lửa đậy nắp om 10 phút cho gia vị ra hết, sau đó tắt bếp mở nắp để nguội hoàn toàn.",
+      "tip": "WOL: phải để nước ngâm nguội hoàn toàn trước khi cho trứng vào ngâm, vì công thức này làm trứng lòng đào mềm.",
+      "timerMinutes": 10
+    },
+    {
+      "stepNumber": 3,
+      "instruction": "Đun một nồi nước khác cho sôi mạnh. Dùng muôi lớn thả nhẹ từng quả trứng vào, tránh để trứng rơi va đập đáy nồi gây nứt vỏ. Luộc đúng 7 phút (nên bấm hẹn giờ).",
+      "tip": "WOL: luộc 7 phút cho lòng đỏ mềm kiểu trứng ramen; nếu muốn kiểu truyền thống lòng đỏ chín bở thì luộc lâu hơn và có thể om luôn trong nước gia vị (xem note ở nguyên liệu).",
+      "timerMinutes": 7
+    },
+    {
+      "stepNumber": 4,
+      "instruction": "Hết 7 phút, vớt trứng ra cho ngay vào thau nước đá, để đến khi trứng nguội hoàn toàn khi chạm tay.",
+      "tip": "WOL: nước đá dừng quá trình chín ngay lập tức, giữ lòng đỏ mềm."
+    },
+    {
+      "stepNumber": 5,
+      "instruction": "Dùng lưng thìa nhỏ gõ nhẹ khắp vỏ mỗi quả trứng tạo thành mạng vết nứt mịn, nhưng KHÔNG bóc vỏ.",
+      "tip": "WOL: gõ vừa đủ để nước ngâm thấm qua tạo hoa văn vân đá; gõ quá mạnh sẽ làm vỡ trứng vì lòng đỏ còn mềm."
+    },
+    {
+      "stepNumber": 6,
+      "instruction": "Cho trứng đã đập vỏ vào nồi nước ngâm đã nguội, đảm bảo trứng ngập hoàn toàn trong nước. Đậy nắp, cho cả nồi vào tủ lạnh ngâm 24 giờ.",
+      "tip": "WOL: ngâm càng lâu vị càng đậm; có thể ngâm tới 48 giờ. Sauers cũng yêu cầu ngâm qua đêm trong tủ lạnh — hai nguồn đồng thuận.",
+      "timerMinutes": 1440
+    },
+    {
+      "stepNumber": 7,
+      "instruction": "Sau 24 giờ, lấy trứng ra bóc vỏ dưới vòi nước chảy để lộ hoa văn vân đá. Dùng lạnh, ở nhiệt độ phòng hoặc hâm ấm nhẹ tùy thích.",
+      "tip": "WOL gợi ý: cắt đôi trứng bày lên tô mì ăn rất hợp."
+    },
+    {
+      "stepNumber": 8,
+      "instruction": "Trứng chưa ăn hết giữ nguyên trong nước ngâm, bảo quản tủ lạnh 3-4 ngày.",
+      "tip": "Cả WOL và Sauers đều ghi thời hạn 3-4 ngày trong tủ lạnh."
+    }
+  ],
+  "nutrition": {
+    "certification": "blocked",
+    "profileId": null,
+    "basis": "per_serving",
+    "servings": 4,
+    "perServing": {
+      "energyKcal": null,
+      "proteinG": null,
+      "carbohydrateG": null,
+      "fatG": null,
+      "fiberG": null,
+      "sugarG": null,
+      "sodiumMg": null
+    },
+    "candidatePerServing": {
+      "energyKcal": 71.5,
+      "proteinG": 6.28,
+      "carbohydrateG": 0.36,
+      "fatG": 4.76,
+      "fiberG": 0,
+      "sugarG": 0.19,
+      "sodiumMg": 71
+    },
+    "originalPerServing": {
+      "energyKcal": 80.49,
+      "proteinG": 6.92,
+      "carbohydrateG": 1.89,
+      "fatG": 4.84,
+      "fiberG": null,
+      "sugarG": 0.65,
+      "sodiumMg": 812.68
+    },
+    "blockers": [
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 1,
+        "detail": "Gừng tươi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 2,
+        "detail": "Hoa hồi: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 3,
+        "detail": "Quế thanh: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 4,
+        "detail": "Lá nguyệt quế: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 5,
+        "detail": "Lá trà đen khô: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 6,
+        "detail": "Tiêu Tứ Xuyên: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 7,
+        "detail": "Xì dầu nhạt (light soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 8,
+        "detail": "Xì dầu đặc (dark soy sauce): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 9,
+        "detail": "Đường: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 10,
+        "detail": "Muối: gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 11,
+        "detail": "Rượu Thiệu Hưng (Shaoxing wine): gram equivalent is explicitly estimated"
+      },
+      {
+        "code": "ESTIMATED_EDIBLE_QUANTITY",
+        "ingredientPosition": 12,
+        "detail": "Nước: gram equivalent is explicitly estimated"
+      }
+    ],
+    "remediation": []
+  },
+  "media": {
+    "sourceImageUrl": null,
+    "legacyRuntimeImageUrl": "/frigo/illustrations/delicious-meal.png",
+    "canonicalStatus": "source_metadata_only"
+  },
+  "audit": {
+    "schemaRepairs": [],
+    "encodingRepairs": [],
+    "runtimeExcludedIngredientPositions": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "runtimeExclusions": [
+      {
+        "position": 5,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 6,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 7,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 8,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 9,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 10,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 11,
+        "reason": "unsupported_unit",
+        "requiresReviewedTransformation": true
+      },
+      {
+        "position": 12,
+        "reason": "non_shopping",
+        "requiresReviewedTransformation": true
+      }
+    ]
+  }
+}

@@ -17,6 +17,8 @@
     "check:migrations": "bash scripts/migration-smoke.sh",
     "recipe:seed:check": "node scripts/render-recipe-seed.mjs --check",
     "recipe:import:check": "node scripts/recipe-import.mjs check",
+    "recipe:refresh:check": "node scripts/recipe-refresh-v2.mjs check",
+    "recipe:refresh:release-check": "node scripts/recipe-refresh-v2.mjs release-check",
     "recipe:seed:render": "node scripts/render-recipe-seed.mjs --out .artifacts/recipe-seed/0006_vietnamese_recipe_bank.sql && node scripts/render-recipe-seed.mjs --seed parity --out .artifacts/recipe-seed/0034_global_recipe_catalog_parity.sql && node scripts/render-recipe-seed.mjs --seed media --out .artifacts/recipe-seed/0035_recipe_media_layer.sql",
     "schema:check:local": "bash scripts/d1-schema-gate.sh local",
     "schema:check:remote": "bash scripts/d1-schema-gate.sh remote",
